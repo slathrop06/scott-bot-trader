@@ -161,7 +161,9 @@
 </div>
 
 <script>
-const TRADES_URL = '../data/trades.json';   // GH Pages serves repo root; docs/ is the site
+// GH Pages serves only /docs as the site root, so we fetch trades.json
+// from the raw repo URL instead. Public-repo raw content has CORS open.
+const TRADES_URL = 'https://raw.githubusercontent.com/slathrop06/scott-bot-trader/main/data/trades.json';
 const REFRESH_MS = 60_000;
 
 const $ = (id) => document.getElementById(id);
