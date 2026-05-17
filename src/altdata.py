@@ -21,7 +21,7 @@ from __future__ import annotations
 from datetime import date, timedelta
 import requests
 
-from . import config
+from . import config, congress
 
 
 USER_AGENT = "scott-bot-trader/1.0 (research)"
@@ -208,12 +208,15 @@ def analyst_recommendations(symbol: str) -> dict | None:
 # ============================================================
 
 def smart_money_snapshot(symbols: list[str]) -> dict[str, dict]:
-    """For each symbol, return the alt-data picture: insider, WSB, Stocktwits, analysts.
+    """For each symbol, return the alt-data picture: insider, congressional,
+    WSB, Stocktwits, analysts.
 
     Single entry point used by the picker. Failures degrade gracefully — missing
     data just becomes empty/None, the picker still works."""
     print(f"[altdata] fetching insider txns for {len(symbols)} symbols...")
     insider = insider_transactions(symbols, lookback_days=30)
+    print(f"[altdata] fetching House congressional trades (last 21d)...")
+    cong = congress.recent_congressional_trades(symbols, days=21)
     print(f"[altdata] fetching WSB mentions (top 50)...")
     wsb = wsb_mentions(top_n=50)
 
@@ -222,6 +225,7 @@ def smart_money_snapshot(symbols: list[str]) -> dict[str, dict]:
         print(f"[altdata]   {s}: stocktwits + analyst...")
         out[s] = {
             "insider": summarize_insider(insider.get(s, [])),
+            "congress": congress.summarize_congress(cong.get(s, [])),
             "wsb": wsb_signal_for(s, wsb),
             "stocktwits": stocktwits_sentiment(s, max_messages=30),
             "analysts": analyst_recommendations(s),
@@ -245,6 +249,20 @@ def signal_strength(snapshot: dict) -> dict:
     elif ins.get("n_sells", 0) > ins.get("n_buys", 0) * 2:
         score -= 2
         reasons.append(f"heavy insider selling ({ins['n_sells']} sells)")
+
+    # Congressional signal — highest-conviction in our stack because it's the
+    # data source most retail bots can't easily access.
+    cong = snapshot.get("congress", {})
+    if cong.get("cluster_buy"):
+        score += 3
+        names = ", ".join(cong.get("buyer_names", [])[:2])
+        reasons.append(f"House cluster buy ({cong['n_buys']} buys by {names})")
+    elif cong.get("n_buys", 0) > 0 and cong.get("n_sells", 0) == 0:
+        score += 2
+        reasons.append(f"House net buying ({cong['n_buys']} buys by {', '.join(cong['buyer_names'][:1])})")
+    elif cong.get("n_sells", 0) > cong.get("n_buys", 0):
+        score -= 1
+        reasons.append(f"House net selling ({cong['n_sells']} sells)")
 
     wsb = snapshot.get("wsb", {})
     if wsb.get("unusual_spike"):

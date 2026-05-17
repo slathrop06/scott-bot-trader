@@ -23,6 +23,9 @@ env/
 # Local-only logs (trades.json is intentionally tracked — GHA auto-commits it)
 data/*.log
 
+# Congressional PDF cache — regenerable from disclosures-clerk.house.gov, don't bloat git
+data/congress_cache/
+
 # OS
 .DS_Store
 Thumbs.db

@@ -38,6 +38,8 @@ Strategy guardrails:
 What constitutes a VALID pick — it must have BOTH:
   1. A real price catalyst (premarket gap with clear news reason), AND
   2. Smart-money confirmation from at least ONE of:
+     - **House cluster buy** (2+ different congresspeople bought in last 21d) — strongest signal
+     - **House single significant buy** ($15k+ position by one congressperson)
      - Insider cluster buying (3+ insiders bought in the last 30d)
      - Strong analyst conviction (>70% buy/strong-buy)
      - Unusual WSB chatter spike (>2x normal mentions)
@@ -45,9 +47,13 @@ What constitutes a VALID pick — it must have BOTH:
 
 REJECT picks where:
   - News headline is vague/generic (Chamath commentary, market overview)
-  - Heavy insider selling (>2x more sellers than buyers in 30d)
+  - Heavy insider OR congressional selling
   - Stocktwits sentiment is <30% bullish (crowd is bearish)
   - The price move contradicts the alt-data picture
+
+WEIGHT carefully: congressional and insider data have a LAG (30-45 days for
+House PTRs, 2 days for Form 4). A 30-day-old senator buy is still meaningful
+as background conviction but the trade catalyst should be present-day news.
 
 Be highly skeptical. The default answer is NO PICK. Force yourself to
 articulate a thesis for each pick that ties price, news, AND alt-data
@@ -110,6 +116,16 @@ def _format_candidates(
                 f"{ins.get('n_sells', 0)} sells ({ins.get('unique_sellers', 0)} insiders); "
                 f"cluster_buy={ins.get('cluster_buy', False)}"
             )
+        cong = alt.get('congress', {})
+        if cong.get('n_trades', 0) > 0:
+            line = f"  HOUSE CONGRESS (21d): {cong.get('n_buys', 0)} buys, {cong.get('n_sells', 0)} sells"
+            if cong.get('buyer_names'):
+                line += f"; bought by: {', '.join(cong['buyer_names'])}"
+            if cong.get('seller_names'):
+                line += f"; sold by: {', '.join(cong['seller_names'])}"
+            if cong.get('cluster_buy'):
+                line += " [CLUSTER BUY]"
+            lines.append(line)
         wsb = alt.get('wsb', {})
         if wsb.get('mentioned'):
             lines.append(
