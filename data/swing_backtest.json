@@ -1,0 +1,731 @@
+{
+  "ran_at": "2026-05-17T09:22:27.825884",
+  "is_window_days": 42,
+  "oos_window_days": 82,
+  "is_spy_pct": 11.753,
+  "oos_spy_pct": 0.205,
+  "mega_universe_size": 38,
+  "mid_universe_size": 33,
+  "results": [
+    {
+      "name": "mega_longContUp_hold1d",
+      "universe": "mega",
+      "hold_days": 1,
+      "direction": "long",
+      "gap_side": "up",
+      "cost_pct": 0.05,
+      "description": "mega longContUp gap-pick, hold 1 days, cost 0.05%",
+      "in_sample": {
+        "return_pct": 27.28,
+        "n_trades": 60,
+        "win_rate_pct": 50.0,
+        "avg_win_pct": 5.544,
+        "avg_loss_pct": -2.947,
+        "max_dd_pct": -6.296,
+        "sharpe": 3.55
+      },
+      "out_of_sample": {
+        "return_pct": -1.591,
+        "n_trades": 98,
+        "win_rate_pct": 50.0,
+        "avg_win_pct": 3.864,
+        "avg_loss_pct": -3.851,
+        "max_dd_pct": -21.301,
+        "sharpe": 0.02
+      },
+      "is_alpha": 15.527,
+      "oos_alpha": -1.796,
+      "robust": false
+    },
+    {
+      "name": "mega_fadeUp_hold1d",
+      "universe": "mega",
+      "hold_days": 1,
+      "direction": "short",
+      "gap_side": "up",
+      "cost_pct": 0.05,
+      "description": "mega fadeUp gap-pick, hold 1 days, cost 0.05%",
+      "in_sample": {
+        "return_pct": -25.499,
+        "n_trades": 60,
+        "win_rate_pct": 50.0,
+        "avg_win_pct": 2.847,
+        "avg_loss_pct": -5.644,
+        "max_dd_pct": -33.547,
+        "sharpe": -3.82
+      },
+      "out_of_sample": {
+        "return_pct": -5.084,
+        "n_trades": 98,
+        "win_rate_pct": 50.0,
+        "avg_win_pct": 3.751,
+        "avg_loss_pct": -3.964,
+        "max_dd_pct": -26.509,
+        "sharpe": -0.32
+      },
+      "is_alpha": -37.252,
+      "oos_alpha": -5.289,
+      "robust": false
+    },
+    {
+      "name": "mega_longContDown_hold1d",
+      "universe": "mega",
+      "hold_days": 1,
+      "direction": "long",
+      "gap_side": "down",
+      "cost_pct": 0.05,
+      "description": "mega longContDown gap-pick, hold 1 days, cost 0.05%",
+      "in_sample": {
+        "return_pct": -12.054,
+        "n_trades": 46,
+        "win_rate_pct": 39.1,
+        "avg_win_pct": 3.147,
+        "avg_loss_pct": -3.342,
+        "max_dd_pct": -15.147,
+        "sharpe": -2.65
+      },
+      "out_of_sample": {
+        "return_pct": -8.164,
+        "n_trades": 82,
+        "win_rate_pct": 48.8,
+        "avg_win_pct": 2.963,
+        "avg_loss_pct": -3.376,
+        "max_dd_pct": -21.693,
+        "sharpe": -1.04
+      },
+      "is_alpha": -23.807,
+      "oos_alpha": -8.369,
+      "robust": false
+    },
+    {
+      "name": "mega_longContUp_hold3d",
+      "universe": "mega",
+      "hold_days": 3,
+      "direction": "long",
+      "gap_side": "up",
+      "cost_pct": 0.05,
+      "description": "mega longContUp gap-pick, hold 3 days, cost 0.05%",
+      "in_sample": {
+        "return_pct": 31.341,
+        "n_trades": 60,
+        "win_rate_pct": 61.7,
+        "avg_win_pct": 7.694,
+        "avg_loss_pct": -5.088,
+        "max_dd_pct": -3.786,
+        "sharpe": 5.61
+      },
+      "out_of_sample": {
+        "return_pct": 1.063,
+        "n_trades": 98,
+        "win_rate_pct": 50.0,
+        "avg_win_pct": 5.085,
+        "avg_loss_pct": -5.312,
+        "max_dd_pct": -17.933,
+        "sharpe": 0.44
+      },
+      "is_alpha": 19.588,
+      "oos_alpha": 0.858,
+      "robust": true
+    },
+    {
+      "name": "mega_fadeUp_hold3d",
+      "universe": "mega",
+      "hold_days": 3,
+      "direction": "short",
+      "gap_side": "up",
+      "cost_pct": 0.05,
+      "description": "mega fadeUp gap-pick, hold 3 days, cost 0.05%",
+      "in_sample": {
+        "return_pct": -26.411,
+        "n_trades": 60,
+        "win_rate_pct": 38.3,
+        "avg_win_pct": 4.988,
+        "avg_loss_pct": -7.794,
+        "max_dd_pct": -33.962,
+        "sharpe": -5.78
+      },
+      "out_of_sample": {
+        "return_pct": -4.731,
+        "n_trades": 98,
+        "win_rate_pct": 50.0,
+        "avg_win_pct": 5.212,
+        "avg_loss_pct": -5.185,
+        "max_dd_pct": -20.485,
+        "sharpe": -0.68
+      },
+      "is_alpha": -38.164,
+      "oos_alpha": -4.936,
+      "robust": false
+    },
+    {
+      "name": "mega_longContDown_hold3d",
+      "universe": "mega",
+      "hold_days": 3,
+      "direction": "long",
+      "gap_side": "down",
+      "cost_pct": 0.05,
+      "description": "mega longContDown gap-pick, hold 3 days, cost 0.05%",
+      "in_sample": {
+        "return_pct": -0.665,
+        "n_trades": 46,
+        "win_rate_pct": 43.5,
+        "avg_win_pct": 5.25,
+        "avg_loss_pct": -4.009,
+        "max_dd_pct": -7.13,
+        "sharpe": 0.4
+      },
+      "out_of_sample": {
+        "return_pct": -5.221,
+        "n_trades": 82,
+        "win_rate_pct": 46.3,
+        "avg_win_pct": 4.602,
+        "avg_loss_pct": -4.742,
+        "max_dd_pct": -16.448,
+        "sharpe": -0.62
+      },
+      "is_alpha": -12.418,
+      "oos_alpha": -5.426,
+      "robust": false
+    },
+    {
+      "name": "mega_longContUp_hold5d",
+      "universe": "mega",
+      "hold_days": 5,
+      "direction": "long",
+      "gap_side": "up",
+      "cost_pct": 0.05,
+      "description": "mega longContUp gap-pick, hold 5 days, cost 0.05%",
+      "in_sample": {
+        "return_pct": 22.215,
+        "n_trades": 60,
+        "win_rate_pct": 58.3,
+        "avg_win_pct": 9.724,
+        "avg_loss_pct": -5.078,
+        "max_dd_pct": -2.762,
+        "sharpe": 7.25
+      },
+      "out_of_sample": {
+        "return_pct": 2.393,
+        "n_trades": 98,
+        "win_rate_pct": 52.0,
+        "avg_win_pct": 6.179,
+        "avg_loss_pct": -6.427,
+        "max_dd_pct": -11.699,
+        "sharpe": 0.74
+      },
+      "is_alpha": 10.462,
+      "oos_alpha": 2.188,
+      "robust": true
+    },
+    {
+      "name": "mega_fadeUp_hold5d",
+      "universe": "mega",
+      "hold_days": 5,
+      "direction": "short",
+      "gap_side": "up",
+      "cost_pct": 0.05,
+      "description": "mega fadeUp gap-pick, hold 5 days, cost 0.05%",
+      "in_sample": {
+        "return_pct": -19.604,
+        "n_trades": 60,
+        "win_rate_pct": 41.7,
+        "avg_win_pct": 4.978,
+        "avg_loss_pct": -9.824,
+        "max_dd_pct": -26.026,
+        "sharpe": -7.4
+      },
+      "out_of_sample": {
+        "return_pct": -4.367,
+        "n_trades": 98,
+        "win_rate_pct": 48.0,
+        "avg_win_pct": 6.327,
+        "avg_loss_pct": -6.279,
+        "max_dd_pct": -14.263,
+        "sharpe": -0.94
+      },
+      "is_alpha": -31.357,
+      "oos_alpha": -4.572,
+      "robust": false
+    },
+    {
+      "name": "mega_longContDown_hold5d",
+      "universe": "mega",
+      "hold_days": 5,
+      "direction": "long",
+      "gap_side": "down",
+      "cost_pct": 0.05,
+      "description": "mega longContDown gap-pick, hold 5 days, cost 0.05%",
+      "in_sample": {
+        "return_pct": 7.034,
+        "n_trades": 46,
+        "win_rate_pct": 50.0,
+        "avg_win_pct": 6.736,
+        "avg_loss_pct": -4.204,
+        "max_dd_pct": -1.832,
+        "sharpe": 4.07
+      },
+      "out_of_sample": {
+        "return_pct": 0.099,
+        "n_trades": 82,
+        "win_rate_pct": 43.9,
+        "avg_win_pct": 5.789,
+        "avg_loss_pct": -5.244,
+        "max_dd_pct": -12.353,
+        "sharpe": 0.09
+      },
+      "is_alpha": -4.719,
+      "oos_alpha": -0.106,
+      "robust": false
+    },
+    {
+      "name": "mega_longContUp_hold10d",
+      "universe": "mega",
+      "hold_days": 10,
+      "direction": "long",
+      "gap_side": "up",
+      "cost_pct": 0.05,
+      "description": "mega longContUp gap-pick, hold 10 days, cost 0.05%",
+      "in_sample": {
+        "return_pct": 19.096,
+        "n_trades": 60,
+        "win_rate_pct": 53.3,
+        "avg_win_pct": 15.098,
+        "avg_loss_pct": -5.518,
+        "max_dd_pct": -1.617,
+        "sharpe": 6.58
+      },
+      "out_of_sample": {
+        "return_pct": -3.224,
+        "n_trades": 98,
+        "win_rate_pct": 44.9,
+        "avg_win_pct": 6.551,
+        "avg_loss_pct": -6.384,
+        "max_dd_pct": -9.189,
+        "sharpe": -0.52
+      },
+      "is_alpha": 7.343,
+      "oos_alpha": -3.429,
+      "robust": false
+    },
+    {
+      "name": "mega_fadeUp_hold10d",
+      "universe": "mega",
+      "hold_days": 10,
+      "direction": "short",
+      "gap_side": "up",
+      "cost_pct": 0.05,
+      "description": "mega fadeUp gap-pick, hold 10 days, cost 0.05%",
+      "in_sample": {
+        "return_pct": -16.859,
+        "n_trades": 60,
+        "win_rate_pct": 46.7,
+        "avg_win_pct": 5.418,
+        "avg_loss_pct": -15.198,
+        "max_dd_pct": -17.96,
+        "sharpe": -6.66
+      },
+      "out_of_sample": {
+        "return_pct": 2.448,
+        "n_trades": 98,
+        "win_rate_pct": 54.1,
+        "avg_win_pct": 6.404,
+        "avg_loss_pct": -6.505,
+        "max_dd_pct": -6.515,
+        "sharpe": 0.35
+      },
+      "is_alpha": -28.612,
+      "oos_alpha": 2.243,
+      "robust": false
+    },
+    {
+      "name": "mega_longContDown_hold10d",
+      "universe": "mega",
+      "hold_days": 10,
+      "direction": "long",
+      "gap_side": "down",
+      "cost_pct": 0.05,
+      "description": "mega longContDown gap-pick, hold 10 days, cost 0.05%",
+      "in_sample": {
+        "return_pct": 9.556,
+        "n_trades": 46,
+        "win_rate_pct": 56.5,
+        "avg_win_pct": 10.095,
+        "avg_loss_pct": -4.608,
+        "max_dd_pct": -0.516,
+        "sharpe": 5.86
+      },
+      "out_of_sample": {
+        "return_pct": 5.943,
+        "n_trades": 82,
+        "win_rate_pct": 53.7,
+        "avg_win_pct": 6.622,
+        "avg_loss_pct": -6.54,
+        "max_dd_pct": -6.151,
+        "sharpe": 2.0
+      },
+      "is_alpha": -2.197,
+      "oos_alpha": 5.738,
+      "robust": false
+    },
+    {
+      "name": "mid_longContUp_hold1d",
+      "universe": "mid",
+      "hold_days": 1,
+      "direction": "long",
+      "gap_side": "up",
+      "cost_pct": 0.15,
+      "description": "mid longContUp gap-pick, hold 1 days, cost 0.15%",
+      "in_sample": {
+        "return_pct": -3.292,
+        "n_trades": 55,
+        "win_rate_pct": 41.8,
+        "avg_win_pct": 4.961,
+        "avg_loss_pct": -3.774,
+        "max_dd_pct": -14.833,
+        "sharpe": -0.35
+      },
+      "out_of_sample": {
+        "return_pct": -22.48,
+        "n_trades": 103,
+        "win_rate_pct": 47.6,
+        "avg_win_pct": 3.201,
+        "avg_loss_pct": -4.236,
+        "max_dd_pct": -28.888,
+        "sharpe": -2.26
+      },
+      "is_alpha": -15.045,
+      "oos_alpha": -22.685,
+      "robust": false
+    },
+    {
+      "name": "mid_fadeUp_hold1d",
+      "universe": "mid",
+      "hold_days": 1,
+      "direction": "short",
+      "gap_side": "up",
+      "cost_pct": 0.15,
+      "description": "mid fadeUp gap-pick, hold 1 days, cost 0.15%",
+      "in_sample": {
+        "return_pct": -4.327,
+        "n_trades": 55,
+        "win_rate_pct": 54.5,
+        "avg_win_pct": 3.717,
+        "avg_loss_pct": -4.854,
+        "max_dd_pct": -16.576,
+        "sharpe": -0.52
+      },
+      "out_of_sample": {
+        "return_pct": 12.563,
+        "n_trades": 103,
+        "win_rate_pct": 48.5,
+        "avg_win_pct": 4.269,
+        "avg_loss_pct": -3.254,
+        "max_dd_pct": -12.088,
+        "sharpe": 1.29
+      },
+      "is_alpha": -16.08,
+      "oos_alpha": 12.358,
+      "robust": false
+    },
+    {
+      "name": "mid_longContDown_hold1d",
+      "universe": "mid",
+      "hold_days": 1,
+      "direction": "long",
+      "gap_side": "down",
+      "cost_pct": 0.15,
+      "description": "mid longContDown gap-pick, hold 1 days, cost 0.15%",
+      "in_sample": {
+        "return_pct": 2.283,
+        "n_trades": 55,
+        "win_rate_pct": 56.4,
+        "avg_win_pct": 4.128,
+        "avg_loss_pct": -4.894,
+        "max_dd_pct": -13.902,
+        "sharpe": 0.55
+      },
+      "out_of_sample": {
+        "return_pct": -18.665,
+        "n_trades": 80,
+        "win_rate_pct": 46.2,
+        "avg_win_pct": 3.806,
+        "avg_loss_pct": -4.626,
+        "max_dd_pct": -27.117,
+        "sharpe": -1.98
+      },
+      "is_alpha": -9.47,
+      "oos_alpha": -18.87,
+      "robust": false
+    },
+    {
+      "name": "mid_longContUp_hold3d",
+      "universe": "mid",
+      "hold_days": 3,
+      "direction": "long",
+      "gap_side": "up",
+      "cost_pct": 0.15,
+      "description": "mid longContUp gap-pick, hold 3 days, cost 0.15%",
+      "in_sample": {
+        "return_pct": 3.63,
+        "n_trades": 55,
+        "win_rate_pct": 52.7,
+        "avg_win_pct": 5.648,
+        "avg_loss_pct": -5.79,
+        "max_dd_pct": -8.812,
+        "sharpe": 0.95
+      },
+      "out_of_sample": {
+        "return_pct": -26.684,
+        "n_trades": 103,
+        "win_rate_pct": 47.6,
+        "avg_win_pct": 3.625,
+        "avg_loss_pct": -5.991,
+        "max_dd_pct": -31.836,
+        "sharpe": -3.41
+      },
+      "is_alpha": -8.123,
+      "oos_alpha": -26.889,
+      "robust": false
+    },
+    {
+      "name": "mid_fadeUp_hold3d",
+      "universe": "mid",
+      "hold_days": 3,
+      "direction": "short",
+      "gap_side": "up",
+      "cost_pct": 0.15,
+      "description": "mid fadeUp gap-pick, hold 3 days, cost 0.15%",
+      "in_sample": {
+        "return_pct": -7.761,
+        "n_trades": 55,
+        "win_rate_pct": 45.5,
+        "avg_win_pct": 5.715,
+        "avg_loss_pct": -5.755,
+        "max_dd_pct": -18.341,
+        "sharpe": -1.55
+      },
+      "out_of_sample": {
+        "return_pct": 25.267,
+        "n_trades": 103,
+        "win_rate_pct": 50.5,
+        "avg_win_pct": 5.915,
+        "avg_loss_pct": -3.776,
+        "max_dd_pct": -10.586,
+        "sharpe": 2.69
+      },
+      "is_alpha": -19.514,
+      "oos_alpha": 25.062,
+      "robust": false
+    },
+    {
+      "name": "mid_longContDown_hold3d",
+      "universe": "mid",
+      "hold_days": 3,
+      "direction": "long",
+      "gap_side": "down",
+      "cost_pct": 0.15,
+      "description": "mid longContDown gap-pick, hold 3 days, cost 0.15%",
+      "in_sample": {
+        "return_pct": 8.455,
+        "n_trades": 55,
+        "win_rate_pct": 56.4,
+        "avg_win_pct": 6.076,
+        "avg_loss_pct": -5.559,
+        "max_dd_pct": -5.847,
+        "sharpe": 1.39
+      },
+      "out_of_sample": {
+        "return_pct": -20.203,
+        "n_trades": 80,
+        "win_rate_pct": 47.5,
+        "avg_win_pct": 5.603,
+        "avg_loss_pct": -7.219,
+        "max_dd_pct": -26.452,
+        "sharpe": -2.23
+      },
+      "is_alpha": -3.298,
+      "oos_alpha": -20.408,
+      "robust": false
+    },
+    {
+      "name": "mid_longContUp_hold5d",
+      "universe": "mid",
+      "hold_days": 5,
+      "direction": "long",
+      "gap_side": "up",
+      "cost_pct": 0.15,
+      "description": "mid longContUp gap-pick, hold 5 days, cost 0.15%",
+      "in_sample": {
+        "return_pct": 7.626,
+        "n_trades": 55,
+        "win_rate_pct": 52.7,
+        "avg_win_pct": 7.477,
+        "avg_loss_pct": -6.495,
+        "max_dd_pct": -4.274,
+        "sharpe": 2.02
+      },
+      "out_of_sample": {
+        "return_pct": -16.835,
+        "n_trades": 103,
+        "win_rate_pct": 43.7,
+        "avg_win_pct": 5.149,
+        "avg_loss_pct": -6.435,
+        "max_dd_pct": -22.631,
+        "sharpe": -2.43
+      },
+      "is_alpha": -4.127,
+      "oos_alpha": -17.04,
+      "robust": false
+    },
+    {
+      "name": "mid_fadeUp_hold5d",
+      "universe": "mid",
+      "hold_days": 5,
+      "direction": "short",
+      "gap_side": "up",
+      "cost_pct": 0.15,
+      "description": "mid fadeUp gap-pick, hold 5 days, cost 0.15%",
+      "in_sample": {
+        "return_pct": -9.422,
+        "n_trades": 55,
+        "win_rate_pct": 45.5,
+        "avg_win_pct": 6.448,
+        "avg_loss_pct": -7.522,
+        "max_dd_pct": -14.178,
+        "sharpe": -2.5
+      },
+      "out_of_sample": {
+        "return_pct": 14.435,
+        "n_trades": 103,
+        "win_rate_pct": 52.4,
+        "avg_win_pct": 6.598,
+        "avg_loss_pct": -5.013,
+        "max_dd_pct": -7.731,
+        "sharpe": 1.84
+      },
+      "is_alpha": -21.175,
+      "oos_alpha": 14.23,
+      "robust": false
+    },
+    {
+      "name": "mid_longContDown_hold5d",
+      "universe": "mid",
+      "hold_days": 5,
+      "direction": "long",
+      "gap_side": "down",
+      "cost_pct": 0.15,
+      "description": "mid longContDown gap-pick, hold 5 days, cost 0.15%",
+      "in_sample": {
+        "return_pct": 14.156,
+        "n_trades": 55,
+        "win_rate_pct": 54.5,
+        "avg_win_pct": 8.013,
+        "avg_loss_pct": -5.912,
+        "max_dd_pct": -5.296,
+        "sharpe": 2.72
+      },
+      "out_of_sample": {
+        "return_pct": -13.214,
+        "n_trades": 80,
+        "win_rate_pct": 40.0,
+        "avg_win_pct": 7.935,
+        "avg_loss_pct": -7.727,
+        "max_dd_pct": -17.908,
+        "sharpe": -1.97
+      },
+      "is_alpha": 2.403,
+      "oos_alpha": -13.419,
+      "robust": false
+    },
+    {
+      "name": "mid_longContUp_hold10d",
+      "universe": "mid",
+      "hold_days": 10,
+      "direction": "long",
+      "gap_side": "up",
+      "cost_pct": 0.15,
+      "description": "mid longContUp gap-pick, hold 10 days, cost 0.15%",
+      "in_sample": {
+        "return_pct": 8.709,
+        "n_trades": 55,
+        "win_rate_pct": 58.2,
+        "avg_win_pct": 10.68,
+        "avg_loss_pct": -8.098,
+        "max_dd_pct": -1.613,
+        "sharpe": 4.76
+      },
+      "out_of_sample": {
+        "return_pct": -10.0,
+        "n_trades": 103,
+        "win_rate_pct": 48.5,
+        "avg_win_pct": 5.863,
+        "avg_loss_pct": -9.186,
+        "max_dd_pct": -14.779,
+        "sharpe": -2.4
+      },
+      "is_alpha": -3.044,
+      "oos_alpha": -10.205,
+      "robust": false
+    },
+    {
+      "name": "mid_fadeUp_hold10d",
+      "universe": "mid",
+      "hold_days": 10,
+      "direction": "short",
+      "gap_side": "up",
+      "cost_pct": 0.15,
+      "description": "mid fadeUp gap-pick, hold 10 days, cost 0.15%",
+      "in_sample": {
+        "return_pct": -9.133,
+        "n_trades": 55,
+        "win_rate_pct": 41.8,
+        "avg_win_pct": 7.798,
+        "avg_loss_pct": -10.98,
+        "max_dd_pct": -10.833,
+        "sharpe": -5.07
+      },
+      "out_of_sample": {
+        "return_pct": 8.518,
+        "n_trades": 103,
+        "win_rate_pct": 50.5,
+        "avg_win_pct": 9.057,
+        "avg_loss_pct": -6.043,
+        "max_dd_pct": -6.236,
+        "sharpe": 1.96
+      },
+      "is_alpha": -20.886,
+      "oos_alpha": 8.313,
+      "robust": false
+    },
+    {
+      "name": "mid_longContDown_hold10d",
+      "universe": "mid",
+      "hold_days": 10,
+      "direction": "long",
+      "gap_side": "down",
+      "cost_pct": 0.15,
+      "description": "mid longContDown gap-pick, hold 10 days, cost 0.15%",
+      "in_sample": {
+        "return_pct": 15.845,
+        "n_trades": 55,
+        "win_rate_pct": 58.2,
+        "avg_win_pct": 11.915,
+        "avg_loss_pct": -6.973,
+        "max_dd_pct": -2.107,
+        "sharpe": 5.29
+      },
+      "out_of_sample": {
+        "return_pct": -11.151,
+        "n_trades": 80,
+        "win_rate_pct": 36.2,
+        "avg_win_pct": 8.127,
+        "avg_loss_pct": -8.749,
+        "max_dd_pct": -13.627,
+        "sharpe": -3.09
+      },
+      "is_alpha": 4.092,
+      "oos_alpha": -11.356,
+      "robust": false
+    }
+  ]
+}
