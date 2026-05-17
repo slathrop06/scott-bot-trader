@@ -158,6 +158,11 @@
     </table>
   </div>
 
+  <div class="card" id="backtest-card" style="margin-bottom: 16px; display:none;">
+    <h2>Backtest (Strategy vs SPY)</h2>
+    <div id="backtest-body"></div>
+  </div>
+
   <footer>
     <a href="https://github.com/slathrop06/scott-bot-trader">github</a>
     &nbsp;·&nbsp;
@@ -171,6 +176,7 @@
 // GH Pages serves only /docs as the site root, so we fetch trades.json
 // from the raw repo URL instead. Public-repo raw content has CORS open.
 const TRADES_URL = 'https://raw.githubusercontent.com/slathrop06/scott-bot-trader/main/data/trades.json';
+const BACKTEST_URL = 'https://raw.githubusercontent.com/slathrop06/scott-bot-trader/main/data/backtest.json';
 const REFRESH_MS = 60_000;
 
 const $ = (id) => document.getElementById(id);
@@ -383,10 +389,62 @@ function renderHistory(entries) {
   }).join('');
 }
 
+function renderBacktest(bt) {
+  if (!bt) return;
+  const card = $('backtest-card');
+  const body = $('backtest-body');
+  card.style.display = 'block';
+  const strat = bt.strategy_return_pct;
+  const spy = bt.spy_return_pct;
+  const alpha = bt.alpha_pct;
+  const stratCls = strat >= 0 ? 'pos' : 'neg';
+  const alphaCls = alpha >= 0 ? 'pos' : 'neg';
+  const ranAt = bt.ran_at ? new Date(bt.ran_at).toLocaleDateString() : '—';
+  const flags = [];
+  if (bt.no_news) flags.push('price-only');
+  if (bt.no_claude) flags.push('naive baseline');
+  const flagStr = flags.length ? ` (${flags.join(', ')})` : '';
+
+  body.innerHTML = `
+    <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 12px;">
+      <div>
+        <div class="small">Strategy</div>
+        <div class="big ${stratCls}">${fmtPct(strat)}</div>
+      </div>
+      <div>
+        <div class="small">SPY (buy & hold)</div>
+        <div class="big ${spy >= 0 ? 'pos' : 'neg'}">${fmtPct(spy)}</div>
+      </div>
+      <div>
+        <div class="small">Alpha</div>
+        <div class="big ${alphaCls}">${fmtPct(alpha)}</div>
+      </div>
+    </div>
+    <table>
+      <tbody>
+        <tr><td>Trading days</td><td class="num">${bt.trading_days_with_picks} / ${bt.trading_days_simulated} active</td></tr>
+        <tr><td>Win rate</td><td class="num">${bt.win_rate_pct.toFixed(1)}%</td></tr>
+        <tr><td>Avg win / loss</td><td class="num">+${bt.avg_win_pct.toFixed(2)}% / ${bt.avg_loss_pct.toFixed(2)}%</td></tr>
+        <tr><td>Max drawdown</td><td class="num neg">${bt.max_drawdown_pct.toFixed(2)}%</td></tr>
+        <tr><td>Annualized Sharpe</td><td class="num">${bt.sharpe_annualized.toFixed(2)}</td></tr>
+        <tr><td>Weekly pace</td><td class="num ${bt.weekly_pace_pct >= bt.target_weekly_pct ? 'pos' : ''}">${fmtPct(bt.weekly_pace_pct)} (target +${bt.target_weekly_pct}%)</td></tr>
+      </tbody>
+    </table>
+    <div class="small" style="margin-top:10px;">
+      Ran ${ranAt} · ${bt.lookback_days}-day lookback${flagStr}.
+      Conservative: when both stop and target touch intraday, assumes stop fills first.
+    </div>
+  `;
+}
+
 async function load() {
   try {
-    const r = await fetch(TRADES_URL + '?t=' + Date.now(), { cache: 'no-store' });
-    const entries = r.ok ? await r.json() : [];
+    const [tradesResp, btResp] = await Promise.all([
+      fetch(TRADES_URL + '?t=' + Date.now(), { cache: 'no-store' }),
+      fetch(BACKTEST_URL + '?t=' + Date.now(), { cache: 'no-store' }),
+    ]);
+    const entries = tradesResp.ok ? await tradesResp.json() : [];
+    const backtest = btResp.ok ? await btResp.json() : null;
 
     const morningHealth = renderRunStatus('morning', expectedMorningSoFar(), entries);
     const eodHealth = renderRunStatus('eod', expectedEODSoFar(), entries);
@@ -394,6 +452,7 @@ async function load() {
     renderPicks(entries);
     renderWeekly(entries);
     renderHistory(entries);
+    renderBacktest(backtest);
 
     $('refreshed').textContent = `updated ${new Date().toLocaleTimeString()}`;
   } catch (e) {

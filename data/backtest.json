@@ -1,0 +1,1082 @@
+{
+  "ran_at": "2026-05-17T13:08:52.183638+00:00",
+  "lookback_days": 60,
+  "trading_days_simulated": 77,
+  "trading_days_with_picks": 47,
+  "no_news": false,
+  "no_claude": false,
+  "strategy_return_pct": -9.083,
+  "spy_return_pct": 6.704,
+  "alpha_pct": -15.787,
+  "win_rate_pct": 29.79,
+  "avg_win_pct": 0.395,
+  "avg_loss_pct": -0.484,
+  "max_drawdown_pct": -9.249,
+  "sharpe_annualized": -6.737,
+  "weekly_pace_pct": -0.966,
+  "target_weekly_pct": 1.5,
+  "daily": [
+    {
+      "date": "2026-01-27",
+      "n_picks": 2,
+      "pnl_pct": -0.4446,
+      "outcomes": [
+        {
+          "symbol": "CRM",
+          "catalyst": "Salesforce secures $5.6B US Army contract to modernize military systems",
+          "open": 231.94,
+          "pct": -1.0,
+          "exit": "stop"
+        },
+        {
+          "symbol": "AAPL",
+          "catalyst": "Fitz-Gerald CIO touts 'very impressive' Apple AI release this spring, compares hype to iPhone lead-up",
+          "open": 259.17,
+          "pct": -0.347,
+          "exit": "eod_close"
+        }
+      ]
+    },
+    {
+      "date": "2026-01-28",
+      "n_picks": 3,
+      "pnl_pct": 0.3731,
+      "outcomes": [
+        {
+          "symbol": "INTC",
+          "catalyst": "ASML and Texas Instruments strong quarterly results and positive outlook lifting chip stocks sector-wide",
+          "open": 46.6,
+          "pct": 2.0,
+          "exit": "target"
+        },
+        {
+          "symbol": "NVDA",
+          "catalyst": "China approved import of first batch of Nvidia's H200 AI chips, plus broader chip sector strength from ASML/TXN",
+          "open": 191.27,
+          "pct": 0.131,
+          "exit": "eod_close"
+        },
+        {
+          "symbol": "SBUX",
+          "catalyst": "Q1 earnings scheduled to drop today (January 28, 2026), with +6.87% premarket move suggesting positive reaction",
+          "open": 102.3,
+          "pct": -1.0,
+          "exit": "stop (conservative \u2014 both touched)"
+        }
+      ]
+    },
+    {
+      "date": "2026-01-29",
+      "n_picks": 0,
+      "pnl_pct": 0,
+      "outcomes": []
+    },
+    {
+      "date": "2026-01-30",
+      "n_picks": 0,
+      "pnl_pct": 0,
+      "outcomes": []
+    },
+    {
+      "date": "2026-02-02",
+      "n_picks": 0,
+      "pnl_pct": 0,
+      "outcomes": []
+    },
+    {
+      "date": "2026-02-03",
+      "n_picks": 2,
+      "pnl_pct": -0.66,
+      "outcomes": [
+        {
+          "symbol": "PLTR",
+          "catalyst": "Q4 earnings beat with 2026 guidance doubled; CEO Karp says existing customers are sharply increasing spending on AI",
+          "open": 165.05,
+          "pct": -1.0,
+          "exit": "stop"
+        },
+        {
+          "symbol": "BA",
+          "catalyst": "Air Cambodia places largest single-aisle order for 20 737 MAX jets; additional contracts with US Air Force and Air India",
+          "open": 236.42,
+          "pct": -1.0,
+          "exit": "stop"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-04",
+      "n_picks": 1,
+      "pnl_pct": 0.66,
+      "outcomes": [
+        {
+          "symbol": "AAPL",
+          "catalyst": "Apple hit a record 69% U.S. smartphone market share in Q4 2025 \u2014 biggest iPhone quarter in history",
+          "open": 272.29,
+          "pct": 2.0,
+          "exit": "target"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-05",
+      "n_picks": 3,
+      "pnl_pct": -0.8659,
+      "outcomes": [
+        {
+          "symbol": "COST",
+          "catalyst": "Costco rallies on strong January sales report, approaching 52-week high; BofA flags record inflows into consumer staples amid tech selloff",
+          "open": 995.5,
+          "pct": -0.624,
+          "exit": "eod_close"
+        },
+        {
+          "symbol": "AVGO",
+          "catalyst": "Broadcom shares rising after Alphabet forecasted a massive jump in 2026 capex, signaling more AI chip demand",
+          "open": 314.34,
+          "pct": -1.0,
+          "exit": "stop (conservative \u2014 both touched)"
+        },
+        {
+          "symbol": "CAT",
+          "catalyst": "Caterpillar Quality score surges 22 points on record $51B backlog and AI data center demand offsetting tariff headwinds",
+          "open": 681.54,
+          "pct": -1.0,
+          "exit": "stop"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-06",
+      "n_picks": 2,
+      "pnl_pct": -0.66,
+      "outcomes": [
+        {
+          "symbol": "AVGO",
+          "catalyst": "Chip stocks rallying on upbeat AI earnings/spending signals; Cathie Wood's Ark Invest bought Broadcom shares",
+          "open": 320.1,
+          "pct": -1.0,
+          "exit": "stop (conservative \u2014 both touched)"
+        },
+        {
+          "symbol": "NVDA",
+          "catalyst": "Chip stocks rising on AI capex signals; Amazon defended massive AI spending saying AWS capacity monetizes quickly",
+          "open": 176.69,
+          "pct": -1.0,
+          "exit": "stop (conservative \u2014 both touched)"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-09",
+      "n_picks": 0,
+      "pnl_pct": 0,
+      "outcomes": []
+    },
+    {
+      "date": "2026-02-10",
+      "n_picks": 2,
+      "pnl_pct": -0.66,
+      "outcomes": [
+        {
+          "symbol": "ORCL",
+          "catalyst": "DA Davidson upgrade to Buy, driving premarket surge",
+          "open": 160.0,
+          "pct": -1.0,
+          "exit": "stop (conservative \u2014 both touched)"
+        },
+        {
+          "symbol": "AVGO",
+          "catalyst": "TSM blowout January revenue ($12.7B) signaling strong AI semi demand, lifting chip names",
+          "open": 347.47,
+          "pct": -1.0,
+          "exit": "stop"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-11",
+      "n_picks": 0,
+      "pnl_pct": 0,
+      "outcomes": []
+    },
+    {
+      "date": "2026-02-12",
+      "n_picks": 2,
+      "pnl_pct": -0.66,
+      "outcomes": [
+        {
+          "symbol": "MCD",
+          "catalyst": "Q4 results beat estimates thanks to $5 meal popularity; menu adapting for GLP-1 users",
+          "open": 329.83,
+          "pct": -1.0,
+          "exit": "stop"
+        },
+        {
+          "symbol": "NVDA",
+          "catalyst": "Analyst notes $700B AI capex from hyperscalers with NVDA capturing 40-50%; new Taipei HQ approved",
+          "open": 193.03,
+          "pct": -1.0,
+          "exit": "stop"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-13",
+      "n_picks": 0,
+      "pnl_pct": 0,
+      "outcomes": []
+    },
+    {
+      "date": "2026-02-17",
+      "n_picks": 0,
+      "pnl_pct": 0,
+      "outcomes": []
+    },
+    {
+      "date": "2026-02-18",
+      "n_picks": 0,
+      "pnl_pct": 0,
+      "outcomes": []
+    },
+    {
+      "date": "2026-02-19",
+      "n_picks": 0,
+      "pnl_pct": 0,
+      "outcomes": []
+    },
+    {
+      "date": "2026-02-20",
+      "n_picks": 0,
+      "pnl_pct": 0,
+      "outcomes": []
+    },
+    {
+      "date": "2026-02-23",
+      "n_picks": 0,
+      "pnl_pct": 0,
+      "outcomes": []
+    },
+    {
+      "date": "2026-02-24",
+      "n_picks": 2,
+      "pnl_pct": -0.66,
+      "outcomes": [
+        {
+          "symbol": "AMD",
+          "catalyst": "Landmark multi-year AI partnership with Meta announced overnight, driving +7.64% premarket move",
+          "open": 211.63,
+          "pct": -1.0,
+          "exit": "stop (conservative \u2014 both touched)"
+        },
+        {
+          "symbol": "HD",
+          "catalyst": "Home Depot earnings report today, stock gapping up +3.21% premarket suggesting a beat/positive guidance",
+          "open": 389.11,
+          "pct": -1.0,
+          "exit": "stop"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-25",
+      "n_picks": 0,
+      "pnl_pct": 0,
+      "outcomes": []
+    },
+    {
+      "date": "2026-02-26",
+      "n_picks": 1,
+      "pnl_pct": -0.33,
+      "outcomes": [
+        {
+          "symbol": "CRM",
+          "catalyst": "Q4 growth reaccelerated per Eric Jackson commentary; HSBC dismisses 'SaaSpocalypse' fears saying software will benefit from AI",
+          "open": 196.76,
+          "pct": -1.0,
+          "exit": "stop (conservative \u2014 both touched)"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-27",
+      "n_picks": 0,
+      "pnl_pct": 0,
+      "outcomes": []
+    },
+    {
+      "date": "2026-03-02",
+      "n_picks": 1,
+      "pnl_pct": -0.33,
+      "outcomes": [
+        {
+          "symbol": "XOM",
+          "catalyst": "'Operation Epic Fury' ignites Middle East oil risk premium \u2014 Brent crude surges on U.S.-Iran hostilities, lifting energy giants premarket",
+          "open": 159.35,
+          "pct": -1.0,
+          "exit": "stop"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-03",
+      "n_picks": 0,
+      "pnl_pct": 0,
+      "outcomes": []
+    },
+    {
+      "date": "2026-03-04",
+      "n_picks": 0,
+      "pnl_pct": 0,
+      "outcomes": []
+    },
+    {
+      "date": "2026-03-05",
+      "n_picks": 1,
+      "pnl_pct": -0.33,
+      "outcomes": [
+        {
+          "symbol": "AVGO",
+          "catalyst": "Broadcom reported Q1 double beat, issued strong Q2 guidance, and announced a $10B buyback",
+          "open": 330.18,
+          "pct": -1.0,
+          "exit": "stop"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "n_picks": 0,
+      "pnl_pct": 0,
+      "outcomes": []
+    },
+    {
+      "date": "2026-03-09",
+      "n_picks": 0,
+      "pnl_pct": 0,
+      "outcomes": []
+    },
+    {
+      "date": "2026-03-10",
+      "n_picks": 0,
+      "pnl_pct": 0,
+      "outcomes": []
+    },
+    {
+      "date": "2026-03-11",
+      "n_picks": 1,
+      "pnl_pct": -0.33,
+      "outcomes": [
+        {
+          "symbol": "ORCL",
+          "catalyst": "ORCL gapping +11.4% premarket on heavy volume (51M+ shares), featured as a focus stock in market open coverage \u2014 consistent with a major earnings/cloud guidance beat driving the move",
+          "open": 166.38,
+          "pct": -1.0,
+          "exit": "stop (conservative \u2014 both touched)"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-12",
+      "n_picks": 0,
+      "pnl_pct": 0,
+      "outcomes": []
+    },
+    {
+      "date": "2026-03-13",
+      "n_picks": 1,
+      "pnl_pct": -0.33,
+      "outcomes": [
+        {
+          "symbol": "AVGO",
+          "catalyst": "Broadcom began shipping Tomahawk 6, world's first 102.4 Tbps switch chip, doubling AI network capacity",
+          "open": 337.68,
+          "pct": -1.0,
+          "exit": "stop"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-16",
+      "n_picks": 2,
+      "pnl_pct": 0.33,
+      "outcomes": [
+        {
+          "symbol": "META",
+          "catalyst": "Nebius secures up to $27B AI infrastructure contract with Meta for NVIDIA Vera Rubin-powered compute capacity",
+          "open": 632.0,
+          "pct": -1.0,
+          "exit": "stop"
+        },
+        {
+          "symbol": "NVDA",
+          "catalyst": "Ming-Chi Kuo projects Nvidia LPU/LPX rack shipments to grow 10x by 2027; Meta-Nebius $27B deal uses NVIDIA Vera Rubin compute",
+          "open": 182.97,
+          "pct": 2.0,
+          "exit": "target"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-17",
+      "n_picks": 0,
+      "pnl_pct": 0,
+      "outcomes": []
+    },
+    {
+      "date": "2026-03-18",
+      "n_picks": 0,
+      "pnl_pct": 0,
+      "outcomes": []
+    },
+    {
+      "date": "2026-03-19",
+      "n_picks": 0,
+      "pnl_pct": 0,
+      "outcomes": []
+    },
+    {
+      "date": "2026-03-20",
+      "n_picks": 0,
+      "pnl_pct": 0,
+      "outcomes": []
+    },
+    {
+      "date": "2026-03-23",
+      "n_picks": 2,
+      "pnl_pct": -0.2749,
+      "outcomes": [
+        {
+          "symbol": "NVDA",
+          "catalyst": "Chip stocks gaining as Trump pauses Iran strikes, easing geopolitical risk for tech/semis",
+          "open": 177.26,
+          "pct": -1.0,
+          "exit": "stop"
+        },
+        {
+          "symbol": "AMZN",
+          "catalyst": "Project Hail Mary opened to $140M, a record for Amazon Prime Video's theatrical push, plus tech tape strength on Iran pause",
+          "open": 209.79,
+          "pct": 0.167,
+          "exit": "eod_close"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-24",
+      "n_picks": 0,
+      "pnl_pct": 0,
+      "outcomes": []
+    },
+    {
+      "date": "2026-03-25",
+      "n_picks": 3,
+      "pnl_pct": -0.6366,
+      "outcomes": [
+        {
+          "symbol": "PLTR",
+          "catalyst": "Palantir teaming up with Anduril on Trump's $185 billion Golden Dome missile shield software contract",
+          "open": 157.42,
+          "pct": -1.0,
+          "exit": "stop"
+        },
+        {
+          "symbol": "MSFT",
+          "catalyst": "Microsoft and Nvidia partnership to accelerate AI-powered nuclear energy buildout, plus mentioned $500 price target",
+          "open": 376.92,
+          "pct": -1.0,
+          "exit": "stop"
+        },
+        {
+          "symbol": "AMZN",
+          "catalyst": "Amazon acquires Fauna Robotics, pushing into consumer humanoid robotics with 'Sprout'",
+          "open": 211.56,
+          "pct": 0.071,
+          "exit": "eod_close"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-26",
+      "n_picks": 0,
+      "pnl_pct": 0,
+      "outcomes": []
+    },
+    {
+      "date": "2026-03-27",
+      "n_picks": 0,
+      "pnl_pct": 0,
+      "outcomes": []
+    },
+    {
+      "date": "2026-03-30",
+      "n_picks": 2,
+      "pnl_pct": -0.66,
+      "outcomes": [
+        {
+          "symbol": "AMD",
+          "catalyst": "UBS bullish call with 54% upside target to $310, citing new GW-scale AI megadeals",
+          "open": 204.95,
+          "pct": -1.0,
+          "exit": "stop"
+        },
+        {
+          "symbol": "CAT",
+          "catalyst": "CNBC 'Final Trades' featured Caterpillar as Kevin Simpson's top pick",
+          "open": 702.21,
+          "pct": -1.0,
+          "exit": "stop"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-31",
+      "n_picks": 0,
+      "pnl_pct": 0,
+      "outcomes": []
+    },
+    {
+      "date": "2026-04-01",
+      "n_picks": 1,
+      "pnl_pct": 0.66,
+      "outcomes": [
+        {
+          "symbol": "BA",
+          "catalyst": "Boeing and U.S. Defense Department signed seven-year framework to triple production of PAC-3 seekers at Huntsville plant",
+          "open": 203.5,
+          "pct": 2.0,
+          "exit": "target"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-02",
+      "n_picks": 1,
+      "pnl_pct": -0.33,
+      "outcomes": [
+        {
+          "symbol": "XOM",
+          "catalyst": "IEA warns of severe energy crisis with April set to be 'much worse'; oil surge from Trump's Iran warning lifting energy names",
+          "open": 164.49,
+          "pct": -1.0,
+          "exit": "stop"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "n_picks": 1,
+      "pnl_pct": -0.33,
+      "outcomes": [
+        {
+          "symbol": "NFLX",
+          "catalyst": "Multiple Wall Street analyst upgrades with higher price targets; Benzinga notes analysts forecasting ~22% rally potential",
+          "open": 100.96,
+          "pct": -1.0,
+          "exit": "stop"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-07",
+      "n_picks": 1,
+      "pnl_pct": -0.33,
+      "outcomes": [
+        {
+          "symbol": "AVGO",
+          "catalyst": "Broadcom announced massive AI chip deals with Google and Anthropic, driving +3.9% premarket",
+          "open": 326.73,
+          "pct": -1.0,
+          "exit": "stop (conservative \u2014 both touched)"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-08",
+      "n_picks": 3,
+      "pnl_pct": -0.99,
+      "outcomes": [
+        {
+          "symbol": "INTC",
+          "catalyst": "Intel joins TeraFab project with Tesla, SpaceX, and xAI \u2014 Elon Musk publicly endorses Intel's foundry, called a 'major credibility boost' by analysts",
+          "open": 55.37,
+          "pct": -1.0,
+          "exit": "stop (conservative \u2014 both touched)"
+        },
+        {
+          "symbol": "AMD",
+          "catalyst": "Bullish coverage on AMD momentum from 'agentic AI' demand and gigawatt megadeals, combined with chip-sector tailwind from ceasefire",
+          "open": 232.12,
+          "pct": -1.0,
+          "exit": "stop"
+        },
+        {
+          "symbol": "AVGO",
+          "catalyst": "Broadcom 'repeating Apple playbook' with Google AI deals locking in multi-year revenue visibility",
+          "open": 351.75,
+          "pct": -1.0,
+          "exit": "stop"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-09",
+      "n_picks": 1,
+      "pnl_pct": 0.0747,
+      "outcomes": [
+        {
+          "symbol": "META",
+          "catalyst": "Meta AI infrastructure expansion driving Corning higher, signaling strong momentum; broader AI ad market growth narrative reinforced by OpenAI ad projections",
+          "open": 626.97,
+          "pct": 0.226,
+          "exit": "eod_close"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-10",
+      "n_picks": 0,
+      "pnl_pct": 0,
+      "outcomes": []
+    },
+    {
+      "date": "2026-04-13",
+      "n_picks": 1,
+      "pnl_pct": 0.0569,
+      "outcomes": [
+        {
+          "symbol": "CVX",
+          "catalyst": "U.S.-Iran nuclear talks fail and Trump announces Strait of Hormuz blockade; oil prices surge over 7% on supply fears",
+          "open": 191.45,
+          "pct": 0.172,
+          "exit": "eod_close"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-14",
+      "n_picks": 1,
+      "pnl_pct": -0.33,
+      "outcomes": [
+        {
+          "symbol": "ORCL",
+          "catalyst": "Bloom Energy announces expanded partnership with Oracle, driving ORCL +7.9% premarket and rebounding off technical support.",
+          "open": 167.93,
+          "pct": -1.0,
+          "exit": "stop"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-15",
+      "n_picks": 2,
+      "pnl_pct": 0.33,
+      "outcomes": [
+        {
+          "symbol": "AVGO",
+          "catalyst": "Broadcom extends partnership with Meta to support multi-gigawatts of Meta's MTIA silicon AI chips",
+          "open": 389.88,
+          "pct": -1.0,
+          "exit": "stop"
+        },
+        {
+          "symbol": "MS",
+          "catalyst": "Bank earnings on deck April 15 with sector tailwind from Iran de-escalation and risk-on rally",
+          "open": 188.49,
+          "pct": 2.0,
+          "exit": "target"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-16",
+      "n_picks": 1,
+      "pnl_pct": -0.33,
+      "outcomes": [
+        {
+          "symbol": "AMD",
+          "catalyst": "AMD signs landmark AI partnership with French government for exascale supercomputer plus multi-billion dollar Meta deal; analysts raising targets",
+          "open": 264.99,
+          "pct": -1.0,
+          "exit": "stop (conservative \u2014 both touched)"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-17",
+      "n_picks": 2,
+      "pnl_pct": -0.66,
+      "outcomes": [
+        {
+          "symbol": "AMZN",
+          "catalyst": "Truist raised AMZN price target; Benzinga article 'Amazon To Rally More Than 14%' citing top analyst forecasts and CNBC Final Trades bullish call",
+          "open": 254.99,
+          "pct": -1.0,
+          "exit": "stop"
+        },
+        {
+          "symbol": "CRM",
+          "catalyst": "Salesforce unveiled 'Headless 360' AI-agent platform, an API-first product launch positioning CRM in the AI agent race",
+          "open": 185.43,
+          "pct": -1.0,
+          "exit": "stop"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-20",
+      "n_picks": 1,
+      "pnl_pct": 0.0672,
+      "outcomes": [
+        {
+          "symbol": "XOM",
+          "catalyst": "US-Iran tensions flare and hopes for Middle East peace deal dashed, driving energy sector higher; US crude exports near record highs",
+          "open": 147.38,
+          "pct": 0.204,
+          "exit": "eod_close"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-21",
+      "n_picks": 1,
+      "pnl_pct": -0.33,
+      "outcomes": [
+        {
+          "symbol": "AMZN",
+          "catalyst": "Anthropic commits over $100B in AWS spend over the next ten years",
+          "open": 255.09,
+          "pct": -1.0,
+          "exit": "stop"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-22",
+      "n_picks": 3,
+      "pnl_pct": 0.0,
+      "outcomes": [
+        {
+          "symbol": "ADBE",
+          "catalyst": "Adobe greenlights $25 billion stock buyback program",
+          "open": 254.8,
+          "pct": -1.0,
+          "exit": "stop"
+        },
+        {
+          "symbol": "PLTR",
+          "catalyst": "Palantir wins $300M USDA contract to modernize farmer services",
+          "open": 148.36,
+          "pct": 2.0,
+          "exit": "target"
+        },
+        {
+          "symbol": "AMD",
+          "catalyst": "Stifel raises AMD price target to $320 citing AI compute demand; stock at record highs",
+          "open": 291.22,
+          "pct": -1.0,
+          "exit": "stop (conservative \u2014 both touched)"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-23",
+      "n_picks": 1,
+      "pnl_pct": -0.33,
+      "outcomes": [
+        {
+          "symbol": "NFLX",
+          "catalyst": "Netflix announced a $25 billion stock buyback boost alongside a Q1 earnings beat and steady full-year growth outlook",
+          "open": 94.06,
+          "pct": -1.0,
+          "exit": "stop"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-24",
+      "n_picks": 2,
+      "pnl_pct": 0.33,
+      "outcomes": [
+        {
+          "symbol": "INTC",
+          "catalyst": "Q1 earnings and revenue crushed analyst estimates, stock at 52-week highs with Cramer/Munster bullish commentary",
+          "open": 82.2,
+          "pct": -1.0,
+          "exit": "stop (conservative \u2014 both touched)"
+        },
+        {
+          "symbol": "AMD",
+          "catalyst": "Sympathy rally from Intel's blowout earnings sparking semiconductor sector strength",
+          "open": 336.76,
+          "pct": 2.0,
+          "exit": "target"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-27",
+      "n_picks": 0,
+      "pnl_pct": 0,
+      "outcomes": []
+    },
+    {
+      "date": "2026-04-28",
+      "n_picks": 1,
+      "pnl_pct": 0.014,
+      "outcomes": [
+        {
+          "symbol": "CVX",
+          "catalyst": "Treasury Secretary Bessent warns Iran's oil production is 'creaking' and will soon collapse under US blockade/sanctions, bullish for non-Iranian oil supply",
+          "open": 188.28,
+          "pct": 0.042,
+          "exit": "eod_close"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-29",
+      "n_picks": 2,
+      "pnl_pct": -0.4811,
+      "outcomes": [
+        {
+          "symbol": "V",
+          "catalyst": "Visa Q1 results beat with strong revenue growth, record buybacks, and raised full-year guidance",
+          "open": 336.4,
+          "pct": -0.458,
+          "exit": "eod_close"
+        },
+        {
+          "symbol": "SBUX",
+          "catalyst": "Multiple analyst price target raises with calls for 18%+ upside",
+          "open": 102.0,
+          "pct": -1.0,
+          "exit": "stop (conservative \u2014 both touched)"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-30",
+      "n_picks": 2,
+      "pnl_pct": 0.33,
+      "outcomes": [
+        {
+          "symbol": "GOOGL",
+          "catalyst": "Alphabet's Q1 earnings backed AI capex with massive real revenue run rates, 'silencing bears' per Benzinga's 'Prove It' Quarter coverage",
+          "open": 374.07,
+          "pct": -1.0,
+          "exit": "stop (conservative \u2014 both touched)"
+        },
+        {
+          "symbol": "CAT",
+          "catalyst": "Caterpillar reported earnings and is gapping up +5.75% alongside positive earnings watchlist coverage",
+          "open": 856.63,
+          "pct": 2.0,
+          "exit": "target"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-01",
+      "n_picks": 1,
+      "pnl_pct": 0.66,
+      "outcomes": [
+        {
+          "symbol": "AAPL",
+          "catalyst": "BofA, Deepwater, and Maxim positive on Apple's record March quarter; analysts constructive on AI narratives and gross margins despite memory cost worries",
+          "open": 278.86,
+          "pct": 2.0,
+          "exit": "target"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-04",
+      "n_picks": 2,
+      "pnl_pct": -0.66,
+      "outcomes": [
+        {
+          "symbol": "PLTR",
+          "catalyst": "Q1 earnings due May 4 with analysts expecting EPS of 28c vs 13c YoY; Wall Street forecasters revamping expectations higher ahead of print",
+          "open": 147.75,
+          "pct": -1.0,
+          "exit": "stop"
+        },
+        {
+          "symbol": "INTC",
+          "catalyst": "Intel cleared antitrust hurdle for SambaNova deal; technicals pressing 52-week highs near $100 with $30B in reported government gains",
+          "open": 99.18,
+          "pct": -1.0,
+          "exit": "stop"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-05",
+      "n_picks": 2,
+      "pnl_pct": 0.33,
+      "outcomes": [
+        {
+          "symbol": "INTC",
+          "catalyst": "Apple holding preliminary processor talks with Intel as potential chip supplier to diversify away from TSMC",
+          "open": 100.51,
+          "pct": 2.0,
+          "exit": "target"
+        },
+        {
+          "symbol": "AMZN",
+          "catalyst": "BNP Paribas raises AMZN price target to $345 citing 50% AWS backlog surge and strong AI demand",
+          "open": 276.08,
+          "pct": -1.0,
+          "exit": "stop"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-06",
+      "n_picks": 2,
+      "pnl_pct": -0.66,
+      "outcomes": [
+        {
+          "symbol": "DIS",
+          "catalyst": "Disney Q2 earnings beat, raised $8B buyback target, forecast faster growth and strong park demand",
+          "open": 106.52,
+          "pct": -1.0,
+          "exit": "stop (conservative \u2014 both touched)"
+        },
+        {
+          "symbol": "AMD",
+          "catalyst": "Q1 earnings beat with data center revenue up 57% on AI demand, stock hitting new 52-week high",
+          "open": 409.49,
+          "pct": -1.0,
+          "exit": "stop (conservative \u2014 both touched)"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-07",
+      "n_picks": 2,
+      "pnl_pct": -0.2782,
+      "outcomes": [
+        {
+          "symbol": "MCD",
+          "catalyst": "McDonald's beat Q1 estimates with $2.83 EPS and $6.52B revenue; global sales rose 3.8% as value playbook pays off",
+          "open": 287.83,
+          "pct": -1.0,
+          "exit": "stop"
+        },
+        {
+          "symbol": "MSFT",
+          "catalyst": "Cramer defends $1.1T AI capex spree; Pentagon boosts Scale AI contract \u2014 broader AI tailwind supporting hyperscalers like MSFT",
+          "open": 420.11,
+          "pct": 0.157,
+          "exit": "eod_close"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-08",
+      "n_picks": 2,
+      "pnl_pct": 1.32,
+      "outcomes": [
+        {
+          "symbol": "INTC",
+          "catalyst": "Reports of preliminary talks with Apple to use Intel's foundry services; CEO Lip-Bu Tan reviving relationships with Apple and Musk to challenge TSMC",
+          "open": 111.81,
+          "pct": 2.0,
+          "exit": "target"
+        },
+        {
+          "symbol": "BA",
+          "catalyst": "Trump reportedly inviting Boeing CEO on China trip, reviving hopes for China order book",
+          "open": 233.8,
+          "pct": 2.0,
+          "exit": "target"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-11",
+      "n_picks": 1,
+      "pnl_pct": -0.33,
+      "outcomes": [
+        {
+          "symbol": "INTC",
+          "catalyst": "Apple-Intel preliminary chip deal reported overnight; Apple diversifying away from TSMC, Intel up +4.77% premarket",
+          "open": 130.88,
+          "pct": -1.0,
+          "exit": "stop"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-12",
+      "n_picks": 1,
+      "pnl_pct": -0.1353,
+      "outcomes": [
+        {
+          "symbol": "XOM",
+          "catalyst": "US to loan over 50 million barrels from Strategic Reserve to ease Iran war oil shock \u2014 oil prices rising on Iran war tensions tightening markets",
+          "open": 151.25,
+          "pct": -0.41,
+          "exit": "eod_close"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-13",
+      "n_picks": 2,
+      "pnl_pct": -0.66,
+      "outcomes": [
+        {
+          "symbol": "INTC",
+          "catalyst": "Intel stock surges as Jensen Huang joins Trump's China trip to push for chip market access; Benzinga cites AI server demand and Granite Rapids growth driving Intel toward $132 resistance",
+          "open": 124.1,
+          "pct": -1.0,
+          "exit": "stop"
+        },
+        {
+          "symbol": "NVDA",
+          "catalyst": "Jensen Huang joining Trump's China delegation to reclaim $17B China market lost to export controls",
+          "open": 224.93,
+          "pct": -1.0,
+          "exit": "stop"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-14",
+      "n_picks": 3,
+      "pnl_pct": 0.0,
+      "outcomes": [
+        {
+          "symbol": "SBUX",
+          "catalyst": "Starbucks upgraded to buy by top analyst (analyst upgrade noted in Benzinga's Thursday top upgrades list)",
+          "open": 108.13,
+          "pct": -1.0,
+          "exit": "stop"
+        },
+        {
+          "symbol": "BA",
+          "catalyst": "Treasury Sec. Scott Bessent hinted at 'large' China orders for Boeing during Trump-Xi meeting",
+          "open": 243.52,
+          "pct": -1.0,
+          "exit": "stop"
+        },
+        {
+          "symbol": "NVDA",
+          "catalyst": "Trump cleared NVDA's H200 chip sales to China",
+          "open": 229.85,
+          "pct": 2.0,
+          "exit": "target"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-15",
+      "n_picks": 0,
+      "pnl_pct": 0,
+      "outcomes": []
+    }
+  ]
+}
