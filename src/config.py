@@ -11,6 +11,7 @@ ALPACA_API_KEY = os.environ["ALPACA_API_KEY"]
 ALPACA_SECRET_KEY = os.environ["ALPACA_SECRET_KEY"]
 ALPACA_BASE_URL = os.getenv("ALPACA_BASE_URL", "https://paper-api.alpaca.markets")
 ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
+FINNHUB_API_KEY = os.getenv("FINNHUB_API_KEY", "")  # optional but recommended
 TRADING_MODE = os.getenv("TRADING_MODE", "paper").lower()
 
 # Hard guard: this bot is paper-only until we explicitly flip it.

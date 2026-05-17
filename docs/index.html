@@ -104,6 +104,13 @@
     margin-top: 4px;
   }
   .pick .catalyst strong { color: #0e7490; }
+  .pick .smart-money {
+    grid-column: 1 / -1; font-size: 13px;
+    background: #faf5ff; border-left: 3px solid #7c3aed;
+    padding: 8px 10px; border-radius: 0 6px 6px 0;
+    margin-top: 4px;
+  }
+  .pick .smart-money strong { color: #6d28d9; }
   .pick .meta { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
 
   .empty { color: var(--muted); padding: 12px 0; font-style: italic; }
@@ -316,6 +323,10 @@ function renderPicks(entries) {
         '<span class="pill muted">' + (o.confidence || 'pick') + '</span>'
       }</div>
       ${catalyst ? `<div class="catalyst"><strong>Catalyst:</strong> ${catalyst}</div>` : ''}
+      ${(() => {
+        const smartMoney = claudePicks.find(p => p.symbol === o.symbol)?.smart_money_signals;
+        return smartMoney ? `<div class="smart-money"><strong>Smart money:</strong> ${smartMoney}</div>` : '';
+      })()}
       ${o.rationale ? `<div class="rationale">${o.rationale}</div>` : ''}
       ${o.error ? `<div class="rationale neg">${o.error}</div>` : ''}
     </div>

@@ -7,7 +7,7 @@ from pathlib import Path
 # Allow running as a plain script (`python scripts/morning_run.py`)
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from src import data, earnings, news, picker, safety, trader, tracker  # noqa: E402
+from src import altdata, data, earnings, news, picker, safety, trader, tracker  # noqa: E402
 
 
 def main() -> int:
@@ -49,8 +49,16 @@ def main() -> int:
     news_counts = {s: len(news_by_symbol.get(s, [])) for s in symbols}
     print(f"[morning] news article counts: {news_counts}")
 
-    print("[morning] asking Claude for catalyst-driven picks...")
-    picks_response = picker.pick_stocks(movers, news_by_symbol)
+    print("[morning] fetching alt-data signals (insider/WSB/stocktwits/analysts)...")
+    altdata_by_symbol = altdata.smart_money_snapshot(symbols)
+    # Quick summary for the log
+    for s in symbols:
+        sig = altdata.signal_strength(altdata_by_symbol[s])
+        if sig['score'] != 0:
+            print(f"[morning]   {s}: score={sig['score']:+d}  {'; '.join(sig['reasons'])}")
+
+    print("[morning] asking Claude for catalyst + smart-money picks...")
+    picks_response = picker.pick_stocks(movers, news_by_symbol, altdata_by_symbol)
     print(f"[morning] picks: {json.dumps(picks_response, indent=2)}")
 
     picks = picks_response.get("picks", [])

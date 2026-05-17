@@ -1,13 +1,14 @@
-"""Claude-powered stock picker.
+"""Claude-powered stock picker — smart-money aware.
 
-Takes premarket data + overnight news for each candidate. Claude must identify
-a specific catalyst behind each pick — no catalyst, no pick.
+Takes premarket data + overnight news + alt-data signals (insider trades,
+WSB chatter, Stocktwits sentiment, analyst recs). Claude must articulate
+WHICH signals support each pick — it can't pick on price alone.
 """
 from __future__ import annotations
 import json
 from anthropic import Anthropic
 
-from . import config
+from . import config, altdata
 
 
 _client: Anthropic | None = None
@@ -22,24 +23,35 @@ def client() -> Anthropic:
 
 SYSTEM = """You are a day-trading analyst for a small paper-trading bot.
 
-Each morning you receive premarket data PLUS overnight news headlines for a fixed
-universe of liquid US stocks. Your job: pick 0 to {max_picks} long-only trades to
-enter at market open, hold intraday, and exit by 3:55pm ET.
+You receive premarket data, overnight news, AND alternative-data signals
+for a fixed universe of liquid US stocks. The alt-data is the edge —
+price + news is in everyone's training set, but the combination of
+insider activity + social chatter + analyst views + price action is
+something only a thoughtful synthesis can exploit.
 
 Strategy guardrails:
 - LONG ONLY. No shorts, no options, no leverage.
-- Each pick gets a bracket order: take-profit +2%, stop-loss -1% (2:1 reward:risk).
-- Weekly target is +1.5% on total equity. Conservative beats reckless.
-- The "edge" is your ability to READ THE NEWS. Reject picks where you cannot
-  point to a specific, real catalyst in the provided headlines.
-- A move without a catalyst is noise — likely to mean-revert. Skip it.
-- A catalyst-driven move (earnings beat, FDA approval, M&A, analyst upgrade,
-  guidance raise, major contract) is what you want.
-- If no candidates have real catalysts, return EMPTY picks. Don't force trades.
-- Be wary of stocks with negative catalysts (downgrades, lawsuits, missed earnings) —
-  these often gap down further intraday. Don't buy the dip on bad news.
-- If the news for a candidate contradicts the price move (e.g. bad news but stock up),
-  treat with extra skepticism — could be a short squeeze that reverses fast.
+- Each pick gets a bracket order: take-profit +2%, stop-loss -1%.
+- Weekly target is +1.5% on total equity.
+- Pick 0 to {max_picks} trades. Empty is a fine answer.
+
+What constitutes a VALID pick — it must have BOTH:
+  1. A real price catalyst (premarket gap with clear news reason), AND
+  2. Smart-money confirmation from at least ONE of:
+     - Insider cluster buying (3+ insiders bought in the last 30d)
+     - Strong analyst conviction (>70% buy/strong-buy)
+     - Unusual WSB chatter spike (>2x normal mentions)
+     - Stocktwits sentiment >75% bullish on >10 messages
+
+REJECT picks where:
+  - News headline is vague/generic (Chamath commentary, market overview)
+  - Heavy insider selling (>2x more sellers than buyers in 30d)
+  - Stocktwits sentiment is <30% bullish (crowd is bearish)
+  - The price move contradicts the alt-data picture
+
+Be highly skeptical. The default answer is NO PICK. Force yourself to
+articulate a thesis for each pick that ties price, news, AND alt-data
+together. If you can't, skip it.
 
 Output STRICT JSON only (no prose, no markdown fences):
 {{
@@ -47,45 +59,89 @@ Output STRICT JSON only (no prose, no markdown fences):
     {{
       "symbol": "AAPL",
       "confidence": "high|medium|low",
-      "catalyst": "Specific headline or event driving the move — quote or paraphrase the news",
-      "rationale": "Why this catalyst supports a long intraday — one short sentence"
+      "catalyst": "Specific news event driving the price move",
+      "smart_money_signals": "Which alt-data signals confirm this (cite the numbers)",
+      "rationale": "How catalyst + smart money + price come together — one sentence"
     }}
   ],
   "market_take": "One sentence on overall tone today",
-  "skipped_movers": ["TSLA: -5% with no clear news, likely noise", ...]
+  "skipped_movers": ["TSLA: insider selling 3:1 vs buying, despite +4% premarket — skip", ...]
 }}
 """
 
 
-def _format_candidates(premarket: list[dict], news_by_symbol: dict[str, list[dict]]) -> str:
+def _format_candidates(
+    premarket: list[dict],
+    news_by_symbol: dict[str, list[dict]],
+    altdata_by_symbol: dict[str, dict],
+) -> str:
     lines = []
     for m in premarket:
         sym = m["symbol"]
         lines.append(f"\n=== {sym} ===")
         lines.append(
-            f"  Premarket: ${m['prev_close']} → ${m['premarket_price']} "
+            f"  PRICE: ${m['prev_close']} → ${m['premarket_price']} "
             f"({m['pct_change']:+.2f}%), vol={m['volume']:,}"
         )
+
+        # News
         articles = news_by_symbol.get(sym, [])
-        if not articles:
-            lines.append("  News (last 16h): (none)")
-        else:
-            lines.append(f"  News (last 16h):")
+        if articles:
+            lines.append("  NEWS (overnight):")
             for a in articles:
                 lines.append(f"    - [{a['source']}] {a['headline']}")
                 if a['summary']:
-                    lines.append(f"      → {a['summary']}")
+                    lines.append(f"      → {a['summary'][:180]}")
+        else:
+            lines.append("  NEWS: (none in last 16h)")
+
+        # Alt-data
+        alt = altdata_by_symbol.get(sym, {})
+        signal = altdata.signal_strength(alt)
+        lines.append(f"  ALT-DATA SIGNAL SCORE: {signal['score']}/10")
+        if signal['reasons']:
+            for r in signal['reasons']:
+                lines.append(f"    · {r}")
+
+        ins = alt.get('insider', {})
+        if ins.get('n_buys', 0) > 0 or ins.get('n_sells', 0) > 0:
+            lines.append(
+                f"  INSIDER (30d): {ins.get('n_buys', 0)} buys ({ins.get('unique_buyers', 0)} insiders), "
+                f"{ins.get('n_sells', 0)} sells ({ins.get('unique_sellers', 0)} insiders); "
+                f"cluster_buy={ins.get('cluster_buy', False)}"
+            )
+        wsb = alt.get('wsb', {})
+        if wsb.get('mentioned'):
+            lines.append(
+                f"  WSB: rank #{wsb['rank']}, {wsb['mentions']} mentions "
+                f"({wsb['growth_ratio']}x vs 24h ago)"
+            )
+        st = alt.get('stocktwits', {})
+        if st.get('n_messages', 0) > 0:
+            ratio_str = f"{int(st['ratio']*100)}% bullish" if st.get('ratio') is not None else "—"
+            lines.append(f"  STOCKTWITS: {st['n_messages']} msgs, {ratio_str}")
+        an = alt.get('analysts')
+        if an:
+            lines.append(
+                f"  ANALYSTS ({an['period']}): {an['strongBuy']}SB / {an['buy']}B / "
+                f"{an['hold']}H / {an['sell']}S / {an['strongSell']}SS  "
+                f"({an['bullish_pct']}% bullish)"
+            )
     return "\n".join(lines)
 
 
-def pick_stocks(premarket: list[dict], news_by_symbol: dict[str, list[dict]]) -> dict:
-    """Ask Claude to choose 0-N picks given premarket data + news."""
+def pick_stocks(
+    premarket: list[dict],
+    news_by_symbol: dict[str, list[dict]],
+    altdata_by_symbol: dict[str, dict] | None = None,
+) -> dict:
+    """Ask Claude to choose 0-N picks given premarket + news + alt-data."""
+    altdata_by_symbol = altdata_by_symbol or {m["symbol"]: {} for m in premarket}
     user_msg = (
-        f"Today's premarket movers with overnight news:\n"
-        f"{_format_candidates(premarket, news_by_symbol)}\n\n"
-        f"Pick up to {config.MAX_PICKS_PER_DAY} long trades for today. "
-        f"Each pick MUST have a real catalyst from the news above. "
-        f"If no candidate has a clear catalyst, return picks=[]."
+        f"Today's premarket movers with overnight news AND alt-data signals:\n"
+        f"{_format_candidates(premarket, news_by_symbol, altdata_by_symbol)}\n\n"
+        f"Pick up to {config.MAX_PICKS_PER_DAY} long trades. Each pick must have BOTH "
+        f"a real catalyst AND smart-money confirmation. If no candidate qualifies, picks=[]."
     )
 
     resp = client().messages.create(
@@ -96,7 +152,6 @@ def pick_stocks(premarket: list[dict], news_by_symbol: dict[str, list[dict]]) ->
     )
 
     text = resp.content[0].text.strip()
-    # Strip code fences if model adds them despite instructions.
     if text.startswith("```"):
         text = text.split("```")[1]
         if text.startswith("json"):
@@ -107,6 +162,6 @@ def pick_stocks(premarket: list[dict], news_by_symbol: dict[str, list[dict]]) ->
     parsed["picks"] = parsed.get("picks", [])[: config.MAX_PICKS_PER_DAY]
     universe = set(config.TRADABLE_UNIVERSE)
     parsed["picks"] = [p for p in parsed["picks"] if p["symbol"] in universe]
-    # Defensive: ensure catalyst field present, drop picks without one.
     parsed["picks"] = [p for p in parsed["picks"] if (p.get("catalyst") or "").strip()]
+    parsed["picks"] = [p for p in parsed["picks"] if (p.get("smart_money_signals") or "").strip()]
     return parsed
