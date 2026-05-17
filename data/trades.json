@@ -1,0 +1,16 @@
+[
+  {
+    "type": "morning_attempt",
+    "date": "2026-05-17",
+    "ts": "2026-05-17T12:42:41.254310Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-05-17",
+    "ts": "2026-05-17T12:42:41.851275Z",
+    "status": "blocked",
+    "note": "Market is closed."
+  }
+]
