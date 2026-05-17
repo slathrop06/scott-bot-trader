@@ -37,9 +37,18 @@ jobs:
         run: python scripts/morning_run.py
 
       - name: Commit trade log
+        if: always()
         run: |
+          if [ ! -f data/trades.json ]; then
+            echo "No trades.json — nothing to commit."
+            exit 0
+          fi
           git config user.name "scott-bot-trader"
           git config user.email "bot@scottbotpicks.com"
           git add data/trades.json
-          git diff --cached --quiet || git commit -m "morning run $(date -u +%Y-%m-%dT%H:%MZ)"
-          git push
+          if git diff --cached --quiet; then
+            echo "No changes to trades.json — skipping commit."
+          else
+            git commit -m "morning run $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
