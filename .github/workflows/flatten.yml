@@ -1,0 +1,44 @@
+name: eod-flatten
+
+on:
+  # 3:55pm ET = 19:55 UTC (EDT) or 20:55 UTC (EST). Both fire; no-ops if closed.
+  schedule:
+    - cron: "55 19 * * 1-5"
+    - cron: "55 20 * * 1-5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: scott-bot-trader
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Flatten positions + log P&L
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          ALPACA_BASE_URL: https://paper-api.alpaca.markets
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TRADING_MODE: paper
+        run: python scripts/eod_flatten.py
+
+      - name: Commit trade log
+        run: |
+          git config user.name "scott-bot-trader"
+          git config user.email "bot@scottbotpicks.com"
+          git add data/trades.json
+          git diff --cached --quiet || git commit -m "eod flatten $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push

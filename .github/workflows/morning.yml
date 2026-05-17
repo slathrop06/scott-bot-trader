@@ -1,0 +1,45 @@
+name: morning-run
+
+on:
+  # 9:35am ET = 13:35 UTC (EDT) or 14:35 UTC (EST). Both fire; script no-ops
+  # if the market is closed, so only the correct one actually trades.
+  schedule:
+    - cron: "35 13 * * 1-5"
+    - cron: "35 14 * * 1-5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write  # needed to auto-commit data/trades.json
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: scott-bot-trader
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Run morning picker
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          ALPACA_BASE_URL: https://paper-api.alpaca.markets
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TRADING_MODE: paper
+        run: python scripts/morning_run.py
+
+      - name: Commit trade log
+        run: |
+          git config user.name "scott-bot-trader"
+          git config user.email "bot@scottbotpicks.com"
+          git add data/trades.json
+          git diff --cached --quiet || git commit -m "morning run $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push
