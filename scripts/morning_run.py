@@ -7,7 +7,7 @@ from pathlib import Path
 # Allow running as a plain script (`python scripts/morning_run.py`)
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from src import data, news, picker, safety, trader, tracker  # noqa: E402
+from src import data, earnings, news, picker, safety, trader, tracker  # noqa: E402
 
 
 def main() -> int:
@@ -29,6 +29,19 @@ def main() -> int:
         tracker.log_run_attempt("morning", "blocked", "no premarket data")
         return 0
     print(f"[morning] {len(movers)} movers fetched")
+
+    print("[morning] checking for upcoming earnings (filter out within 1 day)...")
+    safe_syms, blocked = earnings.filter_out_earnings_risk(
+        [m["symbol"] for m in movers], min_days_buffer=1
+    )
+    if blocked:
+        print(f"[morning] blocked due to earnings: {blocked}")
+    movers = [m for m in movers if m["symbol"] in safe_syms]
+    if not movers:
+        print("[morning] all movers blocked by earnings filter — standing down")
+        tracker.log_run_attempt("morning", "ok", f"all movers blocked by earnings: {blocked}")
+        return 0
+    print(f"[morning] {len(movers)} movers remain after earnings filter")
 
     print("[morning] fetching overnight news for movers...")
     symbols = [m["symbol"] for m in movers]
