@@ -7,7 +7,7 @@ from pathlib import Path
 # Allow running as a plain script (`python scripts/morning_run.py`)
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from src import data, picker, safety, trader, tracker  # noqa: E402
+from src import data, news, picker, safety, trader, tracker  # noqa: E402
 
 
 def main() -> int:
@@ -30,8 +30,14 @@ def main() -> int:
         return 0
     print(f"[morning] {len(movers)} movers fetched")
 
-    print("[morning] asking Claude for picks...")
-    picks_response = picker.pick_stocks(movers)
+    print("[morning] fetching overnight news for movers...")
+    symbols = [m["symbol"] for m in movers]
+    news_by_symbol = news.overnight_news(symbols, lookback_hours=16)
+    news_counts = {s: len(news_by_symbol.get(s, [])) for s in symbols}
+    print(f"[morning] news article counts: {news_counts}")
+
+    print("[morning] asking Claude for catalyst-driven picks...")
+    picks_response = picker.pick_stocks(movers, news_by_symbol)
     print(f"[morning] picks: {json.dumps(picks_response, indent=2)}")
 
     picks = picks_response.get("picks", [])
