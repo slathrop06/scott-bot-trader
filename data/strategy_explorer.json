@@ -1,0 +1,472 @@
+{
+  "ran_at": "2026-05-17T09:13:08.229279",
+  "in_sample_days": 41,
+  "out_of_sample_days": 81,
+  "in_sample_spy_pct": 11.753,
+  "out_of_sample_spy_pct": 0.205,
+  "results": [
+    {
+      "variant": {
+        "name": "0_baseline_long",
+        "direction": "long",
+        "min_abs_gap": 1.0,
+        "max_abs_gap": 100,
+        "gap_side": "up",
+        "take_profit_pct": 2.0,
+        "stop_loss_pct": 1.0,
+        "max_picks": 2,
+        "universe_subset": null,
+        "description": "Original strategy: long gap-ups, +2/-1"
+      },
+      "in_sample": {
+        "return_pct": -4.128,
+        "win_rate_pct": 39.5,
+        "n_active_days": 38,
+        "n_picks_total": 70,
+        "avg_win_pct": 0.537,
+        "avg_loss_pct": -0.53,
+        "max_dd_pct": -5.689,
+        "sharpe": -2.95
+      },
+      "out_of_sample": {
+        "return_pct": -8.356,
+        "win_rate_pct": 40.0,
+        "n_active_days": 70,
+        "n_picks_total": 130,
+        "avg_win_pct": 0.532,
+        "avg_loss_pct": -0.559,
+        "max_dd_pct": -9.533,
+        "sharpe": -3.21
+      },
+      "is_alpha": -15.881,
+      "oos_alpha": -8.561,
+      "robust": false
+    },
+    {
+      "variant": {
+        "name": "1_fade_gap_ups",
+        "direction": "short",
+        "min_abs_gap": 1.0,
+        "max_abs_gap": 100,
+        "gap_side": "up",
+        "take_profit_pct": 2.0,
+        "stop_loss_pct": 1.0,
+        "max_picks": 2,
+        "universe_subset": null,
+        "description": "Short gap-ups (mean reversion)"
+      },
+      "in_sample": {
+        "return_pct": -9.393,
+        "win_rate_pct": 28.9,
+        "n_active_days": 38,
+        "n_picks_total": 70,
+        "avg_win_pct": 0.485,
+        "avg_loss_pct": -0.56,
+        "max_dd_pct": -10.634,
+        "sharpe": -7.5
+      },
+      "out_of_sample": {
+        "return_pct": 1.494,
+        "win_rate_pct": 45.7,
+        "n_active_days": 70,
+        "n_picks_total": 130,
+        "avg_win_pct": 0.583,
+        "avg_loss_pct": -0.449,
+        "max_dd_pct": -3.467,
+        "sharpe": 0.59
+      },
+      "is_alpha": -21.146,
+      "oos_alpha": 1.289,
+      "robust": false
+    },
+    {
+      "variant": {
+        "name": "2_fade_gap_downs",
+        "direction": "long",
+        "min_abs_gap": 1.0,
+        "max_abs_gap": 100,
+        "gap_side": "down",
+        "take_profit_pct": 2.0,
+        "stop_loss_pct": 1.0,
+        "max_picks": 2,
+        "universe_subset": null,
+        "description": "Long gap-downs (mean reversion)"
+      },
+      "in_sample": {
+        "return_pct": -7.277,
+        "win_rate_pct": 27.3,
+        "n_active_days": 33,
+        "n_picks_total": 63,
+        "avg_win_pct": 0.639,
+        "avg_loss_pct": -0.552,
+        "max_dd_pct": -9.086,
+        "sharpe": -5.94
+      },
+      "out_of_sample": {
+        "return_pct": -12.063,
+        "win_rate_pct": 30.6,
+        "n_active_days": 62,
+        "n_picks_total": 107,
+        "avg_win_pct": 0.582,
+        "avg_loss_pct": -0.553,
+        "max_dd_pct": -12.401,
+        "sharpe": -5.63
+      },
+      "is_alpha": -19.03,
+      "oos_alpha": -12.268,
+      "robust": false
+    },
+    {
+      "variant": {
+        "name": "3_fade_big_only",
+        "direction": "short",
+        "min_abs_gap": 3.0,
+        "max_abs_gap": 100,
+        "gap_side": "up",
+        "take_profit_pct": 2.0,
+        "stop_loss_pct": 1.0,
+        "max_picks": 2,
+        "universe_subset": null,
+        "description": "Short only BIG gap-ups (>3%)"
+      },
+      "in_sample": {
+        "return_pct": -5.686,
+        "win_rate_pct": 13.3,
+        "n_active_days": 15,
+        "n_picks_total": 25,
+        "avg_win_pct": 0.495,
+        "avg_loss_pct": -0.525,
+        "max_dd_pct": -5.686,
+        "sharpe": -15.41
+      },
+      "out_of_sample": {
+        "return_pct": 1.505,
+        "win_rate_pct": 44.8,
+        "n_active_days": 29,
+        "n_picks_total": 36,
+        "avg_win_pct": 0.626,
+        "avg_loss_pct": -0.413,
+        "max_dd_pct": -1.972,
+        "sharpe": 1.49
+      },
+      "is_alpha": -17.439,
+      "oos_alpha": 1.3,
+      "robust": false
+    },
+    {
+      "variant": {
+        "name": "4_tight_target",
+        "direction": "long",
+        "min_abs_gap": 1.0,
+        "max_abs_gap": 100,
+        "gap_side": "up",
+        "take_profit_pct": 0.5,
+        "stop_loss_pct": 1.0,
+        "max_picks": 2,
+        "universe_subset": null,
+        "description": "Long gap-ups with TIGHT target +0.5 / stop -1"
+      },
+      "in_sample": {
+        "return_pct": -11.356,
+        "win_rate_pct": 13.2,
+        "n_active_days": 38,
+        "n_picks_total": 70,
+        "avg_win_pct": 0.297,
+        "avg_loss_pct": -0.409,
+        "max_dd_pct": -11.647,
+        "sharpe": -15.51
+      },
+      "out_of_sample": {
+        "return_pct": -19.896,
+        "win_rate_pct": 15.7,
+        "n_active_days": 70,
+        "n_picks_total": 130,
+        "avg_win_pct": 0.27,
+        "avg_loss_pct": -0.425,
+        "max_dd_pct": -20.159,
+        "sharpe": -14.89
+      },
+      "is_alpha": -23.109,
+      "oos_alpha": -20.101,
+      "robust": false
+    },
+    {
+      "variant": {
+        "name": "5_fade_tight_target",
+        "direction": "short",
+        "min_abs_gap": 1.0,
+        "max_abs_gap": 100,
+        "gap_side": "up",
+        "take_profit_pct": 0.5,
+        "stop_loss_pct": 1.0,
+        "max_picks": 2,
+        "universe_subset": null,
+        "description": "Short gap-ups with tight target +0.5 / stop -1"
+      },
+      "in_sample": {
+        "return_pct": -13.271,
+        "win_rate_pct": 13.2,
+        "n_active_days": 38,
+        "n_picks_total": 70,
+        "avg_win_pct": 0.297,
+        "avg_loss_pct": -0.475,
+        "max_dd_pct": -13.271,
+        "sharpe": -17.53
+      },
+      "out_of_sample": {
+        "return_pct": -16.232,
+        "win_rate_pct": 15.7,
+        "n_active_days": 70,
+        "n_picks_total": 130,
+        "avg_win_pct": 0.3,
+        "avg_loss_pct": -0.355,
+        "max_dd_pct": -16.37,
+        "sharpe": -12.56
+      },
+      "is_alpha": -25.024,
+      "oos_alpha": -16.437,
+      "robust": false
+    },
+    {
+      "variant": {
+        "name": "6_wide_stop_tight_target",
+        "direction": "short",
+        "min_abs_gap": 1.0,
+        "max_abs_gap": 100,
+        "gap_side": "up",
+        "take_profit_pct": 0.5,
+        "stop_loss_pct": 2.0,
+        "max_picks": 2,
+        "universe_subset": null,
+        "description": "Short gap-ups +0.5 / -2 (let it breathe, take quick profits)"
+      },
+      "in_sample": {
+        "return_pct": -14.279,
+        "win_rate_pct": 39.5,
+        "n_active_days": 38,
+        "n_picks_total": 70,
+        "avg_win_pct": 0.286,
+        "avg_loss_pct": -0.852,
+        "max_dd_pct": -14.702,
+        "sharpe": -9.74
+      },
+      "out_of_sample": {
+        "return_pct": -19.745,
+        "win_rate_pct": 42.9,
+        "n_active_days": 70,
+        "n_picks_total": 130,
+        "avg_win_pct": 0.279,
+        "avg_loss_pct": -0.756,
+        "max_dd_pct": -20.379,
+        "sharpe": -8.38
+      },
+      "is_alpha": -26.032,
+      "oos_alpha": -19.95,
+      "robust": false
+    },
+    {
+      "variant": {
+        "name": "7_etf_long_continuation",
+        "direction": "long",
+        "min_abs_gap": 0.5,
+        "max_abs_gap": 5,
+        "gap_side": "up",
+        "take_profit_pct": 1.0,
+        "stop_loss_pct": 0.5,
+        "max_picks": 2,
+        "universe_subset": [
+          "SPY",
+          "QQQ",
+          "IWM",
+          "DIA"
+        ],
+        "description": "ETFs only, long continuation, modest gap"
+      },
+      "in_sample": {
+        "return_pct": 2.065,
+        "win_rate_pct": 62.5,
+        "n_active_days": 16,
+        "n_picks_total": 27,
+        "avg_win_pct": 0.354,
+        "avg_loss_pct": -0.248,
+        "max_dd_pct": -0.659,
+        "sharpe": 5.71
+      },
+      "out_of_sample": {
+        "return_pct": -2.39,
+        "win_rate_pct": 23.1,
+        "n_active_days": 26,
+        "n_picks_total": 40,
+        "avg_win_pct": 0.306,
+        "avg_loss_pct": -0.212,
+        "max_dd_pct": -2.801,
+        "sharpe": -5.58
+      },
+      "is_alpha": -9.688,
+      "oos_alpha": -2.595,
+      "robust": false
+    },
+    {
+      "variant": {
+        "name": "8_etf_fade",
+        "direction": "short",
+        "min_abs_gap": 0.5,
+        "max_abs_gap": 5,
+        "gap_side": "up",
+        "take_profit_pct": 0.5,
+        "stop_loss_pct": 1.0,
+        "max_picks": 2,
+        "universe_subset": [
+          "SPY",
+          "QQQ",
+          "IWM",
+          "DIA"
+        ],
+        "description": "ETFs only, fade gap-ups"
+      },
+      "in_sample": {
+        "return_pct": -2.045,
+        "win_rate_pct": 37.5,
+        "n_active_days": 16,
+        "n_picks_total": 27,
+        "avg_win_pct": 0.248,
+        "avg_loss_pct": -0.354,
+        "max_dd_pct": -2.688,
+        "sharpe": -5.71
+      },
+      "out_of_sample": {
+        "return_pct": 1.922,
+        "win_rate_pct": 73.1,
+        "n_active_days": 26,
+        "n_picks_total": 40,
+        "avg_win_pct": 0.215,
+        "avg_loss_pct": -0.309,
+        "max_dd_pct": -0.754,
+        "sharpe": 4.24
+      },
+      "is_alpha": -13.798,
+      "oos_alpha": 1.717,
+      "robust": false
+    },
+    {
+      "variant": {
+        "name": "9_megatech_fade",
+        "direction": "short",
+        "min_abs_gap": 1.5,
+        "max_abs_gap": 100,
+        "gap_side": "up",
+        "take_profit_pct": 1.0,
+        "stop_loss_pct": 1.0,
+        "max_picks": 2,
+        "universe_subset": [
+          "AAPL",
+          "MSFT",
+          "GOOGL",
+          "AMZN",
+          "META",
+          "NVDA",
+          "AVGO",
+          "TSLA"
+        ],
+        "description": "Mega-cap tech only, fade gap-ups, symmetric 1:1"
+      },
+      "in_sample": {
+        "return_pct": -3.6,
+        "win_rate_pct": 18.2,
+        "n_active_days": 22,
+        "n_picks_total": 30,
+        "avg_win_pct": 0.33,
+        "avg_loss_pct": -0.383,
+        "max_dd_pct": -3.6,
+        "sharpe": -8.73
+      },
+      "out_of_sample": {
+        "return_pct": 1.307,
+        "win_rate_pct": 38.7,
+        "n_active_days": 31,
+        "n_picks_total": 46,
+        "avg_win_pct": 0.44,
+        "avg_loss_pct": -0.396,
+        "max_dd_pct": -0.991,
+        "sharpe": 1.79
+      },
+      "is_alpha": -15.353,
+      "oos_alpha": 1.102,
+      "robust": false
+    },
+    {
+      "variant": {
+        "name": "10_long_small_gaps",
+        "direction": "long",
+        "min_abs_gap": 0.3,
+        "max_abs_gap": 1.5,
+        "gap_side": "up",
+        "take_profit_pct": 1.5,
+        "stop_loss_pct": 0.5,
+        "max_picks": 2,
+        "universe_subset": null,
+        "description": "Long SMALL gap-ups (continuation territory)"
+      },
+      "in_sample": {
+        "return_pct": -2.246,
+        "win_rate_pct": 36.6,
+        "n_active_days": 41,
+        "n_picks_total": 79,
+        "avg_win_pct": 0.401,
+        "avg_loss_pct": -0.317,
+        "max_dd_pct": -4.136,
+        "sharpe": -2.27
+      },
+      "out_of_sample": {
+        "return_pct": -3.301,
+        "win_rate_pct": 35.4,
+        "n_active_days": 79,
+        "n_picks_total": 155,
+        "avg_win_pct": 0.45,
+        "avg_loss_pct": -0.312,
+        "max_dd_pct": -5.625,
+        "sharpe": -1.65
+      },
+      "is_alpha": -13.999,
+      "oos_alpha": -3.506,
+      "robust": false
+    },
+    {
+      "variant": {
+        "name": "11_fade_both_sides",
+        "direction": "short",
+        "min_abs_gap": 1.0,
+        "max_abs_gap": 100,
+        "gap_side": "both",
+        "take_profit_pct": 1.0,
+        "stop_loss_pct": 1.0,
+        "max_picks": 2,
+        "universe_subset": null,
+        "description": "Fade both gap-ups (short) \u2014 gap-downs excluded for now"
+      },
+      "in_sample": {
+        "return_pct": -9.049,
+        "win_rate_pct": 14.6,
+        "n_active_days": 41,
+        "n_picks_total": 81,
+        "avg_win_pct": 0.66,
+        "avg_loss_pct": -0.638,
+        "max_dd_pct": -9.645,
+        "sharpe": -7.65
+      },
+      "out_of_sample": {
+        "return_pct": -16.075,
+        "win_rate_pct": 13.9,
+        "n_active_days": 79,
+        "n_picks_total": 156,
+        "avg_win_pct": 0.612,
+        "avg_loss_pct": -0.636,
+        "max_dd_pct": -16.625,
+        "sharpe": -7.65
+      },
+      "is_alpha": -20.802,
+      "oos_alpha": -16.28,
+      "robust": false
+    }
+  ]
+}
