@@ -1,0 +1,240 @@
+{
+  "ran_at": "2026-05-17T09:41:42.626515",
+  "is_window_days": 42,
+  "oos_window_days": 82,
+  "is_spy_pct": 11.753,
+  "oos_spy_pct": 0.205,
+  "results": [
+    {
+      "name": "baseline_no_stops",
+      "description": "Baseline: long top gap-ups, open\u2192close, no stops",
+      "in_sample": {
+        "return_pct": 13.334,
+        "n_trades": 61,
+        "win_rate_pct": 55.7,
+        "max_dd_pct": -3.496,
+        "sharpe": 3.62
+      },
+      "out_of_sample": {
+        "return_pct": -6.496,
+        "n_trades": 98,
+        "win_rate_pct": 45.9,
+        "max_dd_pct": -10.502,
+        "sharpe": -0.88
+      },
+      "is_alpha": 1.581,
+      "oos_alpha": -6.701,
+      "robust": false
+    },
+    {
+      "name": "volume_confirmed",
+      "description": "Long gap-ups WITH high volume (today vol > 1.5x avg20)",
+      "in_sample": {
+        "return_pct": 8.986,
+        "n_trades": 18,
+        "win_rate_pct": 72.2,
+        "max_dd_pct": -2.197,
+        "sharpe": 6.55
+      },
+      "out_of_sample": {
+        "return_pct": 3.937,
+        "n_trades": 43,
+        "win_rate_pct": 62.8,
+        "max_dd_pct": -9.332,
+        "sharpe": 1.17
+      },
+      "is_alpha": -2.767,
+      "oos_alpha": 3.732,
+      "robust": false
+    },
+    {
+      "name": "volume_confirmed_2x",
+      "description": "Long gap-ups WITH very high volume (today vol > 2.0x avg20)",
+      "in_sample": {
+        "return_pct": 4.499,
+        "n_trades": 12,
+        "win_rate_pct": 75.0,
+        "max_dd_pct": -2.181,
+        "sharpe": 6.2
+      },
+      "out_of_sample": {
+        "return_pct": -2.653,
+        "n_trades": 25,
+        "win_rate_pct": 64.0,
+        "max_dd_pct": -11.518,
+        "sharpe": -0.9
+      },
+      "is_alpha": -7.254,
+      "oos_alpha": -2.858,
+      "robust": false
+    },
+    {
+      "name": "sector_aligned",
+      "description": "Long gap-ups WHEN sector ETF also gapping up",
+      "in_sample": {
+        "return_pct": 9.344,
+        "n_trades": 51,
+        "win_rate_pct": 51.0,
+        "max_dd_pct": -5.834,
+        "sharpe": 3.0
+      },
+      "out_of_sample": {
+        "return_pct": -5.907,
+        "n_trades": 85,
+        "win_rate_pct": 45.9,
+        "max_dd_pct": -11.434,
+        "sharpe": -0.88
+      },
+      "is_alpha": -2.409,
+      "oos_alpha": -6.112,
+      "robust": false
+    },
+    {
+      "name": "uptrend_only",
+      "description": "Long gap-ups only when stock up over last 5d",
+      "in_sample": {
+        "return_pct": 8.125,
+        "n_trades": 37,
+        "win_rate_pct": 54.1,
+        "max_dd_pct": -3.568,
+        "sharpe": 2.87
+      },
+      "out_of_sample": {
+        "return_pct": -3.832,
+        "n_trades": 49,
+        "win_rate_pct": 46.9,
+        "max_dd_pct": -11.526,
+        "sharpe": -0.79
+      },
+      "is_alpha": -3.628,
+      "oos_alpha": -4.037,
+      "robust": false
+    },
+    {
+      "name": "pead",
+      "description": "Post-Earnings Drift: long gap-ups where YESTERDAY was earnings day",
+      "in_sample": {
+        "return_pct": 2.092,
+        "n_trades": 7,
+        "win_rate_pct": 71.4,
+        "max_dd_pct": -0.066,
+        "sharpe": 13.48
+      },
+      "out_of_sample": {
+        "return_pct": -6.563,
+        "n_trades": 10,
+        "win_rate_pct": 50.0,
+        "max_dd_pct": -6.576,
+        "sharpe": -9.78
+      },
+      "is_alpha": -9.661,
+      "oos_alpha": -6.768,
+      "robust": false
+    },
+    {
+      "name": "vix_calm",
+      "description": "Long gap-ups only when VIX < 20",
+      "in_sample": {
+        "return_pct": 14.212,
+        "n_trades": 40,
+        "win_rate_pct": 60.0,
+        "max_dd_pct": -3.496,
+        "sharpe": 5.43
+      },
+      "out_of_sample": {
+        "return_pct": -1.664,
+        "n_trades": 73,
+        "win_rate_pct": 46.6,
+        "max_dd_pct": -11.254,
+        "sharpe": -0.18
+      },
+      "is_alpha": 2.459,
+      "oos_alpha": -1.869,
+      "robust": false
+    },
+    {
+      "name": "combo_vol_sector",
+      "description": "Volume-confirmed AND sector-aligned",
+      "in_sample": {
+        "return_pct": 7.869,
+        "n_trades": 14,
+        "win_rate_pct": 71.4,
+        "max_dd_pct": -2.073,
+        "sharpe": 7.5
+      },
+      "out_of_sample": {
+        "return_pct": 4.31,
+        "n_trades": 34,
+        "win_rate_pct": 67.6,
+        "max_dd_pct": -7.946,
+        "sharpe": 1.49
+      },
+      "is_alpha": -3.884,
+      "oos_alpha": 4.105,
+      "robust": false
+    },
+    {
+      "name": "combo_vol_trend",
+      "description": "Volume-confirmed AND 5d uptrend",
+      "in_sample": {
+        "return_pct": 5.341,
+        "n_trades": 11,
+        "win_rate_pct": 72.7,
+        "max_dd_pct": -3.043,
+        "sharpe": 4.79
+      },
+      "out_of_sample": {
+        "return_pct": 2.27,
+        "n_trades": 25,
+        "win_rate_pct": 60.0,
+        "max_dd_pct": -9.321,
+        "sharpe": 1.04
+      },
+      "is_alpha": -6.412,
+      "oos_alpha": 2.065,
+      "robust": false
+    },
+    {
+      "name": "triple",
+      "description": "Volume + Sector + Trend",
+      "in_sample": {
+        "return_pct": 5.427,
+        "n_trades": 8,
+        "win_rate_pct": 75.0,
+        "max_dd_pct": -2.073,
+        "sharpe": 6.65
+      },
+      "out_of_sample": {
+        "return_pct": 1.336,
+        "n_trades": 21,
+        "win_rate_pct": 61.9,
+        "max_dd_pct": -9.321,
+        "sharpe": 0.73
+      },
+      "is_alpha": -6.326,
+      "oos_alpha": 1.131,
+      "robust": false
+    },
+    {
+      "name": "gap_down_meanrev",
+      "description": "FADE gap-DOWNS: long stocks that gapped DOWN >1.5%, hope for recovery",
+      "in_sample": {
+        "return_pct": -9.266,
+        "n_trades": 48,
+        "win_rate_pct": 37.5,
+        "max_dd_pct": -12.413,
+        "sharpe": -3.49
+      },
+      "out_of_sample": {
+        "return_pct": -4.56,
+        "n_trades": 82,
+        "win_rate_pct": 51.2,
+        "max_dd_pct": -14.452,
+        "sharpe": -1.1
+      },
+      "is_alpha": -21.019,
+      "oos_alpha": -4.765,
+      "robust": false
+    }
+  ]
+}
