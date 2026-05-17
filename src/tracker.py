@@ -19,6 +19,20 @@ def _save_log(entries: list[dict]) -> None:
     config.TRADES_LOG.write_text(json.dumps(entries, indent=2, default=str))
 
 
+def log_run_attempt(kind: str, status: str, note: str = "") -> None:
+    """Always called at the start/end of every cron run, even on bail/error.
+    Lets the dashboard answer 'did the bot actually run today?'"""
+    entries = _load_log()
+    entries.append({
+        "type": f"{kind}_attempt",
+        "date": date.today().isoformat(),
+        "ts": datetime.utcnow().isoformat() + "Z",
+        "status": status,  # "started", "ok", "blocked", "error"
+        "note": note,
+    })
+    _save_log(entries)
+
+
 def log_morning_run(picks_result: dict, orders: list[dict], account_snapshot: dict) -> None:
     entries = _load_log()
     entries.append({

@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Scott Bot Trader</title>
+<style>
+  :root {
+    --bg: #f5f7fa;
+    --card: #ffffff;
+    --ink: #1a202c;
+    --muted: #64748b;
+    --line: #e2e8f0;
+    --good: #16a34a;
+    --bad: #dc2626;
+    --warn: #d97706;
+    --accent: #0369a1;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 24px 16px 64px; }
+  header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 24px; }
+  h1 { font-size: 24px; margin: 0; letter-spacing: -0.02em; }
+  h1 .sub { color: var(--muted); font-weight: 400; font-size: 14px; margin-left: 8px; }
+  .refreshed { color: var(--muted); font-size: 12px; }
+  .grid { display: grid; gap: 16px; }
+  .row-2 { grid-template-columns: 1fr 1fr; }
+  @media (max-width: 640px) { .row-2 { grid-template-columns: 1fr; } }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 18px 20px;
+  }
+  .card h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin: 0 0 12px;
+    font-weight: 600;
+  }
+  .big { font-size: 28px; font-weight: 700; letter-spacing: -0.02em; }
+  .small { font-size: 13px; color: var(--muted); margin-top: 4px; }
+  .pill {
+    display: inline-block; padding: 4px 10px; border-radius: 999px;
+    font-size: 12px; font-weight: 600;
+  }
+  .pill.good { background: #dcfce7; color: var(--good); }
+  .pill.bad { background: #fee2e2; color: var(--bad); }
+  .pill.warn { background: #fef3c7; color: var(--warn); }
+  .pill.muted { background: #f1f5f9; color: var(--muted); }
+  .status-banner {
+    border-radius: 10px; padding: 16px 20px; margin-bottom: 16px;
+    border: 1px solid;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .status-banner.good { background: #f0fdf4; border-color: #bbf7d0; color: #14532d; }
+  .status-banner.warn { background: #fffbeb; border-color: #fde68a; color: #78350f; }
+  .status-banner.bad { background: #fef2f2; border-color: #fecaca; color: #7f1d1d; }
+  .status-banner .dot {
+    width: 10px; height: 10px; border-radius: 50%;
+  }
+  .status-banner.good .dot { background: var(--good); }
+  .status-banner.warn .dot { background: var(--warn); }
+  .status-banner.bad .dot { background: var(--bad); }
+  .status-banner .text { font-weight: 600; }
+  .status-banner .sub { font-weight: 400; opacity: 0.8; margin-left: 8px; }
+
+  .progress {
+    height: 10px; background: #f1f5f9; border-radius: 999px;
+    overflow: hidden; margin-top: 12px;
+  }
+  .progress > div { height: 100%; background: var(--good); transition: width 0.3s; }
+  .progress.below > div { background: var(--warn); }
+  .progress.neg > div { background: var(--bad); }
+
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; }
+  td.num { font-variant-numeric: tabular-nums; text-align: right; }
+  .pos { color: var(--good); font-weight: 600; }
+  .neg { color: var(--bad); font-weight: 600; }
+  .neutral { color: var(--muted); }
+
+  .picks-list { display: grid; gap: 10px; }
+  .pick {
+    display: grid; grid-template-columns: 1fr auto; gap: 4px 16px;
+    padding: 12px 14px; border: 1px solid var(--line); border-radius: 8px;
+    background: #fafbfc;
+  }
+  .pick .sym { font-weight: 700; font-size: 16px; }
+  .pick .rationale { color: var(--muted); font-size: 13px; grid-column: 1 / -1; }
+  .pick .meta { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+  .empty { color: var(--muted); padding: 12px 0; font-style: italic; }
+  footer { margin-top: 32px; color: var(--muted); font-size: 12px; text-align: center; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Scott Bot Trader <span class="sub">paper trading</span></h1>
+    <div class="refreshed" id="refreshed">loading…</div>
+  </header>
+
+  <div id="status" class="status-banner muted">
+    <div class="dot"></div>
+    <div class="text">Checking bot status…</div>
+  </div>
+
+  <div class="grid row-2" style="margin-bottom: 16px;">
+    <div class="card">
+      <h2>Last Morning Run</h2>
+      <div id="last-morning">—</div>
+    </div>
+    <div class="card">
+      <h2>Last EOD Run</h2>
+      <div id="last-eod">—</div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom: 16px;">
+    <h2>This Week — Target: +1.5%</h2>
+    <div class="big" id="wtd-pct">—</div>
+    <div class="small" id="wtd-detail">No data yet</div>
+    <div class="progress" id="wtd-bar"><div style="width:0%"></div></div>
+  </div>
+
+  <div class="card" style="margin-bottom: 16px;">
+    <h2>Today's Picks</h2>
+    <div id="picks" class="picks-list"></div>
+  </div>
+
+  <div class="card" style="margin-bottom: 16px;">
+    <h2>Recent Days</h2>
+    <table id="history">
+      <thead>
+        <tr><th>Date</th><th>Picks</th><th class="num">P&L</th><th class="num">%</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <footer>
+    <a href="https://github.com/slathrop06/scott-bot-trader">github</a>
+    &nbsp;·&nbsp;
+    <a href="https://github.com/slathrop06/scott-bot-trader/actions">actions</a>
+    &nbsp;·&nbsp;
+    <a href="https://app.alpaca.markets/paper/dashboard/overview">alpaca paper</a>
+  </footer>
+</div>
+
+<script>
+const TRADES_URL = '../data/trades.json';   // GH Pages serves repo root; docs/ is the site
+const REFRESH_MS = 60_000;
+
+const $ = (id) => document.getElementById(id);
+
+function fmtUSD(n) {
+  if (n == null) return '—';
+  const sign = n >= 0 ? '+' : '−';
+  return `${sign}$${Math.abs(n).toFixed(2)}`;
+}
+function fmtPct(n) {
+  if (n == null) return '—';
+  const sign = n >= 0 ? '+' : '';
+  return `${sign}${n.toFixed(2)}%`;
+}
+function ago(iso) {
+  if (!iso) return 'never';
+  const diff = (Date.now() - new Date(iso).getTime()) / 1000;
+  if (diff < 60) return `${Math.floor(diff)}s ago`;
+  if (diff < 3600) return `${Math.floor(diff/60)}m ago`;
+  if (diff < 86400) return `${Math.floor(diff/3600)}h ago`;
+  return `${Math.floor(diff/86400)}d ago`;
+}
+function fmtET(iso) {
+  if (!iso) return '—';
+  return new Date(iso).toLocaleString('en-US', {
+    timeZone: 'America/New_York',
+    month: 'short', day: 'numeric',
+    hour: 'numeric', minute: '2-digit',
+  }) + ' ET';
+}
+
+function todayET() {
+  // YYYY-MM-DD in ET
+  const parts = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York' }).formatToParts(new Date());
+  const get = (t) => parts.find(p => p.type === t).value;
+  return `${get('year')}-${get('month')}-${get('day')}`;
+}
+
+function isWeekendET() {
+  const dow = new Date().toLocaleDateString('en-US', { timeZone: 'America/New_York', weekday: 'short' });
+  return dow === 'Sat' || dow === 'Sun';
+}
+
+function expectedMorningSoFar() {
+  // Has 9:35am ET passed today?
+  const nowET = new Date().toLocaleString('en-US', { timeZone: 'America/New_York', hour: 'numeric', minute: 'numeric', hour12: false });
+  const [h, m] = nowET.split(':').map(Number);
+  return h > 9 || (h === 9 && m >= 35);
+}
+function expectedEODSoFar() {
+  const nowET = new Date().toLocaleString('en-US', { timeZone: 'America/New_York', hour: 'numeric', minute: 'numeric', hour12: false });
+  const [h, m] = nowET.split(':').map(Number);
+  return h > 15 || (h === 15 && m >= 55);
+}
+
+function renderRunStatus(kind, expected, entries) {
+  const attempts = entries.filter(e => e.type === `${kind}_attempt`);
+  const last = attempts[attempts.length - 1];
+  const el = $(`last-${kind}`);
+  if (!last) {
+    el.innerHTML = `<div class="big">—</div><div class="small">No runs yet. ${expected && !isWeekendET() ? 'Expected by now.' : 'Waiting for next scheduled run.'}</div>`;
+    return { ok: !expected || isWeekendET(), last: null };
+  }
+  const ranToday = last.date === todayET();
+  const status = last.status;
+  let pill = '<span class="pill muted">unknown</span>';
+  if (status === 'ok') pill = '<span class="pill good">ok</span>';
+  else if (status === 'blocked') pill = '<span class="pill warn">no-op</span>';
+  else if (status === 'error') pill = '<span class="pill bad">error</span>';
+  else if (status === 'started') pill = '<span class="pill muted">in progress</span>';
+
+  el.innerHTML = `
+    <div class="big" style="font-size:18px;">${fmtET(last.ts)}</div>
+    <div class="small" style="margin-top:8px;">${pill} <span style="margin-left:6px;">${last.note || ''}</span></div>
+    <div class="small">${ago(last.ts)}</div>
+  `;
+  const healthyToday = ranToday && (status === 'ok' || status === 'blocked');
+  return { ok: isWeekendET() || !expected || healthyToday, last };
+}
+
+function renderStatus(morningHealth, eodHealth) {
+  const banner = $('status');
+  if (isWeekendET()) {
+    banner.className = 'status-banner muted';
+    banner.innerHTML = '<div class="dot"></div><div><span class="text">Weekend</span><span class="sub">No trading. Crons resume Monday.</span></div>';
+    return;
+  }
+  if (morningHealth.ok && eodHealth.ok) {
+    banner.className = 'status-banner good';
+    banner.innerHTML = '<div class="dot"></div><div><span class="text">Bot is healthy</span><span class="sub">Crons are firing on schedule.</span></div>';
+  } else if (!morningHealth.ok && expectedMorningSoFar()) {
+    banner.className = 'status-banner bad';
+    banner.innerHTML = '<div class="dot"></div><div><span class="text">Morning cron missed!</span><span class="sub">9:35 ET has passed but no run today.</span></div>';
+  } else if (!eodHealth.ok && expectedEODSoFar()) {
+    banner.className = 'status-banner bad';
+    banner.innerHTML = '<div class="dot"></div><div><span class="text">EOD cron missed!</span><span class="sub">3:55 ET has passed but no flatten today.</span></div>';
+  } else {
+    banner.className = 'status-banner warn';
+    banner.innerHTML = '<div class="dot"></div><div><span class="text">Waiting</span><span class="sub">Next cron hasn\'t fired yet.</span></div>';
+  }
+}
+
+function renderPicks(entries) {
+  const morningEntries = entries.filter(e => e.type === 'morning');
+  const today = morningEntries[morningEntries.length - 1];
+  const wrap = $('picks');
+  if (!today || today.date !== todayET()) {
+    wrap.innerHTML = '<div class="empty">No picks today yet.</div>';
+    return;
+  }
+  const orders = today.orders || [];
+  const claudePicks = today.picks_response?.picks || [];
+
+  if (orders.length === 0 && claudePicks.length === 0) {
+    wrap.innerHTML = `<div class="empty">Claude held off today. ${today.picks_response?.market_take ? '<br><br>"' + today.picks_response.market_take + '"' : ''}</div>`;
+    return;
+  }
+  // Show orders if we have them, else show what Claude suggested
+  const items = orders.length ? orders : claudePicks.map(p => ({ ...p, status: 'not_submitted' }));
+  wrap.innerHTML = items.map(o => `
+    <div class="pick">
+      <div>
+        <div class="sym">${o.symbol}</div>
+        <div class="meta">
+          ${o.qty ? `${o.qty} sh @ ~$${o.entry_price_est?.toFixed(2)} · ` : ''}
+          ${o.stop_price ? `stop $${o.stop_price} / target $${o.take_price}` : ''}
+        </div>
+      </div>
+      <div>${
+        o.status === 'submitted' ? '<span class="pill good">submitted</span>' :
+        o.status === 'failed' ? '<span class="pill bad">failed</span>' :
+        '<span class="pill muted">' + (o.confidence || 'pick') + '</span>'
+      }</div>
+      ${o.rationale ? `<div class="rationale">${o.rationale}</div>` : ''}
+      ${o.error ? `<div class="rationale neg">${o.error}</div>` : ''}
+    </div>
+  `).join('');
+}
+
+function renderWeekly(entries) {
+  const eods = entries.filter(e => e.type === 'eod');
+  // Find this week's EODs (Mon-Sun)
+  const today = new Date();
+  const dow = today.getDay() || 7;  // Mon=1..Sun=7
+  const monday = new Date(today);
+  monday.setDate(today.getDate() - (dow - 1));
+  const mondayStr = monday.toISOString().slice(0, 10);
+  const wtdEods = eods.filter(e => e.date >= mondayStr);
+
+  if (wtdEods.length === 0) {
+    $('wtd-pct').textContent = '—';
+    $('wtd-detail').textContent = 'No trading days completed this week yet.';
+    return;
+  }
+  // Compound daily returns
+  let mult = 1;
+  for (const e of wtdEods) mult *= 1 + (e.daily_pct || 0) / 100;
+  const wtdPct = (mult - 1) * 100;
+
+  const el = $('wtd-pct');
+  el.textContent = fmtPct(wtdPct);
+  el.className = 'big ' + (wtdPct > 0 ? 'pos' : wtdPct < 0 ? 'neg' : 'neutral');
+
+  $('wtd-detail').textContent = `${wtdEods.length} of 5 trading days · target +1.5%`;
+
+  const bar = $('wtd-bar');
+  const pct = Math.max(0, Math.min(100, (wtdPct / 1.5) * 100));
+  bar.querySelector('div').style.width = `${pct}%`;
+  bar.className = 'progress' + (wtdPct < 0 ? ' neg' : wtdPct < 1.5 ? ' below' : '');
+}
+
+function renderHistory(entries) {
+  const eods = entries.filter(e => e.type === 'eod').slice(-14).reverse();
+  const tbody = $('history').querySelector('tbody');
+  if (eods.length === 0) {
+    tbody.innerHTML = '<tr><td colspan="4" class="empty" style="text-align:center;">No history yet.</td></tr>';
+    return;
+  }
+  tbody.innerHTML = eods.map(e => {
+    // Count picks for that date from the morning entry
+    const morning = entries.find(m => m.type === 'morning' && m.date === e.date);
+    const numPicks = morning?.orders?.length ?? 0;
+    const pnlClass = e.daily_pnl_usd > 0 ? 'pos' : e.daily_pnl_usd < 0 ? 'neg' : 'neutral';
+    return `<tr>
+      <td>${e.date}</td>
+      <td>${numPicks || '—'}</td>
+      <td class="num ${pnlClass}">${fmtUSD(e.daily_pnl_usd)}</td>
+      <td class="num ${pnlClass}">${fmtPct(e.daily_pct)}</td>
+    </tr>`;
+  }).join('');
+}
+
+async function load() {
+  try {
+    const r = await fetch(TRADES_URL + '?t=' + Date.now(), { cache: 'no-store' });
+    const entries = r.ok ? await r.json() : [];
+
+    const morningHealth = renderRunStatus('morning', expectedMorningSoFar(), entries);
+    const eodHealth = renderRunStatus('eod', expectedEODSoFar(), entries);
+    renderStatus(morningHealth, eodHealth);
+    renderPicks(entries);
+    renderWeekly(entries);
+    renderHistory(entries);
+
+    $('refreshed').textContent = `updated ${new Date().toLocaleTimeString()}`;
+  } catch (e) {
+    $('refreshed').textContent = `error: ${e.message}`;
+  }
+}
+load();
+setInterval(load, REFRESH_MS);
+</script>
+</body>
+</html>

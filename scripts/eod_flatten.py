@@ -10,8 +10,11 @@ from src import alpaca_client, flatten, tracker  # noqa: E402
 
 
 def main() -> int:
+    tracker.log_run_attempt("eod", "started")
+
     if not alpaca_client.market_is_open():
         print("[eod] market closed — nothing to flatten")
+        tracker.log_run_attempt("eod", "blocked", "market closed")
         return 0
 
     print("[eod] flattening positions...")
@@ -24,6 +27,7 @@ def main() -> int:
 
     weekly = tracker.weekly_progress()
     print(f"[eod] WTD: {json.dumps(weekly, indent=2)}")
+    tracker.log_run_attempt("eod", "ok", f"closed {len(result.get('closed', []))} positions")
     return 0
 
 
