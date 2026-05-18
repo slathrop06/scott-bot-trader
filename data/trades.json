@@ -40,5 +40,63 @@
     "ts": "2026-05-17T14:50:38.332766Z",
     "status": "blocked",
     "note": "Market is closed."
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-05-18",
+    "ts": "2026-05-18T16:39:56.876575Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-05-18",
+    "ts": "2026-05-18T16:40:53.716817Z",
+    "equity_start": 100000.0,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "GOOGL",
+          "confidence": "medium",
+          "catalyst": "+1.55% premarket on broad mega-cap tech bid; stock holding up despite Druckenmiller exit headline, suggesting absorption",
+          "smart_money_signals": "Insider cluster buy (5 different insiders bought in 30d), WSB chatter 16x normal, 88.6% analyst bullish (21SB/41B/8H, 0 sells)",
+          "rationale": "Insider cluster buying with overwhelming analyst conviction and a constructive premarket tape into a bearish headline is a high-quality absorption setup."
+        }
+      ],
+      "market_take": "Mixed tape \u2014 energy and mega-cap tech firm, but bond rout and Aschenbrenner short headlines pressure semis; signal quality is thin overall.",
+      "skipped_movers": [
+        "CRM: 5 insider sells vs 2 buys plus BofA Underperform \u2014 alt-data contradicts the gap, skip",
+        "ORCL: down on Aschenbrenner short + House net selling, no long thesis",
+        "NFLX: insider cluster buy and WSB spike but no news catalyst \u2014 fails catalyst test",
+        "CAT: down 2.5% with no news, insider sells outnumber buys 31:12 \u2014 skip",
+        "ADBE: 5 insider sells, 0 buys, analysts only 45.7% bullish \u2014 gap unconfirmed",
+        "CVX/XOM: energy bid on Iran headlines but no smart-money confirmation",
+        "TSLA: 18 insider sells vs 3 buys and stock down \u2014 clear skip",
+        "BAC: insider cluster buy and 83% analyst bull but no fresh catalyst",
+        "V/MA: small premarket pops on filler 'if you invested' news, no real catalyst",
+        "MCD/COST: no catalyst, weak alt-data",
+        "NVDA: down premarket, House net selling 3:1 ahead of earnings \u2014 skip"
+      ]
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Insider cluster buying with overwhelming analyst conviction and a constructive premarket tape into a bearish headline is a high-quality absorption setup.",
+        "symbol": "GOOGL",
+        "qty": 82,
+        "entry_price_est": 401.32500000000005,
+        "stop_price": 397.31,
+        "take_price": 409.35,
+        "order_id": "a9345976-e60f-40de-923c-ccb6f46194da"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-05-18",
+    "ts": "2026-05-18T16:40:53.717170Z",
+    "status": "ok",
+    "note": "1 orders submitted"
   }
 ]
