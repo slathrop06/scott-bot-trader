@@ -62,14 +62,17 @@ def todays_round_trips(now: datetime | None = None) -> list[dict]:
         status=QueryOrderStatus.CLOSED,
         after=today_start,
         limit=500,
-        nested=False,
+        nested=True,  # parents include their legs (stop/take); else .legs is None
     )
-    orders = alpaca_client.trading().get_orders(filter=req)
+    parents = alpaca_client.trading().get_orders(filter=req)
 
-    bracket_child_ids = set()
-    for o in orders:
-        for leg in (getattr(o, "legs", None) or []):
+    bracket_child_ids: set[str] = set()
+    orders: list = []
+    for p in parents:
+        orders.append(p)
+        for leg in (getattr(p, "legs", None) or []):
             bracket_child_ids.add(str(leg.id))
+            orders.append(leg)
 
     fills: list[dict] = []
     for o in orders:
