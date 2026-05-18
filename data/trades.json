@@ -63,19 +63,19 @@
           "rationale": "Insider cluster buying with overwhelming analyst conviction and a constructive premarket tape into a bearish headline is a high-quality absorption setup."
         }
       ],
-      "market_take": "Mixed tape — energy and mega-cap tech firm, but bond rout and Aschenbrenner short headlines pressure semis; signal quality is thin overall.",
+      "market_take": "Mixed tape \u2014 energy and mega-cap tech firm, but bond rout and Aschenbrenner short headlines pressure semis; signal quality is thin overall.",
       "skipped_movers": [
-        "CRM: 5 insider sells vs 2 buys plus BofA Underperform — alt-data contradicts the gap, skip",
+        "CRM: 5 insider sells vs 2 buys plus BofA Underperform \u2014 alt-data contradicts the gap, skip",
         "ORCL: down on Aschenbrenner short + House net selling, no long thesis",
-        "NFLX: insider cluster buy and WSB spike but no news catalyst — fails catalyst test",
-        "CAT: down 2.5% with no news, insider sells outnumber buys 31:12 — skip",
-        "ADBE: 5 insider sells, 0 buys, analysts only 45.7% bullish — gap unconfirmed",
+        "NFLX: insider cluster buy and WSB spike but no news catalyst \u2014 fails catalyst test",
+        "CAT: down 2.5% with no news, insider sells outnumber buys 31:12 \u2014 skip",
+        "ADBE: 5 insider sells, 0 buys, analysts only 45.7% bullish \u2014 gap unconfirmed",
         "CVX/XOM: energy bid on Iran headlines but no smart-money confirmation",
-        "TSLA: 18 insider sells vs 3 buys and stock down — clear skip",
+        "TSLA: 18 insider sells vs 3 buys and stock down \u2014 clear skip",
         "BAC: insider cluster buy and 83% analyst bull but no fresh catalyst",
         "V/MA: small premarket pops on filler 'if you invested' news, no real catalyst",
         "MCD/COST: no catalyst, weak alt-data",
-        "NVDA: down premarket, House net selling 3:1 ahead of earnings — skip"
+        "NVDA: down premarket, House net selling 3:1 ahead of earnings \u2014 skip"
       ]
     },
     "orders": [
@@ -116,38 +116,38 @@
         {
           "symbol": "NFLX",
           "confidence": "high",
-          "catalyst": "BofA reiterates Buy with $125 target, highlighting $3B ad revenue ramp and NFL Thanksgiving games — concrete bullish thesis driving +3.2% gap",
+          "catalyst": "BofA reiterates Buy with $125 target, highlighting $3B ad revenue ramp and NFL Thanksgiving games \u2014 concrete bullish thesis driving +3.2% gap",
           "smart_money_signals": "Insider cluster buy (6 distinct insiders, 16 buys in 30d), WSB chatter 9.0x normal (rank #43), 78% analyst bullish (17SB/29B)",
-          "rationale": "Fresh analyst-driven catalyst lines up with insider cluster conviction and a retail attention spike — multi-vector confirmation on a clean gap up."
+          "rationale": "Fresh analyst-driven catalyst lines up with insider cluster conviction and a retail attention spike \u2014 multi-vector confirmation on a clean gap up."
         },
         {
           "symbol": "GE",
           "confidence": "medium",
-          "catalyst": "+1.98% premarket momentum without negative news in a risk-off tape (Nasdaq -1.1%) — relative strength signals institutional accumulation",
-          "smart_money_signals": "Insider cluster buy with 15 distinct buyers (16 buys vs 8 sells, 30d), House cluster — Moskowitz bought 3x in 21d, 87% analyst bullish (9SB/18B)",
+          "catalyst": "+1.98% premarket momentum without negative news in a risk-off tape (Nasdaq -1.1%) \u2014 relative strength signals institutional accumulation",
+          "smart_money_signals": "Insider cluster buy with 15 distinct buyers (16 buys vs 8 sells, 30d), House cluster \u2014 Moskowitz bought 3x in 21d, 87% analyst bullish (9SB/18B)",
           "rationale": "Rare confluence of broad insider cluster, repeat congressional buying, and 87% analyst conviction supporting outperformance on a down-tape day."
         }
       ],
-      "market_take": "Risk-off tone with Nasdaq -1.1%, oil >$106 on Iran impasse, and AI capex jitters hitting ORCL/MU — favor names with idiosyncratic catalysts and deep smart-money support.",
+      "market_take": "Risk-off tone with Nasdaq -1.1%, oil >$106 on Iran impasse, and AI capex jitters hitting ORCL/MU \u2014 favor names with idiosyncratic catalysts and deep smart-money support.",
       "skipped_movers": [
-        "CRM: BofA Underperform downgrade is the catalyst — wrong direction; +3% gap likely fades, plus 5 insider sells",
-        "ADBE: WSB 14x spike but 5 insider sells, 0 buys, and only 45.7% analyst bullish — no real catalyst, just a retail squeeze",
+        "CRM: BofA Underperform downgrade is the catalyst \u2014 wrong direction; +3% gap likely fades, plus 5 insider sells",
+        "ADBE: WSB 14x spike but 5 insider sells, 0 buys, and only 45.7% analyst bullish \u2014 no real catalyst, just a retail squeeze",
         "SHOP: no smart-money confirmation beyond generic analyst rating, news is about CRM not SHOP",
-        "BAC: insider cluster buy is solid but no fresh news catalyst — fails the BOTH test",
-        "CVX: oil-driven move but 4 insider sells, 0 buys — smart money fading the rally",
+        "BAC: insider cluster buy is solid but no fresh news catalyst \u2014 fails the BOTH test",
+        "CVX: oil-driven move but 4 insider sells, 0 buys \u2014 smart money fading the rally",
         "V/MA: lifestyle articles, no real catalyst; single House buy is weak alone",
-        "TSLA: down -1.9%, 18 insider sells vs 3 buys, only 47.5% analyst bullish — skip",
+        "TSLA: down -1.9%, 18 insider sells vs 3 buys, only 47.5% analyst bullish \u2014 skip",
         "GOOGL: strong alt-data but Druckenmiller exit headline is bearish catalyst, not bullish; net insider 5 buys vs 11 sells",
         "MCD/COST: no catalyst, minimal alt-data",
-        "ORCL: down on AI capex jitters + Aschenbrenner short + congressional selling — clearly avoid",
-        "CAT: down -2.6%, no news, mixed insider (12 buys vs 31 sells) — price contradicts cluster buy"
+        "ORCL: down on AI capex jitters + Aschenbrenner short + congressional selling \u2014 clearly avoid",
+        "CAT: down -2.6%, no news, mixed insider (12 buys vs 31 sells) \u2014 price contradicts cluster buy"
       ]
     },
     "orders": [
       {
         "status": "submitted",
         "confidence": "high",
-        "rationale": "Fresh analyst-driven catalyst lines up with insider cluster conviction and a retail attention spike — multi-vector confirmation on a clean gap up.",
+        "rationale": "Fresh analyst-driven catalyst lines up with insider cluster conviction and a retail attention spike \u2014 multi-vector confirmation on a clean gap up.",
         "symbol": "NFLX",
         "qty": 368,
         "entry_price_est": 89.67,
@@ -241,5 +241,12 @@
     "exit_reason": "bracket",
     "pnl_usd": -334.56,
     "pnl_pct": -1.0165
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-18",
+    "ts": "2026-05-18T20:58:01.488358Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=26060077291"
   }
 ]
