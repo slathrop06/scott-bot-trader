@@ -1,0 +1,19 @@
+{
+  "ts": "2026-05-18T20:26:41.303222Z",
+  "equity": 99494.34,
+  "last_equity": 100000.0,
+  "cash": 66481.06,
+  "buying_power": 165975.4,
+  "all_time_return_pct": -0.5057,
+  "positions": [
+    {
+      "symbol": "NFLX",
+      "qty": 368,
+      "avg_entry_price": 89.67,
+      "current_price": 89.71,
+      "market_value": 33013.28,
+      "unrealized_pl": 14.72,
+      "unrealized_pl_pct": 0.045
+    }
+  ]
+}

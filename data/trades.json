@@ -209,5 +209,37 @@
     "ts": "2026-05-18T20:06:37.759366Z",
     "status": "ok",
     "note": "closed 1 positions"
+  },
+  {
+    "type": "trade",
+    "date": "2026-05-18",
+    "ts": "2026-05-18T20:26:41.168778Z",
+    "symbol": "GE",
+    "qty": 114,
+    "entry_price": 286.9,
+    "entry_ts": "2026-05-18T17:19:56.367118Z",
+    "entry_order_id": "9e39c086-73be-4e38-aeef-e9e116dd3f98",
+    "exit_price": 285.27,
+    "exit_ts": "2026-05-18T18:01:24.716632Z",
+    "exit_order_id": "d944d5d1-b5b3-480a-9d04-4a0c3b09782a",
+    "exit_reason": "flatten",
+    "pnl_usd": -185.82,
+    "pnl_pct": -0.5681
+  },
+  {
+    "type": "trade",
+    "date": "2026-05-18",
+    "ts": "2026-05-18T20:26:41.168778Z",
+    "symbol": "GOOGL",
+    "qty": 82,
+    "entry_price": 401.36,
+    "entry_ts": "2026-05-18T16:40:55.282511Z",
+    "entry_order_id": "a9345976-e60f-40de-923c-ccb6f46194da",
+    "exit_price": 397.28,
+    "exit_ts": "2026-05-18T18:54:38.535339Z",
+    "exit_order_id": "f92116e4-b978-43af-b4b2-cedcb2b2063e",
+    "exit_reason": "flatten",
+    "pnl_usd": -334.56,
+    "pnl_pct": -1.0165
   }
 ]
