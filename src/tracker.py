@@ -33,6 +33,21 @@ def log_run_attempt(kind: str, status: str, note: str = "") -> None:
     _save_log(entries)
 
 
+def already_completed_today(kind: str) -> bool:
+    # Did a `kind` run finish today? Used by the backup cron to no-op when
+    # the primary already ran (success or graceful bail). A crashed "started"
+    # entry doesn't count — the retry should still fire.
+    today = date.today().isoformat()
+    for e in _load_log():
+        if (
+            e.get("type") == f"{kind}_attempt"
+            and e.get("date") == today
+            and e.get("status") in ("ok", "blocked")
+        ):
+            return True
+    return False
+
+
 def log_morning_run(picks_result: dict, orders: list[dict], account_snapshot: dict) -> None:
     entries = _load_log()
     entries.append({
