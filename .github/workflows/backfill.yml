@@ -1,0 +1,49 @@
+name: backfill-trades
+
+# Manual trigger only — backfill today's filled orders into trades.json.
+# Use when a dashboard change goes live mid-day and you want the morning's
+# trades retroactively logged with real entry/exit prices.
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: scott-bot-trader
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Backfill today's trades
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          ALPACA_BASE_URL: https://paper-api.alpaca.markets
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+          TRADING_MODE: paper
+        run: python scripts/backfill_trades.py
+
+      - name: Commit
+        if: always()
+        run: |
+          git config user.name "scott-bot-trader"
+          git config user.email "bot@scottbotpicks.com"
+          git add data/trades.json data/account.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "backfill trades $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
