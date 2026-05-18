@@ -11,6 +11,9 @@ from src import altdata, data, earnings, news, picker, safety, trader, tracker  
 
 
 def main() -> int:
+    if tracker.already_completed_today("morning"):
+        print("[morning] already completed today — skipping (backup cron no-op)")
+        return 0
     tracker.log_run_attempt("morning", "started")
     print("[morning] preflight checks...")
     try:

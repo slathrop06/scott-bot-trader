@@ -3,9 +3,19 @@ name: morning-run
 on:
   # 9:35am ET = 13:35 UTC (EDT) or 14:35 UTC (EST). Both fire; script no-ops
   # if the market is closed, so only the correct one actually trades.
+  # 10:00am ET (14:00/15:00 UTC) is a backup tick if the primary cron skipped;
+  # morning_run.py's already_completed_today guard makes it a no-op if the
+  # primary already ran successfully.
   schedule:
     - cron: "35 13 * * 1-5"
     - cron: "35 14 * * 1-5"
+    - cron: "0 14 * * 1-5"
+    - cron: "0 15 * * 1-5"
+  # Sentinel-file push trigger: when GHA cron silently skips, fire trades via
+  #   date > .triggers/morning && git add .triggers/morning && git commit -m fire && git push
+  push:
+    branches: [main]
+    paths: [".triggers/morning"]
   workflow_dispatch: {}
 
 permissions:
@@ -19,6 +29,28 @@ jobs:
       cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
+
+      - name: Heartbeat — prove the workflow started
+        # Runs before setup-python/pip so an 'infra_attempt' row is recorded
+        # even if dep install breaks. Distinguishes cron-didn't-fire (no row)
+        # from cron-fired-but-deps-broke (row exists, no morning_attempt:started).
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from datetime import date, datetime, timezone
+          from pathlib import Path
+          p = Path("data/trades.json")
+          log = json.loads(p.read_text()) if p.exists() else []
+          log.append({
+              "type": "infra_attempt",
+              "date": date.today().isoformat(),
+              "ts": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+              "status": "workflow_started",
+              "note": f"event={os.environ.get('GITHUB_EVENT_NAME','?')} run_id={os.environ.get('GITHUB_RUN_ID','?')}",
+          })
+          p.parent.mkdir(parents=True, exist_ok=True)
+          p.write_text(json.dumps(log, indent=2))
+          PY
 
       - uses: actions/setup-python@v5
         with:
