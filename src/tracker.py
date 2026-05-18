@@ -2,7 +2,11 @@
 from __future__ import annotations
 import json
 from datetime import datetime, date, timedelta
+from pathlib import Path
 from . import alpaca_client, config
+
+
+ACCOUNT_SNAPSHOT_PATH = config.DATA_DIR / "account.json"
 
 
 def _load_log() -> list[dict]:
@@ -17,6 +21,30 @@ def _load_log() -> list[dict]:
 def _save_log(entries: list[dict]) -> None:
     config.DATA_DIR.mkdir(exist_ok=True)
     config.TRADES_LOG.write_text(json.dumps(entries, indent=2, default=str))
+
+
+def save_account_snapshot(snapshot: dict) -> None:
+    # Dashboard reads this for the "current portfolio" card. Single record
+    # (latest snapshot) — historical equity comes from `eod` entries in
+    # trades.json, no need to keep a separate hourly series here.
+    config.DATA_DIR.mkdir(exist_ok=True)
+    ACCOUNT_SNAPSHOT_PATH.write_text(json.dumps(snapshot, indent=2, default=str))
+
+
+def log_trades(trades: list[dict]) -> None:
+    if not trades:
+        return
+    entries = _load_log()
+    today = date.today().isoformat()
+    ts = datetime.utcnow().isoformat() + "Z"
+    for t in trades:
+        entries.append({
+            "type": "trade",
+            "date": today,
+            "ts": ts,
+            **t,
+        })
+    _save_log(entries)
 
 
 def log_run_attempt(kind: str, status: str, note: str = "") -> None:

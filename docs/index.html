@@ -31,7 +31,13 @@
   .refreshed { color: var(--muted); font-size: 12px; }
   .grid { display: grid; gap: 16px; }
   .row-2 { grid-template-columns: 1fr 1fr; }
-  @media (max-width: 640px) { .row-2 { grid-template-columns: 1fr; } }
+  .row-3 { grid-template-columns: repeat(3, 1fr); }
+  .row-4 { grid-template-columns: repeat(4, 1fr); }
+  @media (max-width: 720px) {
+    .row-2 { grid-template-columns: 1fr; }
+    .row-3 { grid-template-columns: 1fr 1fr; }
+    .row-4 { grid-template-columns: 1fr 1fr; }
+  }
   .card {
     background: var(--card);
     border: 1px solid var(--line);
@@ -47,7 +53,9 @@
     font-weight: 600;
   }
   .big { font-size: 28px; font-weight: 700; letter-spacing: -0.02em; }
+  .huge { font-size: 40px; font-weight: 700; letter-spacing: -0.025em; }
   .small { font-size: 13px; color: var(--muted); margin-top: 4px; }
+  .label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 600; }
   .pill {
     display: inline-block; padding: 4px 10px; border-radius: 999px;
     font-size: 12px; font-weight: 600;
@@ -64,12 +72,12 @@
   .status-banner.good { background: #f0fdf4; border-color: #bbf7d0; color: #14532d; }
   .status-banner.warn { background: #fffbeb; border-color: #fde68a; color: #78350f; }
   .status-banner.bad { background: #fef2f2; border-color: #fecaca; color: #7f1d1d; }
-  .status-banner .dot {
-    width: 10px; height: 10px; border-radius: 50%;
-  }
+  .status-banner.muted { background: #f8fafc; border-color: var(--line); color: var(--muted); }
+  .status-banner .dot { width: 10px; height: 10px; border-radius: 50%; }
   .status-banner.good .dot { background: var(--good); }
   .status-banner.warn .dot { background: var(--warn); }
   .status-banner.bad .dot { background: var(--bad); }
+  .status-banner.muted .dot { background: var(--muted); }
   .status-banner .text { font-weight: 600; }
   .status-banner .sub { font-weight: 400; opacity: 0.8; margin-left: 8px; }
 
@@ -84,10 +92,16 @@
   table { width: 100%; border-collapse: collapse; font-size: 14px; }
   th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); }
   th { color: var(--muted); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; }
+  tr:last-child td { border-bottom: none; }
   td.num { font-variant-numeric: tabular-nums; text-align: right; }
+  td.sym { font-weight: 700; }
   .pos { color: var(--good); font-weight: 600; }
   .neg { color: var(--bad); font-weight: 600; }
   .neutral { color: var(--muted); }
+
+  .reason-pill { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 11px; font-weight: 600; }
+  .reason-bracket { background: #e0e7ff; color: #4338ca; }
+  .reason-flatten { background: #f3e8ff; color: #7e22ce; }
 
   .picks-list { display: grid; gap: 10px; }
   .pick {
@@ -117,6 +131,11 @@
   footer { margin-top: 32px; color: var(--muted); font-size: 12px; text-align: center; }
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
+
+  .stat-block { padding: 12px 0; }
+  .stat-block .label { display: block; margin-bottom: 4px; }
+  .stat-block .value { font-size: 18px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .stat-block .sub-value { font-size: 12px; color: var(--muted); margin-top: 2px; }
 </style>
 </head>
 <body>
@@ -132,6 +151,21 @@
     <div class="text">Checking bot status…</div>
   </div>
 
+  <!-- PORTFOLIO BALANCE — top of fold -->
+  <div class="card" style="margin-bottom: 16px;">
+    <h2>Portfolio Balance</h2>
+    <div id="portfolio-body">
+      <div class="empty">No snapshot yet. Trigger account-snapshot workflow to populate.</div>
+    </div>
+  </div>
+
+  <!-- Open positions -->
+  <div class="card" id="positions-card" style="margin-bottom: 16px; display: none;">
+    <h2>Open Positions</h2>
+    <div id="positions-body"></div>
+  </div>
+
+  <!-- Run health -->
   <div class="grid row-2" style="margin-bottom: 16px;">
     <div class="card">
       <h2>Last Morning Run</h2>
@@ -155,11 +189,34 @@
     <div id="picks" class="picks-list"></div>
   </div>
 
+  <!-- TRADE HISTORY — full per-trade detail -->
   <div class="card" style="margin-bottom: 16px;">
-    <h2>Recent Days</h2>
+    <h2>Trade History — Entry / Exit / P&amp;L</h2>
+    <div id="trades-wrap">
+      <table id="trades">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Symbol</th>
+            <th class="num">Qty</th>
+            <th class="num">Entry</th>
+            <th class="num">Exit</th>
+            <th class="num">P&amp;L $</th>
+            <th class="num">P&amp;L %</th>
+            <th>Closed by</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Daily summary (kept as smaller card) -->
+  <div class="card" style="margin-bottom: 16px;">
+    <h2>Daily Summary</h2>
     <table id="history">
       <thead>
-        <tr><th>Date</th><th>Picks</th><th class="num">P&L</th><th class="num">%</th></tr>
+        <tr><th>Date</th><th>Trades</th><th class="num">P&amp;L</th><th class="num">%</th><th class="num">Equity End</th></tr>
       </thead>
       <tbody></tbody>
     </table>
@@ -187,21 +244,27 @@
 </div>
 
 <script>
-// GH Pages serves only /docs as the site root, so we fetch trades.json
-// from the raw repo URL instead. Public-repo raw content has CORS open.
-const TRADES_URL = 'https://raw.githubusercontent.com/slathrop06/scott-bot-trader/main/data/trades.json';
-const BACKTEST_URL = 'https://raw.githubusercontent.com/slathrop06/scott-bot-trader/main/data/backtest.json';
+const RAW = 'https://raw.githubusercontent.com/slathrop06/scott-bot-trader/main/data';
+const TRADES_URL   = `${RAW}/trades.json`;
+const ACCOUNT_URL  = `${RAW}/account.json`;
+const BACKTEST_URL = `${RAW}/backtest.json`;
 const REFRESH_MS = 60_000;
 
 const $ = (id) => document.getElementById(id);
 
-function fmtUSD(n) {
-  if (n == null) return '—';
+function fmtUSD(n, opts={}) {
+  if (n == null || isNaN(n)) return '—';
   const sign = n >= 0 ? '+' : '−';
-  return `${sign}$${Math.abs(n).toFixed(2)}`;
+  const showSign = opts.showSign !== false;
+  const abs = Math.abs(n).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  return showSign ? `${sign}$${abs}` : `$${n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+}
+function fmtPlain$(n) {
+  if (n == null || isNaN(n)) return '—';
+  return `$${n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
 }
 function fmtPct(n) {
-  if (n == null) return '—';
+  if (n == null || isNaN(n)) return '—';
   const sign = n >= 0 ? '+' : '';
   return `${sign}${n.toFixed(2)}%`;
 }
@@ -221,21 +284,25 @@ function fmtET(iso) {
     hour: 'numeric', minute: '2-digit',
   }) + ' ET';
 }
+function fmtTimeET(iso) {
+  if (!iso) return '—';
+  return new Date(iso).toLocaleString('en-US', {
+    timeZone: 'America/New_York',
+    hour: 'numeric', minute: '2-digit',
+  }) + ' ET';
+}
+function classForN(n) { return n > 0 ? 'pos' : n < 0 ? 'neg' : 'neutral'; }
 
 function todayET() {
-  // YYYY-MM-DD in ET
   const parts = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York' }).formatToParts(new Date());
   const get = (t) => parts.find(p => p.type === t).value;
   return `${get('year')}-${get('month')}-${get('day')}`;
 }
-
 function isWeekendET() {
   const dow = new Date().toLocaleDateString('en-US', { timeZone: 'America/New_York', weekday: 'short' });
   return dow === 'Sat' || dow === 'Sun';
 }
-
 function expectedMorningSoFar() {
-  // Has 9:35am ET passed today?
   const nowET = new Date().toLocaleString('en-US', { timeZone: 'America/New_York', hour: 'numeric', minute: 'numeric', hour12: false });
   const [h, m] = nowET.split(':').map(Number);
   return h > 9 || (h === 9 && m >= 35);
@@ -245,6 +312,105 @@ function expectedEODSoFar() {
   const [h, m] = nowET.split(':').map(Number);
   return h > 15 || (h === 15 && m >= 55);
 }
+
+// ---------- PORTFOLIO ----------
+
+function renderPortfolio(account, entries) {
+  const wrap = $('portfolio-body');
+  if (!account) {
+    wrap.innerHTML = '<div class="empty">No account snapshot yet. Hourly snapshot fires at the top of each market hour.</div>';
+    return;
+  }
+
+  const equity = account.equity;
+  const allTime = account.all_time_return_pct;
+  const allTimeDollars = equity - 100_000;
+  const cash = account.cash;
+  const buyingPower = account.buying_power;
+  const deployed = equity - cash;
+  const deployedPct = equity > 0 ? (deployed / equity) * 100 : 0;
+
+  // WTD from compounded eod daily_pct
+  const eods = entries.filter(e => e.type === 'eod');
+  const today = new Date();
+  const dow = today.getDay() || 7;
+  const monday = new Date(today);
+  monday.setDate(today.getDate() - (dow - 1));
+  const mondayStr = monday.toISOString().slice(0, 10);
+  let wtdMult = 1;
+  for (const e of eods.filter(e => e.date >= mondayStr)) wtdMult *= 1 + (e.daily_pct || 0) / 100;
+  const wtdPct = (wtdMult - 1) * 100;
+
+  wrap.innerHTML = `
+    <div class="huge ${classForN(allTimeDollars)}">${fmtPlain$(equity)}</div>
+    <div class="small" style="margin-top:6px;">
+      ${ago(account.ts)} · snapshot at ${fmtTimeET(account.ts)}
+    </div>
+    <div class="grid row-4" style="margin-top: 18px; gap: 14px;">
+      <div class="stat-block">
+        <span class="label">All-time</span>
+        <div class="value ${classForN(allTimeDollars)}">${fmtPct(allTime)}</div>
+        <div class="sub-value">${fmtUSD(allTimeDollars)} from $100,000</div>
+      </div>
+      <div class="stat-block">
+        <span class="label">This week</span>
+        <div class="value ${classForN(wtdPct)}">${eods.filter(e => e.date >= mondayStr).length ? fmtPct(wtdPct) : '—'}</div>
+        <div class="sub-value">target +${(1.5).toFixed(1)}% / week</div>
+      </div>
+      <div class="stat-block">
+        <span class="label">Cash</span>
+        <div class="value">${fmtPlain$(cash)}</div>
+        <div class="sub-value">buying power ${fmtPlain$(buyingPower)}</div>
+      </div>
+      <div class="stat-block">
+        <span class="label">Deployed</span>
+        <div class="value">${fmtPlain$(deployed)}</div>
+        <div class="sub-value">${deployedPct.toFixed(1)}% of equity</div>
+      </div>
+    </div>
+  `;
+}
+
+function renderOpenPositions(account) {
+  const card = $('positions-card');
+  const body = $('positions-body');
+  const positions = (account?.positions) || [];
+  if (positions.length === 0) {
+    card.style.display = 'none';
+    return;
+  }
+  card.style.display = '';
+  body.innerHTML = `
+    <table>
+      <thead>
+        <tr>
+          <th>Symbol</th>
+          <th class="num">Qty</th>
+          <th class="num">Entry</th>
+          <th class="num">Current</th>
+          <th class="num">Mkt Value</th>
+          <th class="num">Unrealized P&L</th>
+          <th class="num">%</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${positions.map(p => `
+          <tr>
+            <td class="sym">${p.symbol}</td>
+            <td class="num">${p.qty}</td>
+            <td class="num">${fmtPlain$(p.avg_entry_price)}</td>
+            <td class="num">${p.current_price != null ? fmtPlain$(p.current_price) : '—'}</td>
+            <td class="num">${fmtPlain$(p.market_value)}</td>
+            <td class="num ${classForN(p.unrealized_pl)}">${fmtUSD(p.unrealized_pl)}</td>
+            <td class="num ${classForN(p.unrealized_pl_pct)}">${fmtPct(p.unrealized_pl_pct)}</td>
+          </tr>
+        `).join('')}
+      </tbody>
+    </table>
+  `;
+}
+
+// ---------- RUN STATUS ----------
 
 function renderRunStatus(kind, expected, entries) {
   const attempts = entries.filter(e => e.type === `${kind}_attempt`);
@@ -293,6 +459,8 @@ function renderStatus(morningHealth, eodHealth) {
   }
 }
 
+// ---------- PICKS ----------
+
 function renderPicks(entries) {
   const morningEntries = entries.filter(e => e.type === 'morning');
   const today = morningEntries[morningEntries.length - 1];
@@ -308,9 +476,7 @@ function renderPicks(entries) {
     wrap.innerHTML = `<div class="empty">Claude held off today. ${today.picks_response?.market_take ? '<br><br>"' + today.picks_response.market_take + '"' : ''}</div>`;
     return;
   }
-  // Show orders if we have them, else show what Claude suggested
   const items = orders.length ? orders : claudePicks.map(p => ({ ...p, status: 'not_submitted' }));
-  // Match each order to its Claude pick to find the catalyst.
   const lookupCatalyst = (sym) => claudePicks.find(p => p.symbol === sym)?.catalyst || '';
 
   wrap.innerHTML = items.map(o => {
@@ -320,8 +486,8 @@ function renderPicks(entries) {
       <div>
         <div class="sym">${o.symbol}</div>
         <div class="meta">
-          ${o.qty ? `${o.qty} sh @ ~$${o.entry_price_est?.toFixed(2)} · ` : ''}
-          ${o.stop_price ? `stop $${o.stop_price} / target $${o.take_price}` : ''}
+          ${o.qty ? `${o.qty} sh @ ~${fmtPlain$(o.entry_price_est)} · ` : ''}
+          ${o.stop_price ? `stop ${fmtPlain$(o.stop_price)} / target ${fmtPlain$(o.take_price)}` : ''}
         </div>
       </div>
       <div>${
@@ -340,7 +506,6 @@ function renderPicks(entries) {
   `;
   }).join('');
 
-  // If Claude listed skipped movers, show them too.
   if (today.picks_response?.skipped_movers?.length) {
     wrap.innerHTML += `
       <details style="margin-top:8px;">
@@ -354,11 +519,12 @@ function renderPicks(entries) {
   }
 }
 
+// ---------- WEEKLY ----------
+
 function renderWeekly(entries) {
   const eods = entries.filter(e => e.type === 'eod');
-  // Find this week's EODs (Mon-Sun)
   const today = new Date();
-  const dow = today.getDay() || 7;  // Mon=1..Sun=7
+  const dow = today.getDay() || 7;
   const monday = new Date(today);
   monday.setDate(today.getDate() - (dow - 1));
   const mondayStr = monday.toISOString().slice(0, 10);
@@ -369,7 +535,6 @@ function renderWeekly(entries) {
     $('wtd-detail').textContent = 'No trading days completed this week yet.';
     return;
   }
-  // Compound daily returns
   let mult = 1;
   for (const e of wtdEods) mult *= 1 + (e.daily_pct || 0) / 100;
   const wtdPct = (mult - 1) * 100;
@@ -386,26 +551,60 @@ function renderWeekly(entries) {
   bar.className = 'progress' + (wtdPct < 0 ? ' neg' : wtdPct < 1.5 ? ' below' : '');
 }
 
+// ---------- TRADE HISTORY ----------
+
+function renderTrades(entries) {
+  const trades = entries.filter(e => e.type === 'trade');
+  const tbody = $('trades').querySelector('tbody');
+  if (trades.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="8" class="empty" style="text-align:center;">
+      No trades logged yet. Trades are recorded by the EOD workflow (rich entry/exit fills via Alpaca).
+    </td></tr>`;
+    return;
+  }
+  // Most recent first, cap at 40
+  const recent = trades.slice(-40).reverse();
+  tbody.innerHTML = recent.map(t => {
+    const pnlCls = classForN(t.pnl_usd);
+    const reasonCls = t.exit_reason === 'flatten' ? 'reason-flatten' : 'reason-bracket';
+    const reasonText = t.exit_reason === 'flatten' ? 'EOD flatten' : 'stop / take';
+    return `<tr>
+      <td>${t.date}</td>
+      <td class="sym">${t.symbol}</td>
+      <td class="num">${t.qty}</td>
+      <td class="num">${fmtPlain$(t.entry_price)}</td>
+      <td class="num">${fmtPlain$(t.exit_price)}</td>
+      <td class="num ${pnlCls}">${fmtUSD(t.pnl_usd)}</td>
+      <td class="num ${pnlCls}">${fmtPct(t.pnl_pct)}</td>
+      <td><span class="reason-pill ${reasonCls}">${reasonText}</span></td>
+    </tr>`;
+  }).join('');
+}
+
+// ---------- DAILY SUMMARY ----------
+
 function renderHistory(entries) {
   const eods = entries.filter(e => e.type === 'eod').slice(-14).reverse();
   const tbody = $('history').querySelector('tbody');
   if (eods.length === 0) {
-    tbody.innerHTML = '<tr><td colspan="4" class="empty" style="text-align:center;">No history yet.</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="5" class="empty" style="text-align:center;">No daily summary yet.</td></tr>';
     return;
   }
   tbody.innerHTML = eods.map(e => {
-    // Count picks for that date from the morning entry
-    const morning = entries.find(m => m.type === 'morning' && m.date === e.date);
-    const numPicks = morning?.orders?.length ?? 0;
-    const pnlClass = e.daily_pnl_usd > 0 ? 'pos' : e.daily_pnl_usd < 0 ? 'neg' : 'neutral';
+    const trades = entries.filter(t => t.type === 'trade' && t.date === e.date);
+    const numTrades = trades.length || (entries.find(m => m.type === 'morning' && m.date === e.date)?.orders?.length ?? 0);
+    const pnlCls = classForN(e.daily_pnl_usd);
     return `<tr>
       <td>${e.date}</td>
-      <td>${numPicks || '—'}</td>
-      <td class="num ${pnlClass}">${fmtUSD(e.daily_pnl_usd)}</td>
-      <td class="num ${pnlClass}">${fmtPct(e.daily_pct)}</td>
+      <td>${numTrades || '—'}</td>
+      <td class="num ${pnlCls}">${fmtUSD(e.daily_pnl_usd)}</td>
+      <td class="num ${pnlCls}">${fmtPct(e.daily_pct)}</td>
+      <td class="num">${e.equity_end != null ? fmtPlain$(e.equity_end) : '—'}</td>
     </tr>`;
   }).join('');
 }
+
+// ---------- BACKTEST ----------
 
 function renderBacktest(bt) {
   if (!bt) return;
@@ -424,7 +623,7 @@ function renderBacktest(bt) {
   const flagStr = flags.length ? ` (${flags.join(', ')})` : '';
 
   body.innerHTML = `
-    <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 12px;">
+    <div class="grid row-3" style="margin-bottom: 12px;">
       <div>
         <div class="small">Strategy</div>
         <div class="big ${stratCls}">${fmtPct(strat)}</div>
@@ -455,20 +654,31 @@ function renderBacktest(bt) {
   `;
 }
 
+// ---------- LOAD ----------
+
+async function fetchJSON(url) {
+  try {
+    const r = await fetch(url + '?t=' + Date.now(), { cache: 'no-store' });
+    return r.ok ? await r.json() : null;
+  } catch { return null; }
+}
+
 async function load() {
   try {
-    const [tradesResp, btResp] = await Promise.all([
-      fetch(TRADES_URL + '?t=' + Date.now(), { cache: 'no-store' }),
-      fetch(BACKTEST_URL + '?t=' + Date.now(), { cache: 'no-store' }),
+    const [entries, account, backtest] = await Promise.all([
+      fetchJSON(TRADES_URL).then(x => x || []),
+      fetchJSON(ACCOUNT_URL),
+      fetchJSON(BACKTEST_URL),
     ]);
-    const entries = tradesResp.ok ? await tradesResp.json() : [];
-    const backtest = btResp.ok ? await btResp.json() : null;
 
+    renderPortfolio(account, entries);
+    renderOpenPositions(account);
     const morningHealth = renderRunStatus('morning', expectedMorningSoFar(), entries);
     const eodHealth = renderRunStatus('eod', expectedEODSoFar(), entries);
     renderStatus(morningHealth, eodHealth);
     renderPicks(entries);
     renderWeekly(entries);
+    renderTrades(entries);
     renderHistory(entries);
     renderBacktest(backtest);
 

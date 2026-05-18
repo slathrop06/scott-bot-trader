@@ -7,7 +7,7 @@ from pathlib import Path
 # Allow running as a plain script (`python scripts/morning_run.py`)
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from src import altdata, data, earnings, news, picker, safety, trader, tracker  # noqa: E402
+from src import account, altdata, data, earnings, news, picker, safety, trader, tracker  # noqa: E402
 
 
 def main() -> int:
@@ -77,6 +77,7 @@ def main() -> int:
         print(f"[morning]   {o}")
 
     tracker.log_morning_run(picks_response, orders, snapshot)
+    tracker.save_account_snapshot(account.current_snapshot())
     tracker.log_run_attempt("morning", "ok", f"{len(orders)} orders submitted")
     print("[morning] done")
     return 0

@@ -6,7 +6,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from src import alpaca_client, flatten, tracker  # noqa: E402
+from src import account, alpaca_client, flatten, tracker  # noqa: E402
 
 
 def main() -> int:
@@ -29,9 +29,26 @@ def main() -> int:
     summary = tracker.log_eod(result)
     print(f"[eod] equity=${summary['equity']:.2f}  daily_pnl=${summary['daily_pnl_usd']:+.2f}  ({summary['daily_pct']:+.2f}%)")
 
+    print("[eod] fetching today's filled orders for trade history...")
+    rt = account.todays_round_trips()
+    trades = rt["trades"]
+    tracker.log_trades(trades)
+    if trades:
+        for t in trades:
+            print(
+                f"[eod]   {t['symbol']} {t['qty']}sh  "
+                f"entry ${t['entry_price']} → exit ${t['exit_price']}  "
+                f"pnl ${t['pnl_usd']:+.2f} ({t['pnl_pct']:+.2f}%)  [{t['exit_reason']}]"
+            )
+    if rt["open_positions"]:
+        print(f"[eod] {len(rt['open_positions'])} positions still open (exits pending fill)")
+
+    print("[eod] saving account snapshot...")
+    tracker.save_account_snapshot(account.current_snapshot())
+
     weekly = tracker.weekly_progress()
     print(f"[eod] WTD: {json.dumps(weekly, indent=2)}")
-    tracker.log_run_attempt("eod", "ok", f"closed {len(result.get('closed', []))} positions")
+    tracker.log_run_attempt("eod", "ok", f"closed {len(result.get('closed', []))} positions, {len(trades)} round-trips")
     return 0
 
 

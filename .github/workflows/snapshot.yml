@@ -1,0 +1,58 @@
+name: account-snapshot
+
+on:
+  # Hourly during market hours, both EDT and EST coverage.
+  # EDT (Mar-Nov): market 13:30-20:00 UTC → snapshot at 14, 15, 16, 17, 18, 19 UTC
+  # EST (Nov-Mar): market 14:30-21:00 UTC → snapshot at 15, 16, 17, 18, 19, 20 UTC
+  schedule:
+    - cron: "0 14-20 * * 1-5"
+  push:
+    branches: [main]
+    paths: [".triggers/snapshot"]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: scott-bot-trader
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Snapshot account
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          ALPACA_BASE_URL: https://paper-api.alpaca.markets
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+          TRADING_MODE: paper
+        run: python scripts/snapshot_account.py
+
+      - name: Commit account snapshot
+        if: always()
+        run: |
+          if [ ! -f data/account.json ]; then
+            echo "No account.json — nothing to commit."
+            exit 0
+          fi
+          git config user.name "scott-bot-trader"
+          git config user.email "bot@scottbotpicks.com"
+          git add data/account.json
+          if git diff --cached --quiet; then
+            echo "No changes to account.json — skipping commit."
+          else
+            git commit -m "account snapshot $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
