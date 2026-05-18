@@ -2,9 +2,19 @@ name: eod-flatten
 
 on:
   # 3:55pm ET = 19:55 UTC (EDT) or 20:55 UTC (EST). Both fire; no-ops if closed.
+  # 4:15pm ET (20:15/21:15 UTC) is a backup tick if the primary cron skipped.
+  # eod_flatten.py's already_completed_today guard makes it a no-op if the
+  # primary already ran successfully. After-hours flattens queue for next open.
   schedule:
     - cron: "55 19 * * 1-5"
     - cron: "55 20 * * 1-5"
+    - cron: "15 20 * * 1-5"
+    - cron: "15 21 * * 1-5"
+  # Sentinel-file push trigger: if GHA cron silently skips, fire flatten via
+  #   date > .triggers/eod && git add .triggers/eod && git commit -m fire && git push
+  push:
+    branches: [main]
+    paths: [".triggers/eod"]
   workflow_dispatch: {}
 
 permissions:
@@ -18,6 +28,28 @@ jobs:
       cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
+
+      - name: Heartbeat — prove the workflow started
+        # Runs before setup-python/pip so an 'infra_attempt' row is recorded
+        # even if dep install breaks. Distinguishes cron-didn't-fire (no row)
+        # from cron-fired-but-deps-broke (row exists, no eod_attempt:started).
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from datetime import date, datetime, timezone
+          from pathlib import Path
+          p = Path("data/trades.json")
+          log = json.loads(p.read_text()) if p.exists() else []
+          log.append({
+              "type": "infra_attempt",
+              "date": date.today().isoformat(),
+              "ts": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+              "status": "eod_workflow_started",
+              "note": f"event={os.environ.get('GITHUB_EVENT_NAME','?')} run_id={os.environ.get('GITHUB_RUN_ID','?')}",
+          })
+          p.parent.mkdir(parents=True, exist_ok=True)
+          p.write_text(json.dumps(log, indent=2))
+          PY
 
       - uses: actions/setup-python@v5
         with:
