@@ -98,5 +98,81 @@
     "ts": "2026-05-18T16:40:53.717170Z",
     "status": "ok",
     "note": "1 orders submitted"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-05-18",
+    "ts": "2026-05-18T17:18:57.562674Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-05-18",
+    "ts": "2026-05-18T17:19:54.304383Z",
+    "equity_start": 100075.44,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "NFLX",
+          "confidence": "high",
+          "catalyst": "BofA reiterates Buy with $125 target, highlighting $3B ad revenue ramp and NFL Thanksgiving games \u2014 concrete bullish thesis driving +3.2% gap",
+          "smart_money_signals": "Insider cluster buy (6 distinct insiders, 16 buys in 30d), WSB chatter 9.0x normal (rank #43), 78% analyst bullish (17SB/29B)",
+          "rationale": "Fresh analyst-driven catalyst lines up with insider cluster conviction and a retail attention spike \u2014 multi-vector confirmation on a clean gap up."
+        },
+        {
+          "symbol": "GE",
+          "confidence": "medium",
+          "catalyst": "+1.98% premarket momentum without negative news in a risk-off tape (Nasdaq -1.1%) \u2014 relative strength signals institutional accumulation",
+          "smart_money_signals": "Insider cluster buy with 15 distinct buyers (16 buys vs 8 sells, 30d), House cluster \u2014 Moskowitz bought 3x in 21d, 87% analyst bullish (9SB/18B)",
+          "rationale": "Rare confluence of broad insider cluster, repeat congressional buying, and 87% analyst conviction supporting outperformance on a down-tape day."
+        }
+      ],
+      "market_take": "Risk-off tone with Nasdaq -1.1%, oil >$106 on Iran impasse, and AI capex jitters hitting ORCL/MU \u2014 favor names with idiosyncratic catalysts and deep smart-money support.",
+      "skipped_movers": [
+        "CRM: BofA Underperform downgrade is the catalyst \u2014 wrong direction; +3% gap likely fades, plus 5 insider sells",
+        "ADBE: WSB 14x spike but 5 insider sells, 0 buys, and only 45.7% analyst bullish \u2014 no real catalyst, just a retail squeeze",
+        "SHOP: no smart-money confirmation beyond generic analyst rating, news is about CRM not SHOP",
+        "BAC: insider cluster buy is solid but no fresh news catalyst \u2014 fails the BOTH test",
+        "CVX: oil-driven move but 4 insider sells, 0 buys \u2014 smart money fading the rally",
+        "V/MA: lifestyle articles, no real catalyst; single House buy is weak alone",
+        "TSLA: down -1.9%, 18 insider sells vs 3 buys, only 47.5% analyst bullish \u2014 skip",
+        "GOOGL: strong alt-data but Druckenmiller exit headline is bearish catalyst, not bullish; net insider 5 buys vs 11 sells",
+        "MCD/COST: no catalyst, minimal alt-data",
+        "ORCL: down on AI capex jitters + Aschenbrenner short + congressional selling \u2014 clearly avoid",
+        "CAT: down -2.6%, no news, mixed insider (12 buys vs 31 sells) \u2014 price contradicts cluster buy"
+      ]
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Fresh analyst-driven catalyst lines up with insider cluster conviction and a retail attention spike \u2014 multi-vector confirmation on a clean gap up.",
+        "symbol": "NFLX",
+        "qty": 368,
+        "entry_price_est": 89.67,
+        "stop_price": 88.77,
+        "take_price": 91.46,
+        "order_id": "1ed2b8a9-844b-4a19-b0d3-d46a6d5f1f83"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Rare confluence of broad insider cluster, repeat congressional buying, and 87% analyst conviction supporting outperformance on a down-tape day.",
+        "symbol": "GE",
+        "qty": 114,
+        "entry_price_est": 288.305,
+        "stop_price": 285.42,
+        "take_price": 294.07,
+        "order_id": "9e39c086-73be-4e38-aeef-e9e116dd3f98"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-05-18",
+    "ts": "2026-05-18T17:19:54.304898Z",
+    "status": "ok",
+    "note": "2 orders submitted"
   }
 ]
