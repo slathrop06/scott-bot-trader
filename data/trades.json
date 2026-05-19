@@ -553,5 +553,12 @@
     "ts": "2026-05-19T19:43:59.194769Z",
     "status": "intraday_workflow_started",
     "note": "event=schedule run_id=26121004281"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-19",
+    "ts": "2026-05-19T20:15:57.915172Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=26122678345"
   }
 ]
