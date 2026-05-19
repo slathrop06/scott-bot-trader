@@ -437,5 +437,12 @@
     "ts": "2026-05-19T16:44:56.164170Z",
     "status": "workflow_started",
     "note": "event=schedule run_id=26111593720"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-19",
+    "ts": "2026-05-19T17:26:59.489359Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=26113823614"
   }
 ]
