@@ -1,5 +1,7 @@
 """Thin wrapper over alpaca-py — just the calls we actually use."""
 from __future__ import annotations
+import time
+import uuid
 from decimal import Decimal
 from alpaca.trading.client import TradingClient
 from alpaca.trading.requests import (
@@ -87,12 +89,20 @@ def submit_bracket(
     stop_price = round(price * (1 - stop_loss_pct / 100), 2)
     take_price = round(price * (1 + take_profit_pct / 100), 2)
 
+    # client_order_id makes the submission idempotent on the Alpaca side: if
+    # the SDK retries after a transient network blip and the order was already
+    # accepted server-side, Alpaca rejects the duplicate instead of doubling
+    # the position. (We suspect the 2x mystery positions on 2026-05-19 were
+    # exactly this case during the crashed 14:06 morning run.)
+    coid = f"sbt-{symbol}-{int(time.time())}-{uuid.uuid4().hex[:6]}"
+
     req = MarketOrderRequest(
         symbol=symbol,
         qty=qty,
         side=OrderSide.BUY,
         time_in_force=TimeInForce.DAY,
         order_class=OrderClass.BRACKET,
+        client_order_id=coid,
         take_profit=TakeProfitRequest(limit_price=take_price),
         stop_loss=StopLossRequest(stop_price=stop_price),
     )

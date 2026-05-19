@@ -28,6 +28,7 @@ TAKE_PROFIT_PCT = 2.0              # bracket order take-profit (2:1 reward:risk)
 MAX_PICKS_PER_DAY = 3              # how many tickers Claude can pick
 MAX_EQUITY_PER_TRADE_PCT = 33.0    # cap each pick at 1/3 of equity
 DAILY_LOSS_KILL_SWITCH_PCT = 5.0   # halt for the day if down this much
+MIN_BUYING_POWER_USD = 5000        # refuse to trade if buying power drops below this
 
 # --- Universe ---
 # Liquid, day-tradable, broad sector mix. Curated for $5–$500 range with tight spreads.

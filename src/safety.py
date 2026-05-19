@@ -32,8 +32,11 @@ def check_can_trade() -> dict:
     if getattr(acct, "pattern_day_trader", False):
         raise SafetyError("Account is flagged as PDT and equity < $25k. Refusing to trade.")
 
-    if float(acct.buying_power) < 1:
-        raise SafetyError(f"No buying power: ${acct.buying_power}")
+    if float(acct.buying_power) < config.MIN_BUYING_POWER_USD:
+        raise SafetyError(
+            f"Buying power ${float(acct.buying_power):.2f} below ${config.MIN_BUYING_POWER_USD} "
+            f"minimum — account is too deployed to take new trades."
+        )
 
     return {
         "equity": equity,
