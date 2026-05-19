@@ -61,8 +61,12 @@ def _run() -> int:
         if sig['score'] != 0:
             print(f"[morning]   {s}: score={sig['score']:+d}  {'; '.join(sig['reasons'])}")
 
-    print("[morning] asking Claude for catalyst + smart-money picks...")
-    picks_response = picker.pick_stocks(movers, news_by_symbol, altdata_by_symbol)
+    print("[morning] asking Claude for catalyst + smart-money picks (loose mode)...")
+    picks_response = picker.pick_stocks(
+        movers, news_by_symbol, altdata_by_symbol,
+        mode="loose",
+        context_label="Today's premarket movers",
+    )
     print(f"[morning] picks: {json.dumps(picks_response, indent=2)}")
 
     picks = picks_response.get("picks", [])

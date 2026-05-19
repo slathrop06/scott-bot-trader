@@ -1,0 +1,82 @@
+name: intraday-run
+
+on:
+  # Two intraday slots — "mid" (~11:00 ET) and "late" (~1:30 ET), each with
+  # a backup tick 30 min later. Slot is inferred from current ET hour in the
+  # script; each slot has its own idempotency guard so backups no-op cleanly.
+  schedule:
+    - cron: "0 15 * * 1-5"    # 11:00 ET EDT → mid
+    - cron: "30 15 * * 1-5"   # 11:30 ET EDT → mid backup
+    - cron: "0 16 * * 1-5"    # 11:00 ET EST / 12:00 ET EDT → mid (EST) or backup (EDT)
+    - cron: "30 17 * * 1-5"   # 1:30 ET EDT → late
+    - cron: "0 18 * * 1-5"    # 2:00 ET EDT → late backup
+    - cron: "30 18 * * 1-5"   # 1:30 ET EST / 2:30 ET EDT → late (EST) or backup (EDT)
+  push:
+    branches: [main]
+    paths: [".triggers/intraday"]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: scott-bot-trader
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Heartbeat — prove the workflow started
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from datetime import date, datetime, timezone
+          from pathlib import Path
+          p = Path("data/trades.json")
+          log = json.loads(p.read_text()) if p.exists() else []
+          log.append({
+              "type": "infra_attempt",
+              "date": date.today().isoformat(),
+              "ts": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+              "status": "intraday_workflow_started",
+              "note": f"event={os.environ.get('GITHUB_EVENT_NAME','?')} run_id={os.environ.get('GITHUB_RUN_ID','?')}",
+          })
+          p.parent.mkdir(parents=True, exist_ok=True)
+          p.write_text(json.dumps(log, indent=2))
+          PY
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Run intraday picker
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          ALPACA_BASE_URL: https://paper-api.alpaca.markets
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+          TRADING_MODE: paper
+        run: python scripts/intraday_run.py
+
+      - name: Commit trade log
+        if: always()
+        run: |
+          if [ ! -f data/trades.json ]; then
+            echo "No trades.json — nothing to commit."
+            exit 0
+          fi
+          git config user.name "scott-bot-trader"
+          git config user.email "bot@scottbotpicks.com"
+          git add data/trades.json data/account.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No changes — skipping commit."
+          else
+            git commit -m "intraday run $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi

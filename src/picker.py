@@ -21,6 +21,63 @@ def client() -> Anthropic:
     return _client
 
 
+SYSTEM_LOOSE = """You are a day-trading analyst for a small paper-trading bot.
+Today's mandate: FIND ACTION. The strict prompt was too conservative — it
+returned zero picks on tradable days. This mode picks the BEST available
+setup even when no candidate is a 10/10.
+
+You receive price + news + alt-data signals for liquid US stocks. The
+alt-data is the edge — price + news is in everyone's training set, but the
+combination of insider activity + social chatter + analyst views + price
+action is something only a thoughtful synthesis can exploit.
+
+Strategy guardrails (unchanged):
+- LONG ONLY. No shorts, no options, no leverage.
+- Each pick gets a bracket order: take-profit +2%, stop-loss -1%.
+- Weekly target is +1.5% on total equity.
+- Pick 1 to {max_picks} trades. Stand down (empty) ONLY if every candidate
+  has a clear disqualifier (e.g., earnings same day, alt-data is heavily
+  negative, price move contradicts every signal).
+
+What makes a VALID pick — EITHER condition is sufficient:
+  A. STRONG CATALYST alone:
+     - Specific news event (analyst upgrade, product launch, earnings beat,
+       contract win) with premarket/intraday gap up
+     - OR relative strength (up while market down) with no contradicting news
+     - OR post-earnings drift (yesterday's positive print, gap continues)
+  B. STRONG SMART-MONEY alone (one or more):
+     - House cluster buy (2+ congresspeople in last 21d)
+     - Insider cluster buy (3+ insiders in last 30d)
+     - Analyst conviction >70% buy/strong-buy
+     - WSB chatter >2x normal AND rank in top 20
+     - Stocktwits sentiment >70% bullish on >10 messages
+
+REJECT picks where:
+  - Earnings within 1 trading day (overnight gap risk)
+  - Heavy insider OR congressional selling (3:1+ ratio)
+  - Stocktwits sentiment <30% bullish on >10 messages
+  - Stop level is within typical intraday noise (penny stocks)
+
+PRIORITIZE picks where MULTIPLE conditions stack (both catalyst + smart
+money is still preferred, just not required).
+
+Output STRICT JSON only (no prose, no markdown fences):
+{{
+  "picks": [
+    {{
+      "symbol": "AAPL",
+      "confidence": "high|medium|low",
+      "catalyst": "Specific news/price-action driver — be concrete",
+      "smart_money_signals": "Which alt-data signals support this (cite numbers)",
+      "rationale": "Why this is the best setup available — one sentence"
+    }}
+  ],
+  "market_take": "One sentence on overall tone",
+  "skipped_movers": ["TSLA: heavy insider selling — skip", ...]
+}}
+"""
+
+
 SYSTEM = """You are a day-trading analyst for a small paper-trading bot.
 
 You receive premarket data, overnight news, AND alternative-data signals
@@ -150,20 +207,36 @@ def pick_stocks(
     premarket: list[dict],
     news_by_symbol: dict[str, list[dict]],
     altdata_by_symbol: dict[str, dict] | None = None,
+    mode: str = "loose",
+    context_label: str = "Today's premarket movers",
 ) -> dict:
-    """Ask Claude to choose 0-N picks given premarket + news + alt-data."""
+    """Ask Claude to choose 0-N picks. mode='loose' (default) or 'strict'.
+
+    Loose: EITHER catalyst OR smart-money — picks the best setup available.
+    Strict: BOTH required, default answer is no pick (historical default).
+    """
     altdata_by_symbol = altdata_by_symbol or {m["symbol"]: {} for m in premarket}
+    if mode == "strict":
+        system_prompt = SYSTEM
+        rule_reminder = "Each pick must have BOTH a real catalyst AND smart-money confirmation. If no candidate qualifies, picks=[]."
+    else:
+        system_prompt = SYSTEM_LOOSE
+        rule_reminder = (
+            "Pick the best 1-3 setups available — EITHER a strong catalyst OR strong "
+            "smart-money is sufficient. Only return empty if every candidate has a "
+            "clear disqualifier."
+        )
+
     user_msg = (
-        f"Today's premarket movers with overnight news AND alt-data signals:\n"
+        f"{context_label} with news AND alt-data signals:\n"
         f"{_format_candidates(premarket, news_by_symbol, altdata_by_symbol)}\n\n"
-        f"Pick up to {config.MAX_PICKS_PER_DAY} long trades. Each pick must have BOTH "
-        f"a real catalyst AND smart-money confirmation. If no candidate qualifies, picks=[]."
+        f"Pick up to {config.MAX_PICKS_PER_DAY} long trades. {rule_reminder}"
     )
 
     resp = client().messages.create(
         model="claude-opus-4-7",
         max_tokens=2048,
-        system=SYSTEM.format(max_picks=config.MAX_PICKS_PER_DAY),
+        system=system_prompt.format(max_picks=config.MAX_PICKS_PER_DAY),
         messages=[{"role": "user", "content": user_msg}],
     )
 
@@ -178,6 +251,14 @@ def pick_stocks(
     parsed["picks"] = parsed.get("picks", [])[: config.MAX_PICKS_PER_DAY]
     universe = set(config.TRADABLE_UNIVERSE)
     parsed["picks"] = [p for p in parsed["picks"] if p["symbol"] in universe]
-    parsed["picks"] = [p for p in parsed["picks"] if (p.get("catalyst") or "").strip()]
-    parsed["picks"] = [p for p in parsed["picks"] if (p.get("smart_money_signals") or "").strip()]
+    # In loose mode, EITHER catalyst OR smart-money is enough; strict requires both.
+    if mode == "strict":
+        parsed["picks"] = [p for p in parsed["picks"] if (p.get("catalyst") or "").strip()]
+        parsed["picks"] = [p for p in parsed["picks"] if (p.get("smart_money_signals") or "").strip()]
+    else:
+        parsed["picks"] = [
+            p for p in parsed["picks"]
+            if (p.get("catalyst") or "").strip() or (p.get("smart_money_signals") or "").strip()
+        ]
+    parsed["mode"] = mode
     return parsed
