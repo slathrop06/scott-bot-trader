@@ -2,6 +2,7 @@
 from __future__ import annotations
 import sys
 import json
+import traceback
 from pathlib import Path
 
 # Allow running as a plain script (`python scripts/morning_run.py`)
@@ -10,7 +11,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from src import account, altdata, data, earnings, news, picker, safety, trader, tracker  # noqa: E402
 
 
-def main() -> int:
+def _run() -> int:
     if tracker.already_completed_today("morning"):
         print("[morning] already completed today — skipping (backup cron no-op)")
         return 0
@@ -81,6 +82,22 @@ def main() -> int:
     tracker.log_run_attempt("morning", "ok", f"{len(orders)} orders submitted")
     print("[morning] done")
     return 0
+
+
+def main() -> int:
+    try:
+        return _run()
+    except Exception as e:
+        # Surface unhandled exceptions to trades.json so the dashboard / debugger
+        # can see why a run died without needing the raw GHA logs.
+        tb = traceback.format_exc()
+        print(f"[morning] UNHANDLED EXCEPTION: {type(e).__name__}: {e}\n{tb}", file=sys.stderr)
+        note = f"{type(e).__name__}: {e}"[:240]
+        try:
+            tracker.log_run_attempt("morning", "error", note)
+        except Exception:
+            pass  # keep the original exit code path even if logging fails
+        return 1
 
 
 if __name__ == "__main__":
