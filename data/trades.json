@@ -283,5 +283,53 @@
     "ts": "2026-05-19T14:04:37.850078Z",
     "status": "started",
     "note": ""
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-19",
+    "ts": "2026-05-19T14:09:28.031290Z",
+    "status": "workflow_started",
+    "note": "event=push run_id=26102693304"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-05-19",
+    "ts": "2026-05-19T14:09:50.883696Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-05-19",
+    "ts": "2026-05-19T14:11:06.741096Z",
+    "equity_start": 99879.62,
+    "picks_response": {
+      "picks": [],
+      "market_take": "Risk-off premarket with semis and mega-cap tech under pressure on 'crowded trade' warnings; gappers up lack clean catalysts and gappers down lack alt-data confirmation.",
+      "skipped_movers": [
+        "AMD: -5.4% on BofA crowded-trade sell signal and Cathie Wood dumping $28M \u2014 alt-data is decent (insider cluster buy, 76% analyst buy) but going long into a fresh sell-signal gap down contradicts price action",
+        "CRM: +3.57% but news is a generic '20 years ago' filler piece \u2014 no real catalyst, and insider activity is net selling 5:2",
+        "TSLA: -3.11% with 18 insider sells in 30d and 0/10 alt-data score, plus negative FSD headlines \u2014 skip",
+        "INTC: -2.92% despite 11-insider cluster buy, but House net selling, only 33% analyst bullish, and caught in semis sell signal \u2014 mixed signals, skip",
+        "ADBE: +2.89% but vague 'competitor dynamics' headline is not a catalyst, and 5 insider sells with 0 buys",
+        "AVGO: -2.67% into earnings with 93% analyst buy and 7-insider cluster \u2014 but trading against the gap on a sell-signal day is risky without confirming up-move",
+        "GS: -1.93% on crypto ETF unwind headline, insider sells outpace buys 17:4 \u2014 skip",
+        "AMZN: -1.92%, zero insider buys vs 7 sells, no clean catalyst \u2014 skip",
+        "IWM: -1.81%, no news, no alt-data \u2014 skip",
+        "SHOP: +1.73% but no news catalyst at all",
+        "GOOGL: -1.57% despite bullish Direxion AI monetization take and insider cluster buy \u2014 price contradicts the thesis on a risk-off tape, skip",
+        "CAT: no news catalyst, insider sells outpace buys 31:12",
+        "NFLX: +1.41% with insider cluster buy and WSB spike but no news catalyst to anchor the move",
+        "COST: +1.21% with zero alt-data signals and no news"
+      ]
+    },
+    "orders": []
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-05-19",
+    "ts": "2026-05-19T14:11:06.741594Z",
+    "status": "ok",
+    "note": "Claude returned no picks"
   }
 ]
