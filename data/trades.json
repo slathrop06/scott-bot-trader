@@ -451,5 +451,86 @@
     "ts": "2026-05-19T17:40:44.004737Z",
     "status": "workflow_started",
     "note": "event=schedule run_id=26114543869"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-19",
+    "ts": "2026-05-19T17:51:25.909191Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=26115092887"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-05-19",
+    "ts": "2026-05-19T17:51:46.899616Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-05-19",
+    "ts": "2026-05-19T17:52:46.539024Z",
+    "equity_start": 98593.32,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "INTC",
+          "confidence": "medium",
+          "catalyst": "Up +3.16% to $111.56 on heavy volume (~100M shares) showing strong relative strength while broader semis/market is weak (semi mania 'taking a breather')",
+          "smart_money_signals": "Insider cluster buy: 11 distinct insiders bought (12 buys vs only 2 sells in 30d) \u2014 very strong 6:1 buy ratio; WSB rank #16",
+          "rationale": "Only meaningful gainer with confirmed insider cluster buy and bucking the semi selloff \u2014 best combination of momentum and smart-money on the board"
+        },
+        {
+          "symbol": "NFLX",
+          "confidence": "low",
+          "catalyst": "Mild pullback (-0.84%) on no news offers entry near support",
+          "smart_money_signals": "Insider cluster buy with 6 distinct insider buyers (16 buys in 30d), 78% analyst bullish (17SB/29B), WSB mentions 1.44x normal",
+          "rationale": "Clean cluster-buy alt-data signal (5/10 score, highest on the board) with no negative news catalyst to fight"
+        }
+      ],
+      "market_take": "Risk-off tone with semis cooling and mega-caps red; selective relative-strength names are the only longs worth taking.",
+      "skipped_movers": [
+        "AMZN: down -2.33% with heavy insider selling (7 sells, 0 buys)",
+        "ORCL: down -2% with House net selling and no offsetting signal",
+        "TSLA: heavy insider selling (18 sells, 3 buyers selling) and price down",
+        "META: 21 insider sells in 30d and price down despite WSB chatter",
+        "GS: insider sell ratio 17:4 outweighs cluster buy, price down",
+        "MSFT: price down -0.97% contradicts House cluster buy; mixed congressional activity",
+        "JPM: alt-data score -3, heavy insider selling",
+        "COST: up only +1.18% with zero alt-data conviction"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Only meaningful gainer with confirmed insider cluster buy and bucking the semi selloff \u2014 best combination of momentum and smart-money on the board",
+        "symbol": "INTC",
+        "qty": 387,
+        "entry_price_est": 111.33,
+        "stop_price": 110.22,
+        "take_price": 113.56,
+        "order_id": "4481a5f0-f5f5-4167-8227-b4f296bd5ebe"
+      },
+      {
+        "status": "submitted",
+        "confidence": "low",
+        "rationale": "Clean cluster-buy alt-data signal (5/10 score, highest on the board) with no negative news catalyst to fight",
+        "symbol": "NFLX",
+        "qty": 484,
+        "entry_price_est": 89.11,
+        "stop_price": 88.22,
+        "take_price": 90.89,
+        "order_id": "57c7f4fd-f07c-4865-80ba-06d54cebbe8b"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-05-19",
+    "ts": "2026-05-19T17:52:46.673084Z",
+    "status": "ok",
+    "note": "2 orders submitted"
   }
 ]
