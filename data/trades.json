@@ -331,5 +331,97 @@
     "ts": "2026-05-19T14:11:06.741594Z",
     "status": "ok",
     "note": "Claude returned no picks"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-19",
+    "ts": "2026-05-19T15:06:18.109692Z",
+    "status": "intraday_workflow_started",
+    "note": "event=push run_id=26105938466"
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-05-19",
+    "ts": "2026-05-19T15:06:38.694559Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-05-19",
+    "ts": "2026-05-19T15:07:40.435617Z",
+    "equity_start": 99958.57,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "COST",
+          "confidence": "medium",
+          "catalyst": "Relative strength: +1.71% while market broadly red (QQQ -1.12%, IWM -1.66%); defensive bid with no contradicting news",
+          "smart_money_signals": "68% analyst bullish; no insider/congressional selling pressure; clean tape",
+          "rationale": "Best relative strength name on the board \u2014 green while everything semi/cyclical bleeds, classic defensive rotation continuation setup"
+        },
+        {
+          "symbol": "AMD",
+          "confidence": "medium",
+          "catalyst": "Sharp -4.57% flush on BofA crowded-trade warning creates oversold bounce setup with no company-specific bad news",
+          "smart_money_signals": "Alt-data score 9/10: insider cluster buy (3 buyers), House buy by Cisneros, WSB 2.0x normal at rank #9, 76% analyst bullish",
+          "rationale": "Strongest smart-money stack on the board; flush is sector-sentiment driven not fundamental, and bracket's tight -1% stop limits damage if selloff extends"
+        },
+        {
+          "symbol": "AVGO",
+          "confidence": "low",
+          "catalyst": "Wells Fargo, TD Cowen, UBS lifting price targets ahead of earnings; -2.47% pullback into bullish analyst flow",
+          "smart_money_signals": "Insider cluster buy (7 buyers, 7:1 buy/sell ratio), 93% analyst bullish \u2014 highest conviction sell-side on list",
+          "rationale": "Cluster insider buying + unanimous analyst upgrades into a market-driven dip is a high-quality dip-buy combo"
+        }
+      ],
+      "market_take": "Risk-off semi unwind on BofA crowded-trade warning + inflation jitters; defensives and oversold quality names are the play.",
+      "skipped_movers": [
+        "TSLA: heavy insider selling 18 sells, 0/10 alt-data \u2014 skip",
+        "AMZN: heavy insider selling 7 sells despite 92% analyst buy \u2014 skip",
+        "INTC: House net selling, only 33% analyst bullish, semi sector pressure \u2014 skip",
+        "ORCL: 0/10 alt-data, House net selling, no catalyst \u2014 skip",
+        "ADBE: heavy insider selling 5 sells, weak analyst \u2014 skip",
+        "GS: 17 insider sells vs 4 buys, no catalyst \u2014 skip",
+        "CAT: 31 insider sells vs 12 buys despite cluster, no catalyst \u2014 skip"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "failed",
+        "symbol": "COST",
+        "error": "COST @ $1058.76 too expensive for $743.46 budget"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strongest smart-money stack on the board; flush is sector-sentiment driven not fundamental, and bracket's tight -1% stop limits damage if selloff extends",
+        "symbol": "AMD",
+        "qty": 1,
+        "entry_price_est": 405.625,
+        "stop_price": 401.57,
+        "take_price": 413.74,
+        "order_id": "80a01b04-9f0a-43a6-8ad8-1fae40d64144"
+      },
+      {
+        "status": "submitted",
+        "confidence": "low",
+        "rationale": "Cluster insider buying + unanimous analyst upgrades into a market-driven dip is a high-quality dip-buy combo",
+        "symbol": "AVGO",
+        "qty": 1,
+        "entry_price_est": 408.18,
+        "stop_price": 404.1,
+        "take_price": 416.34,
+        "order_id": "e42946be-a3cd-4f43-9649-7cb3827b2867"
+      }
+    ]
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-05-19",
+    "ts": "2026-05-19T15:07:40.501363Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
