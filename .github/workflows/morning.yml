@@ -53,7 +53,37 @@ jobs:
           python-version: "3.12"
           cache: pip
 
-      - run: pip install -r requirements.txt
+      - name: Install deps (with retry, fall back to no-cache)
+        run: |
+          set +e
+          pip install -r requirements.txt && exit 0
+          echo "First pip install failed — sleeping 5s and retrying..."
+          sleep 5
+          pip install -r requirements.txt && exit 0
+          echo "Second pip install failed — purging cache and retrying with --no-cache-dir..."
+          pip cache purge || true
+          pip install --no-cache-dir -r requirements.txt
+
+      - name: Mark deps installed
+        # Writes a 'deps_ready' row so we know whether pip install completed
+        # vs. the script itself failed. Combined with the earlier heartbeat
+        # and morning_attempt:started rows this isolates the failure point.
+        run: |
+          python3 - <<'PY'
+          import json
+          from datetime import date, datetime, timezone
+          from pathlib import Path
+          p = Path("data/trades.json")
+          log = json.loads(p.read_text()) if p.exists() else []
+          log.append({
+              "type": "infra_attempt",
+              "date": date.today().isoformat(),
+              "ts": datetime.now(timezone.utc).isoformat().replace("+00:00","Z"),
+              "status": "deps_ready",
+              "note": "pip install completed",
+          })
+          p.write_text(json.dumps(log, indent=2))
+          PY
 
       - name: Run morning picker
         env:
