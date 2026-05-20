@@ -682,5 +682,26 @@
     "ts": "2026-05-19T22:38:10.055018Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=26129565047"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-20",
+    "ts": "2026-05-20T14:05:11.799892Z",
+    "status": "workflow_started",
+    "note": "event=push run_id=26167792076"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-05-20",
+    "ts": "2026-05-20T14:05:31.746444Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-05-20",
+    "ts": "2026-05-20T14:05:32.215882Z",
+    "status": "blocked",
+    "note": "Account is flagged as PDT and equity < $25k. Refusing to trade."
   }
 ]
