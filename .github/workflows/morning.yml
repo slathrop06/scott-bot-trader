@@ -85,6 +85,53 @@ jobs:
           p.write_text(json.dumps(log, indent=2))
           PY
 
+      - name: Import smoke test (capture errors to trades.json)
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          ALPACA_BASE_URL: https://paper-api.alpaca.markets
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+          TRADING_MODE: paper
+        run: |
+          python3 - <<'PY'
+          import json, sys, traceback
+          from datetime import date, datetime, timezone
+          from pathlib import Path
+          p = Path("data/trades.json")
+          log = json.loads(p.read_text()) if p.exists() else []
+          try:
+              import sys as _s
+              _s.path.insert(0, ".")
+              from src import account, altdata, data, earnings, news, picker, safety, trader, tracker
+              log.append({
+                  "type": "infra_attempt",
+                  "date": date.today().isoformat(),
+                  "ts": datetime.now(timezone.utc).isoformat().replace("+00:00","Z"),
+                  "status": "imports_ok",
+                  "note": "src.* all importable",
+              })
+              p.write_text(json.dumps(log, indent=2))
+          except Exception as e:
+              tb = traceback.format_exc()
+              log.append({
+                  "type": "infra_attempt",
+                  "date": date.today().isoformat(),
+                  "ts": datetime.now(timezone.utc).isoformat().replace("+00:00","Z"),
+                  "status": "imports_failed",
+                  "note": f"{type(e).__name__}: {e}"[:200],
+              })
+              log.append({
+                  "type": "infra_attempt",
+                  "date": date.today().isoformat(),
+                  "ts": datetime.now(timezone.utc).isoformat().replace("+00:00","Z"),
+                  "status": "imports_traceback",
+                  "note": tb.replace("\n", " | ")[:400],
+              })
+              p.write_text(json.dumps(log, indent=2))
+              sys.exit(1)
+          PY
+
       - name: Run morning picker
         env:
           ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
