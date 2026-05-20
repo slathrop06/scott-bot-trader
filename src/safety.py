@@ -28,9 +28,14 @@ def check_can_trade() -> dict:
             f"(limit -{config.DAILY_LOSS_KILL_SWITCH_PCT}%)."
         )
 
-    # PDT: under $25k, max 3 day trades / 5 business days. Refuse if flagged.
-    if getattr(acct, "pattern_day_trader", False):
-        raise SafetyError("Account is flagged as PDT and equity < $25k. Refusing to trade.")
+    # PDT: under $25k, max 3 day trades / 5 business days. The Alpaca PDT
+    # flag gets set after 4 day trades in a rolling 5-day window regardless
+    # of equity; the actual rule only blocks trading when equity is also
+    # under $25k. Above that, day trading is unrestricted.
+    if getattr(acct, "pattern_day_trader", False) and equity < 25_000:
+        raise SafetyError(
+            f"PDT flagged AND equity ${equity:.0f} < $25k — would breach day trade limit."
+        )
 
     if float(acct.buying_power) < config.MIN_BUYING_POWER_USD:
         raise SafetyError(
