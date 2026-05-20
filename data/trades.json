@@ -990,5 +990,45 @@
     "ts": "2026-05-20T20:25:26.111080Z",
     "status": "intraday_workflow_started",
     "note": "event=schedule run_id=26187904524"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-20",
+    "ts": "2026-05-20T20:56:09.731913Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=26189474296"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-05-20",
+    "ts": "2026-05-20T20:56:29.737458Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-05-20",
+    "ts": "2026-05-20T20:56:29.860280Z",
+    "equity_end": 98782.61,
+    "daily_pnl_usd": 897.62,
+    "daily_pct": 0.917,
+    "flatten": {
+      "closed": [
+        "AMD",
+        "AMZN",
+        "BA",
+        "GE",
+        "HD",
+        "INTC"
+      ],
+      "raw_response_count": 6
+    }
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-05-20",
+    "ts": "2026-05-20T20:56:29.911721Z",
+    "status": "ok",
+    "note": "closed 6 positions, 0 round-trips"
   }
 ]
