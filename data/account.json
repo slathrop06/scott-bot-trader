@@ -1,37 +1,37 @@
 {
-  "ts": "2026-05-19T21:26:03.048571Z",
-  "equity": 97789.74,
-  "last_equity": 99472.22,
-  "cash": -11276.03,
-  "buying_power": 86513.71,
-  "all_time_return_pct": -2.2103,
+  "ts": "2026-05-20T17:39:43.462247Z",
+  "equity": 98355.48,
+  "last_equity": 97884.99,
+  "cash": 1593.49,
+  "buying_power": 164486.06,
+  "all_time_return_pct": -1.6445,
   "positions": [
     {
-      "symbol": "AVGO",
-      "qty": 1,
-      "avg_entry_price": 408.35,
-      "current_price": 410.305,
-      "market_value": 410.31,
-      "unrealized_pl": 1.96,
-      "unrealized_pl_pct": 0.479
+      "symbol": "AMD",
+      "qty": 72,
+      "avg_entry_price": 443.2426,
+      "current_price": 444.0996,
+      "market_value": 31975.17,
+      "unrealized_pl": 61.7,
+      "unrealized_pl_pct": 0.193
     },
     {
-      "symbol": "GOOGL",
-      "qty": 169,
-      "avg_entry_price": 388.26,
-      "current_price": 387.5,
-      "market_value": 65487.5,
-      "unrealized_pl": -128.44,
-      "unrealized_pl_pct": -0.196
+      "symbol": "AMZN",
+      "qty": 122,
+      "avg_entry_price": 262.38,
+      "current_price": 263.65,
+      "market_value": 32165.3,
+      "unrealized_pl": 154.94,
+      "unrealized_pl_pct": 0.484
     },
     {
-      "symbol": "NFLX",
-      "qty": 484,
-      "avg_entry_price": 89.11,
-      "current_price": 89.19,
-      "market_value": 43167.96,
-      "unrealized_pl": 38.72,
-      "unrealized_pl_pct": 0.09
+      "symbol": "GE",
+      "qty": 109,
+      "avg_entry_price": 294.83,
+      "current_price": 299.28,
+      "market_value": 32621.52,
+      "unrealized_pl": 485.05,
+      "unrealized_pl_pct": 1.509
     }
   ]
 }
