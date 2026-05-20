@@ -884,5 +884,104 @@
     "ts": "2026-05-20T17:30:24.283514Z",
     "status": "imports_ok",
     "note": "src.* all importable"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-20",
+    "ts": "2026-05-20T17:55:31.198520Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=26180283109"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-05-20",
+    "ts": "2026-05-20T17:55:52.786727Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-05-20",
+    "ts": "2026-05-20T17:56:51.900849Z",
+    "equity_start": 98275.34,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "INTC",
+          "confidence": "high",
+          "catalyst": "Up +5.2% on heavy volume (123M) with CEO Lip-Bu Tan 'new Intel' execution narrative; strong relative strength on a market rebound day",
+          "smart_money_signals": "Insider cluster buy with 11 distinct buyers in 30d (12 buys vs only 2 sells) \u2014 strongest insider conviction signal in the set; WSB rank #11, 1.7x mentions",
+          "rationale": "Massive insider cluster buy plus momentum breakout on CEO turnaround story is the cleanest stack available"
+        },
+        {
+          "symbol": "HD",
+          "confidence": "medium",
+          "catalyst": "Post-earnings drift continuation \u2014 upbeat Q1 ($41.77B sales), reaffirmed FY26 guidance, analysts remain positive; +2.2% on solid volume",
+          "smart_money_signals": "House cluster buy (Moskowitz + Taylor) in last 21d; 63% analyst bullish",
+          "rationale": "Clean post-earnings drift with congressional cluster buy and no contradicting signals"
+        },
+        {
+          "symbol": "BA",
+          "confidence": "medium",
+          "catalyst": "+3.4% breakout with industrials whale activity flagged; participating in market rebound with relative strength",
+          "smart_money_signals": "84% analyst bullish (13 Strong Buy / 18 Buy / 6 Hold, zero sells) \u2014 highest conviction analyst book in the set",
+          "rationale": "Extremely strong analyst conviction with momentum and zero negative alt-data offsets"
+        }
+      ],
+      "market_take": "Risk-on rebound ahead of NVDA print with oil down on Iran truce hopes \u2014 favor momentum names with smart-money backing",
+      "skipped_movers": [
+        "GS: 17 insider sells vs 4 buys (4:1 selling ratio) despite cluster-buy flag \u2014 disqualifier",
+        "MS: heavy insider selling, zero buys",
+        "NKE: negative alt-data score, insider + House selling",
+        "XOM/CVX: down on oil crash, wrong direction",
+        "TSLA: 18 insider sells, 47% analyst bullish \u2014 weak conviction",
+        "ORCL: House net selling 3:0",
+        "SHOP/DIS: no catalyst, thin alt-data",
+        "IWM: ETF, no idiosyncratic edge"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Massive insider cluster buy plus momentum breakout on CEO turnaround story is the cleanest stack available",
+        "symbol": "INTC",
+        "qty": 460,
+        "entry_price_est": 117.75,
+        "stop_price": 116.57,
+        "take_price": 120.11,
+        "order_id": "d10f3d12-87ff-4f20-8fd5-cc14404e4fbf"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean post-earnings drift with congressional cluster buy and no contradicting signals",
+        "symbol": "HD",
+        "qty": 175,
+        "entry_price_est": 308.975,
+        "stop_price": 305.89,
+        "take_price": 315.15,
+        "order_id": "f903e986-8b7c-4f81-843e-1e8055fc2f46"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Extremely strong analyst conviction with momentum and zero negative alt-data offsets",
+        "symbol": "BA",
+        "qty": 246,
+        "entry_price_est": 219.995,
+        "stop_price": 217.8,
+        "take_price": 224.39,
+        "order_id": "260265e8-5abd-4f7b-bd81-bcfcb2b71fa5"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-05-20",
+    "ts": "2026-05-20T17:56:51.925650Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
