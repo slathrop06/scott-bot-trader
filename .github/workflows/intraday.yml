@@ -1,16 +1,13 @@
 name: intraday-run
 
 on:
-  # Two intraday slots — "mid" (~11:00 ET) and "late" (~1:30 ET), each with
-  # a backup tick 30 min later. Slot is inferred from current ET hour in the
-  # script; each slot has its own idempotency guard so backups no-op cleanly.
+  # Brute-force coverage of both slots (mid ~11 ET, late ~1:30 ET). Every 10
+  # minutes from 15:00 to 18:55 UTC weekdays — covers EDT and EST. The script
+  # infers the slot from current ET hour; each slot has its own idempotency
+  # guard (intraday_mid_attempt / intraday_late_attempt), so once a slot
+  # completes, subsequent ticks for that slot no-op.
   schedule:
-    - cron: "0 15 * * 1-5"    # 11:00 ET EDT → mid
-    - cron: "30 15 * * 1-5"   # 11:30 ET EDT → mid backup
-    - cron: "0 16 * * 1-5"    # 11:00 ET EST / 12:00 ET EDT → mid (EST) or backup (EDT)
-    - cron: "30 17 * * 1-5"   # 1:30 ET EDT → late
-    - cron: "0 18 * * 1-5"    # 2:00 ET EDT → late backup
-    - cron: "30 18 * * 1-5"   # 1:30 ET EST / 2:30 ET EDT → late (EST) or backup (EDT)
+    - cron: "*/10 15-18 * * 1-5"
   push:
     branches: [main]
     paths: [".triggers/intraday"]

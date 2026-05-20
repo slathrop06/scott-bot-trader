@@ -1,18 +1,14 @@
 name: morning-run
 
 on:
-  # 9:35am ET = 13:35 UTC (EDT) or 14:35 UTC (EST). Both fire; script no-ops
-  # if the market is closed, so only the correct one actually trades.
-  # 10:00am ET (14:00/15:00 UTC) is a backup tick if the primary cron skipped;
-  # morning_run.py's already_completed_today guard makes it a no-op if the
-  # primary already ran successfully.
+  # Brute-force cron coverage. GHA scheduled workflows silently skip during
+  # peak load — happened 3 days in a row at the 9:35 ET slot. Strategy: fire
+  # every 10 minutes from 13:00 to 14:55 UTC weekdays. The script's
+  # idempotency guard (tracker.already_completed_today) makes only the first
+  # successful tick trade; the rest no-op cleanly. 12 ticks/morning ≈ 0%
+  # chance GHA skips ALL of them.
   schedule:
-    - cron: "35 13 * * 1-5"
-    - cron: "35 14 * * 1-5"
-    - cron: "0 14 * * 1-5"
-    - cron: "0 15 * * 1-5"
-  # Sentinel-file push trigger: when GHA cron silently skips, fire trades via
-  #   date > .triggers/morning && git add .triggers/morning && git commit -m fire && git push
+    - cron: "*/10 13-14 * * 1-5"
   push:
     branches: [main]
     paths: [".triggers/morning"]

@@ -1,17 +1,12 @@
 name: eod-flatten
 
 on:
-  # 3:55pm ET = 19:55 UTC (EDT) or 20:55 UTC (EST). Both fire; no-ops if closed.
-  # 4:15pm ET (20:15/21:15 UTC) is a backup tick if the primary cron skipped.
-  # eod_flatten.py's already_completed_today guard makes it a no-op if the
-  # primary already ran successfully. After-hours flattens queue for next open.
+  # Brute-force EOD coverage. Every 10 minutes from 19:50 to 21:50 UTC
+  # weekdays — covers the 3:55 ET window in both EDT and EST. The script's
+  # already_completed_today guard makes only the first successful tick close
+  # positions; the rest no-op. After-hours runs queue sells for next open.
   schedule:
-    - cron: "55 19 * * 1-5"
-    - cron: "55 20 * * 1-5"
-    - cron: "15 20 * * 1-5"
-    - cron: "15 21 * * 1-5"
-  # Sentinel-file push trigger: if GHA cron silently skips, fire flatten via
-  #   date > .triggers/eod && git add .triggers/eod && git commit -m fire && git push
+    - cron: "*/10 19-21 * * 1-5"
   push:
     branches: [main]
     paths: [".triggers/eod"]

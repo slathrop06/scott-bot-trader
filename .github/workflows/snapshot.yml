@@ -1,11 +1,12 @@
 name: account-snapshot
 
 on:
-  # Hourly during market hours, both EDT and EST coverage.
-  # EDT (Mar-Nov): market 13:30-20:00 UTC → snapshot at 14, 15, 16, 17, 18, 19 UTC
-  # EST (Nov-Mar): market 14:30-21:00 UTC → snapshot at 15, 16, 17, 18, 19, 20 UTC
+  # Brute-force snapshot coverage. Every 30 minutes from 13:00 to 21:30 UTC
+  # weekdays. The commit step only commits if account.json actually changed,
+  # so most overnight/holiday ticks are silent. Frequent snapshots keep the
+  # dashboard's "current balance" within 30 min of reality during market hours.
   schedule:
-    - cron: "0 14-20 * * 1-5"
+    - cron: "*/30 13-21 * * 1-5"
   push:
     branches: [main]
     paths: [".triggers/snapshot"]
