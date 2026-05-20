@@ -62,15 +62,17 @@ def log_run_attempt(kind: str, status: str, note: str = "") -> None:
 
 
 def already_completed_today(kind: str) -> bool:
-    # Did a `kind` run finish today? Used by the backup cron to no-op when
-    # the primary already ran (success or graceful bail). A crashed "started"
-    # entry doesn't count — the retry should still fire.
+    # Did a `kind` run finish CLEANLY today? Only "ok" trips the guard — "blocked"
+    # entries might be transient (PDT flag flipped, market data API blip, etc.)
+    # and should be retried by subsequent cron ticks. Today (2026-05-20) a
+    # spurious PDT block at 14:05 silently disabled every retry for an hour
+    # until we figured this out.
     today = date.today().isoformat()
     for e in _load_log():
         if (
             e.get("type") == f"{kind}_attempt"
             and e.get("date") == today
-            and e.get("status") in ("ok", "blocked")
+            and e.get("status") == "ok"
         ):
             return True
     return False
