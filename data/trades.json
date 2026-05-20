@@ -703,5 +703,12 @@
     "ts": "2026-05-20T14:05:32.215882Z",
     "status": "blocked",
     "note": "Account is flagged as PDT and equity < $25k. Refusing to trade."
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-20",
+    "ts": "2026-05-20T14:07:19.583182Z",
+    "status": "workflow_started",
+    "note": "event=push run_id=26167915246"
   }
 ]
