@@ -752,5 +752,116 @@
     "ts": "2026-05-20T14:16:08.638604Z",
     "status": "imports_ok",
     "note": "src.* all importable"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-20",
+    "ts": "2026-05-20T14:17:43.927221Z",
+    "status": "workflow_started",
+    "note": "event=push run_id=26168519197"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-20",
+    "ts": "2026-05-20T14:18:03.762076Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-20",
+    "ts": "2026-05-20T14:18:06.028756Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-05-20",
+    "ts": "2026-05-20T14:18:07.422234Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-05-20",
+    "ts": "2026-05-20T14:19:15.372644Z",
+    "equity_start": 97653.79,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMZN",
+          "confidence": "high",
+          "catalyst": "AI trade expansion ('Magnificent 10' ETF filing) lifting mega-cap tech; +1.2% premarket continuation",
+          "smart_money_signals": "Alt-score 9/10: insider cluster buy (4 buyers), House net buying (2 by Cisneros), WSB chatter 3.62x normal, 92.3% analyst bullish (22SB/50B)",
+          "rationale": "Best stacked setup on the board \u2014 every smart-money signal aligns with a constructive AI-tape catalyst."
+        },
+        {
+          "symbol": "AMD",
+          "confidence": "high",
+          "catalyst": "Extended uptrend continuation above 50/200 SMA, +6.17% premarket on AI chip rally ahead of NVDA earnings",
+          "smart_money_signals": "Alt-score 8/10: insider cluster buy (4 buyers), House buy by Cisneros, WSB rank #9, 76.3% analyst bullish",
+          "rationale": "Strong price catalyst plus clean smart-money stack; momentum + AI tape tailwind."
+        },
+        {
+          "symbol": "GE",
+          "confidence": "medium",
+          "catalyst": "+3% premarket breakout with no contradicting news; relative strength",
+          "smart_money_signals": "Alt-score 7/10: large insider cluster buy (15 buyers), House buying (3 by Moskowitz), 87.1% analyst bullish (9SB/18B)",
+          "rationale": "Pure smart-money pick \u2014 broadest insider cluster on the board with congressional confirmation and top analyst conviction."
+        }
+      ],
+      "market_take": "Risk-on AI-led tape into NVDA earnings, mega-caps and chips leading.",
+      "skipped_movers": [
+        "INTC: House selling and weak 33% analyst bullish despite insider cluster \u2014 mixed signals",
+        "TSLA: heavy insider selling 18 sells vs 3 buys \u2014 disqualifier",
+        "MS: heavy insider selling, no buys",
+        "BA: catalyst-only with thin alt-data, weaker R/R vs AMZN/AMD",
+        "GS: insider buys offset by 17 sells, weak analyst conviction 46.9%",
+        "ADBE/CRM/COST: red premarket or no catalyst"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best stacked setup on the board \u2014 every smart-money signal aligns with a constructive AI-tape catalyst.",
+        "symbol": "AMZN",
+        "qty": 122,
+        "entry_price_est": 263.655,
+        "stop_price": 261.02,
+        "take_price": 268.93,
+        "order_id": "c00ab343-29de-4f74-b55f-dd22d1975067"
+      },
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Strong price catalyst plus clean smart-money stack; momentum + AI tape tailwind.",
+        "symbol": "AMD",
+        "qty": 72,
+        "entry_price_est": 442.765,
+        "stop_price": 438.34,
+        "take_price": 451.62,
+        "order_id": "af00e02a-7da9-496c-ac84-2139ef771e3f"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Pure smart-money pick \u2014 broadest insider cluster on the board with congressional confirmation and top analyst conviction.",
+        "symbol": "GE",
+        "qty": 109,
+        "entry_price_est": 294.67499999999995,
+        "stop_price": 291.73,
+        "take_price": 300.57,
+        "order_id": "aee817f0-acce-48e1-8e78-da5f76d1ccfb"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-05-20",
+    "ts": "2026-05-20T14:19:15.479060Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
