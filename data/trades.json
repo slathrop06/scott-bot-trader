@@ -1144,5 +1144,87 @@
     "ts": "2026-05-21T16:23:04.501287Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-21",
+    "ts": "2026-05-21T17:31:54.429377Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=26242370041"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-05-21",
+    "ts": "2026-05-21T17:32:14.993131Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-05-21",
+    "ts": "2026-05-21T17:33:18.638006Z",
+    "equity_start": 96865.79,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMD",
+          "confidence": "high",
+          "catalyst": "Up +1.2% on a soft tape, no negative news, holding strength near highs",
+          "smart_money_signals": "Insider cluster buy (4 buyers), House cluster buy (3 buys by Gottheimer + Cisneros), WSB rank #8 with 106 mentions, 76% analyst buy \u2014 alt-data score 9/10",
+          "rationale": "Best stacked smart-money signal on the board with positive price action and no offsetting news."
+        },
+        {
+          "symbol": "AMZN",
+          "confidence": "medium",
+          "catalyst": "Up +1.30% on Microsoft-Anthropic AI chip news (Amazon-backed Anthropic), positive AI-ecosystem readthrough",
+          "smart_money_signals": "Insider cluster buy (4 buyers), House net buying (2 buys by Cisneros), 92.3% analyst bullish \u2014 alt-data score 7/10",
+          "rationale": "Catalyst + smart-money stack with mega-cap liquidity makes the 2%/1% bracket reasonable."
+        },
+        {
+          "symbol": "INTC",
+          "confidence": "medium",
+          "catalyst": "Up +1.17% on heavy volume (72M) with AI infrastructure tailwinds (Nvidia/Coherent deal sentiment)",
+          "smart_money_signals": "Insider cluster buy with 11 distinct buyers (12 buys vs 2 sells) \u2014 alt-data score 3/10 but insider conviction is unusually broad",
+          "rationale": "11-insider cluster buy is a rare conviction signal that pairs with positive price action and sector tailwind."
+        }
+      ],
+      "market_take": "Mixed tape with oil/yields pressuring indices, but AI and select large-caps holding bid \u2014 selective long setups available.",
+      "skipped_movers": [
+        "WMT: -7.2% post-earnings gap down, 6 insider sells \u2014 skip",
+        "TSLA: 18 insider sells, only speculation-driven news \u2014 skip",
+        "COST: sympathy selloff with WMT, no positive signals \u2014 skip",
+        "ADBE: heavy insider selling, only 45.7% analyst bullish \u2014 skip",
+        "SBUX: insider selling, weak analyst sentiment, down day \u2014 skip",
+        "ORCL: House net selling, no news catalyst \u2014 skip",
+        "PLTR: DIA contract dispute headline + insider selling \u2014 skip",
+        "NFLX: mixed insider activity (16 buys / 25 sells), no catalyst \u2014 skip",
+        "MCD: insider selling, low conviction \u2014 skip"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "failed",
+        "symbol": "AMD",
+        "error": "{\"base_price\":\"444.6605\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      },
+      {
+        "status": "failed",
+        "symbol": "AMZN",
+        "error": "{\"code\":40310000,\"cost_basis\":\"42812.8\",\"daytrading_buying_power\":\"21862.98\",\"message\":\"insufficient day trading buying power\"}"
+      },
+      {
+        "status": "failed",
+        "symbol": "INTC",
+        "error": "{\"code\":40310000,\"cost_basis\":\"42777.54\",\"daytrading_buying_power\":\"21862.98\",\"message\":\"insufficient day trading buying power\"}"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-05-21",
+    "ts": "2026-05-21T17:33:18.792429Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
