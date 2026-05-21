@@ -1037,5 +1037,112 @@
     "ts": "2026-05-20T22:19:41.353904Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=26193291620"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-21",
+    "ts": "2026-05-21T16:21:38.977999Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=26238678809"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-21",
+    "ts": "2026-05-21T16:21:57.835760Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-21",
+    "ts": "2026-05-21T16:22:00.191499Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-05-21",
+    "ts": "2026-05-21T16:22:01.684318Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-05-21",
+    "ts": "2026-05-21T16:23:04.405514Z",
+    "equity_start": 96561.32,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "GE",
+          "confidence": "high",
+          "catalyst": "Mild -1% pullback offers entry; relative strength setup with no negative news",
+          "smart_money_signals": "Insider cluster buy (15 buyers, 16 buys vs 8 sells), House buying (3 buys by Moskowitz), 87% analyst bullish (9SB/18B)",
+          "rationale": "Strongest stacked smart-money signal in the list \u2014 insider cluster + congressional buy + high analyst conviction on a shallow dip."
+        },
+        {
+          "symbol": "BAC",
+          "confidence": "medium",
+          "catalyst": "Minor -0.7% dip with no negative news; constructive setup for mean reversion",
+          "smart_money_signals": "Insider cluster buy (7 buyers, 7 buys vs 5 sells \u2014 net positive), 83% analyst bullish (7SB/18B/0S)",
+          "rationale": "Clean insider cluster buy with strong analyst conviction and no contradicting signals."
+        },
+        {
+          "symbol": "AAPL",
+          "confidence": "medium",
+          "catalyst": "Positive iPhone 17 demand story \u2014 Apple called only top-5 smartphone brand expected to grow; stock gapping up +0.8% on bullish news",
+          "smart_money_signals": "72% analyst buy (15SB/24B); WSB chatter 1.75x normal",
+          "rationale": "Concrete bullish catalyst with premarket follow-through; insider selling is a minor offset but news drives short-term action."
+        }
+      ],
+      "market_take": "Defensive tone with WMT guidance scare weighing on retail, but mega-caps and industrials with insider conviction are holding up.",
+      "skipped_movers": [
+        "WMT: -7.8% on cautious guidance + 6 insider sells \u2014 falling knife",
+        "ADBE: heavy insider selling, weak analyst mix, no catalyst",
+        "SBUX: insider selling, negative signal score",
+        "PLTR: DIA contract dispute headline + heavy insider selling",
+        "CRM: heavy insider selling outweighs single House buy",
+        "ORCL: House selling, no catalyst",
+        "CAT: insider buys offset by 31 sells and House selling",
+        "GS: mixed insider activity (17 sells vs 4 buys), weak analyst mix"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "failed",
+        "symbol": "GE",
+        "error": "{\"base_price\":\"295.35\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean insider cluster buy with strong analyst conviction and no contradicting signals.",
+        "symbol": "BAC",
+        "qty": 626,
+        "entry_price_est": 50.845,
+        "stop_price": 50.34,
+        "take_price": 51.86,
+        "order_id": "b126e966-82f4-4f42-a2e4-43ba8c8983a6"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Concrete bullish catalyst with premarket follow-through; insider selling is a minor offset but news drives short-term action.",
+        "symbol": "AAPL",
+        "qty": 105,
+        "entry_price_est": 303.365,
+        "stop_price": 300.33,
+        "take_price": 309.43,
+        "order_id": "75510a92-bed8-4c3e-a993-b181125bd464"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-05-21",
+    "ts": "2026-05-21T16:23:04.501287Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
