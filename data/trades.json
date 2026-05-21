@@ -1233,5 +1233,41 @@
     "ts": "2026-05-21T19:28:52.152686Z",
     "status": "intraday_workflow_started",
     "note": "event=schedule run_id=26248305026"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-21",
+    "ts": "2026-05-21T20:28:03.887747Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=26251233972"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-05-21",
+    "ts": "2026-05-21T20:28:24.891725Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-05-21",
+    "ts": "2026-05-21T20:28:25.325213Z",
+    "equity_end": 97075.4,
+    "daily_pnl_usd": -2615.56,
+    "daily_pct": -2.6237,
+    "flatten": {
+      "closed": [
+        "AAPL",
+        "BAC"
+      ],
+      "raw_response_count": 2
+    }
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-05-21",
+    "ts": "2026-05-21T20:28:25.539441Z",
+    "status": "ok",
+    "note": "closed 2 positions, 0 round-trips"
   }
 ]
