@@ -1393,5 +1393,99 @@
     "ts": "2026-05-22T15:53:31.082031Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-22",
+    "ts": "2026-05-22T17:11:17.994201Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=26301592467"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-05-22",
+    "ts": "2026-05-22T17:11:39.640598Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-05-22",
+    "ts": "2026-05-22T17:12:29.407831Z",
+    "equity_start": 97810.45,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "INTC",
+          "confidence": "high",
+          "catalyst": "Intel reportedly bidding for $5B AI startup Tenstorrent; stock +1.45% with momentum near $119-121 on heavy volume (54M)",
+          "smart_money_signals": "Insider cluster buy: 11 insiders bought (12 buys) vs only 2 sells in 30d \u2014 extremely rare 6:1 insider buy ratio",
+          "rationale": "Concrete M&A catalyst stacked with the strongest insider buying cluster in the list \u2014 best dual-signal setup today."
+        },
+        {
+          "symbol": "CAT",
+          "confidence": "medium",
+          "catalyst": "Leading the Dow at +2.60% on ~1M shares \u2014 strong relative strength with no negative news",
+          "smart_money_signals": "Insider cluster buy (8 buyers, 12 buys in 30d); cluster_buy=True confirmed",
+          "rationale": "Top % gainer with confirmed insider cluster buy \u2014 best price-action + smart-money combo."
+        },
+        {
+          "symbol": "GS",
+          "confidence": "medium",
+          "catalyst": "Up +1.27% to new highs near $1001 with no negative news, riding financial sector strength",
+          "smart_money_signals": "Insider cluster buy confirmed (4 insiders); modest relative strength",
+          "rationale": "Clean tape, cluster buy, breakout above $1000 psychological level."
+        }
+      ],
+      "market_take": "Risk-on tape with Dow at record highs and AI/industrial leadership \u2014 favor names with stacked alt-data confirmation.",
+      "skipped_movers": [
+        "TSLA: heavy insider selling 17 sells, 0 news catalyst \u2014 skip",
+        "COST: down 2%, no positive signal \u2014 skip",
+        "SBUX: down + insider selling \u2014 skip",
+        "WMT: cautious guidance gap-down, 7 insider sells \u2014 skip",
+        "NVDA: down 1.2% post-earnings fade, House net selling \u2014 skip",
+        "AAPL: 5 insider sells (3 insiders), only mild gain \u2014 skip",
+        "JPM: 8 insider sells, signal score -3 \u2014 skip",
+        "GOOGL: red on day despite cluster buy, no catalyst today \u2014 skip",
+        "ORCL: tepid move, no specific catalyst \u2014 skip"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Concrete M&A catalyst stacked with the strongest insider buying cluster in the list \u2014 best dual-signal setup today.",
+        "symbol": "INTC",
+        "qty": 585,
+        "entry_price_est": 121.22999999999999,
+        "stop_price": 120.02,
+        "take_price": 123.65,
+        "order_id": "71d74155-9ca7-4f9d-847c-4e5e3aae8acc"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Top % gainer with confirmed insider cluster buy \u2014 best price-action + smart-money combo.",
+        "symbol": "CAT",
+        "qty": 79,
+        "entry_price_est": 893.395,
+        "stop_price": 884.46,
+        "take_price": 911.26,
+        "order_id": "5881aa03-e1a3-48d4-82ce-5b36026f29ec"
+      },
+      {
+        "status": "failed",
+        "symbol": "GS",
+        "error": "{\"base_price\":\"1001.28\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-05-22",
+    "ts": "2026-05-22T17:12:29.566830Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
