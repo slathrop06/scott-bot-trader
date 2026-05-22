@@ -1,28 +1,9 @@
 {
-  "ts": "2026-05-21T20:19:18.349405Z",
-  "equity": 96926.17,
-  "last_equity": 99690.96,
-  "cash": 32872.22,
-  "buying_power": 129798.39,
-  "all_time_return_pct": -3.0738,
-  "positions": [
-    {
-      "symbol": "AAPL",
-      "qty": 105,
-      "avg_entry_price": 303.4,
-      "current_price": 304.49,
-      "market_value": 31971.45,
-      "unrealized_pl": 114.45,
-      "unrealized_pl_pct": 0.359
-    },
-    {
-      "symbol": "BAC",
-      "qty": 626,
-      "avg_entry_price": 50.85,
-      "current_price": 51.25,
-      "market_value": 32082.5,
-      "unrealized_pl": 250.4,
-      "unrealized_pl_pct": 0.787
-    }
-  ]
+  "ts": "2026-05-22T15:47:59.912783Z",
+  "equity": 97799.93,
+  "last_equity": 97128.71,
+  "cash": 97799.93,
+  "buying_power": 311406.8,
+  "all_time_return_pct": -2.2001,
+  "positions": []
 }
