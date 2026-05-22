@@ -1,55 +1,37 @@
 {
-  "ts": "2026-05-22T17:50:31.554241Z",
-  "equity": 97737.59,
+  "ts": "2026-05-22T19:42:41.732689Z",
+  "equity": 96230.6,
   "last_equity": 97128.71,
-  "cash": -139950.9,
-  "buying_power": 73655.97,
-  "all_time_return_pct": -2.2624,
+  "cash": 145.67,
+  "buying_power": 214942.25,
+  "all_time_return_pct": -3.7694,
   "positions": [
     {
       "symbol": "AMD",
       "qty": 68,
       "avg_entry_price": 470.28,
-      "current_price": 472.87,
-      "market_value": 32155.16,
-      "unrealized_pl": 176.12,
-      "unrealized_pl_pct": 0.551
+      "current_price": 468.3851,
+      "market_value": 31850.19,
+      "unrealized_pl": -128.85,
+      "unrealized_pl_pct": -0.403
     },
     {
       "symbol": "BAC",
       "qty": 621,
       "avg_entry_price": 51.94,
-      "current_price": 51.93,
-      "market_value": 32248.53,
-      "unrealized_pl": -6.21,
-      "unrealized_pl_pct": -0.019
-    },
-    {
-      "symbol": "CAT",
-      "qty": 79,
-      "avg_entry_price": 890.57,
-      "current_price": 891.115,
-      "market_value": 70398.09,
-      "unrealized_pl": 43.05,
-      "unrealized_pl_pct": 0.061
-    },
-    {
-      "symbol": "INTC",
-      "qty": 585,
-      "avg_entry_price": 121.25,
-      "current_price": 121.04,
-      "market_value": 70808.4,
-      "unrealized_pl": -122.85,
-      "unrealized_pl_pct": -0.173
+      "current_price": 51.77,
+      "market_value": 32149.17,
+      "unrealized_pl": -105.57,
+      "unrealized_pl_pct": -0.327
     },
     {
       "symbol": "NFLX",
       "qty": 363,
       "avg_entry_price": 88.79,
-      "current_price": 88.37,
-      "market_value": 32078.31,
-      "unrealized_pl": -152.46,
-      "unrealized_pl_pct": -0.473
+      "current_price": 88.39,
+      "market_value": 32085.57,
+      "unrealized_pl": -145.2,
+      "unrealized_pl_pct": -0.451
     }
   ]
 }
