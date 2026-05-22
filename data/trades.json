@@ -1276,5 +1276,122 @@
     "ts": "2026-05-21T21:56:22.597933Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=26255454437"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-22",
+    "ts": "2026-05-22T15:52:05.452460Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=26297863031"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-22",
+    "ts": "2026-05-22T15:52:25.124800Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-22",
+    "ts": "2026-05-22T15:52:27.691631Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-05-22",
+    "ts": "2026-05-22T15:52:29.018737Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-05-22",
+    "ts": "2026-05-22T15:53:30.978893Z",
+    "equity_start": 97799.93,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMD",
+          "confidence": "high",
+          "catalyst": "Premarket gap +3.89% on Lisa Su initiating volume production of 2nm Venice CPU family + $10B Taiwan investment, riding broader AI rally with Dow at record highs",
+          "smart_money_signals": "Alt-data 9/10: insider cluster buy (4 buyers), House cluster buy (Gottheimer + Cisneros, 3 buys), top-8 WSB, 76.3% analyst bullish",
+          "rationale": "Rare full-stack stack \u2014 catalyst + insider cluster + congress cluster + analyst conviction all align on a +3.89% gap"
+        },
+        {
+          "symbol": "BAC",
+          "confidence": "medium",
+          "catalyst": "Quiet +0.84% bid in line with broad risk-on tape, no negative news",
+          "smart_money_signals": "Insider cluster buy (7 buyers, 7:5 buy/sell ratio), 83.3% analyst bullish \u2014 clean smart-money setup",
+          "rationale": "Pure smart-money play: large insider cluster plus high analyst conviction with no contradicting signals"
+        },
+        {
+          "symbol": "NFLX",
+          "confidence": "medium",
+          "catalyst": "CNBC Final Trades mention overnight; modest dip offers entry while tape is risk-on",
+          "smart_money_signals": "Insider cluster buy (6 buyers), 78% analyst bullish",
+          "rationale": "Cluster insider buying + analyst conviction with positive media mention; small dip improves R/R on +2/-1 bracket"
+        }
+      ],
+      "market_take": "Risk-on tape with Dow at record highs and AI/semis leading \u2014 favor stacked smart-money + catalyst names",
+      "skipped_movers": [
+        "TSLA: heavy insider selling 17 sells, alt-data 0/10",
+        "WMT: down on weak guidance, 7 insider sells",
+        "COST: down 2%, no positive signals",
+        "JPM: 8 insider sells, House selling",
+        "PLTR: Pentagon bidding spat + London deal blocked, price down",
+        "INTC: House selling, only 33% analyst bullish despite insider cluster",
+        "NVDA: down on tape, House net selling, WSB chatter cooling",
+        "AAPL: heavy insider selling, mixed congress",
+        "CAT: weaker analyst conviction, only one signal",
+        "GS: 17 insider sells outweigh 4 buys",
+        "ORCL: thin signal score, no strong catalyst",
+        "SBUX: insider selling, no catalyst"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Rare full-stack stack \u2014 catalyst + insider cluster + congress cluster + analyst conviction all align on a +3.89% gap",
+        "symbol": "AMD",
+        "qty": 68,
+        "entry_price_est": 470.29999999999995,
+        "stop_price": 465.6,
+        "take_price": 479.71,
+        "order_id": "10512ab3-bbc0-4b9a-9fa3-21c9869b10bc"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Pure smart-money play: large insider cluster plus high analyst conviction with no contradicting signals",
+        "symbol": "BAC",
+        "qty": 621,
+        "entry_price_est": 51.935,
+        "stop_price": 51.42,
+        "take_price": 52.97,
+        "order_id": "20ede2d1-fc10-4aed-b4cf-bb859b028945"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Cluster insider buying + analyst conviction with positive media mention; small dip improves R/R on +2/-1 bracket",
+        "symbol": "NFLX",
+        "qty": 363,
+        "entry_price_est": 88.78,
+        "stop_price": 87.89,
+        "take_price": 90.56,
+        "order_id": "15440626-84bc-43e0-9620-0a3ea78f10b9"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-05-22",
+    "ts": "2026-05-22T15:53:31.082031Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
