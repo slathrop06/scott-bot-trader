@@ -1,19 +1,19 @@
 {
-  "ts": "2026-05-22T22:33:56.777287Z",
-  "equity": 96010.68,
-  "last_equity": 97128.71,
-  "cash": 145.67,
-  "buying_power": 214942.25,
-  "all_time_return_pct": -3.9893,
+  "ts": "2026-05-25T15:49:55.348231Z",
+  "equity": 96265.71,
+  "last_equity": 96265.71,
+  "cash": 145.43,
+  "buying_power": 269718.52,
+  "all_time_return_pct": -3.7343,
   "positions": [
     {
       "symbol": "AMD",
       "qty": 68,
       "avg_entry_price": 470.28,
-      "current_price": 464.45,
-      "market_value": 31582.6,
-      "unrealized_pl": -396.44,
-      "unrealized_pl_pct": -1.24
+      "current_price": 467.51,
+      "market_value": 31790.68,
+      "unrealized_pl": -188.36,
+      "unrealized_pl_pct": -0.589
     },
     {
       "symbol": "BAC",
@@ -28,10 +28,10 @@
       "symbol": "NFLX",
       "qty": 363,
       "avg_entry_price": 88.79,
-      "current_price": 88.47,
-      "market_value": 32114.61,
-      "unrealized_pl": -116.16,
-      "unrealized_pl_pct": -0.36
+      "current_price": 88.6,
+      "market_value": 32161.8,
+      "unrealized_pl": -68.97,
+      "unrealized_pl_pct": -0.214
     }
   ]
 }
