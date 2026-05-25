@@ -1633,5 +1633,26 @@
     "ts": "2026-05-25T17:10:12.527674Z",
     "status": "blocked",
     "note": "Market is closed."
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-25",
+    "ts": "2026-05-25T18:53:26.669882Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=26415317908"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-05-25",
+    "ts": "2026-05-25T18:53:47.904093Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-05-25",
+    "ts": "2026-05-25T18:53:48.111117Z",
+    "status": "blocked",
+    "note": "Market is closed."
   }
 ]
