@@ -1654,5 +1654,42 @@
     "ts": "2026-05-25T18:53:48.111117Z",
     "status": "blocked",
     "note": "Market is closed."
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-25",
+    "ts": "2026-05-25T20:17:10.731564Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=26418151598"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-05-25",
+    "ts": "2026-05-25T20:17:30.309931Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-05-25",
+    "ts": "2026-05-25T20:17:31.002860Z",
+    "equity_end": 96265.71,
+    "daily_pnl_usd": 0.0,
+    "daily_pct": 0.0,
+    "flatten": {
+      "closed": [
+        "AMD",
+        "BAC",
+        "NFLX"
+      ],
+      "raw_response_count": 3
+    }
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-05-25",
+    "ts": "2026-05-25T20:17:31.129240Z",
+    "status": "ok",
+    "note": "closed 3 positions, 0 round-trips"
   }
 ]
