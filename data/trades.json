@@ -1811,5 +1811,104 @@
     "ts": "2026-05-26T16:51:12.851875Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-26",
+    "ts": "2026-05-26T17:57:05.024911Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=26465684261"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-05-26",
+    "ts": "2026-05-26T17:57:25.007159Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-05-26",
+    "ts": "2026-05-26T17:58:21.290533Z",
+    "equity_start": 98357.8,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "GE",
+          "confidence": "high",
+          "catalyst": "Strong intraday breakout +2.98% on solid volume with no contradicting news",
+          "smart_money_signals": "Insider cluster buy with 15 distinct buyers (16 buys vs 8 sells, 2:1 ratio), 87.1% analyst bullish (9SB/18B)",
+          "rationale": "Best stacked setup \u2014 rare 15-insider cluster buy combined with elite analyst conviction and confirming price action"
+        },
+        {
+          "symbol": "CAT",
+          "confidence": "medium",
+          "catalyst": "Strong intraday move +3.05% breaking out with no contradicting news",
+          "smart_money_signals": "Insider cluster buy with 8 distinct buyers in last 30d",
+          "rationale": "Price action confirms insider conviction even though analyst rating is only middling"
+        },
+        {
+          "symbol": "AVGO",
+          "confidence": "medium",
+          "catalyst": "Positive semi/AI sentiment from BofA note and Huang's profitable-tokens comment driving +2.30% on heavy volume",
+          "smart_money_signals": "93.0% analyst bullish (17SB/36B, zero sell ratings) \u2014 strongest analyst conviction in the list",
+          "rationale": "AI tape leadership with overwhelming analyst support outweighs the minor House selling signal"
+        }
+      ],
+      "market_take": "Risk-on tape with QQQ/IWM up ~2% \u2014 favor breakout names with smart-money confirmation over the defensive/energy laggards.",
+      "skipped_movers": [
+        "CVX: 11 insider sells, price breaking down \u2014 skip",
+        "COST: pre-earnings volatility, earnings risk \u2014 skip",
+        "XOM: no catalyst, weak analyst conviction, price down \u2014 skip",
+        "TSLA: 17 insider sells dominate the 1 House buy \u2014 skip",
+        "WMT: 9 insider sells with price declining \u2014 skip",
+        "SBUX: insider selling and price down \u2014 skip",
+        "ADBE: insider selling and price down despite peer strength \u2014 skip",
+        "GOOGL: 15 insider sells dilute the bullish AI narrative \u2014 skip"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best stacked setup \u2014 rare 15-insider cluster buy combined with elite analyst conviction and confirming price action",
+        "symbol": "GE",
+        "qty": 216,
+        "entry_price_est": 312.64,
+        "stop_price": 309.51,
+        "take_price": 318.89,
+        "order_id": "ff9d23f8-6f86-41b8-beaf-250ca7a6f3f8"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Price action confirms insider conviction even though analyst rating is only middling",
+        "symbol": "CAT",
+        "qty": 75,
+        "entry_price_est": 903.37,
+        "stop_price": 894.34,
+        "take_price": 921.44,
+        "order_id": "51566d4b-4074-44e1-b895-5b447c75e584"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "AI tape leadership with overwhelming analyst support outweighs the minor House selling signal",
+        "symbol": "AVGO",
+        "qty": 160,
+        "entry_price_est": 422.595,
+        "stop_price": 418.37,
+        "take_price": 431.05,
+        "order_id": "2ae59084-b8a2-488c-abef-42fc53776c25"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-05-26",
+    "ts": "2026-05-26T17:58:21.408531Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
