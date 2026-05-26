@@ -1705,5 +1705,111 @@
     "ts": "2026-05-25T22:37:08.295568Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=26422501609"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-26",
+    "ts": "2026-05-26T16:49:55.667197Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=26462294522"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-26",
+    "ts": "2026-05-26T16:50:14.906499Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-26",
+    "ts": "2026-05-26T16:50:17.731532Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-05-26",
+    "ts": "2026-05-26T16:50:19.094957Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-05-26",
+    "ts": "2026-05-26T16:51:12.816855Z",
+    "equity_start": 97777.43,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMD",
+          "confidence": "high",
+          "catalyst": "Gapping +6.77% premarket on NVIDIA's $200B CPU market opportunity announcement; Evercore ISI raised PT to $579",
+          "smart_money_signals": "10/10 alt-score: insider cluster buy (5 buyers), House cluster buy (Gottheimer + Cisneros, 3 buys), WSB 4.33x normal at rank #8, 76% analyst buy",
+          "rationale": "Rare full-stack alignment \u2014 strong catalyst plus every smart-money signal firing simultaneously"
+        },
+        {
+          "symbol": "GE",
+          "confidence": "medium",
+          "catalyst": "Steady +2.82% move on no news \u2014 clean relative strength",
+          "smart_money_signals": "Massive insider cluster buy (15 unique buyers, 16 buys vs 8 sells), 87% analyst bullish (9SB/18B)",
+          "rationale": "Best pure smart-money setup \u2014 15-insider cluster buy is extraordinary and 87% analyst conviction backs it"
+        },
+        {
+          "symbol": "INTC",
+          "confidence": "medium",
+          "catalyst": "White House backing and potential foundry deals with Apple, Nvidia, SpaceX; +2.15% on heavy 69M volume",
+          "smart_money_signals": "Insider cluster buy (11 buyers, 12 buys vs only 2 sells), WSB 3.4x normal chatter",
+          "rationale": "Catalyst plus strong insider conviction on huge volume; analyst skepticism offset by clear news catalyst"
+        }
+      ],
+      "market_take": "Risk-on tone with semis leading on AI capex news; futures up across the board.",
+      "skipped_movers": [
+        "CVX: heavy insider selling 11:0, price down \u2014 skip",
+        "COST: down on pre-earnings volatility, earnings risk \u2014 skip",
+        "TSLA: heavy insider selling 17 sells, mixed signals \u2014 skip",
+        "WMT: 9 insider sells, price down on weak consumer read \u2014 skip",
+        "SBUX: insider selling and negative news \u2014 skip",
+        "AVGO: House selling and no insider support \u2014 skip",
+        "CAT: insider sells outweigh buys 31:12, weak analyst conviction \u2014 skip"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Rare full-stack alignment \u2014 strong catalyst plus every smart-money signal firing simultaneously",
+        "symbol": "AMD",
+        "qty": 65,
+        "entry_price_est": 496.04499999999996,
+        "stop_price": 491.08,
+        "take_price": 505.97,
+        "order_id": "11cd6284-1fee-41cb-81b7-d1a2e685bcd7"
+      },
+      {
+        "status": "failed",
+        "symbol": "GE",
+        "error": "{\"base_price\":\"311.3801\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Catalyst plus strong insider conviction on huge volume; analyst skepticism offset by clear news catalyst",
+        "symbol": "INTC",
+        "qty": 267,
+        "entry_price_est": 120.69,
+        "stop_price": 119.48,
+        "take_price": 123.1,
+        "order_id": "7e973d56-525e-47b8-9fd3-a0ea18370110"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-05-26",
+    "ts": "2026-05-26T16:51:12.851875Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
