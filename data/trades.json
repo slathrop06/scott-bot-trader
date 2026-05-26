@@ -1917,5 +1917,74 @@
     "ts": "2026-05-26T20:23:12.289955Z",
     "status": "intraday_workflow_started",
     "note": "event=schedule run_id=26473013141"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-26",
+    "ts": "2026-05-26T20:49:57.625828Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=26474353701"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-05-26",
+    "ts": "2026-05-26T20:50:15.861552Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-05-26",
+    "ts": "2026-05-26T20:50:15.937459Z",
+    "equity_end": 99646.96,
+    "daily_pnl_usd": 3381.25,
+    "daily_pct": 3.5124,
+    "flatten": {
+      "closed": [
+        "AVGO",
+        "CAT",
+        "GE"
+      ],
+      "raw_response_count": 3
+    }
+  },
+  {
+    "type": "trade",
+    "date": "2026-05-26",
+    "ts": "2026-05-26T20:50:15.971887Z",
+    "symbol": "AMD",
+    "qty": 65,
+    "entry_price": 494.21,
+    "entry_ts": "2026-05-26T16:51:18.450627Z",
+    "entry_order_id": "11cd6284-1fee-41cb-81b7-d1a2e685bcd7",
+    "exit_price": 506.0,
+    "exit_ts": "2026-05-26T19:10:57.601486Z",
+    "exit_order_id": "f7118bbb-ea6e-450b-af72-24eb7aec6d1c",
+    "exit_reason": "bracket",
+    "pnl_usd": 766.35,
+    "pnl_pct": 2.3856
+  },
+  {
+    "type": "trade",
+    "date": "2026-05-26",
+    "ts": "2026-05-26T20:50:15.971887Z",
+    "symbol": "INTC",
+    "qty": 267,
+    "entry_price": 120.71,
+    "entry_ts": "2026-05-26T16:51:13.702697Z",
+    "entry_order_id": "7e973d56-525e-47b8-9fd3-a0ea18370110",
+    "exit_price": 123.1302,
+    "exit_ts": "2026-05-26T19:23:50.983195Z",
+    "exit_order_id": "7c181808-079b-4adb-9a9f-4e85c5b933f4",
+    "exit_reason": "bracket",
+    "pnl_usd": 646.2,
+    "pnl_pct": 2.005
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-05-26",
+    "ts": "2026-05-26T20:50:15.990895Z",
+    "status": "ok",
+    "note": "closed 3 positions, 2 round-trips"
   }
 ]
