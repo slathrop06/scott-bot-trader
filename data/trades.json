@@ -1993,5 +1993,114 @@
     "ts": "2026-05-26T22:12:51.155267Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=26478139902"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-27",
+    "ts": "2026-05-27T16:42:33.573307Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=26525095667"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-27",
+    "ts": "2026-05-27T16:42:53.750115Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-27",
+    "ts": "2026-05-27T16:42:55.566818Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-05-27",
+    "ts": "2026-05-27T16:42:56.947692Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-05-27",
+    "ts": "2026-05-27T16:44:06.433543Z",
+    "equity_start": 99370.85,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMD",
+          "confidence": "high",
+          "catalyst": "OneQode deal to deploy AMD Instinct MI355X GPUs + 6% chip sector rally; stock gapped up premarket on AI buildout momentum",
+          "smart_money_signals": "Insider cluster buy (5 buyers), House cluster buy (3 buys by Cisneros + Gottheimer), WSB rank #6 with 288 mentions (3.56x normal), 76% analyst buy",
+          "rationale": "Perfect 10/10 alt-data stack with concrete catalyst \u2014 every signal class fires bullish at once."
+        },
+        {
+          "symbol": "AMZN",
+          "confidence": "high",
+          "catalyst": "Goldman raises S&P target to 8,000 citing AI capex from AMZN/MSFT; stock gapped +2.67% premarket",
+          "smart_money_signals": "Insider cluster buy (8 buyers), House net buying (Cisneros), WSB chatter 3.89x normal, 92.3% analyst buy",
+          "rationale": "9/10 alt-data score with confirming price gap and bullish AI capex narrative."
+        },
+        {
+          "symbol": "PLTR",
+          "confidence": "medium",
+          "catalyst": "No fresh news but oversold dip (-1.57%) into strong smart-money support",
+          "smart_money_signals": "Insider cluster buy (3 buyers), House buying (Cisneros), WSB 2.25x normal, 68% analyst buy",
+          "rationale": "Buy-the-dip setup where alt-data is overwhelmingly bullish despite red tape."
+        }
+      ],
+      "market_take": "AI/chip frenzy driving risk-on rotation; mega-cap tech leading while financials and energy lag.",
+      "skipped_movers": [
+        "JPM: heavy insider selling 9 sells + down premarket",
+        "INTC: down premarket, House selling, only 33% analyst buy despite insider buys",
+        "TSLA: 17 insider sells, mixed analyst view (47.5% bullish)",
+        "GOOGL: 15 insider sells outweighs gap",
+        "NKE: insider + congress selling",
+        "CVX: 11 insider sells, weak tape",
+        "BAC: down premarket contradicts insider buys",
+        "HD: thin volume, mixed congress activity",
+        "BA: weak alt-data, no insider cluster",
+        "SHOP: thin signal stack, only analyst buy"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "failed",
+        "symbol": "AMD",
+        "error": "{\"base_price\":\"494.5525\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "9/10 alt-data score with confirming price gap and bullish AI capex narrative.",
+        "symbol": "AMZN",
+        "qty": 120,
+        "entry_price_est": 272.105,
+        "stop_price": 269.38,
+        "take_price": 277.55,
+        "order_id": "dfe23ca3-a571-41b8-9b3b-02bc9ced36f0"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Buy-the-dip setup where alt-data is overwhelmingly bullish despite red tape.",
+        "symbol": "PLTR",
+        "qty": 245,
+        "entry_price_est": 133.83499999999998,
+        "stop_price": 132.5,
+        "take_price": 136.51,
+        "order_id": "e24af303-e226-4dd6-b1d9-c4fa40adbc6c"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-05-27",
+    "ts": "2026-05-27T16:44:06.555358Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
