@@ -1,28 +1,19 @@
 {
-  "ts": "2026-05-27T18:05:34.949950Z",
-  "equity": 98807.19,
+  "ts": "2026-05-27T19:23:50.820969Z",
+  "equity": 98806.89,
   "last_equity": 99692.27,
-  "cash": 33923.24,
-  "buying_power": 132730.43,
-  "all_time_return_pct": -1.1928,
+  "cash": 66248.84,
+  "buying_power": 165055.73,
+  "all_time_return_pct": -1.1931,
   "positions": [
-    {
-      "symbol": "AMZN",
-      "qty": 120,
-      "avg_entry_price": 272.1197,
-      "current_price": 269.75,
-      "market_value": 32370.0,
-      "unrealized_pl": -284.36,
-      "unrealized_pl_pct": -0.871
-    },
     {
       "symbol": "PLTR",
       "qty": 245,
       "avg_entry_price": 133.85,
-      "current_price": 132.71,
-      "market_value": 32513.95,
-      "unrealized_pl": -279.3,
-      "unrealized_pl_pct": -0.852
+      "current_price": 132.89,
+      "market_value": 32558.05,
+      "unrealized_pl": -235.2,
+      "unrealized_pl_pct": -0.717
     }
   ]
 }
