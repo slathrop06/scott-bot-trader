@@ -2190,5 +2190,70 @@
     "ts": "2026-05-27T20:28:52.240708Z",
     "status": "intraday_workflow_started",
     "note": "event=schedule run_id=26536868380"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-27",
+    "ts": "2026-05-27T20:57:04.395735Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=26538299801"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-05-27",
+    "ts": "2026-05-27T20:57:23.052783Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-05-27",
+    "ts": "2026-05-27T20:57:23.366750Z",
+    "equity_end": 98718.44,
+    "daily_pnl_usd": -973.83,
+    "daily_pct": -0.9768,
+    "flatten": {
+      "closed": [],
+      "note": "No open positions."
+    }
+  },
+  {
+    "type": "trade",
+    "date": "2026-05-27",
+    "ts": "2026-05-27T20:57:23.387240Z",
+    "symbol": "AMZN",
+    "qty": 120,
+    "entry_price": 272.1197,
+    "entry_ts": "2026-05-27T16:44:08.730696Z",
+    "entry_order_id": "dfe23ca3-a571-41b8-9b3b-02bc9ced36f0",
+    "exit_price": 269.38,
+    "exit_ts": "2026-05-27T18:36:24.436975Z",
+    "exit_order_id": "1a2f1efc-5a3e-480f-b279-8e92dff3836c",
+    "exit_reason": "bracket",
+    "pnl_usd": -328.76,
+    "pnl_pct": -1.0068
+  },
+  {
+    "type": "trade",
+    "date": "2026-05-27",
+    "ts": "2026-05-27T20:57:23.387240Z",
+    "symbol": "PLTR",
+    "qty": 245,
+    "entry_price": 133.85,
+    "entry_ts": "2026-05-27T16:44:07.611445Z",
+    "entry_order_id": "e24af303-e226-4dd6-b1d9-c4fa40adbc6c",
+    "exit_price": 132.529,
+    "exit_ts": "2026-05-27T19:59:27.032519Z",
+    "exit_order_id": "40e6d436-0178-431d-9964-1ad00574b776",
+    "exit_reason": "bracket",
+    "pnl_usd": -323.65,
+    "pnl_pct": -0.9869
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-05-27",
+    "ts": "2026-05-27T20:57:23.413692Z",
+    "status": "ok",
+    "note": "closed 0 positions, 2 round-trips"
   }
 ]
