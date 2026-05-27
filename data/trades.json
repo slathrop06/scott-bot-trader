@@ -2102,5 +2102,86 @@
     "ts": "2026-05-27T16:44:06.555358Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-27",
+    "ts": "2026-05-27T18:01:56.140804Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=26529272862"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-05-27",
+    "ts": "2026-05-27T18:02:18.645347Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-05-27",
+    "ts": "2026-05-27T18:05:34.835574Z",
+    "equity_start": 98837.81,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "BA",
+          "confidence": "medium",
+          "catalyst": "Up +1.6% with whale activity flagged, showing relative strength while broader tape (INTC, JPM, AMD, BAC) is red",
+          "smart_money_signals": "84% analyst bullish (13 strong buy / 18 buy / 6 hold, 0 sells); whale alert flagged in industrials",
+          "rationale": "Best risk/reward \u2014 strong analyst conviction, no contradicting signals, and price action confirms with relative strength on a down day."
+        },
+        {
+          "symbol": "SHOP",
+          "confidence": "medium",
+          "catalyst": "Up +2.45%, leading the tape with clean breakout action and no negative news",
+          "smart_money_signals": "77% analyst bullish (10 SB / 33 B / 12 H, only 1 strong sell)",
+          "rationale": "Strongest momentum mover today with supportive analyst base and zero negative alt-data flags."
+        },
+        {
+          "symbol": "AMD",
+          "confidence": "medium",
+          "catalyst": "OneQode deal to deploy MI355X GPUs + Nvidia AI capex tailwind; stock is pulling back -2.5% intraday from premarket highs offering a dip entry",
+          "smart_money_signals": "House cluster buy (3 buys: Cisneros 2x, Gottheimer), WSB rank #6 with 2.02x chatter, 76% analyst bullish",
+          "rationale": "Rare full-stack stack \u2014 catalyst + congressional cluster + social + analysts \u2014 and intraday weakness offers a better entry on the tight -1% stop."
+        }
+      ],
+      "market_take": "Risk-off tone with semis/banks selling off; rotation into industrials, retail and discretionary names showing relative strength.",
+      "skipped_movers": [
+        "INTC: down -3% despite Trump shoutout, House selling, signal score -1 \u2014 momentum contradicts narrative",
+        "JPM: no news, no alt-data, just selling off",
+        "HD: up but House net selling 2:1",
+        "NKE: peer DKS earnings tailwind weak, House selling, analysts only 51% bullish",
+        "BAC: red tape, no catalyst despite 83% analyst buy",
+        "ORCL: down -1.8%, Trump-adjacent narrative not playing out",
+        "TSLA: only 47.5% analyst bullish, fluff news, weak alt-data",
+        "CVX/XOM: energy weak, no catalyst"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "failed",
+        "symbol": "BA",
+        "error": "{\"base_price\":\"222.1774\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      },
+      {
+        "status": "failed",
+        "symbol": "SHOP",
+        "error": "{\"base_price\":\"107\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      },
+      {
+        "status": "failed",
+        "symbol": "AMD",
+        "error": "{\"base_price\":\"495.8101\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-05-27",
+    "ts": "2026-05-27T18:05:34.950739Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
