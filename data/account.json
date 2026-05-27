@@ -1,37 +1,9 @@
 {
-  "ts": "2026-05-26T22:48:51.148538Z",
-  "equity": 99726.01,
-  "last_equity": 96265.71,
-  "cash": -103900.19,
-  "buying_power": 66628.35,
-  "all_time_return_pct": -0.274,
-  "positions": [
-    {
-      "symbol": "AVGO",
-      "qty": 160,
-      "avg_entry_price": 422.65,
-      "current_price": 422.13,
-      "market_value": 67540.8,
-      "unrealized_pl": -83.2,
-      "unrealized_pl_pct": -0.123
-    },
-    {
-      "symbol": "CAT",
-      "qty": 75,
-      "avg_entry_price": 907.31,
-      "current_price": 909.0,
-      "market_value": 68175.0,
-      "unrealized_pl": 126.75,
-      "unrealized_pl_pct": 0.186
-    },
-    {
-      "symbol": "GE",
-      "qty": 216,
-      "avg_entry_price": 312.12,
-      "current_price": 314.4,
-      "market_value": 67910.4,
-      "unrealized_pl": 492.48,
-      "unrealized_pl_pct": 0.73
-    }
-  ]
+  "ts": "2026-05-27T16:36:34.236631Z",
+  "equity": 99370.85,
+  "last_equity": 99692.27,
+  "cash": 99370.85,
+  "buying_power": 198741.7,
+  "all_time_return_pct": -0.6291,
+  "positions": []
 }
