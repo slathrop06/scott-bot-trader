@@ -1,19 +1,9 @@
 {
-  "ts": "2026-05-27T19:23:50.820969Z",
-  "equity": 98806.89,
+  "ts": "2026-05-27T21:20:36.526291Z",
+  "equity": 98718.44,
   "last_equity": 99692.27,
-  "cash": 66248.84,
-  "buying_power": 165055.73,
-  "all_time_return_pct": -1.1931,
-  "positions": [
-    {
-      "symbol": "PLTR",
-      "qty": 245,
-      "avg_entry_price": 133.85,
-      "current_price": 132.89,
-      "market_value": 32558.05,
-      "unrealized_pl": -235.2,
-      "unrealized_pl_pct": -0.717
-    }
-  ]
+  "cash": 98718.44,
+  "buying_power": 197436.88,
+  "all_time_return_pct": -1.2816,
+  "positions": []
 }
