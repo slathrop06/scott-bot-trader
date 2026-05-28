@@ -1,46 +1,46 @@
 {
-  "ts": "2026-05-28T19:35:26.386312Z",
-  "equity": 99601.83,
+  "ts": "2026-05-28T21:54:37.956950Z",
+  "equity": 102600.07,
   "last_equity": 98718.3,
   "cash": -183181.46,
   "buying_power": 112349.04,
-  "all_time_return_pct": -0.3982,
+  "all_time_return_pct": 2.6001,
   "positions": [
     {
       "symbol": "AMD",
       "qty": 62,
       "avg_entry_price": 521.29,
-      "current_price": 518.435,
-      "market_value": 32142.97,
-      "unrealized_pl": -177.01,
-      "unrealized_pl_pct": -0.548
+      "current_price": 521.15,
+      "market_value": 32311.3,
+      "unrealized_pl": -8.68,
+      "unrealized_pl_pct": -0.027
     },
     {
       "symbol": "BA",
       "qty": 476,
       "avg_entry_price": 228.82,
-      "current_price": 228.46,
-      "market_value": 108746.96,
-      "unrealized_pl": -171.36,
-      "unrealized_pl_pct": -0.157
+      "current_price": 228.78,
+      "market_value": 108899.28,
+      "unrealized_pl": -19.04,
+      "unrealized_pl_pct": -0.017
     },
     {
       "symbol": "MSFT",
       "qty": 76,
       "avg_entry_price": 424.9429,
-      "current_price": 426.46,
-      "market_value": 32410.96,
-      "unrealized_pl": 115.3,
-      "unrealized_pl_pct": 0.357
+      "current_price": 427.55,
+      "market_value": 32493.8,
+      "unrealized_pl": 198.14,
+      "unrealized_pl_pct": 0.614
     },
     {
       "symbol": "ORCL",
       "qty": 535,
       "avg_entry_price": 203.72,
-      "current_price": 204.64,
-      "market_value": 109482.4,
-      "unrealized_pl": 492.2,
-      "unrealized_pl_pct": 0.452
+      "current_price": 209.49,
+      "market_value": 112077.15,
+      "unrealized_pl": 3086.95,
+      "unrealized_pl_pct": 2.832
     }
   ]
 }
