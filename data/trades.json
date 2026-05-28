@@ -2475,5 +2475,12 @@
     "ts": "2026-05-28T18:19:58.087740Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-28",
+    "ts": "2026-05-28T20:39:47.272466Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=26600905996"
   }
 ]
