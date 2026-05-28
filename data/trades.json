@@ -2262,5 +2262,117 @@
     "ts": "2026-05-27T22:26:57.427303Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=26542428049"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-28",
+    "ts": "2026-05-28T16:59:59.593650Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=26589491042"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-28",
+    "ts": "2026-05-28T17:00:19.257200Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-28",
+    "ts": "2026-05-28T17:00:22.068927Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-05-28",
+    "ts": "2026-05-28T17:00:23.450158Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-05-28",
+    "ts": "2026-05-28T17:04:42.388069Z",
+    "equity_start": 98718.3,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMD",
+          "confidence": "high",
+          "catalyst": "+6.55% premarket gap on AI tailwinds (Snowflake 37% blowout lifting AI semis), record S&P highs",
+          "smart_money_signals": "House cluster buy: 3 buys by Cisneros & Gottheimer in 21d, alt-score 3/10, WSB rank #11",
+          "rationale": "Strongest premarket gap with confirming congressional cluster buy and AI sector momentum."
+        },
+        {
+          "symbol": "MSFT",
+          "confidence": "high",
+          "catalyst": "+2.44% gap on AI strength, JPM bullish AI call, technical momentum toward $433",
+          "smart_money_signals": "House cluster buy (McGuire, Salazar), top-3 WSB ticker (#3, 351 mentions), 91% analyst buy rating",
+          "rationale": "Stacks catalyst + cluster buy + overwhelming analyst conviction \u2014 highest signal density."
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "+2.02% premarket despite mixed Q1; Benioff's AI agent pivot narrative driving sentiment",
+          "smart_money_signals": "WSB chatter 5.1x normal (rank #12), House net buying (Salazar), 76% analyst buy",
+          "rationale": "Explosive 5x WSB chatter spike plus analyst support signals retail+institutional alignment."
+        }
+      ],
+      "market_take": "Risk-on tape at record highs with AI names leading; ceasefire-driven broad rally favors momentum longs.",
+      "skipped_movers": [
+        "ORCL: no alt-data confirmation despite gap",
+        "INTC: House selling + only 33% analyst bullish",
+        "V: Congress sold up to $180K, net insider selling",
+        "AVGO: House net selling 2:0",
+        "NFLX: price down, insider sells outnumber buys 25:16",
+        "NKE: House selling, no catalyst",
+        "GS: insider sells outnumber buys 17:6"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Strongest premarket gap with confirming congressional cluster buy and AI sector momentum.",
+        "symbol": "AMD",
+        "qty": 62,
+        "entry_price_est": 521.29,
+        "stop_price": 516.08,
+        "take_price": 531.72,
+        "order_id": "903ce9fb-8f7e-45f3-8eff-b8216aa0bb83"
+      },
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Stacks catalyst + cluster buy + overwhelming analyst conviction \u2014 highest signal density.",
+        "symbol": "MSFT",
+        "qty": 76,
+        "entry_price_est": 424.28,
+        "stop_price": 420.04,
+        "take_price": 432.77,
+        "order_id": "c269170d-1b5a-432c-bb61-13689c4e5d57"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Explosive 5x WSB chatter spike plus analyst support signals retail+institutional alignment.",
+        "symbol": "CRM",
+        "qty": 181,
+        "entry_price_est": 179.20999999999998,
+        "stop_price": 177.42,
+        "take_price": 182.79,
+        "order_id": "e7d792cf-d23f-4b16-afcd-1644ce0c7ed7"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-05-28",
+    "ts": "2026-05-28T17:04:42.407887Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
