@@ -2552,5 +2552,12 @@
     "ts": "2026-05-28T21:03:02.636129Z",
     "status": "ok",
     "note": "closed 4 positions, 2 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-28",
+    "ts": "2026-05-28T22:44:02.710481Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=26606651489"
   }
 ]
