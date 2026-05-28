@@ -2374,5 +2374,106 @@
     "ts": "2026-05-28T17:04:42.407887Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-28",
+    "ts": "2026-05-28T18:18:48.871262Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=26593648302"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-05-28",
+    "ts": "2026-05-28T18:19:11.298831Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-05-28",
+    "ts": "2026-05-28T18:19:58.063622Z",
+    "equity_start": 98393.42,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "ORCL",
+          "confidence": "high",
+          "catalyst": "+6.07% intraday move riding AI software tailwind from Snowflake's 37% earnings blowout; broke above $200 on strong volume",
+          "smart_money_signals": "78.8% analyst bullish (17SB/24B), WSB chatter 2.11x normal (rank #45, 19 mentions)",
+          "rationale": "Clean AI-momentum trade with analyst conviction and rising retail buzz on a record-high tape"
+        },
+        {
+          "symbol": "PLTR",
+          "confidence": "medium",
+          "catalyst": "+6.62% gap on AI/software sector strength with heavy 34.8M volume confirming buying interest",
+          "smart_money_signals": "Insider cluster buy (3 buyers in 30d), House buy by Cisneros, 68.4% analyst bullish, WSB rank #33 with 1.19x mentions",
+          "rationale": "Stacked smart-money signals (insider cluster + congress + analysts) align with the AI-driven intraday breakout"
+        },
+        {
+          "symbol": "BA",
+          "confidence": "medium",
+          "catalyst": "+2.04% steady uptrend in a risk-on tape with no negative news",
+          "smart_money_signals": "Net insider buying (1 buy / 0 sells in 30d), 83.8% analyst bullish (13SB/18B/6H, zero sells)",
+          "rationale": "Strong analyst conviction plus insider buying with low downside-noise risk at $228 supports a tight 1% stop"
+        }
+      ],
+      "market_take": "Risk-on: S&P at record highs on AI tailwinds and easing geopolitical risk \u2014 favor momentum longs",
+      "skipped_movers": [
+        "NKE: heavy insider+congress selling",
+        "AVGO: House net selling and weak +2% move",
+        "CAT: down 1.56% despite insider cluster buy \u2014 price contradicts signal",
+        "V: down on congress sell news",
+        "GS: down day, weak analyst conviction (46.9%)",
+        "NFLX: red on day despite insider cluster",
+        "NVDA: only +1.27% with House net selling and WSB mentions fading",
+        "MCD: red with insider selling",
+        "SHOP: thin alt-data, no catalyst beyond price",
+        "MS: zero alt-data edge"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Clean AI-momentum trade with analyst conviction and rising retail buzz on a record-high tape",
+        "symbol": "ORCL",
+        "qty": 535,
+        "entry_price_est": 203.69,
+        "stop_price": 201.65,
+        "take_price": 207.76,
+        "order_id": "5542ffb3-2187-4c4d-8ce4-3a4cfd0e4afe"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Stacked smart-money signals (insider cluster + congress + analysts) align with the AI-driven intraday breakout",
+        "symbol": "PLTR",
+        "qty": 777,
+        "entry_price_est": 140.1,
+        "stop_price": 138.7,
+        "take_price": 142.9,
+        "order_id": "68d33978-f04b-4bc3-9e63-0c09f37d130d"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strong analyst conviction plus insider buying with low downside-noise risk at $228 supports a tight 1% stop",
+        "symbol": "BA",
+        "qty": 476,
+        "entry_price_est": 228.64999999999998,
+        "stop_price": 226.36,
+        "take_price": 233.22,
+        "order_id": "f7a73d6f-aeba-42be-9daf-3cedfb779473"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-05-28",
+    "ts": "2026-05-28T18:19:58.087740Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]

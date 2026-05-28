@@ -1,9 +1,28 @@
 {
-  "ts": "2026-05-28T16:53:26.789131Z",
-  "equity": 98718.3,
+  "ts": "2026-05-28T18:19:58.086929Z",
+  "equity": 98405.01,
   "last_equity": 98718.3,
-  "cash": 98718.3,
-  "buying_power": 394873.2,
-  "all_time_return_pct": -1.2817,
-  "positions": []
+  "cash": 33771.43,
+  "buying_power": 2248.14,
+  "all_time_return_pct": -1.595,
+  "positions": [
+    {
+      "symbol": "AMD",
+      "qty": 62,
+      "avg_entry_price": 521.29,
+      "current_price": 519.07,
+      "market_value": 32182.34,
+      "unrealized_pl": -137.64,
+      "unrealized_pl_pct": -0.426
+    },
+    {
+      "symbol": "MSFT",
+      "qty": 76,
+      "avg_entry_price": 424.9429,
+      "current_price": 426.99,
+      "market_value": 32451.24,
+      "unrealized_pl": 155.58,
+      "unrealized_pl_pct": 0.482
+    }
+  ]
 }
