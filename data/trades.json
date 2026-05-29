@@ -2559,5 +2559,108 @@
     "ts": "2026-05-28T22:44:02.710481Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=26606651489"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-29",
+    "ts": "2026-05-29T16:51:02.025424Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=26650294918"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-29",
+    "ts": "2026-05-29T16:51:19.534139Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-29",
+    "ts": "2026-05-29T16:51:21.477330Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-05-29",
+    "ts": "2026-05-29T16:51:22.874997Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-05-29",
+    "ts": "2026-05-29T16:52:10.949674Z",
+    "equity_start": 103773.09,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "CRM",
+          "confidence": "high",
+          "catalyst": "Premarket gap +8.92% on $192.66 with no negative news; clean breakout backed by alt-data",
+          "smart_money_signals": "Insider cluster buy (12 distinct buyers, 12B vs 3S in 30d), House buy by Salazar, 75.9% analyst bullish",
+          "rationale": "Rare combo of massive insider cluster buy + premarket gap + analyst conviction \u2014 cleanest setup on the board"
+        },
+        {
+          "symbol": "PLTR",
+          "confidence": "medium",
+          "catalyst": "+8.07% premarket gap with positive Argentina/Milei surveillance contract narrative and WSB momentum",
+          "smart_money_signals": "Insider cluster buy (3 buyers), House buy by Cisneros, WSB 3.81x normal at rank #13, 68.4% analyst bullish",
+          "rationale": "Strong gap continuation with retail catalyst and smart-money stack despite elevated insider selling backdrop"
+        },
+        {
+          "symbol": "AMD",
+          "confidence": "medium",
+          "catalyst": "Riding AI wave with bullish technicals despite slight premarket dip; setup on dip to $511",
+          "smart_money_signals": "Insider cluster buy (5 buyers), House cluster buy (3 buys by Cisneros & Gottheimer), 76% analyst buy, WSB rank #12",
+          "rationale": "Best smart-money stack on the board (insider + House cluster) on a buyable dip in the AI leader group"
+        }
+      ],
+      "market_take": "Risk-on tape with AI/tech leadership pushing Dow to records \u2014 favor gap-up tech names with smart-money confirmation",
+      "skipped_movers": [
+        "ORCL: gap up but minimal alt-data conviction (3/10)",
+        "ADBE: 0/10 alt-data, insider selling",
+        "COST: gapped down on earnings reaction \u2014 avoid",
+        "MSFT: insider selling offsets House cluster, modest gap",
+        "WMT: heavy insider selling (16 sells) and gap down",
+        "GS: heavy insider selling (11 sells)",
+        "CAT: gap down contradicts insider cluster",
+        "GOOGL: gap down despite alt-data \u2014 wait for confirmation",
+        "SBUX: insider selling and gap down",
+        "V: minor signal, House selling"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Rare combo of massive insider cluster buy + premarket gap + analyst conviction \u2014 cleanest setup on the board",
+        "symbol": "CRM",
+        "qty": 178,
+        "entry_price_est": 191.675,
+        "stop_price": 189.76,
+        "take_price": 195.51,
+        "order_id": "bcf2be13-0665-4442-aee6-28e96cdceb8d"
+      },
+      {
+        "status": "failed",
+        "symbol": "PLTR",
+        "error": "{\"code\":40310000,\"cost_basis\":\"34115.82\",\"daytrading_buying_power\":\"23849.86\",\"message\":\"insufficient day trading buying power\"}"
+      },
+      {
+        "status": "failed",
+        "symbol": "AMD",
+        "error": "{\"code\":40310000,\"cost_basis\":\"34213.55\",\"daytrading_buying_power\":\"23849.86\",\"message\":\"insufficient day trading buying power\"}"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-05-29",
+    "ts": "2026-05-29T16:52:10.971583Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
