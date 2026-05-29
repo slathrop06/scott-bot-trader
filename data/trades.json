@@ -2662,5 +2662,72 @@
     "ts": "2026-05-29T16:52:10.971583Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-05-29",
+    "ts": "2026-05-29T18:13:50.762470Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=26654216882"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-05-29",
+    "ts": "2026-05-29T18:14:09.306822Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-05-29",
+    "ts": "2026-05-29T18:15:14.683422Z",
+    "equity_start": 103732.17,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "PLTR",
+          "confidence": "high",
+          "catalyst": "Stock gapping +8.2% on $156 with renewed analyst attention and Milei surveillance contract narrative; clear momentum leader of the day",
+          "smart_money_signals": "Insider cluster buy (3 buyers), House buy (Cisneros), WSB chatter 3.7x normal rank #13, 68.4% analyst bullish",
+          "rationale": "Best stack of catalyst + smart-money on the board with strong intraday momentum to support a +2% extension"
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "Up 5.3% riding the AI tape strength (Dell blowout) with Oracle testing key technical level, broad large-cap tech bid",
+          "smart_money_signals": "WSB chatter 3.0x normal, 78.8% analyst bullish (17 Strong Buy)",
+          "rationale": "Clean AI-momentum continuation play with strong analyst conviction and no contradicting signals"
+        }
+      ],
+      "market_take": "Risk-on tape with AI/tech leadership (Dell +28%, Nasdaq highs) but retail/staples weak \u2014 chase strength in tech momentum names",
+      "skipped_movers": [
+        "ADBE: 0/10 alt-data, no news catalyst, only 45.7% analyst bullish",
+        "COST: down on earnings reaction \u2014 avoid",
+        "MSFT: WSB chatter declining (0.76x) and only +3.4%, less juice than PLTR/ORCL",
+        "AMD: down 3.1% despite good alt-data \u2014 price contradicts signals",
+        "INTC: down 3% with House selling and only 33% analyst bullish",
+        "WMT/NKE/SBUX/CAT/GOOGL/V: red on the day, no long catalyst"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "failed",
+        "symbol": "PLTR",
+        "error": "{\"code\":40310000,\"cost_basis\":\"58158.16\",\"daytrading_buying_power\":\"23849.88\",\"message\":\"insufficient day trading buying power\"}"
+      },
+      {
+        "status": "failed",
+        "symbol": "ORCL",
+        "error": "{\"code\":40310000,\"cost_basis\":\"56913.92\",\"daytrading_buying_power\":\"23849.88\",\"message\":\"insufficient day trading buying power\"}"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-05-29",
+    "ts": "2026-05-29T18:15:14.786875Z",
+    "status": "ok",
+    "note": "2 orders submitted"
   }
 ]
