@@ -2778,5 +2778,121 @@
     "ts": "2026-05-29T22:41:11.909087Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=26665869107"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-01",
+    "ts": "2026-06-01T18:44:10.202514Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=26774729911"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-01",
+    "ts": "2026-06-01T18:44:29.821408Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-01",
+    "ts": "2026-06-01T18:44:31.586636Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-06-01",
+    "ts": "2026-06-01T18:44:33.065209Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-06-01",
+    "ts": "2026-06-01T18:45:31.393105Z",
+    "equity_start": 105425.23,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "ORCL",
+          "confidence": "high",
+          "catalyst": "Big +10.5% breakout on heavy volume with software sector strength; Benzinga flags technical breakout with RSI 75",
+          "smart_money_signals": "WSB chatter 13.5x normal (rank #27, 54 mentions), 81.6% analyst bullish (17 strong buys / 23 buys)",
+          "rationale": "Cleanest momentum breakout of the tape \u2014 strong catalyst plus analyst conviction, no insider red flags"
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "high",
+          "catalyst": "+8.5% rally riding SaaS short-covering wave (Snowflake-led); price reclaiming key moving averages",
+          "smart_money_signals": "Insider cluster buy with 12 distinct buyers in 30d (12 buys vs 3 sells, 4:1 ratio); 74% analyst bullish",
+          "rationale": "Rare combo of sector catalyst + genuine insider cluster buy \u2014 both pillars align"
+        },
+        {
+          "symbol": "META",
+          "confidence": "medium",
+          "catalyst": "Down -4% on no specific bad news while Nasdaq up \u2014 oversold relative weakness setup for mean reversion",
+          "smart_money_signals": "Insider cluster buy with 20 distinct buyers in 30d; WSB chatter 9.55x normal (rank #12, 105 mentions); 87.5% analyst bullish",
+          "rationale": "Highest alt-data score (7/10) on the board with 20-insider cluster buy \u2014 fading the dip with strong smart-money backing"
+        }
+      ],
+      "market_take": "Software/AI melt-up dominates while Iran-oil shock and Nvidia's PC chip reshuffle chip names; risk-on but rotational.",
+      "skipped_movers": [
+        "NVDA: extended +5.6% on huge volume, insider sell + heavy WSB froth = chase risk",
+        "INTC: down -4.8% on Nvidia threat, LONG ONLY can't fade a clear negative catalyst despite insider cluster buy",
+        "TSLA: down -3.4%, only 48% analyst bullish, no clean catalyst",
+        "PLTR: 35 insider sells vs 3 buys \u2014 heavy net selling overrides cluster_buy flag",
+        "AMZN: down -2.9%, insider sells outpace buys (31 vs 18)",
+        "GS: heavy insider selling, score -2/10",
+        "BA: gap down despite positive news, momentum against",
+        "ADBE: alt-data score 0, just sector beta",
+        "SHOP: no news, weak signal",
+        "HD: down -2.6%, no catalyst",
+        "MSFT: insider sells and price extended, weaker setup than ORCL/CRM"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Cleanest momentum breakout of the tape \u2014 strong catalyst plus analyst conviction, no insider red flags",
+        "symbol": "ORCL",
+        "qty": 139,
+        "entry_price_est": 249.3,
+        "stop_price": 246.81,
+        "take_price": 254.29,
+        "order_id": "c0c1b06f-ce0f-4935-b039-67b1b5a25982"
+      },
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Rare combo of sector catalyst + genuine insider cluster buy \u2014 both pillars align",
+        "symbol": "CRM",
+        "qty": 166,
+        "entry_price_est": 209.0,
+        "stop_price": 206.91,
+        "take_price": 213.18,
+        "order_id": "230e2391-d8f9-488c-8cda-393ed41cba86"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Highest alt-data score (7/10) on the board with 20-insider cluster buy \u2014 fading the dip with strong smart-money backing",
+        "symbol": "META",
+        "qty": 57,
+        "entry_price_est": 605.06,
+        "stop_price": 599.01,
+        "take_price": 617.16,
+        "order_id": "a2d6b871-ea3d-4d1b-ade1-6687f6bfe0b1"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-06-01",
+    "ts": "2026-06-01T18:45:31.520164Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
