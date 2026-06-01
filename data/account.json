@@ -1,9 +1,37 @@
 {
-  "ts": "2026-06-01T18:37:20.163472Z",
-  "equity": 105425.23,
+  "ts": "2026-06-01T19:58:02.180369Z",
+  "equity": 104792.88,
   "last_equity": 103500.57,
-  "cash": 105425.23,
-  "buying_power": 373183.32,
-  "all_time_return_pct": 5.4252,
-  "positions": []
+  "cash": 1412.43,
+  "buying_power": 3004.81,
+  "all_time_return_pct": 4.7929,
+  "positions": [
+    {
+      "symbol": "CRM",
+      "qty": 166,
+      "avg_entry_price": 209.57,
+      "current_price": 209.4,
+      "market_value": 34760.4,
+      "unrealized_pl": -28.22,
+      "unrealized_pl_pct": -0.081
+    },
+    {
+      "symbol": "META",
+      "qty": 57,
+      "avg_entry_price": 605.81,
+      "current_price": 601.015,
+      "market_value": 34257.86,
+      "unrealized_pl": -273.31,
+      "unrealized_pl_pct": -0.792
+    },
+    {
+      "symbol": "ORCL",
+      "qty": 139,
+      "avg_entry_price": 249.59,
+      "current_price": 247.21,
+      "market_value": 34362.19,
+      "unrealized_pl": -330.82,
+      "unrealized_pl_pct": -0.954
+    }
+  ]
 }

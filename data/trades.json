@@ -2894,5 +2894,104 @@
     "ts": "2026-06-01T18:45:31.520164Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-01",
+    "ts": "2026-06-01T19:56:38.629480Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=26778428056"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-06-01",
+    "ts": "2026-06-01T19:57:00.275285Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-06-01",
+    "ts": "2026-06-01T19:58:02.099204Z",
+    "equity_start": 104784.89,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "NVDA",
+          "confidence": "high",
+          "catalyst": "Jensen Huang unveiled new RTX Spark AI PC chip \u2014 stock +5.4% on heavy volume (175M), driving the entire AI narrative today",
+          "smart_money_signals": "92.6% analyst bullish (24SB/39B), WSB rank #4 with 292 mentions (8.85x normal chatter)",
+          "rationale": "Clear product-launch catalyst with confirming price action, massive volume, and broad analyst conviction \u2014 the cleanest momentum setup on the board"
+        },
+        {
+          "symbol": "AMZN",
+          "confidence": "medium",
+          "catalyst": "Pullback (-3.4%) into strength with no negative company-specific news \u2014 buying dip in a 93% analyst-buy mega-cap",
+          "smart_money_signals": "Insider cluster buy (8 insiders, 18 buys in 30d), 93.4% analyst bullish (22SB/49B)",
+          "rationale": "Strongest smart-money stack today \u2014 insider cluster + near-unanimous analyst conviction \u2014 on a dip not driven by company news"
+        },
+        {
+          "symbol": "PLTR",
+          "confidence": "medium",
+          "catalyst": "+2.6% breakout on 52M volume with whale activity flagged in IT sector",
+          "smart_money_signals": "Insider cluster buy (3 buyers in 30d), WSB chatter 3.27x normal, 68% analyst bullish",
+          "rationale": "Cluster buy + rising retail chatter + positive price action stacks multiple alt-data signals with confirming tape"
+        }
+      ],
+      "market_take": "Risk-on tape led by AI/software (NVDA, MSFT, ADBE) with mega-cap rotation; Intel-style idiosyncratic losers, not broad weakness",
+      "skipped_movers": [
+        "INTC: -5.5% on direct competitive threat from NVDA chip launch \u2014 falling knife despite insider cluster",
+        "TSLA: -4.2% with only 48% analyst bullish and mixed insider activity",
+        "SBUX: heavy insider selling, no catalyst",
+        "GS: heavy insider selling (4 sells), sub-50% analyst bullish",
+        "BA: -2.7% price action contradicts bullish news \u2014 tape disagrees",
+        "ADBE: zero alt-data score, sector-sympathy move only",
+        "SHOP: no news, only one signal",
+        "AVGO: earnings volatility watch flagged this week \u2014 gap risk"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Clear product-launch catalyst with confirming price action, massive volume, and broad analyst conviction \u2014 the cleanest momentum setup on the board",
+        "symbol": "NVDA",
+        "qty": 396,
+        "entry_price_est": 224.265,
+        "stop_price": 222.02,
+        "take_price": 228.75,
+        "order_id": "5a59cad4-fad5-43f6-adb0-7671dbd33b7e"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strongest smart-money stack today \u2014 insider cluster + near-unanimous analyst conviction \u2014 on a dip not driven by company news",
+        "symbol": "AMZN",
+        "qty": 339,
+        "entry_price_est": 261.305,
+        "stop_price": 258.69,
+        "take_price": 266.53,
+        "order_id": "fef0b37c-c6e6-4699-b21b-913a69b833cf"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Cluster buy + rising retail chatter + positive price action stacks multiple alt-data signals with confirming tape",
+        "symbol": "PLTR",
+        "qty": 553,
+        "entry_price_est": 160.52499999999998,
+        "stop_price": 158.92,
+        "take_price": 163.74,
+        "order_id": "59e05331-f1f6-4f61-9fca-0a70daa18d20"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-06-01",
+    "ts": "2026-06-01T19:58:02.181480Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
