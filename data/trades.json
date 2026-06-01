@@ -2993,5 +2993,45 @@
     "ts": "2026-06-01T19:58:02.181480Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-01",
+    "ts": "2026-06-01T21:56:17.694765Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=26784468465"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-06-01",
+    "ts": "2026-06-01T21:56:35.695697Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-06-01",
+    "ts": "2026-06-01T21:56:35.777172Z",
+    "equity_end": 102240.31,
+    "daily_pnl_usd": -1260.26,
+    "daily_pct": -1.2176,
+    "flatten": {
+      "closed": [
+        "AMZN",
+        "CRM",
+        "META",
+        "NVDA",
+        "ORCL",
+        "PLTR"
+      ],
+      "raw_response_count": 6
+    }
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-06-01",
+    "ts": "2026-06-01T21:56:35.833414Z",
+    "status": "ok",
+    "note": "closed 6 positions, 0 round-trips"
   }
 ]
