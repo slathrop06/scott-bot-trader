@@ -3033,5 +3033,102 @@
     "ts": "2026-06-01T21:56:35.833414Z",
     "status": "ok",
     "note": "closed 6 positions, 0 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-02",
+    "ts": "2026-06-02T17:46:40.098158Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=26837642523"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-02",
+    "ts": "2026-06-02T17:46:55.073536Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-02",
+    "ts": "2026-06-02T17:46:56.456204Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-06-02",
+    "ts": "2026-06-02T17:46:57.559675Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-06-02",
+    "ts": "2026-06-02T17:48:09.416744Z",
+    "equity_start": 99776.58,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "CAT",
+          "confidence": "medium",
+          "catalyst": "Gap up +4.29% premarket with whale alerts flagged in industrials; relative strength while broader tape sees tech profit-taking",
+          "smart_money_signals": "Insider cluster buy with 8 unique buyers in 30d, 56% analyst bullish",
+          "rationale": "Only major gainer with both a price catalyst and insider cluster buy stacking \u2014 clearest momentum setup."
+        },
+        {
+          "symbol": "BAC",
+          "confidence": "medium",
+          "catalyst": "Up +1.95% premarket bucking the broader risk-off tone in tech",
+          "smart_money_signals": "Insider cluster buy with 6 unique buyers (2:1 buy/sell ratio), 83% analyst buy rating",
+          "rationale": "Strong smart-money stack (cluster insider buying + high analyst conviction) with confirming positive price action."
+        },
+        {
+          "symbol": "MS",
+          "confidence": "low",
+          "catalyst": "Up +2.79% premarket showing relative strength in financials with no contradicting news",
+          "smart_money_signals": "56% analyst bullish; no negative insider or congressional flow",
+          "rationale": "Clean relative-strength gainer in a leading sector with no disqualifiers."
+        }
+      ],
+      "market_take": "Tech/AI names pulling back on profit-taking while financials and industrials show rotation strength.",
+      "skipped_movers": [
+        "SHOP: -5.45% with no supportive catalyst",
+        "CRM: bearish technical break despite insider cluster",
+        "NKE: heavy insider selling and weak analyst conviction",
+        "ADBE: no catalyst, weakest analyst bullishness",
+        "PLTR: 35 insider sells vs 3 buys, price breaking down",
+        "AAPL: 6 insider sells dominate the 2 House buys",
+        "TSLA: speculative merger news, mixed analyst view",
+        "MSFT: down on profit-taking despite alt-data, price contradicts",
+        "V: insider and congressional selling",
+        "GS: heavy insider selling offsets price gain"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "failed",
+        "symbol": "CAT",
+        "error": "{\"code\":40310000,\"cost_basis\":\"32523.12\",\"daytrading_buying_power\":\"0\",\"message\":\"insufficient day trading buying power\"}"
+      },
+      {
+        "status": "failed",
+        "symbol": "BAC",
+        "error": "{\"code\":40310000,\"cost_basis\":\"32926.04\",\"daytrading_buying_power\":\"0\",\"message\":\"insufficient day trading buying power\"}"
+      },
+      {
+        "status": "failed",
+        "symbol": "MS",
+        "error": "{\"code\":40310000,\"cost_basis\":\"32859.36\",\"daytrading_buying_power\":\"0\",\"message\":\"insufficient day trading buying power\"}"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-06-02",
+    "ts": "2026-06-02T17:48:09.469964Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
