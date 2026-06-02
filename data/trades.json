@@ -3130,5 +3130,89 @@
     "ts": "2026-06-02T17:48:09.469964Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-02",
+    "ts": "2026-06-02T18:44:13.801794Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=26840704932"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-06-02",
+    "ts": "2026-06-02T18:44:32.768860Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-06-02",
+    "ts": "2026-06-02T18:45:30.119989Z",
+    "equity_start": 99776.58,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "CAT",
+          "confidence": "high",
+          "catalyst": "Up +4.76% on heavy volume with whale alert flow flagged by Benzinga; relative strength while peers like CRM/MSFT/GOOGL are red",
+          "smart_money_signals": "Insider cluster buy (8 distinct buyers, 12 buys in 30d), 55.9% analyst bullish, whale options activity flagged",
+          "rationale": "Only mover with strong green price action AND insider cluster confirmation \u2014 clean momentum setup with no contradicting news"
+        },
+        {
+          "symbol": "BAC",
+          "confidence": "medium",
+          "catalyst": "Up +2.37% on solid volume, breaking higher with no negative news",
+          "smart_money_signals": "Insider cluster buy (6 distinct buyers in 30d, 2:1 buy/sell ratio), 82.8% analyst bullish (7SB/17B)",
+          "rationale": "Stacked smart-money signal (cluster insider buy + high analyst conviction) with confirming green tape \u2014 cleanest financials setup"
+        },
+        {
+          "symbol": "AAPL",
+          "confidence": "medium",
+          "catalyst": "Up +2.93% on 25M volume with positive product narrative (Apple eyewear $200B TAM, Tim Cook's final hardware bet)",
+          "smart_money_signals": "House cluster buy (2 congresspeople: Ed Case, John McGuire), 69.1% analyst bullish; insider selling is offset by congressional buying",
+          "rationale": "Concrete product catalyst plus House cluster buy with confirming gap up \u2014 momentum continuation play"
+        }
+      ],
+      "market_take": "Mixed tape with AI/tech profit-taking (MSFT, GOOGL, CRM red) while industrials, financials, and Apple show rotation strength.",
+      "skipped_movers": [
+        "SHOP: -5.4% with no news, falling knife",
+        "CRM: -4.6% with explicit 'top for Salesforce' bearish note despite insider cluster",
+        "NKE: heavy insider selling, no catalyst",
+        "ADBE: -4% with zero signals",
+        "PLTR: profit-taking with 35 sells vs 3 buys insider ratio",
+        "BA: down -3% despite analyst love, no catalyst to reverse",
+        "MA: -2.5% with no supporting catalyst",
+        "GOOGL: red tape contradicts WSB chatter, House selling",
+        "MSFT: down on Anthropic IPO profit-taking, insider selling",
+        "NFLX: red with mixed insider flow (15 buys vs 22 sells)",
+        "GS: heavy insider selling despite green price"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "failed",
+        "symbol": "CAT",
+        "error": "{\"code\":40310000,\"cost_basis\":\"65318.4\",\"daytrading_buying_power\":\"0\",\"message\":\"insufficient day trading buying power\"}"
+      },
+      {
+        "status": "failed",
+        "symbol": "BAC",
+        "error": "{\"code\":40310000,\"cost_basis\":\"65825\",\"daytrading_buying_power\":\"0\",\"message\":\"insufficient day trading buying power\"}"
+      },
+      {
+        "status": "failed",
+        "symbol": "AAPL",
+        "error": "{\"code\":40310000,\"cost_basis\":\"66000.9\",\"daytrading_buying_power\":\"0\",\"message\":\"insufficient day trading buying power\"}"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-06-02",
+    "ts": "2026-06-02T18:45:30.259742Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
