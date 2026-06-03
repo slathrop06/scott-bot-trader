@@ -1,37 +1,55 @@
 {
-  "ts": "2026-06-03T18:50:13.177503Z",
-  "equity": 99786.5,
+  "ts": "2026-06-03T21:27:01.344093Z",
+  "equity": 93873.94,
   "last_equity": 99776.3,
-  "cash": 1399.8,
-  "buying_power": 3274.78,
-  "all_time_return_pct": -0.2135,
+  "cash": -263518.61,
+  "buying_power": 36148.07,
+  "all_time_return_pct": -6.1261,
   "positions": [
     {
       "symbol": "AMD",
       "qty": 60,
       "avg_entry_price": 541.5,
-      "current_price": 542.62,
-      "market_value": 32557.2,
-      "unrealized_pl": 67.2,
-      "unrealized_pl_pct": 0.207
+      "current_price": 532.9414,
+      "market_value": 31976.48,
+      "unrealized_pl": -513.52,
+      "unrealized_pl_pct": -1.581
     },
     {
-      "symbol": "INTC",
-      "qty": 292,
-      "avg_entry_price": 112.58,
-      "current_price": 112.5299,
-      "market_value": 32858.73,
-      "unrealized_pl": -14.63,
-      "unrealized_pl_pct": -0.045
+      "symbol": "CRM",
+      "qty": 520,
+      "avg_entry_price": 190.69,
+      "current_price": 187.6181,
+      "market_value": 97561.41,
+      "unrealized_pl": -1597.39,
+      "unrealized_pl_pct": -1.611
     },
     {
       "symbol": "META",
       "qty": 53,
       "avg_entry_price": 622.8894,
-      "current_price": 622.09,
-      "market_value": 32970.77,
-      "unrealized_pl": -42.37,
-      "unrealized_pl_pct": -0.128
+      "current_price": 619.67,
+      "market_value": 32842.51,
+      "unrealized_pl": -170.63,
+      "unrealized_pl_pct": -0.517
+    },
+    {
+      "symbol": "ORCL",
+      "qty": 427,
+      "avg_entry_price": 232.0,
+      "current_price": 222.4,
+      "market_value": 94964.8,
+      "unrealized_pl": -4099.2,
+      "unrealized_pl_pct": -4.138
+    },
+    {
+      "symbol": "WMT",
+      "qty": 849,
+      "avg_entry_price": 116.8801,
+      "current_price": 117.8414,
+      "market_value": 100047.35,
+      "unrealized_pl": 816.16,
+      "unrealized_pl_pct": 0.822
     }
   ]
 }
