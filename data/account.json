@@ -1,55 +1,55 @@
 {
-  "ts": "2026-06-03T21:27:01.344093Z",
-  "equity": 93873.94,
+  "ts": "2026-06-03T23:18:01.302387Z",
+  "equity": 93122.36,
   "last_equity": 99776.3,
   "cash": -263518.61,
   "buying_power": 36148.07,
-  "all_time_return_pct": -6.1261,
+  "all_time_return_pct": -6.8776,
   "positions": [
     {
       "symbol": "AMD",
       "qty": 60,
       "avg_entry_price": 541.5,
-      "current_price": 532.9414,
-      "market_value": 31976.48,
-      "unrealized_pl": -513.52,
-      "unrealized_pl_pct": -1.581
+      "current_price": 526.5658,
+      "market_value": 31593.95,
+      "unrealized_pl": -896.05,
+      "unrealized_pl_pct": -2.758
     },
     {
       "symbol": "CRM",
       "qty": 520,
       "avg_entry_price": 190.69,
-      "current_price": 187.6181,
-      "market_value": 97561.41,
-      "unrealized_pl": -1597.39,
-      "unrealized_pl_pct": -1.611
+      "current_price": 188.12,
+      "market_value": 97822.4,
+      "unrealized_pl": -1336.4,
+      "unrealized_pl_pct": -1.348
     },
     {
       "symbol": "META",
       "qty": 53,
       "avg_entry_price": 622.8894,
-      "current_price": 619.67,
-      "market_value": 32842.51,
-      "unrealized_pl": -170.63,
-      "unrealized_pl_pct": -0.517
+      "current_price": 618.99,
+      "market_value": 32806.47,
+      "unrealized_pl": -206.67,
+      "unrealized_pl_pct": -0.626
     },
     {
       "symbol": "ORCL",
       "qty": 427,
       "avg_entry_price": 232.0,
-      "current_price": 222.4,
-      "market_value": 94964.8,
-      "unrealized_pl": -4099.2,
-      "unrealized_pl_pct": -4.138
+      "current_price": 219.6,
+      "market_value": 93769.2,
+      "unrealized_pl": -5294.8,
+      "unrealized_pl_pct": -5.345
     },
     {
       "symbol": "WMT",
       "qty": 849,
       "avg_entry_price": 116.8801,
-      "current_price": 117.8414,
-      "market_value": 100047.35,
-      "unrealized_pl": 816.16,
-      "unrealized_pl_pct": 0.822
+      "current_price": 118.55,
+      "market_value": 100648.95,
+      "unrealized_pl": 1417.76,
+      "unrealized_pl_pct": 1.429
     }
   ]
 }
