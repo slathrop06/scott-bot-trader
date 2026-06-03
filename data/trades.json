@@ -3372,5 +3372,105 @@
     "ts": "2026-06-03T18:04:22.218152Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-03",
+    "ts": "2026-06-03T18:48:51.251831Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=26905896652"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-06-03",
+    "ts": "2026-06-03T18:49:12.780497Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-06-03",
+    "ts": "2026-06-03T18:50:13.076778Z",
+    "equity_start": 99821.24,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "WMT",
+          "confidence": "high",
+          "catalyst": "Stock surging +3.5% on BTIG and Tigress Financial bullish analyst commentary \u2014 relative strength on a down market day with explicit positive news driver",
+          "smart_money_signals": "89.6% analyst bullish (14SB/29B/5H/0S) \u2014 strongest analyst conviction in the list; insider selling noted but offset by clear catalyst + RS",
+          "rationale": "Only ticker in green today with a named catalyst and strong relative strength against a broad tape sell-off."
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "Oversold -4.17% with no negative news \u2014 pullback on broad tape weakness, not company-specific",
+          "smart_money_signals": "12 insider cluster buy (12 buyers, 4:1 buy/sell ratio), 74.1% analyst bullish \u2014 rare combo of fresh insider conviction and analyst support",
+          "rationale": "Strongest smart-money stack on the board: cluster insider buying from 12 different insiders plus 74% analyst buy is a textbook A+ alt-data setup on a dip."
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "Down -3.27% on broad tape weakness while named as potential 'Trusted Partner' in Trump AI order \u2014 catalyst pending over 60 days",
+          "smart_money_signals": "Insider cluster buy with 6 buyers vs only 2 sells, 81.6% analyst bullish (17SB/23B)",
+          "rationale": "Clean insider cluster buy + high analyst conviction + government AI tailwind on an oversold dip."
+        }
+      ],
+      "market_take": "Risk-off tape with rate-hike fears hitting mega-cap tech; defensive names (WMT) and oversold quality with insider buying are the playable setups.",
+      "skipped_movers": [
+        "PLTR: 37 sells from 8 insiders vs only 3 buys \u2014 heavy insider selling disqualifies despite cluster buy flag",
+        "AMZN: 31 sells vs 18 buys (insider net selling) and broad tape weakness without a clear catalyst",
+        "NVDA: insider selling, RSI overbought concerns in sector, no fresh catalyst",
+        "MSFT: heavy insider selling (5 sells, 0 buys), no bullish catalyst",
+        "SHOP: down on Middle East tension headlines, no smart-money edge beyond analyst rating",
+        "BA: thin alt-data signal (only 1 insider buy), no catalyst",
+        "NFLX: insider buys offset by 24 sells, no catalyst",
+        "MS: weak analyst conviction (56%), no catalyst",
+        "ADBE: weakest analyst rating (42% bullish), no signals"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Only ticker in green today with a named catalyst and strong relative strength against a broad tape sell-off.",
+        "symbol": "WMT",
+        "qty": 849,
+        "entry_price_est": 116.875,
+        "stop_price": 115.71,
+        "take_price": 119.21,
+        "order_id": "fe6c2364-9391-47f0-aad4-83499604da75"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strongest smart-money stack on the board: cluster insider buying from 12 different insiders plus 74% analyst buy is a textbook A+ alt-data setup on a dip.",
+        "symbol": "CRM",
+        "qty": 520,
+        "entry_price_est": 190.64,
+        "stop_price": 188.73,
+        "take_price": 194.45,
+        "order_id": "2e5e9a3f-8e84-4bba-9fb2-bdb94e512b86"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean insider cluster buy + high analyst conviction + government AI tailwind on an oversold dip.",
+        "symbol": "ORCL",
+        "qty": 427,
+        "entry_price_est": 231.95,
+        "stop_price": 229.63,
+        "take_price": 236.59,
+        "order_id": "d3ea78fa-2cb3-4dc9-af6a-6b3255fc06e8"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-06-03",
+    "ts": "2026-06-03T18:50:13.178700Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
