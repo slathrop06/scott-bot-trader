@@ -3261,5 +3261,116 @@
     "ts": "2026-06-02T23:18:51.565279Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=26853793531"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-03",
+    "ts": "2026-06-03T18:02:50.105832Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=26903455886"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-03",
+    "ts": "2026-06-03T18:03:08.200889Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-03",
+    "ts": "2026-06-03T18:03:10.243853Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-06-03",
+    "ts": "2026-06-03T18:03:11.620746Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-06-03",
+    "ts": "2026-06-03T18:04:22.184254Z",
+    "equity_start": 99776.3,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMD",
+          "confidence": "high",
+          "catalyst": "Stock breaking to new 52-week highs (+4.32%) on semi mania driven by Nvidia CEO commentary on reinventing PC; strong relative strength with sector tailwind",
+          "smart_money_signals": "Insider cluster buy (5 buyers), House net buying by Josh Gottheimer (2 buys, 0 sells), 81% analyst buy, WSB rank #17 with 1.6x chatter \u2014 alt-data score 7/10",
+          "rationale": "Best multi-signal stack \u2014 catalyst + insider cluster + congressional buy + analyst conviction all aligned with price confirming."
+        },
+        {
+          "symbol": "META",
+          "confidence": "medium",
+          "catalyst": "Specific news catalyst: AI Business Agent rollout to Instagram driving non-ad revenue, Rosenblatt $1,015 PT; +3.79% gap up",
+          "smart_money_signals": "Insider cluster buy (20 buyers, 44 buys), 88% analyst buy, alt-data score 5/10",
+          "rationale": "Concrete product-launch catalyst with gap up confirmation and broad insider participation."
+        },
+        {
+          "symbol": "INTC",
+          "confidence": "medium",
+          "catalyst": "Largest premarket gainer (+5.96%) on semi mania / Nvidia PC reinvention narrative and Trump-Sanders government equity stake chatter; massive 89M volume confirms participation",
+          "smart_money_signals": "Limited alt-data (one House sell), but 32% bullish analyst base means upside surprise potential; price action is the dominant signal",
+          "rationale": "Strongest price-action catalyst of the day with heavy volume \u2014 momentum trade with tight 1% stop limits risk."
+        }
+      ],
+      "market_take": "Risk-off tape with rate-hike fears pulling mega-caps down, but semi/AI names show strong relative strength on Nvidia narrative.",
+      "skipped_movers": [
+        "PLTR: rejected at 200dma, price contradicts signals \u2014 skip",
+        "WMT: heavy insider selling (21 sells, 0 buys) despite positive news \u2014 skip",
+        "NVDA: heavy red day with insider selling, no cluster buy \u2014 skip",
+        "MSFT: insider selling cluster and broken price \u2014 skip",
+        "AMZN: strong alt-data but price action negative (-2.93%) contradicts \u2014 skip",
+        "ORCL/CRM/NFLX/MS: good insider clusters but price action negative, no catalyst \u2014 skip"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best multi-signal stack \u2014 catalyst + insider cluster + congressional buy + analyst conviction all aligned with price confirming.",
+        "symbol": "AMD",
+        "qty": 60,
+        "entry_price_est": 541.45,
+        "stop_price": 536.04,
+        "take_price": 552.28,
+        "order_id": "310bf79a-f669-435d-b134-39853294f5d3"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Concrete product-launch catalyst with gap up confirmation and broad insider participation.",
+        "symbol": "META",
+        "qty": 53,
+        "entry_price_est": 617.975,
+        "stop_price": 611.8,
+        "take_price": 630.33,
+        "order_id": "fc3b276e-231e-4109-a486-2886b4c8a136"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strongest price-action catalyst of the day with heavy volume \u2014 momentum trade with tight 1% stop limits risk.",
+        "symbol": "INTC",
+        "qty": 292,
+        "entry_price_est": 112.56,
+        "stop_price": 111.43,
+        "take_price": 114.81,
+        "order_id": "67657e83-2cd7-4dda-83bc-2584169ea7ef"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-06-03",
+    "ts": "2026-06-03T18:04:22.218152Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
