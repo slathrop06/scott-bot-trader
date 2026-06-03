@@ -3479,5 +3479,60 @@
     "ts": "2026-06-03T21:40:08.357029Z",
     "status": "intraday_workflow_started",
     "note": "event=schedule run_id=26914701180"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-03",
+    "ts": "2026-06-03T23:21:38.796017Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=26919284093"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-06-03",
+    "ts": "2026-06-03T23:21:59.909038Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-06-03",
+    "ts": "2026-06-03T23:22:00.103753Z",
+    "equity_end": 92971.45,
+    "daily_pnl_usd": -6804.85,
+    "daily_pct": -6.8201,
+    "flatten": {
+      "closed": [
+        "AMD",
+        "CRM",
+        "META",
+        "ORCL",
+        "WMT"
+      ],
+      "raw_response_count": 5
+    }
+  },
+  {
+    "type": "trade",
+    "date": "2026-06-03",
+    "ts": "2026-06-03T23:22:00.140062Z",
+    "symbol": "INTC",
+    "qty": 292,
+    "entry_price": 112.58,
+    "entry_ts": "2026-06-03T18:04:22.812312Z",
+    "entry_order_id": "67657e83-2cd7-4dda-83bc-2584169ea7ef",
+    "exit_price": 111.4232,
+    "exit_ts": "2026-06-03T19:27:10.549412Z",
+    "exit_order_id": "552a1d62-d157-4643-9896-ab187fd53af8",
+    "exit_reason": "bracket",
+    "pnl_usd": -337.78,
+    "pnl_pct": -1.0275
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-06-03",
+    "ts": "2026-06-03T23:22:00.199759Z",
+    "status": "ok",
+    "note": "closed 5 positions, 1 round-trips"
   }
 ]
