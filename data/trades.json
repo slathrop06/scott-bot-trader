@@ -3645,5 +3645,99 @@
     "ts": "2026-06-04T16:27:29.201357Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-04",
+    "ts": "2026-06-04T17:47:34.086722Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=26969311415"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-06-04",
+    "ts": "2026-06-04T17:47:57.005287Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-06-04",
+    "ts": "2026-06-04T17:48:39.950459Z",
+    "equity_start": 100265.95,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "MS",
+          "confidence": "high",
+          "catalyst": "Financials rotation lifting big banks (+3.28%); riding the same JPM-led sector flow without JPM's insider selling overhang",
+          "smart_money_signals": "Insider cluster buy: 17 buys from 12 insiders vs only 1 sell (30d) \u2014 strongest insider conviction on the board",
+          "rationale": "Rare combination of a real intraday sector catalyst plus a 12-insider cluster buy makes this the cleanest setup."
+        },
+        {
+          "symbol": "GOOGL",
+          "confidence": "medium",
+          "catalyst": "+4.12% breakout on heavy volume (23M shares) amid tech rotation noise around AI chip names",
+          "smart_money_signals": "Insider cluster buy (6 buyers, 8 buys 30d), 87.1% analyst bullish (19SB/42B), strong price confirmation",
+          "rationale": "Cluster insider buying + near-90% analyst bullishness + strong tape action; minor House selling is a small offset."
+        },
+        {
+          "symbol": "CAT",
+          "confidence": "medium",
+          "catalyst": "Up nearly 2% on cyclical/industrial strength with no negative news",
+          "smart_money_signals": "Insider cluster buy (6 buyers, 10 buys 30d) despite mixed sell flow; alt-data score +4",
+          "rationale": "Cluster insider buying with price confirmation provides the smart-money edge even without a specific headline."
+        }
+      ],
+      "market_take": "Risk-on rotation into financials and select large-cap tech; chip-related names mixed after AVGO miss.",
+      "skipped_movers": [
+        "GS: 4 insider sells, no news, only 47% analyst bullish \u2014 skip",
+        "JPM: 9 insider sells from 8 insiders despite the rotation rally \u2014 skip",
+        "BA: only 1 insider buy, no catalyst \u2014 thin signal",
+        "BAC: no insider/catalyst edge beyond sector flow",
+        "SBUX: down 2.5% with insider selling \u2014 skip",
+        "NVDA: insider + House selling, AI narrative under pressure post-AVGO",
+        "AVGO: down 15% post-earnings, falling knife despite WSB chatter \u2014 skip",
+        "ADBE: weak analyst support (42%), no edge",
+        "V: insider and House selling \u2014 skip"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Rare combination of a real intraday sector catalyst plus a 12-insider cluster buy makes this the cleanest setup.",
+        "symbol": "MS",
+        "qty": 310,
+        "entry_price_est": 216.73,
+        "stop_price": 214.56,
+        "take_price": 221.06,
+        "order_id": "cb2b1d70-dd87-45dd-b765-bd0817ed9243"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Cluster insider buying + near-90% analyst bullishness + strong tape action; minor House selling is a small offset.",
+        "symbol": "GOOGL",
+        "qty": 180,
+        "entry_price_est": 373.03,
+        "stop_price": 369.3,
+        "take_price": 380.49,
+        "order_id": "646b86a7-59c4-47ec-9aea-da6501be62ae"
+      },
+      {
+        "status": "failed",
+        "symbol": "CAT",
+        "error": "{\"buying_power\":\"0\",\"code\":40310000,\"cost_basis\":\"67614.49\",\"message\":\"insufficient buying power\"}"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-06-04",
+    "ts": "2026-06-04T17:48:39.971327Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]

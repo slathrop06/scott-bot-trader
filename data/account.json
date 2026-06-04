@@ -1,9 +1,37 @@
 {
-  "ts": "2026-06-04T16:19:49.965028Z",
-  "equity": 100372.15,
+  "ts": "2026-06-04T17:48:39.970029Z",
+  "equity": 100287.96,
   "last_equity": 98758.19,
-  "cash": 100372.15,
-  "buying_power": 401488.6,
-  "all_time_return_pct": 0.3721,
-  "positions": []
+  "cash": 1573.92,
+  "buying_power": 0.0,
+  "all_time_return_pct": 0.288,
+  "positions": [
+    {
+      "symbol": "GE",
+      "qty": 100,
+      "avg_entry_price": 326.4775,
+      "current_price": 326.835,
+      "market_value": 32683.5,
+      "unrealized_pl": 35.75,
+      "unrealized_pl_pct": 0.11
+    },
+    {
+      "symbol": "META",
+      "qty": 52,
+      "avg_entry_price": 634.49,
+      "current_price": 629.48,
+      "market_value": 32732.96,
+      "unrealized_pl": -260.52,
+      "unrealized_pl_pct": -0.79
+    },
+    {
+      "symbol": "ORCL",
+      "qty": 142,
+      "avg_entry_price": 233.5,
+      "current_price": 234.49,
+      "market_value": 33297.58,
+      "unrealized_pl": 140.58,
+      "unrealized_pl_pct": 0.424
+    }
+  ]
 }
