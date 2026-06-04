@@ -3534,5 +3534,116 @@
     "ts": "2026-06-03T23:22:00.199759Z",
     "status": "ok",
     "note": "closed 5 positions, 1 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-04",
+    "ts": "2026-06-04T16:26:13.209698Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=26965000355"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-04",
+    "ts": "2026-06-04T16:26:31.604687Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-04",
+    "ts": "2026-06-04T16:26:32.995991Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-06-04",
+    "ts": "2026-06-04T16:26:34.094215Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-06-04",
+    "ts": "2026-06-04T16:27:29.067333Z",
+    "equity_start": 100372.15,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "ORCL",
+          "confidence": "high",
+          "catalyst": "Big +6.74% premarket gap on heavy volume (10.8M shares) with no contradicting news \u2014 relative strength leader",
+          "smart_money_signals": "Insider cluster buy (6 buyers, 3:1 buy/sell ratio), 81.6% analyst bullish (17 strong buy + 23 buy), WSB rank #43 with 1.24x mentions",
+          "rationale": "Strongest gap on the board backed by clean insider cluster buying and analyst conviction \u2014 multi-signal stack."
+        },
+        {
+          "symbol": "GE",
+          "confidence": "medium",
+          "catalyst": "Solid +3.79% premarket move with no negative news flow",
+          "smart_money_signals": "Clean insider cluster buy (8 buyers, 0 sells \u2014 perfect signal), 87.5% analyst bullish",
+          "rationale": "Pristine insider tape (zero sells) plus strong analyst conviction and price confirmation."
+        },
+        {
+          "symbol": "META",
+          "confidence": "medium",
+          "catalyst": "+2.48% gap riding Broadcom AI 'insatiable demand' tailwind for AI/mega-cap tech",
+          "smart_money_signals": "Insider cluster buy (20 buyers \u2014 largest cluster on board), 87.5% analyst bullish, WSB top 20 (#19, 67 mentions)",
+          "rationale": "Catalyst + smart money + retail attention stack on a liquid mega-cap with tight 1% stop."
+        }
+      ],
+      "market_take": "Risk-on tape with mega-cap tech and financials gapping up on SpaceX IPO buzz and continued AI demand narrative.",
+      "skipped_movers": [
+        "GS: heavy insider selling (4 sells, 0 buys) \u2014 skip",
+        "JPM: heavy insider selling (9 sells from 8 insiders) \u2014 skip",
+        "V: insider + congressional selling despite analyst love \u2014 skip",
+        "GOOGL: insider sells 27 vs 8 buys despite cluster flag \u2014 mixed signal",
+        "CAT: 29 insider sells vs 10 buys \u2014 net negative smart money",
+        "SBUX: down on the day with insider selling \u2014 skip"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Strongest gap on the board backed by clean insider cluster buying and analyst conviction \u2014 multi-signal stack.",
+        "symbol": "ORCL",
+        "qty": 142,
+        "entry_price_est": 232.05,
+        "stop_price": 229.73,
+        "take_price": 236.69,
+        "order_id": "76741e22-d1ce-4a17-9c7d-ca43c621ec77"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Pristine insider tape (zero sells) plus strong analyst conviction and price confirmation.",
+        "symbol": "GE",
+        "qty": 100,
+        "entry_price_est": 328.16999999999996,
+        "stop_price": 324.89,
+        "take_price": 334.73,
+        "order_id": "e7b7e3d3-b58c-44f8-9e03-abcfb5ac1dda"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Catalyst + smart money + retail attention stack on a liquid mega-cap with tight 1% stop.",
+        "symbol": "META",
+        "qty": 52,
+        "entry_price_est": 627.6600000000001,
+        "stop_price": 621.38,
+        "take_price": 640.21,
+        "order_id": "1edbb820-872e-49ad-84f7-dccb11070cbd"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-06-04",
+    "ts": "2026-06-04T16:27:29.201357Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
