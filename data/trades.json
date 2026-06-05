@@ -3884,5 +3884,38 @@
     "ts": "2026-06-05T19:19:48.905439Z",
     "status": "error",
     "note": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-05",
+    "ts": "2026-06-05T20:44:35.363968Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=27039146430"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-06-05",
+    "ts": "2026-06-05T20:44:56.278381Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-06-05",
+    "ts": "2026-06-05T20:44:56.543803Z",
+    "equity_end": 97813.06,
+    "daily_pnl_usd": -2769.06,
+    "daily_pct": -2.753,
+    "flatten": {
+      "closed": [],
+      "note": "No open positions."
+    }
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-06-05",
+    "ts": "2026-06-05T20:44:56.683737Z",
+    "status": "ok",
+    "note": "closed 0 positions, 0 round-trips"
   }
 ]
