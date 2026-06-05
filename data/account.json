@@ -1,46 +1,9 @@
 {
-  "ts": "2026-06-04T22:21:06.841224Z",
-  "equity": 100561.08,
-  "last_equity": 98758.19,
-  "cash": -99474.06,
-  "buying_power": 2174.04,
-  "all_time_return_pct": 0.5611,
-  "positions": [
-    {
-      "symbol": "GE",
-      "qty": 100,
-      "avg_entry_price": 326.4775,
-      "current_price": 327.0666,
-      "market_value": 32706.66,
-      "unrealized_pl": 58.91,
-      "unrealized_pl_pct": 0.18
-    },
-    {
-      "symbol": "GOOGL",
-      "qty": 180,
-      "avg_entry_price": 372.79,
-      "current_price": 371.87,
-      "market_value": 66936.6,
-      "unrealized_pl": -165.6,
-      "unrealized_pl_pct": -0.247
-    },
-    {
-      "symbol": "META",
-      "qty": 52,
-      "avg_entry_price": 634.49,
-      "current_price": 625.99,
-      "market_value": 32551.48,
-      "unrealized_pl": -442.0,
-      "unrealized_pl_pct": -1.34
-    },
-    {
-      "symbol": "MS",
-      "qty": 310,
-      "avg_entry_price": 217.96,
-      "current_price": 218.84,
-      "market_value": 67840.4,
-      "unrealized_pl": 272.8,
-      "unrealized_pl_pct": 0.404
-    }
-  ]
+  "ts": "2026-06-05T15:52:52.662753Z",
+  "equity": 97813.06,
+  "last_equity": 100582.12,
+  "cash": 97813.06,
+  "buying_power": 391252.24,
+  "all_time_return_pct": -2.1869,
+  "positions": []
 }
