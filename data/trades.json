@@ -4034,5 +4034,12 @@
     "ts": "2026-06-08T21:09:43.560368Z",
     "status": "ok",
     "note": "closed 0 positions, 0 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-08",
+    "ts": "2026-06-08T22:45:54.613971Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=27171772914"
   }
 ]
