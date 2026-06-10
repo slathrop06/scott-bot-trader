@@ -4268,5 +4268,100 @@
     "ts": "2026-06-10T16:42:31.620476Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-10",
+    "ts": "2026-06-10T18:05:51.921317Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=27296061823"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-06-10",
+    "ts": "2026-06-10T18:06:12.931939Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-06-10",
+    "ts": "2026-06-10T18:07:10.434341Z",
+    "equity_start": 97385.78,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "CVX",
+          "confidence": "high",
+          "catalyst": "Up +2.01% on a down-tape day (strong relative strength) with oil surging on Iran strikes \u2014 energy rotation play",
+          "smart_money_signals": "Insider cluster buy: 11 distinct insider buyers in 30d (11:1 buyer ratio), House buy by Walberg, 74% analyst bullish",
+          "rationale": "Only mover with both strong relative strength AND deep insider cluster buying \u2014 cleanest setup on the board"
+        },
+        {
+          "symbol": "AMD",
+          "confidence": "medium",
+          "catalyst": "Sector pullback creating dip-buy opportunity; analysts remain bullish per news \u2014 buying weakness in a name with stacked smart money",
+          "smart_money_signals": "Insider cluster buy (5 buyers), House cluster buy (Cisneros + Gottheimer, 3 buys), 80.7% analyst bullish",
+          "rationale": "Highest alt-data score (8/10) with multiple smart-money signals stacking \u2014 oversold bounce candidate"
+        },
+        {
+          "symbol": "XOM",
+          "confidence": "medium",
+          "catalyst": "Up +1.46% with oil surging on Iran strikes \u2014 energy relative strength on inflation/geopolitical tailwind",
+          "smart_money_signals": "House buy by Walberg, 51.6% analyst bullish \u2014 modest but positive signals",
+          "rationale": "Confirms energy rotation thesis alongside CVX; positive price action with no contradicting signals"
+        }
+      ],
+      "market_take": "Risk-off tape with tech/AI selling on hot CPI and Burry shorts in focus; energy bid on Iran strikes is the clear rotation.",
+      "skipped_movers": [
+        "CAT: heavy insider selling (18 sells, 6:1 ratio) and -5% break \u2014 skip",
+        "TSLA: weak analyst support (48%) and no clear catalyst, down with tape",
+        "AVGO: AI selloff headwind, weak alt-data (1/10)",
+        "AMZN: insider sell ratio worse than buys despite cluster, no catalyst",
+        "META: no catalyst, mixed insider activity",
+        "GOOGL: House net selling (3 sells) contradicts insider buys",
+        "GE: thin alt-data, down with industrials",
+        "NVDA: heavy insider selling, negative news catalyst (Burry short)",
+        "GS: heavy insider selling, weak analyst support",
+        "SBUX: insider selling, weak analyst support despite green print"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "failed",
+        "symbol": "CVX",
+        "error": "{\"base_price\":\"191.2\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Highest alt-data score (8/10) with multiple smart-money signals stacking \u2014 oversold bounce candidate",
+        "symbol": "AMD",
+        "qty": 254,
+        "entry_price_est": 455.11,
+        "stop_price": 450.56,
+        "take_price": 464.21,
+        "order_id": "61d1e5fe-7f77-46ee-9114-2183d57e439a"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Confirms energy rotation thesis alongside CVX; positive price action with no contradicting signals",
+        "symbol": "XOM",
+        "qty": 768,
+        "entry_price_est": 150.79500000000002,
+        "stop_price": 149.29,
+        "take_price": 153.81,
+        "order_id": "a293f163-579b-49e8-afc0-089a366f80e1"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-06-10",
+    "ts": "2026-06-10T18:07:10.479438Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]

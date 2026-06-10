@@ -1,9 +1,19 @@
 {
-  "ts": "2026-06-10T16:34:57.977947Z",
-  "equity": 97812.94,
+  "ts": "2026-06-10T18:07:10.478114Z",
+  "equity": 97382.85,
   "last_equity": 97812.94,
-  "cash": 97812.94,
-  "buying_power": 391251.76,
-  "all_time_return_pct": -2.1871,
-  "positions": []
+  "cash": 65231.25,
+  "buying_power": 118092.08,
+  "all_time_return_pct": -2.6171,
+  "positions": [
+    {
+      "symbol": "BAC",
+      "qty": 585,
+      "avg_entry_price": 55.13,
+      "current_price": 54.96,
+      "market_value": 32151.6,
+      "unrealized_pl": -99.45,
+      "unrealized_pl_pct": -0.308
+    }
+  ]
 }
