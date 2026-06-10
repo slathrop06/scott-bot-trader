@@ -1,28 +1,19 @@
 {
-  "ts": "2026-06-10T19:34:04.006931Z",
-  "equity": 95312.69,
+  "ts": "2026-06-10T22:00:52.031220Z",
+  "equity": 94943.56,
   "last_equity": 97812.94,
-  "cash": -53194.05,
-  "buying_power": 203042.66,
-  "all_time_return_pct": -4.6873,
+  "cash": -21270.2,
+  "buying_power": 240317.73,
+  "all_time_return_pct": -5.0564,
   "positions": [
-    {
-      "symbol": "BAC",
-      "qty": 585,
-      "avg_entry_price": 55.13,
-      "current_price": 54.775,
-      "market_value": 32043.38,
-      "unrealized_pl": -207.68,
-      "unrealized_pl_pct": -0.644
-    },
     {
       "symbol": "XOM",
       "qty": 768,
       "avg_entry_price": 151.61,
-      "current_price": 151.645,
-      "market_value": 116463.36,
-      "unrealized_pl": 26.88,
-      "unrealized_pl_pct": 0.023
+      "current_price": 151.32,
+      "market_value": 116213.76,
+      "unrealized_pl": -222.72,
+      "unrealized_pl_pct": -0.191
     }
   ]
 }
