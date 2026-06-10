@@ -4158,5 +4158,115 @@
     "ts": "2026-06-09T22:16:36.540743Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=27239437365"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-10",
+    "ts": "2026-06-10T16:41:19.784762Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=27291086200"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-10",
+    "ts": "2026-06-10T16:41:37.972760Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-10",
+    "ts": "2026-06-10T16:41:39.551322Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-06-10",
+    "ts": "2026-06-10T16:41:40.996996Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-06-10",
+    "ts": "2026-06-10T16:42:31.595381Z",
+    "equity_start": 97812.94,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "CVX",
+          "confidence": "high",
+          "catalyst": "Up +2.23% premarket vs broadly red tape \u2014 relative strength on inflation-back-above-4% headline that favors energy/dividend names",
+          "smart_money_signals": "Insider cluster buy with 11 distinct buyers (11 buys vs 7 sells), House buying by Walberg, 74% analyst bullish",
+          "rationale": "Only liquid name showing green with multi-insider cluster buy AND a macro tailwind (sticky inflation rotation into energy)"
+        },
+        {
+          "symbol": "AMD",
+          "confidence": "medium",
+          "catalyst": "Chip sector pullback creates a dip-buy in a name analysts call out as long-term AI winner; -2.93% is overdone vs fundamentals",
+          "smart_money_signals": "Insider cluster buy (5 distinct buyers), House cluster buy (Cisneros + Gottheimer, 3 buys), 81% analyst bullish, WSB mentions 1.27x rising",
+          "rationale": "Rare stack \u2014 both insider AND congressional cluster buys plus rising retail attention \u2014 on a sector-wide dip, not company-specific bad news"
+        },
+        {
+          "symbol": "BAC",
+          "confidence": "medium",
+          "catalyst": "Up +1.55% premarket on a red tape; higher-for-longer inflation/rates narrative supports bank NIM",
+          "smart_money_signals": "House buying (Walberg), 83% analyst bullish (7SB/17B)",
+          "rationale": "Relative strength with rate-tailwind macro and strong analyst conviction \u2014 diversifies away from chip exposure"
+        }
+      ],
+      "market_take": "Risk-off tape with chip-led profit taking; energy and banks catching bid on hot inflation print.",
+      "skipped_movers": [
+        "CAT: -5.57% with 18 insider sells \u2014 clear distribution",
+        "AVGO: post-earnings profit-taking, no smart-money edge",
+        "BA: SpaceX IPO valuation overhang is a direct negative narrative",
+        "TSLA: only 48% analyst bullish, down with sector",
+        "GS: heavy insider selling, score -2",
+        "META: down with tape, mixed insider (44 buys vs 47 sells)",
+        "GE: SpaceX aerospace-disruption headline overhang",
+        "SBUX: insider selling, weak analyst sentiment",
+        "XOM: weaker insider/analyst profile than CVX",
+        "GOOGL: House net selling (3 sells incl Cisneros)",
+        "NVDA: insider selling cluster + House selling, score -1"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "failed",
+        "symbol": "CVX",
+        "error": "{\"base_price\":\"191.715\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Rare stack \u2014 both insider AND congressional cluster buys plus rising retail attention \u2014 on a sector-wide dip, not company-specific bad news",
+        "symbol": "AMD",
+        "qty": 70,
+        "entry_price_est": 456.485,
+        "stop_price": 451.92,
+        "take_price": 465.61,
+        "order_id": "4f367b5e-e75d-4255-886c-f7fd76746f2b"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Relative strength with rate-tailwind macro and strong analyst conviction \u2014 diversifies away from chip exposure",
+        "symbol": "BAC",
+        "qty": 585,
+        "entry_price_est": 55.125,
+        "stop_price": 54.57,
+        "take_price": 56.23,
+        "order_id": "1cb6e308-b23e-4145-b627-a1b0b78dc74b"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-06-10",
+    "ts": "2026-06-10T16:42:31.620476Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
