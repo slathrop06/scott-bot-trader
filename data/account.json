@@ -1,19 +1,19 @@
 {
-  "ts": "2026-06-11T19:35:31.017650Z",
-  "equity": 98849.26,
+  "ts": "2026-06-11T22:02:22.002754Z",
+  "equity": 98685.5,
   "last_equity": 94405.79,
   "cash": -27591.34,
-  "buying_power": 243668.32,
-  "all_time_return_pct": -1.1507,
+  "buying_power": 243209.78,
+  "all_time_return_pct": -1.3145,
   "positions": [
     {
       "symbol": "BA",
       "qty": 572,
       "avg_entry_price": 219.9719,
-      "current_price": 221.05,
-      "market_value": 126440.6,
-      "unrealized_pl": 616.68,
-      "unrealized_pl_pct": 0.49
+      "current_price": 220.7637,
+      "market_value": 126276.84,
+      "unrealized_pl": 452.92,
+      "unrealized_pl_pct": 0.36
     }
   ]
 }
