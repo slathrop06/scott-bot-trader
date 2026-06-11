@@ -4568,5 +4568,102 @@
     "ts": "2026-06-11T17:00:11.861462Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-11",
+    "ts": "2026-06-11T18:19:25.249259Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=27368192829"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-06-11",
+    "ts": "2026-06-11T18:19:48.738309Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-06-11",
+    "ts": "2026-06-11T18:21:05.778140Z",
+    "equity_start": 95378.07,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMD",
+          "confidence": "high",
+          "catalyst": "BofA named AMD top CPU pick with PT raised to $560, citing agentic AI growth; stock gapped +8.3% on the upgrade",
+          "smart_money_signals": "Insider cluster buy (5 buyers), House cluster buy (3 buys: Cisneros, Gottheimer), 80.7% analyst bullish (14SB/32B), alt-score 8/10",
+          "rationale": "Rare stack of fresh analyst catalyst + insider cluster + congressional cluster + high analyst conviction \u2014 textbook setup"
+        },
+        {
+          "symbol": "MS",
+          "confidence": "medium",
+          "catalyst": "Steady +2.2% move with no negative news; financials strength",
+          "smart_money_signals": "Insider cluster buy with 12 distinct buyers (17 buys vs 1 sell) \u2014 very strong conviction signal",
+          "rationale": "12-insider cluster buy is rare and high-signal; modest move means room to TP+2% without chasing"
+        },
+        {
+          "symbol": "BA",
+          "confidence": "medium",
+          "catalyst": "+5.7% breakout with no negative news; aerospace momentum",
+          "smart_money_signals": "Net insider buying, House buy (Walberg), 83.8% analyst bullish (13SB/18B, zero sells)",
+          "rationale": "Clean multi-signal stack with no contradictions and very high analyst conviction"
+        }
+      ],
+      "market_take": "Risk-on rebound led by chips/AI; broad participation with QQQ +3.1%",
+      "skipped_movers": [
+        "INTC: WSB-driven chase, only 32% analyst bullish and net insider selling",
+        "AVGO: alt-score only 1/10, retail rotation headline is a negative tell",
+        "TSLA: mixed analyst view (48%), SpaceX IPO retail rotation headwind",
+        "CAT: heavy insider selling (13 sells)",
+        "SBUX/GS/NKE: insider selling and/or analyst downgrade",
+        "XOM: down on the day, contradicts long thesis"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Rare stack of fresh analyst catalyst + insider cluster + congressional cluster + high analyst conviction \u2014 textbook setup",
+        "symbol": "AMD",
+        "qty": 264,
+        "entry_price_est": 475.525,
+        "stop_price": 470.77,
+        "take_price": 485.04,
+        "order_id": "159ffe99-c7ce-483e-9b01-0c62d091df23"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "12-insider cluster buy is rare and high-signal; modest move means room to TP+2% without chasing",
+        "symbol": "MS",
+        "qty": 604,
+        "entry_price_est": 208.28,
+        "stop_price": 206.2,
+        "take_price": 212.45,
+        "order_id": "21c4f551-a173-4a6e-93a0-44a806277efc"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean multi-signal stack with no contradictions and very high analyst conviction",
+        "symbol": "BA",
+        "qty": 572,
+        "entry_price_est": 219.9,
+        "stop_price": 217.7,
+        "take_price": 224.3,
+        "order_id": "5911e55b-9f53-44f6-a610-0da09227694c"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-06-11",
+    "ts": "2026-06-11T18:21:05.905137Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
