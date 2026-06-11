@@ -4460,5 +4460,113 @@
     "ts": "2026-06-10T23:02:03.855030Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=27311939852"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-11",
+    "ts": "2026-06-11T16:59:02.957146Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=27363556478"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-11",
+    "ts": "2026-06-11T16:59:22.802158Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-11",
+    "ts": "2026-06-11T16:59:25.768219Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-06-11",
+    "ts": "2026-06-11T16:59:27.163386Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-06-11",
+    "ts": "2026-06-11T17:00:11.827425Z",
+    "equity_start": 94888.72,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMD",
+          "confidence": "high",
+          "catalyst": "BofA names AMD top CPU pick, raises PT to $560 citing agentic AI growth; +5% premarket gap",
+          "smart_money_signals": "Insider cluster buy (5 buyers), House cluster buy (Gottheimer + Cisneros, 3 buys), 81% analyst bullish",
+          "rationale": "Catalyst + smart-money stack: fresh analyst upgrade with congressional and insider clusters aligning."
+        },
+        {
+          "symbol": "INTC",
+          "confidence": "high",
+          "catalyst": "Bank of America rare double-upgrade to Buy with $135 PT; stock gapping +6% premarket",
+          "smart_money_signals": "WSB chatter 2.58x normal, rank #23; analyst mix weak but the upgrade is the driver",
+          "rationale": "Clean single-catalyst momentum play with a defined gap; BofA double-upgrades are historically high-conviction drivers."
+        },
+        {
+          "symbol": "BA",
+          "confidence": "medium",
+          "catalyst": "Steady +3.3% premarket bid with no negative news; relative strength setup",
+          "smart_money_signals": "84% analyst bullish (13 SB / 18 B), net insider buying, House buy by Tim Walberg",
+          "rationale": "Clean smart-money stack with no contradicting news \u2014 quiet strength suitable for tight 2%/-1% bracket."
+        }
+      ],
+      "market_take": "Mixed tape \u2014 mega-cap AI (ORCL/MSFT/GOOGL) selling off on SpaceX-IPO rotation while chips (INTC/AMD) rip on BofA upgrades.",
+      "skipped_movers": [
+        "ORCL: gap DOWN -2.6% on cloud revenue miss despite strong alt-data \u2014 price contradicts signals",
+        "MSFT: gap DOWN -2.6% on Xbox layoff news despite 9/10 alt-data \u2014 price contradicts signals",
+        "GOOGL: gap DOWN -2% on dilution worries; House net selling \u2014 disqualifying",
+        "CRM: -2.6% gap down, contradicts insider buying",
+        "CAT: heavy insider selling 13 sells (6.5:1 ratio) \u2014 disqualifying",
+        "SBUX: no news, insider selling, 48% analyst bullish \u2014 weak",
+        "NKE: RBC downgrade overnight \u2014 contradicts the gap up",
+        "TSLA: lukewarm signals, no clear catalyst, 48% analyst bullish",
+        "AVGO: SpaceX-IPO rotation headwind cited explicitly in news \u2014 weak alt-data 1/10"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Catalyst + smart-money stack: fresh analyst upgrade with congressional and insider clusters aligning.",
+        "symbol": "AMD",
+        "qty": 67,
+        "entry_price_est": 463.9,
+        "stop_price": 459.26,
+        "take_price": 473.18,
+        "order_id": "a96c38d4-2847-4533-8ec4-1a93ea9c3b0d"
+      },
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Clean single-catalyst momentum play with a defined gap; BofA double-upgrades are historically high-conviction drivers.",
+        "symbol": "INTC",
+        "qty": 281,
+        "entry_price_est": 111.04499999999999,
+        "stop_price": 109.93,
+        "take_price": 113.27,
+        "order_id": "b35687ae-3f3e-42d5-8587-e890aacc27f5"
+      },
+      {
+        "status": "failed",
+        "symbol": "BA",
+        "error": "{\"base_price\":\"215.12\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-06-11",
+    "ts": "2026-06-11T17:00:11.861462Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
