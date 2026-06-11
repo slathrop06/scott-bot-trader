@@ -1,19 +1,9 @@
 {
-  "ts": "2026-06-10T22:00:52.031220Z",
-  "equity": 94943.56,
-  "last_equity": 97812.94,
-  "cash": -21270.2,
-  "buying_power": 240317.73,
-  "all_time_return_pct": -5.0564,
-  "positions": [
-    {
-      "symbol": "XOM",
-      "qty": 768,
-      "avg_entry_price": 151.61,
-      "current_price": 151.32,
-      "market_value": 116213.76,
-      "unrealized_pl": -222.72,
-      "unrealized_pl_pct": -0.191
-    }
-  ]
+  "ts": "2026-06-11T16:54:10.756007Z",
+  "equity": 94888.72,
+  "last_equity": 94405.79,
+  "cash": 94888.72,
+  "buying_power": 379554.88,
+  "all_time_return_pct": -5.1113,
+  "positions": []
 }
