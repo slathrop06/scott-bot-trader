@@ -4895,5 +4895,103 @@
     "ts": "2026-06-12T16:26:18.689018Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-12",
+    "ts": "2026-06-12T17:39:21.899049Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=27432510755"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-06-12",
+    "ts": "2026-06-12T17:39:45.135333Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-06-12",
+    "ts": "2026-06-12T17:40:35.295955Z",
+    "equity_start": 99245.89,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "INTC",
+          "confidence": "high",
+          "catalyst": "Stock gapping +7% on huge volume (101M shares) with bullish tech backdrop and whale alerts flagged",
+          "smart_money_signals": "Whale alerts in IT sector today; volume is ~5x typical signaling institutional accumulation",
+          "rationale": "Strongest price action on the board with confirming volume \u2014 momentum continuation play with tight 1% stop"
+        },
+        {
+          "symbol": "CAT",
+          "confidence": "medium",
+          "catalyst": "Relative strength: +1.34% while broader tape is red across tech/growth",
+          "smart_money_signals": "Insider cluster buy (9 buyers, 10 buys vs 13 sells), House buy by Tim Walberg, 55.9% analyst buy",
+          "rationale": "Best combination of green tape + insider cluster buying with no negative news"
+        },
+        {
+          "symbol": "AMZN",
+          "confidence": "medium",
+          "catalyst": "Pullback on no stock-specific bad news; favorable SpaceX comparison narrative",
+          "smart_money_signals": "Alt-data 7/10: insider cluster buy (8 buyers, 18 buys), House buy by Walberg, 93.4% analyst buy, WSB mentions 1.64x",
+          "rationale": "Strongest smart-money stack on the list buying a modest dip in a high-quality name"
+        }
+      ],
+      "market_take": "Risk-off tape with growth/tech under pressure as SpaceX IPO sucks liquidity; selective long setups still viable on relative strength and smart-money confirmation",
+      "skipped_movers": [
+        "GS: heavy insider selling (4 sells, 0 buys) despite +2.75% move \u2014 disqualified",
+        "JPM: heavy insider selling (6 sells, 1 buy) \u2014 disqualified",
+        "ADBE: CFO departure, PT cuts, only 42% analyst buy \u2014 negative catalyst",
+        "PLTR: -2.5% price action contradicts insider cluster buy; House selling",
+        "ORCL: worst week since 2002, knife-catch risk despite insider buys",
+        "AAPL: -1.5% with insider selling outweighs House cluster buy",
+        "SHOP/CRM/AVGO/META: red tape with no acute catalyst to force entry today"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Strongest price action on the board with confirming volume \u2014 momentum continuation play with tight 1% stop",
+        "symbol": "INTC",
+        "qty": 730,
+        "entry_price_est": 126.45,
+        "stop_price": 125.19,
+        "take_price": 128.98,
+        "order_id": "27f8616e-57c8-409f-b593-60d52a0752a2"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Best combination of green tape + insider cluster buying with no negative news",
+        "symbol": "CAT",
+        "qty": 102,
+        "entry_price_est": 901.69,
+        "stop_price": 892.67,
+        "take_price": 919.72,
+        "order_id": "f973e615-1575-4788-b364-d50a045579f2"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strongest smart-money stack on the list buying a modest dip in a high-quality name",
+        "symbol": "AMZN",
+        "qty": 389,
+        "entry_price_est": 236.82,
+        "stop_price": 234.45,
+        "take_price": 241.56,
+        "order_id": "e99ff880-8c45-4586-8328-2629755f6b98"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-06-12",
+    "ts": "2026-06-12T17:40:35.455849Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
