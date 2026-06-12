@@ -4778,5 +4778,122 @@
     "ts": "2026-06-11T22:56:16.444424Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=27382637250"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-12",
+    "ts": "2026-06-12T16:25:00.552684Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=27428620652"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-12",
+    "ts": "2026-06-12T16:25:19.747470Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-12",
+    "ts": "2026-06-12T16:25:22.180673Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-06-12",
+    "ts": "2026-06-12T16:25:23.657226Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-06-12",
+    "ts": "2026-06-12T16:26:18.668006Z",
+    "equity_start": 99049.11,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMD",
+          "confidence": "high",
+          "catalyst": "Premarket gap +4% on Citi and BofA price target hikes citing massive AI growth; momentum continuation setup",
+          "smart_money_signals": "Alt-data 8/10: insider cluster buy (5 buyers), House cluster buy (Cisneros, Gottheimer, 3 buys), 80.7% analyst bullish",
+          "rationale": "Rare stack of strong catalyst + cluster smart money + premarket gap up \u2014 best risk/reward today"
+        },
+        {
+          "symbol": "MSFT",
+          "confidence": "medium",
+          "catalyst": "Down -1.2% premarket but no negative news \u2014 pullback in uptrend with extraordinary smart-money backing",
+          "smart_money_signals": "Alt-data 10/10: insider cluster (4 buyers), House cluster (Cisneros, Gottheimer), WSB 2.25x normal at rank #3, 92.4% analyst bullish",
+          "rationale": "Perfect smart-money score with mild dip offers favorable entry for intraday mean reversion"
+        },
+        {
+          "symbol": "CVX",
+          "confidence": "medium",
+          "catalyst": "Up +1.2% premarket bucking tech-driven tape; defensive rotation play",
+          "smart_money_signals": "Alt-data 7/10: insider cluster buy (11 buyers, 11:1 ratio), House buy by Walberg, 74% analyst bullish",
+          "rationale": "Strong relative strength plus broad insider cluster provides diversification from tech-heavy picks"
+        }
+      ],
+      "market_take": "Bullish tech tape led by AI/chips with SpaceX IPO euphoria; selective dip-buying in mega-caps with smart money flow.",
+      "skipped_movers": [
+        "INTC: alt-data 0/10, only 32% analyst bullish, no insider conviction",
+        "PLTR: gapping down -2.5% against bullish news, House selling",
+        "AMZN: gapping down -2.5% despite strong alt-data \u2014 price contradicts",
+        "JPM: heavy insider selling 6:1",
+        "GS: heavy insider selling, no buys",
+        "TSLA: gapping down, weak analyst conviction (48%)",
+        "AAPL: gapping down with heavy insider selling",
+        "AVGO: weak alt-data, gapping down",
+        "ORCL: zero-day exploit news is negative catalyst",
+        "SHOP: weak alt-data, gapping down",
+        "V: House selling, no catalyst",
+        "CRM: no news catalyst and gapping down"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Rare stack of strong catalyst + cluster smart money + premarket gap up \u2014 best risk/reward today",
+        "symbol": "AMD",
+        "qty": 63,
+        "entry_price_est": 513.005,
+        "stop_price": 507.87,
+        "take_price": 523.27,
+        "order_id": "547c33f0-4b11-48d1-8d8d-538385a0e93d"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Perfect smart-money score with mild dip offers favorable entry for intraday mean reversion",
+        "symbol": "MSFT",
+        "qty": 84,
+        "entry_price_est": 388.13,
+        "stop_price": 384.25,
+        "take_price": 395.89,
+        "order_id": "a4b8edbe-f5cd-4fc9-a4a8-43aa85d69e52"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strong relative strength plus broad insider cluster provides diversification from tech-heavy picks",
+        "symbol": "CVX",
+        "qty": 173,
+        "entry_price_est": 187.865,
+        "stop_price": 185.99,
+        "take_price": 191.62,
+        "order_id": "4626d8c3-2d1c-4adf-a40f-f87b3151a255"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-06-12",
+    "ts": "2026-06-12T16:26:18.689018Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
