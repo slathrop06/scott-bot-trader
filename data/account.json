@@ -1,46 +1,46 @@
 {
-  "ts": "2026-06-15T20:53:49.205710Z",
-  "equity": 104962.8,
+  "ts": "2026-06-15T23:02:13.971420Z",
+  "equity": 104962.98,
   "last_equity": 98667.38,
   "cash": -188031.3,
-  "buying_power": 68258.27,
-  "all_time_return_pct": 4.9628,
+  "buying_power": 68258.78,
+  "all_time_return_pct": 4.963,
   "positions": [
     {
       "symbol": "AMZN",
       "qty": 141,
       "avg_entry_price": 246.434,
-      "current_price": 246.2,
-      "market_value": 34714.2,
-      "unrealized_pl": -32.99,
-      "unrealized_pl_pct": -0.095
+      "current_price": 248.18,
+      "market_value": 34993.38,
+      "unrealized_pl": 246.19,
+      "unrealized_pl_pct": 0.709
     },
     {
       "symbol": "CVX",
       "qty": 192,
       "avg_entry_price": 180.44,
-      "current_price": 180.6453,
-      "market_value": 34683.9,
-      "unrealized_pl": 39.42,
-      "unrealized_pl_pct": 0.114
+      "current_price": 180.4,
+      "market_value": 34636.8,
+      "unrealized_pl": -7.68,
+      "unrealized_pl_pct": -0.022
     },
     {
       "symbol": "GOOGL",
       "qty": 302,
       "avg_entry_price": 371.2298,
-      "current_price": 369.6,
-      "market_value": 111619.2,
-      "unrealized_pl": -492.19,
-      "unrealized_pl_pct": -0.439
+      "current_price": 369.285,
+      "market_value": 111524.07,
+      "unrealized_pl": -587.32,
+      "unrealized_pl_pct": -0.524
     },
     {
       "symbol": "ORCL",
       "qty": 582,
       "avg_entry_price": 192.7729,
-      "current_price": 192.4,
-      "market_value": 111976.8,
-      "unrealized_pl": -217.01,
-      "unrealized_pl_pct": -0.193
+      "current_price": 192.165,
+      "market_value": 111840.03,
+      "unrealized_pl": -353.78,
+      "unrealized_pl_pct": -0.315
     }
   ]
 }
