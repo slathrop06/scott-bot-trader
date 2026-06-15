@@ -5062,5 +5062,110 @@
     "ts": "2026-06-12T22:21:44.768591Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=27446426535"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-15",
+    "ts": "2026-06-15T17:58:49.792063Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=27565823582"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-15",
+    "ts": "2026-06-15T17:59:19.030667Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-15",
+    "ts": "2026-06-15T17:59:22.087574Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-06-15",
+    "ts": "2026-06-15T17:59:23.555344Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-06-15",
+    "ts": "2026-06-15T18:00:13.539546Z",
+    "equity_start": 105665.57,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMZN",
+          "confidence": "high",
+          "catalyst": "Tech rally on US-Iran peace deal, gap up +3.2% premarket with falling oil tailwind for consumer discretionary",
+          "smart_money_signals": "Alt-data 9/10: insider cluster buy (6 buyers, 14 buys), House net buying (Walberg), WSB 3x normal chatter, 93.4% analyst bullish (22SB/49B)",
+          "rationale": "Best stacked setup \u2014 strongest alt-data score in the universe plus clean catalyst gap with no contradicting signals"
+        },
+        {
+          "symbol": "CVX",
+          "confidence": "medium",
+          "catalyst": "Counter-trend value play \u2014 stock down 3.6% on oil selloff but insider cluster signals smart money sees a bottom",
+          "smart_money_signals": "Alt-data 7/10: massive insider cluster buy (11 distinct buyers, 11 buys vs 7 sells), House buy (Walberg), 74% analyst bullish",
+          "rationale": "11-insider cluster buy is an exceptional standalone smart-money signal; entering on oversold dip with -1% stop is reasonable risk"
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "Premarket gap up +5.2% riding broad tech/AI rally with no negative news",
+          "smart_money_signals": "Alt-data 5/10: insider cluster buy (6 distinct buyers, 6 buys vs only 2 sells), 81.6% analyst bullish (17SB/23B)",
+          "rationale": "Clean catalyst + insider cluster with a 3:1 buy/sell ratio \u2014 momentum continuation play"
+        }
+      ],
+      "market_take": "Risk-on tech rally on US-Iran peace deal and falling oil; energy under pressure, mega-cap tech leading.",
+      "skipped_movers": [
+        "AMD: 39 insider sells overwhelms cluster signal",
+        "META: 32 insider sells (5 insiders) is a heavy distribution flag",
+        "NVDA: heavy insider selling, alt-data 1/10",
+        "PLTR: 33 insider sells and House selling outweigh the cluster buy",
+        "XOM/GOOGL: net congressional/insider selling pressure",
+        "GE/SHOP/AVGO: thin alt-data conviction, momentum-only"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best stacked setup \u2014 strongest alt-data score in the universe plus clean catalyst gap with no contradicting signals",
+        "symbol": "AMZN",
+        "qty": 141,
+        "entry_price_est": 246.40499999999997,
+        "stop_price": 243.94,
+        "take_price": 251.33,
+        "order_id": "ee72a681-6608-4f84-8e48-9194042fd3b6"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "11-insider cluster buy is an exceptional standalone smart-money signal; entering on oversold dip with -1% stop is reasonable risk",
+        "symbol": "CVX",
+        "qty": 192,
+        "entry_price_est": 181.195,
+        "stop_price": 179.38,
+        "take_price": 184.82,
+        "order_id": "8c7bd07d-ef19-40a4-b4e8-af1da926145c"
+      },
+      {
+        "status": "failed",
+        "symbol": "ORCL",
+        "error": "{\"base_price\":\"193.6387\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-06-15",
+    "ts": "2026-06-15T18:00:13.571032Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
