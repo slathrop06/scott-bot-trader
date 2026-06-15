@@ -5167,5 +5167,99 @@
     "ts": "2026-06-15T18:00:13.571032Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-15",
+    "ts": "2026-06-15T19:05:45.186901Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=27569673266"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-06-15",
+    "ts": "2026-06-15T19:06:03.105237Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-06-15",
+    "ts": "2026-06-15T19:06:48.966835Z",
+    "equity_start": 105850.05,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "ORCL",
+          "confidence": "high",
+          "catalyst": "Rebounding 4.9% on Monday after worst weekly drop since 2002, with BofA and Goldman Sachs reiterating bullish stance on AI cloud infrastructure",
+          "smart_money_signals": "Insider cluster buy with 6 buyers in 30d (only 2 sells), 81.6% analyst bullish (17SB/23B)",
+          "rationale": "Best combo of catalyst (analyst-backed rebound) plus genuine insider cluster buying with no offsetting heavy selling."
+        },
+        {
+          "symbol": "CAT",
+          "confidence": "medium",
+          "catalyst": "Up 2.79% on broad industrials strength with whale alert flow",
+          "smart_money_signals": "Insider cluster buy with 8 buyers, ZERO sells in 30d \u2014 cleanest insider tape on the board; House buy by Walberg",
+          "rationale": "Pristine insider signal (8 buys, 0 sells) is rare and a strong smart-money setup alone."
+        },
+        {
+          "symbol": "GOOGL",
+          "confidence": "medium",
+          "catalyst": "Up 2.9% on $1.5B Alabama data center expansion announcement plus tech rally from US-Iran deal",
+          "smart_money_signals": "Insider cluster buy (6 buyers), 87.1% analyst bullish (19SB/42B), WSB chatter 5.5x normal",
+          "rationale": "Concrete corporate catalyst stacks with insider cluster buy and elite analyst conviction."
+        }
+      ],
+      "market_take": "Risk-on tech rally on US-Iran peace deal and falling oil \u2014 broad Nasdaq strength favors long tech/industrials.",
+      "skipped_movers": [
+        "AMD: 39 insider sells overwhelms House cluster buy \u2014 skip",
+        "META: 32 insider sells (5 insiders) is heavy distribution despite catalyst",
+        "NVDA: heavy insider selling, weakest alt-data score",
+        "XOM: down on oil collapse, wrong direction",
+        "BA: catalyst is just oil-driven sentiment, thin smart money",
+        "PLTR: 33 insider sells and House selling overwhelm cluster buy",
+        "AVGO: no specific catalyst, signal score only 3",
+        "SHOP/GE: no smart-money edge, weak alt-data",
+        "QQQ: ETF, no edge"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best combo of catalyst (analyst-backed rebound) plus genuine insider cluster buying with no offsetting heavy selling.",
+        "symbol": "ORCL",
+        "qty": 582,
+        "entry_price_est": 192.72500000000002,
+        "stop_price": 190.8,
+        "take_price": 196.58,
+        "order_id": "e1fd2ac6-3f2a-4e15-b37f-a2dd8a6a6cc6"
+      },
+      {
+        "status": "failed",
+        "symbol": "CAT",
+        "error": "{\"base_price\":\"935.5775\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Concrete corporate catalyst stacks with insider cluster buy and elite analyst conviction.",
+        "symbol": "GOOGL",
+        "qty": 302,
+        "entry_price_est": 371.20500000000004,
+        "stop_price": 367.49,
+        "take_price": 378.63,
+        "order_id": "2fa051c4-b7ea-48f7-9189-f3e2e9883b68"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-06-15",
+    "ts": "2026-06-15T19:06:49.035885Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]

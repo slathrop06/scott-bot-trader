@@ -1,9 +1,28 @@
 {
-  "ts": "2026-06-15T17:53:18.913878Z",
-  "equity": 105665.57,
+  "ts": "2026-06-15T19:06:49.034427Z",
+  "equity": 105837.36,
   "last_equity": 98667.38,
-  "cash": 105665.57,
-  "buying_power": 422662.28,
-  "all_time_return_pct": 5.6656,
-  "positions": []
+  "cash": 36273.9,
+  "buying_power": 115569.67,
+  "all_time_return_pct": 5.8374,
+  "positions": [
+    {
+      "symbol": "AMZN",
+      "qty": 141,
+      "avg_entry_price": 246.434,
+      "current_price": 246.74,
+      "market_value": 34790.34,
+      "unrealized_pl": 43.15,
+      "unrealized_pl_pct": 0.124
+    },
+    {
+      "symbol": "CVX",
+      "qty": 192,
+      "avg_entry_price": 180.44,
+      "current_price": 181.11,
+      "market_value": 34773.12,
+      "unrealized_pl": 128.64,
+      "unrealized_pl_pct": 0.371
+    }
+  ]
 }
