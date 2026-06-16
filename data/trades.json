@@ -5306,5 +5306,118 @@
     "ts": "2026-06-15T23:21:47.533469Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=27582920744"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-16",
+    "ts": "2026-06-16T18:07:28.657740Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=27637993939"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-16",
+    "ts": "2026-06-16T18:07:48.012160Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-16",
+    "ts": "2026-06-16T18:07:50.368426Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-06-16",
+    "ts": "2026-06-16T18:07:51.837527Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-06-16",
+    "ts": "2026-06-16T18:08:38.199589Z",
+    "equity_start": 102037.62,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "CAT",
+          "confidence": "high",
+          "catalyst": "Up +2.74% premarket with no contradicting news, showing relative strength",
+          "smart_money_signals": "Insider cluster buy with 8 distinct buyers and ZERO sells in 30d, plus House buy by Tim Walberg",
+          "rationale": "Clean breakout with rare 8-insider cluster buy and no selling \u2014 strongest smart-money stack on the board"
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "Pullback -2.4% offers entry, no negative news driver",
+          "smart_money_signals": "Insider cluster buy (12 buyers, 4:1 buy/sell ratio), WSB chatter 6.5x normal, 74% analyst buy",
+          "rationale": "Massive 12-insider cluster combined with viral WSB ramp suggests dip is being bought"
+        },
+        {
+          "symbol": "HD",
+          "confidence": "medium",
+          "catalyst": "Up +1.69% premarket with whale alerts flagged, consumer discretionary strength",
+          "smart_money_signals": "Net insider buying (2 buys, 0 sells) plus House cluster buy by Taylor (2 buys)",
+          "rationale": "Quiet accumulation by both insiders and Congress while stock breaks higher"
+        }
+      ],
+      "market_take": "Mixed tape \u2014 AI/tech names pulling back on debt-story concerns while industrials and financials catch a bid.",
+      "skipped_movers": [
+        "AMD: 39 insider sells overwhelms House buy \u2014 heavy distribution",
+        "NFLX: lost Roku bidding war, negative catalyst",
+        "INTC: 0/10 alt-data, profit-taking after rally",
+        "AVGO: AI debt-story headwind, no smart-money cluster",
+        "JPM: insider selling, no catalyst",
+        "PLTR: 33 insider sells + Cathie Wood dumping + House selling",
+        "MSFT: strong signals but down on AI debt overhang \u2014 wait for confirmation",
+        "GS: 0/10 alt-data, only 47% bullish analysts"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Clean breakout with rare 8-insider cluster buy and no selling \u2014 strongest smart-money stack on the board",
+        "symbol": "CAT",
+        "qty": 34,
+        "entry_price_est": 962.095,
+        "stop_price": 952.47,
+        "take_price": 981.34,
+        "order_id": "9ae5ea02-7227-419a-8be4-4bbf2623c537"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Massive 12-insider cluster combined with viral WSB ramp suggests dip is being bought",
+        "symbol": "CRM",
+        "qty": 209,
+        "entry_price_est": 160.5,
+        "stop_price": 158.9,
+        "take_price": 163.71,
+        "order_id": "a29cdb82-45fd-48ef-94f9-c3bb5cd9625c"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Quiet accumulation by both insiders and Congress while stock breaks higher",
+        "symbol": "HD",
+        "qty": 100,
+        "entry_price_est": 334.84000000000003,
+        "stop_price": 331.49,
+        "take_price": 341.54,
+        "order_id": "a63c81c7-51d5-4261-80b6-6260519193c9"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-06-16",
+    "ts": "2026-06-16T18:08:38.230731Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
