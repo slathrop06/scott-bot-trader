@@ -1,37 +1,37 @@
 {
-  "ts": "2026-06-16T21:25:36.028916Z",
-  "equity": 101759.55,
+  "ts": "2026-06-16T23:03:48.537357Z",
+  "equity": 101913.19,
   "last_equity": 104954.35,
   "cash": -187872.96,
-  "buying_power": 59479.19,
-  "all_time_return_pct": 1.7596,
+  "buying_power": 59909.37,
+  "all_time_return_pct": 1.9132,
   "positions": [
     {
       "symbol": "BAC",
       "qty": 1679,
       "avg_entry_price": 56.6974,
-      "current_price": 56.7664,
-      "market_value": 95310.79,
-      "unrealized_pl": 115.92,
-      "unrealized_pl_pct": 0.122
+      "current_price": 56.84,
+      "market_value": 95434.36,
+      "unrealized_pl": 239.5,
+      "unrealized_pl_pct": 0.252
     },
     {
       "symbol": "CAT",
       "qty": 34,
       "avg_entry_price": 959.43,
-      "current_price": 944.8525,
-      "market_value": 32124.99,
-      "unrealized_pl": -495.63,
-      "unrealized_pl_pct": -1.519
+      "current_price": 945.46,
+      "market_value": 32145.64,
+      "unrealized_pl": -474.98,
+      "unrealized_pl_pct": -1.456
     },
     {
       "symbol": "CRM",
       "qty": 209,
       "avg_entry_price": 161.0,
-      "current_price": 161.74,
-      "market_value": 33803.66,
-      "unrealized_pl": 154.66,
-      "unrealized_pl_pct": 0.46
+      "current_price": 161.8196,
+      "market_value": 33820.3,
+      "unrealized_pl": 171.3,
+      "unrealized_pl_pct": 0.509
     },
     {
       "symbol": "HD",
@@ -46,10 +46,10 @@
       "symbol": "MSFT",
       "qty": 241,
       "avg_entry_price": 393.5191,
-      "current_price": 392.88,
-      "market_value": 94684.08,
-      "unrealized_pl": -154.02,
-      "unrealized_pl_pct": -0.162
+      "current_price": 392.85,
+      "market_value": 94676.85,
+      "unrealized_pl": -161.25,
+      "unrealized_pl_pct": -0.17
     }
   ]
 }
