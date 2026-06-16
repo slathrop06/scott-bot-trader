@@ -5527,5 +5527,44 @@
     "ts": "2026-06-16T21:37:35.859635Z",
     "status": "started",
     "note": ""
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-16",
+    "ts": "2026-06-16T23:07:25.908643Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=27654081996"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-06-16",
+    "ts": "2026-06-16T23:07:44.921224Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-06-16",
+    "ts": "2026-06-16T23:07:45.027407Z",
+    "equity_end": 101914.18,
+    "daily_pnl_usd": -3040.17,
+    "daily_pct": -2.8967,
+    "flatten": {
+      "closed": [
+        "BAC",
+        "CAT",
+        "CRM",
+        "HD",
+        "MSFT"
+      ],
+      "raw_response_count": 5
+    }
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-06-16",
+    "ts": "2026-06-16T23:07:45.084984Z",
+    "status": "ok",
+    "note": "closed 5 positions, 0 round-trips"
   }
 ]
