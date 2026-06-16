@@ -5419,5 +5419,99 @@
     "ts": "2026-06-16T18:08:38.230731Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-16",
+    "ts": "2026-06-16T18:56:01.739347Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=27640749969"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-06-16",
+    "ts": "2026-06-16T18:56:22.571011Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-06-16",
+    "ts": "2026-06-16T18:57:08.353107Z",
+    "equity_start": 102118.37,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "MSFT",
+          "confidence": "high",
+          "catalyst": "Modest -1.47% pullback offers entry near support with no negative company-specific news",
+          "smart_money_signals": "Alt score 9/10: insider cluster buy (4 buyers), House cluster buy (Cisneros, Gottheimer), top-4 WSB rank (266 mentions), 92.4% analyst bullish",
+          "rationale": "Cleanest stack of smart-money signals on the board with a buyable dip rather than a chase."
+        },
+        {
+          "symbol": "GE",
+          "confidence": "medium",
+          "catalyst": "Relative strength +3.18% while market weak (AMD/INTC/NFLX all red), no news drag",
+          "smart_money_signals": "87.5% analyst bullish (9 SB / 19 B), clean tape with no insider or congressional selling",
+          "rationale": "Clear relative-strength leader with no contradicting signals \u2014 momentum continuation setup."
+        },
+        {
+          "symbol": "BAC",
+          "confidence": "medium",
+          "catalyst": "+1.46% with financials leading (JPM +3.23%); sector rotation into banks",
+          "smart_money_signals": "House buy from Tim Walberg, 82.8% analyst bullish, no insider selling",
+          "rationale": "Riding financial-sector strength with supportive smart-money and zero red flags."
+        }
+      ],
+      "market_take": "Risk-off in mega-cap tech/AI names while financials and industrials see rotational bid.",
+      "skipped_movers": [
+        "AMD: heavy insider selling (39 sells by 3 insiders), gap-down -5.4% contradicts House buys \u2014 skip",
+        "INTC: alt score 0/10, only 32% analyst bullish, gap-down -5.3% \u2014 skip",
+        "NFLX: lost Roku bidding war, -3.88% with negative catalyst \u2014 skip",
+        "AVGO: caught in AI debt-story selloff, -3.5% \u2014 skip",
+        "JPM: already +3.23%, chasing late + insider sell \u2014 skip",
+        "V: House selling, no catalyst \u2014 pass",
+        "MA: no catalyst, just drift \u2014 pass",
+        "PLTR: 33 insider sells vs 7 buys despite cluster, House selling, red tape \u2014 skip",
+        "SHOP: weak +1.59% with no catalyst \u2014 pass"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Cleanest stack of smart-money signals on the board with a buyable dip rather than a chase.",
+        "symbol": "MSFT",
+        "qty": 241,
+        "entry_price_est": 393.49,
+        "stop_price": 389.56,
+        "take_price": 401.36,
+        "order_id": "9ff8b574-42b9-4439-b0b3-e94370082664"
+      },
+      {
+        "status": "failed",
+        "symbol": "GE",
+        "error": "{\"base_price\":\"351.66\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Riding financial-sector strength with supportive smart-money and zero red flags.",
+        "symbol": "BAC",
+        "qty": 1679,
+        "entry_price_est": 56.69,
+        "stop_price": 56.12,
+        "take_price": 57.82,
+        "order_id": "a83e1ef2-6990-4e4b-935a-a27a43c93fe6"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-06-16",
+    "ts": "2026-06-16T18:57:08.390326Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]

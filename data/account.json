@@ -1,9 +1,37 @@
 {
-  "ts": "2026-06-16T18:04:07.531421Z",
-  "equity": 102037.62,
+  "ts": "2026-06-16T18:57:08.388764Z",
+  "equity": 102102.41,
   "last_equity": 104954.35,
-  "cash": 102037.62,
-  "buying_power": 408150.48,
-  "all_time_return_pct": 2.0376,
-  "positions": []
+  "cash": 2160.0,
+  "buying_power": 98441.11,
+  "all_time_return_pct": 2.1024,
+  "positions": [
+    {
+      "symbol": "CAT",
+      "qty": 34,
+      "avg_entry_price": 959.43,
+      "current_price": 955.95,
+      "market_value": 32502.3,
+      "unrealized_pl": -118.32,
+      "unrealized_pl_pct": -0.363
+    },
+    {
+      "symbol": "CRM",
+      "qty": 209,
+      "avg_entry_price": 161.0,
+      "current_price": 161.79,
+      "market_value": 33814.11,
+      "unrealized_pl": 165.11,
+      "unrealized_pl_pct": 0.491
+    },
+    {
+      "symbol": "HD",
+      "qty": 100,
+      "avg_entry_price": 336.08,
+      "current_price": 336.26,
+      "market_value": 33626.0,
+      "unrealized_pl": 18.0,
+      "unrealized_pl_pct": 0.054
+    }
+  ]
 }
