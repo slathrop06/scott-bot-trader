@@ -5683,5 +5683,40 @@
     "ts": "2026-06-17T22:44:01.911177Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=27724486036"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-18",
+    "ts": "2026-06-18T16:38:53.074865Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=27774646526"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-18",
+    "ts": "2026-06-18T16:39:13.838690Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-18",
+    "ts": "2026-06-18T16:39:17.180474Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-06-18",
+    "ts": "2026-06-18T16:39:18.584105Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-06-18",
+    "ts": "2026-06-18T16:39:49.920950Z",
+    "status": "error",
+    "note": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request"
   }
 ]
