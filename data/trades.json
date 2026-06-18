@@ -5739,5 +5739,26 @@
     "ts": "2026-06-18T18:08:26.478790Z",
     "status": "error",
     "note": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-18",
+    "ts": "2026-06-18T20:38:24.742982Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=27787851583"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-06-18",
+    "ts": "2026-06-18T20:38:47.822467Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-06-18",
+    "ts": "2026-06-18T20:38:48.016164Z",
+    "status": "blocked",
+    "note": "Market is closed."
   }
 ]
