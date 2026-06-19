@@ -5800,5 +5800,40 @@
     "ts": "2026-06-18T23:05:29.880169Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=27794743781"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-19",
+    "ts": "2026-06-19T16:11:06.783410Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=27836550036"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-19",
+    "ts": "2026-06-19T16:11:25.641664Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-19",
+    "ts": "2026-06-19T16:11:27.370461Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-06-19",
+    "ts": "2026-06-19T16:11:28.801108Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-06-19",
+    "ts": "2026-06-19T16:11:29.028947Z",
+    "status": "blocked",
+    "note": "Market is closed."
   }
 ]
