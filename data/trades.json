@@ -6136,5 +6136,59 @@
     "ts": "2026-06-22T18:51:19.802311Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-22",
+    "ts": "2026-06-22T21:27:00.665331Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=27985168542"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-06-22",
+    "ts": "2026-06-22T21:27:24.561084Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-06-22",
+    "ts": "2026-06-22T21:27:24.675344Z",
+    "equity_end": 101060.46,
+    "daily_pnl_usd": -107.4,
+    "daily_pct": -0.1062,
+    "flatten": {
+      "closed": [
+        "BAC",
+        "CAT",
+        "INTC",
+        "MSFT"
+      ],
+      "raw_response_count": 4
+    }
+  },
+  {
+    "type": "trade",
+    "date": "2026-06-22",
+    "ts": "2026-06-22T21:27:24.708692Z",
+    "symbol": "AVGO",
+    "qty": 84,
+    "entry_price": 395.8,
+    "entry_ts": "2026-06-22T17:46:34.170521Z",
+    "entry_order_id": "914ad656-dcba-49f9-b140-47f598ea1f8d",
+    "exit_price": 392.51,
+    "exit_ts": "2026-06-22T19:57:22.642799Z",
+    "exit_order_id": "932e8849-24b3-4b86-9341-cf3ce272e54b",
+    "exit_reason": "bracket",
+    "pnl_usd": -276.36,
+    "pnl_pct": -0.8312
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-06-22",
+    "ts": "2026-06-22T21:27:24.748329Z",
+    "status": "ok",
+    "note": "closed 4 positions, 1 round-trips"
   }
 ]
