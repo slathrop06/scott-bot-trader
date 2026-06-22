@@ -1,10 +1,10 @@
 {
-  "ts": "2026-06-22T20:45:16.756089Z",
-  "equity": 100631.37,
+  "ts": "2026-06-22T22:46:34.188780Z",
+  "equity": 100848.45,
   "last_equity": 101167.86,
   "cash": -253609.69,
   "buying_power": 0.0,
-  "all_time_return_pct": 0.6314,
+  "all_time_return_pct": 0.8484,
   "positions": [
     {
       "symbol": "BAC",
@@ -19,28 +19,28 @@
       "symbol": "CAT",
       "qty": 105,
       "avg_entry_price": 1020.76,
-      "current_price": 1023.29,
-      "market_value": 107445.45,
-      "unrealized_pl": 265.65,
-      "unrealized_pl_pct": 0.248
+      "current_price": 1026.5,
+      "market_value": 107782.5,
+      "unrealized_pl": 602.7,
+      "unrealized_pl_pct": 0.562
     },
     {
       "symbol": "INTC",
       "qty": 237,
       "avg_entry_price": 140.4982,
-      "current_price": 140.53,
-      "market_value": 33305.61,
-      "unrealized_pl": 7.54,
-      "unrealized_pl_pct": 0.023
+      "current_price": 138.61,
+      "market_value": 32850.57,
+      "unrealized_pl": -447.5,
+      "unrealized_pl_pct": -1.344
     },
     {
       "symbol": "MSFT",
       "qty": 289,
       "avg_entry_price": 369.74,
-      "current_price": 367.7006,
-      "market_value": 106265.47,
-      "unrealized_pl": -589.39,
-      "unrealized_pl_pct": -0.552
+      "current_price": 368.86,
+      "market_value": 106600.54,
+      "unrealized_pl": -254.32,
+      "unrealized_pl_pct": -0.238
     }
   ]
 }
