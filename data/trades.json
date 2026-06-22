@@ -5924,5 +5924,116 @@
     "ts": "2026-06-19T22:33:45.025562Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=27851420463"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-22",
+    "ts": "2026-06-22T17:45:15.482290Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=27972428113"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-22",
+    "ts": "2026-06-22T17:45:32.544675Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-22",
+    "ts": "2026-06-22T17:45:33.955636Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-06-22",
+    "ts": "2026-06-22T17:45:35.275860Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-06-22",
+    "ts": "2026-06-22T17:46:33.116068Z",
+    "equity_start": 101167.86,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "CAT",
+          "confidence": "high",
+          "catalyst": "Up +3.26% premarket on Chevron/Microsoft power project news, broke above $1000 threshold \u2014 bullish news + relative strength vs broad tape weakness",
+          "smart_money_signals": "Insider cluster buy with 8 buyers / 0 sells in 30d (perfect ratio), House net buying (Tim Walberg)",
+          "rationale": "Only major mover that's GREEN with a concrete catalyst, zero insider selling, and a clean insider cluster \u2014 textbook stack."
+        },
+        {
+          "symbol": "INTC",
+          "confidence": "medium",
+          "catalyst": "Up +4.70% premarket on Apple foundry rumors + semi rally on Iran peace deal hopes; momentum continuation setup near 52-week high",
+          "smart_money_signals": "WSB chatter 34x normal at rank #13 (heavy retail flow into momentum); analyst sentiment weak (32%) but price action overrides",
+          "rationale": "Strongest premarket gainer with concrete catalyst and confirmed momentum \u2014 pure price-action play, +2% target very reachable given gap strength."
+        },
+        {
+          "symbol": "AVGO",
+          "confidence": "medium",
+          "catalyst": "JPMorgan explicit 'buy the dip' call citing locked-in Google TPU revenue to 2031; modest -3.79% dip provides clean entry",
+          "smart_money_signals": "Net insider buying, 92.9% analyst buy (highest tier), WSB chatter 6.67x normal",
+          "rationale": "Top-tier analyst conviction + concrete bullish bank note on a shallow AI-name dip \u2014 bounce setup with smart-money tailwind."
+        }
+      ],
+      "market_take": "Risk-off in mega-cap AI (GOOGL/MSFT/AMZN red) but rotation into semis (INTC) and industrials (CAT) \u2014 pick the green names with smart money stacked.",
+      "skipped_movers": [
+        "PLTR: -6.5% with no news, House selling, mixed insider signals \u2014 falling knife",
+        "NFLX: -6% gap down, no clear catalyst, insider net selling",
+        "GOOGL: -5.3% on DeepMind departure news, House net selling \u2014 wait for stabilization",
+        "ORCL: -4.65% with no company-specific positive catalyst",
+        "NKE: CEO admits turnaround slower than expected + 3 insider sells, 0 buys \u2014 clear disqualifier",
+        "AMZN: heavy insider + House selling despite analyst love, broken tape",
+        "MCD: heavy insider selling 3:1, no catalyst",
+        "MSFT: 10/10 alt-data score BUT 12 recent insider sells on META-style stack and red tape \u2014 alt-data conflicted by price action",
+        "META: 12 insider sells in 30d \u2014 heavy distribution disqualifier",
+        "CRM: -2.9% with no news, weak signals",
+        "BAC: only +2% with no catalyst \u2014 not enough edge",
+        "TSLA: Megapod trademark is thin catalyst, only +1.96%, analysts split"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "failed",
+        "symbol": "CAT",
+        "error": "{\"base_price\":\"1020.075\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strongest premarket gainer with concrete catalyst and confirmed momentum \u2014 pure price-action play, +2% target very reachable given gap strength.",
+        "symbol": "INTC",
+        "qty": 237,
+        "entry_price_est": 140.47,
+        "stop_price": 139.07,
+        "take_price": 143.28,
+        "order_id": "eabbe5cb-1e52-4b6f-9204-3b3022376fdf"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Top-tier analyst conviction + concrete bullish bank note on a shallow AI-name dip \u2014 bounce setup with smart-money tailwind.",
+        "symbol": "AVGO",
+        "qty": 84,
+        "entry_price_est": 396.56,
+        "stop_price": 392.59,
+        "take_price": 404.49,
+        "order_id": "914ad656-dcba-49f9-b140-47f598ea1f8d"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-06-22",
+    "ts": "2026-06-22T17:46:33.182408Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
