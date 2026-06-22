@@ -6035,5 +6035,106 @@
     "ts": "2026-06-22T17:46:33.182408Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-22",
+    "ts": "2026-06-22T18:49:57.541764Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=27976187424"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-06-22",
+    "ts": "2026-06-22T18:50:19.588043Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-06-22",
+    "ts": "2026-06-22T18:51:19.646222Z",
+    "equity_start": 101159.49,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "CAT",
+          "confidence": "high",
+          "catalyst": "Up +3.3% on news of massive power project with Chevron and Microsoft, breaking $1,000 \u2014 bucking a red tape on AI names",
+          "smart_money_signals": "Insider cluster buy (8 buyers, 0 sells in 30d \u2014 extremely clean), House buy by Tim Walberg, alt-score 6/10",
+          "rationale": "Only major green name with a concrete catalyst AND pristine insider tape \u2014 clear relative strength play."
+        },
+        {
+          "symbol": "MSFT",
+          "confidence": "medium",
+          "catalyst": "Down -2.35% on AI-sector sympathy selling (Alphabet DeepMind departure) \u2014 milder drawdown than peers suggests support",
+          "smart_money_signals": "Alt-score 10/10: insider cluster buy (5), House cluster buy (Cisneros, Gottheimer), WSB rank #2 @ 8.79x, 92.4% analyst bullish",
+          "rationale": "Best stacked smart-money signal on the board; buying a quality dip in a name with cluster buys from both insiders and Congress."
+        },
+        {
+          "symbol": "BAC",
+          "confidence": "medium",
+          "catalyst": "Up +2.07% with relative strength while AI/tech sells off \u2014 rotation into financials",
+          "smart_money_signals": "House buy (Walberg), 82.8% analyst bullish (7SB/17B/5H/0S)",
+          "rationale": "Green tape + clean analyst conviction + no contradicting signals; diversifies away from tech drawdown risk."
+        }
+      ],
+      "market_take": "AI/mega-cap tech under pressure (GOOGL -5%, MSFT, AMZN red) on DeepMind departure and SpaceX bond sale; rotation into industrials (CAT) and financials (BAC).",
+      "skipped_movers": [
+        "PLTR: -6.5% with no news and House selling \u2014 falling knife",
+        "NFLX: 52-week low on failed M&A \u2014 momentum decidedly negative",
+        "GOOGL: -4.9% on DeepMind departure news, active negative catalyst despite cluster buy",
+        "NKE: heavy insider selling (3 sells, 0 buys), weak analyst tape",
+        "ORCL: -4.2% AI sympathy, no specific catalyst to fade the drop",
+        "AMZN: alt-score 0 with insider + House net selling",
+        "MCD: heavy insider selling (3:1)",
+        "HD: zero alt-data signal, no catalyst",
+        "TSLA: weak analyst tape (48% bullish, 8 sell ratings), no real catalyst",
+        "CRM: weak signal, no catalyst, red tape"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Only major green name with a concrete catalyst AND pristine insider tape \u2014 clear relative strength play.",
+        "symbol": "CAT",
+        "qty": 105,
+        "entry_price_est": 1018.435,
+        "stop_price": 1008.25,
+        "take_price": 1038.8,
+        "order_id": "17957d36-d12e-4d2f-89d4-123035ab1631"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Best stacked smart-money signal on the board; buying a quality dip in a name with cluster buys from both insiders and Congress.",
+        "symbol": "MSFT",
+        "qty": 289,
+        "entry_price_est": 369.725,
+        "stop_price": 366.03,
+        "take_price": 377.12,
+        "order_id": "eb8af568-a37f-4913-bd73-515bb6dc2269"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Green tape + clean analyst conviction + no contradicting signals; diversifies away from tech drawdown risk.",
+        "symbol": "BAC",
+        "qty": 1869,
+        "entry_price_est": 57.335,
+        "stop_price": 56.76,
+        "take_price": 58.48,
+        "order_id": "824328ee-db00-4c09-9ba4-74d74a8ed5c5"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-06-22",
+    "ts": "2026-06-22T18:51:19.802311Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]

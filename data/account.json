@@ -1,9 +1,28 @@
 {
-  "ts": "2026-06-22T17:42:48.364266Z",
-  "equity": 101167.86,
+  "ts": "2026-06-22T18:51:19.800687Z",
+  "equity": 101143.18,
   "last_equity": 101167.86,
-  "cash": 101167.86,
-  "buying_power": 404671.44,
-  "all_time_return_pct": 1.1679,
-  "positions": []
+  "cash": 34622.59,
+  "buying_power": 3544.86,
+  "all_time_return_pct": 1.1432,
+  "positions": [
+    {
+      "symbol": "AVGO",
+      "qty": 84,
+      "avg_entry_price": 395.8,
+      "current_price": 395.755,
+      "market_value": 33243.42,
+      "unrealized_pl": -3.78,
+      "unrealized_pl_pct": -0.011
+    },
+    {
+      "symbol": "INTC",
+      "qty": 237,
+      "avg_entry_price": 140.4982,
+      "current_price": 140.41,
+      "market_value": 33277.17,
+      "unrealized_pl": -20.9,
+      "unrealized_pl_pct": -0.063
+    }
+  ]
 }
