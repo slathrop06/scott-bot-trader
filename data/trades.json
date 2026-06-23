@@ -6309,5 +6309,98 @@
     "ts": "2026-06-23T15:58:27.167771Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-23",
+    "ts": "2026-06-23T17:19:49.475456Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=28043882801"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-06-23",
+    "ts": "2026-06-23T17:20:12.192979Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-06-23",
+    "ts": "2026-06-23T17:21:01.400468Z",
+    "equity_start": 95576.09,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "Down -4.25% on 21k job cuts news but cuts are framed as AI cost optimization \u2014 oversold bounce setup with strong smart-money backing",
+          "smart_money_signals": "Insider cluster buy (6 insiders bought, only 2 sold), WSB chatter 2.17x normal, 82% analyst buy rating (17SB/23B). Alt-data score 7/10 \u2014 highest in the slate",
+          "rationale": "Best smart-money stack available \u2014 6-insider cluster buy is a rare conviction signal and the selloff offers an attractive entry"
+        },
+        {
+          "symbol": "AAPL",
+          "confidence": "medium",
+          "catalyst": "Relative strength \u2014 up +1.16% against a brutal tech tape (NVDA/AMD/ORCL all -3 to -4%)",
+          "smart_money_signals": "House cluster buy (Walberg + Fields), WSB chatter 3.23x normal, 69% analyst bullish. Insider selling exists but only 1 insider",
+          "rationale": "Bucking the chip selloff with cluster congressional buying and surging social attention \u2014 clearest relative-strength setup"
+        },
+        {
+          "symbol": "XOM",
+          "confidence": "low",
+          "catalyst": "Up +1.23% on Trump Hormuz/oil flow news; defensive rotation theme highlighted in market coverage as tech sells off",
+          "smart_money_signals": "Mixed congressional activity (1 buy/1 sell), 52% analyst bullish \u2014 thin but no red flags",
+          "rationale": "Diversifier away from semis with a fresh macro catalyst and participation in the defensive rotation"
+        }
+      ],
+      "market_take": "Semi/tech bloodbath on Korea selloff with defensive and idiosyncratic names catching a bid \u2014 favor relative strength and oversold quality.",
+      "skipped_movers": [
+        "AMD: 30 insider sells in 30d overwhelms the House cluster buy",
+        "NVDA: heavy insider selling + middle of a chip bloodbath, knife-catch risk",
+        "INTC: alt-data -1, House selling, only 32% analyst bullish",
+        "TSLA: weak alt-data score 2/10, no clean catalyst, down hard",
+        "ADBE: House selling, only 42% analyst bullish despite green tape",
+        "CRM: thin signal, no news catalyst",
+        "AVGO: still in downtrend within chip selloff, no entry catalyst",
+        "QQQ: index ETF, semis dragging it lower \u2014 no edge"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Best smart-money stack available \u2014 6-insider cluster buy is a rare conviction signal and the selloff offers an attractive entry",
+        "symbol": "ORCL",
+        "qty": 530,
+        "entry_price_est": 167.93,
+        "stop_price": 166.25,
+        "take_price": 171.29,
+        "order_id": "dfd0c1e5-15d3-4e98-8cef-dede6e1792a2"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Bucking the chip selloff with cluster congressional buying and surging social attention \u2014 clearest relative-strength setup",
+        "symbol": "AAPL",
+        "qty": 297,
+        "entry_price_est": 299.15,
+        "stop_price": 296.16,
+        "take_price": 305.13,
+        "order_id": "4e7dc883-492d-41cf-83dc-033b4878df2b"
+      },
+      {
+        "status": "failed",
+        "symbol": "XOM",
+        "error": "{\"base_price\":\"140.28\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-06-23",
+    "ts": "2026-06-23T17:21:01.450248Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]

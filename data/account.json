@@ -1,9 +1,37 @@
 {
-  "ts": "2026-06-23T15:46:30.744137Z",
-  "equity": 95613.33,
+  "ts": "2026-06-23T17:21:01.448457Z",
+  "equity": 95614.73,
   "last_equity": 100518.25,
-  "cash": 95613.33,
-  "buying_power": 382453.32,
-  "all_time_return_pct": -4.3867,
-  "positions": []
+  "cash": 2105.49,
+  "buying_power": 92376.16,
+  "all_time_return_pct": -4.3853,
+  "positions": [
+    {
+      "symbol": "CAT",
+      "qty": 31,
+      "avg_entry_price": 987.78,
+      "current_price": 991.42,
+      "market_value": 30734.02,
+      "unrealized_pl": 112.84,
+      "unrealized_pl_pct": 0.369
+    },
+    {
+      "symbol": "MSFT",
+      "qty": 84,
+      "avg_entry_price": 373.5,
+      "current_price": 373.05,
+      "market_value": 31336.2,
+      "unrealized_pl": -37.8,
+      "unrealized_pl_pct": -0.12
+    },
+    {
+      "symbol": "WMT",
+      "qty": 263,
+      "avg_entry_price": 119.82,
+      "current_price": 119.54,
+      "market_value": 31439.02,
+      "unrealized_pl": -73.64,
+      "unrealized_pl_pct": -0.234
+    }
+  ]
 }
