@@ -1,37 +1,55 @@
 {
-  "ts": "2026-06-23T17:21:01.448457Z",
-  "equity": 95614.73,
+  "ts": "2026-06-23T17:52:25.688308Z",
+  "equity": 94957.73,
   "last_equity": 100518.25,
-  "cash": 2105.49,
-  "buying_power": 92376.16,
-  "all_time_return_pct": -4.3853,
+  "cash": -175772.1,
+  "buying_power": 54955.12,
+  "all_time_return_pct": -5.0423,
   "positions": [
+    {
+      "symbol": "AAPL",
+      "qty": 297,
+      "avg_entry_price": 299.17,
+      "current_price": 299.64,
+      "market_value": 88993.08,
+      "unrealized_pl": 139.59,
+      "unrealized_pl_pct": 0.157
+    },
     {
       "symbol": "CAT",
       "qty": 31,
       "avg_entry_price": 987.78,
-      "current_price": 991.42,
-      "market_value": 30734.02,
-      "unrealized_pl": 112.84,
-      "unrealized_pl_pct": 0.369
+      "current_price": 988.38,
+      "market_value": 30639.78,
+      "unrealized_pl": 18.6,
+      "unrealized_pl_pct": 0.061
     },
     {
       "symbol": "MSFT",
       "qty": 84,
       "avg_entry_price": 373.5,
-      "current_price": 373.05,
-      "market_value": 31336.2,
-      "unrealized_pl": -37.8,
-      "unrealized_pl_pct": -0.12
+      "current_price": 373.18,
+      "market_value": 31347.12,
+      "unrealized_pl": -26.88,
+      "unrealized_pl_pct": -0.086
+    },
+    {
+      "symbol": "ORCL",
+      "qty": 530,
+      "avg_entry_price": 167.97,
+      "current_price": 166.52,
+      "market_value": 88255.6,
+      "unrealized_pl": -768.5,
+      "unrealized_pl_pct": -0.863
     },
     {
       "symbol": "WMT",
       "qty": 263,
       "avg_entry_price": 119.82,
-      "current_price": 119.54,
-      "market_value": 31439.02,
-      "unrealized_pl": -73.64,
-      "unrealized_pl_pct": -0.234
+      "current_price": 119.75,
+      "market_value": 31494.25,
+      "unrealized_pl": -18.41,
+      "unrealized_pl_pct": -0.058
     }
   ]
 }
