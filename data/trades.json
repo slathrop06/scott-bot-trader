@@ -6197,5 +6197,117 @@
     "ts": "2026-06-22T22:59:06.116499Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=27989753988"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-23",
+    "ts": "2026-06-23T15:57:00.676048Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=28038827759"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-23",
+    "ts": "2026-06-23T15:57:20.305847Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-23",
+    "ts": "2026-06-23T15:57:22.915163Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-06-23",
+    "ts": "2026-06-23T15:57:24.363663Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-06-23",
+    "ts": "2026-06-23T15:58:27.134738Z",
+    "equity_start": 95613.33,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "MSFT",
+          "confidence": "high",
+          "catalyst": "Relative strength \u2014 up +1.35% premarket while Nasdaq/SPY sell off hard (-2.5%); approaching technical support discussed by Benzinga",
+          "smart_money_signals": "10/10 alt score: insider cluster buy (5 buyers), House cluster buy (Cisneros + Gottheimer), 92.4% analyst bullish, WSB rank #3 with 2.11x chatter",
+          "rationale": "Best stack on the board \u2014 bucking a tech selloff with full smart-money confluence."
+        },
+        {
+          "symbol": "WMT",
+          "confidence": "high",
+          "catalyst": "Defensive bid \u2014 trading +2.33% green on a risk-off tape, news on clean-energy sourcing",
+          "smart_money_signals": "Insider cluster buy (10 distinct buyers), 89.6% analyst bullish",
+          "rationale": "Strong relative strength on a down day plus broad insider conviction \u2014 classic flight-to-quality setup."
+        },
+        {
+          "symbol": "CAT",
+          "confidence": "medium",
+          "catalyst": "Heavily oversold (-3.91%) but with no negative news \u2014 pure tape weakness sympathy move",
+          "smart_money_signals": "Insider cluster buy with 8 distinct buyers (alt score 8/10), House buying by Walberg, WSB chatter 13x normal",
+          "rationale": "Strongest insider cluster on the list buying into the dip \u2014 mean-reversion setup with smart-money cushion."
+        }
+      ],
+      "market_take": "Tech-led risk-off session; defensives (WMT) and quality names with insider support (MSFT) showing relative strength.",
+      "skipped_movers": [
+        "TSLA: -5% with weak alt-data (2/10) and only 48% analyst bullish",
+        "AMD: 30 insider sells in 30d overrides the House cluster buy",
+        "NVDA: heavy insider selling + House selling, alt score -1",
+        "INTC: -2.4% with only 32% analyst bullish, House selling",
+        "NKE: heavy insider selling and earnings approaching June 30",
+        "ORCL: 21,000 job cuts headline driving the gap down \u2014 negative catalyst overrides insider buys",
+        "ADBE: House selling and only 42% analyst bullish"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best stack on the board \u2014 bucking a tech selloff with full smart-money confluence.",
+        "symbol": "MSFT",
+        "qty": 84,
+        "entry_price_est": 373.42499999999995,
+        "stop_price": 369.69,
+        "take_price": 380.89,
+        "order_id": "64da2b3a-cc65-423a-800a-b4f1477caf62"
+      },
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Strong relative strength on a down day plus broad insider conviction \u2014 classic flight-to-quality setup.",
+        "symbol": "WMT",
+        "qty": 263,
+        "entry_price_est": 119.83,
+        "stop_price": 118.63,
+        "take_price": 122.23,
+        "order_id": "8d0f40dc-34b3-457f-b3a0-ce69e529d738"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strongest insider cluster on the list buying into the dip \u2014 mean-reversion setup with smart-money cushion.",
+        "symbol": "CAT",
+        "qty": 31,
+        "entry_price_est": 986.91,
+        "stop_price": 977.04,
+        "take_price": 1006.65,
+        "order_id": "76f81412-631a-40ff-83ed-fedb19e6184a"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-06-23",
+    "ts": "2026-06-23T15:58:27.167771Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
