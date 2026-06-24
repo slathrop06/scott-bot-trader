@@ -6485,5 +6485,112 @@
     "ts": "2026-06-23T22:07:32.109644Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=28060388683"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-24",
+    "ts": "2026-06-24T15:35:47.739543Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=28110320740"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-24",
+    "ts": "2026-06-24T15:36:07.932290Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-24",
+    "ts": "2026-06-24T15:36:09.711784Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-06-24",
+    "ts": "2026-06-24T15:36:11.214294Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-06-24",
+    "ts": "2026-06-24T15:37:05.464445Z",
+    "equity_start": 93685.43,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "CVX",
+          "confidence": "high",
+          "catalyst": "Stock down 2.7% on DOJ probe headlines into Big Oil \u2014 but selling looks overdone against massive insider conviction; mean-reversion long off oversold open.",
+          "smart_money_signals": "Insider cluster buy with 11 buyers / 0 sells in 30d, House buy by Walberg, 74% analyst buy, alt-score 7/10",
+          "rationale": "Rare 11-insider cluster buy + congressional buy stacking against a one-day political headline is the cleanest smart-money setup on the board."
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "Down 3.4% on layoff headline but WSB chatter spiking 2.67x normal suggests retail dip-buying interest into the gap.",
+          "smart_money_signals": "Insider cluster buy 6 buyers in 30d, WSB 2.67x normal at rank #23, 82% analyst buy, alt-score 7/10",
+          "rationale": "Multiple smart-money signals stacking (insider cluster + WSB surge + analyst conviction) on a headline-driven dip."
+        },
+        {
+          "symbol": "SHOP",
+          "confidence": "medium",
+          "catalyst": "Premarket gap +4.4% with no contradicting news and strong relative strength.",
+          "smart_money_signals": "77.8% analyst bullish (10SB/32B), no insider or congressional selling",
+          "rationale": "Clean momentum gap with strong analyst conviction and no negative alt-data flags."
+        }
+      ],
+      "market_take": "Mixed tape \u2014 tech/retail gapping up while energy sells off on political headlines, creating dip-buy setups in heavily-insider-bought names.",
+      "skipped_movers": [
+        "AMZN: heavy insider + House selling against the gap \u2014 skip",
+        "XOM: DOJ probe headline + no smart-money support \u2014 skip",
+        "HD: 5% gap on a fluff retrospective article, no alt-data edge",
+        "INTC: Pelosi buy already priced in, analyst base only 32% bullish",
+        "NKE: 3 insider sells, weak analyst conviction",
+        "SBUX: insider selling, sub-50% analyst bullish",
+        "GE: House net selling, no catalyst",
+        "AAPL: insider selling offsets House cluster buy, weak WSB"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "failed",
+        "symbol": "CVX",
+        "error": "{\"base_price\":\"171.225\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Multiple smart-money signals stacking (insider cluster + WSB surge + analyst conviction) on a headline-driven dip.",
+        "symbol": "ORCL",
+        "qty": 193,
+        "entry_price_est": 160.055,
+        "stop_price": 158.45,
+        "take_price": 163.26,
+        "order_id": "75b7e2e4-c47a-4b9e-99a8-fb6e10030f35"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean momentum gap with strong analyst conviction and no negative alt-data flags.",
+        "symbol": "SHOP",
+        "qty": 277,
+        "entry_price_est": 111.565,
+        "stop_price": 110.45,
+        "take_price": 113.8,
+        "order_id": "ffe5d8d4-15f7-45bc-b244-7b412fe13b93"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-06-24",
+    "ts": "2026-06-24T15:37:05.625229Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
