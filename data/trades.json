@@ -6592,5 +6592,95 @@
     "ts": "2026-06-24T15:37:05.625229Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-24",
+    "ts": "2026-06-24T17:07:45.905784Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=28115915889"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-06-24",
+    "ts": "2026-06-24T17:08:07.676899Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-06-24",
+    "ts": "2026-06-24T17:08:57.869194Z",
+    "equity_start": 92960.36,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "HD",
+          "confidence": "high",
+          "catalyst": "Strong intraday breakout +4.95% on heavy relative volume with no negative news; clean momentum leader on a mixed tape",
+          "smart_money_signals": "63% analyst bullish (10SB/19B); no insider or congressional selling",
+          "rationale": "Best price-action setup on the board \u2014 green stock leading while market is mixed, with room to run +2% before resistance"
+        },
+        {
+          "symbol": "CVX",
+          "confidence": "medium",
+          "catalyst": "Pullback -2.15% on oil weakness but stacked smart-money support; mean reversion candidate",
+          "smart_money_signals": "Insider cluster buy with 11 distinct buyers / 0 sells (rare clean signal), House buy by Walberg, 74% analyst bullish",
+          "rationale": "Strongest smart-money stack in the list \u2014 11 insiders buying with zero selling is a high-conviction floor signal"
+        },
+        {
+          "symbol": "BA",
+          "confidence": "medium",
+          "catalyst": "Up +1.80% with constructive momentum, no negative news flow",
+          "smart_money_signals": "House buy by Walberg, 83.8% analyst bullish (13SB/18B), zero sells",
+          "rationale": "Clean green mover with broad analyst conviction and no contradicting signals"
+        }
+      ],
+      "market_take": "Mixed tape with AI names (ORCL, PLTR, AMD) under pressure while industrials and consumer names (HD, BA) show relative strength.",
+      "skipped_movers": [
+        "ORCL: -5.33% on layoff news despite good alt-data \u2014 falling knife, don't catch",
+        "SHOP: no news catalyst and only 1/10 alt-data signal",
+        "GE: House selling and no fresh catalyst",
+        "PLTR: down with House selling, conflicting signals",
+        "AMZN: heavy insider selling (30 shares sold) overrides Cathie Wood buy",
+        "SBUX: heavy insider selling, weak analyst conviction <50%",
+        "XOM: oil tape weak, no smart-money edge",
+        "NKE: heavy insider selling + earnings 6/30 + bearish analyst note",
+        "AMD: 30 insider sells outweighs House cluster buy",
+        "NFLX/DIS: red on the day, no catalyst",
+        "MS: red, no news catalyst despite insider buying"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "failed",
+        "symbol": "HD",
+        "error": "{\"base_price\":\"340.2989\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      },
+      {
+        "status": "failed",
+        "symbol": "CVX",
+        "error": "{\"base_price\":\"172.26\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean green mover with broad analyst conviction and no contradicting signals",
+        "symbol": "BA",
+        "qty": 554,
+        "entry_price_est": 221.36,
+        "stop_price": 219.15,
+        "take_price": 225.79,
+        "order_id": "190f0aa4-d2c8-41e5-83a1-3a35e31c1f92"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-06-24",
+    "ts": "2026-06-24T17:08:58.024093Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
