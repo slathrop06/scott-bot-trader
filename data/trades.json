@@ -6875,5 +6875,83 @@
     "ts": "2026-06-25T15:44:28.611001Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-25",
+    "ts": "2026-06-25T17:13:25.982507Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=28187635523"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-06-25",
+    "ts": "2026-06-25T17:13:45.385794Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-06-25",
+    "ts": "2026-06-25T17:14:32.560663Z",
+    "equity_start": 92569.91,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "GE",
+          "confidence": "medium",
+          "catalyst": "Relative strength \u2014 up +2.32% while entire market/tech tape is red (PLTR -5.8%, INTC -4.9%, AAPL -4.6%); no contradicting news",
+          "smart_money_signals": "Analysts 87.5% bullish (9 strong-buy / 19 buy / only 1 sell); lone House sell is a generic broad-market seller (Van Epps appears on 6+ names today, noise)",
+          "rationale": "Only green name on the board with strong analyst conviction and zero negative catalyst \u2014 classic relative-strength long into a weak tape"
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "Down -4.4% on sector-wide AI-capex selloff (sympathy with MSFT), not company-specific \u2014 oversold bounce setup",
+          "smart_money_signals": "Insider cluster buy with 6 distinct buyers in 30d (strongest insider signal on the board), 81.6% analyst bullish (17SB/23B), no congressional selling",
+          "rationale": "Best smart-money stack available \u2014 6-insider cluster buy + 82% analyst conviction with selloff driven by peer (MSFT) not ORCL fundamentals"
+        }
+      ],
+      "market_take": "Broad risk-off tape with AI/mega-cap tech leading declines on MSFT capex concerns and sticky PCE; lean toward relative strength and insider-backed oversold names.",
+      "skipped_movers": [
+        "PLTR: down 5.8% in confirmed downtrend (31% below 200SMA), House selling \u2014 falling knife despite insider buys",
+        "INTC: 32% analyst bullish (weakest), House net selling, no clean catalyst",
+        "AAPL: heavy insider selling + House selling, -4.6% with no positive catalyst",
+        "MSFT: 'worst month since 2000' headline, House net selling, insider sells outpace buys 6:5",
+        "NVDA: heavy insider selling (13 sells, 8 insiders) \u2014 disqualifier",
+        "META: heavy insider selling (12 sells), no positive catalyst",
+        "MCD: heavy insider selling 3:1, no catalyst",
+        "NKE: heavy insider selling, weak 49% analyst bullish, consumer-weakness narrative",
+        "AMZN: heavy insider + House selling, consumer-weakness headline",
+        "AVGO: weak signal score, no specific catalyst, drifting with tape",
+        "COST: no alt-data signal, consumer-weakness headline"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Only green name on the board with strong analyst conviction and zero negative catalyst \u2014 classic relative-strength long into a weak tape",
+        "symbol": "GE",
+        "qty": 260,
+        "entry_price_est": 376.125,
+        "stop_price": 372.36,
+        "take_price": 383.65,
+        "order_id": "126c96fb-380c-4537-adb4-914f8933d710"
+      },
+      {
+        "status": "failed",
+        "symbol": "ORCL",
+        "error": "{\"base_price\":\"152.24\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-06-25",
+    "ts": "2026-06-25T17:14:32.586668Z",
+    "status": "ok",
+    "note": "2 orders submitted"
   }
 ]
