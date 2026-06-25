@@ -6763,5 +6763,117 @@
     "ts": "2026-06-24T21:51:10.935338Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=28131943968"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-25",
+    "ts": "2026-06-25T15:43:17.920970Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=28182251439"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-25",
+    "ts": "2026-06-25T15:43:37.709877Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-25",
+    "ts": "2026-06-25T15:43:39.381766Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-06-25",
+    "ts": "2026-06-25T15:43:41.021420Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-06-25",
+    "ts": "2026-06-25T15:44:28.587039Z",
+    "equity_start": 92073.8,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "CAT",
+          "confidence": "high",
+          "catalyst": "Gapping up +2.99% while market/AI names sell off \u2014 clear relative strength with no contradicting news",
+          "smart_money_signals": "Insider cluster buy: 8 insiders bought, 0 sold in last 30d \u2014 exceptionally clean signal",
+          "rationale": "Pure cluster-buy plus green tape on a red day is the cleanest risk/reward on the board."
+        },
+        {
+          "symbol": "MS",
+          "confidence": "medium",
+          "catalyst": "Relative strength +1.66% while financials/market mixed, no negative news",
+          "smart_money_signals": "Insider cluster buy: 12 insiders bought (17 buys), only 1 sell \u2014 17:1 buy/sell ratio",
+          "rationale": "Massive insider conviction stacking with positive price action makes this a low-risk continuation setup."
+        },
+        {
+          "symbol": "AMD",
+          "confidence": "medium",
+          "catalyst": "Micron blowout earnings driving AI-chip premarket bid; AMD was up 4% premarket on the catalyst before broader fade",
+          "smart_money_signals": "House net buying (Cisneros 2 buys), 81% analyst buy, WSB chatter 3.43x \u2014 insider selling is offset by routine exec dispositions",
+          "rationale": "Specific AI-spend catalyst plus House buying and strong analyst support; tight 1% stop limits downside if AI weakness persists."
+        }
+      ],
+      "market_take": "Risk-off in AI/mega-cap tech with rotation into industrials and financials \u2014 favor relative-strength names with clean insider signals.",
+      "skipped_movers": [
+        "INTC: House net selling and 32% analyst bullish \u2014 fundamentals weak despite gap down",
+        "AAPL: heavy insider selling, House selling, alt-data score -1",
+        "NVDA: heavy insider selling (13 sells by 8 insiders) overrides analyst bullishness",
+        "MCD: heavy insider selling and price down",
+        "NKE: insider selling, sub-50% analyst bullish, weak tape",
+        "GE: gapping up but House selling and zero insider buying \u2014 thin signal",
+        "PLTR: cluster buy offset by -5.5% gap down and House selling \u2014 falling knife"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Pure cluster-buy plus green tape on a red day is the cleanest risk/reward on the board.",
+        "symbol": "CAT",
+        "qty": 29,
+        "entry_price_est": 1035.3249999999998,
+        "stop_price": 1024.97,
+        "take_price": 1056.03,
+        "order_id": "977fc4b2-86c2-4c7b-a1a3-b153b9c402cc"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Massive insider conviction stacking with positive price action makes this a low-risk continuation setup.",
+        "symbol": "MS",
+        "qty": 135,
+        "entry_price_est": 224.71,
+        "stop_price": 222.46,
+        "take_price": 229.2,
+        "order_id": "479d2664-77c1-461d-b39b-ec553002ce9c"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Specific AI-spend catalyst plus House buying and strong analyst support; tight 1% stop limits downside if AI weakness persists.",
+        "symbol": "AMD",
+        "qty": 58,
+        "entry_price_est": 522.155,
+        "stop_price": 516.93,
+        "take_price": 532.6,
+        "order_id": "31f3c258-b2d9-4c38-87a8-ccaa4bb0f9d2"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-06-25",
+    "ts": "2026-06-25T15:44:28.611001Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
