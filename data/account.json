@@ -1,28 +1,28 @@
 {
-  "ts": "2026-06-25T17:14:32.585235Z",
-  "equity": 92574.12,
+  "ts": "2026-06-25T18:08:32.587734Z",
+  "equity": 92281.51,
   "last_equity": 92489.3,
-  "cash": 31552.89,
-  "buying_power": 199981.78,
-  "all_time_return_pct": -7.4259,
+  "cash": 31228.97,
+  "buying_power": 295862.99,
+  "all_time_return_pct": -7.7185,
   "positions": [
     {
       "symbol": "AMD",
       "qty": 58,
       "avg_entry_price": 519.8228,
-      "current_price": 526.6851,
-      "market_value": 30547.74,
-      "unrealized_pl": 398.02,
-      "unrealized_pl_pct": 1.32
+      "current_price": 528.42,
+      "market_value": 30648.36,
+      "unrealized_pl": 498.64,
+      "unrealized_pl_pct": 1.654
     },
     {
       "symbol": "CAT",
       "qty": 29,
       "avg_entry_price": 1038.41,
-      "current_price": 1050.81,
-      "market_value": 30473.49,
-      "unrealized_pl": 359.6,
-      "unrealized_pl_pct": 1.194
+      "current_price": 1048.42,
+      "market_value": 30404.18,
+      "unrealized_pl": 290.29,
+      "unrealized_pl_pct": 0.964
     }
   ]
 }
