@@ -7179,5 +7179,92 @@
     "ts": "2026-06-26T15:29:40.073962Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-06-26",
+    "ts": "2026-06-26T17:03:25.418862Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=28253091701"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-06-26",
+    "ts": "2026-06-26T17:03:50.543686Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-06-26",
+    "ts": "2026-06-26T17:04:44.948088Z",
+    "equity_start": 92847.77,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "MSFT",
+          "confidence": "high",
+          "catalyst": "Up +4% intraday rebounding from 'Maleficent 7' / worst-month narrative \u2014 contrarian bounce on heavily oversold mega-cap",
+          "smart_money_signals": "Insider cluster buy (5 buyers in 30d), #1 WSB ticker (805 mentions, 1.31x), 92.4% analyst bullish (23SB/38B)",
+          "rationale": "Multi-signal stack: insider cluster + top WSB + near-unanimous analyst conviction aligning with a strong relief bounce off bear-narrative lows"
+        },
+        {
+          "symbol": "SHOP",
+          "confidence": "medium",
+          "catalyst": "Strongest intraday gainer +5.23% on heavy volume with no contradicting news \u2014 clean relative strength breakout",
+          "smart_money_signals": "77.8% analyst bullish (10SB/32B), no insider selling, no congressional selling",
+          "rationale": "Clean momentum leader of the day with analyst support and no red flags \u2014 riding the tape"
+        },
+        {
+          "symbol": "MA",
+          "confidence": "medium",
+          "catalyst": "Up +2.3% on positive payments-sector sentiment (Circle/Nomura stablecoin partnership tailwind)",
+          "smart_money_signals": "90.2% analyst bullish (13SB/33B/5H, zero sells)",
+          "rationale": "Strong analyst conviction plus sector catalyst; the single insider sale is too small to disqualify a high-quality name"
+        }
+      ],
+      "market_take": "Mega-cap tech bouncing intraday after a brutal June; momentum + smart-money stacks favor select longs.",
+      "skipped_movers": [
+        "CAT: -4% price action contradicts insider cluster buy \u2014 don't catch falling knife",
+        "MS: -3.8% down despite insider cluster \u2014 wait for price confirmation",
+        "GS: -3.5% with zero alt-data support",
+        "TSLA: mixed signals, weak analyst bullishness (48%)",
+        "ADBE: House selling, only 42% analyst bullish",
+        "AMZN: heavy insider + House selling despite price up",
+        "SBUX: heavy insider selling",
+        "AVGO: price down on profit-taking, weak alt-data"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Multi-signal stack: insider cluster + top WSB + near-unanimous analyst conviction aligning with a strong relief bounce off bear-narrative lows",
+        "symbol": "MSFT",
+        "qty": 232,
+        "entry_price_est": 370.06,
+        "stop_price": 366.36,
+        "take_price": 377.46,
+        "order_id": "45bbeeaf-9948-40fb-9a1d-71f81fda00be"
+      },
+      {
+        "status": "failed",
+        "symbol": "SHOP",
+        "error": "{\"code\":40310000,\"cost_basis\":\"86134.66\",\"effective_buying_power\":\"175249.36\",\"message\":\"insufficient regt buying power\",\"regt_buying_power\":\"7897.66\"}"
+      },
+      {
+        "status": "failed",
+        "symbol": "MA",
+        "error": "{\"base_price\":\"502.435\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-06-26",
+    "ts": "2026-06-26T17:04:45.096454Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]

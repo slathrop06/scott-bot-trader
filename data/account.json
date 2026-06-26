@@ -1,9 +1,37 @@
 {
-  "ts": "2026-06-26T15:22:34.931457Z",
-  "equity": 92765.17,
+  "ts": "2026-06-26T17:04:45.094855Z",
+  "equity": 92875.58,
   "last_equity": 92765.17,
-  "cash": 92765.17,
-  "buying_power": 371060.68,
-  "all_time_return_pct": -7.2348,
-  "positions": []
+  "cash": 878.33,
+  "buying_power": 175249.36,
+  "all_time_return_pct": -7.1244,
+  "positions": [
+    {
+      "symbol": "CRM",
+      "qty": 197,
+      "avg_entry_price": 156.15,
+      "current_price": 156.9399,
+      "market_value": 30917.16,
+      "unrealized_pl": 155.61,
+      "unrealized_pl_pct": 0.506
+    },
+    {
+      "symbol": "NFLX",
+      "qty": 409,
+      "avg_entry_price": 74.75,
+      "current_price": 74.295,
+      "market_value": 30386.65,
+      "unrealized_pl": -186.09,
+      "unrealized_pl_pct": -0.609
+    },
+    {
+      "symbol": "PLTR",
+      "qty": 271,
+      "avg_entry_price": 112.74,
+      "current_price": 113.2599,
+      "market_value": 30693.43,
+      "unrealized_pl": 140.89,
+      "unrealized_pl_pct": 0.461
+    }
+  ]
 }
