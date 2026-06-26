@@ -1,28 +1,19 @@
 {
-  "ts": "2026-06-26T19:18:05.972058Z",
-  "equity": 93174.8,
+  "ts": "2026-06-26T21:05:45.864187Z",
+  "equity": 92969.91,
   "last_equity": 92765.17,
-  "cash": -23655.61,
-  "buying_power": 232502.7,
-  "all_time_return_pct": -6.8252,
+  "cash": 6563.6,
+  "buying_power": 268192.07,
+  "all_time_return_pct": -7.0301,
   "positions": [
     {
       "symbol": "MSFT",
       "qty": 232,
       "avg_entry_price": 370.07,
-      "current_price": 371.4,
-      "market_value": 86164.8,
-      "unrealized_pl": 308.56,
-      "unrealized_pl_pct": 0.359
-    },
-    {
-      "symbol": "PLTR",
-      "qty": 271,
-      "avg_entry_price": 112.74,
-      "current_price": 113.1401,
-      "market_value": 30660.97,
-      "unrealized_pl": 108.43,
-      "unrealized_pl_pct": 0.355
+      "current_price": 372.441,
+      "market_value": 86406.31,
+      "unrealized_pl": 550.07,
+      "unrealized_pl_pct": 0.641
     }
   ]
 }
