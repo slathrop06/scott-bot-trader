@@ -1,19 +1,9 @@
 {
-  "ts": "2026-06-26T22:44:28.403734Z",
-  "equity": 92875.14,
-  "last_equity": 92765.17,
-  "cash": 6563.6,
-  "buying_power": 267926.71,
-  "all_time_return_pct": -7.1249,
-  "positions": [
-    {
-      "symbol": "MSFT",
-      "qty": 232,
-      "avg_entry_price": 370.07,
-      "current_price": 372.0325,
-      "market_value": 86311.54,
-      "unrealized_pl": 455.3,
-      "unrealized_pl_pct": 0.53
-    }
-  ]
+  "ts": "2026-06-29T16:38:06.054863Z",
+  "equity": 94340.44,
+  "last_equity": 93092.48,
+  "cash": 94340.44,
+  "buying_power": 377361.76,
+  "all_time_return_pct": -5.6596,
+  "positions": []
 }
