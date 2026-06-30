@@ -1,9 +1,9 @@
 {
-  "ts": "2026-06-29T22:36:24.756499Z",
-  "equity": 94340.44,
-  "last_equity": 93092.48,
-  "cash": 94340.44,
-  "buying_power": 377361.76,
+  "ts": "2026-06-30T15:25:45.127286Z",
+  "equity": 94340.39,
+  "last_equity": 94340.39,
+  "cash": 94340.39,
+  "buying_power": 377361.56,
   "all_time_return_pct": -5.6596,
   "positions": []
 }
