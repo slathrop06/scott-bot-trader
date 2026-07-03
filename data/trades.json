@@ -7901,5 +7901,26 @@
     "ts": "2026-07-03T15:16:59.003469Z",
     "status": "blocked",
     "note": "Market is closed."
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-03",
+    "ts": "2026-07-03T16:38:09.915242Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=28673056963"
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-07-03",
+    "ts": "2026-07-03T16:38:29.683267Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-07-03",
+    "ts": "2026-07-03T16:38:29.745929Z",
+    "status": "blocked",
+    "note": "Market is closed."
   }
 ]
