@@ -1,9 +1,19 @@
 {
-  "ts": "2026-07-06T16:19:55.500193Z",
-  "equity": 94340.39,
+  "ts": "2026-07-06T17:47:43.720635Z",
+  "equity": 94026.63,
   "last_equity": 94340.39,
-  "cash": 94340.39,
-  "buying_power": 377361.56,
-  "all_time_return_pct": -5.6596,
-  "positions": []
+  "cash": 62943.31,
+  "buying_power": 3958.84,
+  "all_time_return_pct": -5.9734,
+  "positions": [
+    {
+      "symbol": "NFLX",
+      "qty": 408,
+      "avg_entry_price": 76.26,
+      "current_price": 76.1846,
+      "market_value": 31083.32,
+      "unrealized_pl": -30.76,
+      "unrealized_pl_pct": -0.099
+    }
+  ]
 }

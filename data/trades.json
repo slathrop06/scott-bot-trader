@@ -8124,5 +8124,103 @@
     "ts": "2026-07-06T16:27:12.326492Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-06",
+    "ts": "2026-07-06T17:46:41.410516Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=28811578485"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-06",
+    "ts": "2026-07-06T17:47:00.818163Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-06",
+    "ts": "2026-07-06T17:47:43.692642Z",
+    "equity_start": 94028.83,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AVGO",
+          "confidence": "high",
+          "catalyst": "Apple chip deal extension to 2031 reported today; stock +3.68% on chip rally with fresh product/contract news",
+          "smart_money_signals": "92.9% analyst bullish (17SB/35B/4H/0S), WSB chatter 4.75x normal \u2014 insider selling exists but is offset by overwhelming analyst conviction and concrete deal catalyst",
+          "rationale": "Concrete contract-extension catalyst plus near-unanimous analyst conviction makes this the cleanest chip-rally continuation setup."
+        },
+        {
+          "symbol": "AMD",
+          "confidence": "medium",
+          "catalyst": "Chip rally continuation +6.55% intraday; BofA calls semi selloff a bear trap and names AMD-adjacent AI winners",
+          "smart_money_signals": "80.7% analyst bullish, WSB rank #8 with 2.78x chatter, House buy from Cisneros \u2014 insider selling is a caveat but analyst + retail + congressional align",
+          "rationale": "Strong price action on a sector-wide catalyst with confirming smart-money breadth despite insider profit-taking."
+        },
+        {
+          "symbol": "DIS",
+          "confidence": "medium",
+          "catalyst": "Insider cluster buy (3 buyers in 30d) \u2014 rare positive signal on a down day, contrarian setup",
+          "smart_money_signals": "Insider cluster_buy=True with 3 distinct buyers, 88.9% analyst bullish (11SB/21B/3H/1S)",
+          "rationale": "Best pure smart-money setup on the board \u2014 cluster insider buying plus 89% analyst conviction on a mild pullback offers asymmetric bounce potential."
+        }
+      ],
+      "market_take": "Risk-on rotation into semis and mega-cap tech; chip rally is the dominant tape.",
+      "skipped_movers": [
+        "TSLA: analyst conviction only 48% and no concrete catalyst beyond sector rally",
+        "SBUX: down move with insider selling",
+        "NKE: down with insider selling, no catalyst",
+        "INTC: House net selling and only 32% analyst bullish",
+        "PLTR: heavy insider selling (6 sells, 2 insiders)",
+        "ORCL: heavy insider selling (11 sells) offsets recovery narrative",
+        "BA/MS/GS/BAC/HD: no meaningful alt-data edge to differentiate"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Concrete contract-extension catalyst plus near-unanimous analyst conviction makes this the cleanest chip-rally continuation setup.",
+        "symbol": "AVGO",
+        "qty": 296,
+        "entry_price_est": 377.62,
+        "stop_price": 373.84,
+        "take_price": 385.17,
+        "order_id": "f2418e94-4c9b-4135-8eab-d582746f697e"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strong price action on a sector-wide catalyst with confirming smart-money breadth despite insider profit-taking.",
+        "symbol": "AMD",
+        "qty": 202,
+        "entry_price_est": 552.405,
+        "stop_price": 546.88,
+        "take_price": 563.45,
+        "order_id": "a8c11701-33ad-4dab-8ec9-5bf85a910250"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Best pure smart-money setup on the board \u2014 cluster insider buying plus 89% analyst conviction on a mild pullback offers asymmetric bounce potential.",
+        "symbol": "DIS",
+        "qty": 1146,
+        "entry_price_est": 97.47999999999999,
+        "stop_price": 96.51,
+        "take_price": 99.43,
+        "order_id": "5a71dc46-d450-4573-ad5e-3ce075a6095e"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-06",
+    "ts": "2026-07-06T17:47:43.722064Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
