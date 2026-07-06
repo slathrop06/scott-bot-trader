@@ -8011,5 +8011,118 @@
     "ts": "2026-07-03T22:27:33.974179Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=28685995944"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-06",
+    "ts": "2026-07-06T16:26:04.498055Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=28806727515"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-06",
+    "ts": "2026-07-06T16:26:24.950314Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-06",
+    "ts": "2026-07-06T16:26:26.878252Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-06",
+    "ts": "2026-07-06T16:26:28.281339Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-06",
+    "ts": "2026-07-06T16:27:12.286182Z",
+    "equity_start": 94340.39,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMD",
+          "confidence": "high",
+          "catalyst": "+8.34% premarket gap on BofA 'bear trap' call naming AMD as AI buildout winner; eyeing $546 resistance breakout with strong technical uptrend",
+          "smart_money_signals": "81% analyst buy (14SB/32B), WSB rank #7 at 2.82x normal chatter, House buy by Cisneros \u2014 insider selling is the offset but analyst/social/catalyst stack dominates",
+          "rationale": "Strongest catalyst-plus-conviction stack of the tape with clear technical trigger."
+        },
+        {
+          "symbol": "AVGO",
+          "confidence": "medium",
+          "catalyst": "Gap up +3.71% on Apple chip deal extension through 2031 plus record $14.3B tech fund inflows",
+          "smart_money_signals": "93% analyst buy (17SB/35B \u2014 highest bullish ratio in the tape), WSB chatter 3.8x normal",
+          "rationale": "Concrete revenue-visibility catalyst with best-in-tape analyst conviction; insider selling noted but overwhelmed by fundamental news."
+        },
+        {
+          "symbol": "NFLX",
+          "confidence": "low",
+          "catalyst": "CNBC Final Trades pick by Joshua Brown; modestly red but relative-strength setup if broader tape firms",
+          "smart_money_signals": "Net insider BUYING (6 buys vs 2 sells \u2014 rare positive on this tape), WSB 4.2x normal, 78% analyst buy",
+          "rationale": "Only name with net insider buying \u2014 smart-money edge alone justifies a small position."
+        }
+      ],
+      "market_take": "Risk-on tech bid post-holiday with AI/semis leading on BofA bear-trap call and record tech inflows.",
+      "skipped_movers": [
+        "TSLA: analyst bullishness only 48%, no concrete catalyst, WSB-only signal",
+        "INTC: House net selling 2:1, weak 32% analyst buy",
+        "PLTR: heavy insider selling, no fresh catalyst",
+        "MSFT: red premarket, House net selling, insider selling",
+        "NKE: down on tape, heavy insider selling",
+        "WMT: down, 10 insider sells across 5 insiders",
+        "SBUX/HD: red with no catalyst",
+        "MS/GS/BA/V: no meaningful alt-data edge or catalyst"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Strongest catalyst-plus-conviction stack of the tape with clear technical trigger.",
+        "symbol": "AMD",
+        "qty": 55,
+        "entry_price_est": 563.505,
+        "stop_price": 557.87,
+        "take_price": 574.78,
+        "order_id": "dc4bdba1-e2bf-4a4d-96ae-f8f0fa7a82b9"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Concrete revenue-visibility catalyst with best-in-tape analyst conviction; insider selling noted but overwhelmed by fundamental news.",
+        "symbol": "AVGO",
+        "qty": 84,
+        "entry_price_est": 368.17499999999995,
+        "stop_price": 364.49,
+        "take_price": 375.54,
+        "order_id": "fa378b19-f02c-49de-a9bd-febdef4cf708"
+      },
+      {
+        "status": "submitted",
+        "confidence": "low",
+        "rationale": "Only name with net insider buying \u2014 smart-money edge alone justifies a small position.",
+        "symbol": "NFLX",
+        "qty": 408,
+        "entry_price_est": 76.255,
+        "stop_price": 75.49,
+        "take_price": 77.78,
+        "order_id": "4f0934f7-31a9-4e9a-a4b4-5b9dc3a82aae"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-06",
+    "ts": "2026-07-06T16:27:12.326492Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
