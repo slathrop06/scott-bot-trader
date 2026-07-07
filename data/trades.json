@@ -8398,5 +8398,42 @@
     "ts": "2026-07-07T19:21:20.638125Z",
     "status": "blocked",
     "note": "Daily loss kill-switch: down -6.13% today (limit -5.0%)."
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-07",
+    "ts": "2026-07-07T20:42:54.576651Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=28897306603"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-07-07",
+    "ts": "2026-07-07T20:43:18.987035Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-07-07",
+    "ts": "2026-07-07T20:43:19.465886Z",
+    "equity_end": -160375.89,
+    "daily_pnl_usd": -253359.82,
+    "daily_pct": -272.477,
+    "flatten": {
+      "closed": [
+        "AMD",
+        "DIS",
+        "NFLX"
+      ],
+      "raw_response_count": 3
+    }
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-07-07",
+    "ts": "2026-07-07T20:43:19.696828Z",
+    "status": "ok",
+    "note": "closed 3 positions, 0 round-trips"
   }
 ]
