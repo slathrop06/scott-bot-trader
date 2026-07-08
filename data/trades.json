@@ -8542,5 +8542,90 @@
     "ts": "2026-07-08T15:29:10.624638Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-08",
+    "ts": "2026-07-08T16:42:51.707304Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=28959666096"
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-07-08",
+    "ts": "2026-07-08T16:43:19.582896Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-08",
+    "ts": "2026-07-08T16:44:07.322646Z",
+    "equity_start": 87841.06,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AVGO",
+          "confidence": "high",
+          "catalyst": "Apple announces $30B+ multiyear Broadcom chip deal; UBS calls recent pullback a buying opportunity \u2014 stock gapping +6.67% on huge volume (16.7M)",
+          "smart_money_signals": "91.2% analyst bullish (17 SB / 35 B), WSB chatter 2.39x normal at rank #15 \u2014 insider selling exists but predates this catalyst",
+          "rationale": "Concrete mega-cap catalyst with confirmed price action and analyst conviction \u2014 cleanest momentum setup on the board"
+        },
+        {
+          "symbol": "MA",
+          "confidence": "medium",
+          "catalyst": "Oversold -2.36% pullback on no news; buying the dip in a high-quality name with smart-money accumulation",
+          "smart_money_signals": "Insider cluster buy with 10 distinct buyers in 30d (5:1 buy/sell ratio), 90.4% analyst bullish (13 SB / 34 B / 0 sells)",
+          "rationale": "Textbook smart-money setup \u2014 10-insider cluster buy is a rare high-conviction signal, and the dip offers favorable entry for a +2% bounce"
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "Down -2.09% on no news, setting up a mean-reversion long into an insider-supported name",
+          "smart_money_signals": "Insider cluster buy with 5 buyers (9 buys), 75.9% analyst bullish (13 SB / 31 B)",
+          "rationale": "Cluster buy from 5 insiders backs a bounce thesis on an unwarranted pullback with no negative catalyst"
+        }
+      ],
+      "market_take": "Risk-off tape on Iran ceasefire collapse \u2014 favor names with idiosyncratic catalysts (AVGO) or insider conviction (MA, CRM) over broad-market beta.",
+      "skipped_movers": [
+        "PLTR: negative catalyst (subpoena fears) + insider selling \u2014 skip",
+        "TSLA: 0/10 alt-data, 48% analyst bullish, no catalyst \u2014 skip",
+        "NVDA: heavy insider selling (8 sells, 6 insiders) + House selling despite green tape \u2014 skip",
+        "META: heavy insider selling + House selling into decline \u2014 skip",
+        "GE/HD/BA/MS/BAC/XOM/MCD: pullbacks without meaningful smart-money edge or catalyst",
+        "SHOP: down on no news, only signal is analyst rating \u2014 insufficient"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Concrete mega-cap catalyst with confirmed price action and analyst conviction \u2014 cleanest momentum setup on the board",
+        "symbol": "AVGO",
+        "qty": 294,
+        "entry_price_est": 393.86,
+        "stop_price": 389.92,
+        "take_price": 401.74,
+        "order_id": "a90c7f05-c3bf-4efe-84d8-f936051edb72"
+      },
+      {
+        "status": "failed",
+        "symbol": "MA",
+        "error": "{\"base_price\":\"519.05\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      },
+      {
+        "status": "failed",
+        "symbol": "CRM",
+        "error": "{\"base_price\":\"165.84\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-07-08",
+    "ts": "2026-07-08T16:44:07.479703Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
