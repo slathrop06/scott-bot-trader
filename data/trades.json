@@ -8442,5 +8442,105 @@
     "ts": "2026-07-07T22:00:40.712113Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=28901654521"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-08",
+    "ts": "2026-07-08T15:28:03.287514Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=28954650944"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-08",
+    "ts": "2026-07-08T15:28:24.489826Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-08",
+    "ts": "2026-07-08T15:28:26.575393Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-08",
+    "ts": "2026-07-08T15:28:28.022585Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-08",
+    "ts": "2026-07-08T15:29:10.589863Z",
+    "equity_start": 87287.54,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AVGO",
+          "confidence": "high",
+          "catalyst": "Apple $30B multiyear Broadcom deal announced overnight; +4.77% premarket gap on 13M volume",
+          "smart_money_signals": "91.2% analyst bullish (17SB/35B/5H); WSB rank #18 with 1.6x mention surge",
+          "rationale": "Only stock in the list gapping UP on a concrete, quantified catalyst \u2014 clean momentum long."
+        },
+        {
+          "symbol": "MA",
+          "confidence": "medium",
+          "catalyst": "Down -2.24% with broader market weakness, no negative news \u2014 mean-reversion setup on a blue chip",
+          "smart_money_signals": "Insider cluster buy: 10 buyers vs 2 sellers in 30d; 90.4% analyst bullish (13SB/34B/5H/0S/0SS)",
+          "rationale": "Rare 10-insider cluster buy + near-unanimous analyst conviction on a weak-tape pullback."
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "-2.05% pullback with no negative news",
+          "smart_money_signals": "Insider cluster buy (5 buyers); 75.9% analyst bullish (13SB/31B); House-agnostic",
+          "rationale": "Cluster insider buying at these levels supports a bounce entry on a broad-market red day."
+        }
+      ],
+      "market_take": "Broad risk-off tape with chip/tech selling, but AVGO stands out with a hard catalyst while cluster-buy names like MA/CRM offer mean-reversion setups.",
+      "skipped_movers": [
+        "PLTR: heavy insider selling (6 sells, 0 buys) + Thiel headline risk",
+        "META: heavy insider selling + House net selling despite 89% analyst buy",
+        "AMD: 29 insider sells vs 1 buy \u2014 Cathie Wood also trimming",
+        "TSLA: mixed insider activity, only 48% analyst bullish, no clear catalyst",
+        "INTC: only 32.7% analyst bullish, House net selling, negative price momentum article",
+        "SHOP: -5.28% gap down with no news \u2014 unexplained weakness is a red flag",
+        "BA/GE/HD/BAC/GS/MS: no differentiating catalyst or smart-money edge"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Only stock in the list gapping UP on a concrete, quantified catalyst \u2014 clean momentum long.",
+        "symbol": "AVGO",
+        "qty": 74,
+        "entry_price_est": 385.32,
+        "stop_price": 381.47,
+        "take_price": 393.03,
+        "order_id": "4da02284-ca79-4174-a120-b85560321530"
+      },
+      {
+        "status": "failed",
+        "symbol": "MA",
+        "error": "{\"base_price\":\"520.055\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      },
+      {
+        "status": "failed",
+        "symbol": "CRM",
+        "error": "{\"base_price\":\"165.84\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-08",
+    "ts": "2026-07-08T15:29:10.624638Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
