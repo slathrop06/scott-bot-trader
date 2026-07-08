@@ -8627,5 +8627,96 @@
     "ts": "2026-07-08T16:44:07.479703Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-08",
+    "ts": "2026-07-08T18:08:59.635917Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=28965031478"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-08",
+    "ts": "2026-07-08T18:09:20.595709Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-08",
+    "ts": "2026-07-08T18:10:06.211884Z",
+    "equity_start": 86903.2,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AVGO",
+          "confidence": "high",
+          "catalyst": "Apple announced $30B+ multiyear chip deal with Broadcom; UBS calls the pullback a buying opportunity; stock gapping +6% on massive volume (19.9M)",
+          "smart_money_signals": "91.2% analyst bullish (17 SB / 35 B), WSB chatter 2.61x normal at rank #15 \u2014 momentum crowd piling in on the news",
+          "rationale": "Concrete, specific mega-cap catalyst with confirming price action and volume \u2014 best A-grade setup on the board despite insider selling noise."
+        },
+        {
+          "symbol": "GOOGL",
+          "confidence": "medium",
+          "catalyst": "Down only ~2% on soft tape while carrying an insider cluster buy \u2014 a relative-strength dip-buy setup with spinoff-value narrative in the news",
+          "smart_money_signals": "Insider cluster buy: 13 distinct insiders, 39 buys vs 13 sells (30d); 87% analyst bullish (18 SB / 42 B)",
+          "rationale": "Strong smart-money stack (rare 13-insider cluster) into a modest pullback offers favorable risk/reward for a bracket bounce."
+        },
+        {
+          "symbol": "MA",
+          "confidence": "medium",
+          "catalyst": "Oversold -2.4% pullback with no negative news \u2014 mean reversion setup on a quality name",
+          "smart_money_signals": "Insider cluster buy: 10 buyers, 10 buys vs 2 sells (30d); 90.4% analyst bullish (13 SB / 34 B / 0 S)",
+          "rationale": "Clean smart-money-only setup: 10-insider cluster + 90% analyst conviction with no offsetting negative catalyst."
+        }
+      ],
+      "market_take": "Risk-off tape on Iran ceasefire wobble and Fed minutes \u2014 leaders are red, but AVGO stands out on a specific mega-catalyst.",
+      "skipped_movers": [
+        "NVDA: heavy insider selling (8 sells/6 insiders) + House selling despite bullish analyst view",
+        "PLTR: heavy insider selling and political subpoena headline risk",
+        "TSLA: analyst conviction only 48%, no catalyst, weak signals",
+        "META: heavy insider selling + House selling, no offsetting catalyst",
+        "SHOP: down 3.4% with no news and no smart-money support",
+        "BA/HD/BAC/JPM/XOM/MS/GE: weak or negative signals, no clear catalyst"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Concrete, specific mega-cap catalyst with confirming price action and volume \u2014 best A-grade setup on the board despite insider selling noise.",
+        "symbol": "AVGO",
+        "qty": 294,
+        "entry_price_est": 389.625,
+        "stop_price": 385.73,
+        "take_price": 397.42,
+        "order_id": "b37ab4a2-d55e-442d-9e6b-6472a05654eb"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strong smart-money stack (rare 13-insider cluster) into a modest pullback offers favorable risk/reward for a bracket bounce.",
+        "symbol": "GOOGL",
+        "qty": 319,
+        "entry_price_est": 359.51,
+        "stop_price": 355.91,
+        "take_price": 366.7,
+        "order_id": "e351a1c0-60fd-4d3e-a976-cdb849938fb1"
+      },
+      {
+        "status": "failed",
+        "symbol": "MA",
+        "error": "{\"base_price\":\"519.16\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-08",
+    "ts": "2026-07-08T18:10:06.242935Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
