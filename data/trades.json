@@ -8725,5 +8725,73 @@
     "ts": "2026-07-08T19:55:16.449384Z",
     "status": "intraday_workflow_started",
     "note": "event=schedule run_id=28971446109"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-08",
+    "ts": "2026-07-08T20:14:33.866919Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=28972604973"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-07-08",
+    "ts": "2026-07-08T20:14:55.734510Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-07-08",
+    "ts": "2026-07-08T20:14:56.125929Z",
+    "equity_end": 87076.38,
+    "daily_pnl_usd": -211.16,
+    "daily_pct": -0.2419,
+    "flatten": {
+      "closed": [
+        "AVGO",
+        "GOOGL"
+      ],
+      "raw_response_count": 2
+    }
+  },
+  {
+    "type": "trade",
+    "date": "2026-07-08",
+    "ts": "2026-07-08T20:14:56.204596Z",
+    "symbol": "AVGO",
+    "qty": 74,
+    "entry_price": 385.58,
+    "entry_ts": "2026-07-08T15:29:12.763243Z",
+    "entry_order_id": "4da02284-ca79-4174-a120-b85560321530",
+    "exit_price": 393.06,
+    "exit_ts": "2026-07-08T16:26:46.852065Z",
+    "exit_order_id": "4ca58c36-bad5-4bab-8e23-bfcea2d0b74f",
+    "exit_reason": "bracket",
+    "pnl_usd": 553.52,
+    "pnl_pct": 1.9399
+  },
+  {
+    "type": "trade",
+    "date": "2026-07-08",
+    "ts": "2026-07-08T20:14:56.204596Z",
+    "symbol": "AVGO",
+    "qty": 294,
+    "entry_price": 393.15,
+    "entry_ts": "2026-07-08T16:44:07.503499Z",
+    "entry_order_id": "a90c7f05-c3bf-4efe-84d8-f936051edb72",
+    "exit_price": 389.96,
+    "exit_ts": "2026-07-08T17:46:07.069479Z",
+    "exit_order_id": "6b1a8edc-7958-4fca-bc39-1f1338adcd3d",
+    "exit_reason": "bracket",
+    "pnl_usd": -937.86,
+    "pnl_pct": -0.8114
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-07-08",
+    "ts": "2026-07-08T20:14:56.325615Z",
+    "status": "ok",
+    "note": "closed 2 positions, 2 round-trips"
   }
 ]
