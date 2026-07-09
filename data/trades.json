@@ -8919,5 +8919,97 @@
     "ts": "2026-07-09T16:07:32.135873Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-09",
+    "ts": "2026-07-09T17:23:23.000990Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=29036859152"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-09",
+    "ts": "2026-07-09T17:23:44.531961Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-09",
+    "ts": "2026-07-09T17:24:38.418324Z",
+    "equity_start": 89393.48,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "SHOP",
+          "confidence": "medium",
+          "catalyst": "Steady intraday gap up +2.09% on no negative news, riding market strength with clean tape and no contradicting signals",
+          "smart_money_signals": "77.8% analyst bullish (10SB/32B/11H), zero insider selling, ALT score +1",
+          "rationale": "Cleanest setup on the board \u2014 analyst conviction plus positive price action with no disqualifiers"
+        },
+        {
+          "symbol": "INTC",
+          "confidence": "medium",
+          "catalyst": "Semiconductor rotation driving +2.63% on massive 63M volume; long-term uptrend intact (+392% YoY)",
+          "smart_money_signals": "Nancy Pelosi (House) buy in last 21d, strong volume confirmation",
+          "rationale": "Momentum + congressional smart-money buy with a real news tailwind from semi rotation"
+        },
+        {
+          "symbol": "GS",
+          "confidence": "low",
+          "catalyst": "Strong relative strength +2.96% on financials rotation, breaking to new highs with no negative news",
+          "smart_money_signals": "Clean alt-data (0 score, no selling), price action leading the tape",
+          "rationale": "Pure momentum play in a strong sector with no red flags on smart-money side"
+        }
+      ],
+      "market_take": "Mixed tape with rotation into semis and financials while high-multiple AI names (PLTR, CRM) sell off on rate concerns.",
+      "skipped_movers": [
+        "ORCL: 11 insider sells despite pop \u2014 heavy distribution skip",
+        "SBUX: no news catalyst and insider selling, only 48.9% analyst bullish",
+        "PLTR: 8 insider sells (3 insiders) plus negative news on rate risk, price down",
+        "TSLA: speculative merger news, price already extended, neutral alt-data",
+        "CRM: price DOWN despite strong insider cluster buy \u2014 contradicts signal, wait",
+        "COST: analyst downgrade driving decline, avoid falling knife",
+        "NFLX: price down on mixed analyst action despite decent alt-data"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "failed",
+        "symbol": "SHOP",
+        "error": "{\"base_price\":\"121.695\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Momentum + congressional smart-money buy with a real news tailwind from semi rotation",
+        "symbol": "INTC",
+        "qty": 733,
+        "entry_price_est": 113.27,
+        "stop_price": 112.14,
+        "take_price": 115.54,
+        "order_id": "72bef850-a8c6-4c12-b179-3f15b448c2e0"
+      },
+      {
+        "status": "submitted",
+        "confidence": "low",
+        "rationale": "Pure momentum play in a strong sector with no red flags on smart-money side",
+        "symbol": "GS",
+        "qty": 79,
+        "entry_price_est": 1050.4250000000002,
+        "stop_price": 1039.92,
+        "take_price": 1071.43,
+        "order_id": "ce8463af-9340-4e1e-b2a7-f95c024c0920"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-09",
+    "ts": "2026-07-09T17:24:38.526972Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
