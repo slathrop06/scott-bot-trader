@@ -8807,5 +8807,117 @@
     "ts": "2026-07-08T22:36:13.086207Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=28980524021"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-09",
+    "ts": "2026-07-09T16:06:14.763433Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=29032131426"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-09",
+    "ts": "2026-07-09T16:06:34.258709Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-09",
+    "ts": "2026-07-09T16:06:35.984057Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-09",
+    "ts": "2026-07-09T16:06:37.238499Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-09",
+    "ts": "2026-07-09T16:07:32.007537Z",
+    "equity_start": 89294.82,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMD",
+          "confidence": "medium",
+          "catalyst": "AMD +7.7% premarket on semiconductor rotation with bullish technicals; broad chip strength (LRCX, KLAC, ARM, MU all bid)",
+          "smart_money_signals": "84% analyst bullish (15 SB / 33 B), House buy by Cisneros, WSB rank #12 with 1.53x mentions; insider selling offset by strong price action confirmation",
+          "rationale": "Strongest premarket gap with clear sector catalyst and analyst conviction \u2014 momentum trade with tight 1% stop"
+        },
+        {
+          "symbol": "AVGO",
+          "confidence": "medium",
+          "catalyst": "AVGO +2.83% premarket on Morningstar 'cheap stock' call plus Apple partnership tailwind and semi rotation",
+          "smart_money_signals": "91% analyst bullish (17 SB / 35 B \u2014 highest conviction in the list), riding same chip rotation as AMD/INTC",
+          "rationale": "Cleanest analyst conviction in the group with a concrete positive catalyst and confirming price action"
+        },
+        {
+          "symbol": "GOOGL",
+          "confidence": "low",
+          "catalyst": "Pullback -2.4% but not disqualifying; contrarian dip-buy setup",
+          "smart_money_signals": "Insider cluster buy (13 buyers, 48 buys vs 23 sells), WSB 3.22x chatter, 87% analyst buy \u2014 score 7/10",
+          "rationale": "Strongest smart-money stack on the board, but price is down so sizing smaller with low confidence"
+        }
+      ],
+      "market_take": "Risk-on tape with clear semiconductor leadership; chip names gapping up on rotation.",
+      "skipped_movers": [
+        "PLTR: down 3.6% with heavy insider selling \u2014 skip",
+        "COST: down on JPM downgrade, insider selling \u2014 skip",
+        "ORCL: heavy insider selling (11 sells) despite bullish setup \u2014 skip",
+        "INTC: only 32.7% analyst bullish, weak conviction \u2014 skip",
+        "CRM: analyst downgrade headline contradicts insider cluster buy \u2014 skip",
+        "TSLA: weak WSB (0.65x), mixed analysts, no clean catalyst \u2014 skip",
+        "GS: no news, no alt-data edge \u2014 skip"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strongest premarket gap with clear sector catalyst and analyst conviction \u2014 momentum trade with tight 1% stop",
+        "symbol": "AMD",
+        "qty": 53,
+        "entry_price_est": 553.6800000000001,
+        "stop_price": 548.14,
+        "take_price": 564.75,
+        "order_id": "876d6bd0-53a1-4f66-91ab-b63c17468b90"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Cleanest analyst conviction in the group with a concrete positive catalyst and confirming price action",
+        "symbol": "AVGO",
+        "qty": 73,
+        "entry_price_est": 401.495,
+        "stop_price": 397.48,
+        "take_price": 409.52,
+        "order_id": "828eccbe-50f4-45fe-8ed0-19472b7b4cc0"
+      },
+      {
+        "status": "submitted",
+        "confidence": "low",
+        "rationale": "Strongest smart-money stack on the board, but price is down so sizing smaller with low confidence",
+        "symbol": "GOOGL",
+        "qty": 83,
+        "entry_price_est": 353.58,
+        "stop_price": 350.04,
+        "take_price": 360.65,
+        "order_id": "2dd69d9f-c06d-45dc-8391-67cf74c0935a"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-09",
+    "ts": "2026-07-09T16:07:32.135873Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
