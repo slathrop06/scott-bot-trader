@@ -1,37 +1,37 @@
 {
-  "ts": "2026-07-09T21:21:32.281946Z",
-  "equity": 88509.06,
+  "ts": "2026-07-09T22:49:34.252456Z",
+  "equity": 87916.56,
   "last_equity": 87305.8,
   "cash": -54501.16,
-  "buying_power": 182423.99,
-  "all_time_return_pct": -11.4909,
+  "buying_power": 180764.98,
+  "all_time_return_pct": -12.0834,
   "positions": [
     {
       "symbol": "AVGO",
       "qty": 73,
       "avg_entry_price": 401.1177,
-      "current_price": 402.4539,
-      "market_value": 29379.13,
-      "unrealized_pl": 97.54,
-      "unrealized_pl_pct": 0.333
+      "current_price": 402.0,
+      "market_value": 29346.0,
+      "unrealized_pl": 64.41,
+      "unrealized_pl_pct": 0.22
     },
     {
       "symbol": "GOOGL",
       "qty": 83,
       "avg_entry_price": 353.587,
-      "current_price": 358.23,
-      "market_value": 29733.09,
-      "unrealized_pl": 385.37,
-      "unrealized_pl_pct": 1.313
+      "current_price": 357.23,
+      "market_value": 29650.09,
+      "unrealized_pl": 302.37,
+      "unrealized_pl_pct": 1.03
     },
     {
       "symbol": "GS",
       "qty": 79,
       "avg_entry_price": 1061.26,
-      "current_price": 1062.0,
-      "market_value": 83898.0,
-      "unrealized_pl": 58.46,
-      "unrealized_pl_pct": 0.07
+      "current_price": 1055.97,
+      "market_value": 83421.63,
+      "unrealized_pl": -417.91,
+      "unrealized_pl_pct": -0.498
     }
   ]
 }
