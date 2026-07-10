@@ -1,9 +1,28 @@
 {
-  "ts": "2026-07-10T15:31:14.796569Z",
-  "equity": 87711.99,
+  "ts": "2026-07-10T17:00:50.792732Z",
+  "equity": 87727.39,
   "last_equity": 87989.12,
-  "cash": 87711.99,
-  "buying_power": 350847.96,
-  "all_time_return_pct": -12.288,
-  "positions": []
+  "cash": 30080.0,
+  "buying_power": 3409.13,
+  "all_time_return_pct": -12.2726,
+  "positions": [
+    {
+      "symbol": "GOOGL",
+      "qty": 81,
+      "avg_entry_price": 354.15,
+      "current_price": 355.03,
+      "market_value": 28757.43,
+      "unrealized_pl": 71.28,
+      "unrealized_pl_pct": 0.248
+    },
+    {
+      "symbol": "WMT",
+      "qty": 254,
+      "avg_entry_price": 113.96,
+      "current_price": 113.74,
+      "market_value": 28889.96,
+      "unrealized_pl": -55.88,
+      "unrealized_pl_pct": -0.193
+    }
+  ]
 }

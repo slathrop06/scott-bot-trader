@@ -9203,5 +9203,103 @@
     "ts": "2026-07-10T15:37:59.979062Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-10",
+    "ts": "2026-07-10T16:59:33.630875Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=29109375788"
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-07-10",
+    "ts": "2026-07-10T16:59:56.494434Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-10",
+    "ts": "2026-07-10T17:00:50.765460Z",
+    "equity_start": 87755.85,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "META",
+          "confidence": "high",
+          "catalyst": "Up +4.48% intraday on Citizens and Piper Sandler bullish analyst notes calling META a top large-cap pick with significant upside",
+          "smart_money_signals": "WSB rank #4 with 2.26x normal chatter (262 mentions), 88.7% analyst bullish (21 SB / 42 B), offsetting the insider sell noise",
+          "rationale": "Strongest catalyst of the day \u2014 fresh analyst conviction + gap up + top WSB attention overrides the insider selling flag"
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "Modest intraday strength (+0.85%) with no negative news",
+          "smart_money_signals": "Insider cluster buy confirmed (5 distinct buyers, 9 buys), House buy by Salazar, 75.9% analyst bullish \u2014 alt-data score 7/10 is the highest in the tape",
+          "rationale": "Best pure smart-money stack available: rare insider cluster + congressional buy + strong analyst base gives asymmetric setup"
+        },
+        {
+          "symbol": "CAT",
+          "confidence": "medium",
+          "catalyst": "Up +1.66% intraday, quiet news backdrop, breaking higher on light volume",
+          "smart_money_signals": "Insider cluster buy with 8 distinct insiders (8 buys, 0 sells) \u2014 a very clean 8:0 ratio",
+          "rationale": "Textbook insider cluster buy with zero offsetting sells and confirming price action"
+        }
+      ],
+      "market_take": "Mixed tape \u2014 mega-cap tech rotation with META leading on analyst upgrades while semis chop and PLTR/NFLX lag.",
+      "skipped_movers": [
+        "NVDA: 9 insider sells across 7 insiders + House selling despite gap up",
+        "NKE: heavy insider selling and only 40% analyst bullish, no catalyst",
+        "INTC: down on JPM short call and sector selloff",
+        "PLTR: heavy insider selling (8 sells) and negative research note, price red",
+        "TSLA: neutral alt-data, no fresh catalyst",
+        "ORCL: 11 insider sells and price red",
+        "AMD: 29 insider sells overwhelms lone House buy"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Strongest catalyst of the day \u2014 fresh analyst conviction + gap up + top WSB attention overrides the insider selling flag",
+        "symbol": "META",
+        "qty": 139,
+        "entry_price_est": 667.15,
+        "stop_price": 660.48,
+        "take_price": 680.49,
+        "order_id": "c82c02e2-75c1-44ce-91fd-5cbc4cd83d62"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Best pure smart-money stack available: rare insider cluster + congressional buy + strong analyst base gives asymmetric setup",
+        "symbol": "CRM",
+        "qty": 569,
+        "entry_price_est": 163.29500000000002,
+        "stop_price": 161.66,
+        "take_price": 166.56,
+        "order_id": "1dad3713-2d43-49fb-9082-77dedc904819"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Textbook insider cluster buy with zero offsetting sells and confirming price action",
+        "symbol": "CAT",
+        "qty": 97,
+        "entry_price_est": 951.2,
+        "stop_price": 941.69,
+        "take_price": 970.22,
+        "order_id": "4d40194d-9786-4ba2-8c69-92ee598bfa41"
+      }
+    ]
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-07-10",
+    "ts": "2026-07-10T17:00:50.794523Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
