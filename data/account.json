@@ -1,28 +1,55 @@
 {
-  "ts": "2026-07-10T17:00:50.792732Z",
-  "equity": 87727.39,
+  "ts": "2026-07-10T17:46:04.328788Z",
+  "equity": 87101.61,
   "last_equity": 87989.12,
-  "cash": 30080.0,
-  "buying_power": 3409.13,
-  "all_time_return_pct": -12.2726,
+  "cash": -248243.53,
+  "buying_power": 0.0,
+  "all_time_return_pct": -12.8984,
   "positions": [
+    {
+      "symbol": "CAT",
+      "qty": 97,
+      "avg_entry_price": 954.74,
+      "current_price": 957.535,
+      "market_value": 92880.9,
+      "unrealized_pl": 271.12,
+      "unrealized_pl_pct": 0.293
+    },
+    {
+      "symbol": "CRM",
+      "qty": 569,
+      "avg_entry_price": 163.38,
+      "current_price": 162.74,
+      "market_value": 92599.06,
+      "unrealized_pl": -364.16,
+      "unrealized_pl_pct": -0.392
+    },
     {
       "symbol": "GOOGL",
       "qty": 81,
       "avg_entry_price": 354.15,
-      "current_price": 355.03,
-      "market_value": 28757.43,
-      "unrealized_pl": 71.28,
-      "unrealized_pl_pct": 0.248
+      "current_price": 354.01,
+      "market_value": 28674.81,
+      "unrealized_pl": -11.34,
+      "unrealized_pl_pct": -0.04
+    },
+    {
+      "symbol": "META",
+      "qty": 139,
+      "avg_entry_price": 667.27,
+      "current_price": 664.05,
+      "market_value": 92302.95,
+      "unrealized_pl": -447.58,
+      "unrealized_pl_pct": -0.483
     },
     {
       "symbol": "WMT",
       "qty": 254,
       "avg_entry_price": 113.96,
-      "current_price": 113.74,
-      "market_value": 28889.96,
-      "unrealized_pl": -55.88,
-      "unrealized_pl_pct": -0.193
+      "current_price": 113.73,
+      "market_value": 28887.42,
+      "unrealized_pl": -58.42,
+      "unrealized_pl_pct": -0.202
     }
   ]
 }
