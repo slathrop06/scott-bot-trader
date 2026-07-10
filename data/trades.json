@@ -9094,5 +9094,114 @@
     "ts": "2026-07-09T21:57:17.601308Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=29053042798"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-10",
+    "ts": "2026-07-10T15:36:44.715091Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=29104312266"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-10",
+    "ts": "2026-07-10T15:37:06.129798Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-10",
+    "ts": "2026-07-10T15:37:08.171507Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-10",
+    "ts": "2026-07-10T15:37:09.689191Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-10",
+    "ts": "2026-07-10T15:37:59.825515Z",
+    "equity_start": 87711.99,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "WMT",
+          "confidence": "high",
+          "catalyst": "Gap up +2.14% on relative strength while broader indices/futures are lower; defensive rotation narrative",
+          "smart_money_signals": "Insider cluster buy with 9 distinct buyers in 30d (rare breadth), 89.6% analyst bullish (14SB/29B), alt-data score 5/10",
+          "rationale": "Cleanest stack of catalyst (RS gap up on down-market day) plus a genuine 9-insider cluster buy \u2014 best risk/reward on the board."
+        },
+        {
+          "symbol": "GOOGL",
+          "confidence": "medium",
+          "catalyst": "Modest dip on secondary China-export news; recovery setup with sector leadership intact",
+          "smart_money_signals": "Insider cluster buy with 13 buyers / 48 buy transactions in 30d, 87% analyst bullish, alt-data score 5/10",
+          "rationale": "Massive insider breadth (13 buyers) provides floor support even on a red tape \u2014 buying weakness with smart-money conviction."
+        },
+        {
+          "symbol": "CAT",
+          "confidence": "medium",
+          "catalyst": "Gap up +1.18% with no negative news; industrial strength on a risk-off morning",
+          "smart_money_signals": "Insider cluster buy \u2014 8 buyers, 0 sellers in 30d (pristine ratio), alt-data score 4/10",
+          "rationale": "Perfect insider signal (8 buys / 0 sells) plus positive price confirmation makes this a high-quality non-tech diversifier."
+        }
+      ],
+      "market_take": "Risk-off tape with Mag7 rotation \u2014 favor names with insider conviction and defensive/RS characteristics over momentum AI.",
+      "skipped_movers": [
+        "META: heavy insider selling (6 sells) + EU regulatory overhang despite gap up",
+        "NKE: heavy insider selling, only 40% analyst bullish, no catalyst",
+        "NVDA: 9 insiders selling + House selling despite gap \u2014 smart money exiting the rally",
+        "INTC: JPM top short call + down 3% + earnings approaching",
+        "ORCL: 11 insider sells and price down",
+        "PLTR: negative research note, 8 insider sells, price down",
+        "TSLA: price signal weak, mixed 48% analyst view, no smart-money edge",
+        "NFLX: price down contradicts bullish signals",
+        "ADBE: only 37.8% analyst bullish despite cluster buy",
+        "BA/BAC/HD: insufficient catalyst strength vs top picks"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Cleanest stack of catalyst (RS gap up on down-market day) plus a genuine 9-insider cluster buy \u2014 best risk/reward on the board.",
+        "symbol": "WMT",
+        "qty": 254,
+        "entry_price_est": 113.945,
+        "stop_price": 112.81,
+        "take_price": 116.22,
+        "order_id": "ed495a7a-9c46-4802-b32b-142ef726cd9e"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Massive insider breadth (13 buyers) provides floor support even on a red tape \u2014 buying weakness with smart-money conviction.",
+        "symbol": "GOOGL",
+        "qty": 81,
+        "entry_price_est": 354.05499999999995,
+        "stop_price": 350.51,
+        "take_price": 361.14,
+        "order_id": "a5315f90-3623-4f88-a421-03008d92b561"
+      },
+      {
+        "status": "failed",
+        "symbol": "CAT",
+        "error": "{\"base_price\":\"950.315\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-10",
+    "ts": "2026-07-10T15:37:59.979062Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
