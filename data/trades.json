@@ -9504,5 +9504,102 @@
     "ts": "2026-07-13T15:47:25.733583Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-13",
+    "ts": "2026-07-13T17:17:06.365534Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=29269812351"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-13",
+    "ts": "2026-07-13T17:17:32.242390Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-13",
+    "ts": "2026-07-13T17:18:31.883844Z",
+    "equity_start": 87696.61,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "CRM",
+          "confidence": "high",
+          "catalyst": "Green +5.56% on red tape day \u2014 strong relative strength with no negative news",
+          "smart_money_signals": "Insider cluster buy (5 buyers), House buy by Salazar, 75.9% analyst bullish (13SB/31B)",
+          "rationale": "Best setup on the board \u2014 smart money stacking with relative strength up while market sells off."
+        },
+        {
+          "symbol": "ADBE",
+          "confidence": "medium",
+          "catalyst": "Up +3.45% on a broadly red tape \u2014 clear relative strength with no negative news",
+          "smart_money_signals": "Insider cluster buy (3 buyers, 4 buys vs 3 sells)",
+          "rationale": "Bucking the tech selloff with insider cluster buying support."
+        },
+        {
+          "symbol": "CVX",
+          "confidence": "medium",
+          "catalyst": "Up +2.89% on Hormuz tensions driving oil bid \u2014 defensive rotation working",
+          "smart_money_signals": "House buy by David J. Taylor, 76.7% analyst bullish",
+          "rationale": "Geopolitical catalyst plus smart money in a tape where energy is one of few green sectors."
+        }
+      ],
+      "market_take": "Risk-off tape driven by Korea/Iran fears with tech/semis leading down; energy and select relative-strength names catching bids.",
+      "skipped_movers": [
+        "INTC: earnings in 10 days but down 5.9% with weak 32.7% analyst view \u2014 falling knife",
+        "ORCL: heavy insider selling (11 sells) despite oversold bounce potential",
+        "AMD: broad semi selloff, catalyst is negative macro",
+        "TSLA: negative catalyst, down with market",
+        "NVDA: heavy insider selling (9 sells, 7 insiders) + House selling",
+        "AVGO: heavy insider selling (53 sells)",
+        "PLTR: heavy insider selling (7 sells)",
+        "BA: down on the day, no strong signal",
+        "XOM: 0/10 alt-data despite oil bid \u2014 CVX preferred",
+        "SHOP: only 1/10 signal",
+        "V: only 1/10 signal",
+        "CAT: no signals, down on day"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best setup on the board \u2014 smart money stacking with relative strength up while market sells off.",
+        "symbol": "CRM",
+        "qty": 617,
+        "entry_price_est": 168.93,
+        "stop_price": 167.24,
+        "take_price": 172.31,
+        "order_id": "6ef3b37b-e3d2-4a73-9379-3dc7dbf4cf39"
+      },
+      {
+        "status": "failed",
+        "symbol": "ADBE",
+        "error": "{\"base_price\":\"231.395\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Geopolitical catalyst plus smart money in a tape where energy is one of few green sectors.",
+        "symbol": "CVX",
+        "qty": 575,
+        "entry_price_est": 181.315,
+        "stop_price": 179.5,
+        "take_price": 184.94,
+        "order_id": "7677cd5c-f347-40ae-a043-436554618e27"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-13",
+    "ts": "2026-07-13T17:18:32.019986Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
