@@ -9396,5 +9396,113 @@
     "ts": "2026-07-10T22:18:00.275556Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=29127311954"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-13",
+    "ts": "2026-07-13T15:46:16.281208Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=29263624230"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-13",
+    "ts": "2026-07-13T15:46:37.549283Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-13",
+    "ts": "2026-07-13T15:46:39.555014Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-13",
+    "ts": "2026-07-13T15:46:41.020862Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-13",
+    "ts": "2026-07-13T15:47:25.699841Z",
+    "equity_start": 87756.49,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "CRM",
+          "confidence": "high",
+          "catalyst": "Gap up +5.5% premarket on heavy volume with no contradicting news",
+          "smart_money_signals": "Insider cluster buy (5 buyers), House buy by Salazar, 76% analyst bullish (13SB/31B)",
+          "rationale": "Best combo of gap-up momentum plus multi-signal smart-money confirmation on the board"
+        },
+        {
+          "symbol": "MA",
+          "confidence": "medium",
+          "catalyst": "Premarket +1.77% relative strength on a weak tape",
+          "smart_money_signals": "Massive insider cluster buy (12 distinct buyers, 13 buys vs 5 sells), 90% analyst bullish (13SB/34B)",
+          "rationale": "Rare 12-insider cluster buy plus green print while market sells off"
+        },
+        {
+          "symbol": "NFLX",
+          "confidence": "low",
+          "catalyst": "Relative strength +1.84% into Q2 earnings anticipation with bullish analyst revamps",
+          "smart_money_signals": "Net insider buying (6 buys vs 2 sells), WSB 3.22x normal (rank #11), 78% analyst bullish",
+          "rationale": "Broad signal stack though earnings 7/16 keeps position small"
+        }
+      ],
+      "market_take": "Risk-off tape with semis and mega-cap tech selling on Korea/Iran macro fears; rotation into software and payments.",
+      "skipped_movers": [
+        "INTC: down -4.65% with earnings in 10 days, only 32.7% analyst bullish",
+        "ORCL: heavy insider selling (11 sells) and price down -3.63%",
+        "PLTR: heavy insider selling (7 sells), price fading",
+        "AMD: down -2.72% on supply chain fears despite good signals \u2014 price contradicts",
+        "AVGO: 53 insider sells in 30d, price down",
+        "TSLA: down -2.46%, weak analyst mix (48% bullish)",
+        "ADBE: only 37.8% analyst bullish despite cluster buy",
+        "BA: price down, no smart-money support",
+        "CAT: price down, zero alt-data score"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best combo of gap-up momentum plus multi-signal smart-money confirmation on the board",
+        "symbol": "CRM",
+        "qty": 171,
+        "entry_price_est": 168.93,
+        "stop_price": 167.24,
+        "take_price": 172.31,
+        "order_id": "125e45fc-68ff-464b-9b25-772435425d58"
+      },
+      {
+        "status": "failed",
+        "symbol": "MA",
+        "error": "{\"base_price\":\"535.595\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "low",
+        "rationale": "Broad signal stack though earnings 7/16 keeps position small",
+        "symbol": "NFLX",
+        "qty": 387,
+        "entry_price_est": 74.685,
+        "stop_price": 73.94,
+        "take_price": 76.18,
+        "order_id": "188e88c9-a8aa-46a6-9693-a8c998cb2b29"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-13",
+    "ts": "2026-07-13T15:47:25.733583Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
