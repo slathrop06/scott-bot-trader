@@ -1,37 +1,28 @@
 {
-  "ts": "2026-07-13T19:20:59.245098Z",
-  "equity": 86794.33,
+  "ts": "2026-07-13T20:38:00.742394Z",
+  "equity": 86835.57,
   "last_equity": 87951.64,
-  "cash": -151605.79,
-  "buying_power": 61097.18,
-  "all_time_return_pct": -13.2057,
+  "cash": -122991.01,
+  "buying_power": 95550.39,
+  "all_time_return_pct": -13.1644,
   "positions": [
     {
       "symbol": "CRM",
       "qty": 617,
       "avg_entry_price": 172.23,
-      "current_price": 170.085,
-      "market_value": 104942.45,
-      "unrealized_pl": -1323.46,
-      "unrealized_pl_pct": -1.245
+      "current_price": 170.2396,
+      "market_value": 105037.83,
+      "unrealized_pl": -1228.08,
+      "unrealized_pl_pct": -1.156
     },
     {
       "symbol": "CVX",
       "qty": 575,
       "avg_entry_price": 181.29,
-      "current_price": 182.11,
-      "market_value": 104713.25,
-      "unrealized_pl": 471.5,
-      "unrealized_pl_pct": 0.452
-    },
-    {
-      "symbol": "NFLX",
-      "qty": 387,
-      "avg_entry_price": 74.69,
-      "current_price": 74.275,
-      "market_value": 28744.42,
-      "unrealized_pl": -160.6,
-      "unrealized_pl_pct": -0.556
+      "current_price": 182.2413,
+      "market_value": 104788.75,
+      "unrealized_pl": 547.0,
+      "unrealized_pl_pct": 0.525
     }
   ]
 }
