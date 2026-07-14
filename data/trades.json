@@ -9690,5 +9690,40 @@
     "ts": "2026-07-13T22:04:30.298576Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=29288638732"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-14",
+    "ts": "2026-07-14T14:59:41.606617Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=29343323630"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-14",
+    "ts": "2026-07-14T15:00:06.833010Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-14",
+    "ts": "2026-07-14T15:00:08.491496Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-14",
+    "ts": "2026-07-14T15:00:09.870141Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-14",
+    "ts": "2026-07-14T15:00:10.191189Z",
+    "status": "blocked",
+    "note": "Daily loss kill-switch: down -5.18% today (limit -5.0%)."
   }
 ]
