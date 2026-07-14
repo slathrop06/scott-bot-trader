@@ -9788,5 +9788,26 @@
     "ts": "2026-07-14T18:47:08.128489Z",
     "status": "blocked",
     "note": "Daily loss kill-switch: down -5.18% today (limit -5.0%)."
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-14",
+    "ts": "2026-07-14T20:00:32.974740Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=29364007797"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-14",
+    "ts": "2026-07-14T20:00:52.929652Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-14",
+    "ts": "2026-07-14T20:00:52.978669Z",
+    "status": "blocked",
+    "note": "Market is closed."
   }
 ]
