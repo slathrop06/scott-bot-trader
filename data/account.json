@@ -1,28 +1,9 @@
 {
-  "ts": "2026-07-13T21:54:43.278438Z",
-  "equity": 87174.16,
-  "last_equity": 87951.64,
-  "cash": -122991.01,
-  "buying_power": 96498.44,
-  "all_time_return_pct": -12.8258,
-  "positions": [
-    {
-      "symbol": "CRM",
-      "qty": 617,
-      "avg_entry_price": 172.23,
-      "current_price": 170.51,
-      "market_value": 105204.67,
-      "unrealized_pl": -1061.24,
-      "unrealized_pl_pct": -0.999
-    },
-    {
-      "symbol": "CVX",
-      "qty": 575,
-      "avg_entry_price": 181.29,
-      "current_price": 182.54,
-      "market_value": 104960.5,
-      "unrealized_pl": 718.75,
-      "unrealized_pl_pct": 0.69
-    }
-  ]
+  "ts": "2026-07-14T14:48:27.583879Z",
+  "equity": 82889.45,
+  "last_equity": 87416.42,
+  "cash": 82889.45,
+  "buying_power": 331557.8,
+  "all_time_return_pct": -17.1106,
+  "positions": []
 }
