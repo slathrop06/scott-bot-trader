@@ -9767,5 +9767,26 @@
     "ts": "2026-07-14T17:38:03.412525Z",
     "status": "blocked",
     "note": "Daily loss kill-switch: down -5.18% today (limit -5.0%)."
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-14",
+    "ts": "2026-07-14T18:46:48.992606Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=29359236770"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-14",
+    "ts": "2026-07-14T18:47:08.065664Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-14",
+    "ts": "2026-07-14T18:47:08.128489Z",
+    "status": "blocked",
+    "note": "Daily loss kill-switch: down -5.18% today (limit -5.0%)."
   }
 ]
