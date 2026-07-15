@@ -9856,5 +9856,113 @@
     "ts": "2026-07-14T22:09:34.867345Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=29372057043"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-15",
+    "ts": "2026-07-15T14:57:59.062055Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=29425955697"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-15",
+    "ts": "2026-07-15T14:58:21.965386Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-15",
+    "ts": "2026-07-15T14:58:23.347036Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-15",
+    "ts": "2026-07-15T14:58:24.624770Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-15",
+    "ts": "2026-07-15T14:59:28.002294Z",
+    "equity_start": 82889.24,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "JPM",
+          "confidence": "high",
+          "catalyst": "Q2 earnings beat (adj EPS $6.14, revenue $58.02B) with multiple analysts raising price targets; stock gapping +1.35% premarket in post-earnings drift",
+          "smart_money_signals": "Insider cluster buy (4 buyers, 4:1 buy/sell ratio in 30d); 56.7% analyst bullish",
+          "rationale": "Post-earnings drift + fresh insider cluster buy is the cleanest stack on the board"
+        },
+        {
+          "symbol": "BAC",
+          "confidence": "medium",
+          "catalyst": "Q2 earnings beat with analysts raising price targets; +1.79% premarket continuation",
+          "smart_money_signals": "79.3% analyst bullish (6 SB / 17 B)",
+          "rationale": "Post-earnings drift with analyst upgrades and no contradicting insider signals"
+        },
+        {
+          "symbol": "GOOGL",
+          "confidence": "medium",
+          "catalyst": "Relative strength +2.32% premarket despite AI-fatigue headlines pushing peers lower",
+          "smart_money_signals": "Insider cluster buy (13 buyers, 48 buys vs 23 sells in 30d); 87% analyst bullish (18SB/42B)",
+          "rationale": "Massive insider cluster buy plus 87% analyst conviction with price confirming strength"
+        }
+      ],
+      "market_take": "Risk-on tone with financials leading on earnings beats and mega-cap tech bid despite AI-bubble chatter",
+      "skipped_movers": [
+        "INTC: -6.26% reversal despite ASML milestone, House selling",
+        "AMD: -5.47% reversal contradicts bullish analyst PT hikes",
+        "META: heavy insider selling (6 sells, 2 insiders, 0 buys)",
+        "ORCL: heavy insider selling (11 sells)",
+        "AMZN: net insider selling in 30d",
+        "ADBE: no fresh catalyst, mixed insider (4B/3S)",
+        "AAPL: China Apple Intelligence positive but signals thin",
+        "CAT: -2.69% with zero alt-data support",
+        "XOM: down with no catalyst"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "failed",
+        "symbol": "JPM",
+        "error": "{\"base_price\":\"347.16\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Post-earnings drift with analyst upgrades and no contradicting insider signals",
+        "symbol": "BAC",
+        "qty": 442,
+        "entry_price_est": 61.815,
+        "stop_price": 61.2,
+        "take_price": 63.05,
+        "order_id": "d8255d67-313e-4eca-bc41-a9d04c83c2ea"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Massive insider cluster buy plus 87% analyst conviction with price confirming strength",
+        "symbol": "GOOGL",
+        "qty": 74,
+        "entry_price_est": 367.185,
+        "stop_price": 363.51,
+        "take_price": 374.53,
+        "order_id": "26cfce89-d7cb-4893-a24c-f4fa4fa46e56"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-15",
+    "ts": "2026-07-15T14:59:28.139464Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
