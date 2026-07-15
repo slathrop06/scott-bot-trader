@@ -10064,5 +10064,97 @@
     "ts": "2026-07-15T16:28:12.690335Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-15",
+    "ts": "2026-07-15T17:49:29.390068Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=29438059967"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-15",
+    "ts": "2026-07-15T17:49:49.889635Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-15",
+    "ts": "2026-07-15T17:50:38.558141Z",
+    "equity_start": 81689.48,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "JPM",
+          "confidence": "high",
+          "catalyst": "Strong bank earnings tape mentioned in market wrap; JPM up +1.67% while Nasdaq/semis sell off \u2014 clear relative strength on a red tech day",
+          "smart_money_signals": "Insider cluster buy: 4 insiders bought in last 30d vs 1 seller (4:1 ratio), alt-data score 4/10",
+          "rationale": "Cluster insider buying + relative strength during a semi selloff is the cleanest risk/reward setup on the board"
+        },
+        {
+          "symbol": "DIS",
+          "confidence": "medium",
+          "catalyst": "Up +1.33% on no news \u2014 quiet strength while broader tape wobbles",
+          "smart_money_signals": "Massive insider cluster buy: 13 unique insider buyers in 30d (14 buys vs 5 sells), 88.9% analyst bullish, alt-data score 5/10 (highest on board)",
+          "rationale": "Best smart-money signal of the day \u2014 13-insider cluster buy is extremely rare and pairs with near-90% analyst conviction"
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "Up +3.00% on frontrunner status for classified Japanese government cloud contract \u2014 concrete news catalyst with intraday gap",
+          "smart_money_signals": "82% analyst buy (40 of 49 positive), top-10 WSB ticker (rank #10, 71 mentions)",
+          "rationale": "Strongest news catalyst on the tape with analyst conviction backing; heavy insider selling is a yellow flag but all 11 sells are from a single insider (likely planned)"
+        }
+      ],
+      "market_take": "Split tape \u2014 semis/memory getting hit hard while financials, mega-cap software and defensives catch a bid on cooler PPI",
+      "skipped_movers": [
+        "INTC: -6% reversal despite bullish ASML news, House selling, only 32.7% analyst bullish \u2014 falling knife",
+        "AMD: -3.6% into MI450 news, momentum broken",
+        "CAT: no catalyst, no alt-data, just weakness",
+        "AMZN: heavy insider selling and no smart-money edge vs peers",
+        "META: 6 insider sells from 2 insiders offsets WSB/analyst signals",
+        "HD: weak signal stack, only 1 congressional buy",
+        "XOM/CVX: no catalyst, oil weakness"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "failed",
+        "symbol": "JPM",
+        "error": "{\"base_price\":\"348.395\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Best smart-money signal of the day \u2014 13-insider cluster buy is extremely rare and pairs with near-90% analyst conviction",
+        "symbol": "DIS",
+        "qty": 170,
+        "entry_price_est": 97.31,
+        "stop_price": 96.34,
+        "take_price": 99.26,
+        "order_id": "b5d75dcc-5ca8-467e-a2ae-ea8f594943b6"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strongest news catalyst on the tape with analyst conviction backing; heavy insider selling is a yellow flag but all 11 sells are from a single insider (likely planned)",
+        "symbol": "ORCL",
+        "qty": 124,
+        "entry_price_est": 132.85,
+        "stop_price": 131.52,
+        "take_price": 135.51,
+        "order_id": "ef10b201-70b5-4ce1-97e7-ef16532e51fb"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-15",
+    "ts": "2026-07-15T17:50:38.591209Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
