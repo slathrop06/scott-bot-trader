@@ -9964,5 +9964,105 @@
     "ts": "2026-07-15T14:59:28.139464Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-15",
+    "ts": "2026-07-15T16:26:30.417878Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=29432403833"
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-07-15",
+    "ts": "2026-07-15T16:26:59.556251Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-15",
+    "ts": "2026-07-15T16:28:12.538001Z",
+    "equity_start": 83182.39,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AAPL",
+          "confidence": "high",
+          "catalyst": "52-week high on China approval of Apple Intelligence (Baidu/Alibaba powering rollout) \u2014 concrete regulatory unlock, +4.07% intraday",
+          "smart_money_signals": "House buy by Cisneros (21d), WSB mentions 1.33x normal at rank #22, 66.7% analyst bullish (13SB/23B)",
+          "rationale": "Best combo of hard catalyst + confirming price action + smart-money on the tape today."
+        },
+        {
+          "symbol": "META",
+          "confidence": "medium",
+          "catalyst": "+3.68% intraday breakout with no negative company-specific news; competitive tailwinds from cloud expansion",
+          "smart_money_signals": "89% analyst bullish (21SB/42B/8H, zero sell ratings), WSB chatter 2.0x normal at rank #17",
+          "rationale": "Strong relative strength with elite analyst conviction and spiking social interest; insider sells noted but not deal-breaker given catalyst-driven tape."
+        },
+        {
+          "symbol": "MSFT",
+          "confidence": "medium",
+          "catalyst": "+2.83% relative strength while QQQ is down 1.47% \u2014 leadership tape on a weak market day",
+          "smart_money_signals": "93% analyst bullish (23SB/40B), top-4 WSB ticker, House net buying (2 buys vs 1 sell)",
+          "rationale": "Textbook up-while-market-down relative strength with deep smart-money support stack."
+        }
+      ],
+      "market_take": "Risk-off tape (QQQ -1.47%, semis getting crushed) but megacap software/consumer tech showing clear leadership rotation.",
+      "skipped_movers": [
+        "INTC: -8.56% collapse despite bullish news = tape rejecting the story, do not catch falling knife",
+        "AMD: -6.68% breakdown despite analyst PT hikes, momentum against us",
+        "NVDA: 9 insider sells (7 insiders) + House selling + price down",
+        "ORCL: 11 insider sells (heavy distribution) despite +2.12%",
+        "AMZN: insider selling and no fresh catalyst",
+        "CAT: -4.60% with zero signals",
+        "MS/GS: bank earnings tape mixed, MS down despite beat",
+        "ADBE: insider cluster buy but only 37.8% analyst bullish and no catalyst",
+        "HD: move too small to justify vs stop noise"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best combo of hard catalyst + confirming price action + smart-money on the tape today.",
+        "symbol": "AAPL",
+        "qty": 268,
+        "entry_price_est": 328.33,
+        "stop_price": 325.05,
+        "take_price": 334.9,
+        "order_id": "53834e89-d87b-4573-b148-b330cae227ad"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strong relative strength with elite analyst conviction and spiking social interest; insider sells noted but not deal-breaker given catalyst-driven tape.",
+        "symbol": "META",
+        "qty": 128,
+        "entry_price_est": 683.955,
+        "stop_price": 677.12,
+        "take_price": 697.63,
+        "order_id": "a4632697-da5b-4574-b82f-950cf96fddbe"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Textbook up-while-market-down relative strength with deep smart-money support stack.",
+        "symbol": "MSFT",
+        "qty": 222,
+        "entry_price_est": 396.395,
+        "stop_price": 392.43,
+        "take_price": 404.32,
+        "order_id": "e49b6b1b-bd04-4380-b64f-1757b06373fc"
+      }
+    ]
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-07-15",
+    "ts": "2026-07-15T16:28:12.690335Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
