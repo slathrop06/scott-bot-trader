@@ -1,28 +1,46 @@
 {
-  "ts": "2026-07-15T16:28:12.688007Z",
-  "equity": 83140.27,
+  "ts": "2026-07-15T17:46:25.667531Z",
+  "equity": 81620.97,
   "last_equity": 82889.24,
-  "cash": 28386.55,
-  "buying_power": 3119.01,
-  "all_time_return_pct": -16.8597,
+  "cash": -148675.68,
+  "buying_power": 50127.9,
+  "all_time_return_pct": -18.379,
   "positions": [
+    {
+      "symbol": "AAPL",
+      "qty": 268,
+      "avg_entry_price": 328.3321,
+      "current_price": 327.29,
+      "market_value": 87713.72,
+      "unrealized_pl": -279.27,
+      "unrealized_pl_pct": -0.317
+    },
     {
       "symbol": "BAC",
       "qty": 442,
       "avg_entry_price": 61.8243,
-      "current_price": 61.415,
-      "market_value": 27145.43,
-      "unrealized_pl": -180.91,
-      "unrealized_pl_pct": -0.662
+      "current_price": 61.555,
+      "market_value": 27207.31,
+      "unrealized_pl": -119.03,
+      "unrealized_pl_pct": -0.436
     },
     {
       "symbol": "GOOGL",
       "qty": 74,
       "avg_entry_price": 367.248,
-      "current_price": 373.085,
-      "market_value": 27608.29,
-      "unrealized_pl": 431.94,
-      "unrealized_pl_pct": 1.589
+      "current_price": 370.59,
+      "market_value": 27423.66,
+      "unrealized_pl": 247.31,
+      "unrealized_pl_pct": 0.91
+    },
+    {
+      "symbol": "MSFT",
+      "qty": 222,
+      "avg_entry_price": 397.2459,
+      "current_price": 396.18,
+      "market_value": 87951.96,
+      "unrealized_pl": -236.64,
+      "unrealized_pl_pct": -0.268
     }
   ]
 }
