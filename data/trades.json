@@ -10452,5 +10452,96 @@
     "ts": "2026-07-16T16:21:10.408619Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-16",
+    "ts": "2026-07-16T17:43:47.084973Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=29520963677"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-16",
+    "ts": "2026-07-16T17:44:09.032019Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-16",
+    "ts": "2026-07-16T17:45:10.339809Z",
+    "equity_start": 80580.15,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "CRM",
+          "confidence": "high",
+          "catalyst": "Up +3.2% on a broadly red tape (chips/financials down 5-7%) \u2014 strong relative strength with no negative news",
+          "smart_money_signals": "Insider cluster buy (5 buyers, 9 buys in 30d), House buy by Maria Elvira Salazar, 75.9% analyst bullish \u2014 alt-data score 7/10",
+          "rationale": "Best stacked setup on the board: relative strength up-move + insider cluster + congressional buy + strong analyst conviction."
+        },
+        {
+          "symbol": "SHOP",
+          "confidence": "medium",
+          "catalyst": "Up +2.66% while broader tape is deeply red \u2014 clear relative strength with no contradicting news",
+          "smart_money_signals": "77.8% analyst bullish (10 SB / 32 B) \u2014 alt-data score +1",
+          "rationale": "Green in a red market plus strong analyst conviction; clean setup with no disqualifiers."
+        },
+        {
+          "symbol": "GE",
+          "confidence": "medium",
+          "catalyst": "Q2 EPS beat ($2.02) and raised FY2026 guidance \u2014 sold off with the market but fundamentals confirmed strong; post-earnings dip-buy",
+          "smart_money_signals": "Net insider buying, 87.5% analyst bullish (9SB / 19B) \u2014 alt-data score 2/10",
+          "rationale": "Fundamentals just beat and guidance raised \u2014 the -6% move is tape-driven, not company-driven, and analyst conviction is very high."
+        }
+      ],
+      "market_take": "Broad risk-off with semis and financials leading declines; software and select consumer names showing relative strength.",
+      "skipped_movers": [
+        "INTC: alt-data 0/10, only 32.7% analyst bullish, heavy chip-sector selloff",
+        "AMD: profit-taking selloff with no reversal signal yet",
+        "ORCL: heavy insider selling (11 sells) \u2014 disqualifier",
+        "GS: only 46.9% analyst bullish and no catalyst",
+        "MS: no catalyst, mixed analyst view",
+        "CAT: no news, no alt-data edge",
+        "AVGO: heavy insider selling (57 sells) \u2014 disqualifier",
+        "ADBE: only 37.8% analyst bullish despite up-move",
+        "SBUX: heavy insider selling flag",
+        "NKE: only 40% analyst bullish, no alt-data",
+        "COST: heavy insider selling flag",
+        "NVDA: heavy insider selling (9 sells) + House sell \u2014 disqualifier"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "failed",
+        "symbol": "CRM",
+        "error": "{\"base_price\":\"172.96\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      },
+      {
+        "status": "failed",
+        "symbol": "SHOP",
+        "error": "{\"base_price\":\"126.705\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Fundamentals just beat and guidance raised \u2014 the -6% move is tape-driven, not company-driven, and analyst conviction is very high.",
+        "symbol": "GE",
+        "qty": 151,
+        "entry_price_est": 340.95,
+        "stop_price": 337.54,
+        "take_price": 347.77,
+        "order_id": "6d15adf4-dfa2-401f-a879-9f5b59e16f5b"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-16",
+    "ts": "2026-07-16T17:45:10.430961Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
