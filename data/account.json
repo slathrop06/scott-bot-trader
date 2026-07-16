@@ -1,37 +1,46 @@
 {
-  "ts": "2026-07-16T17:45:10.428227Z",
-  "equity": 80569.6,
+  "ts": "2026-07-16T17:46:01.079584Z",
+  "equity": 80584.24,
   "last_equity": 81237.85,
-  "cash": -57974.33,
-  "buying_power": 104904.61,
-  "all_time_return_pct": -19.4304,
+  "cash": -109095.38,
+  "buying_power": 94721.4,
+  "all_time_return_pct": -19.4158,
   "positions": [
+    {
+      "symbol": "GE",
+      "qty": 151,
+      "avg_entry_price": 338.55,
+      "current_price": 338.5025,
+      "market_value": 51113.88,
+      "unrealized_pl": -7.17,
+      "unrealized_pl_pct": -0.014
+    },
     {
       "symbol": "HD",
       "qty": 76,
       "avg_entry_price": 348.25,
-      "current_price": 346.46,
-      "market_value": 26330.96,
-      "unrealized_pl": -136.04,
-      "unrealized_pl_pct": -0.514
+      "current_price": 346.3427,
+      "market_value": 26322.05,
+      "unrealized_pl": -144.95,
+      "unrealized_pl_pct": -0.548
     },
     {
       "symbol": "MCD",
       "qty": 314,
       "avg_entry_price": 271.86,
-      "current_price": 271.06,
-      "market_value": 85112.84,
-      "unrealized_pl": -251.2,
-      "unrealized_pl_pct": -0.294
+      "current_price": 271.14,
+      "market_value": 85137.96,
+      "unrealized_pl": -226.08,
+      "unrealized_pl_pct": -0.265
     },
     {
       "symbol": "V",
       "qty": 75,
       "avg_entry_price": 361.16,
-      "current_price": 361.335,
-      "market_value": 27100.12,
-      "unrealized_pl": 13.12,
-      "unrealized_pl_pct": 0.048
+      "current_price": 361.4307,
+      "market_value": 27107.3,
+      "unrealized_pl": 20.3,
+      "unrealized_pl_pct": 0.075
     }
   ]
 }
