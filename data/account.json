@@ -1,9 +1,28 @@
 {
-  "ts": "2026-07-16T14:59:48.145041Z",
-  "equity": 81237.85,
+  "ts": "2026-07-16T16:21:10.406346Z",
+  "equity": 80840.28,
   "last_equity": 81237.85,
-  "cash": 81237.85,
-  "buying_power": 324951.4,
-  "all_time_return_pct": -18.7621,
-  "positions": []
+  "cash": 27389.71,
+  "buying_power": 173856.39,
+  "all_time_return_pct": -19.1597,
+  "positions": [
+    {
+      "symbol": "HD",
+      "qty": 76,
+      "avg_entry_price": 348.25,
+      "current_price": 346.445,
+      "market_value": 26329.82,
+      "unrealized_pl": -137.18,
+      "unrealized_pl_pct": -0.518
+    },
+    {
+      "symbol": "V",
+      "qty": 75,
+      "avg_entry_price": 361.16,
+      "current_price": 361.61,
+      "market_value": 27120.75,
+      "unrealized_pl": 33.75,
+      "unrealized_pl_pct": 0.125
+    }
+  ]
 }

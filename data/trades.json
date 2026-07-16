@@ -10361,5 +10361,96 @@
     "ts": "2026-07-16T15:09:27.026068Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-16",
+    "ts": "2026-07-16T16:19:45.316447Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=29515097381"
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-07-16",
+    "ts": "2026-07-16T16:20:07.240446Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-16",
+    "ts": "2026-07-16T16:21:10.244121Z",
+    "equity_start": 80845.61,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "CRM",
+          "confidence": "high",
+          "catalyst": "Relative strength +2.16% while broad tape (chips, banks, industrials) is red 3-5% \u2014 clear leadership on a risk-off day",
+          "smart_money_signals": "Alt-data score 7/10: insider cluster buy (5 distinct buyers, 9 buys in 30d), House buy from Salazar in last 21d, 76% analyst bullish (13SB/31B)",
+          "rationale": "Rare stack of insider cluster + congressional buy + analyst conviction + green-tape RS on a red day is the cleanest long setup on the board."
+        },
+        {
+          "symbol": "SHOP",
+          "confidence": "medium",
+          "catalyst": "Up +2.16% with strong relative strength versus a broadly red tape, no negative news",
+          "smart_money_signals": "78% analyst bullish (10SB/32B/11H), no insider selling, alt-data score +1",
+          "rationale": "Clean RS bounce with supportive analyst base and no negative alt-data \u2014 decent secondary setup to diversify away from CRM."
+        },
+        {
+          "symbol": "MCD",
+          "confidence": "medium",
+          "catalyst": "Defensive bid: up +2.48% on a broadly red risk-off tape (chips/banks getting hit), classic rotation into staples",
+          "smart_money_signals": "No red flags; 58.5% analyst bullish, no insider selling, neutral alt-data",
+          "rationale": "Defensive relative-strength name benefiting from rotation out of semis; low-drama third leg with tight 1% stop."
+        }
+      ],
+      "market_take": "Risk-off tape led by semis (INTC/AMD/NVDA/AVGO all -2% to -5% on TSMC capex/margin worries) with banks and industrials dragged along \u2014 money rotating into defensives and select software.",
+      "skipped_movers": [
+        "GE: -5.5% despite Q2 beat \u2014 price action contradicts catalyst, falling knife",
+        "INTC: -5.5%, only 33% analyst bullish, negative sector news",
+        "AMD: -5.3% chip selloff, weak alt-data can't offset momentum",
+        "ORCL: heavy insider selling (11 sells), price down 5%",
+        "GS: down 4.3%, only 47% analyst bullish",
+        "NVDA: heavy insider selling (9 sells, 7 insiders) + House selling, down on tape",
+        "AVGO: heavy insider selling (57 sells), down 3.3%",
+        "SBUX: heavy insider selling flag despite green day",
+        "COST: insider selling flag",
+        "NKE: only 40% analyst bullish, weak conviction",
+        "CAT: no catalyst, red on day",
+        "MS: no news, red on day"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "failed",
+        "symbol": "CRM",
+        "error": "{\"base_price\":\"171.25\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      },
+      {
+        "status": "failed",
+        "symbol": "SHOP",
+        "error": "{\"base_price\":\"125.945\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Defensive relative-strength name benefiting from rotation out of semis; low-drama third leg with tight 1% stop.",
+        "symbol": "MCD",
+        "qty": 314,
+        "entry_price_est": 272.14,
+        "stop_price": 269.42,
+        "take_price": 277.58,
+        "order_id": "edfee2b1-b7ee-4495-83c8-46892a134359"
+      }
+    ]
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-07-16",
+    "ts": "2026-07-16T16:21:10.408619Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
