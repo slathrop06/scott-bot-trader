@@ -1,28 +1,9 @@
 {
-  "ts": "2026-07-16T19:06:45.825207Z",
-  "equity": 80680.54,
+  "ts": "2026-07-16T20:26:16.377357Z",
+  "equity": 81144.74,
   "last_equity": 81237.85,
-  "cash": -31847.15,
-  "buying_power": 187688.93,
-  "all_time_return_pct": -19.3195,
-  "positions": [
-    {
-      "symbol": "MCD",
-      "qty": 314,
-      "avg_entry_price": 271.86,
-      "current_price": 271.75,
-      "market_value": 85329.5,
-      "unrealized_pl": -34.54,
-      "unrealized_pl_pct": -0.04
-    },
-    {
-      "symbol": "V",
-      "qty": 75,
-      "avg_entry_price": 361.16,
-      "current_price": 362.6425,
-      "market_value": 27198.19,
-      "unrealized_pl": 111.19,
-      "unrealized_pl_pct": 0.41
-    }
-  ]
+  "cash": 81144.74,
+  "buying_power": 324578.96,
+  "all_time_return_pct": -18.8553,
+  "positions": []
 }
