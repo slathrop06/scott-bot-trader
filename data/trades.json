@@ -10924,5 +10924,97 @@
     "ts": "2026-07-17T17:34:56.845680Z",
     "status": "blocked",
     "note": "Buying power $0.00 below $5000 minimum \u2014 account is too deployed to take new trades."
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-17",
+    "ts": "2026-07-17T18:39:15.236302Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=29604609273"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-17",
+    "ts": "2026-07-17T18:39:35.130283Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-17",
+    "ts": "2026-07-17T18:40:25.684446Z",
+    "equity_start": 78866.74,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "CVX",
+          "confidence": "medium",
+          "catalyst": "Crude jumped 3% to $81 on Hormuz disruption; CVX up +1.71% showing relative strength while broad tape sells off on China AI shock",
+          "smart_money_signals": "House buy by David J. Taylor (21d), 77% analyst buy (7SB/16B), alt-score +3",
+          "rationale": "Only clean up-mover with a real macro catalyst (oil spike) plus smart-money confirmation on a risk-off tape."
+        },
+        {
+          "symbol": "DIS",
+          "confidence": "low",
+          "catalyst": "Oversold -2.05% on Trump license threat headline \u2014 political noise that historically fades; setup for mean-reversion bounce",
+          "smart_money_signals": "Insider cluster buy: 11 unique insiders bought (12 buys vs 3 sells, 30d), 88.9% analyst bullish (11SB/21B), alt-score +5",
+          "rationale": "Massive insider cluster buy signals confidence that the political headline is noise, not fundamental damage."
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "+2.56% relative strength bucking the tech/semi rout, 27M vol shows real buying interest",
+          "smart_money_signals": "82% analyst buy (15SB/25B), WSB rank #22 with 1.45x chatter \u2014 though offset by insider selling",
+          "rationale": "Rare green tech name with volume conviction on a day semis are getting crushed \u2014 momentum continuation setup."
+        }
+      ],
+      "market_take": "Risk-off tape: China's Kimi K3 AI reveal triggers semi/mega-cap tech selloff while oil rips on Hormuz \u2014 rotate to energy and defensive relative-strength names.",
+      "skipped_movers": [
+        "META: heavy insider selling (11 sells, 0 buys) despite oversold bounce potential",
+        "TSLA: no smart-money signal, negative China EV headline, weak analyst mix",
+        "SBUX: heavy insider selling, weak 48.9% analyst sentiment, no catalyst",
+        "GS: zero alt-signal, weak 46.9% analyst sentiment",
+        "HD/MCD/NKE/MA/V: weak or no catalyst, no smart-money edge",
+        "GOOGL: alt-score decent but caught in China-AI selloff, House selling offsets insider buys",
+        "ADBE: weak analyst mix (37.8%), thin signal"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "failed",
+        "symbol": "CVX",
+        "error": "{\"base_price\":\"186.77\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "low",
+        "rationale": "Massive insider cluster buy signals confidence that the political headline is noise, not fundamental damage.",
+        "symbol": "DIS",
+        "qty": 720,
+        "entry_price_est": 97.16,
+        "stop_price": 96.19,
+        "take_price": 99.1,
+        "order_id": "2a69e88e-0667-4b93-a69b-07a128fb4252"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Rare green tech name with volume conviction on a day semis are getting crushed \u2014 momentum continuation setup.",
+        "symbol": "ORCL",
+        "qty": 549,
+        "entry_price_est": 127.39500000000001,
+        "stop_price": 126.12,
+        "take_price": 129.94,
+        "order_id": "eabc2c27-831f-4aa4-922a-50dd9e4b02cf"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-17",
+    "ts": "2026-07-17T18:40:25.750220Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
