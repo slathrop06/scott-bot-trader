@@ -1,9 +1,28 @@
 {
-  "ts": "2026-07-17T14:42:19.132216Z",
-  "equity": 81144.61,
+  "ts": "2026-07-17T16:13:59.714634Z",
+  "equity": 80931.65,
   "last_equity": 81144.61,
-  "cash": 81144.61,
-  "buying_power": 324578.44,
-  "all_time_return_pct": -18.8554,
-  "positions": []
+  "cash": 27706.21,
+  "buying_power": 259856.07,
+  "all_time_return_pct": -19.0684,
+  "positions": [
+    {
+      "symbol": "DIS",
+      "qty": 272,
+      "avg_entry_price": 98.1425,
+      "current_price": 97.6568,
+      "market_value": 26562.65,
+      "unrealized_pl": -132.11,
+      "unrealized_pl_pct": -0.495
+    },
+    {
+      "symbol": "GOOGL",
+      "qty": 77,
+      "avg_entry_price": 347.32,
+      "current_price": 346.27,
+      "market_value": 26662.79,
+      "unrealized_pl": -80.85,
+      "unrealized_pl_pct": -0.302
+    }
+  ]
 }
