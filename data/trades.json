@@ -10677,5 +10677,112 @@
     "ts": "2026-07-16T22:38:50.239061Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=29540142807"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-17",
+    "ts": "2026-07-17T14:49:00.177832Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=29589535619"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-17",
+    "ts": "2026-07-17T14:49:18.893792Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-17",
+    "ts": "2026-07-17T14:49:20.434610Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-17",
+    "ts": "2026-07-17T14:49:21.898591Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-17",
+    "ts": "2026-07-17T14:50:10.624713Z",
+    "equity_start": 81144.61,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "DIS",
+          "confidence": "medium",
+          "catalyst": "Modest -1% dip provides entry near support in a broad tech selloff; DIS not tied to AI-bubble narrative pressuring the tape",
+          "smart_money_signals": "Insider cluster buy: 11 unique insiders bought (12 buys vs 3 sells) in last 30d; 88.9% analyst bullish (11SB/21B)",
+          "rationale": "Strongest insider conviction signal on the board with defensive profile away from the chip/AI rout dragging peers."
+        },
+        {
+          "symbol": "GOOGL",
+          "confidence": "medium",
+          "catalyst": "Intel-Google Cloud AI partnership expansion (Gemini Enterprise) is a concrete positive; -2.84% dip is sympathy selling with broader tech, not name-specific",
+          "smart_money_signals": "Insider cluster buy (8 unique buyers, 9 buys), WSB chatter 3.31x normal at rank #15, 87% analyst bullish",
+          "rationale": "Cluster insider buying + surging retail interest + fresh positive partnership news into a dip is the best catalyst+smart-money stack available."
+        },
+        {
+          "symbol": "CVX",
+          "confidence": "low",
+          "catalyst": "Relative strength: +1.63% while market/tech is red, energy rotation play",
+          "smart_money_signals": "House congressional buy by David J. Taylor (net buying); 76.7% analyst bullish",
+          "rationale": "Only clean up-mover with any smart-money support \u2014 useful non-tech diversifier during the AI selloff."
+        }
+      ],
+      "market_take": "Broad risk-off in mega-cap tech/AI with chip stocks leading down; energy and defensives showing relative strength.",
+      "skipped_movers": [
+        "META: heavy insider selling (11 sells, 0 buys) + -5% gap down \u2014 disqualified",
+        "NVDA: heavy insider selling (8 sells) + House selling + chip rout \u2014 disqualified",
+        "ORCL: heavy insider selling (11 sells) despite bounce \u2014 disqualified",
+        "TSLA: earnings approaching, weak 48% analyst bullish, no smart-money support",
+        "MSFT: mixed House activity, no catalyst, falling with tape",
+        "INTC: only 32.7% analyst bullish, chip sector rout",
+        "GE: up-mover but thin signals, only 1 insider buy",
+        "XOM/GS: zero alt-data signal score"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strongest insider conviction signal on the board with defensive profile away from the chip/AI rout dragging peers.",
+        "symbol": "DIS",
+        "qty": 272,
+        "entry_price_est": 98.15,
+        "stop_price": 97.17,
+        "take_price": 100.11,
+        "order_id": "ea7ebd3c-621c-4b37-adbb-4f0e428db04e"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Cluster insider buying + surging retail interest + fresh positive partnership news into a dip is the best catalyst+smart-money stack available.",
+        "symbol": "GOOGL",
+        "qty": 77,
+        "entry_price_est": 347.32500000000005,
+        "stop_price": 343.85,
+        "take_price": 354.27,
+        "order_id": "63f8b843-900f-46d0-a745-d63e43d011d0"
+      },
+      {
+        "status": "failed",
+        "symbol": "CVX",
+        "error": "{\"base_price\":\"186.48\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-17",
+    "ts": "2026-07-17T14:50:10.649379Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
