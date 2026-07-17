@@ -1,28 +1,37 @@
 {
-  "ts": "2026-07-17T16:13:59.714634Z",
-  "equity": 80931.65,
+  "ts": "2026-07-17T16:20:02.266420Z",
+  "equity": 81001.74,
   "last_equity": 81144.61,
   "cash": 27706.21,
-  "buying_power": 259856.07,
-  "all_time_return_pct": -19.0684,
+  "buying_power": 2710.18,
+  "all_time_return_pct": -18.9983,
   "positions": [
+    {
+      "symbol": "AMD",
+      "qty": 171,
+      "avg_entry_price": 502.56,
+      "current_price": 502.5599,
+      "market_value": 85937.74,
+      "unrealized_pl": -0.02,
+      "unrealized_pl_pct": 0.0
+    },
     {
       "symbol": "DIS",
       "qty": 272,
       "avg_entry_price": 98.1425,
-      "current_price": 97.6568,
-      "market_value": 26562.65,
-      "unrealized_pl": -132.11,
-      "unrealized_pl_pct": -0.495
+      "current_price": 97.705,
+      "market_value": 26575.76,
+      "unrealized_pl": -119.0,
+      "unrealized_pl_pct": -0.446
     },
     {
       "symbol": "GOOGL",
       "qty": 77,
       "avg_entry_price": 347.32,
-      "current_price": 346.27,
-      "market_value": 26662.79,
-      "unrealized_pl": -80.85,
-      "unrealized_pl_pct": -0.302
+      "current_price": 347.01,
+      "market_value": 26719.77,
+      "unrealized_pl": -23.87,
+      "unrealized_pl_pct": -0.089
     }
   ]
 }

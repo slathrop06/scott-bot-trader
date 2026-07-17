@@ -10805,5 +10805,103 @@
     "ts": "2026-07-17T16:08:22.466764Z",
     "status": "imports_ok",
     "note": "src.* all importable"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-17",
+    "ts": "2026-07-17T16:18:32.417853Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=29595641576"
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-07-17",
+    "ts": "2026-07-17T16:18:53.736389Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-17",
+    "ts": "2026-07-17T16:20:02.127867Z",
+    "equity_start": 80977.19,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "GE",
+          "confidence": "high",
+          "catalyst": "GE Aerospace posted record quarterly results and raised guidance; stock up +1.90% intraday confirming positive post-earnings drift",
+          "smart_money_signals": "Net insider buying (1 buy, 0 sells 30d), 87.5% analyst bullish (9SB/19B/3H)",
+          "rationale": "Clean post-earnings drift with guidance raise, insider buying, and strong analyst conviction \u2014 best catalyst+smart-money stack on the board"
+        },
+        {
+          "symbol": "AMD",
+          "confidence": "medium",
+          "catalyst": "Green +1.47% while broad market slumps (Dow/Nasdaq futures down) \u2014 relative strength with no contradicting news",
+          "smart_money_signals": "House buy by Gilbert Cisneros (1 buy, 0 sells 21d), 84.2% analyst bullish, WSB rank #16 with 1.57x mentions",
+          "rationale": "Relative strength vs a red tape plus congressional buying and strong analyst support"
+        },
+        {
+          "symbol": "NFLX",
+          "confidence": "medium",
+          "catalyst": "Bouncing +1.89% off 52-week lows with analysts flagging significant long-term opportunity",
+          "smart_money_signals": "Net insider buying (6 buys vs 2 sells), WSB rank #2 with 6.36x normal chatter, 77.6% analyst bullish",
+          "rationale": "Oversold bounce with fresh analyst support and massive retail attention plus insider accumulation"
+        }
+      ],
+      "market_take": "Broad tape is red with mega-cap tech (META, MSFT) selling off, but industrials and select semis show relative strength.",
+      "skipped_movers": [
+        "META: heavy insider selling (11 sells) + price down 3% \u2014 skip",
+        "ORCL: heavy insider selling + credit downgrade risk despite gap up \u2014 skip",
+        "MSFT: down 1.9% with congressional net selling \u2014 no catalyst",
+        "SBUX: heavy insider selling, weak analyst 49% bullish \u2014 skip",
+        "V/MA: red intraday with no catalyst",
+        "CAT: no news, only 56% analyst bullish",
+        "NKE: down with weak 40% analyst bullish"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Clean post-earnings drift with guidance raise, insider buying, and strong analyst conviction \u2014 best catalyst+smart-money stack on the board",
+        "symbol": "GE",
+        "qty": 241,
+        "entry_price_est": 355.0,
+        "stop_price": 351.45,
+        "take_price": 362.1,
+        "order_id": "98495e30-d0f1-4d31-99c8-95e3da3fc39c"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Relative strength vs a red tape plus congressional buying and strong analyst support",
+        "symbol": "AMD",
+        "qty": 171,
+        "entry_price_est": 500.56,
+        "stop_price": 495.55,
+        "take_price": 510.57,
+        "order_id": "69e10189-4398-4304-9865-5834d712ad90"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Oversold bounce with fresh analyst support and massive retail attention plus insider accumulation",
+        "symbol": "NFLX",
+        "qty": 1246,
+        "entry_price_est": 68.83500000000001,
+        "stop_price": 68.15,
+        "take_price": 70.21,
+        "order_id": "7be66e08-054a-4c4a-bded-4686b32c1f1b"
+      }
+    ]
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-07-17",
+    "ts": "2026-07-17T16:20:02.268972Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
