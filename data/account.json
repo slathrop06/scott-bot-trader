@@ -1,19 +1,28 @@
 {
-  "ts": "2026-07-17T18:40:25.747556Z",
-  "equity": 78984.99,
+  "ts": "2026-07-17T19:04:23.039854Z",
+  "equity": 78417.83,
   "last_equity": 81144.61,
-  "cash": -7344.12,
-  "buying_power": 72835.29,
-  "all_time_return_pct": -21.015,
+  "cash": -77613.96,
+  "buying_power": 126433.17,
+  "all_time_return_pct": -21.5822,
   "positions": [
+    {
+      "symbol": "DIS",
+      "qty": 720,
+      "avg_entry_price": 97.17,
+      "current_price": 97.19,
+      "market_value": 69976.8,
+      "unrealized_pl": 14.4,
+      "unrealized_pl_pct": 0.021
+    },
     {
       "symbol": "NFLX",
       "qty": 1246,
       "avg_entry_price": 68.8396,
-      "current_price": 69.285,
-      "market_value": 86329.11,
-      "unrealized_pl": 554.96,
-      "unrealized_pl_pct": 0.647
+      "current_price": 69.065,
+      "market_value": 86054.99,
+      "unrealized_pl": 280.84,
+      "unrealized_pl_pct": 0.327
     }
   ]
 }
