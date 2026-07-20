@@ -11160,5 +11160,117 @@
     "ts": "2026-07-17T22:25:51.610963Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=29617852226"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-20",
+    "ts": "2026-07-20T15:17:26.331519Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=29754487417"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-20",
+    "ts": "2026-07-20T15:17:44.035149Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-20",
+    "ts": "2026-07-20T15:17:45.506984Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-20",
+    "ts": "2026-07-20T15:17:46.905706Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-20",
+    "ts": "2026-07-20T15:18:33.669752Z",
+    "equity_start": 78994.75,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "GOOGL",
+          "confidence": "high",
+          "catalyst": "Gap up +2.87% on Intel-Google Cloud AI partnership expansion news",
+          "smart_money_signals": "Insider cluster buy (8 buyers, 9 buys/30d), stocktwits 100% bullish (30 msgs), WSB 4.67x normal, 87% analyst buy",
+          "rationale": "Best signal stack today \u2014 cluster insider buy + unanimous social + analyst conviction + concrete AI partnership catalyst driving the gap"
+        },
+        {
+          "symbol": "AMD",
+          "confidence": "medium",
+          "catalyst": "Gap up +3.62% riding record $46B semiconductor ETF inflows and broad AI/chip strength",
+          "smart_money_signals": "84% analyst buy (15SB/33B, 0 sells), WSB chatter 2.17x normal rank #15, stocktwits 69% bullish",
+          "rationale": "Strong sector tailwind + clean analyst conviction with no insider selling flags \u2014 momentum continuation setup"
+        },
+        {
+          "symbol": "INTC",
+          "confidence": "medium",
+          "catalyst": "Gap up +4.47% on Google Cloud AI partnership expansion ahead of earnings",
+          "smart_money_signals": "WSB rank #35 rising 1.75x, moderate stocktwits 45%",
+          "rationale": "Concrete partnership catalyst driving strong gap \u2014 earnings risk noted but 'next week' per news so not within 1 trading day"
+        }
+      ],
+      "market_take": "Risk-on tone with AI/semi leadership and mega-cap tech gapping up on partnership news",
+      "skipped_movers": [
+        "ORCL: 11 insider sells, price down despite bullish social \u2014 contradiction",
+        "AVGO: 29 insider sells from 4 insiders, heavy distribution",
+        "ADBE: House selling + stocktwits 17% bearish + price down",
+        "AAPL: price down -2.57%, stocktwits only 38% bullish",
+        "NFLX: analyst forecast cuts driving decline",
+        "TSLA: price down, China competition headwind, only 48% analyst buy",
+        "NVDA: gap up modest, Micron competitive narrative + insider sell"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best signal stack today \u2014 cluster insider buy + unanimous social + analyst conviction + concrete AI partnership catalyst driving the gap",
+        "symbol": "GOOGL",
+        "qty": 73,
+        "entry_price_est": 353.885,
+        "stop_price": 350.35,
+        "take_price": 360.96,
+        "order_id": "56a9841e-aca9-4fba-b28e-7602a82ccb88"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strong sector tailwind + clean analyst conviction with no insider selling flags \u2014 momentum continuation setup",
+        "symbol": "AMD",
+        "qty": 50,
+        "entry_price_est": 513.135,
+        "stop_price": 508.0,
+        "take_price": 523.4,
+        "order_id": "6d6ef017-b964-4c91-95a2-01198160dd6d"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Concrete partnership catalyst driving strong gap \u2014 earnings risk noted but 'next week' per news so not within 1 trading day",
+        "symbol": "INTC",
+        "qty": 265,
+        "entry_price_est": 98.135,
+        "stop_price": 97.15,
+        "take_price": 100.1,
+        "order_id": "b665f4d2-c0c6-44f2-a6f7-baf59c005a18"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-20",
+    "ts": "2026-07-20T15:18:33.694433Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
