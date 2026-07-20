@@ -1,46 +1,64 @@
 {
-  "ts": "2026-07-20T18:31:40.632367Z",
-  "equity": 79004.33,
+  "ts": "2026-07-20T18:51:21.447699Z",
+  "equity": 78549.42,
   "last_equity": 78994.75,
-  "cash": -120828.0,
-  "buying_power": 25327.71,
-  "all_time_return_pct": -20.9957,
+  "cash": -171726.01,
+  "buying_power": 13867.15,
+  "all_time_return_pct": -21.4506,
   "positions": [
+    {
+      "symbol": "AMD",
+      "qty": 49,
+      "avg_entry_price": 515.799,
+      "current_price": 512.5,
+      "market_value": 25112.5,
+      "unrealized_pl": -161.65,
+      "unrealized_pl_pct": -0.64
+    },
     {
       "symbol": "GOOGL",
       "qty": 73,
       "avg_entry_price": 356.59,
-      "current_price": 351.76,
-      "market_value": 25678.48,
-      "unrealized_pl": -352.59,
-      "unrealized_pl_pct": -1.354
+      "current_price": 351.205,
+      "market_value": 25637.97,
+      "unrealized_pl": -393.11,
+      "unrealized_pl_pct": -1.51
     },
     {
       "symbol": "INTC",
       "qty": 265,
       "avg_entry_price": 98.16,
-      "current_price": 98.22,
-      "market_value": 26028.3,
-      "unrealized_pl": 15.9,
-      "unrealized_pl_pct": 0.061
+      "current_price": 98.26,
+      "market_value": 26038.9,
+      "unrealized_pl": 26.5,
+      "unrealized_pl_pct": 0.102
     },
     {
       "symbol": "MSFT",
       "qty": 184,
       "avg_entry_price": 401.11,
-      "current_price": 401.825,
-      "market_value": 73935.8,
-      "unrealized_pl": 131.56,
-      "unrealized_pl_pct": 0.178
+      "current_price": 400.535,
+      "market_value": 73698.44,
+      "unrealized_pl": -105.8,
+      "unrealized_pl_pct": -0.143
     },
     {
       "symbol": "PLTR",
       "qty": 546,
       "avg_entry_price": 135.31,
-      "current_price": 135.88,
-      "market_value": 74190.48,
-      "unrealized_pl": 311.22,
-      "unrealized_pl_pct": 0.421
+      "current_price": 135.85,
+      "market_value": 74174.1,
+      "unrealized_pl": 294.84,
+      "unrealized_pl_pct": 0.399
+    },
+    {
+      "symbol": "WMT",
+      "qty": 228,
+      "avg_entry_price": 112.3854,
+      "current_price": 112.34,
+      "market_value": 25613.52,
+      "unrealized_pl": -10.34,
+      "unrealized_pl_pct": -0.04
     }
   ]
 }
