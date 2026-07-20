@@ -11272,5 +11272,99 @@
     "ts": "2026-07-20T15:18:33.694433Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-20",
+    "ts": "2026-07-20T16:26:45.670013Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=29759613685"
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-07-20",
+    "ts": "2026-07-20T16:27:10.625034Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-20",
+    "ts": "2026-07-20T16:28:17.104268Z",
+    "equity_start": 79385.06,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "SHOP",
+          "confidence": "medium",
+          "catalyst": "Clean +3.02% intraday breakout with no contradicting news; relative strength move on solid volume",
+          "smart_money_signals": "Stocktwits 81% bullish (30 msgs), 77.8% analyst buy (10SB/32B), no insider or congressional selling flagged",
+          "rationale": "Cleanest setup on the board \u2014 strong price action with supportive analyst/retail sentiment and zero red flags."
+        },
+        {
+          "symbol": "MSFT",
+          "confidence": "medium",
+          "catalyst": "+1.94% move into Q4 earnings anticipation with BofA reiterating Buy and $500 target",
+          "smart_money_signals": "WSB rank #3 with 9.29x normal chatter (130 mentions), Stocktwits 89% bullish, 92.6% analyst buy (23SB/40B)",
+          "rationale": "Massive social momentum plus top-tier analyst conviction outweighs the light House selling; pre-earnings drift setup."
+        },
+        {
+          "symbol": "PLTR",
+          "confidence": "medium",
+          "catalyst": "+2.77% continuation move on heavy volume (12.9M shares) with no negative news",
+          "smart_money_signals": "WSB rank #41 at 3.5x normal chatter, Stocktwits 85% bullish, net insider activity roughly balanced",
+          "rationale": "Momentum name with retail tailwind and clean tape \u2014 good asymmetric bracket at +2/-1%."
+        }
+      ],
+      "market_take": "Mixed tape with AI/mega-cap tech leading and defensives lagging; risk-on skew supports momentum longs.",
+      "skipped_movers": [
+        "AVGO: 29 insider sells in 30d \u2014 heavy cluster selling disqualifies",
+        "ORCL: down 3.19% and 11 insider sells despite bullish sentiment \u2014 price contradicts",
+        "AMZN: House selling + insider sell + only +2.3%, weaker setup than MSFT",
+        "BA: down 1.92% \u2014 no long setup",
+        "MS: down 1.75% \u2014 no long setup",
+        "NFLX: down 1.71% on analyst forecast cuts \u2014 clear negative catalyst",
+        "META: 11 insider sells + House net selling \u2014 smart money leaving",
+        "HD: Stocktwits 28% bullish (bearish) and price down \u2014 disqualified",
+        "ADBE: Stocktwits 24% bullish, House selling, price down \u2014 disqualified"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "failed",
+        "symbol": "SHOP",
+        "error": "{\"base_price\":\"127.41\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Massive social momentum plus top-tier analyst conviction outweighs the light House selling; pre-earnings drift setup.",
+        "symbol": "MSFT",
+        "qty": 184,
+        "entry_price_est": 401.07500000000005,
+        "stop_price": 397.06,
+        "take_price": 409.1,
+        "order_id": "679ce732-bdbc-491f-8812-aa463beec7a4"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Momentum name with retail tailwind and clean tape \u2014 good asymmetric bracket at +2/-1%.",
+        "symbol": "PLTR",
+        "qty": 546,
+        "entry_price_est": 135.29500000000002,
+        "stop_price": 133.94,
+        "take_price": 138.0,
+        "order_id": "ad03b59a-84a7-407e-b7ab-cad6c2f220e1"
+      }
+    ]
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-07-20",
+    "ts": "2026-07-20T16:28:17.257159Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
