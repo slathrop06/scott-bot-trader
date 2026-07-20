@@ -11366,5 +11366,98 @@
     "ts": "2026-07-20T16:28:17.257159Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-20",
+    "ts": "2026-07-20T18:30:12.945111Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=29768018109"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-20",
+    "ts": "2026-07-20T18:30:36.359037Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-20",
+    "ts": "2026-07-20T18:31:40.442951Z",
+    "equity_start": 79116.25,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMD",
+          "confidence": "high",
+          "catalyst": "Up +4.69% intraday on 6 Wall Street analysts raising price targets ahead of Advancing AI event \u2014 clear specific catalyst with gap continuation",
+          "smart_money_signals": "WSB chatter 3.44x normal at rank #16, Stocktwits 100% bullish on 30 msgs, 84.2% analyst buy rating (15 SB / 33 B)",
+          "rationale": "Strongest stack today \u2014 concrete analyst-driven catalyst plus multiple alt-data confirmations and momentum already in motion"
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "Up +2.61% with no news \u2014 pure relative strength move on a mixed tape",
+          "smart_money_signals": "Insider cluster buy (5 buyers, 9 purchases in 30d), House buy by Salazar, 75.9% analyst buy, Stocktwits 71% bullish",
+          "rationale": "Cleanest smart-money setup \u2014 insider cluster + congressional buy + analyst support with confirming price action and no bearish flags"
+        },
+        {
+          "symbol": "WMT",
+          "confidence": "medium",
+          "catalyst": "Defensive name pulling back -1.66% into strong insider support \u2014 mean-reversion entry",
+          "smart_money_signals": "Insider cluster buy with 9 distinct buyers (9 buys vs 3 sells) in 30d, 89.6% analyst buy (14 SB / 29 B)",
+          "rationale": "Rare 9-insider cluster buy is a high-conviction smart-money signal on a low-beta name where -1% stop is comfortably outside noise"
+        }
+      ],
+      "market_take": "Mixed tape with chips/AI bid and mega-cap tech under pressure \u2014 rotate toward names with confirmed catalysts or insider conviction.",
+      "skipped_movers": [
+        "AVGO: 29 insider sells in 30d \u2014 heavy distribution, skip",
+        "ORCL: down -2.6% with heavy insider selling and credit-risk headlines",
+        "NFLX: down on analyst forecast cuts \u2014 contradicts any bullish read",
+        "AAPL: earnings July 30 proximity risk + selling into tech rout",
+        "TSLA: only 48% analyst buy and price contradicts bullish social",
+        "HD: Stocktwits 17% bullish (bearish threshold triggered)",
+        "GE: price down despite positive news \u2014 signal contradicted",
+        "ORCL/NFLX/AAPL: all red with negative news flow"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Strongest stack today \u2014 concrete analyst-driven catalyst plus multiple alt-data confirmations and momentum already in motion",
+        "symbol": "AMD",
+        "qty": 49,
+        "entry_price_est": 505.945,
+        "stop_price": 500.89,
+        "take_price": 516.06,
+        "order_id": "4fc0b49d-dede-4eec-badb-cf8de6ae72b7"
+      },
+      {
+        "status": "failed",
+        "symbol": "CRM",
+        "error": "{\"base_price\":\"174.77\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Rare 9-insider cluster buy is a high-conviction smart-money signal on a low-beta name where -1% stop is comfortably outside noise",
+        "symbol": "WMT",
+        "qty": 228,
+        "entry_price_est": 110.695,
+        "stop_price": 109.59,
+        "take_price": 112.91,
+        "order_id": "3f548825-b67f-4987-a2ec-aee725ee017d"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-20",
+    "ts": "2026-07-20T18:31:40.634703Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
