@@ -11551,5 +11551,118 @@
     "ts": "2026-07-20T22:31:56.715187Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=29784221579"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-21",
+    "ts": "2026-07-21T15:09:24.067587Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=29842609457"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-21",
+    "ts": "2026-07-21T15:09:43.915278Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-21",
+    "ts": "2026-07-21T15:09:45.941688Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-21",
+    "ts": "2026-07-21T15:09:47.306388Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-21",
+    "ts": "2026-07-21T15:10:41.992150Z",
+    "equity_start": 76162.32,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "CRM",
+          "confidence": "high",
+          "catalyst": "Stock down 1.6% offering entry on a name with exceptional smart-money stack; no negative news catalyst",
+          "smart_money_signals": "Insider cluster buy (5 buyers, 9 buys/30d), House buy by Salazar, Stocktwits 100% bullish on 30 msgs, 76% analyst buy \u2014 alt-data score 8/10",
+          "rationale": "Best smart-money setup in the list \u2014 rare 5-insider cluster buy plus congressional buy plus unanimous retail sentiment, buying weakness."
+        },
+        {
+          "symbol": "AMD",
+          "confidence": "medium",
+          "catalyst": "+5.6% premarket gap on AI infrastructure rotation ahead of Advancing AI 2026 event; sector momentum with SOXX/SOXL $2.1B inflows",
+          "smart_money_signals": "84% analyst buy (15SB/33B), WSB rank #16 with 1.33x chatter, House net neutral",
+          "rationale": "Strong catalyst + sector tailwind with clean analyst backing; riding the semi rally with a specific upcoming event."
+        },
+        {
+          "symbol": "WMT",
+          "confidence": "medium",
+          "catalyst": "Down 1.4% providing entry on defensive name; Cramer explicitly calling for rotation out of tech into other sectors",
+          "smart_money_signals": "Insider cluster buy \u2014 9 insiders buying (9 buys vs 3 sells), 90% analyst buy (14SB/29B)",
+          "rationale": "Rare 9-insider cluster buy is a powerful smart-money signal on a low-volatility name buying the dip."
+        }
+      ],
+      "market_take": "Risk-on tech/semi rally with AI infrastructure rotation leading; smart money quietly stacking into CRM and WMT on weakness.",
+      "skipped_movers": [
+        "INTC: earnings looming per news, analysts only 32.7% bullish \u2014 skip",
+        "ORCL: heavy insider selling (11 sells) disqualifies despite bullish sentiment",
+        "AVGO: heavy insider selling (29 sells, 4 insiders) \u2014 skip",
+        "NVDA: Stocktwits only 45% bullish despite gap, mixed House activity",
+        "ADBE: fresh Morgan Stanley downgrade, stock down \u2014 skip",
+        "CAT: Stocktwits only 33% bullish, no smart-money edge",
+        "GS/MS/XOM: catalyst too thin, no smart-money stack",
+        "MA: net insider selling 6:3, stock down without catalyst"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best smart-money setup in the list \u2014 rare 5-insider cluster buy plus congressional buy plus unanimous retail sentiment, buying weakness.",
+        "symbol": "CRM",
+        "qty": 146,
+        "entry_price_est": 171.0,
+        "stop_price": 169.29,
+        "take_price": 174.42,
+        "order_id": "8e72ef3d-e91e-4175-9794-b4c1b8a2e594"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strong catalyst + sector tailwind with clean analyst backing; riding the semi rally with a specific upcoming event.",
+        "symbol": "AMD",
+        "qty": 47,
+        "entry_price_est": 533.1700000000001,
+        "stop_price": 527.84,
+        "take_price": 543.83,
+        "order_id": "aa35993a-867d-48fb-88b2-78519ef1c66e"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Rare 9-insider cluster buy is a powerful smart-money signal on a low-volatility name buying the dip.",
+        "symbol": "WMT",
+        "qty": 227,
+        "entry_price_est": 110.71000000000001,
+        "stop_price": 109.6,
+        "take_price": 112.92,
+        "order_id": "b449eece-fc39-4063-b77b-911a871738b6"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-21",
+    "ts": "2026-07-21T15:10:42.043050Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
