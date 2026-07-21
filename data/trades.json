@@ -11664,5 +11664,105 @@
     "ts": "2026-07-21T15:10:42.043050Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-21",
+    "ts": "2026-07-21T16:25:23.488704Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=29848504432"
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-07-21",
+    "ts": "2026-07-21T16:25:43.637761Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-21",
+    "ts": "2026-07-21T16:26:33.671184Z",
+    "equity_start": 76062.39,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "INTC",
+          "confidence": "high",
+          "catalyst": "Up +7.1% intraday on Xeon 6 memory upgrade + Google Cloud AI expansion deal; strong momentum breakout",
+          "smart_money_signals": "WSB rank #27 with 2.12x chatter surge; Stocktwits 88% bullish on 30 msgs",
+          "rationale": "Clearest catalyst-driven mover with confirming social sentiment and a real product/deal driver."
+        },
+        {
+          "symbol": "JPM",
+          "confidence": "medium",
+          "catalyst": "Up +1.9% with Dimon making positive tech/AI infrastructure headlines; broad financials strength",
+          "smart_money_signals": "Insider cluster buy: 4 buyers vs 1 seller in 30d",
+          "rationale": "Clean insider cluster buy stacks with sector strength and no negative signals."
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "low",
+          "catalyst": "Stock down on Morgan Stanley downgrade but alt-data is exceptionally strong \u2014 potential mean reversion",
+          "smart_money_signals": "Insider cluster buy (5 buyers), House buy by Salazar, Stocktwits 100% bullish, 76% analyst buy",
+          "rationale": "8/10 alt-data score with cluster insider buying overrides a single-analyst downgrade \u2014 best smart-money setup on the board."
+        }
+      ],
+      "market_take": "Risk-on tech-led rally with semis and AI infrastructure leading; financials also participating.",
+      "skipped_movers": [
+        "AVGO: 29 insider sells in 30d \u2014 heavy distribution",
+        "ORCL: 11 insider sells \u2014 skip despite strong tape",
+        "ADBE: downgrade + price down, House selling",
+        "SHOP: downgrade with price down, no offsetting smart money",
+        "CAT: no alt-data signal, weak sentiment (33% bullish)",
+        "GS: thin signals beyond CNBC mention",
+        "MS: decent but INTC/JPM/CRM stronger",
+        "BAC: no news catalyst, House selling",
+        "QQQ: ETF, prefer single-name exposure"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Clearest catalyst-driven mover with confirming social sentiment and a real product/deal driver.",
+        "symbol": "INTC",
+        "qty": 771,
+        "entry_price_est": 104.37,
+        "stop_price": 103.33,
+        "take_price": 106.46,
+        "order_id": "505cc5c4-ea73-48db-93c7-4332b7b256ff"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean insider cluster buy stacks with sector strength and no negative signals.",
+        "symbol": "JPM",
+        "qty": 233,
+        "entry_price_est": 345.04499999999996,
+        "stop_price": 341.59,
+        "take_price": 351.95,
+        "order_id": "9d95b30d-4d68-47f2-970c-5a0683af8ece"
+      },
+      {
+        "status": "submitted",
+        "confidence": "low",
+        "rationale": "8/10 alt-data score with cluster insider buying overrides a single-analyst downgrade \u2014 best smart-money setup on the board.",
+        "symbol": "CRM",
+        "qty": 482,
+        "entry_price_est": 166.82999999999998,
+        "stop_price": 165.16,
+        "take_price": 170.17,
+        "order_id": "46a1fc81-0d7e-4557-9d39-3d58d99101cd"
+      }
+    ]
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-07-21",
+    "ts": "2026-07-21T16:26:33.718837Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
