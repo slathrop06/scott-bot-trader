@@ -1,55 +1,9 @@
 {
-  "ts": "2026-07-20T21:42:07.987472Z",
-  "equity": 77291.18,
-  "last_equity": 78994.75,
-  "cash": -145970.68,
-  "buying_power": 41250.5,
-  "all_time_return_pct": -22.7088,
-  "positions": [
-    {
-      "symbol": "AMD",
-      "qty": 49,
-      "avg_entry_price": 515.799,
-      "current_price": 504.0,
-      "market_value": 24696.0,
-      "unrealized_pl": -578.15,
-      "unrealized_pl_pct": -2.288
-    },
-    {
-      "symbol": "GOOGL",
-      "qty": 73,
-      "avg_entry_price": 356.59,
-      "current_price": 352.65,
-      "market_value": 25743.45,
-      "unrealized_pl": -287.62,
-      "unrealized_pl_pct": -1.105
-    },
-    {
-      "symbol": "MSFT",
-      "qty": 184,
-      "avg_entry_price": 401.11,
-      "current_price": 401.1,
-      "market_value": 73802.4,
-      "unrealized_pl": -1.84,
-      "unrealized_pl_pct": -0.002
-    },
-    {
-      "symbol": "PLTR",
-      "qty": 546,
-      "avg_entry_price": 135.31,
-      "current_price": 134.4511,
-      "market_value": 73410.3,
-      "unrealized_pl": -468.96,
-      "unrealized_pl_pct": -0.635
-    },
-    {
-      "symbol": "WMT",
-      "qty": 228,
-      "avg_entry_price": 112.3854,
-      "current_price": 112.3233,
-      "market_value": 25609.71,
-      "unrealized_pl": -14.15,
-      "unrealized_pl_pct": -0.055
-    }
-  ]
+  "ts": "2026-07-21T15:02:04.826852Z",
+  "equity": 76162.32,
+  "last_equity": 77630.51,
+  "cash": 76162.32,
+  "buying_power": 304649.28,
+  "all_time_return_pct": -23.8377,
+  "positions": []
 }
