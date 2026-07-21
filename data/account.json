@@ -1,37 +1,46 @@
 {
-  "ts": "2026-07-21T19:38:27.714051Z",
-  "equity": 77426.73,
+  "ts": "2026-07-21T19:59:35.420398Z",
+  "equity": 77735.07,
   "last_equity": 77630.51,
-  "cash": -109221.28,
-  "buying_power": 57546.33,
-  "all_time_return_pct": -22.5733,
+  "cash": -137404.24,
+  "buying_power": 52773.11,
+  "all_time_return_pct": -22.2649,
   "positions": [
+    {
+      "symbol": "AMD",
+      "qty": 52,
+      "avg_entry_price": 541.98,
+      "current_price": 544.45,
+      "market_value": 28311.4,
+      "unrealized_pl": 128.44,
+      "unrealized_pl_pct": 0.456
+    },
     {
       "symbol": "INTC",
       "qty": 771,
       "avg_entry_price": 104.38,
-      "current_price": 105.4939,
-      "market_value": 81335.8,
-      "unrealized_pl": 858.82,
-      "unrealized_pl_pct": 1.067
+      "current_price": 105.53,
+      "market_value": 81363.63,
+      "unrealized_pl": 886.65,
+      "unrealized_pl_pct": 1.102
     },
     {
       "symbol": "JPM",
       "qty": 233,
       "avg_entry_price": 345.15,
-      "current_price": 344.3,
-      "market_value": 80221.9,
-      "unrealized_pl": -198.05,
-      "unrealized_pl_pct": -0.246
+      "current_price": 345.085,
+      "market_value": 80404.8,
+      "unrealized_pl": -15.14,
+      "unrealized_pl_pct": -0.019
     },
     {
       "symbol": "WMT",
       "qty": 227,
       "avg_entry_price": 110.72,
-      "current_price": 110.53,
-      "market_value": 25090.31,
-      "unrealized_pl": -43.13,
-      "unrealized_pl_pct": -0.172
+      "current_price": 110.385,
+      "market_value": 25057.4,
+      "unrealized_pl": -76.05,
+      "unrealized_pl_pct": -0.303
     }
   ]
 }
