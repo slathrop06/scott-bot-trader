@@ -11785,5 +11785,81 @@
     "ts": "2026-07-21T17:54:22.761931Z",
     "status": "blocked",
     "note": "Buying power $0.00 below $5000 minimum \u2014 account is too deployed to take new trades."
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-21",
+    "ts": "2026-07-21T19:36:58.372621Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=29862259277"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-21",
+    "ts": "2026-07-21T19:37:23.094341Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-21",
+    "ts": "2026-07-21T19:38:27.624425Z",
+    "equity_start": 77610.45,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMD",
+          "confidence": "high",
+          "catalyst": "Semi rebound rally, stock up +7.27% intraday on AI infrastructure spending narrative and hedge fund short-covering",
+          "smart_money_signals": "84% analyst buy (15SB/33B), Stocktwits 83% bullish on 30 msgs, WSB rank #14 with 1.19x mentions",
+          "rationale": "Strongest momentum name on the tape with broad analyst conviction and social confirmation, riding a sector-wide semi rebound"
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "Contrarian smart-money setup \u2014 stock down on MS downgrade but insiders are aggressively accumulating",
+          "smart_money_signals": "Insider cluster buy (5 buyers, 9 buys/30d), House buy by Salazar, Stocktwits 88% bullish, 76% analyst buy",
+          "rationale": "Rare 8/10 alt-data score with true insider cluster buy \u2014 smart money is fading the downgrade, tight -1% stop caps risk"
+        }
+      ],
+      "market_take": "Risk-on semi/AI rebound day with Nasdaq 100 breaking 29K on hedge fund short-covering",
+      "skipped_movers": [
+        "ORCL: 11 insider sells in 30d \u2014 heavy distribution disqualifier",
+        "ADBE: MS downgrade + price falling + only 37.8% analyst bullish",
+        "NVDA: strong but already extended and insider selling present",
+        "BA: price down despite positive news \u2014 tape rejecting the catalyst",
+        "XOM: House selling and weak analyst conviction",
+        "MA: price down, mixed insider (6 sells vs 3 buys)",
+        "CAT: 33% Stocktwits bullish contradicts price move",
+        "GS: no strong catalyst beyond generic upgrade mention",
+        "QQQ: ETF, weaker edge than single-name semi play"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Strongest momentum name on the tape with broad analyst conviction and social confirmation, riding a sector-wide semi rebound",
+        "symbol": "AMD",
+        "qty": 52,
+        "entry_price_est": 543.96,
+        "stop_price": 538.52,
+        "take_price": 554.84,
+        "order_id": "522a9e23-24e1-429b-8d6a-666b4e5e8138"
+      },
+      {
+        "status": "failed",
+        "symbol": "CRM",
+        "error": "{\"base_price\":\"170.6\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-21",
+    "ts": "2026-07-21T19:38:27.716176Z",
+    "status": "ok",
+    "note": "2 orders submitted"
   }
 ]
