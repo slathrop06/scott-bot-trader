@@ -12077,5 +12077,106 @@
     "ts": "2026-07-22T15:10:32.432642Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-22",
+    "ts": "2026-07-22T16:22:15.245113Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=29937682840"
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-07-22",
+    "ts": "2026-07-22T16:22:35.202195Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-22",
+    "ts": "2026-07-22T16:23:30.068684Z",
+    "equity_start": 75567.58,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "Down 3.58% intraday with no negative headlines \u2014 mean-reversion setup on an oversold quality name",
+          "smart_money_signals": "Insider cluster buy (5 buyers, 9 buys in 30d), House buy by Salazar, 75.9% analyst bullish (13SB/31B)",
+          "rationale": "Best stack of smart-money signals in the list \u2014 insider cluster + congressional buy + strong analyst conviction on an intraday dip."
+        },
+        {
+          "symbol": "NFLX",
+          "confidence": "medium",
+          "catalyst": "Up +2.65% on above-average volume, relative strength vs weak tape with no negative news",
+          "smart_money_signals": "Stocktwits 83% bullish (30 msgs), 77.6% analyst bullish (16SB/29B, zero sells), WSB rank #24",
+          "rationale": "Cleanest momentum setup \u2014 leading a red market with bullish social and analyst backing and no disqualifiers."
+        },
+        {
+          "symbol": "XOM",
+          "confidence": "low",
+          "catalyst": "Gapping up +1.54% pre-earnings on higher oil prices per Benzinga; Q2 EPS expected $3.76",
+          "smart_money_signals": "Stocktwits 100% bullish (30 msgs), 53.3% analyst bullish",
+          "rationale": "Relative strength with a concrete catalyst and unanimous retail sentiment \u2014 mid-slot entry to ride pre-earnings drift (earnings not today)."
+        }
+      ],
+      "market_take": "Risk-off tape with tech/mega-caps red ahead of GOOGL/MSFT/META earnings; energy and defensive names showing relative strength.",
+      "skipped_movers": [
+        "PLTR: -3.94% with zero alt-data score and no catalyst \u2014 falling knife",
+        "SHOP: -3.91% with no news, sentiment good but price action contradicts",
+        "AVGO: heavy insider selling (29 sells, 0 buys) \u2014 disqualifier despite gap up",
+        "MSFT: earnings imminent \u2014 overnight gap risk",
+        "META: earnings imminent + heavy insider selling",
+        "ORCL: heavy insider selling and negative news flow",
+        "ADBE: weak analyst mix (37.8%) and 33% bullish stocktwits",
+        "NKE: no catalyst, weak analyst conviction",
+        "CAT: 28% bullish stocktwits contradicts price move",
+        "MS: modest signals but no strong catalyst vs better options"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Best stack of smart-money signals in the list \u2014 insider cluster + congressional buy + strong analyst conviction on an intraday dip.",
+        "symbol": "CRM",
+        "qty": 490,
+        "entry_price_est": 163.06,
+        "stop_price": 161.43,
+        "take_price": 166.32,
+        "order_id": "4fd5698c-99a4-4656-abe5-f78079eec2cd"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Cleanest momentum setup \u2014 leading a red market with bullish social and analyst backing and no disqualifiers.",
+        "symbol": "NFLX",
+        "qty": 1140,
+        "entry_price_est": 70.065,
+        "stop_price": 69.36,
+        "take_price": 71.47,
+        "order_id": "40bf0dc5-e5e8-4d2b-b0d8-c11d3f45931c"
+      },
+      {
+        "status": "submitted",
+        "confidence": "low",
+        "rationale": "Relative strength with a concrete catalyst and unanimous retail sentiment \u2014 mid-slot entry to ride pre-earnings drift (earnings not today).",
+        "symbol": "XOM",
+        "qty": 519,
+        "entry_price_est": 153.95,
+        "stop_price": 152.41,
+        "take_price": 157.03,
+        "order_id": "536b8c70-3abb-4c4e-a19a-999acf6c05a2"
+      }
+    ]
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-07-22",
+    "ts": "2026-07-22T16:23:30.126106Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]

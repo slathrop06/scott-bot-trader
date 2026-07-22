@@ -1,9 +1,28 @@
 {
-  "ts": "2026-07-22T15:02:41.513247Z",
-  "equity": 75497.33,
+  "ts": "2026-07-22T16:23:30.122985Z",
+  "equity": 75555.66,
   "last_equity": 77704.87,
-  "cash": 75497.33,
-  "buying_power": 301989.32,
-  "all_time_return_pct": -24.5027,
-  "positions": []
+  "cash": 25527.94,
+  "buying_power": 2026.4,
+  "all_time_return_pct": -24.4443,
+  "positions": [
+    {
+      "symbol": "AMD",
+      "qty": 45,
+      "avg_entry_price": 558.0,
+      "current_price": 555.535,
+      "market_value": 24999.08,
+      "unrealized_pl": -110.92,
+      "unrealized_pl_pct": -0.442
+    },
+    {
+      "symbol": "NVDA",
+      "qty": 117,
+      "avg_entry_price": 212.2187,
+      "current_price": 213.92,
+      "market_value": 25028.64,
+      "unrealized_pl": 199.05,
+      "unrealized_pl_pct": 0.802
+    }
+  ]
 }
