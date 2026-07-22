@@ -11961,5 +11961,121 @@
     "ts": "2026-07-21T22:29:51.872061Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=29873964249"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-22",
+    "ts": "2026-07-22T15:08:52.477802Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=29931966484"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-22",
+    "ts": "2026-07-22T15:09:14.164824Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-22",
+    "ts": "2026-07-22T15:09:15.962499Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-22",
+    "ts": "2026-07-22T15:09:17.394333Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-22",
+    "ts": "2026-07-22T15:10:32.299660Z",
+    "equity_start": 75497.33,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMD",
+          "confidence": "high",
+          "catalyst": "Gapping +2.19% premarket on Cramer top semi pick + Taiwan AI supercycle tailwind; leading tech tape while indices are red",
+          "smart_money_signals": "WSB 2.82x normal chatter (rank #9, 96 mentions), Stocktwits 100% bullish on 30 msgs, 84.2% analyst buy rating",
+          "rationale": "Best combo of relative strength gap-up + explosive social/analyst stacking with no earnings until Aug 4"
+        },
+        {
+          "symbol": "NVDA",
+          "confidence": "high",
+          "catalyst": "+2.50% premarket on Taiwan export orders +59.4% record confirming AI supercycle; leading semis higher against weak tape",
+          "smart_money_signals": "Stocktwits 93% bullish, 92.8% analyst buy (24SB/40B), WSB rank #14 with 60 mentions",
+          "rationale": "Concrete positive catalyst + strongest analyst conviction in the group with only 1 insider sell (not heavy)"
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "Down 2.83% but no negative news \u2014 a fade opportunity on a stock with genuine smart-money backing",
+          "smart_money_signals": "Insider cluster buy (5 buyers, 9 buys/9 sells), House buy by Salazar, 75.9% analyst buy",
+          "rationale": "Only name in the list with confirmed insider cluster buy AND congressional buy \u2014 smart money accumulating the dip"
+        }
+      ],
+      "market_take": "Risk-off tape ahead of GOOGL/MSFT/META earnings, but AI semis (NVDA, AMD, AVGO) are bucking the weakness on Taiwan data.",
+      "skipped_movers": [
+        "AVGO: 29 insider sells in 30d \u2014 heavy distribution despite gap up",
+        "META: earnings today \u2014 overnight gap risk, plus heavy insider selling",
+        "MSFT: earnings imminent, House net selling, price down",
+        "AMZN: heavy insider selling + House selling + price down",
+        "ORCL: 11 insider sells vs 1 buy \u2014 heavy distribution",
+        "PLTR: 0/10 alt-data score, price rejecting",
+        "NKE: only 40% analyst bullish, no catalyst",
+        "ADBE: only 37.8% analyst bullish + House selling",
+        "SHOP: no catalyst, gapping down against bullish sentiment",
+        "NFLX: modest signals but no fresh catalyst worth chasing over AMD/NVDA",
+        "XOM/CVX: earnings-adjacent oil names, less edge than AI semis today"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best combo of relative strength gap-up + explosive social/analyst stacking with no earnings until Aug 4",
+        "symbol": "AMD",
+        "qty": 45,
+        "entry_price_est": 549.275,
+        "stop_price": 543.78,
+        "take_price": 560.26,
+        "order_id": "d49d8cba-c6e2-4acb-a28e-792fdf027421"
+      },
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Concrete positive catalyst + strongest analyst conviction in the group with only 1 insider sell (not heavy)",
+        "symbol": "NVDA",
+        "qty": 117,
+        "entry_price_est": 212.26999999999998,
+        "stop_price": 210.15,
+        "take_price": 216.52,
+        "order_id": "2cde288b-b99c-45fd-b315-851f1aaebfc9"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Only name in the list with confirmed insider cluster buy AND congressional buy \u2014 smart money accumulating the dip",
+        "symbol": "CRM",
+        "qty": 149,
+        "entry_price_est": 166.615,
+        "stop_price": 164.95,
+        "take_price": 169.95,
+        "order_id": "356095cd-1492-4f05-b7ac-2cf198a6fac6"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-22",
+    "ts": "2026-07-22T15:10:32.432642Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
