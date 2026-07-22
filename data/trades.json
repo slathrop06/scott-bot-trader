@@ -12178,5 +12178,87 @@
     "ts": "2026-07-22T16:23:30.126106Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-22",
+    "ts": "2026-07-22T17:49:23.889333Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=29943983210"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-22",
+    "ts": "2026-07-22T17:49:45.260981Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-22",
+    "ts": "2026-07-22T17:50:34.272104Z",
+    "equity_start": 74464.91,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "BA",
+          "confidence": "medium",
+          "catalyst": "Relative strength: BA +1.69% while broader market and mega-cap tech sell off, holding green ahead of earnings news cycle",
+          "smart_money_signals": "Stocktwits 93% bullish on 30 msgs, analysts 83.8% bullish (13 Strong Buy / 18 Buy), no insider or congressional selling flagged",
+          "rationale": "Best available combo of green tape on a red day plus clean bullish alt-data with no disqualifiers"
+        },
+        {
+          "symbol": "NFLX",
+          "confidence": "low",
+          "catalyst": "Positive relative strength +1.64% on heavy volume (23.8M) against a broadly red tape",
+          "smart_money_signals": "Analysts 77.6% bullish (16SB/29B), whale-alert flagged in comm services, stocktwits 62% bullish, no insider/congress selling",
+          "rationale": "Second-best RS candidate \u2014 up meaningfully while market falls, no contradicting signals"
+        }
+      ],
+      "market_take": "Risk-off tone with mega-cap tech under pressure ahead of MSFT/META/GOOGL earnings; favor stocks showing relative strength.",
+      "skipped_movers": [
+        "PLTR: down 5.75% on NHS contract scrutiny \u2014 falling knife",
+        "SHOP: down 3.60% with no catalyst to bounce",
+        "AVGO: up 3.35% but 29 insider sells from 4 insiders \u2014 heavy distribution",
+        "ADBE: stocktwits 25% bearish, analysts only 37.8% bullish, House selling",
+        "NKE: no catalyst, weak analyst conviction 40%",
+        "META: earnings imminent, 11 insider sells, stocktwits 30% bearish",
+        "MSFT: earnings imminent \u2014 overnight gap risk",
+        "AMZN: earnings imminent, insider + House selling",
+        "ORCL: 11 insider sells, negative data-center cost narrative"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Best available combo of green tape on a red day plus clean bullish alt-data with no disqualifiers",
+        "symbol": "BA",
+        "qty": 71,
+        "entry_price_est": 210.825,
+        "stop_price": 208.72,
+        "take_price": 215.04,
+        "order_id": "b36109e1-45b8-4367-b1a8-2a1a9d5938b0"
+      },
+      {
+        "status": "submitted",
+        "confidence": "low",
+        "rationale": "Second-best RS candidate \u2014 up meaningfully while market falls, no contradicting signals",
+        "symbol": "NFLX",
+        "qty": 218,
+        "entry_price_est": 69.345,
+        "stop_price": 68.65,
+        "take_price": 70.73,
+        "order_id": "5e8bff89-278d-44c7-96c1-82b568b7751b"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-22",
+    "ts": "2026-07-22T17:50:34.310083Z",
+    "status": "ok",
+    "note": "2 orders submitted"
   }
 ]
