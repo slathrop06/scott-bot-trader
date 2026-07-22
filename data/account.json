@@ -1,46 +1,55 @@
 {
-  "ts": "2026-07-22T17:50:34.307724Z",
-  "equity": 74461.37,
+  "ts": "2026-07-22T18:07:01.441291Z",
+  "equity": 74114.39,
   "last_equity": 77704.87,
-  "cash": -135564.59,
-  "buying_power": 15856.3,
-  "all_time_return_pct": -25.5386,
+  "cash": -150703.48,
+  "buying_power": 26676.12,
+  "all_time_return_pct": -25.8856,
   "positions": [
     {
       "symbol": "AMD",
       "qty": 45,
       "avg_entry_price": 558.0,
-      "current_price": 557.12,
-      "market_value": 25070.4,
-      "unrealized_pl": -39.6,
-      "unrealized_pl_pct": -0.158
+      "current_price": 556.25,
+      "market_value": 25031.25,
+      "unrealized_pl": -78.75,
+      "unrealized_pl_pct": -0.314
     },
     {
       "symbol": "CRM",
       "qty": 490,
       "avg_entry_price": 163.92,
-      "current_price": 163.0,
-      "market_value": 79870.0,
-      "unrealized_pl": -450.8,
-      "unrealized_pl_pct": -0.561
+      "current_price": 162.715,
+      "market_value": 79730.35,
+      "unrealized_pl": -590.45,
+      "unrealized_pl_pct": -0.735
+    },
+    {
+      "symbol": "NFLX",
+      "qty": 218,
+      "avg_entry_price": 69.35,
+      "current_price": 69.235,
+      "market_value": 15093.23,
+      "unrealized_pl": -25.07,
+      "unrealized_pl_pct": -0.166
     },
     {
       "symbol": "NVDA",
       "qty": 117,
       "avg_entry_price": 212.2187,
-      "current_price": 213.93,
-      "market_value": 25029.81,
-      "unrealized_pl": 200.22,
-      "unrealized_pl_pct": 0.806
+      "current_price": 213.77,
+      "market_value": 25011.09,
+      "unrealized_pl": 181.5,
+      "unrealized_pl_pct": 0.731
     },
     {
       "symbol": "XOM",
       "qty": 519,
       "avg_entry_price": 154.07,
-      "current_price": 154.25,
-      "market_value": 80055.75,
-      "unrealized_pl": 93.42,
-      "unrealized_pl_pct": 0.117
+      "current_price": 154.05,
+      "market_value": 79951.95,
+      "unrealized_pl": -10.38,
+      "unrealized_pl_pct": -0.013
     }
   ]
 }
