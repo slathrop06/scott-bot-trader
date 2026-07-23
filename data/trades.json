@@ -12495,5 +12495,90 @@
     "ts": "2026-07-23T15:19:00.865000Z",
     "status": "ok",
     "note": "2 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-23",
+    "ts": "2026-07-23T16:38:55.502886Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=30026008411"
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-07-23",
+    "ts": "2026-07-23T16:39:16.037125Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-23",
+    "ts": "2026-07-23T16:41:08.662321Z",
+    "equity_start": 75558.48,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "GE",
+          "confidence": "medium",
+          "catalyst": "Relative strength standout \u2014 up +2.43% while entire market (Mag 7, TSLA, GOOGL) is red on Houthi/AI capex fears; only green name in the mover list",
+          "smart_money_signals": "Stocktwits 92% bullish on 30 msgs, analysts 87.5% bullish (9SB/19B), net insider buying (1 buy, 0 sells)",
+          "rationale": "Only ticker showing relative strength on a broad risk-off day with confirming smart-money stack \u2014 cleanest setup available"
+        },
+        {
+          "symbol": "GOOGL",
+          "confidence": "medium",
+          "catalyst": "Down -3.33% on sector-wide AI capex fear but underlying earnings showed 24% rev growth, 82% cloud growth, and 22B AI tokens/min \u2014 dip-buy into strongest fundamental print in the group",
+          "smart_money_signals": "Insider cluster buy (8 buyers, 9 buys in 30d), 87% analyst buy (18SB/42B), WSB chatter 5.08x normal at rank #6",
+          "rationale": "Rare true insider cluster buy (8 distinct buyers) into a fear-driven selloff on a name with blowout earnings \u2014 strong smart-money stack even without today's catalyst"
+        }
+      ],
+      "market_take": "Broad risk-off with Mag 7 leading down on Houthi headlines + AI capex worries; hunt relative strength and insider-backed dip buys.",
+      "skipped_movers": [
+        "TSLA: -9.72% with analyst PT cuts and only 40% ST bullish \u2014 falling knife",
+        "ORCL: 11 insider sells, cluster_buy=False \u2014 heavy insider distribution",
+        "AMZN: earnings in ~1 week + insider/House selling \u2014 event risk",
+        "META: 11 insider sells by 2 insiders \u2014 heavy distribution",
+        "SHOP: -5% with no catalyst and no smart-money signal",
+        "CRM: -4% with only 1 congressional buy, no catalyst",
+        "ADBE: only 37.8% analyst buy, weak conviction",
+        "PLTR: no catalyst, mixed insider (1B/2S)",
+        "NKE: no signals, no catalyst",
+        "HD: Stocktwits 33% bullish \u2014 sentiment disqualifier",
+        "MSFT: House net selling, no offsetting catalyst",
+        "GS: insider selling into strength"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Only ticker showing relative strength on a broad risk-off day with confirming smart-money stack \u2014 cleanest setup available",
+        "symbol": "GE",
+        "qty": 24,
+        "entry_price_est": 349.35,
+        "stop_price": 345.86,
+        "take_price": 356.34,
+        "order_id": "1a8f2e6b-cc3e-4340-95c2-68a4d836cb67"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Rare true insider cluster buy (8 distinct buyers) into a fear-driven selloff on a name with blowout earnings \u2014 strong smart-money stack even without today's catalyst",
+        "symbol": "GOOGL",
+        "qty": 26,
+        "entry_price_est": 319.21000000000004,
+        "stop_price": 316.02,
+        "take_price": 325.59,
+        "order_id": "570e0cc5-14f6-4b47-847b-44e415f2d089"
+      }
+    ]
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-07-23",
+    "ts": "2026-07-23T16:41:08.804064Z",
+    "status": "ok",
+    "note": "2 orders submitted"
   }
 ]
