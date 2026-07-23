@@ -1,46 +1,46 @@
 {
-  "ts": "2026-07-23T16:56:44.437190Z",
-  "equity": 75507.7,
+  "ts": "2026-07-23T18:02:27.877460Z",
+  "equity": 75459.23,
   "last_equity": 0.0,
   "cash": 9070.29,
-  "buying_power": 9070.29,
-  "all_time_return_pct": -24.4923,
+  "buying_power": 3476.14,
+  "all_time_return_pct": -24.5408,
   "positions": [
     {
       "symbol": "DIS",
       "qty": 267,
       "avg_entry_price": 92.66,
-      "current_price": 92.9,
-      "market_value": 24804.3,
-      "unrealized_pl": 64.08,
-      "unrealized_pl_pct": 0.259
+      "current_price": 93.165,
+      "market_value": 24875.06,
+      "unrealized_pl": 134.84,
+      "unrealized_pl_pct": 0.545
     },
     {
       "symbol": "GE",
       "qty": 24,
       "avg_entry_price": 349.48,
-      "current_price": 348.63,
-      "market_value": 8367.12,
-      "unrealized_pl": -20.4,
-      "unrealized_pl_pct": -0.243
+      "current_price": 347.23,
+      "market_value": 8333.52,
+      "unrealized_pl": -54.0,
+      "unrealized_pl_pct": -0.644
     },
     {
       "symbol": "GOOGL",
       "qty": 26,
       "avg_entry_price": 319.3115,
-      "current_price": 319.36,
-      "market_value": 8303.36,
-      "unrealized_pl": 1.26,
-      "unrealized_pl_pct": 0.015
+      "current_price": 319.98,
+      "market_value": 8319.48,
+      "unrealized_pl": 17.38,
+      "unrealized_pl_pct": 0.209
     },
     {
       "symbol": "NVDA",
       "qty": 119,
       "avg_entry_price": 207.0298,
-      "current_price": 209.77,
-      "market_value": 24962.63,
-      "unrealized_pl": 326.08,
-      "unrealized_pl_pct": 1.324
+      "current_price": 208.915,
+      "market_value": 24860.88,
+      "unrealized_pl": 224.33,
+      "unrealized_pl_pct": 0.911
     }
   ]
 }

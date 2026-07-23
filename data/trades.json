@@ -12580,5 +12580,88 @@
     "ts": "2026-07-23T16:41:08.804064Z",
     "status": "ok",
     "note": "2 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-23",
+    "ts": "2026-07-23T18:00:28.893007Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=30031839745"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-23",
+    "ts": "2026-07-23T18:00:51.867451Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-23",
+    "ts": "2026-07-23T18:02:27.798625Z",
+    "equity_start": 75472.48,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "SHOP",
+          "confidence": "medium",
+          "catalyst": "Down 5% on broad market risk-off (Brent >$100, yields spike) with no stock-specific negative news \u2014 oversold bounce candidate",
+          "smart_money_signals": "77.8% analyst buy (10 Strong Buy / 32 Buy), no insider selling flagged, no congressional selling",
+          "rationale": "Cleanest setup \u2014 strong analyst conviction with no adverse alt-data and no company-specific bad news driving the drop, best mean-reversion candidate."
+        },
+        {
+          "symbol": "AMD",
+          "confidence": "medium",
+          "catalyst": "Down 3.5% on macro-driven Nasdaq selloff with no company-specific news; AI names getting indiscriminately sold",
+          "smart_money_signals": "84.2% analyst buy (15SB/33B/9H, zero sells), Stocktwits 80% bullish, House net neutral",
+          "rationale": "Strong stacked smart-money (top-tier analyst conviction + bullish retail sentiment) into a macro-driven dip with no fundamental catalyst against it."
+        }
+      ],
+      "market_take": "Broad risk-off Thursday \u2014 Brent >$100, yields at 18-month highs, and AI-capex doubts from GOOGL/TSLA earnings are dragging quality names down indiscriminately.",
+      "skipped_movers": [
+        "TSLA: -10% earnings gap, Stocktwits only 31% bullish \u2014 falling knife",
+        "ORCL: 11 insider sells in 30d \u2014 heavy insider distribution",
+        "AMZN: insider + congressional selling despite bullish sentiment",
+        "META: 11 insider sells by 2 insiders \u2014 heavy distribution",
+        "GS: insider selling + bank exposure to rate spike",
+        "CRM: weak Stocktwits 44% bullish, no catalyst",
+        "NKE: weak analyst support (40% bullish), no signals",
+        "HD: Stocktwits 33% bullish \u2014 sentiment against",
+        "ADBE: weak analyst support (37.8%), congressional selling",
+        "PLTR: insider net selling, WSB rank only #50"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Cleanest setup \u2014 strong analyst conviction with no adverse alt-data and no company-specific bad news driving the drop, best mean-reversion candidate.",
+        "symbol": "SHOP",
+        "qty": 26,
+        "entry_price_est": 111.53999999999999,
+        "stop_price": 110.42,
+        "take_price": 113.77,
+        "order_id": "43f1613a-5b24-4cff-8fc0-23e3f54399f9"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strong stacked smart-money (top-tier analyst conviction + bullish retail sentiment) into a macro-driven dip with no fundamental catalyst against it.",
+        "symbol": "AMD",
+        "qty": 5,
+        "entry_price_est": 531.72,
+        "stop_price": 526.4,
+        "take_price": 542.35,
+        "order_id": "774abb41-cad2-44fc-8f45-3e778cad92c7"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-23",
+    "ts": "2026-07-23T18:02:27.880191Z",
+    "status": "ok",
+    "note": "2 orders submitted"
   }
 ]
