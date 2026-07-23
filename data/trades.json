@@ -12398,5 +12398,102 @@
     "ts": "2026-07-22T22:16:40.533423Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=29962287846"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-23",
+    "ts": "2026-07-23T15:17:42.230443Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=30019857748"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-23",
+    "ts": "2026-07-23T15:18:03.388445Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-23",
+    "ts": "2026-07-23T15:18:05.320554Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-23",
+    "ts": "2026-07-23T15:18:06.693822Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-23",
+    "ts": "2026-07-23T15:19:00.840334Z",
+    "equity_start": 75136.68,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "DIS",
+          "confidence": "medium",
+          "catalyst": "Down -3.5% on broad market selloff with no company-specific negative news; EU approval of Paramount-WBD deal is a peripheral positive for media sector",
+          "smart_money_signals": "Insider cluster buy: 13 unique insider buyers, 17 buys vs 8 sells in 30d; 89% analyst buy rating (11SB/21B); Stocktwits 57% bullish",
+          "rationale": "Cleanest setup \u2014 strong insider cluster buy stacked with high analyst conviction, and the price drop is market-driven noise rather than company-specific weakness."
+        },
+        {
+          "symbol": "NVDA",
+          "confidence": "medium",
+          "catalyst": "Modest -2.4% pullback on Mag7 selloff; Jensen Huang positive commentary on AI adoption; Google chip competition already known/priced",
+          "smart_money_signals": "93% analyst buy (24SB/40B), Stocktwits 80% bullish on 30 msgs, WSB chatter 2.75x normal at rank #9, House net buying 3-2",
+          "rationale": "Best combination of overwhelming analyst conviction, strong retail sentiment, and modest dip that offers favorable +2/-1 bracket entry."
+        }
+      ],
+      "market_take": "Ugly Mag7-led risk-off session driven by Tesla/Alphabet capex shocks and $100 oil \u2014 looking for quality names oversold on macro rather than fundamentals.",
+      "skipped_movers": [
+        "TSLA: EPS miss + discounting concerns, -10% gap down with negative analyst framing",
+        "GOOGL: capex shock is the catalyst driving the selloff, House selling",
+        "ORCL: heavy insider selling (11 sells, 1 buy)",
+        "AMZN: earnings within a week \u2014 overnight gap risk",
+        "META: earnings pending + heavy insider selling (11 sells)",
+        "MSFT: Stocktwits only 40% bullish, House net selling",
+        "GS: heavy insider selling, weak 47% analyst buy",
+        "PLTR: no catalyst, insider net selling",
+        "SHOP/CRM: no catalyst, thin alt-data signal",
+        "ADBE/NKE: weak analyst conviction <45%"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Cleanest setup \u2014 strong insider cluster buy stacked with high analyst conviction, and the price drop is market-driven noise rather than company-specific weakness.",
+        "symbol": "DIS",
+        "qty": 267,
+        "entry_price_est": 92.65,
+        "stop_price": 91.72,
+        "take_price": 94.5,
+        "order_id": "7e60144c-c685-4ff9-87c9-d3c7b043cfe8"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Best combination of overwhelming analyst conviction, strong retail sentiment, and modest dip that offers favorable +2/-1 bracket entry.",
+        "symbol": "NVDA",
+        "qty": 119,
+        "entry_price_est": 207.005,
+        "stop_price": 204.93,
+        "take_price": 211.15,
+        "order_id": "2f3b9cbf-8356-4bec-a288-bbf655d6daf8"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-23",
+    "ts": "2026-07-23T15:19:00.865000Z",
+    "status": "ok",
+    "note": "2 orders submitted"
   }
 ]
