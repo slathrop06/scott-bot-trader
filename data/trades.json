@@ -12670,5 +12670,45 @@
     "ts": "2026-07-23T19:42:50.797934Z",
     "status": "intraday_workflow_started",
     "note": "event=schedule run_id=30039087815"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-23",
+    "ts": "2026-07-23T20:05:02.076261Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=30040611556"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-07-23",
+    "ts": "2026-07-23T20:05:23.288308Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-07-23",
+    "ts": "2026-07-23T20:05:23.700843Z",
+    "equity_end": 75536.36,
+    "daily_pnl_usd": 75536.36,
+    "daily_pct": 0,
+    "flatten": {
+      "closed": [
+        "AMD",
+        "DIS",
+        "GE",
+        "GOOGL",
+        "NVDA",
+        "SHOP"
+      ],
+      "raw_response_count": 6
+    }
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-07-23",
+    "ts": "2026-07-23T20:05:23.906639Z",
+    "status": "ok",
+    "note": "closed 6 positions, 0 round-trips"
   }
 ]
