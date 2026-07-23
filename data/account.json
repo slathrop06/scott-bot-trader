@@ -1,64 +1,64 @@
 {
-  "ts": "2026-07-23T18:13:06.129185Z",
-  "equity": 75462.95,
+  "ts": "2026-07-23T19:54:58.341645Z",
+  "equity": 75238.4,
   "last_equity": 0.0,
   "cash": 3476.16,
   "buying_power": 3476.16,
-  "all_time_return_pct": -24.5371,
+  "all_time_return_pct": -24.7616,
   "positions": [
     {
       "symbol": "AMD",
       "qty": 5,
       "avg_entry_price": 534.45,
-      "current_price": 536.185,
-      "market_value": 2680.93,
-      "unrealized_pl": 8.68,
-      "unrealized_pl_pct": 0.325
+      "current_price": 537.125,
+      "market_value": 2685.62,
+      "unrealized_pl": 13.38,
+      "unrealized_pl_pct": 0.501
     },
     {
       "symbol": "DIS",
       "qty": 267,
       "avg_entry_price": 92.66,
-      "current_price": 93.15,
-      "market_value": 24871.05,
-      "unrealized_pl": 130.83,
-      "unrealized_pl_pct": 0.529
+      "current_price": 92.905,
+      "market_value": 24805.63,
+      "unrealized_pl": 65.42,
+      "unrealized_pl_pct": 0.264
     },
     {
       "symbol": "GE",
       "qty": 24,
       "avg_entry_price": 349.48,
-      "current_price": 347.65,
-      "market_value": 8343.6,
-      "unrealized_pl": -43.92,
-      "unrealized_pl_pct": -0.524
+      "current_price": 348.12,
+      "market_value": 8354.88,
+      "unrealized_pl": -32.64,
+      "unrealized_pl_pct": -0.389
     },
     {
       "symbol": "GOOGL",
       "qty": 26,
       "avg_entry_price": 319.3115,
-      "current_price": 319.845,
-      "market_value": 8315.97,
-      "unrealized_pl": 13.87,
-      "unrealized_pl_pct": 0.167
+      "current_price": 318.765,
+      "market_value": 8287.89,
+      "unrealized_pl": -14.21,
+      "unrealized_pl_pct": -0.171
     },
     {
       "symbol": "NVDA",
       "qty": 119,
       "avg_entry_price": 207.0298,
-      "current_price": 208.8,
-      "market_value": 24847.2,
-      "unrealized_pl": 210.65,
-      "unrealized_pl_pct": 0.855
+      "current_price": 207.815,
+      "market_value": 24729.99,
+      "unrealized_pl": 93.43,
+      "unrealized_pl_pct": 0.379
     },
     {
       "symbol": "SHOP",
       "qty": 26,
       "avg_entry_price": 112.38,
-      "current_price": 112.6173,
-      "market_value": 2928.05,
-      "unrealized_pl": 6.17,
-      "unrealized_pl_pct": 0.211
+      "current_price": 111.47,
+      "market_value": 2898.22,
+      "unrealized_pl": -23.66,
+      "unrealized_pl_pct": -0.81
     }
   ]
 }
