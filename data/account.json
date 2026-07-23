@@ -1,37 +1,9 @@
 {
-  "ts": "2026-07-22T22:32:50.753058Z",
-  "equity": 74195.94,
-  "last_equity": 77704.87,
-  "cash": -110526.46,
-  "buying_power": 75116.88,
-  "all_time_return_pct": -25.8041,
-  "positions": [
-    {
-      "symbol": "CRM",
-      "qty": 490,
-      "avg_entry_price": 163.92,
-      "current_price": 163.0,
-      "market_value": 79870.0,
-      "unrealized_pl": -450.8,
-      "unrealized_pl_pct": -0.561
-    },
-    {
-      "symbol": "NVDA",
-      "qty": 117,
-      "avg_entry_price": 212.2187,
-      "current_price": 211.05,
-      "market_value": 24692.85,
-      "unrealized_pl": -136.74,
-      "unrealized_pl_pct": -0.551
-    },
-    {
-      "symbol": "XOM",
-      "qty": 519,
-      "avg_entry_price": 154.07,
-      "current_price": 154.45,
-      "market_value": 80159.55,
-      "unrealized_pl": 197.22,
-      "unrealized_pl_pct": 0.247
-    }
-  ]
+  "ts": "2026-07-23T15:07:35.692806Z",
+  "equity": 75136.68,
+  "last_equity": 0.0,
+  "cash": 75136.68,
+  "buying_power": 75136.68,
+  "all_time_return_pct": -24.8633,
+  "positions": []
 }
