@@ -12724,5 +12724,120 @@
     "ts": "2026-07-23T22:15:41.122716Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=30049253862"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-24",
+    "ts": "2026-07-24T15:00:45.175270Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=30103448544"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-24",
+    "ts": "2026-07-24T15:01:03.135732Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-24",
+    "ts": "2026-07-24T15:01:05.200458Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-24",
+    "ts": "2026-07-24T15:01:06.648249Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-24",
+    "ts": "2026-07-24T15:01:54.786856Z",
+    "equity_start": 75491.38,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "CRM",
+          "confidence": "high",
+          "catalyst": "$1.6B Veterans Affairs contract win announced overnight, stock gapping +2.59% premarket on real news",
+          "smart_money_signals": "House buy by Salazar (21d), Stocktwits 100% bullish on 30 msgs, 76% analyst buy rating",
+          "rationale": "Clean catalyst + smart-money stack with a concrete government contract driving the gap up."
+        },
+        {
+          "symbol": "DIS",
+          "confidence": "medium",
+          "catalyst": "Positive relative strength (+1.93%) with no negative news on a weak-tape session",
+          "smart_money_signals": "Insider cluster buy with 13 distinct buyers in 30d (strongest cluster in list), Stocktwits 82% bullish, 89% analyst buy",
+          "rationale": "Strongest insider cluster-buy signal in the entire slate paired with green premarket action."
+        },
+        {
+          "symbol": "GE",
+          "confidence": "medium",
+          "catalyst": "Relative strength +2.79% with no contradicting news on a red semiconductor tape",
+          "smart_money_signals": "Net insider buying, Stocktwits 89% bullish, 88% analyst buy (9SB/19B)",
+          "rationale": "Green mover with clean alt-data \u2014 insider buy + high analyst conviction and no earnings risk."
+        }
+      ],
+      "market_take": "Risk-off in semis (INTC, AMD, AVGO, ORCL all red) while defensives and enterprise/gov contract names catch a bid.",
+      "skipped_movers": [
+        "INTC: mixed news, only 50% Stocktwits bullish, 32.7% analyst buy \u2014 gap-down knife",
+        "ORCL: heavy insider selling (11 sells) despite Pentagon contract",
+        "AMD: gap down on tape, House selling",
+        "AVGO: 29 insider sells from 4 insiders \u2014 heavy distribution",
+        "AMZN: gap down + insider and House selling",
+        "TSLA: gap down, only 48% analyst buy, no catalyst",
+        "GS: gap down + insider selling",
+        "MA: 15 insider sells 3:1 ratio",
+        "SBUX: insider selling, weak analyst conviction",
+        "ADBE: only 37.8% analyst buy, House selling"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Clean catalyst + smart-money stack with a concrete government contract driving the gap up.",
+        "symbol": "CRM",
+        "qty": 155,
+        "entry_price_est": 160.20999999999998,
+        "stop_price": 158.61,
+        "take_price": 163.41,
+        "order_id": "6d7bc807-f006-4929-b1c9-f67320d46ac3"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strongest insider cluster-buy signal in the entire slate paired with green premarket action.",
+        "symbol": "DIS",
+        "qty": 261,
+        "entry_price_est": 95.42,
+        "stop_price": 94.47,
+        "take_price": 97.33,
+        "order_id": "c5c3010f-6e40-450f-82d1-f43a1ddf1c51"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Green mover with clean alt-data \u2014 insider buy + high analyst conviction and no earnings risk.",
+        "symbol": "GE",
+        "qty": 69,
+        "entry_price_est": 357.99,
+        "stop_price": 354.41,
+        "take_price": 365.15,
+        "order_id": "6164cabc-e806-4af2-8338-bf532c724579"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-24",
+    "ts": "2026-07-24T15:01:54.811342Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
