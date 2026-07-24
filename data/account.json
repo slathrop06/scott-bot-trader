@@ -1,28 +1,37 @@
 {
-  "ts": "2026-07-24T16:40:25.703271Z",
-  "equity": 75578.69,
+  "ts": "2026-07-24T16:46:43.923256Z",
+  "equity": 75523.71,
   "last_equity": 75349.89,
-  "cash": 26123.48,
-  "buying_power": 242968.51,
-  "all_time_return_pct": -24.4213,
+  "cash": -44595.48,
+  "buying_power": 0.0,
+  "all_time_return_pct": -24.4763,
   "positions": [
+    {
+      "symbol": "AAPL",
+      "qty": 212,
+      "avg_entry_price": 333.58,
+      "current_price": 333.58,
+      "market_value": 70718.96,
+      "unrealized_pl": 0.0,
+      "unrealized_pl_pct": 0.0
+    },
     {
       "symbol": "DIS",
       "qty": 261,
       "avg_entry_price": 95.4455,
-      "current_price": 95.555,
-      "market_value": 24939.85,
-      "unrealized_pl": 28.57,
-      "unrealized_pl_pct": 0.115
+      "current_price": 95.445,
+      "market_value": 24911.15,
+      "unrealized_pl": -0.14,
+      "unrealized_pl_pct": -0.001
     },
     {
       "symbol": "GE",
       "qty": 69,
       "avg_entry_price": 356.78,
-      "current_price": 355.295,
-      "market_value": 24515.35,
-      "unrealized_pl": -102.47,
-      "unrealized_pl_pct": -0.416
+      "current_price": 354.945,
+      "market_value": 24491.21,
+      "unrealized_pl": -126.61,
+      "unrealized_pl_pct": -0.514
     }
   ]
 }

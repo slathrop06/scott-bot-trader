@@ -12839,5 +12839,104 @@
     "ts": "2026-07-24T15:01:54.811342Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-24",
+    "ts": "2026-07-24T16:45:31.265859Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=30110270488"
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-07-24",
+    "ts": "2026-07-24T16:45:52.647596Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-24",
+    "ts": "2026-07-24T16:46:43.754970Z",
+    "equity_start": 75532.76,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "CRM",
+          "confidence": "high",
+          "catalyst": "$1.6B Veterans Affairs contract announced, stock gapping +3.81% on AI adoption narrative",
+          "smart_money_signals": "House buy by Maria Elvira Salazar (21d), Stocktwits 100% bullish on 30 msgs, 75.9% analyst buy rating (13SB/31B)",
+          "rationale": "Best stack available \u2014 concrete government contract catalyst + congressional buy + unanimous retail sentiment + strong analyst conviction"
+        },
+        {
+          "symbol": "AAPL",
+          "confidence": "medium",
+          "catalyst": "Anti-CapEx AI trade narrative post-Alphabet capex shock, +3.90% gap on relative strength while big tech sells off",
+          "smart_money_signals": "66.7% analyst buy (13SB/23B), WSB chatter 2.11x normal at rank #13; stocktwits bearish 14% is a caution flag but likely contrarian",
+          "rationale": "Clear catalyst with sector rotation into Apple as the capex-light AI winner, strong analyst backing"
+        },
+        {
+          "symbol": "NFLX",
+          "confidence": "medium",
+          "catalyst": "CNBC Final Trades mention + steady +2.11% move higher on a weak tape (relative strength)",
+          "smart_money_signals": "Stocktwits 100% bullish (30 msgs), 77.6% analyst buy (16SB/29B), zero sell ratings",
+          "rationale": "Clean relative strength with no contradicting signals and strong analyst/retail sentiment alignment"
+        }
+      ],
+      "market_take": "Risk-off tape post-Alphabet capex shock with tech under pressure; rotation into contract-win and capex-light names.",
+      "skipped_movers": [
+        "INTC: -8% despite blowout quarter \u2014 price rejects the news, dangerous knife catch",
+        "TSLA: down 4% with no supportive catalyst",
+        "ORCL: heavy insider selling (11 sells) + price down despite Pentagon contract",
+        "AVGO: 29 insider sells / 4 insiders \u2014 heavy distribution",
+        "MA: heavy insider selling 15 sells",
+        "AMD: down 2.58% despite bullish AI TAM news \u2014 price contradicts",
+        "ADBE: no news catalyst, mixed insider/house activity",
+        "BAC/HD/NKE: weaker signal stack than top 3"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best stack available \u2014 concrete government contract catalyst + congressional buy + unanimous retail sentiment + strong analyst conviction",
+        "symbol": "CRM",
+        "qty": 490,
+        "entry_price_est": 163.505,
+        "stop_price": 161.87,
+        "take_price": 166.78,
+        "order_id": "bd1d2180-dc60-4e9f-a89f-b2b78ac574ec"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clear catalyst with sector rotation into Apple as the capex-light AI winner, strong analyst backing",
+        "symbol": "AAPL",
+        "qty": 240,
+        "entry_price_est": 333.77,
+        "stop_price": 330.43,
+        "take_price": 340.45,
+        "order_id": "304c57ba-1c6c-4220-a552-0295ecc959a1"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean relative strength with no contradicting signals and strong analyst/retail sentiment alignment",
+        "symbol": "NFLX",
+        "qty": 1143,
+        "entry_price_est": 70.08500000000001,
+        "stop_price": 69.38,
+        "take_price": 71.49,
+        "order_id": "656ae098-feac-4a3e-92fb-81317eea3580"
+      }
+    ]
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-07-24",
+    "ts": "2026-07-24T16:46:43.925541Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
