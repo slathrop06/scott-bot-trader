@@ -12980,5 +12980,75 @@
     "ts": "2026-07-24T19:44:56.248990Z",
     "status": "blocked",
     "note": "Buying power $0.00 below $5000 minimum \u2014 account is too deployed to take new trades."
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-24",
+    "ts": "2026-07-24T20:07:23.266782Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=30122853073"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-07-24",
+    "ts": "2026-07-24T20:07:45.073357Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-07-24",
+    "ts": "2026-07-24T20:07:45.332732Z",
+    "equity_end": 75516.33,
+    "daily_pnl_usd": 166.44,
+    "daily_pct": 0.2209,
+    "flatten": {
+      "closed": [
+        "AAPL",
+        "CRM",
+        "DIS",
+        "NFLX"
+      ],
+      "raw_response_count": 4
+    }
+  },
+  {
+    "type": "trade",
+    "date": "2026-07-24",
+    "ts": "2026-07-24T20:07:45.390065Z",
+    "symbol": "CRM",
+    "qty": 155,
+    "entry_price": 162.38,
+    "entry_ts": "2026-07-24T15:01:55.380617Z",
+    "entry_order_id": "6d7bc807-f006-4929-b1c9-f67320d46ac3",
+    "exit_price": 163.42,
+    "exit_ts": "2026-07-24T15:14:41.157589Z",
+    "exit_order_id": "69699359-82ea-47a2-93fc-8b03379982cf",
+    "exit_reason": "bracket",
+    "pnl_usd": 161.2,
+    "pnl_pct": 0.6405
+  },
+  {
+    "type": "trade",
+    "date": "2026-07-24",
+    "ts": "2026-07-24T20:07:45.390065Z",
+    "symbol": "GE",
+    "qty": 69,
+    "entry_price": 356.78,
+    "entry_ts": "2026-07-24T15:01:55.599917Z",
+    "entry_order_id": "6164cabc-e806-4af2-8338-bf532c724579",
+    "exit_price": 354.18,
+    "exit_ts": "2026-07-24T16:48:03.578492Z",
+    "exit_order_id": "35258794-2c17-4dcc-9209-b3652a22a215",
+    "exit_reason": "bracket",
+    "pnl_usd": -179.4,
+    "pnl_pct": -0.7287
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-07-24",
+    "ts": "2026-07-24T20:07:45.469806Z",
+    "status": "ok",
+    "note": "closed 4 positions, 2 round-trips"
   }
 ]
