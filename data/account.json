@@ -1,9 +1,28 @@
 {
-  "ts": "2026-07-24T14:52:57.473481Z",
-  "equity": 75491.38,
+  "ts": "2026-07-24T16:40:25.703271Z",
+  "equity": 75578.69,
   "last_equity": 75349.89,
-  "cash": 75491.38,
-  "buying_power": 301965.52,
-  "all_time_return_pct": -24.5086,
-  "positions": []
+  "cash": 26123.48,
+  "buying_power": 242968.51,
+  "all_time_return_pct": -24.4213,
+  "positions": [
+    {
+      "symbol": "DIS",
+      "qty": 261,
+      "avg_entry_price": 95.4455,
+      "current_price": 95.555,
+      "market_value": 24939.85,
+      "unrealized_pl": 28.57,
+      "unrealized_pl_pct": 0.115
+    },
+    {
+      "symbol": "GE",
+      "qty": 69,
+      "avg_entry_price": 356.78,
+      "current_price": 355.295,
+      "market_value": 24515.35,
+      "unrealized_pl": -102.47,
+      "unrealized_pl_pct": -0.416
+    }
+  ]
 }
