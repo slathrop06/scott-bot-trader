@@ -1,46 +1,46 @@
 {
-  "ts": "2026-07-24T18:16:14.160349Z",
-  "equity": 75359.37,
+  "ts": "2026-07-24T19:54:06.617146Z",
+  "equity": 76063.33,
   "last_equity": 75349.89,
   "cash": -189490.25,
   "buying_power": 0.0,
-  "all_time_return_pct": -24.6406,
+  "all_time_return_pct": -23.9367,
   "positions": [
     {
       "symbol": "AAPL",
       "qty": 240,
       "avg_entry_price": 333.5812,
-      "current_price": 332.44,
-      "market_value": 79785.6,
-      "unrealized_pl": -273.88,
-      "unrealized_pl_pct": -0.342
+      "current_price": 333.265,
+      "market_value": 79983.6,
+      "unrealized_pl": -75.88,
+      "unrealized_pl_pct": -0.095
     },
     {
       "symbol": "CRM",
       "qty": 490,
       "avg_entry_price": 163.02,
-      "current_price": 163.2,
-      "market_value": 79968.0,
-      "unrealized_pl": 88.2,
-      "unrealized_pl_pct": 0.11
+      "current_price": 164.04,
+      "market_value": 80379.6,
+      "unrealized_pl": 499.8,
+      "unrealized_pl_pct": 0.626
     },
     {
       "symbol": "DIS",
       "qty": 261,
       "avg_entry_price": 95.4455,
-      "current_price": 95.48,
-      "market_value": 24920.28,
-      "unrealized_pl": 9.0,
-      "unrealized_pl_pct": 0.036
+      "current_price": 94.9,
+      "market_value": 24768.9,
+      "unrealized_pl": -142.38,
+      "unrealized_pl_pct": -0.572
     },
     {
       "symbol": "NFLX",
       "qty": 1143,
       "avg_entry_price": 70.09,
-      "current_price": 70.145,
-      "market_value": 80175.74,
-      "unrealized_pl": 62.87,
-      "unrealized_pl_pct": 0.078
+      "current_price": 70.365,
+      "market_value": 80427.2,
+      "unrealized_pl": 314.32,
+      "unrealized_pl_pct": 0.392
     }
   ]
 }
