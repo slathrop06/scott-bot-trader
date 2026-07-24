@@ -12959,5 +12959,26 @@
     "ts": "2026-07-24T18:07:15.076615Z",
     "status": "blocked",
     "note": "Buying power $0.00 below $5000 minimum \u2014 account is too deployed to take new trades."
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-24",
+    "ts": "2026-07-24T19:44:29.250003Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=30121495527"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-24",
+    "ts": "2026-07-24T19:44:55.942342Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-24",
+    "ts": "2026-07-24T19:44:56.248990Z",
+    "status": "blocked",
+    "note": "Buying power $0.00 below $5000 minimum \u2014 account is too deployed to take new trades."
   }
 ]
