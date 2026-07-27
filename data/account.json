@@ -1,37 +1,55 @@
 {
-  "ts": "2026-07-27T17:03:03.290449Z",
-  "equity": 79266.65,
+  "ts": "2026-07-27T17:40:56.545127Z",
+  "equity": 79837.12,
   "last_equity": 75496.54,
-  "cash": 921.34,
-  "buying_power": 76229.26,
-  "all_time_return_pct": -20.7334,
+  "cash": -145895.74,
+  "buying_power": 48469.04,
+  "all_time_return_pct": -20.1629,
   "positions": [
     {
       "symbol": "GOOGL",
       "qty": 80,
       "avg_entry_price": 327.69,
-      "current_price": 325.96,
-      "market_value": 26076.8,
-      "unrealized_pl": -138.4,
-      "unrealized_pl_pct": -0.528
+      "current_price": 326.32,
+      "market_value": 26105.6,
+      "unrealized_pl": -109.6,
+      "unrealized_pl_pct": -0.418
     },
     {
       "symbol": "MSFT",
       "qty": 67,
       "avg_entry_price": 391.08,
-      "current_price": 390.915,
-      "market_value": 26191.31,
-      "unrealized_pl": -11.05,
-      "unrealized_pl_pct": -0.042
+      "current_price": 392.1451,
+      "market_value": 26273.72,
+      "unrealized_pl": 71.36,
+      "unrealized_pl_pct": 0.272
+    },
+    {
+      "symbol": "ORCL",
+      "qty": 613,
+      "avg_entry_price": 119.98,
+      "current_price": 119.9519,
+      "market_value": 73530.51,
+      "unrealized_pl": -17.23,
+      "unrealized_pl_pct": -0.023
+    },
+    {
+      "symbol": "SHOP",
+      "qty": 587,
+      "avg_entry_price": 124.82,
+      "current_price": 125.665,
+      "market_value": 73765.35,
+      "unrealized_pl": 496.01,
+      "unrealized_pl_pct": 0.677
     },
     {
       "symbol": "WMT",
       "qty": 234,
       "avg_entry_price": 112.0,
-      "current_price": 111.45,
-      "market_value": 26079.3,
-      "unrealized_pl": -128.7,
-      "unrealized_pl_pct": -0.491
+      "current_price": 111.345,
+      "market_value": 26054.73,
+      "unrealized_pl": -153.27,
+      "unrealized_pl_pct": -0.585
     }
   ]
 }
