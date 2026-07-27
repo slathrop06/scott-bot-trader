@@ -13064,5 +13064,119 @@
     "ts": "2026-07-24T22:19:26.346498Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=30130589673"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-27",
+    "ts": "2026-07-27T15:47:54.043032Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=30281690942"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-27",
+    "ts": "2026-07-27T15:48:15.310803Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-27",
+    "ts": "2026-07-27T15:48:17.401154Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-27",
+    "ts": "2026-07-27T15:48:18.853715Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-27",
+    "ts": "2026-07-27T15:49:15.265948Z",
+    "equity_start": 79546.9,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "GOOGL",
+          "confidence": "high",
+          "catalyst": "Q2 earnings beat driving +2.84% gap with strong Google Cloud/AI demand narrative",
+          "smart_money_signals": "Insider cluster buy (8 buyers, 9 buys in 30d), WSB chatter 3.0x normal (rank #17), Stocktwits 89% bullish, 87% analyst buy rating",
+          "rationale": "Best stacked setup: fresh earnings catalyst + rare 8-insider cluster buy + bullish sentiment across every channel"
+        },
+        {
+          "symbol": "WMT",
+          "confidence": "medium",
+          "catalyst": "Steady +2.24% move with no negative news, benefiting from defensive rotation away from stretched AI names",
+          "smart_money_signals": "Insider cluster buy (9 unique buyers in 30d), Stocktwits 100% bullish on 30 msgs, 90% analyst buy (14SB/29B)",
+          "rationale": "Pure smart-money play \u2014 9-insider cluster is a rare conviction signal and defensive sector fits today's AI-capex jitters"
+        },
+        {
+          "symbol": "MSFT",
+          "confidence": "medium",
+          "catalyst": "Relative strength +2.62% defying tech sector weakness, approaching $395.50 resistance",
+          "smart_money_signals": "WSB chatter 2.87x normal (rank #6, 109 mentions), Stocktwits 83% bullish, 93% analyst buy (23SB/40B)",
+          "rationale": "Relative strength on a red-tape day for chips plus top-tier analyst conviction \u2014 clean momentum entry"
+        }
+      ],
+      "market_take": "Risk-on rotation into mega-cap software/defensive names as AI-capex financing fears crush semis (NVDA, AMD, INTC)",
+      "skipped_movers": [
+        "SHOP: +9% gap with zero news \u2014 chase risk, no catalyst to anchor",
+        "AMD: -8% on AI-capex concerns, contra-trend",
+        "PLTR: earnings on deck \u2014 overnight gap risk",
+        "NVDA: -4.8% down, heavy insider selling, negative news flow",
+        "ORCL: negative AI-capex news backdrop despite bounce",
+        "MA: heavy insider selling 15 sells vs 4 buys \u2014 3:1+ disqualifier",
+        "DIS: Stocktwits 25% bullish contradicts insider cluster",
+        "CAT: -4.88%, no bullish signals",
+        "ADBE: analyst 37.8% bullish + house selling, weak conviction"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best stacked setup: fresh earnings catalyst + rare 8-insider cluster buy + bullish sentiment across every channel",
+        "symbol": "GOOGL",
+        "qty": 80,
+        "entry_price_est": 327.67499999999995,
+        "stop_price": 324.4,
+        "take_price": 334.23,
+        "order_id": "515c7177-2852-41fd-9f10-bf6e7fd6194a"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Pure smart-money play \u2014 9-insider cluster is a rare conviction signal and defensive sector fits today's AI-capex jitters",
+        "symbol": "WMT",
+        "qty": 234,
+        "entry_price_est": 111.97999999999999,
+        "stop_price": 110.86,
+        "take_price": 114.22,
+        "order_id": "98c69d6a-e80e-42e0-8328-ebd0fcd58fef"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Relative strength on a red-tape day for chips plus top-tier analyst conviction \u2014 clean momentum entry",
+        "symbol": "MSFT",
+        "qty": 67,
+        "entry_price_est": 390.2,
+        "stop_price": 386.3,
+        "take_price": 398.0,
+        "order_id": "ed47cf59-3a4b-406f-8648-5bd472d56abf"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-27",
+    "ts": "2026-07-27T15:49:15.425989Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
