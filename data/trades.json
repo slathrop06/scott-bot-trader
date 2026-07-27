@@ -13286,5 +13286,44 @@
     "ts": "2026-07-27T20:10:17.884437Z",
     "status": "intraday_workflow_started",
     "note": "event=schedule run_id=30301415789"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-27",
+    "ts": "2026-07-27T20:11:50.394455Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=30301527287"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-07-27",
+    "ts": "2026-07-27T20:12:11.614021Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-07-27",
+    "ts": "2026-07-27T20:12:12.435096Z",
+    "equity_end": 80411.43,
+    "daily_pnl_usd": 4914.89,
+    "daily_pct": 6.5101,
+    "flatten": {
+      "closed": [
+        "GOOGL",
+        "MSFT",
+        "ORCL",
+        "SHOP",
+        "WMT"
+      ],
+      "raw_response_count": 5
+    }
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-07-27",
+    "ts": "2026-07-27T20:12:12.667499Z",
+    "status": "ok",
+    "note": "closed 5 positions, 0 round-trips"
   }
 ]
