@@ -13548,5 +13548,98 @@
     "ts": "2026-07-28T16:44:27.202934Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-28",
+    "ts": "2026-07-28T18:04:22.857816Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=30385751415"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-28",
+    "ts": "2026-07-28T18:04:47.976085Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-28",
+    "ts": "2026-07-28T18:05:37.904945Z",
+    "equity_start": 80286.79,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "DIS",
+          "confidence": "high",
+          "catalyst": "Steady +2.09% move higher on no news, showing quiet accumulation into strength",
+          "smart_money_signals": "Insider cluster buy with 13 distinct buyers (17 buys vs 8 sells 30d), 88.9% analyst bullish (11SB/21B), 86% Stocktwits bullish \u2014 rare stacking of insider + analyst + retail",
+          "rationale": "Best risk/reward on the board: multi-signal alt-data stack with 13-insider cluster buy and no contradicting news"
+        },
+        {
+          "symbol": "BA",
+          "confidence": "medium",
+          "catalyst": "Q2 earnings beat: record $715B backlog, cash flow turned positive, guiding up to $3B FCF in 2026 \u2014 stock +4.28% intraday",
+          "smart_money_signals": "83.8% analyst bullish (13SB/18B), 100% Stocktwits bullish on 30 msgs \u2014 sentiment confirms fundamental turn",
+          "rationale": "Post-earnings drift with concrete positive catalyst and unanimous bullish sentiment"
+        },
+        {
+          "symbol": "SHOP",
+          "confidence": "medium",
+          "catalyst": "Relative strength +3.64% while Nasdaq is in correction and chip trade is cracking \u2014 bucking the tape",
+          "smart_money_signals": "77.8% analyst bullish (10SB/32B), 86% Stocktwits bullish on 30 msgs",
+          "rationale": "Clean relative-strength setup with no contradicting news and solid analyst/retail support"
+        }
+      ],
+      "market_take": "Risk-off rotation: chip/AI trade cracking hard (AMD/INTC/PLTR down 5-7%) while industrials, retail, and media catch a bid.",
+      "skipped_movers": [
+        "AMD: falling into August earnings, House selling, Stocktwits only 43% bullish",
+        "PLTR: heavy insider selling (6 sells / 2 insiders), earnings imminent",
+        "INTC: broad chip rout, only 32.7% analyst bullish",
+        "CAT: no catalyst, no alt-data signals",
+        "MA: heavy insider selling (15 sells) despite price strength \u2014 red flag",
+        "NFLX: price ($73) doesn't match a real NFLX quote \u2014 data integrity concern, skip",
+        "HD: mixed congressional activity, weak signal stack",
+        "NKE: Cramer lukewarm, only 40% analyst bullish"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best risk/reward on the board: multi-signal alt-data stack with 13-insider cluster buy and no contradicting news",
+        "symbol": "DIS",
+        "qty": 204,
+        "entry_price_est": 98.925,
+        "stop_price": 97.94,
+        "take_price": 100.9,
+        "order_id": "ab14cb7e-cbac-41a1-a822-56c1614b1c21"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Post-earnings drift with concrete positive catalyst and unanimous bullish sentiment",
+        "symbol": "BA",
+        "qty": 90,
+        "entry_price_est": 223.08499999999998,
+        "stop_price": 220.85,
+        "take_price": 227.55,
+        "order_id": "fb069074-6d15-4884-853a-4cebaf7df1f4"
+      },
+      {
+        "status": "failed",
+        "symbol": "SHOP",
+        "error": "{\"base_price\":\"131.2\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-28",
+    "ts": "2026-07-28T18:05:38.066029Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
