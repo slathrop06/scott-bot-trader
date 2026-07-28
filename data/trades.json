@@ -13339,5 +13339,115 @@
     "ts": "2026-07-27T22:33:20.663679Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=30311131619"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-28",
+    "ts": "2026-07-28T15:26:58.132513Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=30373409642"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-28",
+    "ts": "2026-07-28T15:27:18.842810Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-28",
+    "ts": "2026-07-28T15:27:20.980002Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-28",
+    "ts": "2026-07-28T15:27:22.581095Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-28",
+    "ts": "2026-07-28T15:28:11.896883Z",
+    "equity_start": 79980.41,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "WMT",
+          "confidence": "high",
+          "catalyst": "Gap up +2.5% on strong volume with no contradicting news; defensive name catching bid amid chip selloff",
+          "smart_money_signals": "Insider cluster buy (9 insiders buying, rare signal), 90% analyst bullish (14SB/29B), Stocktwits 91% bullish",
+          "rationale": "Best signal stack of the day \u2014 6/10 alt score with insider cluster buy + top analyst conviction + gap continuation in a defensive rotation tape"
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "Premarket gap +5.9% on heavy volume with no contradicting news \u2014 momentum breakout",
+          "smart_money_signals": "House buy by Salazar (21d), Stocktwits 100% bullish on 30 msgs, 76% analyst buy (13SB/31B), no heavy insider selling",
+          "rationale": "Clean gap-up with confirming smart-money stack and no disqualifiers \u2014 clear +2% momentum target achievable"
+        },
+        {
+          "symbol": "BA",
+          "confidence": "medium",
+          "catalyst": "Positive earnings-adjacent news: record $715B backlog, cash flow turning positive, 63% Polymarket odds of Q2 beat; gap +2.7%",
+          "smart_money_signals": "Stocktwits 100% bullish, 84% analyst buy (13SB/18B/6H, zero sells)",
+          "rationale": "Concrete bullish catalyst with analyst support and clean tape \u2014 momentum should carry to +2% target"
+        }
+      ],
+      "market_take": "Risk-off rotation \u2014 chip/AI names dumping on Asia selloff while defensives (WMT, MA, COST, MCD) and industrials (BA) catch the bid",
+      "skipped_movers": [
+        "AMD: chip selloff, house selling, earnings approaching",
+        "INTC: falling with chip sector, weak 32.7% analyst conviction",
+        "PLTR: heavy insider selling (6 sells, 2 insiders) + gap down",
+        "ADBE: weak 37.8% analyst bullish, insider buys=sells",
+        "PLTR/AMD/INTC: contradicting price action vs sentiment"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best signal stack of the day \u2014 6/10 alt score with insider cluster buy + top analyst conviction + gap continuation in a defensive rotation tape",
+        "symbol": "WMT",
+        "qty": 229,
+        "entry_price_est": 114.91499999999999,
+        "stop_price": 113.77,
+        "take_price": 117.21,
+        "order_id": "cc2e1713-fb23-4fb3-98cb-aa235924540d"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean gap-up with confirming smart-money stack and no disqualifiers \u2014 clear +2% momentum target achievable",
+        "symbol": "CRM",
+        "qty": 144,
+        "entry_price_est": 182.445,
+        "stop_price": 180.62,
+        "take_price": 186.09,
+        "order_id": "6659e0f3-f024-430e-9fb1-e2d2c28a3200"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Concrete bullish catalyst with analyst support and clean tape \u2014 momentum should carry to +2% target",
+        "symbol": "BA",
+        "qty": 121,
+        "entry_price_est": 216.975,
+        "stop_price": 214.81,
+        "take_price": 221.31,
+        "order_id": "4c35c6c0-e49b-4b3f-9723-065ca32a0eba"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-28",
+    "ts": "2026-07-28T15:28:11.929284Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
