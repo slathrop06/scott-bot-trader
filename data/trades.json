@@ -13449,5 +13449,104 @@
     "ts": "2026-07-28T15:28:11.929284Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-28",
+    "ts": "2026-07-28T16:43:17.794292Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=30379555697"
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-07-28",
+    "ts": "2026-07-28T16:43:37.983185Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-28",
+    "ts": "2026-07-28T16:44:27.168568Z",
+    "equity_start": 80046.74,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "BA",
+          "confidence": "high",
+          "catalyst": "Q2 earnings beat with record $715B backlog, positive cash flow turn, +4.68% intraday on strong volume",
+          "smart_money_signals": "Stocktwits 100% bullish (30 msgs), analysts 83.8% bullish (13SB/18B)",
+          "rationale": "Post-earnings drift with concrete fundamental catalyst and unanimous sentiment stack \u2014 cleanest setup on the board"
+        },
+        {
+          "symbol": "GOOGL",
+          "confidence": "medium",
+          "catalyst": "+2.11% relative strength on heavy volume while AI/chip complex sells off hard",
+          "smart_money_signals": "Insider cluster buy (8 buyers, 9 buys), Stocktwits 93% bullish, analysts 87% bullish (18SB/42B)",
+          "rationale": "Rare insider cluster buy in mega-cap plus RS vs weak tape and top-tier analyst conviction"
+        },
+        {
+          "symbol": "ADBE",
+          "confidence": "medium",
+          "catalyst": "+6.55% breakout on 4M volume with no negative news",
+          "smart_money_signals": "Insider cluster buy (8 buyers, 27 buys in 30d)",
+          "rationale": "Strong gap up with insider cluster buy support \u2014 momentum + smart money align despite lukewarm analyst view"
+        }
+      ],
+      "market_take": "Risk-off in AI/chips (AMD, INTC, PLTR down hard) but rotation into industrials, retail, and select mega-cap tech offers clean long setups.",
+      "skipped_movers": [
+        "AMD: -6.22% on chip contagion, fighting the tape",
+        "PLTR: heavy insider selling (6 sells) and earnings imminent",
+        "INTC: caught in chip selloff, weak analyst conviction 32.7%",
+        "MA: heavy insider selling 15 sells despite bullish tape",
+        "SHOP: no catalyst, thin signals",
+        "CAT: down 3.82%, no positive signals",
+        "COST/HD/NFLX: modest moves, weaker signal stack than picks",
+        "NKE: Cramer lukewarm, weak analyst support"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Post-earnings drift with concrete fundamental catalyst and unanimous sentiment stack \u2014 cleanest setup on the board",
+        "symbol": "BA",
+        "qty": 435,
+        "entry_price_est": 218.5,
+        "stop_price": 216.31,
+        "take_price": 222.87,
+        "order_id": "28009763-ddec-4a94-beb4-3fd05cffc466"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Rare insider cluster buy in mega-cap plus RS vs weak tape and top-tier analyst conviction",
+        "symbol": "GOOGL",
+        "qty": 285,
+        "entry_price_est": 333.865,
+        "stop_price": 330.53,
+        "take_price": 340.54,
+        "order_id": "731e32e0-7e37-49c7-9ca6-27ae3c9b49a6"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strong gap up with insider cluster buy support \u2014 momentum + smart money align despite lukewarm analyst view",
+        "symbol": "ADBE",
+        "qty": 375,
+        "entry_price_est": 253.73000000000002,
+        "stop_price": 251.19,
+        "take_price": 258.8,
+        "order_id": "4a334aa3-10fc-4624-8be5-7fbed8c6a757"
+      }
+    ]
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-07-28",
+    "ts": "2026-07-28T16:44:27.202934Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
