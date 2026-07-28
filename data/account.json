@@ -1,19 +1,46 @@
 {
-  "ts": "2026-07-28T16:44:27.200201Z",
-  "equity": 80052.5,
+  "ts": "2026-07-28T16:57:47.348484Z",
+  "equity": 79977.65,
   "last_equity": 80422.8,
-  "cash": 53657.3,
-  "buying_power": 1557.53,
-  "all_time_return_pct": -19.9475,
+  "cash": -233320.9,
+  "buying_power": 0.0,
+  "all_time_return_pct": -20.0224,
   "positions": [
+    {
+      "symbol": "ADBE",
+      "qty": 375,
+      "avg_entry_price": 253.59,
+      "current_price": 253.31,
+      "market_value": 94991.25,
+      "unrealized_pl": -105.0,
+      "unrealized_pl_pct": -0.11
+    },
+    {
+      "symbol": "BA",
+      "qty": 435,
+      "avg_entry_price": 222.3,
+      "current_price": 222.1,
+      "market_value": 96613.5,
+      "unrealized_pl": -87.0,
+      "unrealized_pl_pct": -0.09
+    },
     {
       "symbol": "CRM",
       "qty": 144,
       "avg_entry_price": 184.26,
-      "current_price": 183.3,
-      "market_value": 26395.2,
-      "unrealized_pl": -138.24,
-      "unrealized_pl_pct": -0.521
+      "current_price": 183.5,
+      "market_value": 26424.0,
+      "unrealized_pl": -109.44,
+      "unrealized_pl_pct": -0.412
+    },
+    {
+      "symbol": "GOOGL",
+      "qty": 285,
+      "avg_entry_price": 333.97,
+      "current_price": 334.28,
+      "market_value": 95269.8,
+      "unrealized_pl": 88.35,
+      "unrealized_pl_pct": 0.093
     }
   ]
 }
