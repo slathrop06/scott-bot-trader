@@ -14172,5 +14172,12 @@
     "ts": "2026-07-29T20:05:18.646757Z",
     "status": "ok",
     "note": "closed 0 positions, 4 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-29",
+    "ts": "2026-07-29T21:07:22.266465Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=30491119586"
   }
 ]
