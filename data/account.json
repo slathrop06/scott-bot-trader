@@ -1,19 +1,28 @@
 {
-  "ts": "2026-07-29T16:26:02.312095Z",
-  "equity": 79540.33,
+  "ts": "2026-07-29T16:49:03.107472Z",
+  "equity": 79775.08,
   "last_equity": 78872.49,
-  "cash": 53480.03,
-  "buying_power": 192486.1,
-  "all_time_return_pct": -20.4597,
+  "cash": -40922.82,
+  "buying_power": 174262.84,
+  "all_time_return_pct": -20.2249,
   "positions": [
+    {
+      "symbol": "JPM",
+      "qty": 271,
+      "avg_entry_price": 348.35,
+      "current_price": 349.1,
+      "market_value": 94606.1,
+      "unrealized_pl": 203.25,
+      "unrealized_pl_pct": 0.215
+    },
     {
       "symbol": "V",
       "qty": 70,
       "avg_entry_price": 371.26,
-      "current_price": 372.29,
-      "market_value": 26060.3,
-      "unrealized_pl": 72.1,
-      "unrealized_pl_pct": 0.277
+      "current_price": 372.74,
+      "market_value": 26091.8,
+      "unrealized_pl": 103.6,
+      "unrealized_pl_pct": 0.399
     }
   ]
 }
