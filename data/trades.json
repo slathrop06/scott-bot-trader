@@ -13794,5 +13794,114 @@
     "ts": "2026-07-28T22:17:55.891555Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=30404017130"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-29",
+    "ts": "2026-07-29T15:12:39.792024Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=30464724543"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-29",
+    "ts": "2026-07-29T15:12:58.329368Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-29",
+    "ts": "2026-07-29T15:12:59.925960Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-29",
+    "ts": "2026-07-29T15:13:01.472189Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-29",
+    "ts": "2026-07-29T15:13:51.046334Z",
+    "equity_start": 79126.63,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "V",
+          "confidence": "high",
+          "catalyst": "Q3 earnings beat ($3.32 EPS, $11.63B rev), JPM raised PT $400\u2192$450, gapping +2.46% premarket on reassuring US consumer read",
+          "smart_money_signals": "Stocktwits 100% bullish on 30 msgs, 92% analyst buy (11SB/34B), multiple analyst PT hikes",
+          "rationale": "Clean post-earnings gap-up with analyst upgrades and unanimous sentiment \u2014 best catalyst+smart-money stack in the tape"
+        },
+        {
+          "symbol": "JPM",
+          "confidence": "medium",
+          "catalyst": "Only -2% pullback with strongest smart-money profile in the list; relative strength vs deeper declines in CAT/AMD/INTC",
+          "smart_money_signals": "Insider cluster buy (4 buyers, 0 sells, alt-score 5/10), Stocktwits 80% bullish, WSB mentions 1.44x",
+          "rationale": "Rare insider cluster buy + no offsetting negatives makes this a smart-money-driven dip buy"
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "Premarket gap +3.4% with no news \u2014 pure relative strength on a red tape day",
+          "smart_money_signals": "Stocktwits 93% bullish on 30 msgs, 76% analyst buy (13SB/31B)",
+          "rationale": "Unexplained relative strength plus strong sentiment/analyst backing signals institutional accumulation"
+        }
+      ],
+      "market_take": "Broad risk-off tape with semis and industrials selling off hard \u2014 rotation into payments/financials and defensives showing relative strength.",
+      "skipped_movers": [
+        "CAT: analyst downgrade + 23% bullish Stocktwits \u2014 skip",
+        "AMD: Q2 earnings imminent, overnight gap risk \u2014 skip",
+        "INTC: no clear catalyst, weak sentiment 40% \u2014 skip",
+        "BA: negative headline risk (Sudan weapons transport) \u2014 skip",
+        "GS: heavy insider selling 3:0 \u2014 skip",
+        "MS: heavy insider selling 4:0 \u2014 skip",
+        "NVDA: heavy insider selling, Stocktwits only 45% \u2014 skip",
+        "AVGO: heavy insider selling 5:0 \u2014 skip",
+        "ADBE: insider buys matched by equal sells, not true cluster \u2014 skip",
+        "ORCL: negative Cuban AI-bubble headline, red premarket \u2014 skip"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Clean post-earnings gap-up with analyst upgrades and unanimous sentiment \u2014 best catalyst+smart-money stack in the tape",
+        "symbol": "V",
+        "qty": 70,
+        "entry_price_est": 371.15999999999997,
+        "stop_price": 367.45,
+        "take_price": 378.58,
+        "order_id": "74364520-660c-435b-8a39-6057b5fb2bc3"
+      },
+      {
+        "status": "failed",
+        "symbol": "JPM",
+        "error": "{\"base_price\":\"350.67\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Unexplained relative strength plus strong sentiment/analyst backing signals institutional accumulation",
+        "symbol": "CRM",
+        "qty": 140,
+        "entry_price_est": 185.355,
+        "stop_price": 183.5,
+        "take_price": 189.06,
+        "order_id": "d48a9b53-e6a0-42dd-8250-5c5834db671d"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-29",
+    "ts": "2026-07-29T15:13:51.077543Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
