@@ -13993,5 +13993,80 @@
     "ts": "2026-07-29T16:26:02.315457Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-29",
+    "ts": "2026-07-29T17:49:14.238797Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=30477057940"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-29",
+    "ts": "2026-07-29T17:49:44.056385Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-29",
+    "ts": "2026-07-29T17:50:34.719765Z",
+    "equity_start": 79629.54,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "ADBE",
+          "confidence": "high",
+          "catalyst": "Strong intraday gap up +6.19% on heavy volume with no negative news \u2014 relative strength on a red tape day",
+          "smart_money_signals": "Insider cluster buy (8 buyers, 27 buys in 30d), stocktwits 64% bullish on 30 msgs, analyst mix leans buy (17 SB/B vs 4 S)",
+          "rationale": "Only large-cap gapping up green while market sells off, backed by an 8-insider cluster buy \u2014 cleanest momentum + smart-money stack available"
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "+4.38% breakout on 9M volume with no news \u2014 pure relative strength while Nasdaq sinks",
+          "smart_money_signals": "76% analyst buy (44 SB/B of 58), stocktwits 75% bullish on 30 msgs, WSB mentions 1.5x normal",
+          "rationale": "Second-strongest green name today with broad analyst conviction and rising social interest \u2014 no red flags"
+        }
+      ],
+      "market_take": "Risk-off tape \u2014 oil spiking on Iran headlines, Fed decision looming, mega-cap tech red; hunt names showing green relative strength.",
+      "skipped_movers": [
+        "CAT: Baird downgrade, -6.9%, stocktwits 8% bullish \u2014 clear disqualifier",
+        "AMD: -4.9% into MSFT earnings, macro semi weakness \u2014 no catalyst to buy the dip today",
+        "INTC: -3.9% on semi weakness, only 32.7% analyst buy",
+        "GS: heavy insider selling (3 sells, 0 buys), price -3.6%",
+        "MS: heavy insider selling (4 sells, 0 buys)",
+        "NVDA: heavy insider selling + short-interest headlines + price -2.8%",
+        "AVGO: heavy insider selling (5 sells by 3 insiders)",
+        "GE, BA, ORCL: red price action contradicts bullish alt-data \u2014 no catalyst"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Only large-cap gapping up green while market sells off, backed by an 8-insider cluster buy \u2014 cleanest momentum + smart-money stack available",
+        "symbol": "ADBE",
+        "qty": 216,
+        "entry_price_est": 265.21500000000003,
+        "stop_price": 262.56,
+        "take_price": 270.52,
+        "order_id": "b3228b91-1c1b-40be-a84c-784d8fee142b"
+      },
+      {
+        "status": "failed",
+        "symbol": "CRM",
+        "error": "{\"base_price\":\"188.55\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-29",
+    "ts": "2026-07-29T17:50:34.782152Z",
+    "status": "ok",
+    "note": "2 orders submitted"
   }
 ]
