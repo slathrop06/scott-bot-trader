@@ -1,9 +1,19 @@
 {
-  "ts": "2026-07-29T15:07:29.143660Z",
-  "equity": 79126.63,
+  "ts": "2026-07-29T16:26:02.312095Z",
+  "equity": 79540.33,
   "last_equity": 78872.49,
-  "cash": 79126.63,
-  "buying_power": 316506.52,
-  "all_time_return_pct": -20.8734,
-  "positions": []
+  "cash": 53480.03,
+  "buying_power": 192486.1,
+  "all_time_return_pct": -20.4597,
+  "positions": [
+    {
+      "symbol": "V",
+      "qty": 70,
+      "avg_entry_price": 371.26,
+      "current_price": 372.29,
+      "market_value": 26060.3,
+      "unrealized_pl": 72.1,
+      "unrealized_pl_pct": 0.277
+    }
+  ]
 }
