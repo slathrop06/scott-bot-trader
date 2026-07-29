@@ -14075,5 +14075,102 @@
     "ts": "2026-07-29T18:52:15.899507Z",
     "status": "intraday_workflow_started",
     "note": "event=schedule run_id=30481862800"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-29",
+    "ts": "2026-07-29T20:04:58.371738Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=30487072128"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-07-29",
+    "ts": "2026-07-29T20:05:18.394253Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-07-29",
+    "ts": "2026-07-29T20:05:18.541577Z",
+    "equity_end": 77846.9,
+    "daily_pnl_usd": -1025.59,
+    "daily_pct": -1.3003,
+    "flatten": {
+      "closed": [],
+      "note": "No open positions."
+    }
+  },
+  {
+    "type": "trade",
+    "date": "2026-07-29",
+    "ts": "2026-07-29T20:05:18.588899Z",
+    "symbol": "CRM",
+    "qty": 140,
+    "entry_price": 186.62,
+    "entry_ts": "2026-07-29T15:13:53.984352Z",
+    "entry_order_id": "d48a9b53-e6a0-42dd-8250-5c5834db671d",
+    "exit_price": 189.06,
+    "exit_ts": "2026-07-29T15:59:52.488465Z",
+    "exit_order_id": "b831f251-887c-4ad6-8098-5bd4ace2d292",
+    "exit_reason": "bracket",
+    "pnl_usd": 341.6,
+    "pnl_pct": 1.3075
+  },
+  {
+    "type": "trade",
+    "date": "2026-07-29",
+    "ts": "2026-07-29T20:05:18.588899Z",
+    "symbol": "V",
+    "qty": 70,
+    "entry_price": 371.26,
+    "entry_ts": "2026-07-29T15:13:52.249404Z",
+    "entry_order_id": "74364520-660c-435b-8a39-6057b5fb2bc3",
+    "exit_price": 367.2511,
+    "exit_ts": "2026-07-29T17:56:54.347441Z",
+    "exit_order_id": "d0ee228f-b8b1-4c0b-9e65-f0be91a60e5e",
+    "exit_reason": "bracket",
+    "pnl_usd": -280.62,
+    "pnl_pct": -1.0798
+  },
+  {
+    "type": "trade",
+    "date": "2026-07-29",
+    "ts": "2026-07-29T20:05:18.588899Z",
+    "symbol": "ADBE",
+    "qty": 216,
+    "entry_price": 263.9817,
+    "entry_ts": "2026-07-29T17:50:37.139483Z",
+    "entry_order_id": "b3228b91-1c1b-40be-a84c-784d8fee142b",
+    "exit_price": 262.42,
+    "exit_ts": "2026-07-29T19:00:15.939153Z",
+    "exit_order_id": "f37575d5-8a25-4a36-8e11-419c1a120269",
+    "exit_reason": "bracket",
+    "pnl_usd": -337.32,
+    "pnl_pct": -0.5916
+  },
+  {
+    "type": "trade",
+    "date": "2026-07-29",
+    "ts": "2026-07-29T20:05:18.588899Z",
+    "symbol": "JPM",
+    "qty": 271,
+    "entry_price": 348.35,
+    "entry_ts": "2026-07-29T16:26:03.633963Z",
+    "entry_order_id": "a647e1c2-a843-4f22-8eb1-03a6a410fca8",
+    "exit_price": 344.6475,
+    "exit_ts": "2026-07-29T19:33:55.647777Z",
+    "exit_order_id": "fd234c60-6d73-4158-a777-339c13d56cc4",
+    "exit_reason": "bracket",
+    "pnl_usd": -1003.39,
+    "pnl_pct": -1.0629
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-07-29",
+    "ts": "2026-07-29T20:05:18.646757Z",
+    "status": "ok",
+    "note": "closed 0 positions, 4 round-trips"
   }
 ]
