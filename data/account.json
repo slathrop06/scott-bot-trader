@@ -1,28 +1,9 @@
 {
-  "ts": "2026-07-29T18:05:30.448423Z",
-  "equity": 79692.38,
+  "ts": "2026-07-29T19:52:04.206378Z",
+  "equity": 77846.9,
   "last_equity": 78872.49,
-  "cash": -72235.28,
-  "buying_power": 136456.32,
-  "all_time_return_pct": -20.3076,
-  "positions": [
-    {
-      "symbol": "ADBE",
-      "qty": 216,
-      "avg_entry_price": 263.9817,
-      "current_price": 264.813,
-      "market_value": 57199.61,
-      "unrealized_pl": 179.57,
-      "unrealized_pl_pct": 0.315
-    },
-    {
-      "symbol": "JPM",
-      "qty": 271,
-      "avg_entry_price": 348.35,
-      "current_price": 349.55,
-      "market_value": 94728.05,
-      "unrealized_pl": 325.2,
-      "unrealized_pl_pct": 0.344
-    }
-  ]
+  "cash": 77846.9,
+  "buying_power": 311387.6,
+  "all_time_return_pct": -22.1531,
+  "positions": []
 }
