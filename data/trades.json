@@ -14186,5 +14186,121 @@
     "ts": "2026-07-29T22:08:53.388514Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=30495062827"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-30",
+    "ts": "2026-07-30T15:17:19.741689Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=30555922954"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-30",
+    "ts": "2026-07-30T15:17:40.892484Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-30",
+    "ts": "2026-07-30T15:17:42.443935Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-30",
+    "ts": "2026-07-30T15:17:43.917855Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-30",
+    "ts": "2026-07-30T15:18:57.628719Z",
+    "equity_start": 77846.65,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "MSFT",
+          "confidence": "high",
+          "catalyst": "Crushed earnings with Azure +43% growth, gapping +4.5% premarket; post-earnings drift setup with best rally since March 2020",
+          "smart_money_signals": "93% analyst buy (23SB/40B/5H/0S), WSB rank #1 with 1013 mentions (5.17x normal), House net buying (2 buys vs 1 sell)",
+          "rationale": "Cleanest post-earnings continuation setup \u2014 mega-cap liquidity keeps 1% stop safely outside noise while catalyst is real and validated."
+        },
+        {
+          "symbol": "AMD",
+          "confidence": "medium",
+          "catalyst": "Bernstein flags Core Scientific deal generating $14B over 15 years; stock gapping +13% on AI datacenter tailwind",
+          "smart_money_signals": "84% analyst buy (15SB/33B/9H), Stocktwits 100% bullish on 30 msgs, WSB rank #15 (61 mentions, 1.27x)",
+          "rationale": "Strong catalyst + broad analyst conviction + unanimous retail sentiment overrides a single House sell; +13% gap has momentum for +2% follow-through."
+        },
+        {
+          "symbol": "DIS",
+          "confidence": "medium",
+          "catalyst": "Weakness into support with no negative news \u2014 mean reversion candidate on smart-money accumulation",
+          "smart_money_signals": "Insider cluster buy: 13 unique insider buyers (17 buys vs 8 sells) over 30d, 89% analyst buy (11SB/21B/3H)",
+          "rationale": "Pure smart-money play \u2014 insider cluster of 13 buyers is the strongest insider signal in the entire slate and pairs with 89% analyst conviction."
+        }
+      ],
+      "market_take": "Bifurcated tape \u2014 mega-cap AI earnings winners (MSFT, AMD) ripping while non-AI names sell off; play the leaders plus one insider-backed laggard.",
+      "skipped_movers": [
+        "INTC: +13.7% gap but only 32.7% analyst buy and SOXX headed for worst month since 2001 \u2014 chasing a weak-hand rally",
+        "ADBE: -6.9% with Stocktwits 20% bullish (bearish disqualifier) despite insider cluster",
+        "CRM: -6.5% with no catalyst and price contradicts bullish sentiment",
+        "ORCL: mixed Stocktwits (50%) and hedge fund AI rout headline tempers the WSB spike",
+        "SHOP: -4.4% with no catalyst",
+        "SBUX: gap-down despite Q3 beat = failed catalyst, insider selling",
+        "NKE: no signals, downtrending",
+        "AVGO: heavy insider selling (4 sells, 0 buys) \u2014 disqualifier",
+        "CAT: no alt-data edge",
+        "NFLX: -2.7% down with no supporting catalyst",
+        "WMT: -2.7% gap-down overrides insider cluster today \u2014 wait for stabilization"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Cleanest post-earnings continuation setup \u2014 mega-cap liquidity keeps 1% stop safely outside noise while catalyst is real and validated.",
+        "symbol": "MSFT",
+        "qty": 57,
+        "entry_price_est": 445.18,
+        "stop_price": 440.73,
+        "take_price": 454.08,
+        "order_id": "dccc7bb7-c11b-4ce7-bd3f-21d102e001d5"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strong catalyst + broad analyst conviction + unanimous retail sentiment overrides a single House sell; +13% gap has momentum for +2% follow-through.",
+        "symbol": "AMD",
+        "qty": 52,
+        "entry_price_est": 485.40999999999997,
+        "stop_price": 480.56,
+        "take_price": 495.12,
+        "order_id": "a10e2f9c-7b71-44cd-93a9-f28a5f9c77eb"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Pure smart-money play \u2014 insider cluster of 13 buyers is the strongest insider signal in the entire slate and pairs with 89% analyst conviction.",
+        "symbol": "DIS",
+        "qty": 271,
+        "entry_price_est": 94.66,
+        "stop_price": 93.71,
+        "take_price": 96.55,
+        "order_id": "a94bf2c5-52cd-4f17-a37f-3f5e0b48493a"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-30",
+    "ts": "2026-07-30T15:18:57.753756Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
