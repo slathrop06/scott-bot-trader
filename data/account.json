@@ -1,73 +1,55 @@
 {
-  "ts": "2026-07-30T18:23:13.650019Z",
-  "equity": 80429.18,
+  "ts": "2026-07-30T20:00:56.429596Z",
+  "equity": 79302.58,
   "last_equity": 77846.65,
-  "cash": -195867.23,
-  "buying_power": 0.0,
-  "all_time_return_pct": -19.5708,
+  "cash": -157569.29,
+  "buying_power": 32964.08,
+  "all_time_return_pct": -20.6974,
   "positions": [
     {
       "symbol": "AMD",
       "qty": 52,
       "avg_entry_price": 485.4631,
-      "current_price": 488.11,
-      "market_value": 25381.72,
-      "unrealized_pl": 137.64,
-      "unrealized_pl_pct": 0.545
-    },
-    {
-      "symbol": "BA",
-      "qty": 88,
-      "avg_entry_price": 219.71,
-      "current_price": 219.825,
-      "market_value": 19344.6,
-      "unrealized_pl": 10.12,
-      "unrealized_pl_pct": 0.052
+      "current_price": 485.9466,
+      "market_value": 25269.22,
+      "unrealized_pl": 25.14,
+      "unrealized_pl_pct": 0.1
     },
     {
       "symbol": "DIS",
       "qty": 271,
       "avg_entry_price": 94.67,
-      "current_price": 96.17,
-      "market_value": 26062.07,
-      "unrealized_pl": 406.5,
-      "unrealized_pl_pct": 1.584
-    },
-    {
-      "symbol": "INTC",
-      "qty": 207,
-      "avg_entry_price": 92.09,
-      "current_price": 92.005,
-      "market_value": 19045.03,
-      "unrealized_pl": -17.59,
-      "unrealized_pl_pct": -0.092
+      "current_price": 96.13,
+      "market_value": 26051.23,
+      "unrealized_pl": 395.66,
+      "unrealized_pl_pct": 1.542
     },
     {
       "symbol": "MSFT",
       "qty": 183,
       "avg_entry_price": 454.7892,
-      "current_price": 457.71,
-      "market_value": 83760.93,
-      "unrealized_pl": 534.51,
-      "unrealized_pl_pct": 0.642
+      "current_price": 451.02,
+      "market_value": 82536.66,
+      "unrealized_pl": -689.76,
+      "unrealized_pl_pct": -0.829
     },
     {
       "symbol": "ORCL",
       "qty": 151,
       "avg_entry_price": 126.33,
-      "current_price": 126.73,
-      "market_value": 19136.23,
-      "unrealized_pl": 60.4,
-      "unrealized_pl_pct": 0.317
+      "current_price": 127.4527,
+      "market_value": 19245.36,
+      "unrealized_pl": 169.53,
+      "unrealized_pl_pct": 0.889
     },
     {
       "symbol": "WMT",
       "qty": 754,
       "avg_entry_price": 110.85,
-      "current_price": 110.83,
-      "market_value": 83565.82,
-      "unrealized_pl": -15.08,
-      "unrealized_pl_pct": -0.018
+      "current_price": 111.1,
+      "market_value": 83769.4,
+      "unrealized_pl": 188.5,
+      "unrealized_pl_pct": 0.226
     }
   ]
 }
