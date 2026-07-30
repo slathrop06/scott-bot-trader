@@ -1,9 +1,28 @@
 {
-  "ts": "2026-07-30T15:08:49.564474Z",
-  "equity": 77846.65,
+  "ts": "2026-07-30T16:39:25.762046Z",
+  "equity": 78597.3,
   "last_equity": 77846.65,
-  "cash": 77846.65,
-  "buying_power": 311386.6,
-  "all_time_return_pct": -22.1534,
-  "positions": []
+  "cash": 27494.74,
+  "buying_power": 2029.02,
+  "all_time_return_pct": -21.4027,
+  "positions": [
+    {
+      "symbol": "AMD",
+      "qty": 52,
+      "avg_entry_price": 485.4631,
+      "current_price": 484.31,
+      "market_value": 25184.12,
+      "unrealized_pl": -59.96,
+      "unrealized_pl_pct": -0.238
+    },
+    {
+      "symbol": "DIS",
+      "qty": 271,
+      "avg_entry_price": 94.67,
+      "current_price": 95.64,
+      "market_value": 25918.44,
+      "unrealized_pl": 262.87,
+      "unrealized_pl_pct": 1.025
+    }
+  ]
 }

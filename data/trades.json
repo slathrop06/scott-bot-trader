@@ -14302,5 +14302,105 @@
     "ts": "2026-07-30T15:18:57.753756Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-30",
+    "ts": "2026-07-30T16:38:21.441886Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=30562356018"
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-07-30",
+    "ts": "2026-07-30T16:38:40.653103Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-30",
+    "ts": "2026-07-30T16:39:25.739122Z",
+    "equity_start": 78605.02,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "ORCL",
+          "confidence": "high",
+          "catalyst": "Up +5.88% on expanded AI deal with Google Cloud integrating Gemini into Fusion Apps and NetSuite \u2014 concrete product/partnership news",
+          "smart_money_signals": "WSB chatter 3.0x normal (rank #29), Stocktwits 92% bullish on 30 msgs, 82% analyst buy (15SB/25B)",
+          "rationale": "Clean catalyst + stacked smart-money alignment with no contradicting insider selling"
+        },
+        {
+          "symbol": "MSFT",
+          "confidence": "medium",
+          "catalyst": "Post-earnings drift: Q4 beat, becoming top analyst pick, gap up +7% with continuation",
+          "smart_money_signals": "WSB rank #1, 5.1x chatter surge, 93% analyst buy (23SB/40B), House net buying 2:1",
+          "rationale": "Powerful post-earnings narrative shift and analyst upgrades outweigh the single insider sale"
+        },
+        {
+          "symbol": "WMT",
+          "confidence": "medium",
+          "catalyst": "Relative strength setup \u2014 down day but strong smart-money base; contrarian dip-buy on quality name",
+          "smart_money_signals": "Insider cluster buy with 9 distinct buyers in 30d, 90% analyst buy (14SB/29B)",
+          "rationale": "Rare 9-insider cluster buy is a high-signal alt-data event even without a same-day catalyst"
+        }
+      ],
+      "market_take": "Risk-on tone with AI/semi mega-caps leading post-earnings, though SOXX flags underlying fragility.",
+      "skipped_movers": [
+        "INTC: +13.6% already extended, only 32.7% analyst bullish, weak alt-data score 1/10",
+        "AVGO: heavy insider selling (4 sells, 2 insiders) disqualifies",
+        "GS: heavy insider selling 3:0 ratio",
+        "ADBE: down day, House selling, mixed insider activity (27 buys/27 sells)",
+        "CRM: down -5.3% with no catalyst \u2014 falling knife",
+        "TSLA: alt-data score 0, mixed analysts, no catalyst",
+        "SHOP: down day, no catalyst, weak stocktwits 43%",
+        "BA: modest move, thin alt-data",
+        "MS: heavy insider selling offsets other signals"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Clean catalyst + stacked smart-money alignment with no contradicting insider selling",
+        "symbol": "ORCL",
+        "qty": 673,
+        "entry_price_est": 124.035,
+        "stop_price": 122.79,
+        "take_price": 126.52,
+        "order_id": "fa35ae9e-29e5-47e8-b562-8cd39b0a30a5"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Powerful post-earnings narrative shift and analyst upgrades outweigh the single insider sale",
+        "symbol": "MSFT",
+        "qty": 183,
+        "entry_price_est": 454.775,
+        "stop_price": 450.23,
+        "take_price": 463.87,
+        "order_id": "6e2e52be-bd86-4532-9ef0-9757b6deb604"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Rare 9-insider cluster buy is a high-signal alt-data event even without a same-day catalyst",
+        "symbol": "WMT",
+        "qty": 754,
+        "entry_price_est": 110.655,
+        "stop_price": 109.55,
+        "take_price": 112.87,
+        "order_id": "bcdcdb37-4f1d-4a88-bd95-95b756df0060"
+      }
+    ]
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-07-30",
+    "ts": "2026-07-30T16:39:25.764694Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
