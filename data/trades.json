@@ -14402,5 +14402,104 @@
     "ts": "2026-07-30T16:39:25.764694Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-30",
+    "ts": "2026-07-30T18:02:34.038459Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=30568659826"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-30",
+    "ts": "2026-07-30T18:02:53.382289Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-30",
+    "ts": "2026-07-30T18:03:43.032129Z",
+    "equity_start": 79965.45,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "ORCL",
+          "confidence": "high",
+          "catalyst": "Up +6.77% on expanded AI deal with Google Cloud integrating Gemini into Fusion Applications and NetSuite \u2014 concrete news catalyst with strong intraday follow-through",
+          "smart_money_signals": "WSB chatter 2.7x normal (rank #29), Stocktwits 100% bullish on 30 msgs, 81.6% analyst buy rating (15 SB / 25 B)",
+          "rationale": "Rare stack of specific news catalyst + gap up + elevated social + high analyst conviction \u2014 cleanest setup on the board"
+        },
+        {
+          "symbol": "BA",
+          "confidence": "medium",
+          "catalyst": "Up +2.52% with steady momentum, no negative headlines, participating in broad tape rebound",
+          "smart_money_signals": "83.8% analyst buy (13 SB / 18 B), Stocktwits 81% bullish on 30 msgs \u2014 no insider or congressional selling",
+          "rationale": "Clean smart-money profile with strong analyst conviction and no disqualifiers; +2% target reachable on modest continuation"
+        },
+        {
+          "symbol": "INTC",
+          "confidence": "medium",
+          "catalyst": "Up +13.46% on massive volume (95M) riding Microsoft-led chip rebound; strong relative strength and momentum breakout",
+          "smart_money_signals": "Stocktwits 93% bullish on 30 msgs \u2014 but analyst rating only 32.7% bullish tempers conviction",
+          "rationale": "Powerful momentum move with heavy volume confirmation; risk is chasing extended, but +2% within intraday range given the trend"
+        }
+      ],
+      "market_take": "Chip-led Nasdaq rebound driving risk-on tape with AI names leading; selective longs favored.",
+      "skipped_movers": [
+        "ADBE: down -5.32%, contradicts long thesis",
+        "CRM: down -4.45% despite bullish sentiment \u2014 price action negates",
+        "GS: heavy insider selling (3 sells, 0 buys) \u2014 disqualifier",
+        "SHOP: down -3.97%, no catalyst",
+        "TSLA: alt-data score 0, weak analyst conviction",
+        "AVGO: heavy insider selling (4 sells, 0 buys) \u2014 disqualifier",
+        "CAT: no meaningful edge, alt-data score 0",
+        "MS: heavy insider selling offsets House buy"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Rare stack of specific news catalyst + gap up + elevated social + high analyst conviction \u2014 cleanest setup on the board",
+        "symbol": "ORCL",
+        "qty": 151,
+        "entry_price_est": 126.295,
+        "stop_price": 125.03,
+        "take_price": 128.82,
+        "order_id": "e20c17e6-c6dd-4e86-b877-fc6b1f937e7b"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean smart-money profile with strong analyst conviction and no disqualifiers; +2% target reachable on modest continuation",
+        "symbol": "BA",
+        "qty": 88,
+        "entry_price_est": 216.5,
+        "stop_price": 214.34,
+        "take_price": 220.83,
+        "order_id": "8a1d0d9b-1182-436c-ba0f-354229f0c765"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Powerful momentum move with heavy volume confirmation; risk is chasing extended, but +2% within intraday range given the trend",
+        "symbol": "INTC",
+        "qty": 207,
+        "entry_price_est": 92.075,
+        "stop_price": 91.15,
+        "take_price": 93.92,
+        "order_id": "e36fd8c4-3d0d-4e42-88f3-585f80c42b0f"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-30",
+    "ts": "2026-07-30T18:03:43.100659Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
