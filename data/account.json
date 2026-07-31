@@ -1,9 +1,28 @@
 {
-  "ts": "2026-07-31T15:17:49.905656Z",
-  "equity": 81340.25,
+  "ts": "2026-07-31T16:49:35.989728Z",
+  "equity": 81727.62,
   "last_equity": 79312.39,
-  "cash": 81340.25,
-  "buying_power": 325361.0,
-  "all_time_return_pct": -18.6597,
-  "positions": []
+  "cash": 27937.3,
+  "buying_power": 3718.18,
+  "all_time_return_pct": -18.2724,
+  "positions": [
+    {
+      "symbol": "GOOGL",
+      "qty": 76,
+      "avg_entry_price": 349.9659,
+      "current_price": 353.73,
+      "market_value": 26883.48,
+      "unrealized_pl": 286.07,
+      "unrealized_pl_pct": 1.076
+    },
+    {
+      "symbol": "MSFT",
+      "qty": 58,
+      "avg_entry_price": 457.59,
+      "current_price": 463.911,
+      "market_value": 26906.84,
+      "unrealized_pl": 366.62,
+      "unrealized_pl_pct": 1.381
+    }
+  ]
 }

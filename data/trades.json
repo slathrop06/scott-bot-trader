@@ -14736,5 +14736,106 @@
     "ts": "2026-07-31T15:25:19.777829Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-31",
+    "ts": "2026-07-31T16:48:00.867120Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=30648578334"
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-07-31",
+    "ts": "2026-07-31T16:48:28.873909Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-31",
+    "ts": "2026-07-31T16:49:35.900971Z",
+    "equity_start": 81703.06,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMZN",
+          "confidence": "high",
+          "catalyst": "Q2 blowout earnings \u2014 AWS backlog $496B, best quarter in a decade, Benchmark $400 PT, stock gapping +4.96% intraday continuation",
+          "smart_money_signals": "93.3% analyst buy (21SB/49B), Stocktwits 79% bullish on 30 msgs, WSB rank #4 at 4.14x normal chatter, Ackman doubling down",
+          "rationale": "Post-earnings drift with strong momentum, multi-signal alt-data confirmation, and Ackman's public conviction \u2014 cleanest catalyst on the board."
+        },
+        {
+          "symbol": "META",
+          "confidence": "medium",
+          "catalyst": "Positive relative strength (+1.20% on a mixed tape) with no negative company-specific news",
+          "smart_money_signals": "House cluster buy (Crenshaw + Moskowitz, 3 buys in 21d), 88.7% analyst bullish (21SB/42B), AI spend viewed as competitive edge",
+          "rationale": "Rare congressional cluster buy plus analyst conviction and green-day RS \u2014 smart-money edge outweighs the offsetting insider selling."
+        },
+        {
+          "symbol": "GE",
+          "confidence": "medium",
+          "catalyst": "Relative strength +1.54% with no news, quiet grind higher against a soft tape",
+          "smart_money_signals": "Stocktwits 100% bullish, 87.5% analyst buy (9SB/19B)",
+          "rationale": "Clean uptrending name with unanimous retail sentiment and strong analyst backing \u2014 good tight-stop candidate."
+        }
+      ],
+      "market_take": "Mixed tape with mega-cap earnings dispersion \u2014 AMZN leading, AAPL/INTC gutted, energy soft.",
+      "skipped_movers": [
+        "SHOP: -4% with no clear catalyst \u2014 falling knife",
+        "AAPL: -3.6% on guidance headwind (memory pricing '100-year flood'), Stocktwits only 42% bullish",
+        "INTC: -3.58% post-earnings hideous selling, only 32.7% analyst buy",
+        "XOM: EPS miss, House selling, 0/10 alt-data",
+        "BA: red day, no catalyst",
+        "AMD: red into earnings \u2014 event risk",
+        "CRM: mixed insider activity, no catalyst",
+        "NFLX: red day, no catalyst",
+        "NKE: 40% analyst buy, weak sentiment",
+        "CVX: weak stocktwits, no edge"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Post-earnings drift with strong momentum, multi-signal alt-data confirmation, and Ackman's public conviction \u2014 cleanest catalyst on the board.",
+        "symbol": "AMZN",
+        "qty": 319,
+        "entry_price_est": 270.655,
+        "stop_price": 267.95,
+        "take_price": 276.07,
+        "order_id": "22327359-a9ac-40b1-a7ce-e0f6c0473990"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Rare congressional cluster buy plus analyst conviction and green-day RS \u2014 smart-money edge outweighs the offsetting insider selling.",
+        "symbol": "META",
+        "qty": 156,
+        "entry_price_est": 552.02,
+        "stop_price": 546.5,
+        "take_price": 563.06,
+        "order_id": "826e2a37-65e5-4c06-9c82-332d68a14e82"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean uptrending name with unanimous retail sentiment and strong analyst backing \u2014 good tight-stop candidate.",
+        "symbol": "GE",
+        "qty": 240,
+        "entry_price_est": 359.575,
+        "stop_price": 355.98,
+        "take_price": 366.77,
+        "order_id": "ad3d4df4-4566-43b9-acd1-310d6786ff93"
+      }
+    ]
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-07-31",
+    "ts": "2026-07-31T16:49:35.992814Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
