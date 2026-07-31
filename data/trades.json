@@ -14837,5 +14837,98 @@
     "ts": "2026-07-31T16:49:35.992814Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-31",
+    "ts": "2026-07-31T18:12:26.372636Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=30654227819"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-31",
+    "ts": "2026-07-31T18:12:50.614065Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-31",
+    "ts": "2026-07-31T18:13:48.889632Z",
+    "equity_start": 81618.88,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "NVDA",
+          "confidence": "high",
+          "catalyst": "Semiconductor rally leader, up +1.17% on 70M volume while broader tape is red \u2014 clear relative strength on the sector melt-up",
+          "smart_money_signals": "92.8% analyst bullish (24SB/40B), Stocktwits 93% bullish, WSB rank #9 top-tier chatter, House cluster buy activity (3 buys vs 2 sells)",
+          "rationale": "Best relative strength on the tape with stacked smart-money confirmation across analysts, retail, and Congress"
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "Bucking the tape with +1.95% gain on no news \u2014 pure relative strength intraday",
+          "smart_money_signals": "75.9% analyst bullish (13SB/31B), Stocktwits 80% bullish, insider activity balanced (2 buys/2 sells)",
+          "rationale": "Strongest green mover in the group with clean analyst/retail sentiment backdrop and no negative catalyst"
+        },
+        {
+          "symbol": "CVX",
+          "confidence": "medium",
+          "catalyst": "Q2 earnings beat with record US upstream production and strong margins \u2014 trading +1.35% green against a red tape",
+          "smart_money_signals": "76.7% analyst bullish (7SB/16B), post-earnings drift setup",
+          "rationale": "Confirmed earnings beat catalyst with positive price action and analyst backing while peer XOM missed"
+        }
+      ],
+      "market_take": "Risk-off tape with Apple dragging mega-caps, but semis and select earnings winners showing clear relative strength.",
+      "skipped_movers": [
+        "AAPL: -3.46% on weak guidance, House selling, alt-data 1/10 \u2014 avoid falling knife",
+        "SHOP: -3.45% with no positive catalyst to fade the drop",
+        "INTC: -3.23% despite AI optimism headline, only 32.7% analyst bullish",
+        "AMD: -2.52% into Q2 earnings \u2014 overnight gap risk disqualifies",
+        "XOM: earnings miss and House selling",
+        "BA: -2.17% with no supporting catalyst",
+        "NFLX: -1.31% with Stocktwits only 50% bullish",
+        "NKE: alt-data 0/10, sentiment 45% bullish"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best relative strength on the tape with stacked smart-money confirmation across analysts, retail, and Congress",
+        "symbol": "NVDA",
+        "qty": 89,
+        "entry_price_est": 199.065,
+        "stop_price": 197.07,
+        "take_price": 203.05,
+        "order_id": "45f9483f-0bcd-4671-9197-55f944c92a8a"
+      },
+      {
+        "status": "failed",
+        "symbol": "CRM",
+        "error": "{\"base_price\":\"183.075\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Confirmed earnings beat catalyst with positive price action and analyst backing while peer XOM missed",
+        "symbol": "CVX",
+        "qty": 90,
+        "entry_price_est": 196.215,
+        "stop_price": 194.25,
+        "take_price": 200.14,
+        "order_id": "89743714-92ba-4f18-8039-fc7d872b5b53"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-07-31",
+    "ts": "2026-07-31T18:13:48.984610Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]

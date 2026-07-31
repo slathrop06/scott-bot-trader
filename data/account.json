@@ -1,55 +1,46 @@
 {
-  "ts": "2026-07-31T17:03:55.403820Z",
-  "equity": 81716.78,
+  "ts": "2026-07-31T18:13:48.980708Z",
+  "equity": 81680.76,
   "last_equity": 79312.39,
-  "cash": -230706.58,
-  "buying_power": 0.0,
-  "all_time_return_pct": -18.2832,
+  "cash": -145440.1,
+  "buying_power": 18794.65,
+  "all_time_return_pct": -18.3192,
   "positions": [
     {
       "symbol": "AMZN",
       "qty": 319,
       "avg_entry_price": 270.68,
-      "current_price": 271.3,
-      "market_value": 86544.7,
-      "unrealized_pl": 197.78,
-      "unrealized_pl_pct": 0.229
+      "current_price": 271.565,
+      "market_value": 86629.24,
+      "unrealized_pl": 282.31,
+      "unrealized_pl_pct": 0.327
     },
     {
       "symbol": "GE",
       "qty": 240,
       "avg_entry_price": 360.56,
-      "current_price": 360.5,
-      "market_value": 86520.0,
-      "unrealized_pl": -14.4,
-      "unrealized_pl_pct": -0.017
+      "current_price": 361.44,
+      "market_value": 86745.6,
+      "unrealized_pl": 211.2,
+      "unrealized_pl_pct": 0.244
     },
     {
       "symbol": "GOOGL",
       "qty": 76,
       "avg_entry_price": 349.9659,
-      "current_price": 353.49,
-      "market_value": 26865.24,
-      "unrealized_pl": 267.83,
-      "unrealized_pl_pct": 1.007
-    },
-    {
-      "symbol": "META",
-      "qty": 156,
-      "avg_entry_price": 549.76,
-      "current_price": 549.4,
-      "market_value": 85706.4,
-      "unrealized_pl": -56.16,
-      "unrealized_pl_pct": -0.065
+      "current_price": 354.72,
+      "market_value": 26958.72,
+      "unrealized_pl": 361.31,
+      "unrealized_pl_pct": 1.358
     },
     {
       "symbol": "MSFT",
       "qty": 58,
       "avg_entry_price": 457.59,
-      "current_price": 461.9001,
-      "market_value": 26790.21,
-      "unrealized_pl": 249.99,
-      "unrealized_pl_pct": 0.942
+      "current_price": 461.85,
+      "market_value": 26787.3,
+      "unrealized_pl": 247.08,
+      "unrealized_pl_pct": 0.931
     }
   ]
 }
