@@ -14625,5 +14625,116 @@
     "ts": "2026-07-30T22:29:19.681350Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=30587299423"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-31",
+    "ts": "2026-07-31T15:23:59.920914Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=30642703800"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-31",
+    "ts": "2026-07-31T15:24:19.650487Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-07-31",
+    "ts": "2026-07-31T15:24:21.554613Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-31",
+    "ts": "2026-07-31T15:24:22.642212Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-07-31",
+    "ts": "2026-07-31T15:25:19.617929Z",
+    "equity_start": 81340.25,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMZN",
+          "confidence": "high",
+          "catalyst": "Gap up +4.73% premarket on strong Q2 earnings beat, AWS trillion-dollar TAM commentary, Nasdaq surging 300+ points",
+          "smart_money_signals": "93.3% analyst buy (21SB/49B), stocktwits 82% bullish, WSB rank #5 with 5.15x chatter \u2014 retail + analyst alignment on earnings-driven move",
+          "rationale": "Clean post-earnings gap-up with confirmed catalyst and broad analyst conviction \u2014 textbook post-earnings drift setup"
+        },
+        {
+          "symbol": "GOOGL",
+          "confidence": "high",
+          "catalyst": "Gap up +4.15% premarket riding AI/cloud tailwind (Oracle-Google Cloud partnership, broad tech rally)",
+          "smart_money_signals": "Insider CLUSTER BUY (13 insiders, 16 buys/30d), 87% analyst buy, stocktwits 100% bullish on 30 msgs",
+          "rationale": "Rare insider cluster buy stacked with catalyst gap and unanimous social sentiment \u2014 highest signal density on the board"
+        },
+        {
+          "symbol": "MSFT",
+          "confidence": "medium",
+          "catalyst": "Continuation up +1.91% into best week since 2000 following $450B market-cap surge; broad AI tech rally",
+          "smart_money_signals": "92.6% analyst buy (23SB/40B), House net buy from Moskowitz, top-4 WSB ticker",
+          "rationale": "Strongest momentum name in tape with analyst conviction \u2014 modest gap keeps stop realistic within noise"
+        }
+      ],
+      "market_take": "Risk-on tape with Nasdaq +300 on AI/cloud earnings \u2014 chase leaders showing gap continuation, avoid the memory-flood casualties (AAPL/INTC)",
+      "skipped_movers": [
+        "AAPL: stocktwits 23% bearish + gap DOWN on Cook memory-pricing warning \u2014 skip",
+        "INTC: 0/10 alt score, 32.7% analyst buy, gap down on AI-fund forced selling \u2014 skip",
+        "PLTR: heavy insider selling 6:1 \u2014 skip",
+        "AVGO: heavy insider selling 4:0, no catalyst \u2014 skip",
+        "SHOP: gap down -5.22% with no positive catalyst \u2014 skip",
+        "XOM: earnings MISS, gap down \u2014 skip"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Clean post-earnings gap-up with confirmed catalyst and broad analyst conviction \u2014 textbook post-earnings drift setup",
+        "symbol": "AMZN",
+        "qty": 99,
+        "entry_price_est": 269.57,
+        "stop_price": 266.87,
+        "take_price": 274.96,
+        "order_id": "ebb2bb76-8b8c-4495-a882-4a0efcf1a350"
+      },
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Rare insider cluster buy stacked with catalyst gap and unanimous social sentiment \u2014 highest signal density on the board",
+        "symbol": "GOOGL",
+        "qty": 76,
+        "entry_price_est": 349.99,
+        "stop_price": 346.49,
+        "take_price": 356.99,
+        "order_id": "18dfbcbc-a591-4516-9643-d99095a0501b"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strongest momentum name in tape with analyst conviction \u2014 modest gap keeps stop realistic within noise",
+        "symbol": "MSFT",
+        "qty": 58,
+        "entry_price_est": 456.70000000000005,
+        "stop_price": 452.13,
+        "take_price": 465.83,
+        "order_id": "c4a1926e-11e7-4a80-96e8-7822fe18c8b8"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-07-31",
+    "ts": "2026-07-31T15:25:19.777829Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
