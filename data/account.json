@@ -1,46 +1,9 @@
 {
-  "ts": "2026-07-31T21:37:16.455889Z",
-  "equity": 81684.61,
-  "last_equity": 79312.39,
-  "cash": -126661.88,
-  "buying_power": 76722.65,
-  "all_time_return_pct": -18.3154,
-  "positions": [
-    {
-      "symbol": "AMZN",
-      "qty": 319,
-      "avg_entry_price": 270.68,
-      "current_price": 270.7,
-      "market_value": 86353.3,
-      "unrealized_pl": 6.38,
-      "unrealized_pl_pct": 0.007
-    },
-    {
-      "symbol": "CVX",
-      "qty": 90,
-      "avg_entry_price": 196.28,
-      "current_price": 198.0,
-      "market_value": 17820.0,
-      "unrealized_pl": 154.8,
-      "unrealized_pl_pct": 0.876
-    },
-    {
-      "symbol": "GE",
-      "qty": 240,
-      "avg_entry_price": 360.56,
-      "current_price": 360.07,
-      "market_value": 86416.8,
-      "unrealized_pl": -117.6,
-      "unrealized_pl_pct": -0.136
-    },
-    {
-      "symbol": "NVDA",
-      "qty": 89,
-      "avg_entry_price": 199.0818,
-      "current_price": 199.51,
-      "market_value": 17756.39,
-      "unrealized_pl": 38.11,
-      "unrealized_pl_pct": 0.215
-    }
-  ]
+  "ts": "2026-08-03T15:41:35.445118Z",
+  "equity": 85056.39,
+  "last_equity": 81970.02,
+  "cash": 85056.39,
+  "buying_power": 340225.56,
+  "all_time_return_pct": -14.9436,
+  "positions": []
 }
