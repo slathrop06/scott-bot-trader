@@ -15053,5 +15053,118 @@
     "ts": "2026-07-31T22:31:43.605141Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=30670193496"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-03",
+    "ts": "2026-08-03T15:48:14.887368Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=30829188898"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-03",
+    "ts": "2026-08-03T15:48:34.597836Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-03",
+    "ts": "2026-08-03T15:48:36.405226Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-03",
+    "ts": "2026-08-03T15:48:37.888502Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-03",
+    "ts": "2026-08-03T15:49:51.480085Z",
+    "equity_start": 85056.39,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "GOOGL",
+          "confidence": "high",
+          "catalyst": "Gap up +5.9% on expanded Google Cloud/Oracle partnership integrating Gemini AI; broad AI data-center demand tailwind",
+          "smart_money_signals": "Insider cluster buy (6 insiders), WSB chatter 20.5x normal (rank #14), Stocktwits 100% bullish on 30 msgs, 87% analyst buy (18SB/42B)",
+          "rationale": "Only mega-cap with a genuine insider cluster buy stacked on top of a specific catalyst and extreme social chatter \u2014 highest signal density on the board"
+        },
+        {
+          "symbol": "META",
+          "confidence": "medium",
+          "catalyst": "Gap up +7.1% as AI hyperscaler earnings validate data-center capex thesis; strongest premarket move in the group",
+          "smart_money_signals": "House cluster buy (Crenshaw, Moskowitz), WSB 8.5x normal (rank #8), Stocktwits 100% bullish, 89% analyst buy",
+          "rationale": "Congressional cluster buy plus best relative strength in the AI cohort outweighs the insider selling noise"
+        },
+        {
+          "symbol": "BA",
+          "confidence": "medium",
+          "catalyst": "Premarket +5.1% on industrial strength and risk-on tone after Trump halts Iran attack; clean bullish setup",
+          "smart_money_signals": "Stocktwits 100% bullish on 30 msgs, 84% analyst buy (13SB/18B), no negative insider or congressional flow",
+          "rationale": "Diversifier away from AI mega-cap cluster with strong catalyst and no contradicting alt-data signals"
+        }
+      ],
+      "market_take": "Risk-on tape led by AI hyperscalers on data-center demand plus geopolitical de-escalation lifting cyclicals",
+      "skipped_movers": [
+        "ORCL: signals thinner than GOOGL/META, already extended",
+        "AMZN: Stocktwits only 45% bullish and congressional selling",
+        "MSFT: insider selling and weakest alt-data score in the AI group",
+        "TSLA: mixed analyst view (48% bullish) and negative-tinted news flow",
+        "NVDA: strong but no unique catalyst vs GOOGL/META, avoiding over-concentration in AI",
+        "CVX: down premarket despite earnings beat \u2014 price contradicts",
+        "QQQ/IWM: index ETFs, prefer single-name catalysts",
+        "CRM/NFLX: no fresh catalyst"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Only mega-cap with a genuine insider cluster buy stacked on top of a specific catalyst and extreme social chatter \u2014 highest signal density on the board",
+        "symbol": "GOOGL",
+        "qty": 74,
+        "entry_price_est": 375.13,
+        "stop_price": 371.38,
+        "take_price": 382.63,
+        "order_id": "46e8849b-198d-4917-b7e3-e7b9fdbe3807"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Congressional cluster buy plus best relative strength in the AI cohort outweighs the insider selling noise",
+        "symbol": "META",
+        "qty": 47,
+        "entry_price_est": 594.525,
+        "stop_price": 588.58,
+        "take_price": 606.42,
+        "order_id": "c9de7563-6f07-4ba2-a9ae-9ec6979385aa"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Diversifier away from AI mega-cap cluster with strong catalyst and no contradicting alt-data signals",
+        "symbol": "BA",
+        "qty": 123,
+        "entry_price_est": 227.10000000000002,
+        "stop_price": 224.83,
+        "take_price": 231.64,
+        "order_id": "656f4343-e147-47ac-b4a4-de541d42e5fd"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-03",
+    "ts": "2026-08-03T15:49:51.562411Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
