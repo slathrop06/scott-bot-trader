@@ -15269,5 +15269,60 @@
     "ts": "2026-08-03T18:59:07.064111Z",
     "status": "intraday_workflow_started",
     "note": "event=schedule run_id=30843706250"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-03",
+    "ts": "2026-08-03T20:18:58.073820Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=30849648963"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-08-03",
+    "ts": "2026-08-03T20:19:17.330747Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-08-03",
+    "ts": "2026-08-03T20:19:17.422314Z",
+    "equity_end": 85971.17,
+    "daily_pnl_usd": 4001.15,
+    "daily_pct": 4.8812,
+    "flatten": {
+      "closed": [
+        "AMZN",
+        "GOOGL",
+        "META",
+        "NVDA",
+        "ORCL"
+      ],
+      "raw_response_count": 5
+    }
+  },
+  {
+    "type": "trade",
+    "date": "2026-08-03",
+    "ts": "2026-08-03T20:19:17.455344Z",
+    "symbol": "BA",
+    "qty": 123,
+    "entry_price": 227.08,
+    "entry_ts": "2026-08-03T15:49:51.624061Z",
+    "entry_order_id": "656f4343-e147-47ac-b4a4-de541d42e5fd",
+    "exit_price": 231.6402,
+    "exit_ts": "2026-08-03T18:29:52.874735Z",
+    "exit_order_id": "37bbe974-b9a0-4859-a654-3bbc6f204bb2",
+    "exit_reason": "bracket",
+    "pnl_usd": 560.9,
+    "pnl_pct": 2.0082
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-08-03",
+    "ts": "2026-08-03T20:19:17.490396Z",
+    "status": "ok",
+    "note": "closed 5 positions, 1 round-trips"
   }
 ]
