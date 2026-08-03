@@ -1,64 +1,55 @@
 {
-  "ts": "2026-08-03T17:49:08.182158Z",
-  "equity": 85127.04,
+  "ts": "2026-08-03T19:27:38.740704Z",
+  "equity": 86437.24,
   "last_equity": 81970.02,
-  "cash": -236315.32,
+  "cash": -207823.58,
   "buying_power": 0.0,
-  "all_time_return_pct": -14.873,
+  "all_time_return_pct": -13.5628,
   "positions": [
     {
       "symbol": "AMZN",
       "qty": 279,
       "avg_entry_price": 284.3019,
-      "current_price": 283.7,
-      "market_value": 79152.3,
-      "unrealized_pl": -167.92,
-      "unrealized_pl_pct": -0.212
-    },
-    {
-      "symbol": "BA",
-      "qty": 123,
-      "avg_entry_price": 227.08,
-      "current_price": 230.826,
-      "market_value": 28391.6,
-      "unrealized_pl": 460.76,
-      "unrealized_pl_pct": 1.65
+      "current_price": 284.215,
+      "market_value": 79295.99,
+      "unrealized_pl": -24.24,
+      "unrealized_pl_pct": -0.031
     },
     {
       "symbol": "GOOGL",
       "qty": 74,
       "avg_entry_price": 375.1131,
-      "current_price": 374.88,
-      "market_value": 27741.12,
-      "unrealized_pl": -17.25,
-      "unrealized_pl_pct": -0.062
+      "current_price": 374.43,
+      "market_value": 27707.82,
+      "unrealized_pl": -50.55,
+      "unrealized_pl_pct": -0.182
     },
     {
       "symbol": "META",
       "qty": 47,
       "avg_entry_price": 594.24,
-      "current_price": 590.44,
-      "market_value": 27750.68,
-      "unrealized_pl": -178.6,
-      "unrealized_pl_pct": -0.639
+      "current_price": 592.5324,
+      "market_value": 27849.02,
+      "unrealized_pl": -80.26,
+      "unrealized_pl_pct": -0.287
     },
     {
       "symbol": "NVDA",
       "qty": 382,
       "avg_entry_price": 207.5635,
-      "current_price": 207.72,
-      "market_value": 79349.04,
-      "unrealized_pl": 59.79,
-      "unrealized_pl_pct": 0.075
+      "current_price": 208.06,
+      "market_value": 79478.92,
+      "unrealized_pl": 189.67,
+      "unrealized_pl_pct": 0.239
     },
     {
       "symbol": "ORCL",
       "qty": 565,
       "avg_entry_price": 140.0774,
-      "current_price": 139.925,
-      "market_value": 79057.62,
-      "unrealized_pl": -86.13,
-      "unrealized_pl_pct": -0.109
+      "current_price": 141.47,
+      "market_value": 79930.55,
+      "unrealized_pl": 786.8,
+      "unrealized_pl_pct": 0.994
     }
   ]
 }
