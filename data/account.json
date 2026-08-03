@@ -1,9 +1,37 @@
 {
-  "ts": "2026-08-03T15:41:35.445118Z",
-  "equity": 85056.39,
+  "ts": "2026-08-03T17:12:04.899351Z",
+  "equity": 85221.8,
   "last_equity": 81970.02,
-  "cash": 85056.39,
-  "buying_power": 340225.56,
-  "all_time_return_pct": -14.9436,
-  "positions": []
+  "cash": 1437.9,
+  "buying_power": 2619.13,
+  "all_time_return_pct": -14.7782,
+  "positions": [
+    {
+      "symbol": "BA",
+      "qty": 123,
+      "avg_entry_price": 227.08,
+      "current_price": 228.94,
+      "market_value": 28159.62,
+      "unrealized_pl": 228.78,
+      "unrealized_pl_pct": 0.819
+    },
+    {
+      "symbol": "GOOGL",
+      "qty": 74,
+      "avg_entry_price": 375.1131,
+      "current_price": 375.165,
+      "market_value": 27762.21,
+      "unrealized_pl": 3.84,
+      "unrealized_pl_pct": 0.014
+    },
+    {
+      "symbol": "META",
+      "qty": 47,
+      "avg_entry_price": 594.24,
+      "current_price": 592.81,
+      "market_value": 27862.07,
+      "unrealized_pl": -67.21,
+      "unrealized_pl_pct": -0.241
+    }
+  ]
 }

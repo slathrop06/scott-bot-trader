@@ -15166,5 +15166,101 @@
     "ts": "2026-08-03T15:49:51.562411Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-03",
+    "ts": "2026-08-03T17:10:45.124131Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=30835548176"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-08-03",
+    "ts": "2026-08-03T17:11:05.460081Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-03",
+    "ts": "2026-08-03T17:12:04.843455Z",
+    "equity_start": 85257.17,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "ORCL",
+          "confidence": "high",
+          "catalyst": "Up +8.5% on expanded Google Cloud partnership integrating Gemini AI into Oracle's software suite \u2014 concrete product/partnership news driving the move",
+          "smart_money_signals": "WSB chatter 12x normal (rank #26), Stocktwits 93% bullish on 30 msgs, 82% analyst buy rating (15SB/25B)",
+          "rationale": "Clean catalyst + all smart-money signals aligned bullish with no insider/congressional selling \u2014 strongest stack in the tape"
+        },
+        {
+          "symbol": "AMZN",
+          "confidence": "medium",
+          "catalyst": "Analysts spotlighting $496B AWS backlog driving +5.2% move \u2014 concrete fundamental catalyst with strong cloud print backdrop",
+          "smart_money_signals": "Stocktwits 80% bullish, WSB 3.2x normal (rank #15), 93% analyst buy (21SB/49B); one house sell is minor",
+          "rationale": "AI/cloud leader with specific analyst-driven catalyst and broad bullish sentiment \u2014 clean setup"
+        },
+        {
+          "symbol": "NVDA",
+          "confidence": "medium",
+          "catalyst": "Riding hyperscaler capex tailwind +4.3% on huge volume as AWS/MSFT/META cloud results confirm AI demand",
+          "smart_money_signals": "House cluster activity (3 buys vs 2 sells, net positive), WSB 5.8x normal (rank #7), Stocktwits 82% bullish, 93% analyst buy",
+          "rationale": "Multiple signals stack: net house buying + heavy retail attention + strong analyst conviction on a confirmed AI demand day"
+        }
+      ],
+      "market_take": "Risk-on rally led by AI/cloud names as oil sinks 6% on Iran de-escalation and hyperscaler capex confirms AI infrastructure demand",
+      "skipped_movers": [
+        "MSFT: insider selling flagged and already extended +5.7%",
+        "TSLA: only 48% analyst buy, 67% stocktwits, weak smart-money profile",
+        "CRM: weak alt-data score 1/10, mixed insider activity",
+        "CVX: negative price action, contradicts long thesis",
+        "QQQ/SPY/IWM: index ETFs, prefer single-name catalysts"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Clean catalyst + all smart-money signals aligned bullish with no insider/congressional selling \u2014 strongest stack in the tape",
+        "symbol": "ORCL",
+        "qty": 565,
+        "entry_price_est": 140.35,
+        "stop_price": 138.95,
+        "take_price": 143.16,
+        "order_id": "4033e324-6189-43bd-94e4-8fdf91e31a0f"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "AI/cloud leader with specific analyst-driven catalyst and broad bullish sentiment \u2014 clean setup",
+        "symbol": "AMZN",
+        "qty": 279,
+        "entry_price_est": 284.155,
+        "stop_price": 281.31,
+        "take_price": 289.84,
+        "order_id": "a2befc28-ced9-427e-a82d-8c9f6f757d96"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Multiple signals stack: net house buying + heavy retail attention + strong analyst conviction on a confirmed AI demand day",
+        "symbol": "NVDA",
+        "qty": 382,
+        "entry_price_est": 207.36,
+        "stop_price": 205.29,
+        "take_price": 211.51,
+        "order_id": "1c309ba4-5886-4679-a3f1-2304223153b5"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-08-03",
+    "ts": "2026-08-03T17:12:04.902979Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
