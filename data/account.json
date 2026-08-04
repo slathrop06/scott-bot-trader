@@ -1,55 +1,37 @@
 {
-  "ts": "2026-08-04T17:12:04.195913Z",
-  "equity": 86590.55,
+  "ts": "2026-08-04T18:41:52.563758Z",
+  "equity": 85961.84,
   "last_equity": 85880.57,
-  "cash": -158649.98,
-  "buying_power": 52073.57,
-  "all_time_return_pct": -13.4094,
+  "cash": -50554.53,
+  "buying_power": 61497.65,
+  "all_time_return_pct": -14.0382,
   "positions": [
-    {
-      "symbol": "AVGO",
-      "qty": 68,
-      "avg_entry_price": 412.5716,
-      "current_price": 417.3727,
-      "market_value": 28381.34,
-      "unrealized_pl": 326.47,
-      "unrealized_pl_pct": 1.164
-    },
     {
       "symbol": "CAT",
       "qty": 32,
       "avg_entry_price": 879.0,
-      "current_price": 883.91,
-      "market_value": 28285.12,
-      "unrealized_pl": 157.12,
-      "unrealized_pl_pct": 0.559
+      "current_price": 883.85,
+      "market_value": 28283.2,
+      "unrealized_pl": 155.2,
+      "unrealized_pl_pct": 0.552
     },
     {
       "symbol": "INTC",
       "qty": 802,
       "avg_entry_price": 100.1165,
-      "current_price": 100.49,
-      "market_value": 80592.98,
-      "unrealized_pl": 299.51,
-      "unrealized_pl_pct": 0.373
+      "current_price": 100.306,
+      "market_value": 80445.41,
+      "unrealized_pl": 151.94,
+      "unrealized_pl_pct": 0.189
     },
     {
       "symbol": "MSFT",
       "qty": 56,
       "avg_entry_price": 498.3921,
-      "current_price": 495.26,
-      "market_value": 27734.56,
-      "unrealized_pl": -175.4,
-      "unrealized_pl_pct": -0.628
-    },
-    {
-      "symbol": "ORCL",
-      "qty": 541,
-      "avg_entry_price": 148.2106,
-      "current_price": 148.33,
-      "market_value": 80246.53,
-      "unrealized_pl": 64.6,
-      "unrealized_pl_pct": 0.081
+      "current_price": 496.21,
+      "market_value": 27787.76,
+      "unrealized_pl": -122.2,
+      "unrealized_pl_pct": -0.438
     }
   ]
 }

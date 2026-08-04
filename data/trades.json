@@ -15544,5 +15544,97 @@
     "ts": "2026-08-04T16:56:29.787775Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-04",
+    "ts": "2026-08-04T18:40:51.162821Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=30939745014"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-08-04",
+    "ts": "2026-08-04T18:41:11.218360Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-04",
+    "ts": "2026-08-04T18:41:52.534970Z",
+    "equity_start": 85984.87,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "NVDA",
+          "confidence": "high",
+          "catalyst": "Riding PLTR-driven AI relief rally; up 2.76% on 78M volume with broad chip strength ahead of AVGO print",
+          "smart_money_signals": "94.1% analyst bullish (23SB/41B), Stocktwits 100% bullish, House net buying (3 buys vs 2 sells), top-10 WSB",
+          "rationale": "Cleanest AI-beta setup with stacked smart-money and no insider selling headwind."
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "Enterprise AI tape momentum, +2.85% breakout with no negative news",
+          "smart_money_signals": "Stocktwits 91% bullish, 74.1% analyst buy, insider activity balanced (2B/2S \u2014 not net selling)",
+          "rationale": "Strong sentiment stack with neutral insider flow and participation in AI software rally."
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "Continuation from Google Cloud AI partnership news and $638B backlog, +3% with strong volume",
+          "smart_money_signals": "81.6% analyst bullish (15SB/25B), no insider selling flagged, whale alerts in IT session",
+          "rationale": "Fresh fundamental catalyst still driving tape with clean insider picture."
+        }
+      ],
+      "market_take": "Risk-on AI melt-up led by PLTR earnings \u2014 S&P at record highs, chips and enterprise software leading.",
+      "skipped_movers": [
+        "PLTR: +12.7% already extended, 4 insider sells, stop-loss noise risk after huge gap",
+        "AVGO: heavy insider selling (4 sells, 2 insiders), earnings approaching in September but near-term gap chase",
+        "MS: heavy insider selling (4 sells) offsets House buy",
+        "GS: negative alt-data score, heavy insider selling",
+        "NKE: JPM downgrade, price action negative",
+        "QQQ: ETF with no idiosyncratic edge",
+        "HD: mixed congressional flow, thin catalyst"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Cleanest AI-beta setup with stacked smart-money and no insider selling headwind.",
+        "symbol": "NVDA",
+        "qty": 279,
+        "entry_price_est": 212.51,
+        "stop_price": 210.38,
+        "take_price": 216.76,
+        "order_id": "6bf3b783-453c-4382-a7f2-8965f1bc970d"
+      },
+      {
+        "status": "failed",
+        "symbol": "CRM",
+        "error": "{\"base_price\":\"190.11\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Fresh fundamental catalyst still driving tape with clean insider picture.",
+        "symbol": "ORCL",
+        "qty": 403,
+        "entry_price_est": 147.195,
+        "stop_price": 145.72,
+        "take_price": 150.14,
+        "order_id": "c0c3ced7-470e-4735-82c5-ab780a31f5d1"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-08-04",
+    "ts": "2026-08-04T18:41:52.566821Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
