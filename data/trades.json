@@ -15452,5 +15452,97 @@
     "ts": "2026-08-04T15:31:01.035625Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-04",
+    "ts": "2026-08-04T16:55:22.933447Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=30931441247"
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-08-04",
+    "ts": "2026-08-04T16:55:45.105253Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-04",
+    "ts": "2026-08-04T16:56:29.750224Z",
+    "equity_start": 86097.7,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "ORCL",
+          "confidence": "high",
+          "catalyst": "Up 3.66% on AI enterprise tailwinds tied to PLTR earnings halo; clean tape with no contradicting signals",
+          "smart_money_signals": "WSB chatter 2.88x normal (rank #28), Stocktwits 90% bullish on 30 msgs, 81.6% analyst buy rating",
+          "rationale": "Best signal stack of the day \u2014 strong analyst conviction plus surging retail sentiment plus positive price action with no insider selling."
+        },
+        {
+          "symbol": "INTC",
+          "confidence": "medium",
+          "catalyst": "Up 8.48% on AI data-center demand narrative and hyperscaler capex thesis; strong relative strength",
+          "smart_money_signals": "Stocktwits 83% bullish on 30 msgs; no insider selling flagged",
+          "rationale": "Clean momentum breakout on a specific AI catalyst with bullish retail sentiment and no disqualifiers."
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "Up 2.41% participating in enterprise AI rally; steady grind higher",
+          "smart_money_signals": "Stocktwits 91% bullish on 30 msgs, 74.1% analyst buy, balanced insider activity (2 buys/2 sells)",
+          "rationale": "Strong analyst + retail sentiment stack with modest orderly move that has room to hit +2% TP."
+        }
+      ],
+      "market_take": "Risk-on tape led by AI/enterprise software after PLTR blowout; broad tech strength with QQQ +2.66%.",
+      "skipped_movers": [
+        "PLTR: 4 insider sells + alt-data score 0/10, extended +12% move makes stop noisy \u2014 skip",
+        "GS: heavy insider selling (3 sells, 2 insiders), analyst conviction only 46.9% \u2014 skip",
+        "MS: 4 insider sells from 2 insiders outweighs single House buy \u2014 skip",
+        "JPM: 2 insider sells, alt-data -2/10, weakest sentiment \u2014 skip",
+        "GE: House selling + 4 insider sells despite bullish sentiment \u2014 skip",
+        "HD: thin catalyst, no strong smart-money edge \u2014 pass",
+        "QQQ: ETF, prefer single-name conviction"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best signal stack of the day \u2014 strong analyst conviction plus surging retail sentiment plus positive price action with no insider selling.",
+        "symbol": "ORCL",
+        "qty": 541,
+        "entry_price_est": 148.315,
+        "stop_price": 146.83,
+        "take_price": 151.28,
+        "order_id": "d4309480-42f4-4d4d-9da7-d7e9e609398b"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean momentum breakout on a specific AI catalyst with bullish retail sentiment and no disqualifiers.",
+        "symbol": "INTC",
+        "qty": 802,
+        "entry_price_est": 100.095,
+        "stop_price": 99.09,
+        "take_price": 102.1,
+        "order_id": "55fa2f13-ad8d-4115-9fb9-ae82310fc043"
+      },
+      {
+        "status": "failed",
+        "symbol": "CRM",
+        "error": "{\"base_price\":\"189.2\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-08-04",
+    "ts": "2026-08-04T16:56:29.787775Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]

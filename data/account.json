@@ -1,9 +1,37 @@
 {
-  "ts": "2026-08-04T15:23:09.388452Z",
-  "equity": 85918.25,
+  "ts": "2026-08-04T16:56:29.784237Z",
+  "equity": 86062.99,
   "last_equity": 85880.57,
-  "cash": 85918.25,
-  "buying_power": 343673.0,
-  "all_time_return_pct": -14.0818,
-  "positions": []
+  "cash": 1825.42,
+  "buying_power": 82724.08,
+  "all_time_return_pct": -13.937,
+  "positions": [
+    {
+      "symbol": "AVGO",
+      "qty": 68,
+      "avg_entry_price": 412.5716,
+      "current_price": 416.1725,
+      "market_value": 28299.73,
+      "unrealized_pl": 244.86,
+      "unrealized_pl_pct": 0.873
+    },
+    {
+      "symbol": "CAT",
+      "qty": 32,
+      "avg_entry_price": 879.0,
+      "current_price": 882.35,
+      "market_value": 28235.2,
+      "unrealized_pl": 107.2,
+      "unrealized_pl_pct": 0.381
+    },
+    {
+      "symbol": "MSFT",
+      "qty": 56,
+      "avg_entry_price": 498.3921,
+      "current_price": 494.69,
+      "market_value": 27702.64,
+      "unrealized_pl": -207.32,
+      "unrealized_pl_pct": -0.743
+    }
+  ]
 }
