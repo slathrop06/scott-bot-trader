@@ -15865,5 +15865,98 @@
     "ts": "2026-08-05T15:21:49.926348Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-05",
+    "ts": "2026-08-05T16:44:08.584682Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=31026671792"
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-08-05",
+    "ts": "2026-08-05T16:44:28.206202Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-05",
+    "ts": "2026-08-05T16:45:16.777160Z",
+    "equity_start": 86271.1,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "SHOP",
+          "confidence": "high",
+          "catalyst": "Q2 revenue +34% to $3.58B beat estimates, Q3 guidance raised, AI-driven orders tripling; stock gapped +14% on massive volume (24.5M shares)",
+          "smart_money_signals": "WSB chatter 27x normal (rank #25), Stocktwits 90% bullish on 30 msgs, 79% analyst buy rating",
+          "rationale": "Earnings beat with raised guidance plus stacked social/analyst confirmation \u2014 highest conviction setup on the board."
+        },
+        {
+          "symbol": "AMD",
+          "confidence": "medium",
+          "catalyst": "Up +3.28% on strong volume with BofA defending the name ('ignore the noise') and pointing to Helios driving $30+ EPS; relative strength vs GOOGL/AMZN weakness",
+          "smart_money_signals": "WSB rank #1 with 1147 mentions (4.62x normal), Stocktwits 92% bullish, 83% analyst buy (16SB/32B)",
+          "rationale": "Best-in-class social momentum with analyst backing and confirming price action, only mild House selling as offset."
+        },
+        {
+          "symbol": "INTC",
+          "confidence": "medium",
+          "catalyst": "Breaking out through key psychological resistance level (per Benzinga technical piece) on heavy volume (49.5M), +4.82% intraday",
+          "smart_money_signals": "Stocktwits 91% bullish on 30 msgs; technical breakout setup",
+          "rationale": "Clean technical breakout with volume confirmation and bullish retail sentiment; tight 1% stop fits chip momentum trade."
+        }
+      ],
+      "market_take": "Mixed tape \u2014 mega-cap tech (GOOGL, AMZN, META) weak while semis (INTC, AMD) and earnings winners (SHOP) attract flows.",
+      "skipped_movers": [
+        "GOOGL: price down -4.37% contradicts insider cluster buy \u2014 falling knife",
+        "GS: heavy insider selling, no catalyst",
+        "AMZN: negative price action, House selling, weak Stocktwits",
+        "AVGO: heavy insider selling offsets sentiment, weak +0.95% move",
+        "META: heavy insider selling (20) and price red",
+        "CAT: Burry short-call overhang",
+        "MCD: weak analyst mix, low volume",
+        "CVX/XOM/BA: no catalyst"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "failed",
+        "symbol": "SHOP",
+        "error": "{\"base_price\":\"143.575\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Best-in-class social momentum with analyst backing and confirming price action, only mild House selling as offset.",
+        "symbol": "AMD",
+        "qty": 186,
+        "entry_price_est": 489.26,
+        "stop_price": 484.37,
+        "take_price": 499.05,
+        "order_id": "a0d2a2ae-8437-459f-925f-3b79db1e3954"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean technical breakout with volume confirmation and bullish retail sentiment; tight 1% stop fits chip momentum trade.",
+        "symbol": "INTC",
+        "qty": 894,
+        "entry_price_est": 102.16499999999999,
+        "stop_price": 101.14,
+        "take_price": 104.21,
+        "order_id": "7a484427-2b9e-4fdb-b4b8-307d18174696"
+      }
+    ]
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-08-05",
+    "ts": "2026-08-05T16:45:16.816795Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
