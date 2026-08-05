@@ -1,46 +1,28 @@
 {
-  "ts": "2026-08-05T19:00:41.259684Z",
-  "equity": 86768.16,
+  "ts": "2026-08-05T20:43:27.619825Z",
+  "equity": 85187.7,
   "last_equity": 85310.28,
-  "cash": -152531.06,
-  "buying_power": 59913.57,
-  "all_time_return_pct": -13.2318,
+  "cash": 28003.42,
+  "buying_power": 272129.66,
+  "all_time_return_pct": -14.8123,
   "positions": [
-    {
-      "symbol": "AMD",
-      "qty": 186,
-      "avg_entry_price": 487.27,
-      "current_price": 487.545,
-      "market_value": 90683.37,
-      "unrealized_pl": 51.15,
-      "unrealized_pl_pct": 0.056
-    },
     {
       "symbol": "DIS",
       "qty": 283,
       "avg_entry_price": 100.35,
-      "current_price": 101.14,
-      "market_value": 28622.62,
-      "unrealized_pl": 223.57,
-      "unrealized_pl_pct": 0.787
-    },
-    {
-      "symbol": "INTC",
-      "qty": 894,
-      "avg_entry_price": 102.1596,
-      "current_price": 102.2087,
-      "market_value": 91374.58,
-      "unrealized_pl": 43.89,
-      "unrealized_pl_pct": 0.048
+      "current_price": 101.75,
+      "market_value": 28795.25,
+      "unrealized_pl": 396.2,
+      "unrealized_pl_pct": 1.395
     },
     {
       "symbol": "NVDA",
       "qty": 129,
       "avg_entry_price": 219.2203,
-      "current_price": 221.86,
-      "market_value": 28619.94,
-      "unrealized_pl": 340.52,
-      "unrealized_pl_pct": 1.204
+      "current_price": 220.07,
+      "market_value": 28389.03,
+      "unrealized_pl": 109.61,
+      "unrealized_pl_pct": 0.388
     }
   ]
 }
