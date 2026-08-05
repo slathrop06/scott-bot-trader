@@ -15758,5 +15758,112 @@
     "ts": "2026-08-04T22:38:46.361964Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=30957163850"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-05",
+    "ts": "2026-08-05T15:20:34.105072Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=31019790072"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-05",
+    "ts": "2026-08-05T15:20:53.404988Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-05",
+    "ts": "2026-08-05T15:20:54.991139Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-05",
+    "ts": "2026-08-05T15:20:56.485245Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-05",
+    "ts": "2026-08-05T15:21:49.767653Z",
+    "equity_start": 86110.32,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "DIS",
+          "confidence": "high",
+          "catalyst": "Q3 EPS beat ($2.06), $25.25B revenue, streaming/parks strength, boosted buybacks \u2014 gapping +1.46% premarket",
+          "smart_money_signals": "Insider cluster buy (3 buyers, 7 buys/30d), 89.2% analyst bullish (11SB/22B), Stocktwits 93% bullish",
+          "rationale": "Textbook stack \u2014 post-earnings beat + insider cluster buy + high analyst conviction all aligned."
+        },
+        {
+          "symbol": "SHOP",
+          "confidence": "medium",
+          "catalyst": "Massive +15.84% premarket gap on earnings-driven momentum, huge volume (18.6M)",
+          "smart_money_signals": "WSB chatter 26x normal (rank #26), 79.2% analyst bullish (11SB/31B)",
+          "rationale": "Strongest catalyst on the board by far; risk is a fade from gap but momentum + analyst backing supports continuation to +2%."
+        },
+        {
+          "symbol": "NVDA",
+          "confidence": "medium",
+          "catalyst": "SpaceX exclusive Nvidia GPU commitment + QQQ record inflows into big tech; +1.22% premarket on 69M vol",
+          "smart_money_signals": "94.1% analyst bullish (23SB/41B), Stocktwits 89% bullish, WSB 2.83x normal (rank #6), House net buyers",
+          "rationale": "Multi-signal stack with fresh positive catalyst; Burry noise is background and not actionable near-term."
+        }
+      ],
+      "market_take": "Risk-on tape with Dow at record highs on Iran/Hormuz optimism \u2014 favor stacked-signal longs with clean catalysts.",
+      "skipped_movers": [
+        "AMD: conflicting narrative (Intel earnings triggering sell-off per news) despite +1.94% quote, House selling",
+        "PLTR: red premarket, heavy insider selling (4 sells), Stocktwits only 38% bullish \u2014 disqualified",
+        "GS: heavy insider selling (3 sells, 2 insiders), no catalyst",
+        "INTC: weak analyst conviction (34.5%), mixed insider, no clean catalyst",
+        "CAT: Burry short callout overhang, weak WSB",
+        "CVX/XOM: down premarket on oil weakness",
+        "COST: down premarket, insider selling",
+        "MCD/GE/HD/V: no catalyst, modest signals"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Textbook stack \u2014 post-earnings beat + insider cluster buy + high analyst conviction all aligned.",
+        "symbol": "DIS",
+        "qty": 283,
+        "entry_price_est": 100.32499999999999,
+        "stop_price": 99.32,
+        "take_price": 102.33,
+        "order_id": "ad566e3e-6f9b-403d-beb3-bf71dbbfc091"
+      },
+      {
+        "status": "failed",
+        "symbol": "SHOP",
+        "error": "{\"base_price\":\"145.97\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Multi-signal stack with fresh positive catalyst; Burry noise is background and not actionable near-term.",
+        "symbol": "NVDA",
+        "qty": 129,
+        "entry_price_est": 219.215,
+        "stop_price": 217.02,
+        "take_price": 223.6,
+        "order_id": "d9beb973-a699-446c-a6d2-d8272deab25c"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-05",
+    "ts": "2026-08-05T15:21:49.926348Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
