@@ -1,37 +1,9 @@
 {
-  "ts": "2026-08-04T22:09:28.263922Z",
-  "equity": 83731.54,
-  "last_equity": 85880.57,
-  "cash": -82759.48,
-  "buying_power": 135136.94,
-  "all_time_return_pct": -16.2685,
-  "positions": [
-    {
-      "symbol": "CAT",
-      "qty": 32,
-      "avg_entry_price": 879.0,
-      "current_price": 878.2,
-      "market_value": 28102.4,
-      "unrealized_pl": -25.6,
-      "unrealized_pl_pct": -0.091
-    },
-    {
-      "symbol": "INTC",
-      "qty": 802,
-      "avg_entry_price": 100.1165,
-      "current_price": 97.62,
-      "market_value": 78291.24,
-      "unrealized_pl": -2002.23,
-      "unrealized_pl_pct": -2.494
-    },
-    {
-      "symbol": "NVDA",
-      "qty": 279,
-      "avg_entry_price": 212.52,
-      "current_price": 215.4028,
-      "market_value": 60097.38,
-      "unrealized_pl": 804.3,
-      "unrealized_pl_pct": 1.356
-    }
-  ]
+  "ts": "2026-08-05T15:11:34.375452Z",
+  "equity": 86110.32,
+  "last_equity": 85310.28,
+  "cash": 86110.32,
+  "buying_power": 344441.28,
+  "all_time_return_pct": -13.8897,
+  "positions": []
 }
