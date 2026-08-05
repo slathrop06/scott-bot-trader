@@ -15958,5 +15958,74 @@
     "ts": "2026-08-05T16:45:16.816795Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-05",
+    "ts": "2026-08-05T18:12:19.070241Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=31033616124"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-08-05",
+    "ts": "2026-08-05T18:12:41.874892Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-05",
+    "ts": "2026-08-05T18:13:31.809531Z",
+    "equity_start": 86688.57,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "BA",
+          "confidence": "medium",
+          "catalyst": "Steady +1.58% intraday move on industrial whale activity flow, no negative news overnight",
+          "smart_money_signals": "84% analyst buy (13 Strong Buy / 18 Buy / 6 Hold, 0 sells), Stocktwits 71% bullish",
+          "rationale": "Clean tape with strong analyst conviction and no contradicting signals \u2014 safest continuation setup available in the late slot"
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "Quiet intraday grind +1.35% with no negative news",
+          "smart_money_signals": "Stocktwits 100% bullish on 30 msgs, 74% analyst buy, balanced insider activity (2 buys/2 sells \u2014 no red flag)",
+          "rationale": "Unanimous retail sentiment plus analyst backing on a controlled uptrend \u2014 clean +2% target setup"
+        }
+      ],
+      "market_take": "Mixed tape: SHOP squeezing on Q2 blowout while GOOGL/AMZN sell off on AI headline risk \u2014 rotate into unaffected large caps with clean signals",
+      "skipped_movers": [
+        "SHOP: already +16.8%, chasing an extended squeeze risks immediate 1% stop-out",
+        "GOOGL: -4.1% on AI chief scientist exit, Stocktwits 25% bearish, House selling \u2014 contradicts long thesis",
+        "AMZN: -2.17% with negative AI chip regulation news overhang",
+        "GS: heavy insider selling (3 sells, 0 buys), analyst conviction only 47%",
+        "MCD: analyst noted marketing miss in Q2, only 58% analyst buy",
+        "XOM: down 1.09%, House selling, neutral sentiment",
+        "MS: heavy insider selling (5 sells by 3 insiders) outweighs single House buy",
+        "NKE: only 39% analyst buy, mostly Holds"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "failed",
+        "symbol": "BA",
+        "error": "{\"base_price\":\"240.19\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      },
+      {
+        "status": "failed",
+        "symbol": "CRM",
+        "error": "{\"base_price\":\"192.875\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-08-05",
+    "ts": "2026-08-05T18:13:31.877696Z",
+    "status": "ok",
+    "note": "2 orders submitted"
   }
 ]
