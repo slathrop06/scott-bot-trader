@@ -16116,5 +16116,120 @@
     "ts": "2026-08-05T22:37:17.763540Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=31053431840"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-06",
+    "ts": "2026-08-06T15:23:25.354238Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=31115404309"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-06",
+    "ts": "2026-08-06T15:23:44.313046Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-06",
+    "ts": "2026-08-06T15:23:45.949770Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-06",
+    "ts": "2026-08-06T15:23:47.464080Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-06",
+    "ts": "2026-08-06T15:24:57.287753Z",
+    "equity_start": 85575.3,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "GOOGL",
+          "confidence": "medium",
+          "catalyst": "Modest premarket dip (-1.46%) in an otherwise bullish AI-capex tape offers a buy-the-dip entry near support",
+          "smart_money_signals": "Insider cluster buy (6 distinct buyers in 30d), WSB chatter 2.81x normal at rank #9, Stocktwits 91% bullish on 30 msgs, 88.6% analyst buy",
+          "rationale": "Highest alt-data score (7/10) with rare 6-insider cluster buy and surging retail chatter \u2014 strongest smart-money stack of the day"
+        },
+        {
+          "symbol": "DIS",
+          "confidence": "medium",
+          "catalyst": "CEO strategic commentary on Disney+ evolution and free ad-supported tier, plus +1.83% premarket gap on Dow record-high sentiment",
+          "smart_money_signals": "Insider cluster buy (3 buyers, cluster_buy=True), Stocktwits 100% bullish on 30 msgs, 89.2% analyst buy",
+          "rationale": "Catalyst + insider cluster + unanimous retail sentiment stacking with gap-up continuation setup"
+        },
+        {
+          "symbol": "AMD",
+          "confidence": "medium",
+          "catalyst": "Premarket gap up +2.24% on heavy volume (11.5M) with no negative news, riding AI-capex tailwind",
+          "smart_money_signals": "Stocktwits 91% bullish on 30 msgs, WSB rank #7 with 151 mentions, 82.8% analyst buy",
+          "rationale": "Strongest price action of the movers \u2014 up 2.24% into strength with bullish retail sentiment confirms momentum"
+        }
+      ],
+      "market_take": "Constructive tape with AI-capex narrative dominant and Dow at record highs \u2014 buy strength/dips in AI leaders",
+      "skipped_movers": [
+        "BA: negative price action + weak alt-data",
+        "ORCL: credit downgrade warning news is a clear negative catalyst",
+        "JPM: Dimon warning on hidden leverage + 2 insider sells",
+        "NVDA: red premarket despite bullish signals, no clean catalyst",
+        "GS: heavy insider selling, weak analyst conviction",
+        "MS: heavy insider selling (5 sells, 3 insiders)",
+        "GE: red premarket, no catalyst",
+        "SBUX: weak analyst support, red tape",
+        "HD: red premarket, mixed signals",
+        "CVX: signal too thin"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Highest alt-data score (7/10) with rare 6-insider cluster buy and surging retail chatter \u2014 strongest smart-money stack of the day",
+        "symbol": "GOOGL",
+        "qty": 78,
+        "entry_price_est": 359.70000000000005,
+        "stop_price": 356.1,
+        "take_price": 366.89,
+        "order_id": "e9f98418-b926-4a30-8e19-209f72d63eff"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Catalyst + insider cluster + unanimous retail sentiment stacking with gap-up continuation setup",
+        "symbol": "DIS",
+        "qty": 272,
+        "entry_price_est": 103.69,
+        "stop_price": 102.65,
+        "take_price": 105.76,
+        "order_id": "5b18d786-f5e8-4ae6-ac05-062c2dc0040f"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strongest price action of the movers \u2014 up 2.24% into strength with bullish retail sentiment confirms momentum",
+        "symbol": "AMD",
+        "qty": 57,
+        "entry_price_est": 491.51,
+        "stop_price": 486.59,
+        "take_price": 501.34,
+        "order_id": "e350417a-eea9-4b88-9699-b63254039cf1"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-06",
+    "ts": "2026-08-06T15:24:57.425581Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
