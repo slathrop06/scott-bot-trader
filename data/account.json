@@ -1,28 +1,9 @@
 {
-  "ts": "2026-08-05T22:11:01.939613Z",
-  "equity": 85160.73,
-  "last_equity": 85310.28,
-  "cash": 28003.42,
-  "buying_power": 272054.15,
-  "all_time_return_pct": -14.8393,
-  "positions": [
-    {
-      "symbol": "DIS",
-      "qty": 283,
-      "avg_entry_price": 100.35,
-      "current_price": 101.6,
-      "market_value": 28752.8,
-      "unrealized_pl": 353.75,
-      "unrealized_pl_pct": 1.246
-    },
-    {
-      "symbol": "NVDA",
-      "qty": 129,
-      "avg_entry_price": 219.2203,
-      "current_price": 220.19,
-      "market_value": 28404.51,
-      "unrealized_pl": 125.09,
-      "unrealized_pl_pct": 0.442
-    }
-  ]
+  "ts": "2026-08-06T15:11:15.019397Z",
+  "equity": 85575.3,
+  "last_equity": 85073.23,
+  "cash": 85575.3,
+  "buying_power": 342301.2,
+  "all_time_return_pct": -14.4247,
+  "positions": []
 }
