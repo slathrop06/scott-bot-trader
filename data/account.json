@@ -1,55 +1,55 @@
 {
-  "ts": "2026-08-07T18:10:36.972852Z",
-  "equity": 84400.79,
+  "ts": "2026-08-07T19:10:21.030219Z",
+  "equity": 85071.18,
   "last_equity": 85458.67,
-  "cash": -243971.98,
-  "buying_power": 0.0,
-  "all_time_return_pct": -15.5992,
+  "cash": -171784.42,
+  "buying_power": 934.69,
+  "all_time_return_pct": -14.9288,
   "positions": [
-    {
-      "symbol": "MA",
-      "qty": 159,
-      "avg_entry_price": 564.84,
-      "current_price": 562.04,
-      "market_value": 89364.36,
-      "unrealized_pl": -445.2,
-      "unrealized_pl_pct": -0.496
-    },
     {
       "symbol": "NVDA",
       "qty": 126,
       "avg_entry_price": 222.1599,
-      "current_price": 222.27,
-      "market_value": 28006.02,
-      "unrealized_pl": 13.87,
-      "unrealized_pl_pct": 0.05
+      "current_price": 222.665,
+      "market_value": 28055.79,
+      "unrealized_pl": 63.64,
+      "unrealized_pl_pct": 0.227
     },
     {
       "symbol": "ORCL",
       "qty": 628,
       "avg_entry_price": 146.23,
-      "current_price": 145.14,
-      "market_value": 91147.92,
-      "unrealized_pl": -684.52,
-      "unrealized_pl_pct": -0.745
+      "current_price": 145.61,
+      "market_value": 91443.08,
+      "unrealized_pl": -389.36,
+      "unrealized_pl_pct": -0.424
     },
     {
       "symbol": "PLTR",
       "qty": 166,
       "avg_entry_price": 168.8725,
-      "current_price": 170.845,
-      "market_value": 28360.27,
-      "unrealized_pl": 327.43,
-      "unrealized_pl_pct": 1.168
+      "current_price": 170.765,
+      "market_value": 28346.99,
+      "unrealized_pl": 314.15,
+      "unrealized_pl_pct": 1.121
     },
     {
       "symbol": "SHOP",
       "qty": 611,
       "avg_entry_price": 149.9054,
-      "current_price": 149.745,
-      "market_value": 91494.2,
-      "unrealized_pl": -98.01,
-      "unrealized_pl_pct": -0.107
+      "current_price": 150.41,
+      "market_value": 91900.51,
+      "unrealized_pl": 308.31,
+      "unrealized_pl_pct": 0.337
+    },
+    {
+      "symbol": "TSLA",
+      "qty": 52,
+      "avg_entry_price": 329.1,
+      "current_price": 329.0501,
+      "market_value": 17110.61,
+      "unrealized_pl": -2.59,
+      "unrealized_pl_pct": -0.015
     }
   ]
 }

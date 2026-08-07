@@ -16559,5 +16559,98 @@
     "ts": "2026-08-07T17:59:46.840169Z",
     "status": "blocked",
     "note": "Buying power $0.00 below $5000 minimum \u2014 account is too deployed to take new trades."
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-07",
+    "ts": "2026-08-07T19:09:11.860315Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=31210181991"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-08-07",
+    "ts": "2026-08-07T19:09:33.108658Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-07",
+    "ts": "2026-08-07T19:10:20.881852Z",
+    "equity_start": 84855.33,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "TSLA",
+          "confidence": "medium",
+          "catalyst": "Up +2.61% on the day showing strong relative strength despite competitive news (Ford EV pickup); riding broader risk-on tape from jobs report",
+          "smart_money_signals": "WSB rank #23 with 40 mentions; Stocktwits 62% bullish; price action confirms momentum despite negative Ford headline",
+          "rationale": "Strongest intraday momentum on the board with green tape on a risk-on day \u2014 trend follow with tight 1% stop"
+        },
+        {
+          "symbol": "MA",
+          "confidence": "medium",
+          "catalyst": "Pullback -2% into insider cluster buying zone; no negative news",
+          "smart_money_signals": "Insider cluster buy CONFIRMED (5 unique buyers, 7 buys in 30d); 92.6% analyst bullish (13SB/37B); Stocktwits 67% bullish",
+          "rationale": "Rare insider cluster buy + top-tier analyst conviction on a mechanical dip = mean-reversion long with strong smart-money floor"
+        },
+        {
+          "symbol": "HD",
+          "confidence": "medium",
+          "catalyst": "Up +1.51% with positive relative strength and no negative news",
+          "smart_money_signals": "House buy from Moskowitz (21d); Stocktwits 70% bullish; 60.9% analyst bullish; price confirming",
+          "rationale": "Clean relative-strength breakout in a defensive consumer name with congressional buy support"
+        }
+      ],
+      "market_take": "Risk-on tape post jobs report \u2014 chase strength (TSLA, HD) and buy quality dips with insider support (MA)",
+      "skipped_movers": [
+        "AMD: down -2.17% with House selling and mixed insider flow \u2014 no bounce signal yet",
+        "V: down -2% with 2:1 insider selling ratio despite bullish sentiment",
+        "CAT: no news, no smart-money confirmation, just downside momentum",
+        "XOM: House selling and negative price action",
+        "CVX: mixed insider flow (8 buys/9 sells) and price weakness",
+        "SBUX: weak analyst conviction (47.8%) despite up move",
+        "INTC: only 34.5% analyst bullish \u2014 weakest fundamental backing",
+        "CRM: decent setup but weaker than top 3 picks"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strongest intraday momentum on the board with green tape on a risk-on day \u2014 trend follow with tight 1% stop",
+        "symbol": "TSLA",
+        "qty": 52,
+        "entry_price_est": 328.0,
+        "stop_price": 324.72,
+        "take_price": 334.56,
+        "order_id": "f0a614cb-de47-48c2-a0cd-7d98106f36d3"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Rare insider cluster buy + top-tier analyst conviction on a mechanical dip = mean-reversion long with strong smart-money floor",
+        "symbol": "MA",
+        "qty": 31,
+        "entry_price_est": 551.96,
+        "stop_price": 546.44,
+        "take_price": 563.0,
+        "order_id": "e5744139-b06d-4d8c-a77b-36ed71d36159"
+      },
+      {
+        "status": "failed",
+        "symbol": "HD",
+        "error": "{\"base_price\":\"354.555\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-08-07",
+    "ts": "2026-08-07T19:10:21.117690Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
