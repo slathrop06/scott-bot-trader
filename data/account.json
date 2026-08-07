@@ -1,37 +1,37 @@
 {
-  "ts": "2026-08-07T20:07:24.689815Z",
-  "equity": 86811.21,
+  "ts": "2026-08-07T21:09:44.857100Z",
+  "equity": 86556.8,
   "last_equity": 85458.67,
   "cash": -50619.51,
-  "buying_power": 168696.07,
-  "all_time_return_pct": -13.1888,
+  "buying_power": 167940.88,
+  "all_time_return_pct": -13.4432,
   "positions": [
     {
       "symbol": "NVDA",
       "qty": 126,
       "avg_entry_price": 222.1599,
-      "current_price": 223.4686,
-      "market_value": 28157.04,
-      "unrealized_pl": 164.89,
-      "unrealized_pl_pct": 0.589
+      "current_price": 223.4123,
+      "market_value": 28149.95,
+      "unrealized_pl": 157.8,
+      "unrealized_pl_pct": 0.564
     },
     {
       "symbol": "ORCL",
       "qty": 628,
       "avg_entry_price": 146.23,
-      "current_price": 146.8691,
-      "market_value": 92233.79,
-      "unrealized_pl": 401.35,
-      "unrealized_pl_pct": 0.437
+      "current_price": 146.39,
+      "market_value": 91932.92,
+      "unrealized_pl": 100.48,
+      "unrealized_pl_pct": 0.109
     },
     {
       "symbol": "TSLA",
       "qty": 52,
       "avg_entry_price": 329.1,
-      "current_price": 327.69,
-      "market_value": 17039.88,
-      "unrealized_pl": -73.32,
-      "unrealized_pl_pct": -0.428
+      "current_price": 328.72,
+      "market_value": 17093.44,
+      "unrealized_pl": -19.76,
+      "unrealized_pl_pct": -0.115
     }
   ]
 }
