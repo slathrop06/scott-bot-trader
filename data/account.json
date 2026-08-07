@@ -1,28 +1,55 @@
 {
-  "ts": "2026-08-07T16:00:45.681679Z",
-  "equity": 85745.67,
+  "ts": "2026-08-07T16:23:20.777919Z",
+  "equity": 85288.49,
   "last_equity": 85458.67,
-  "cash": 29262.22,
-  "buying_power": 1965.5,
-  "all_time_return_pct": -14.2543,
+  "cash": -243971.98,
+  "buying_power": 0.0,
+  "all_time_return_pct": -14.7115,
   "positions": [
+    {
+      "symbol": "MA",
+      "qty": 159,
+      "avg_entry_price": 564.84,
+      "current_price": 564.595,
+      "market_value": 89770.6,
+      "unrealized_pl": -38.95,
+      "unrealized_pl_pct": -0.043
+    },
     {
       "symbol": "NVDA",
       "qty": 126,
       "avg_entry_price": 222.1599,
-      "current_price": 223.74,
-      "market_value": 28191.24,
-      "unrealized_pl": 199.09,
-      "unrealized_pl_pct": 0.711
+      "current_price": 223.05,
+      "market_value": 28104.3,
+      "unrealized_pl": 112.15,
+      "unrealized_pl_pct": 0.401
+    },
+    {
+      "symbol": "ORCL",
+      "qty": 628,
+      "avg_entry_price": 146.23,
+      "current_price": 146.13,
+      "market_value": 91769.64,
+      "unrealized_pl": -62.8,
+      "unrealized_pl_pct": -0.068
     },
     {
       "symbol": "PLTR",
       "qty": 166,
       "avg_entry_price": 168.8725,
-      "current_price": 170.435,
-      "market_value": 28292.21,
-      "unrealized_pl": 259.37,
-      "unrealized_pl_pct": 0.925
+      "current_price": 170.365,
+      "market_value": 28280.59,
+      "unrealized_pl": 247.75,
+      "unrealized_pl_pct": 0.884
+    },
+    {
+      "symbol": "SHOP",
+      "qty": 611,
+      "avg_entry_price": 149.9054,
+      "current_price": 149.485,
+      "market_value": 91335.34,
+      "unrealized_pl": -256.87,
+      "unrealized_pl_pct": -0.28
     }
   ]
 }
