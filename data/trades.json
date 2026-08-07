@@ -16288,5 +16288,112 @@
     "ts": "2026-08-07T00:34:48.325905Z",
     "status": "ok",
     "note": "closed 2 positions, 0 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-07",
+    "ts": "2026-08-07T14:15:35.733921Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=31186672437"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-07",
+    "ts": "2026-08-07T14:16:02.051490Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-07",
+    "ts": "2026-08-07T14:16:03.847185Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-07",
+    "ts": "2026-08-07T14:16:05.275963Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-07",
+    "ts": "2026-08-07T14:16:59.308779Z",
+    "equity_start": 85287.21,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "PLTR",
+          "confidence": "high",
+          "catalyst": "Post-earnings drift: +7.6% premarket continuation on strong Q2 results and bullish analyst PT hikes",
+          "smart_money_signals": "Stocktwits 93% bullish (30 msgs), 69% analyst buy/strong-buy; insider selling is offset by post-earnings drift strength",
+          "rationale": "Best momentum setup \u2014 strong earnings catalyst with confirmed gap up and bullish sentiment stack"
+        },
+        {
+          "symbol": "NVDA",
+          "confidence": "medium",
+          "catalyst": "Sovereign AI leadership news (92% market share per Counterpoint) with premarket gap up",
+          "smart_money_signals": "94% analyst buy, top-6 WSB ticker with 123 mentions, stocktwits 93% bullish on 30 msgs",
+          "rationale": "Multiple smart-money signals stack with positive news flow and constructive price action"
+        },
+        {
+          "symbol": "SHOP",
+          "confidence": "medium",
+          "catalyst": "Relative strength +3% with no contradicting news",
+          "smart_money_signals": "Stocktwits 100% bullish on 30 msgs, 79% analyst buy/strong-buy, no insider or congressional selling",
+          "rationale": "Clean setup \u2014 strong analyst conviction and unanimous retail sentiment with breakout price action"
+        }
+      ],
+      "market_take": "Risk-on tone with AI/software leadership up and energy/industrials weak",
+      "skipped_movers": [
+        "AMD: down premarket despite acquisition news, stocktwits only 30% bullish",
+        "AMZN: heavy insider selling and mixed 50% stocktwits sentiment",
+        "INTC: down premarket, only 34% analyst buy",
+        "CAT/XOM/CVX/GE: down premarket, no catalyst",
+        "ADBE: mixed insider activity, only 39% analyst buy and 56% stocktwits",
+        "TSLA: weak analyst conviction 49%, no fresh catalyst",
+        "HD/SBUX: weak signal scores, no catalyst",
+        "CRM: modest move, no catalyst to differentiate"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best momentum setup \u2014 strong earnings catalyst with confirmed gap up and bullish sentiment stack",
+        "symbol": "PLTR",
+        "qty": 166,
+        "entry_price_est": 168.8,
+        "stop_price": 167.11,
+        "take_price": 172.18,
+        "order_id": "adce4f59-48b1-4695-b06c-a79fd4581cf7"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Multiple smart-money signals stack with positive news flow and constructive price action",
+        "symbol": "NVDA",
+        "qty": 126,
+        "entry_price_est": 222.11,
+        "stop_price": 219.89,
+        "take_price": 226.55,
+        "order_id": "642ffd0d-2892-4fba-a8ab-5adc30195984"
+      },
+      {
+        "status": "failed",
+        "symbol": "SHOP",
+        "error": "{\"base_price\":\"151.3401\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-07",
+    "ts": "2026-08-07T14:16:59.445578Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
