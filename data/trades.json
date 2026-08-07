@@ -16416,5 +16416,106 @@
     "ts": "2026-08-07T15:13:29.258578Z",
     "status": "imports_ok",
     "note": "src.* all importable"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-07",
+    "ts": "2026-08-07T15:59:17.377275Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=31195340053"
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-08-07",
+    "ts": "2026-08-07T15:59:39.656587Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-07",
+    "ts": "2026-08-07T16:00:45.624452Z",
+    "equity_start": 85707.78,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "MA",
+          "confidence": "medium",
+          "catalyst": "Pullback (-1.6%) into insider cluster buy zone offers favorable entry with tight 1% stop",
+          "smart_money_signals": "Insider cluster buy (5 unique buyers, 7 buys in 30d), 92.6% analyst bullish (13SB/37B), stocktwits 67% bullish",
+          "rationale": "Strongest smart-money stack on the board \u2014 5-insider cluster buy plus 93% analyst conviction on a large-cap with tight risk."
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "Intraday momentum +2.15% on Trump data-center/AI tailwind news",
+          "smart_money_signals": "81.6% analyst bullish (15SB/25B), stocktwits 86% bullish on 30 msgs",
+          "rationale": "Clean catalyst + strong analyst conviction + no contradicting insider/congress selling."
+        },
+        {
+          "symbol": "SHOP",
+          "confidence": "low",
+          "catalyst": "Relative strength +2.12% with no news, riding broad tape",
+          "smart_money_signals": "79.2% analyst bullish (11SB/31B), stocktwits 80% bullish",
+          "rationale": "Momentum + strong analyst support with no red flags \u2014 decent third leg."
+        }
+      ],
+      "market_take": "Mixed tape with AI/data-center names leading and chips wobbling \u2014 rotate into names with smart-money backing.",
+      "skipped_movers": [
+        "TSLA: alt-data score only 1/10, Ford EV competition headline is a negative catalyst",
+        "AMZN: heavy insider selling (2 sells, 0 buys) plus overinvestment critique",
+        "AMD: House selling + WSB mentions fading 0.34x + price down",
+        "CAT: price down 1.87%, contradicts bullish stocktwits",
+        "INTC: only 34.5% analyst bullish despite retail hype \u2014 weak conviction",
+        "ADBE: insider activity mixed (27 buys/28 sells), analyst only 39% bullish",
+        "V: price down 1.42% contradicts signals",
+        "XOM: House selling + negative alt score",
+        "META: heavy insider selling (13 sells vs 2 buys), weak +0.97% move",
+        "SBUX: only 47.8% analyst bullish, retail-only signal"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strongest smart-money stack on the board \u2014 5-insider cluster buy plus 93% analyst conviction on a large-cap with tight risk.",
+        "symbol": "MA",
+        "qty": 159,
+        "entry_price_est": 567.48,
+        "stop_price": 561.81,
+        "take_price": 578.83,
+        "order_id": "f6ee34ec-f05b-4eb4-a9c1-fecd59fc28fe"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean catalyst + strong analyst conviction + no contradicting insider/congress selling.",
+        "symbol": "ORCL",
+        "qty": 628,
+        "entry_price_est": 144.5,
+        "stop_price": 143.06,
+        "take_price": 147.39,
+        "order_id": "c86cd220-bb38-4d23-aaa0-7c59fd03e20c"
+      },
+      {
+        "status": "submitted",
+        "confidence": "low",
+        "rationale": "Momentum + strong analyst support with no red flags \u2014 decent third leg.",
+        "symbol": "SHOP",
+        "qty": 611,
+        "entry_price_est": 148.5,
+        "stop_price": 147.01,
+        "take_price": 151.47,
+        "order_id": "7e1ff041-e47e-4195-b8a6-c9b2f5f267a2"
+      }
+    ]
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-08-07",
+    "ts": "2026-08-07T16:00:45.685255Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
