@@ -16820,5 +16820,104 @@
     "ts": "2026-08-10T15:31:52.865211Z",
     "status": "imports_ok",
     "note": "src.* all importable"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-10",
+    "ts": "2026-08-10T16:02:21.503953Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=31406811147"
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-08-10",
+    "ts": "2026-08-10T16:02:40.275928Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-10",
+    "ts": "2026-08-10T16:03:28.773508Z",
+    "equity_start": 88066.97,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "NFLX",
+          "confidence": "high",
+          "catalyst": "Up +1.57% with CNBC 'Final Trades' mention; steady intraday strength",
+          "smart_money_signals": "Insider cluster buy (6 buyers, alt-score 6/10), Stocktwits 93% bullish on 30 msgs, 75.9% analyst buy",
+          "rationale": "Best signal stack of the day \u2014 insider cluster buy plus strong sentiment plus positive catalyst mention"
+        },
+        {
+          "symbol": "CVX",
+          "confidence": "medium",
+          "catalyst": "+3.35% breakout on above-average volume with no contradicting news",
+          "smart_money_signals": "Stocktwits 100% bullish, 83.9% analyst buy (8SB/18B)",
+          "rationale": "Clean relative strength move backed by high analyst conviction and unanimous retail sentiment"
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "+2.02% shrugging off negative Curative-contract-loss headline shows demand absorption",
+          "smart_money_signals": "Stocktwits 85% bullish, 74.1% analyst buy, balanced insider activity",
+          "rationale": "Price strength despite bearish news signals institutional accumulation with analyst backing"
+        }
+      ],
+      "market_take": "Risk-on tape with energy and select mega-caps leading; strong breadth of bullish sentiment across movers",
+      "skipped_movers": [
+        "PLTR: heavy insider selling (4 sells, 0 buys) \u2014 disqualifier",
+        "INTC: down -3.33% on $15B dilutive offering \u2014 bearish catalyst",
+        "AMZN: heavy insider selling (2 sells, 0 buys) \u2014 skip",
+        "XOM: House member selling, no news catalyst, weak alt-score",
+        "AAPL: down -2% on analyst downgrade \u2014 bearish price action",
+        "HD: down -1.84%, no catalyst, mixed congressional activity",
+        "ADBE: Stocktwits only 35% bullish and 39% analyst buy contradict insider cluster",
+        "SHOP: middling sentiment, no standout catalyst"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best signal stack of the day \u2014 insider cluster buy plus strong sentiment plus positive catalyst mention",
+        "symbol": "NFLX",
+        "qty": 449,
+        "entry_price_est": 75.44,
+        "stop_price": 74.69,
+        "take_price": 76.95,
+        "order_id": "766b2430-52f8-4f68-a883-7ef53c250ce3"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean relative strength move backed by high analyst conviction and unanimous retail sentiment",
+        "symbol": "CVX",
+        "qty": 175,
+        "entry_price_est": 192.925,
+        "stop_price": 191.0,
+        "take_price": 196.78,
+        "order_id": "23af0954-5eef-4536-8a31-6f23c910a34b"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Price strength despite bearish news signals institutional accumulation with analyst backing",
+        "symbol": "CRM",
+        "qty": 171,
+        "entry_price_est": 197.01999999999998,
+        "stop_price": 195.05,
+        "take_price": 200.96,
+        "order_id": "a09ff226-aaa4-4321-b726-077d4f849f2e"
+      }
+    ]
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-08-10",
+    "ts": "2026-08-10T16:03:28.802460Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
