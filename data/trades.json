@@ -16940,5 +16940,102 @@
     "ts": "2026-08-10T17:06:32.684638Z",
     "status": "blocked",
     "note": "Buying power $0.00 below $5000 minimum \u2014 account is too deployed to take new trades."
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-10",
+    "ts": "2026-08-10T18:01:26.204999Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=31416958232"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-08-10",
+    "ts": "2026-08-10T18:01:41.546749Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-10",
+    "ts": "2026-08-10T18:02:26.357233Z",
+    "equity_start": 89125.63,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "MSFT",
+          "confidence": "high",
+          "catalyst": "Up +1.18% on Maia 300 AI chip launch news + Bernstein PT raise to $660; positive tape while AAPL/AMD are red shows relative strength",
+          "smart_money_signals": "House cluster buy (4 buys by Taylor, Moskowitz, 0 sells), 92.8% analyst bullish (23SB/41B), WSB chatter 10.86x normal at rank #9, Stocktwits 75% bullish",
+          "rationale": "Rare stack of catalyst + congressional cluster buy + top-tier analyst conviction + social momentum on a green day for the name."
+        },
+        {
+          "symbol": "XOM",
+          "confidence": "medium",
+          "catalyst": "Strong +4.38% breakout on 7.3M volume with no negative news \u2014 relative strength leader today",
+          "smart_money_signals": "Stocktwits 100% bullish on 30 msgs, 50% analyst bullish (6SB/9B)",
+          "rationale": "Clean price action with unanimous social sentiment and no contradicting news; single congressional sell is not enough to disqualify."
+        },
+        {
+          "symbol": "ADBE",
+          "confidence": "medium",
+          "catalyst": "Up +2.88% with whale alert flagged in IT sector",
+          "smart_money_signals": "Insider cluster buy confirmed (8 buyers, 27 buy transactions in 30d)",
+          "rationale": "Insider cluster buy alongside positive price action provides smart-money confirmation despite mixed Stocktwits."
+        }
+      ],
+      "market_take": "Mixed tape with rotation \u2014 energy and select mega-cap tech (MSFT) leading while AAPL/AMD/INTC lag on company-specific headwinds.",
+      "skipped_movers": [
+        "INTC: $15B dilutive stock offering, price down -3.78%",
+        "PLTR: heavy insider selling (4 sells, 0 buys), profit-taking narrative",
+        "AAPL: Jefferies downgrade to Underperform, price down -2.02%",
+        "HD: price down -2.06% despite positive leadership news, tape disagrees",
+        "SHOP: only analyst signal, no catalyst",
+        "AMD: price down -1.72%, no catalyst to fight the tape"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Rare stack of catalyst + congressional cluster buy + top-tier analyst conviction + social momentum on a green day for the name.",
+        "symbol": "MSFT",
+        "qty": 11,
+        "entry_price_est": 505.865,
+        "stop_price": 500.81,
+        "take_price": 515.98,
+        "order_id": "724ac44a-3d0e-48e9-9e37-a1038f780a85"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean price action with unanimous social sentiment and no contradicting news; single congressional sell is not enough to disqualify.",
+        "symbol": "XOM",
+        "qty": 37,
+        "entry_price_est": 160.4,
+        "stop_price": 158.8,
+        "take_price": 163.61,
+        "order_id": "dcab07fb-898b-4adf-99ae-8c0b39cf1357"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Insider cluster buy alongside positive price action provides smart-money confirmation despite mixed Stocktwits.",
+        "symbol": "ADBE",
+        "qty": 22,
+        "entry_price_est": 273.5,
+        "stop_price": 270.76,
+        "take_price": 278.97,
+        "order_id": "b4b3e4c7-46b7-4bd2-aac3-d9512a0f0244"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-08-10",
+    "ts": "2026-08-10T18:02:26.496434Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
