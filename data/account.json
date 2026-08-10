@@ -1,37 +1,64 @@
 {
-  "ts": "2026-08-10T16:03:28.798451Z",
-  "equity": 88089.92,
+  "ts": "2026-08-10T16:25:53.910708Z",
+  "equity": 88355.87,
   "last_equity": 87008.04,
-  "cash": -108454.72,
-  "buying_power": 1576.21,
-  "all_time_return_pct": -11.9101,
+  "cash": -209586.31,
+  "buying_power": 0.0,
+  "all_time_return_pct": -11.6441,
   "positions": [
+    {
+      "symbol": "CRM",
+      "qty": 171,
+      "avg_entry_price": 195.8935,
+      "current_price": 196.33,
+      "market_value": 33572.43,
+      "unrealized_pl": 74.64,
+      "unrealized_pl_pct": 0.223
+    },
+    {
+      "symbol": "CVX",
+      "qty": 175,
+      "avg_entry_price": 192.89,
+      "current_price": 192.79,
+      "market_value": 33738.25,
+      "unrealized_pl": -17.5,
+      "unrealized_pl_pct": -0.052
+    },
     {
       "symbol": "DIS",
       "qty": 281,
       "avg_entry_price": 102.93,
-      "current_price": 102.96,
-      "market_value": 28931.76,
-      "unrealized_pl": 8.43,
-      "unrealized_pl_pct": 0.029
+      "current_price": 103.325,
+      "market_value": 29034.33,
+      "unrealized_pl": 111.0,
+      "unrealized_pl_pct": 0.384
     },
     {
       "symbol": "MSFT",
       "qty": 56,
       "avg_entry_price": 510.85,
-      "current_price": 510.615,
-      "market_value": 28594.44,
-      "unrealized_pl": -13.16,
-      "unrealized_pl_pct": -0.046
+      "current_price": 510.325,
+      "market_value": 28578.2,
+      "unrealized_pl": -29.4,
+      "unrealized_pl_pct": -0.103
+    },
+    {
+      "symbol": "NFLX",
+      "qty": 449,
+      "avg_entry_price": 75.4522,
+      "current_price": 75.695,
+      "market_value": 33987.06,
+      "unrealized_pl": 109.0,
+      "unrealized_pl_pct": 0.322
     },
     {
       "symbol": "NVDA",
       "qty": 126,
       "avg_entry_price": 222.1599,
-      "current_price": 219.74,
-      "market_value": 27687.24,
-      "unrealized_pl": -304.91,
-      "unrealized_pl_pct": -1.089
+      "current_price": 220.4,
+      "market_value": 27770.4,
+      "unrealized_pl": -221.75,
+      "unrealized_pl_pct": -0.792
     },
     {
       "symbol": "ORCL",
@@ -46,10 +73,10 @@
       "symbol": "TSLA",
       "qty": 52,
       "avg_entry_price": 329.1,
-      "current_price": 331.62,
-      "market_value": 17244.24,
-      "unrealized_pl": 131.04,
-      "unrealized_pl_pct": 0.766
+      "current_price": 330.28,
+      "market_value": 17174.56,
+      "unrealized_pl": 61.36,
+      "unrealized_pl_pct": 0.359
     }
   ]
 }
