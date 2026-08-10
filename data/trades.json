@@ -17044,5 +17044,81 @@
     "ts": "2026-08-10T19:13:23.577804Z",
     "status": "intraday_workflow_started",
     "note": "event=schedule run_id=31423004284"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-10",
+    "ts": "2026-08-10T19:44:55.375241Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=31425612012"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-08-10",
+    "ts": "2026-08-10T19:45:13.235687Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-08-10",
+    "ts": "2026-08-10T19:45:13.376514Z",
+    "equity_end": 89364.17,
+    "daily_pnl_usd": 2356.13,
+    "daily_pct": 2.7079,
+    "flatten": {
+      "closed": [
+        "ADBE",
+        "CRM",
+        "CVX",
+        "DIS",
+        "MSFT",
+        "NFLX",
+        "NVDA",
+        "ORCL",
+        "TSLA",
+        "XOM"
+      ],
+      "raw_response_count": 10
+    }
+  },
+  {
+    "type": "trade",
+    "date": "2026-08-10",
+    "ts": "2026-08-10T19:45:13.422245Z",
+    "symbol": "AVGO",
+    "qty": 67,
+    "entry_price": 430.33,
+    "entry_ts": "2026-08-10T14:23:30.171753Z",
+    "entry_order_id": "bf1a812f-8594-428a-b917-1d34c404677c",
+    "exit_price": 425.88,
+    "exit_ts": "2026-08-10T14:58:33.999261Z",
+    "exit_order_id": "c43f0f40-a022-4388-befd-a3e10b2d5585",
+    "exit_reason": "bracket",
+    "pnl_usd": -298.15,
+    "pnl_pct": -1.0341
+  },
+  {
+    "type": "trade",
+    "date": "2026-08-10",
+    "ts": "2026-08-10T19:45:13.422245Z",
+    "symbol": "MSFT",
+    "qty": 56,
+    "entry_price": 510.85,
+    "entry_ts": "2026-08-10T14:23:28.512639Z",
+    "entry_order_id": "cdaa92e5-3dec-4e1a-a7b6-9a6918d8f979",
+    "exit_price": 505.55,
+    "exit_ts": "2026-08-10T18:00:15.871736Z",
+    "exit_order_id": "a25074ec-346f-4225-a3b0-e407cf2c4a91",
+    "exit_reason": "bracket",
+    "pnl_usd": -296.8,
+    "pnl_pct": -1.0375
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-08-10",
+    "ts": "2026-08-10T19:45:13.458054Z",
+    "status": "ok",
+    "note": "closed 10 positions, 2 round-trips"
   }
 ]
