@@ -16687,5 +16687,117 @@
     "ts": "2026-08-07T22:19:09.719975Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=31223382820"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-10",
+    "ts": "2026-08-10T14:22:16.667720Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=31397772833"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-10",
+    "ts": "2026-08-10T14:22:35.918917Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-10",
+    "ts": "2026-08-10T14:22:37.902750Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-10",
+    "ts": "2026-08-10T14:22:39.352604Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-10",
+    "ts": "2026-08-10T14:23:27.726883Z",
+    "equity_start": 87995.41,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "DIS",
+          "confidence": "high",
+          "catalyst": "Insider cluster buy (3 distinct buyers in 30d) with 92% bullish stocktwits and 89% analyst buy \u2014 smart money stacking without earnings risk",
+          "smart_money_signals": "Insider cluster_buy=True (3 buyers, 7 buys), stocktwits 92% bullish on 30 msgs, analysts 89.2% bullish (11SB/22B)",
+          "rationale": "Rare triple stack of insider cluster + analyst conviction + retail sentiment on a modest -1.9% pullback offers clean risk/reward"
+        },
+        {
+          "symbol": "MSFT",
+          "confidence": "high",
+          "catalyst": "Premarket gap +2.17% with House cluster buy (4 buys by 2 congresspeople) and 93% analyst buy conviction",
+          "smart_money_signals": "House CLUSTER BUY (4 buys, Moskowitz + Taylor), WSB 4.0x normal rank #15, stocktwits 88% bullish, analysts 92.8% bullish (23SB/41B)",
+          "rationale": "Gap-up with congressional cluster buy and near-unanimous analyst support \u2014 catalyst + smart money both firing"
+        },
+        {
+          "symbol": "AVGO",
+          "confidence": "medium",
+          "catalyst": "Premarket +1.02% on Samsung AI deal narrative ahead of Sept 2 earnings, with TSMC read-through",
+          "smart_money_signals": "House buy by David J. Taylor, stocktwits 100% bullish, analysts 91.1% bullish (17SB/34B), no insider selling",
+          "rationale": "AI-chip tape strength plus clean smart-money profile; earnings still 3+ weeks out so no overnight gap risk"
+        }
+      ],
+      "market_take": "Risk-on AI/mega-cap tape with oil catalyst secondary; smart money clustering in MSFT and DIS stands out",
+      "skipped_movers": [
+        "INTC: dilutive $15B offering causing gap DOWN \u2014 wrong direction",
+        "PLTR: heavy insider selling (4 sells) plus profit-taking narrative",
+        "CVX: political windfall-tax headline risk overhangs oil names",
+        "XOM: same Pritzker windfall-tax risk + House selling",
+        "NVDA: gap DOWN and House selling, no clean long setup",
+        "NKE: heavy insider selling (5 sellers) and weak analyst mix",
+        "HD: gap DOWN with no catalyst"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Rare triple stack of insider cluster + analyst conviction + retail sentiment on a modest -1.9% pullback offers clean risk/reward",
+        "symbol": "DIS",
+        "qty": 281,
+        "entry_price_est": 103.15,
+        "stop_price": 102.12,
+        "take_price": 105.21,
+        "order_id": "3d582d71-b773-46cc-89e8-522cc4d12e30"
+      },
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Gap-up with congressional cluster buy and near-unanimous analyst support \u2014 catalyst + smart money both firing",
+        "symbol": "MSFT",
+        "qty": 56,
+        "entry_price_est": 510.7,
+        "stop_price": 505.59,
+        "take_price": 520.91,
+        "order_id": "cdaa92e5-3dec-4e1a-a7b6-9a6918d8f979"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "AI-chip tape strength plus clean smart-money profile; earnings still 3+ weeks out so no overnight gap risk",
+        "symbol": "AVGO",
+        "qty": 67,
+        "entry_price_est": 430.25,
+        "stop_price": 425.95,
+        "take_price": 438.86,
+        "order_id": "bf1a812f-8594-428a-b917-1d34c404677c"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-10",
+    "ts": "2026-08-10T14:23:27.773453Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
