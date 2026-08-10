@@ -1,73 +1,100 @@
 {
-  "ts": "2026-08-10T18:02:26.494791Z",
-  "equity": 89084.62,
+  "ts": "2026-08-10T18:12:31.053642Z",
+  "equity": 88902.86,
   "last_equity": 87008.04,
-  "cash": -181275.51,
-  "buying_power": 721.03,
-  "all_time_return_pct": -10.9154,
+  "cash": -198751.69,
+  "buying_power": 0.0,
+  "all_time_return_pct": -11.0971,
   "positions": [
+    {
+      "symbol": "ADBE",
+      "qty": 22,
+      "avg_entry_price": 272.8,
+      "current_price": 272.48,
+      "market_value": 5994.56,
+      "unrealized_pl": -7.04,
+      "unrealized_pl_pct": -0.117
+    },
     {
       "symbol": "CRM",
       "qty": 171,
       "avg_entry_price": 195.8935,
-      "current_price": 197.8,
-      "market_value": 33823.8,
-      "unrealized_pl": 326.01,
-      "unrealized_pl_pct": 0.973
+      "current_price": 197.49,
+      "market_value": 33770.79,
+      "unrealized_pl": 273.0,
+      "unrealized_pl_pct": 0.815
     },
     {
       "symbol": "CVX",
       "qty": 175,
       "avg_entry_price": 192.89,
-      "current_price": 194.5764,
-      "market_value": 34050.87,
-      "unrealized_pl": 295.12,
-      "unrealized_pl_pct": 0.874
+      "current_price": 194.62,
+      "market_value": 34058.5,
+      "unrealized_pl": 302.75,
+      "unrealized_pl_pct": 0.897
     },
     {
       "symbol": "DIS",
       "qty": 281,
       "avg_entry_price": 102.93,
-      "current_price": 103.08,
-      "market_value": 28965.48,
-      "unrealized_pl": 42.15,
-      "unrealized_pl_pct": 0.146
+      "current_price": 103.16,
+      "market_value": 28987.96,
+      "unrealized_pl": 64.63,
+      "unrealized_pl_pct": 0.223
+    },
+    {
+      "symbol": "MSFT",
+      "qty": 11,
+      "avg_entry_price": 505.5,
+      "current_price": 505.1607,
+      "market_value": 5556.77,
+      "unrealized_pl": -3.73,
+      "unrealized_pl_pct": -0.067
     },
     {
       "symbol": "NFLX",
       "qty": 449,
       "avg_entry_price": 75.4522,
-      "current_price": 75.555,
-      "market_value": 33924.19,
-      "unrealized_pl": 46.14,
-      "unrealized_pl_pct": 0.136
+      "current_price": 75.565,
+      "market_value": 33928.68,
+      "unrealized_pl": 50.63,
+      "unrealized_pl_pct": 0.149
     },
     {
       "symbol": "NVDA",
       "qty": 126,
       "avg_entry_price": 222.1599,
-      "current_price": 218.4,
-      "market_value": 27518.4,
-      "unrealized_pl": -473.75,
-      "unrealized_pl_pct": -1.692
+      "current_price": 218.82,
+      "market_value": 27571.32,
+      "unrealized_pl": -420.83,
+      "unrealized_pl_pct": -1.503
     },
     {
       "symbol": "ORCL",
       "qty": 628,
       "avg_entry_price": 146.23,
-      "current_price": 151.18,
-      "market_value": 94941.04,
-      "unrealized_pl": 3108.6,
-      "unrealized_pl_pct": 3.385
+      "current_price": 150.875,
+      "market_value": 94749.5,
+      "unrealized_pl": 2917.06,
+      "unrealized_pl_pct": 3.177
     },
     {
       "symbol": "TSLA",
       "qty": 52,
       "avg_entry_price": 329.1,
-      "current_price": 329.545,
-      "market_value": 17136.34,
-      "unrealized_pl": 23.14,
-      "unrealized_pl_pct": 0.135
+      "current_price": 329.145,
+      "market_value": 17115.54,
+      "unrealized_pl": 2.34,
+      "unrealized_pl_pct": 0.014
+    },
+    {
+      "symbol": "XOM",
+      "qty": 37,
+      "avg_entry_price": 159.84,
+      "current_price": 160.025,
+      "market_value": 5920.93,
+      "unrealized_pl": 6.84,
+      "unrealized_pl_pct": 0.116
     }
   ]
 }
