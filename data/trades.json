@@ -17273,5 +17273,103 @@
     "ts": "2026-08-11T15:30:10.740828Z",
     "status": "imports_ok",
     "note": "src.* all importable"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-11",
+    "ts": "2026-08-11T16:02:53.801825Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=31510317915"
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-08-11",
+    "ts": "2026-08-11T16:03:15.601717Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-11",
+    "ts": "2026-08-11T16:04:22.578389Z",
+    "equity_start": 88639.62,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "HD",
+          "confidence": "medium",
+          "catalyst": "Relative strength: +1.66% while broader market is red (ORCL/GOOGL/AMZN all down 2-3%), showing defensive bid",
+          "smart_money_signals": "House buy by Jared Moskowitz (21d), 60.9% analyst bullish, stocktwits 56% \u2014 clean tape with no selling pressure",
+          "rationale": "Best momentum setup on the board with confirming smart-money and no disqualifiers"
+        },
+        {
+          "symbol": "CVX",
+          "confidence": "medium",
+          "catalyst": "Up +1.08% on a red market day \u2014 defensive/energy rotation with no negative news",
+          "smart_money_signals": "Stocktwits 86% bullish on 30 msgs, 83.9% analyst buy rating (8SB/18B), balanced insider activity",
+          "rationale": "Relative strength plus strong analyst conviction and retail sentiment stack in a risk-off tape"
+        },
+        {
+          "symbol": "NFLX",
+          "confidence": "low",
+          "catalyst": "No fresh news but insider cluster buy (6 buyers) with WSB chatter 13x normal",
+          "smart_money_signals": "Insider cluster buy 6 buyers, stocktwits 100% bullish, WSB 13.0x surge, 75.9% analyst buy",
+          "rationale": "Strong smart-money stack even though price is -1.54% \u2014 alt-data suggests the dip is being accumulated"
+        }
+      ],
+      "market_take": "Risk-off tape with mega-cap tech/AI names getting faded ahead of CPI; defensive names (HD, CVX) showing relative strength.",
+      "skipped_movers": [
+        "ORCL: down 3.24% fading rebound, catalyst contradicts price action",
+        "GOOGL: strong alt-data but stocktwits 8% bullish and -2% price is fighting the signal",
+        "AMZN: heavy insider + House selling, disqualified",
+        "NKE: heavy insider selling (5 sells, 0 buys)",
+        "SBUX: heavy insider selling despite green tape",
+        "TSLA: CPI event risk tomorrow, only 49% analyst bullish",
+        "ADBE: stocktwits 28% bearish, weak analyst 39%"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Best momentum setup on the board with confirming smart-money and no disqualifiers",
+        "symbol": "HD",
+        "qty": 295,
+        "entry_price_est": 357.5,
+        "stop_price": 353.93,
+        "take_price": 364.65,
+        "order_id": "46afa29a-6b92-490f-8169-eb07b6111c99"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Relative strength plus strong analyst conviction and retail sentiment stack in a risk-off tape",
+        "symbol": "CVX",
+        "qty": 535,
+        "entry_price_est": 196.95499999999998,
+        "stop_price": 194.99,
+        "take_price": 200.89,
+        "order_id": "cce4cfff-a302-4040-bd28-bd5f34b93315"
+      },
+      {
+        "status": "submitted",
+        "confidence": "low",
+        "rationale": "Strong smart-money stack even though price is -1.54% \u2014 alt-data suggests the dip is being accumulated",
+        "symbol": "NFLX",
+        "qty": 1403,
+        "entry_price_est": 75.17500000000001,
+        "stop_price": 74.42,
+        "take_price": 76.68,
+        "order_id": "73a76ca4-672b-41f7-bf9f-1882d215164b"
+      }
+    ]
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-08-11",
+    "ts": "2026-08-11T16:04:22.686074Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]

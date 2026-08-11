@@ -1,28 +1,28 @@
 {
-  "ts": "2026-08-11T15:28:34.049459Z",
-  "equity": 89001.35,
+  "ts": "2026-08-11T16:04:22.681700Z",
+  "equity": 88659.42,
   "last_equity": 89314.88,
-  "cash": 30505.17,
-  "buying_power": 285809.97,
-  "all_time_return_pct": -10.9986,
+  "cash": -6949.26,
+  "buying_power": 0.0,
+  "all_time_return_pct": -11.3406,
   "positions": [
+    {
+      "symbol": "HD",
+      "qty": 186,
+      "avg_entry_price": 357.64,
+      "current_price": 357.58,
+      "market_value": 66509.88,
+      "unrealized_pl": -11.16,
+      "unrealized_pl_pct": -0.017
+    },
     {
       "symbol": "META",
       "qty": 48,
       "avg_entry_price": 609.0187,
-      "current_price": 610.08,
-      "market_value": 29283.84,
-      "unrealized_pl": 50.94,
-      "unrealized_pl_pct": 0.174
-    },
-    {
-      "symbol": "ORCL",
-      "qty": 201,
-      "avg_entry_price": 147.1483,
-      "current_price": 145.335,
-      "market_value": 29212.33,
-      "unrealized_pl": -364.47,
-      "unrealized_pl_pct": -1.232
+      "current_price": 606.225,
+      "market_value": 29098.8,
+      "unrealized_pl": -134.1,
+      "unrealized_pl_pct": -0.459
     }
   ]
 }
