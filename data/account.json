@@ -1,46 +1,46 @@
 {
-  "ts": "2026-08-11T16:25:41.463303Z",
-  "equity": 88041.78,
+  "ts": "2026-08-11T17:26:45.302976Z",
+  "equity": 86739.18,
   "last_equity": 89314.88,
   "cash": -256799.21,
   "buying_power": 0.0,
-  "all_time_return_pct": -11.9582,
+  "all_time_return_pct": -13.2608,
   "positions": [
     {
       "symbol": "CVX",
       "qty": 535,
       "avg_entry_price": 196.99,
-      "current_price": 196.72,
-      "market_value": 105245.2,
-      "unrealized_pl": -144.45,
-      "unrealized_pl_pct": -0.137
+      "current_price": 196.12,
+      "market_value": 104924.2,
+      "unrealized_pl": -465.45,
+      "unrealized_pl_pct": -0.442
     },
     {
       "symbol": "HD",
       "qty": 295,
       "avg_entry_price": 357.64,
-      "current_price": 357.07,
-      "market_value": 105335.65,
-      "unrealized_pl": -168.15,
-      "unrealized_pl_pct": -0.159
+      "current_price": 354.98,
+      "market_value": 104719.1,
+      "unrealized_pl": -784.7,
+      "unrealized_pl_pct": -0.744
     },
     {
       "symbol": "META",
       "qty": 48,
       "avg_entry_price": 609.0187,
-      "current_price": 604.168,
-      "market_value": 29000.06,
-      "unrealized_pl": -232.84,
-      "unrealized_pl_pct": -0.796
+      "current_price": 603.87,
+      "market_value": 28985.76,
+      "unrealized_pl": -247.14,
+      "unrealized_pl_pct": -0.845
     },
     {
       "symbol": "NFLX",
       "qty": 1403,
       "avg_entry_price": 75.18,
-      "current_price": 75.025,
-      "market_value": 105260.07,
-      "unrealized_pl": -217.47,
-      "unrealized_pl_pct": -0.206
+      "current_price": 74.775,
+      "market_value": 104909.32,
+      "unrealized_pl": -568.22,
+      "unrealized_pl_pct": -0.539
     }
   ]
 }
