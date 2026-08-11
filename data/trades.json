@@ -17371,5 +17371,26 @@
     "ts": "2026-08-11T16:04:22.686074Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-11",
+    "ts": "2026-08-11T17:09:51.762847Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=31516151646"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-08-11",
+    "ts": "2026-08-11T17:10:16.120098Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-08-11",
+    "ts": "2026-08-11T17:10:16.456436Z",
+    "status": "blocked",
+    "note": "Buying power $0.00 below $5000 minimum \u2014 account is too deployed to take new trades."
   }
 ]
