@@ -17434,5 +17434,59 @@
     "ts": "2026-08-11T19:18:21.553635Z",
     "status": "blocked",
     "note": "Buying power $0.00 below $5000 minimum \u2014 account is too deployed to take new trades."
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-11",
+    "ts": "2026-08-11T19:51:14.257141Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=31529931296"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-08-11",
+    "ts": "2026-08-11T19:51:35.307333Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-08-11",
+    "ts": "2026-08-11T19:51:35.483558Z",
+    "equity_end": 86556.91,
+    "daily_pnl_usd": -2757.97,
+    "daily_pct": -3.0879,
+    "flatten": {
+      "closed": [
+        "CVX",
+        "HD",
+        "META",
+        "NFLX"
+      ],
+      "raw_response_count": 4
+    }
+  },
+  {
+    "type": "trade",
+    "date": "2026-08-11",
+    "ts": "2026-08-11T19:51:35.527745Z",
+    "symbol": "ORCL",
+    "qty": 201,
+    "entry_price": 147.1483,
+    "entry_ts": "2026-08-11T14:23:50.767620Z",
+    "entry_order_id": "fb5b0a61-4440-4100-a1ad-143eaef81202",
+    "exit_price": 144.61,
+    "exit_ts": "2026-08-11T15:34:43.082016Z",
+    "exit_order_id": "268b0da4-ae44-4f99-a579-cc54f3a8369a",
+    "exit_reason": "bracket",
+    "pnl_usd": -510.2,
+    "pnl_pct": -1.725
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-08-11",
+    "ts": "2026-08-11T19:51:35.573807Z",
+    "status": "ok",
+    "note": "closed 4 positions, 1 round-trips"
   }
 ]
