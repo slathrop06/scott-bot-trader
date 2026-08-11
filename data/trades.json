@@ -17141,5 +17141,116 @@
     "ts": "2026-08-10T21:53:05.270022Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=31435868023"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-11",
+    "ts": "2026-08-11T14:22:13.494134Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=31501134933"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-11",
+    "ts": "2026-08-11T14:22:34.598846Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-11",
+    "ts": "2026-08-11T14:22:36.356764Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-11",
+    "ts": "2026-08-11T14:22:37.958596Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-11",
+    "ts": "2026-08-11T14:23:48.700458Z",
+    "equity_start": 89314.88,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "Modest pullback (-1.72%) offers entry on stock with heavy WSB attention (11x normal) amid AI infrastructure narrative",
+          "smart_money_signals": "WSB chatter 11.0x normal, stocktwits 86% bullish (30 msgs), 82% analyst buy (40/49 bullish), House buy by Michael Rulli \u2014 alt-score 6/10",
+          "rationale": "Highest alt-data score of the group with no disqualifying signals; dip-buy setup with strong analyst + retail conviction."
+        },
+        {
+          "symbol": "META",
+          "confidence": "medium",
+          "catalyst": "Premarket gap +2.71% on open-source AI narrative pressuring OpenAI/Anthropic valuations \u2014 clear momentum catalyst",
+          "smart_money_signals": "House cluster buy (4 buys, Moskowitz + Rulli), stocktwits 100% bullish (30 msgs), 87% analyst buy (62/71)",
+          "rationale": "Strongest gap-up with concrete news catalyst plus congressional cluster buy \u2014 insider selling offset by clear price momentum and House conviction."
+        },
+        {
+          "symbol": "GE",
+          "confidence": "low",
+          "catalyst": "Steady +0.99% grind with no negative news",
+          "smart_money_signals": "Stocktwits 100% bullish (30 msgs), 88% analyst buy (28/32)",
+          "rationale": "Clean tape with unanimous retail + strong analyst backing as a lower-volatility third leg."
+        }
+      ],
+      "market_take": "Risk-on tone with mega-cap AI names leading; dispersion between GOOGL/AMZN weakness and META/ORCL strength suggests rotation within tech.",
+      "skipped_movers": [
+        "GOOGL: price down -1.32% contradicts 10/10 alt-data score; stocktwits only 30% bullish signals near-term weakness despite insider cluster buy",
+        "TSLA: mixed news (AI capex concerns), only 49% analyst buy, no smart-money edge",
+        "AMZN: price down, House net selling, stocktwits 43% bullish \u2014 signals contradict",
+        "NKE: heavy insider selling (5 sellers), price down -1.93%",
+        "PLTR: Ark Invest selling headline + heavy insider selling",
+        "SBUX: negative comp headline, insider selling",
+        "CAT: no catalyst, weak alt-score 1/10",
+        "SHOP: price down, weak signals",
+        "BA: weak alt-score, mixed news",
+        "HD: stocktwits only 50%, no catalyst",
+        "V: no catalyst despite clean signals",
+        "XOM: political headline risk"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Highest alt-data score of the group with no disqualifying signals; dip-buy setup with strong analyst + retail conviction.",
+        "symbol": "ORCL",
+        "qty": 201,
+        "entry_price_est": 146.08499999999998,
+        "stop_price": 144.62,
+        "take_price": 149.01,
+        "order_id": "fb5b0a61-4440-4100-a1ad-143eaef81202"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strongest gap-up with concrete news catalyst plus congressional cluster buy \u2014 insider selling offset by clear price momentum and House conviction.",
+        "symbol": "META",
+        "qty": 48,
+        "entry_price_est": 602.965,
+        "stop_price": 596.94,
+        "take_price": 615.02,
+        "order_id": "b343ba0c-a7cb-43d2-b68a-3ef17285d048"
+      },
+      {
+        "status": "failed",
+        "symbol": "GE",
+        "error": "{\"base_price\":\"370.13\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-11",
+    "ts": "2026-08-11T14:23:48.835454Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
