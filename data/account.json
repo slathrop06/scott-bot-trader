@@ -1,37 +1,64 @@
 {
-  "ts": "2026-08-12T16:02:00.561563Z",
-  "equity": 86213.94,
+  "ts": "2026-08-12T16:27:29.908876Z",
+  "equity": 87403.99,
   "last_equity": 86504.57,
-  "cash": 1473.49,
-  "buying_power": 2606.21,
-  "all_time_return_pct": -13.7861,
+  "cash": -239089.09,
+  "buying_power": 0.0,
+  "all_time_return_pct": -12.596,
   "positions": [
     {
       "symbol": "AMD",
       "qty": 58,
       "avg_entry_price": 488.2779,
-      "current_price": 487.3814,
-      "market_value": 28268.12,
-      "unrealized_pl": -52.0,
-      "unrealized_pl_pct": -0.184
+      "current_price": 487.17,
+      "market_value": 28255.86,
+      "unrealized_pl": -64.26,
+      "unrealized_pl_pct": -0.227
     },
     {
       "symbol": "AVGO",
       "qty": 67,
       "avg_entry_price": 422.71,
-      "current_price": 419.809,
-      "market_value": 28127.2,
-      "unrealized_pl": -194.37,
-      "unrealized_pl_pct": -0.686
+      "current_price": 419.655,
+      "market_value": 28116.88,
+      "unrealized_pl": -204.69,
+      "unrealized_pl_pct": -0.723
+    },
+    {
+      "symbol": "INTC",
+      "qty": 797,
+      "avg_entry_price": 100.63,
+      "current_price": 101.0799,
+      "market_value": 80560.68,
+      "unrealized_pl": 358.57,
+      "unrealized_pl_pct": 0.447
+    },
+    {
+      "symbol": "NFLX",
+      "qty": 1089,
+      "avg_entry_price": 73.6815,
+      "current_price": 73.805,
+      "market_value": 80373.65,
+      "unrealized_pl": 134.54,
+      "unrealized_pl_pct": 0.168
     },
     {
       "symbol": "NVDA",
       "qty": 127,
       "avg_entry_price": 223.5385,
-      "current_price": 223.19,
-      "market_value": 28345.13,
-      "unrealized_pl": -44.26,
-      "unrealized_pl_pct": -0.156
+      "current_price": 223.2632,
+      "market_value": 28354.43,
+      "unrealized_pl": -34.96,
+      "unrealized_pl_pct": -0.123
+    },
+    {
+      "symbol": "ORCL",
+      "qty": 534,
+      "avg_entry_price": 150.04,
+      "current_price": 151.37,
+      "market_value": 80831.58,
+      "unrealized_pl": 710.22,
+      "unrealized_pl_pct": 0.886
     }
   ]
 }
