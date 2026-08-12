@@ -17646,5 +17646,105 @@
     "ts": "2026-08-12T15:29:57.366134Z",
     "status": "imports_ok",
     "note": "src.* all importable"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-12",
+    "ts": "2026-08-12T16:00:56.043996Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=31615415038"
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-08-12",
+    "ts": "2026-08-12T16:01:14.214072Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-12",
+    "ts": "2026-08-12T16:02:00.530908Z",
+    "equity_start": 86203.31,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "Up +1.93% on Quantinuum quantum computing partnership expanding Oracle Cloud AI/HPC offerings; relative strength while broader tape (META, MSFT, AMZN) is red",
+          "smart_money_signals": "81.6% analyst buy (15SB/25B), House buy from Michael Rulli, 65% Stocktwits bullish",
+          "rationale": "Only mega-cap tech showing green with a concrete catalyst and analyst conviction \u2014 clean momentum setup"
+        },
+        {
+          "symbol": "INTC",
+          "confidence": "medium",
+          "catalyst": "Up +2.79% on heavy volume (67M shares) riding AI infra tailwinds from AMD/NVDA strength and post-offering dip-buying narrative",
+          "smart_money_signals": "Stocktwits 100% bullish on 30 msgs, insider net flat (1 buy / 1 sell \u2014 not selling)",
+          "rationale": "Strongest relative strength on the board with volume confirmation and unanimous retail sentiment"
+        },
+        {
+          "symbol": "NFLX",
+          "confidence": "low",
+          "catalyst": "Down -1.98% but insider cluster buy (6 buyers) provides smart-money support amid broad tape weakness",
+          "smart_money_signals": "Insider cluster buy with 6 distinct buyers, 75.9% analyst buy (14SB/30B)",
+          "rationale": "Pure smart-money mean-reversion setup \u2014 cluster buying by 6 insiders is a strong standalone signal"
+        }
+      ],
+      "market_take": "Risk-off tape with mega-cap tech red except AI-infra names (ORCL, INTC) catching bids on CoreWeave/quantum catalysts.",
+      "skipped_movers": [
+        "META: 17 insider sells, Stocktwits only 28% bullish \u2014 skip",
+        "PLTR: heavy insider selling, profit-taking narrative \u2014 skip",
+        "AMZN: insider + House net selling \u2014 skip",
+        "MSFT: down despite House cluster buy, 3 insider sells and tape weakness dominate",
+        "TSLA: no catalyst, price down",
+        "ADBE: no news, analysts only 39% bullish",
+        "CAT: no catalyst beyond price",
+        "HD: Stocktwits only 44% bullish, no catalyst",
+        "CRM: down 2.6% with no catalyst"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Only mega-cap tech showing green with a concrete catalyst and analyst conviction \u2014 clean momentum setup",
+        "symbol": "ORCL",
+        "qty": 534,
+        "entry_price_est": 150.05,
+        "stop_price": 148.55,
+        "take_price": 153.05,
+        "order_id": "e9bb6c4f-12c1-478a-b41d-458a9758fbd8"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strongest relative strength on the board with volume confirmation and unanimous retail sentiment",
+        "symbol": "INTC",
+        "qty": 797,
+        "entry_price_est": 100.635,
+        "stop_price": 99.63,
+        "take_price": 102.65,
+        "order_id": "69c9bcd2-3a3d-4363-b9a6-892f9468ace4"
+      },
+      {
+        "status": "submitted",
+        "confidence": "low",
+        "rationale": "Pure smart-money mean-reversion setup \u2014 cluster buying by 6 insiders is a strong standalone signal",
+        "symbol": "NFLX",
+        "qty": 1089,
+        "entry_price_est": 73.67500000000001,
+        "stop_price": 72.94,
+        "take_price": 75.15,
+        "order_id": "fb36ed0d-87a2-4787-99f2-09b1367dc1f2"
+      }
+    ]
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-08-12",
+    "ts": "2026-08-12T16:02:00.564798Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
