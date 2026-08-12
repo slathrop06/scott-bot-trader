@@ -17767,5 +17767,82 @@
     "ts": "2026-08-12T17:09:48.175551Z",
     "status": "blocked",
     "note": "Buying power $0.00 below $5000 minimum \u2014 account is too deployed to take new trades."
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-12",
+    "ts": "2026-08-12T18:07:09.654689Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=31626033970"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-08-12",
+    "ts": "2026-08-12T18:07:29.797138Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-12",
+    "ts": "2026-08-12T18:08:14.247216Z",
+    "equity_start": 89522.58,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "ORCL",
+          "confidence": "high",
+          "catalyst": "Oracle up +3.9% on Quantinuum quantum computing partnership, expanding cloud/HPC/GPU offerings \u2014 concrete product news with intraday gap up",
+          "smart_money_signals": "82% analyst buy (15SB/25B), 100% Stocktwits bullish on 30 msgs, House buy by Rulli",
+          "rationale": "Only mover with strong catalyst + confirming smart-money stack \u2014 clean momentum setup"
+        },
+        {
+          "symbol": "CAT",
+          "confidence": "medium",
+          "catalyst": "Relative strength +2.59% while broader tape is weak (META/MSFT/AMZN all red), no contradicting news",
+          "smart_money_signals": "Stocktwits 75% bullish, no insider/congress selling flags",
+          "rationale": "Cleanest relative-strength breakout with no disqualifiers \u2014 riding momentum against a weak tape"
+        }
+      ],
+      "market_take": "Mixed tape \u2014 AI infra winners rallying but mega-cap tech (META, MSFT, AMZN) selling off on CPI/stagflation worries.",
+      "skipped_movers": [
+        "META: heavy insider selling 17 sells vs 2 buys \u2014 skip",
+        "MSFT: heavy insider selling 3:0 and price down \u2014 skip",
+        "AMZN: insider + congress selling, price weak \u2014 skip",
+        "HD: earnings next Tuesday + CEO medical leave \u2014 skip",
+        "ADBE: no catalyst, mixed insider (27 buys/28 sells), weak price \u2014 skip",
+        "CRM: no news, price down 2.8% contradicts bullish sentiment \u2014 skip",
+        "TSLA: 0/10 alt-data, no catalyst, price down \u2014 skip",
+        "WMT: 7 insider sells, no catalyst \u2014 skip",
+        "SHOP: weak signals, price down \u2014 skip",
+        "NKE: heavy insider selling, weak analyst \u2014 skip"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Only mover with strong catalyst + confirming smart-money stack \u2014 clean momentum setup",
+        "symbol": "ORCL",
+        "qty": 205,
+        "entry_price_est": 153.245,
+        "stop_price": 151.71,
+        "take_price": 156.31,
+        "order_id": "b0a76447-cf8c-465b-bbf1-57329b9c5c9d"
+      },
+      {
+        "status": "failed",
+        "symbol": "CAT",
+        "error": "{\"base_price\":\"866.195\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-08-12",
+    "ts": "2026-08-12T18:08:14.286866Z",
+    "status": "ok",
+    "note": "2 orders submitted"
   }
 ]
