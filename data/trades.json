@@ -17509,5 +17509,121 @@
     "ts": "2026-08-11T22:08:56.743356Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=31541138400"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-12",
+    "ts": "2026-08-12T14:22:19.964221Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=31606395727"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-12",
+    "ts": "2026-08-12T14:22:39.809531Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-12",
+    "ts": "2026-08-12T14:22:41.404433Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-12",
+    "ts": "2026-08-12T14:22:43.000675Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-12",
+    "ts": "2026-08-12T14:23:33.562747Z",
+    "equity_start": 86504.57,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMD",
+          "confidence": "high",
+          "catalyst": "Gap up +2.68% to $487.66 on strong volume; AI trade momentum continues alongside NVDA/CoreWeave read-through",
+          "smart_money_signals": "WSB chatter 3.84x normal (rank #7, 123 mentions), stocktwits 84% bullish, 82.8% analyst buy rating (16SB/32B)",
+          "rationale": "Best stack of catalyst + smart-money: gap up with heavy retail attention, strong analyst conviction, and no contradicting insider selling."
+        },
+        {
+          "symbol": "AVGO",
+          "confidence": "medium",
+          "catalyst": "Premarket gap +1.39% riding AI infrastructure tailwind (CoreWeave read-through)",
+          "smart_money_signals": "House buy by David J. Taylor, 91.1% analyst buy (17SB/34B), stocktwits 76% bullish",
+          "rationale": "Clean setup: gap up + top-tier analyst conviction + congressional buy with no offsetting sells."
+        },
+        {
+          "symbol": "NVDA",
+          "confidence": "medium",
+          "catalyst": "Gap up +2.51% to $223.51 on CoreWeave blockbuster earnings and 25% AI price hike \u2014 direct positive read-through",
+          "smart_money_signals": "94.1% analyst buy (23SB/41B), WSB rank #8, stocktwits 74% bullish",
+          "rationale": "Strong catalyst (CoreWeave demand signal) with elite analyst conviction; mixed House flow is minor noise."
+        }
+      ],
+      "market_take": "Bifurcated tape \u2014 AI/semis gapping up on CoreWeave halo while mega-cap software/consumer names sell off.",
+      "skipped_movers": [
+        "PLTR: gap down + heavy insider selling (4 sells)",
+        "INTC: only 34.5% analyst bullish, dilutive $20B offering overhang",
+        "CRM: gap down -2.67% contradicts bullish alt-data",
+        "HD: gap down, weak stocktwits (50%)",
+        "ADBE: gap down and only 39.1% analyst buy despite insider cluster",
+        "META: gap down -2.07% with heavy insider selling (17 sells)",
+        "WMT: heavy insider selling (7 sells, 6 insiders)",
+        "TSLA: gap down with negative autonomy narrative",
+        "NFLX: gap down and stocktwits only 33% bullish",
+        "MSFT: gap down contradicts signals",
+        "BA: gap down with negative news"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best stack of catalyst + smart-money: gap up with heavy retail attention, strong analyst conviction, and no contradicting insider selling.",
+        "symbol": "AMD",
+        "qty": 58,
+        "entry_price_est": 487.90999999999997,
+        "stop_price": 483.03,
+        "take_price": 497.67,
+        "order_id": "f5a6ce8d-0bf4-46cd-b2f7-3edb50626e16"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean setup: gap up + top-tier analyst conviction + congressional buy with no offsetting sells.",
+        "symbol": "AVGO",
+        "qty": 67,
+        "entry_price_est": 422.49,
+        "stop_price": 418.27,
+        "take_price": 430.94,
+        "order_id": "80fdc2cc-519c-4fa7-b9a0-e2ef7cb69b70"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strong catalyst (CoreWeave demand signal) with elite analyst conviction; mixed House flow is minor noise.",
+        "symbol": "NVDA",
+        "qty": 127,
+        "entry_price_est": 223.54500000000002,
+        "stop_price": 221.31,
+        "take_price": 228.02,
+        "order_id": "92dc246c-aab3-4c06-8de2-7c5b62a6a48d"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-12",
+    "ts": "2026-08-12T14:23:33.756411Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
