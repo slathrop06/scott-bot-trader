@@ -1,64 +1,64 @@
 {
-  "ts": "2026-08-12T16:27:29.908876Z",
-  "equity": 87403.99,
+  "ts": "2026-08-12T17:30:18.369128Z",
+  "equity": 88969.34,
   "last_equity": 86504.57,
   "cash": -239089.09,
   "buying_power": 0.0,
-  "all_time_return_pct": -12.596,
+  "all_time_return_pct": -11.0307,
   "positions": [
     {
       "symbol": "AMD",
       "qty": 58,
       "avg_entry_price": 488.2779,
-      "current_price": 487.17,
-      "market_value": 28255.86,
-      "unrealized_pl": -64.26,
-      "unrealized_pl_pct": -0.227
+      "current_price": 486.625,
+      "market_value": 28224.25,
+      "unrealized_pl": -95.87,
+      "unrealized_pl_pct": -0.339
     },
     {
       "symbol": "AVGO",
       "qty": 67,
       "avg_entry_price": 422.71,
-      "current_price": 419.655,
-      "market_value": 28116.88,
-      "unrealized_pl": -204.69,
-      "unrealized_pl_pct": -0.723
+      "current_price": 418.655,
+      "market_value": 28049.88,
+      "unrealized_pl": -271.69,
+      "unrealized_pl_pct": -0.959
     },
     {
       "symbol": "INTC",
       "qty": 797,
       "avg_entry_price": 100.63,
-      "current_price": 101.0799,
-      "market_value": 80560.68,
-      "unrealized_pl": 358.57,
-      "unrealized_pl_pct": 0.447
+      "current_price": 101.8951,
+      "market_value": 81210.39,
+      "unrealized_pl": 1008.28,
+      "unrealized_pl_pct": 1.257
     },
     {
       "symbol": "NFLX",
       "qty": 1089,
       "avg_entry_price": 73.6815,
-      "current_price": 73.805,
-      "market_value": 80373.65,
-      "unrealized_pl": 134.54,
-      "unrealized_pl_pct": 0.168
+      "current_price": 73.995,
+      "market_value": 80580.55,
+      "unrealized_pl": 341.45,
+      "unrealized_pl_pct": 0.426
     },
     {
       "symbol": "NVDA",
       "qty": 127,
       "avg_entry_price": 223.5385,
-      "current_price": 223.2632,
-      "market_value": 28354.43,
-      "unrealized_pl": -34.96,
-      "unrealized_pl_pct": -0.123
+      "current_price": 224.07,
+      "market_value": 28456.89,
+      "unrealized_pl": 67.5,
+      "unrealized_pl_pct": 0.238
     },
     {
       "symbol": "ORCL",
       "qty": 534,
       "avg_entry_price": 150.04,
-      "current_price": 151.37,
-      "market_value": 80831.58,
-      "unrealized_pl": 710.22,
-      "unrealized_pl_pct": 0.886
+      "current_price": 152.69,
+      "market_value": 81536.46,
+      "unrealized_pl": 1415.1,
+      "unrealized_pl_pct": 1.766
     }
   ]
 }
