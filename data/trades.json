@@ -18268,5 +18268,90 @@
     "ts": "2026-08-13T19:19:14.075991Z",
     "status": "blocked",
     "note": "Buying power $0.00 below $5000 minimum \u2014 account is too deployed to take new trades."
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-13",
+    "ts": "2026-08-13T19:48:19.297493Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=31737665052"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-08-13",
+    "ts": "2026-08-13T19:48:38.991878Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-08-13",
+    "ts": "2026-08-13T19:48:39.998554Z",
+    "equity_end": 90708.16,
+    "daily_pnl_usd": 1019.38,
+    "daily_pct": 1.1366,
+    "flatten": {
+      "closed": [
+        "DIS",
+        "MSFT",
+        "NFLX"
+      ],
+      "raw_response_count": 3
+    }
+  },
+  {
+    "type": "trade",
+    "date": "2026-08-13",
+    "ts": "2026-08-13T19:48:40.103365Z",
+    "symbol": "ORCL",
+    "qty": 187,
+    "entry_price": 157.94,
+    "entry_ts": "2026-08-13T14:25:45.945390Z",
+    "entry_order_id": "c1f2bdb9-d985-4ecd-af23-36c77dbdcef5",
+    "exit_price": 156.2692,
+    "exit_ts": "2026-08-13T15:04:05.663443Z",
+    "exit_order_id": "524983c2-4d45-44c0-b67a-945d73cebf25",
+    "exit_reason": "bracket",
+    "pnl_usd": -312.44,
+    "pnl_pct": -1.0579
+  },
+  {
+    "type": "trade",
+    "date": "2026-08-13",
+    "ts": "2026-08-13T19:48:40.103365Z",
+    "symbol": "NFLX",
+    "qty": 382,
+    "entry_price": 77.39,
+    "entry_ts": "2026-08-13T14:25:46.600287Z",
+    "entry_order_id": "ab25947f-724c-44f4-b2f3-49aa74afac0e",
+    "exit_price": 76.6162,
+    "exit_ts": "2026-08-13T15:26:23.889441Z",
+    "exit_order_id": "e87bc520-4cb4-4712-9015-9886561c0ace",
+    "exit_reason": "bracket",
+    "pnl_usd": -295.6,
+    "pnl_pct": -0.9999
+  },
+  {
+    "type": "trade",
+    "date": "2026-08-13",
+    "ts": "2026-08-13T19:48:40.103365Z",
+    "symbol": "AVGO",
+    "qty": 249,
+    "entry_price": 422.51,
+    "entry_ts": "2026-08-13T16:02:49.958576Z",
+    "entry_order_id": "b17a6e85-cf92-4754-b7b9-fc3881fd2489",
+    "exit_price": 418.79,
+    "exit_ts": "2026-08-13T19:38:22.452482Z",
+    "exit_order_id": "51232b5e-4743-4469-ac20-7bcc9e1a6485",
+    "exit_reason": "bracket",
+    "pnl_usd": -926.28,
+    "pnl_pct": -0.8805
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-08-13",
+    "ts": "2026-08-13T19:48:40.270100Z",
+    "status": "ok",
+    "note": "closed 3 positions, 3 round-trips"
   }
 ]
