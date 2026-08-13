@@ -18108,5 +18108,102 @@
     "ts": "2026-08-13T15:31:24.434013Z",
     "status": "imports_ok",
     "note": "src.* all importable"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-13",
+    "ts": "2026-08-13T16:01:32.340659Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=31718525559"
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-08-13",
+    "ts": "2026-08-13T16:01:55.117954Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-13",
+    "ts": "2026-08-13T16:02:49.623988Z",
+    "equity_start": 88849.5,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "NFLX",
+          "confidence": "high",
+          "catalyst": "Bill Ackman/Pershing Square re-enters with 3.15M-share stake, declaring Netflix has 'won the streaming wars'; stock gapping up +2.19% on the news",
+          "smart_money_signals": "Insider cluster buy (6 buyers, 16 buys in 30d), WSB chatter 5.71x normal at rank #22, Stocktwits 91% bullish on 30 msgs, 76% analyst buy \u2014 alt score 8/10",
+          "rationale": "Rare stacking of a concrete high-profile catalyst with cluster insider buying, top-quartile social chatter, and analyst conviction \u2014 best risk/reward on the board."
+        },
+        {
+          "symbol": "MSFT",
+          "confidence": "medium",
+          "catalyst": "IREN accepts first AI data center under $9.7B Microsoft deal, reinforcing AI cloud narrative; stock breaking higher with QQQ",
+          "smart_money_signals": "House cluster buy (5 buys by Taylor, Moskowitz, Rulli in 21d), 93% analyst buy, Stocktwits 80% bullish \u2014 offsets some insider selling",
+          "rationale": "Congressional cluster buy plus fresh AI infrastructure catalyst on a mega-cap with tight noise range makes the -1% stop viable."
+        },
+        {
+          "symbol": "AVGO",
+          "confidence": "medium",
+          "catalyst": "Cathie Wood/ARK buys $16M ahead of AI earnings; technicals bullish with stock +1.73% on tech rally",
+          "smart_money_signals": "House buy by David J. Taylor, 91% analyst buy (17SB/34B), Stocktwits 100% bullish \u2014 alt score 4/10",
+          "rationale": "Institutional accumulation plus congressional buy and universal analyst/social bullishness; momentum setup with clean signal stack."
+        }
+      ],
+      "market_take": "Risk-on tone as cooler July inflation fuels AI/tech leadership; mega-cap catalysts stacking with smart-money flows.",
+      "skipped_movers": [
+        "PLTR: heavy insider selling (4 sells, 0 buys) despite Ackman-adjacent bullishness \u2014 negative alt score disqualifies",
+        "TSLA: no concrete catalyst, only 49% analyst bullish, mixed signals",
+        "INTC: analyst base weak at 34.5% bullish, only 1 buy/1 sell insider \u2014 social hype without conviction",
+        "GS: heavy insider selling (6 sells, 0 buys), negative alt score",
+        "SBUX: heavy insider selling, weak analyst support",
+        "BA/BAC/MCD: red or weak tape, no catalyst"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Rare stacking of a concrete high-profile catalyst with cluster insider buying, top-quartile social chatter, and analyst conviction \u2014 best risk/reward on the board.",
+        "symbol": "NFLX",
+        "qty": 1377,
+        "entry_price_est": 76.735,
+        "stop_price": 75.97,
+        "take_price": 78.27,
+        "order_id": "fe6f21eb-0b7f-4bae-8722-21b0aa51c21f"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Congressional cluster buy plus fresh AI infrastructure catalyst on a mega-cap with tight noise range makes the -1% stop viable.",
+        "symbol": "MSFT",
+        "qty": 212,
+        "entry_price_est": 496.65999999999997,
+        "stop_price": 491.69,
+        "take_price": 506.59,
+        "order_id": "2f5212fc-8f2d-4c9c-ae80-f648eba8e8b2"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Institutional accumulation plus congressional buy and universal analyst/social bullishness; momentum setup with clean signal stack.",
+        "symbol": "AVGO",
+        "qty": 249,
+        "entry_price_est": 423.03499999999997,
+        "stop_price": 418.8,
+        "take_price": 431.5,
+        "order_id": "b17a6e85-cf92-4754-b7b9-fc3881fd2489"
+      }
+    ]
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-08-13",
+    "ts": "2026-08-13T16:02:49.694217Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
