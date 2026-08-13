@@ -1,19 +1,46 @@
 {
-  "ts": "2026-08-13T16:02:49.690750Z",
-  "equity": 88849.5,
+  "ts": "2026-08-13T16:27:58.967520Z",
+  "equity": 88932.0,
   "last_equity": 89688.78,
-  "cash": 59552.52,
-  "buying_power": 4472.26,
-  "all_time_return_pct": -11.1505,
+  "cash": -256216.81,
+  "buying_power": 0.0,
+  "all_time_return_pct": -11.068,
   "positions": [
+    {
+      "symbol": "AVGO",
+      "qty": 249,
+      "avg_entry_price": 422.51,
+      "current_price": 422.145,
+      "market_value": 105114.1,
+      "unrealized_pl": -90.89,
+      "unrealized_pl_pct": -0.086
+    },
     {
       "symbol": "DIS",
       "qty": 282,
       "avg_entry_price": 104.71,
-      "current_price": 103.89,
-      "market_value": 29296.98,
-      "unrealized_pl": -231.24,
-      "unrealized_pl_pct": -0.783
+      "current_price": 103.84,
+      "market_value": 29282.88,
+      "unrealized_pl": -245.34,
+      "unrealized_pl_pct": -0.831
+    },
+    {
+      "symbol": "MSFT",
+      "qty": 212,
+      "avg_entry_price": 494.78,
+      "current_price": 494.755,
+      "market_value": 104888.06,
+      "unrealized_pl": -5.3,
+      "unrealized_pl_pct": -0.005
+    },
+    {
+      "symbol": "NFLX",
+      "qty": 1377,
+      "avg_entry_price": 76.74,
+      "current_price": 76.88,
+      "market_value": 105863.76,
+      "unrealized_pl": 192.78,
+      "unrealized_pl_pct": 0.182
     }
   ]
 }
