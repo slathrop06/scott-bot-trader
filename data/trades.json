@@ -17973,5 +17973,119 @@
     "ts": "2026-08-12T22:02:05.371162Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=31645194356"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-13",
+    "ts": "2026-08-13T14:24:18.905770Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=31710000108"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-13",
+    "ts": "2026-08-13T14:24:35.895496Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-13",
+    "ts": "2026-08-13T14:24:37.490914Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-13",
+    "ts": "2026-08-13T14:24:38.966614Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-13",
+    "ts": "2026-08-13T14:25:44.590126Z",
+    "equity_start": 89688.78,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "NFLX",
+          "confidence": "high",
+          "catalyst": "Bill Ackman/Pershing Square re-enters with 3.15M share stake, declaring streaming wars won; stock gapping +3.37% premarket",
+          "smart_money_signals": "Insider cluster buy (6 buyers, 16 buys/30d), WSB 5.0x normal chatter (35 mentions, rank #24), Stocktwits 100% bullish on 30 msgs, 76% analyst buy",
+          "rationale": "Rare stack: high-profile activist catalyst + true insider cluster buy + max-bullish social sentiment all aligned on a gap up."
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "Gapping +3.45% on AI infrastructure tailwind (AMD server outlook read-through); no earnings/negative company-specific news that stops the move",
+          "smart_money_signals": "House buy (Rulli), WSB chatter 3.5x normal, Stocktwits 81% bullish, 82% analyst buy \u2014 clean 6/10 alt-data",
+          "rationale": "Broad-based bullish stack with no insider selling contradiction; solid AI momentum trade with clean risk/reward at +2/-1."
+        },
+        {
+          "symbol": "DIS",
+          "confidence": "medium",
+          "catalyst": "Iger Lakers headline + broad tape lift; +1.61% gap with clean price action",
+          "smart_money_signals": "Insider cluster buy (3 buyers, 7 buys/30d), Stocktwits 100% bullish, 89% analyst buy",
+          "rationale": "Genuine insider cluster buy plus perfect retail sentiment provides asymmetric setup on a low-volatility name where -1% stop is unlikely to be noise-tripped."
+        }
+      ],
+      "market_take": "Risk-on tape post cooler July inflation, with AI/tech leadership intact despite Burry caution headlines.",
+      "skipped_movers": [
+        "INTC: only 34.5% analyst buy and mixed insider activity dilute the CEO-buy catalyst",
+        "PLTR: heavy insider selling (4 sells) + Burry warning overhang",
+        "MSFT: 3 insider sells offset House cluster buy \u2014 mixed signal",
+        "GS: 6 insider sells, weak 47% analyst buy",
+        "META: 12 insider sells overwhelms House cluster buy",
+        "TSLA: only 49% analyst buy, Stocktwits 61%, no clean catalyst",
+        "SBUX/MS: insider selling, no catalyst",
+        "ADBE: Stocktwits 41% bullish, 39% analyst buy \u2014 sentiment contradicts insider buys",
+        "AMD: alt-data thin (1/10), momentum already extended"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Rare stack: high-profile activist catalyst + true insider cluster buy + max-bullish social sentiment all aligned on a gap up.",
+        "symbol": "NFLX",
+        "qty": 382,
+        "entry_price_est": 77.38,
+        "stop_price": 76.61,
+        "take_price": 78.93,
+        "order_id": "ab25947f-724c-44f4-b2f3-49aa74afac0e"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Broad-based bullish stack with no insider selling contradiction; solid AI momentum trade with clean risk/reward at +2/-1.",
+        "symbol": "ORCL",
+        "qty": 187,
+        "entry_price_est": 157.845,
+        "stop_price": 156.27,
+        "take_price": 161.0,
+        "order_id": "c1f2bdb9-d985-4ecd-af23-36c77dbdcef5"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Genuine insider cluster buy plus perfect retail sentiment provides asymmetric setup on a low-volatility name where -1% stop is unlikely to be noise-tripped.",
+        "symbol": "DIS",
+        "qty": 282,
+        "entry_price_est": 104.685,
+        "stop_price": 103.64,
+        "take_price": 106.78,
+        "order_id": "d13724db-2aac-4cee-b9cb-c9eeaff7eddb"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-13",
+    "ts": "2026-08-13T14:25:44.636900Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
