@@ -18507,5 +18507,86 @@
     "ts": "2026-08-14T15:12:00.397226Z",
     "status": "imports_ok",
     "note": "src.* all importable"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-14",
+    "ts": "2026-08-14T15:55:52.569977Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=31816883871"
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-08-14",
+    "ts": "2026-08-14T15:56:13.486003Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-14",
+    "ts": "2026-08-14T15:57:04.698402Z",
+    "equity_start": 90030.3,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMD",
+          "confidence": "high",
+          "catalyst": "Up +2.12% on the day (relative strength vs weak semis tape where AVGO -5.8%, INTC -2.5%) on news of a record $5B bond sale to fund AI data-center expansion",
+          "smart_money_signals": "Stocktwits 83% bullish on 30 msgs, WSB chatter 2.57x normal (rank #16), analyst 82.8% bullish (16SB/32B)",
+          "rationale": "Only major chip name green today with a concrete AI-expansion catalyst and stacked bullish sentiment \u2014 best relative-strength setup on the board"
+        },
+        {
+          "symbol": "GE",
+          "confidence": "medium",
+          "catalyst": "Up +1.00% with steady bid, defensive strength while broad tape is soft",
+          "smart_money_signals": "Stocktwits 100% bullish on 30 msgs, analyst 87.5% bullish (9SB/19B/only 1S)",
+          "rationale": "Clean relative-strength name with unanimous retail sentiment and top-tier analyst conviction, no contradicting news"
+        }
+      ],
+      "market_take": "Risk-off tape with semis leading down (AVGO -5.8%) on Burry AI-short headlines; energy and select AI names showing relative strength.",
+      "skipped_movers": [
+        "AVGO: -5.8% gap down on competitive/valuation concerns \u2014 catching falling knife",
+        "INTC: -2.55% with no catalyst, weak analyst support (34.5% bullish)",
+        "ORCL: -2% with Burry doubling down on short \u2014 clear negative catalyst",
+        "MS: heavy insider selling (5 sells, 0 buys) \u2014 skip",
+        "GS: heavy insider selling (6 sells, 0 buys) \u2014 skip",
+        "ADBE: stocktwits 18% bullish (bearish), weak analyst 39% \u2014 skip despite insider cluster",
+        "TSLA: red day, mixed signals, no clean catalyst",
+        "CVX/XOM: energy strength but weak alt-data conviction, insider selling at CVX"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Only major chip name green today with a concrete AI-expansion catalyst and stacked bullish sentiment \u2014 best relative-strength setup on the board",
+        "symbol": "AMD",
+        "qty": 213,
+        "entry_price_est": 502.475,
+        "stop_price": 497.45,
+        "take_price": 512.52,
+        "order_id": "6d32cfa0-4837-46e9-bc73-5c330cb647fe"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean relative-strength name with unanimous retail sentiment and top-tier analyst conviction, no contradicting news",
+        "symbol": "GE",
+        "qty": 292,
+        "entry_price_est": 365.525,
+        "stop_price": 361.87,
+        "take_price": 372.84,
+        "order_id": "3ade29b7-09c5-48f6-a9a3-fb0f9755014d"
+      }
+    ]
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-08-14",
+    "ts": "2026-08-14T15:57:04.862410Z",
+    "status": "ok",
+    "note": "2 orders submitted"
   }
 ]

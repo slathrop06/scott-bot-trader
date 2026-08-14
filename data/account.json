@@ -1,37 +1,19 @@
 {
-  "ts": "2026-08-14T15:21:23.008831Z",
-  "equity": 90642.41,
+  "ts": "2026-08-14T15:57:04.858862Z",
+  "equity": 90052.7,
   "last_equity": 90689.18,
-  "cash": 1428.38,
-  "buying_power": 255512.8,
-  "all_time_return_pct": -9.3576,
+  "cash": 60204.7,
+  "buying_power": 111964.02,
+  "all_time_return_pct": -9.9473,
   "positions": [
-    {
-      "symbol": "AMD",
-      "qty": 59,
-      "avg_entry_price": 501.0,
-      "current_price": 503.11,
-      "market_value": 29683.49,
-      "unrealized_pl": 124.49,
-      "unrealized_pl_pct": 0.421
-    },
-    {
-      "symbol": "AVGO",
-      "qty": 75,
-      "avg_entry_price": 397.64,
-      "current_price": 394.49,
-      "market_value": 29586.75,
-      "unrealized_pl": -236.25,
-      "unrealized_pl_pct": -0.792
-    },
     {
       "symbol": "DIS",
       "qty": 280,
       "avg_entry_price": 106.71,
-      "current_price": 106.94,
-      "market_value": 29943.2,
-      "unrealized_pl": 64.4,
-      "unrealized_pl_pct": 0.216
+      "current_price": 106.6,
+      "market_value": 29848.0,
+      "unrealized_pl": -30.8,
+      "unrealized_pl_pct": -0.103
     }
   ]
 }
