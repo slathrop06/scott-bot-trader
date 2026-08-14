@@ -18595,5 +18595,105 @@
     "ts": "2026-08-14T16:59:04.491024Z",
     "status": "intraday_workflow_started",
     "note": "event=schedule run_id=31821867182"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-14",
+    "ts": "2026-08-14T17:58:45.265482Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=31826485629"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-08-14",
+    "ts": "2026-08-14T17:59:07.162400Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-14",
+    "ts": "2026-08-14T18:00:01.465732Z",
+    "equity_start": 91945.91,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "NFLX",
+          "confidence": "medium",
+          "catalyst": "CNBC Final Trades pick by Malcolm Ethridge; only mildly down (-0.9%) on a weak tape, showing relative resilience",
+          "smart_money_signals": "Insider cluster buy (6 buyers, 16 buys/30d), Stocktwits 90% bullish on 30 msgs, 76% analyst buy, WSB rank #20",
+          "rationale": "Best stacked setup: cluster insider buying + high analyst conviction + bullish social + fresh media catalyst with limited downside on the day."
+        },
+        {
+          "symbol": "CVX",
+          "confidence": "medium",
+          "catalyst": "Up +1.48% on a soft market day (relative strength) with crude climbing per morning tape",
+          "smart_money_signals": "84% analyst buy (8SB/18B), Stocktwits 61% bullish",
+          "rationale": "Rare green name showing relative strength vs weak SPY with supportive crude backdrop and strong analyst support."
+        },
+        {
+          "symbol": "AVGO",
+          "confidence": "low",
+          "catalyst": "Down -7% on BofA financing concern \u2014 potential oversold bounce with strong sentiment support",
+          "smart_money_signals": "WSB chatter 12.14x normal (rank #11), Stocktwits 100% bullish on 30 msgs, 91% analyst buy, House buy by David Taylor",
+          "rationale": "Extreme alt-data stack (highest score of the day) into a sharp selloff sets up a mean-reversion bounce with tight 1% stop."
+        }
+      ],
+      "market_take": "Weak large-cap tape with AI-financing overhang pressuring semis/software; energy and defensives showing relative strength.",
+      "skipped_movers": [
+        "ORCL: Burry short thesis + no bullish catalyst \u2014 skip",
+        "INTC: weak analyst support (34%) and mixed insiders \u2014 skip",
+        "SHOP: no catalyst, just drifting down \u2014 skip",
+        "CRM: mixed insiders, only 50% Stocktwits \u2014 skip",
+        "ADBE: 20% bullish Stocktwits contradicts insider cluster \u2014 skip",
+        "XOM: no catalyst, only 50% analyst buy \u2014 skip",
+        "MS: heavy insider selling \u2014 skip",
+        "HD: no catalyst, neutral sentiment \u2014 skip",
+        "NKE: heavy insider selling \u2014 skip"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Best stacked setup: cluster insider buying + high analyst conviction + bullish social + fresh media catalyst with limited downside on the day.",
+        "symbol": "NFLX",
+        "qty": 316,
+        "entry_price_est": 77.905,
+        "stop_price": 77.13,
+        "take_price": 79.46,
+        "order_id": "ee574b0c-b7a7-4a38-917b-01fdd7dd8694"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Rare green name showing relative strength vs weak SPY with supportive crude backdrop and strong analyst support.",
+        "symbol": "CVX",
+        "qty": 122,
+        "entry_price_est": 200.665,
+        "stop_price": 198.66,
+        "take_price": 204.68,
+        "order_id": "8ab73a35-1e2d-4162-a020-dd72d9bd788b"
+      },
+      {
+        "status": "submitted",
+        "confidence": "low",
+        "rationale": "Extreme alt-data stack (highest score of the day) into a sharp selloff sets up a mean-reversion bounce with tight 1% stop.",
+        "symbol": "AVGO",
+        "qty": 62,
+        "entry_price_est": 392.25,
+        "stop_price": 388.33,
+        "take_price": 400.1,
+        "order_id": "64617c90-685a-418d-b62a-732b9665b21c"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-08-14",
+    "ts": "2026-08-14T18:00:01.755751Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
