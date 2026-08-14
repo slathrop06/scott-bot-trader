@@ -18702,5 +18702,77 @@
     "ts": "2026-08-14T19:06:06.602611Z",
     "status": "intraday_workflow_started",
     "note": "event=schedule run_id=31831731446"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-14",
+    "ts": "2026-08-14T19:39:42.521019Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=31834261017"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-08-14",
+    "ts": "2026-08-14T19:40:02.907233Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-08-14",
+    "ts": "2026-08-14T19:40:03.468188Z",
+    "equity_end": 93868.3,
+    "daily_pnl_usd": 3179.12,
+    "daily_pct": 3.5055,
+    "flatten": {
+      "closed": [
+        "AMD",
+        "AVGO",
+        "CVX",
+        "DIS",
+        "GE",
+        "NFLX"
+      ],
+      "raw_response_count": 6
+    }
+  },
+  {
+    "type": "trade",
+    "date": "2026-08-14",
+    "ts": "2026-08-14T19:40:03.517584Z",
+    "symbol": "AVGO",
+    "qty": 75,
+    "entry_price": 397.64,
+    "entry_ts": "2026-08-14T14:18:46.901292Z",
+    "entry_order_id": "ba0d7c4d-fee5-4a62-8065-230537aa1b56",
+    "exit_price": 393.0177,
+    "exit_ts": "2026-08-14T15:25:56.158347Z",
+    "exit_order_id": "7fd2c825-4c7a-4d4a-b990-e6d4ab2ffc36",
+    "exit_reason": "bracket",
+    "pnl_usd": -346.67,
+    "pnl_pct": -1.1624
+  },
+  {
+    "type": "trade",
+    "date": "2026-08-14",
+    "ts": "2026-08-14T19:40:03.517584Z",
+    "symbol": "AMD",
+    "qty": 59,
+    "entry_price": 501.0,
+    "entry_ts": "2026-08-14T14:18:46.221504Z",
+    "entry_order_id": "854e5c33-395f-44de-963e-649973573416",
+    "exit_price": 496.61,
+    "exit_ts": "2026-08-14T15:48:43.200793Z",
+    "exit_order_id": "cd6ee05a-7590-49f4-8000-24a1f33db26d",
+    "exit_reason": "bracket",
+    "pnl_usd": -259.01,
+    "pnl_pct": -0.8762
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-08-14",
+    "ts": "2026-08-14T19:40:03.575730Z",
+    "status": "ok",
+    "note": "closed 6 positions, 2 round-trips"
   }
 ]
