@@ -18374,5 +18374,117 @@
     "ts": "2026-08-13T21:57:35.357251Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=31747919524"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-14",
+    "ts": "2026-08-14T14:17:36.665573Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=31808778937"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-14",
+    "ts": "2026-08-14T14:17:54.949630Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-14",
+    "ts": "2026-08-14T14:17:56.844958Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-14",
+    "ts": "2026-08-14T14:17:58.391745Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-14",
+    "ts": "2026-08-14T14:18:45.397478Z",
+    "equity_start": 90689.18,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMD",
+          "confidence": "high",
+          "catalyst": "Gapping +2.99% premarket on $5B bond sale to accelerate AI server/data-center expansion \u2014 concrete growth-funding news",
+          "smart_money_signals": "Stocktwits 93% bullish on 30 msgs, 83% analyst buy (16SB/32B), WSB rank #20 with 1.9x chatter",
+          "rationale": "Clear catalyst-driven gap up with unanimous sentiment stack across retail, analysts, and social \u2014 strongest setup on the board"
+        },
+        {
+          "symbol": "DIS",
+          "confidence": "medium",
+          "catalyst": "Relative strength +1.74% with no news \u2014 quiet accumulation move",
+          "smart_money_signals": "Insider cluster buy (3 buyers, 7 buys/30d), Stocktwits 100% bullish on 30 msgs, 89% analyst buy (11SB/22B)",
+          "rationale": "Pure smart-money stack \u2014 insider cluster + perfect retail sentiment + strong analyst conviction with price confirming"
+        },
+        {
+          "symbol": "AVGO",
+          "confidence": "low",
+          "catalyst": "Down 4.96% premarket \u2014 dip-buy against a 91% analyst-bullish name; risk is catching a falling knife",
+          "smart_money_signals": "House buy by Taylor, WSB 5x chatter (rank #26), Stocktwits 71% bullish, 91% analyst buy (17SB/34B)",
+          "rationale": "Alt-data is strong but price is contradicting hard \u2014 passing on this one"
+        }
+      ],
+      "market_take": "Mixed tape with AI/semi bifurcation (AMD up on financing, AVGO/ORCL down on Burry shorts); rotation into defensives like DIS and CVX",
+      "skipped_movers": [
+        "AVGO: -4.96% gap down contradicts bullish alt-data \u2014 no knife-catching",
+        "ORCL: Burry shorting AI names is an active bearish catalyst despite alt-data support",
+        "TSLA: Stocktwits only 50% bullish, analysts 49% bullish, alt-data score 0",
+        "META: Heavy insider selling (12 sells, 5 insiders) + negative AGI-moat article",
+        "ADBE: Down 2.45%, analyst bullish only 39%, mixed insider activity",
+        "INTC: Analyst bullish only 34.5%, price down",
+        "CRM: Down 2.40% on SaaS sector pressure, no offsetting catalyst"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Clear catalyst-driven gap up with unanimous sentiment stack across retail, analysts, and social \u2014 strongest setup on the board",
+        "symbol": "AMD",
+        "qty": 59,
+        "entry_price_est": 501.725,
+        "stop_price": 496.71,
+        "take_price": 511.76,
+        "order_id": "854e5c33-395f-44de-963e-649973573416"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Pure smart-money stack \u2014 insider cluster + perfect retail sentiment + strong analyst conviction with price confirming",
+        "symbol": "DIS",
+        "qty": 280,
+        "entry_price_est": 106.69999999999999,
+        "stop_price": 105.63,
+        "take_price": 108.83,
+        "order_id": "5174c0e9-276e-4a3d-b98e-3485ed43fe41"
+      },
+      {
+        "status": "submitted",
+        "confidence": "low",
+        "rationale": "Alt-data is strong but price is contradicting hard \u2014 passing on this one",
+        "symbol": "AVGO",
+        "qty": 75,
+        "entry_price_est": 396.99,
+        "stop_price": 393.02,
+        "take_price": 404.93,
+        "order_id": "ba0d7c4d-fee5-4a62-8065-230537aa1b56"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-14",
+    "ts": "2026-08-14T14:18:45.430964Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
