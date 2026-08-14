@@ -1,64 +1,64 @@
 {
-  "ts": "2026-08-14T18:26:09.780404Z",
-  "equity": 92528.04,
+  "ts": "2026-08-14T19:28:42.013436Z",
+  "equity": 93741.77,
   "last_equity": 90689.18,
   "cash": -225547.7,
   "buying_power": 0.0,
-  "all_time_return_pct": -7.472,
+  "all_time_return_pct": -6.2582,
   "positions": [
     {
       "symbol": "AMD",
       "qty": 213,
       "avg_entry_price": 498.2933,
-      "current_price": 507.6335,
-      "market_value": 108125.94,
-      "unrealized_pl": 1989.46,
-      "unrealized_pl_pct": 1.874
+      "current_price": 509.08,
+      "market_value": 108434.04,
+      "unrealized_pl": 2297.56,
+      "unrealized_pl_pct": 2.165
     },
     {
       "symbol": "AVGO",
       "qty": 62,
       "avg_entry_price": 389.6294,
-      "current_price": 389.78,
-      "market_value": 24166.36,
-      "unrealized_pl": 9.34,
-      "unrealized_pl_pct": 0.039
+      "current_price": 392.325,
+      "market_value": 24324.15,
+      "unrealized_pl": 167.13,
+      "unrealized_pl_pct": 0.692
     },
     {
       "symbol": "CVX",
       "qty": 122,
       "avg_entry_price": 200.69,
-      "current_price": 200.64,
-      "market_value": 24478.08,
-      "unrealized_pl": -6.1,
-      "unrealized_pl_pct": -0.025
+      "current_price": 200.41,
+      "market_value": 24450.02,
+      "unrealized_pl": -34.16,
+      "unrealized_pl_pct": -0.14
     },
     {
       "symbol": "DIS",
       "qty": 280,
       "avg_entry_price": 106.71,
-      "current_price": 106.52,
-      "market_value": 29825.6,
-      "unrealized_pl": -53.2,
-      "unrealized_pl_pct": -0.178
+      "current_price": 106.99,
+      "market_value": 29957.2,
+      "unrealized_pl": 78.4,
+      "unrealized_pl_pct": 0.262
     },
     {
       "symbol": "GE",
       "qty": 292,
       "avg_entry_price": 364.23,
-      "current_price": 365.965,
-      "market_value": 106861.78,
-      "unrealized_pl": 506.62,
-      "unrealized_pl_pct": 0.476
+      "current_price": 368.02,
+      "market_value": 107461.84,
+      "unrealized_pl": 1106.68,
+      "unrealized_pl_pct": 1.041
     },
     {
       "symbol": "NFLX",
       "qty": 316,
       "avg_entry_price": 77.91,
-      "current_price": 77.905,
-      "market_value": 24617.98,
-      "unrealized_pl": -1.58,
-      "unrealized_pl_pct": -0.006
+      "current_price": 78.045,
+      "market_value": 24662.22,
+      "unrealized_pl": 42.66,
+      "unrealized_pl_pct": 0.173
     }
   ]
 }
