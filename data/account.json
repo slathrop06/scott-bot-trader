@@ -1,64 +1,64 @@
 {
-  "ts": "2026-08-17T15:49:25.465123Z",
-  "equity": 93477.31,
+  "ts": "2026-08-17T16:24:41.861527Z",
+  "equity": 93793.81,
   "last_equity": 93843.76,
   "cash": -258749.32,
   "buying_power": 0.0,
-  "all_time_return_pct": -6.5227,
+  "all_time_return_pct": -6.2062,
   "positions": [
     {
       "symbol": "BA",
       "qty": 136,
       "avg_entry_price": 228.6484,
-      "current_price": 227.46,
-      "market_value": 30934.56,
-      "unrealized_pl": -161.62,
-      "unrealized_pl_pct": -0.52
+      "current_price": 227.76,
+      "market_value": 30975.36,
+      "unrealized_pl": -120.82,
+      "unrealized_pl_pct": -0.389
     },
     {
       "symbol": "CAT",
       "qty": 98,
       "avg_entry_price": 879.64,
-      "current_price": 879.98,
-      "market_value": 86238.04,
-      "unrealized_pl": 33.32,
-      "unrealized_pl_pct": 0.039
+      "current_price": 883.01,
+      "market_value": 86534.98,
+      "unrealized_pl": 330.26,
+      "unrealized_pl_pct": 0.383
     },
     {
       "symbol": "INTC",
       "qty": 824,
       "avg_entry_price": 105.1345,
-      "current_price": 104.635,
-      "market_value": 86219.24,
-      "unrealized_pl": -411.6,
-      "unrealized_pl_pct": -0.475
+      "current_price": 104.905,
+      "market_value": 86441.72,
+      "unrealized_pl": -189.12,
+      "unrealized_pl_pct": -0.218
     },
     {
       "symbol": "MSFT",
       "qty": 63,
       "avg_entry_price": 486.4224,
-      "current_price": 484.815,
-      "market_value": 30543.35,
-      "unrealized_pl": -101.27,
-      "unrealized_pl_pct": -0.33
+      "current_price": 482.765,
+      "market_value": 30414.19,
+      "unrealized_pl": -230.42,
+      "unrealized_pl_pct": -0.752
     },
     {
       "symbol": "NFLX",
       "qty": 402,
       "avg_entry_price": 76.998,
-      "current_price": 76.635,
-      "market_value": 30807.27,
-      "unrealized_pl": -145.92,
-      "unrealized_pl_pct": -0.471
+      "current_price": 76.5698,
+      "market_value": 30781.06,
+      "unrealized_pl": -172.13,
+      "unrealized_pl_pct": -0.556
     },
     {
       "symbol": "ORCL",
       "qty": 589,
       "avg_entry_price": 147.8159,
-      "current_price": 148.53,
-      "market_value": 87484.17,
-      "unrealized_pl": 420.63,
-      "unrealized_pl_pct": 0.483
+      "current_price": 148.38,
+      "market_value": 87395.82,
+      "unrealized_pl": 332.28,
+      "unrealized_pl_pct": 0.382
     }
   ]
 }
