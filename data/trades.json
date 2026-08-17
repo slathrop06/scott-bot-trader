@@ -18816,5 +18816,121 @@
     "ts": "2026-08-14T21:58:58.087757Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=31844744034"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-17",
+    "ts": "2026-08-17T13:44:06.033366Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=32036456351"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-17",
+    "ts": "2026-08-17T13:44:24.570481Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-17",
+    "ts": "2026-08-17T13:44:25.737780Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-17",
+    "ts": "2026-08-17T13:44:26.760044Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-17",
+    "ts": "2026-08-17T13:45:30.659124Z",
+    "equity_start": 93843.76,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "NFLX",
+          "confidence": "high",
+          "catalyst": "Modest premarket dip (-1.6%) offers entry on a name with the strongest alt-data stack; no negative news",
+          "smart_money_signals": "Insider cluster buy (6 buyers, 16 buys/30d), WSB 2.12x normal at rank #15, Stocktwits 93% bullish on 30 msgs, 76% analyst buy",
+          "rationale": "Best signal score (8/10) with insider cluster buy + retail chatter + analyst backing \u2014 buying the dip on the cleanest setup"
+        },
+        {
+          "symbol": "MSFT",
+          "confidence": "medium",
+          "catalyst": "Premarket dip (-1.8%) on broad AI-bubble headlines creates entry; no company-specific bad news",
+          "smart_money_signals": "House cluster buy (3 buys incl. Taylor & Rulli), WSB chatter 3.0x normal at rank #14, 93% analyst buy (23SB/41B)",
+          "rationale": "Cluster congressional buying + top-tier analyst conviction + WSB spike on a mega-cap dip is a favorable risk/reward"
+        },
+        {
+          "symbol": "BA",
+          "confidence": "medium",
+          "catalyst": "Modest premarket dip (-1.4%) with no negative news; clean tape",
+          "smart_money_signals": "Stocktwits 100% bullish on 30 msgs, 84% analyst buy (13SB/18B/6H, zero sells)",
+          "rationale": "Unanimous retail sentiment plus strong analyst conviction with no insider selling \u2014 solid B-tier setup"
+        }
+      ],
+      "market_take": "Broad risk-off premarket with AI-bubble narrative pressuring tech; dips on high-conviction names look buyable",
+      "skipped_movers": [
+        "ORCL: down on AI-bubble headlines, only 4/10 signal",
+        "SHOP: no catalyst, thin signals",
+        "ADBE: heavy insider selling + weak sentiment",
+        "CRM: mixed insider activity, no catalyst",
+        "MCD: no catalyst, defensive fade",
+        "META: 12 insider sells in 30d is a red flag",
+        "MS: heavy insider selling despite Viking 13F pop",
+        "NKE: 5 insider sells, weak analyst mix",
+        "CAT: no signals",
+        "GS: heavy insider selling",
+        "DIS: House selling"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best signal score (8/10) with insider cluster buy + retail chatter + analyst backing \u2014 buying the dip on the cleanest setup",
+        "symbol": "NFLX",
+        "qty": 402,
+        "entry_price_est": 77.0,
+        "stop_price": 76.23,
+        "take_price": 78.54,
+        "order_id": "c9d99857-d862-4578-bdc7-52affc0b42dc"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Cluster congressional buying + top-tier analyst conviction + WSB spike on a mega-cap dip is a favorable risk/reward",
+        "symbol": "MSFT",
+        "qty": 63,
+        "entry_price_est": 486.385,
+        "stop_price": 481.52,
+        "take_price": 496.11,
+        "order_id": "83b3c949-fd91-476f-9661-335e8360336e"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Unanimous retail sentiment plus strong analyst conviction with no insider selling \u2014 solid B-tier setup",
+        "symbol": "BA",
+        "qty": 136,
+        "entry_price_est": 226.595,
+        "stop_price": 224.33,
+        "take_price": 231.13,
+        "order_id": "d27f156b-cc7a-4586-bc5b-777de86e039f"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-17",
+    "ts": "2026-08-17T13:45:30.790370Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
