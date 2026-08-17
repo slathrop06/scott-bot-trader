@@ -19109,5 +19109,104 @@
     "ts": "2026-08-17T16:32:00.070975Z",
     "status": "intraday_workflow_started",
     "note": "event=schedule run_id=32046029055"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-17",
+    "ts": "2026-08-17T17:00:44.280473Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=32048353421"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-08-17",
+    "ts": "2026-08-17T17:01:05.310770Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-17",
+    "ts": "2026-08-17T17:02:05.053027Z",
+    "equity_start": 93335.85,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "GOOGL",
+          "confidence": "high",
+          "catalyst": "Modest -1.28% pullback in a broad tech selloff offers entry on a name with the strongest stacked signals; relative strength vs peers (MSFT -3.2%, META -3.85%).",
+          "smart_money_signals": "Insider cluster buy (7 buyers), House cluster buy (3 buys: Rulli + Taylor), WSB 18.5x normal (rank #13), Stocktwits 79% bullish, 88.6% analyst buy \u2014 alt-data score 11/10.",
+          "rationale": "Rare full-stack alignment of insider + congress + analyst + retail sentiment on a mega-cap that's holding up better than the group."
+        },
+        {
+          "symbol": "NFLX",
+          "confidence": "medium",
+          "catalyst": "-2.72% dip on Ackman/Netflix guidance concerns, but selloff looks overdone given long-term outperformance narrative.",
+          "smart_money_signals": "Insider cluster buy (6 buyers, 16 buys 30d), WSB 2.0x normal, 75.9% analyst buy, Stocktwits 56% bullish.",
+          "rationale": "Insider cluster buy is the strongest smart-money tell available outside GOOGL; buying weakness with insiders."
+        },
+        {
+          "symbol": "MSFT",
+          "confidence": "medium",
+          "catalyst": "-3.2% pullback in mega-cap tech with no company-specific negative news \u2014 sympathy selloff.",
+          "smart_money_signals": "House cluster buy (3 buys by Rulli + Taylor), WSB 16.0x normal, 92.8% analyst buy.",
+          "rationale": "Congressional cluster buy plus near-unanimous analyst conviction on a dip with no fundamental catalyst against it."
+        }
+      ],
+      "market_take": "Broad mega-cap tech selloff on Ackman/Loeb 13F headlines and competitor guidance jitters \u2014 creating dip-buy setups in names with strong smart-money backing.",
+      "skipped_movers": [
+        "ADBE: heavy insider selling, negative alt-data score, no catalyst",
+        "NKE: 5 insider sells, 52-week low on competitor guidance warning \u2014 falling knife",
+        "META: 12 insider sells and Loeb exit \u2014 smart money leaving",
+        "SHOP: no catalyst, weak signal stack",
+        "CRM: neutral signals, no catalyst",
+        "MCD: zero alt-data signal",
+        "DIS: House selling, no catalyst",
+        "AMZN: insider + House selling despite bullish retail"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Rare full-stack alignment of insider + congress + analyst + retail sentiment on a mega-cap that's holding up better than the group.",
+        "symbol": "GOOGL",
+        "qty": 23,
+        "entry_price_est": 342.79999999999995,
+        "stop_price": 339.37,
+        "take_price": 349.66,
+        "order_id": "1e6de4de-469f-47cc-8658-b896e06bb969"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Insider cluster buy is the strongest smart-money tell available outside GOOGL; buying weakness with insiders.",
+        "symbol": "NFLX",
+        "qty": 104,
+        "entry_price_est": 76.19,
+        "stop_price": 75.43,
+        "take_price": 77.71,
+        "order_id": "e90a3739-bbdc-46ea-9889-5591f9abab1a"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Congressional cluster buy plus near-unanimous analyst conviction on a dip with no fundamental catalyst against it.",
+        "symbol": "MSFT",
+        "qty": 16,
+        "entry_price_est": 479.27,
+        "stop_price": 474.48,
+        "take_price": 488.86,
+        "order_id": "647a7667-366c-4132-9636-514f56490304"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-08-17",
+    "ts": "2026-08-17T17:02:05.191478Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]

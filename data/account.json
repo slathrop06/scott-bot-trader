@@ -1,55 +1,46 @@
 {
-  "ts": "2026-08-17T16:55:03.270871Z",
-  "equity": 93340.4,
+  "ts": "2026-08-17T17:02:05.186571Z",
+  "equity": 93345.14,
   "last_equity": 93843.76,
-  "cash": -228417.97,
-  "buying_power": 0.0,
-  "all_time_return_pct": -6.6596,
+  "cash": -197773.51,
+  "buying_power": 551.39,
+  "all_time_return_pct": -6.6549,
   "positions": [
     {
       "symbol": "BA",
       "qty": 136,
       "avg_entry_price": 228.6484,
-      "current_price": 227.385,
-      "market_value": 30924.36,
-      "unrealized_pl": -171.82,
-      "unrealized_pl_pct": -0.553
+      "current_price": 227.27,
+      "market_value": 30908.72,
+      "unrealized_pl": -187.46,
+      "unrealized_pl_pct": -0.603
     },
     {
       "symbol": "CAT",
       "qty": 98,
       "avg_entry_price": 879.64,
-      "current_price": 884.085,
-      "market_value": 86640.33,
-      "unrealized_pl": 435.61,
-      "unrealized_pl_pct": 0.505
+      "current_price": 884.91,
+      "market_value": 86721.18,
+      "unrealized_pl": 516.46,
+      "unrealized_pl_pct": 0.599
     },
     {
       "symbol": "INTC",
       "qty": 824,
       "avg_entry_price": 105.1345,
-      "current_price": 104.93,
-      "market_value": 86462.32,
-      "unrealized_pl": -168.52,
-      "unrealized_pl_pct": -0.195
-    },
-    {
-      "symbol": "NFLX",
-      "qty": 402,
-      "avg_entry_price": 76.998,
-      "current_price": 76.2901,
-      "market_value": 30668.62,
-      "unrealized_pl": -284.57,
-      "unrealized_pl_pct": -0.919
+      "current_price": 105.075,
+      "market_value": 86581.8,
+      "unrealized_pl": -49.04,
+      "unrealized_pl_pct": -0.057
     },
     {
       "symbol": "ORCL",
       "qty": 589,
       "avg_entry_price": 147.8159,
-      "current_price": 147.8145,
-      "market_value": 87062.74,
-      "unrealized_pl": -0.8,
-      "unrealized_pl_pct": -0.001
+      "current_price": 147.55,
+      "market_value": 86906.95,
+      "unrealized_pl": -156.59,
+      "unrealized_pl_pct": -0.18
     }
   ]
 }
