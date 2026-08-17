@@ -1,46 +1,64 @@
 {
-  "ts": "2026-08-17T17:02:05.186571Z",
-  "equity": 93345.14,
+  "ts": "2026-08-17T17:24:51.570092Z",
+  "equity": 92288.83,
   "last_equity": 93843.76,
-  "cash": -197773.51,
-  "buying_power": 551.39,
-  "all_time_return_pct": -6.6549,
+  "cash": -135498.59,
+  "buying_power": 95810.41,
+  "all_time_return_pct": -7.7112,
   "positions": [
     {
       "symbol": "BA",
       "qty": 136,
       "avg_entry_price": 228.6484,
-      "current_price": 227.27,
-      "market_value": 30908.72,
-      "unrealized_pl": -187.46,
-      "unrealized_pl_pct": -0.603
+      "current_price": 227.25,
+      "market_value": 30906.0,
+      "unrealized_pl": -190.18,
+      "unrealized_pl_pct": -0.612
     },
     {
       "symbol": "CAT",
       "qty": 98,
       "avg_entry_price": 879.64,
-      "current_price": 884.91,
-      "market_value": 86721.18,
-      "unrealized_pl": 516.46,
-      "unrealized_pl_pct": 0.599
+      "current_price": 884.73,
+      "market_value": 86703.54,
+      "unrealized_pl": 498.82,
+      "unrealized_pl_pct": 0.579
     },
     {
-      "symbol": "INTC",
-      "qty": 824,
-      "avg_entry_price": 105.1345,
-      "current_price": 105.075,
-      "market_value": 86581.8,
-      "unrealized_pl": -49.04,
-      "unrealized_pl_pct": -0.057
+      "symbol": "GOOGL",
+      "qty": 23,
+      "avg_entry_price": 342.853,
+      "current_price": 343.53,
+      "market_value": 7901.19,
+      "unrealized_pl": 15.57,
+      "unrealized_pl_pct": 0.197
+    },
+    {
+      "symbol": "MSFT",
+      "qty": 16,
+      "avg_entry_price": 479.7862,
+      "current_price": 479.687,
+      "market_value": 7674.99,
+      "unrealized_pl": -1.59,
+      "unrealized_pl_pct": -0.021
+    },
+    {
+      "symbol": "NFLX",
+      "qty": 104,
+      "avg_entry_price": 76.2,
+      "current_price": 76.225,
+      "market_value": 7927.4,
+      "unrealized_pl": 2.6,
+      "unrealized_pl_pct": 0.033
     },
     {
       "symbol": "ORCL",
       "qty": 589,
       "avg_entry_price": 147.8159,
-      "current_price": 147.55,
-      "market_value": 86906.95,
-      "unrealized_pl": -156.59,
-      "unrealized_pl_pct": -0.18
+      "current_price": 147.155,
+      "market_value": 86674.29,
+      "unrealized_pl": -389.24,
+      "unrealized_pl_pct": -0.447
     }
   ]
 }
