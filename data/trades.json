@@ -18974,5 +18974,26 @@
     "ts": "2026-08-17T14:49:14.932974Z",
     "status": "imports_ok",
     "note": "src.* all importable"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-17",
+    "ts": "2026-08-17T15:16:21.900087Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=32041795975"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-17",
+    "ts": "2026-08-17T15:16:37.836659Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-17",
+    "ts": "2026-08-17T15:16:38.898909Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
   }
 ]
