@@ -1,37 +1,37 @@
 {
-  "ts": "2026-08-17T15:22:37.218412Z",
-  "equity": 93370.93,
+  "ts": "2026-08-17T15:29:27.411480Z",
+  "equity": 93381.79,
   "last_equity": 93843.76,
   "cash": 1149.78,
-  "buying_power": 262818.34,
-  "all_time_return_pct": -6.6291,
+  "buying_power": 2926.16,
+  "all_time_return_pct": -6.6182,
   "positions": [
     {
       "symbol": "BA",
       "qty": 136,
       "avg_entry_price": 228.6484,
-      "current_price": 227.56,
-      "market_value": 30948.16,
-      "unrealized_pl": -148.02,
-      "unrealized_pl_pct": -0.476
+      "current_price": 227.3,
+      "market_value": 30912.8,
+      "unrealized_pl": -183.38,
+      "unrealized_pl_pct": -0.59
     },
     {
       "symbol": "MSFT",
       "qty": 63,
       "avg_entry_price": 486.4224,
-      "current_price": 484.57,
-      "market_value": 30527.91,
-      "unrealized_pl": -116.7,
-      "unrealized_pl_pct": -0.381
+      "current_price": 484.795,
+      "market_value": 30542.08,
+      "unrealized_pl": -102.53,
+      "unrealized_pl_pct": -0.335
     },
     {
       "symbol": "NFLX",
       "qty": 402,
       "avg_entry_price": 76.998,
-      "current_price": 76.4803,
-      "market_value": 30745.08,
-      "unrealized_pl": -208.11,
-      "unrealized_pl_pct": -0.672
+      "current_price": 76.56,
+      "market_value": 30777.12,
+      "unrealized_pl": -176.07,
+      "unrealized_pl_pct": -0.569
     }
   ]
 }

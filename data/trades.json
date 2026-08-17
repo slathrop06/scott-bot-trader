@@ -18995,5 +18995,105 @@
     "ts": "2026-08-17T15:16:38.898909Z",
     "status": "imports_ok",
     "note": "src.* all importable"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-17",
+    "ts": "2026-08-17T15:28:22.604204Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=32042423065"
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-08-17",
+    "ts": "2026-08-17T15:28:39.828579Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-17",
+    "ts": "2026-08-17T15:29:27.251178Z",
+    "equity_start": 93339.32,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "CAT",
+          "confidence": "medium",
+          "catalyst": "Up +2.59% while broader tape is red (major names META/ADBE/NKE down 2-4%); clean relative strength with positive 5-year performance story circulating",
+          "smart_money_signals": "Stocktwits 75% bullish on 30 msgs, analyst mix 52.9% bullish with 7 strong buys, no insider/congress selling flags",
+          "rationale": "Best relative-strength setup on the board \u2014 green while peers are red with no contradicting signals."
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "Modest -2% pullback in a red tape but strongest alt-data score (4/10) on the list \u2014 buyable dip on AI infrastructure name",
+          "smart_money_signals": "House buy from Rulli (21d), Stocktwits 92% bullish/30 msgs, 81.6% analyst buy (15 SB + 25 B), no insider selling",
+          "rationale": "Stacked smart-money (congress + analysts + retail sentiment) with no disqualifiers makes this the best dip-buy candidate."
+        },
+        {
+          "symbol": "INTC",
+          "confidence": "low",
+          "catalyst": "Up +2.06% on heavy volume (~40M shares) with positive technical note; showing strength against a weak tape",
+          "smart_money_signals": "Stocktwits 94% bullish on 30 msgs; insider activity balanced (1 buy/1 sell) \u2014 no red flag",
+          "rationale": "Momentum + high-conviction retail sentiment on a green stock in a red market."
+        }
+      ],
+      "market_take": "Risk-off tone with mega-cap tech (META, ADBE, CRM, ORCL) selling off; industrials and select semis showing relative strength.",
+      "skipped_movers": [
+        "ADBE: heavy insider selling and 44% ST bullish \u2014 skip",
+        "NKE: 5 insider sells and 32% ST bullish (<disqualifier threshold) \u2014 skip",
+        "META: 12 insider sells (5 insiders) despite catalyst \u2014 skip",
+        "SHOP: down 2.6% with no catalyst to reverse \u2014 skip",
+        "CRM: down 2.4% with balanced insider flow, no catalyst \u2014 skip",
+        "MCD: neutral alt-data, no catalyst \u2014 skip",
+        "DIS: House selling + red price \u2014 skip",
+        "MS: heavy insider selling flag despite Viking 13F \u2014 skip",
+        "GS: 3 insider sells offsets modest strength \u2014 skip"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Best relative-strength setup on the board \u2014 green while peers are red with no contradicting signals.",
+        "symbol": "CAT",
+        "qty": 98,
+        "entry_price_est": 877.885,
+        "stop_price": 869.11,
+        "take_price": 895.44,
+        "order_id": "1eb5a256-2641-46a8-9206-1691eacea5f2"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Stacked smart-money (congress + analysts + retail sentiment) with no disqualifiers makes this the best dip-buy candidate.",
+        "symbol": "ORCL",
+        "qty": 589,
+        "entry_price_est": 147.0,
+        "stop_price": 145.53,
+        "take_price": 149.94,
+        "order_id": "fa821bc7-2117-4493-bd49-a010faee2041"
+      },
+      {
+        "status": "submitted",
+        "confidence": "low",
+        "rationale": "Momentum + high-conviction retail sentiment on a green stock in a red market.",
+        "symbol": "INTC",
+        "qty": 824,
+        "entry_price_est": 105.155,
+        "stop_price": 104.1,
+        "take_price": 107.26,
+        "order_id": "556139bb-1a17-4742-8892-b3bd92dd8a9a"
+      }
+    ]
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-08-17",
+    "ts": "2026-08-17T15:29:27.414664Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
