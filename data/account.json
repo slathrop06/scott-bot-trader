@@ -1,64 +1,9 @@
 {
-  "ts": "2026-08-17T18:35:33.129206Z",
-  "equity": 92701.28,
+  "ts": "2026-08-17T19:25:39.441152Z",
+  "equity": 92812.3,
   "last_equity": 93843.76,
-  "cash": -135498.59,
-  "buying_power": 96965.28,
-  "all_time_return_pct": -7.2987,
-  "positions": [
-    {
-      "symbol": "BA",
-      "qty": 136,
-      "avg_entry_price": 228.6484,
-      "current_price": 226.615,
-      "market_value": 30819.64,
-      "unrealized_pl": -276.54,
-      "unrealized_pl_pct": -0.889
-    },
-    {
-      "symbol": "CAT",
-      "qty": 98,
-      "avg_entry_price": 879.64,
-      "current_price": 885.745,
-      "market_value": 86803.01,
-      "unrealized_pl": 598.29,
-      "unrealized_pl_pct": 0.694
-    },
-    {
-      "symbol": "GOOGL",
-      "qty": 23,
-      "avg_entry_price": 342.853,
-      "current_price": 344.11,
-      "market_value": 7914.53,
-      "unrealized_pl": 28.91,
-      "unrealized_pl_pct": 0.367
-    },
-    {
-      "symbol": "MSFT",
-      "qty": 16,
-      "avg_entry_price": 479.7862,
-      "current_price": 479.67,
-      "market_value": 7674.72,
-      "unrealized_pl": -1.86,
-      "unrealized_pl_pct": -0.024
-    },
-    {
-      "symbol": "NFLX",
-      "qty": 104,
-      "avg_entry_price": 76.2,
-      "current_price": 75.55,
-      "market_value": 7857.2,
-      "unrealized_pl": -67.6,
-      "unrealized_pl_pct": -0.853
-    },
-    {
-      "symbol": "ORCL",
-      "qty": 589,
-      "avg_entry_price": 147.8159,
-      "current_price": 147.93,
-      "market_value": 87130.77,
-      "unrealized_pl": 67.23,
-      "unrealized_pl_pct": 0.077
-    }
-  ]
+  "cash": 92812.3,
+  "buying_power": 371249.2,
+  "all_time_return_pct": -7.1877,
+  "positions": []
 }
