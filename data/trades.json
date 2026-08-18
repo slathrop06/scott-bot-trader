@@ -19366,5 +19366,108 @@
     "ts": "2026-08-17T21:53:53.017583Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=32073415516"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-18",
+    "ts": "2026-08-18T13:48:21.738794Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=32144490559"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-18",
+    "ts": "2026-08-18T13:48:52.103055Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-18",
+    "ts": "2026-08-18T13:48:54.433998Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-18",
+    "ts": "2026-08-18T13:48:55.329486Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-18",
+    "ts": "2026-08-18T13:49:49.267352Z",
+    "equity_start": 92804.11,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "MA",
+          "confidence": "medium",
+          "catalyst": "Relative strength \u2014 trading up +1.7% while broader tech/QQQ sells off -1.4%, no negative news",
+          "smart_money_signals": "Insider cluster buy (4 buyers, 6 buys), 92.6% analyst bullish (13SB/37B), Stocktwits 89% bullish",
+          "rationale": "Best combination of relative strength during a tech selloff plus stacked smart-money signals (insider cluster + top-tier analyst conviction)"
+        },
+        {
+          "symbol": "NFLX",
+          "confidence": "medium",
+          "catalyst": "Green (+2.0%) against a red tape, no negative headlines",
+          "smart_money_signals": "Insider cluster buy (6 buyers, 16 buys), Stocktwits 89% bullish on 30 msgs, 76% analyst buy",
+          "rationale": "Clean relative strength with insider cluster buy support \u2014 a defensive long while AI names get hit"
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "low",
+          "catalyst": "Minor dip (-1.6%) far less than peers, holds up in tech selloff",
+          "smart_money_signals": "House buy by Michael Rulli, Stocktwits 100% bullish, 82% analyst buy",
+          "rationale": "Reasonable pullback entry with congressional buy and unanimous retail bullishness \u2014 modest size given red tape"
+        }
+      ],
+      "market_take": "Broad AI/tech selloff on bubble fears and Iran headline risk \u2014 favor names with relative strength and insider conviction over the falling knives.",
+      "skipped_movers": [
+        "INTC: -5.9% dump, only 34.5% analyst bullish, no positive catalyst",
+        "AMD: Ark selling headline + 4% gap down outweighs insider cluster buy",
+        "META: heavy insider selling (26 sells by 5 insiders), 3.4% gap down",
+        "NVDA: -2.3% on AI bubble headlines, no offsetting smart-money edge",
+        "PLTR: heavy insider selling (8 sells), Ark dumping headline",
+        "ADBE: heavy insider selling, only 39% analyst bullish",
+        "GS: heavy insider selling, no catalyst",
+        "AVGO: strong signals but -3% gap down in tech selloff \u2014 stop too close to noise",
+        "CAT: -3.8% with no news and thin alt-data",
+        "CRM: gap up but no catalyst identified and mixed insider activity"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "failed",
+        "symbol": "MA",
+        "error": "{\"base_price\":\"569.42\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean relative strength with insider cluster buy support \u2014 a defensive long while AI names get hit",
+        "symbol": "NFLX",
+        "qty": 394,
+        "entry_price_est": 77.63,
+        "stop_price": 76.85,
+        "take_price": 79.18,
+        "order_id": "c08b3b17-79ad-493e-a391-d84dbf27f665"
+      },
+      {
+        "status": "failed",
+        "symbol": "ORCL",
+        "error": "{\"base_price\":\"144.04\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-18",
+    "ts": "2026-08-18T13:49:49.433277Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
