@@ -19511,5 +19511,93 @@
     "ts": "2026-08-18T15:03:11.748993Z",
     "status": "imports_ok",
     "note": "src.* all importable"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-18",
+    "ts": "2026-08-18T15:35:12.831442Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=32155341762"
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-08-18",
+    "ts": "2026-08-18T15:35:32.226294Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-18",
+    "ts": "2026-08-18T15:36:54.060406Z",
+    "equity_start": 93178.41,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "MA",
+          "confidence": "high",
+          "catalyst": "Relative strength (+2.41%) while broad market sells off (QQQ -1.72%), trading up on no news",
+          "smart_money_signals": "Insider cluster buy (4 buyers, 6 buys/30d), Stocktwits 89% bullish, analysts 92.6% bullish (13SB/37B)",
+          "rationale": "Strongest stack today: insider cluster + top-tier analyst conviction + relative strength on a red tape."
+        },
+        {
+          "symbol": "AVGO",
+          "confidence": "medium",
+          "catalyst": "Modest pullback (-3.17%) alongside sector; not stock-specific negative news",
+          "smart_money_signals": "House buy by David J. Taylor, Stocktwits 85% bullish, analysts 91.1% bullish (17SB/34B), no insider selling",
+          "rationale": "Best-in-class analyst conviction + congressional buy offers a bounce setup on a broad semi selloff."
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "Relative strength +3.27% while QQQ down 1.72%, no negative news",
+          "smart_money_signals": "Stocktwits 100% bullish (30 msgs), analysts 74.1% bullish, balanced insider activity",
+          "rationale": "Green in a red tape with unanimous social sentiment \u2014 clean momentum continuation setup."
+        }
+      ],
+      "market_take": "Broad risk-off tape with tech/semis leading down; rotation into payments and select software offers relative-strength longs.",
+      "skipped_movers": [
+        "INTC: alt-data 0/10, only 34.5% analyst buy, in a tech selloff",
+        "AMD: insider sells (9) offset buys, caught in semi downdraft",
+        "META: heavy insider selling (26 sells vs 2 buys), negative AI-spend headlines",
+        "NVDA: negative headlines + broad semi weakness, no strong smart-money edge",
+        "NKE: heavy insider selling (10 sells, 0 buys) + bearish 'Stage 4 breakdown' story",
+        "GS: heavy insider selling, weak analyst mix",
+        "ADBE: insider selling, only 39% analyst buy despite gap up",
+        "CAT: no catalyst, mixed analysts, in a red-tape industrial",
+        "XOM: only 50% analyst buy, thin signal stack"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "failed",
+        "symbol": "MA",
+        "error": "{\"base_price\":\"574.355\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Best-in-class analyst conviction + congressional buy offers a bounce setup on a broad semi selloff.",
+        "symbol": "AVGO",
+        "qty": 291,
+        "entry_price_est": 380.18,
+        "stop_price": 376.38,
+        "take_price": 387.78,
+        "order_id": "d283d03b-54e9-4432-8b9e-ed91208c75c6"
+      },
+      {
+        "status": "failed",
+        "symbol": "CRM",
+        "error": "{\"base_price\":\"197.1\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-08-18",
+    "ts": "2026-08-18T15:36:54.092696Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
