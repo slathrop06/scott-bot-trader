@@ -1,37 +1,37 @@
 {
-  "ts": "2026-08-18T17:14:52.968996Z",
-  "equity": 93475.53,
+  "ts": "2026-08-18T17:24:09.756138Z",
+  "equity": 93301.04,
   "last_equity": 92804.11,
-  "cash": -48872.93,
-  "buying_power": 136244.84,
-  "all_time_return_pct": -6.5245,
+  "cash": -115712.03,
+  "buying_power": 122388.46,
+  "all_time_return_pct": -6.699,
   "positions": [
     {
       "symbol": "AVGO",
       "qty": 291,
       "avg_entry_price": 380.26,
-      "current_price": 381.085,
-      "market_value": 110895.74,
-      "unrealized_pl": 240.07,
-      "unrealized_pl_pct": 0.217
+      "current_price": 380.885,
+      "market_value": 110837.54,
+      "unrealized_pl": 181.88,
+      "unrealized_pl_pct": 0.164
     },
     {
       "symbol": "NFLX",
       "qty": 394,
       "avg_entry_price": 77.64,
-      "current_price": 78.735,
-      "market_value": 31021.59,
-      "unrealized_pl": 431.43,
-      "unrealized_pl_pct": 1.41
+      "current_price": 78.695,
+      "market_value": 31005.83,
+      "unrealized_pl": 415.67,
+      "unrealized_pl_pct": 1.359
     },
     {
       "symbol": "ORCL",
-      "qty": 3,
+      "qty": 468,
       "avg_entry_price": 143.74,
-      "current_price": 143.71,
-      "market_value": 431.13,
-      "unrealized_pl": -0.09,
-      "unrealized_pl_pct": -0.021
+      "current_price": 143.525,
+      "market_value": 67169.7,
+      "unrealized_pl": -100.62,
+      "unrealized_pl_pct": -0.15
     }
   ]
 }
