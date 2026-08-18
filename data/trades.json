@@ -19613,5 +19613,94 @@
     "ts": "2026-08-18T16:46:09.303561Z",
     "status": "intraday_workflow_started",
     "note": "event=schedule run_id=32162045992"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-18",
+    "ts": "2026-08-18T17:13:35.590306Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=32164463321"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-08-18",
+    "ts": "2026-08-18T17:13:57.869070Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-18",
+    "ts": "2026-08-18T17:14:52.819176Z",
+    "equity_start": 93433.85,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "MA",
+          "confidence": "high",
+          "catalyst": "Relative strength +2.63% while market/tech sells off, no negative news",
+          "smart_money_signals": "Insider cluster buy (4 buyers, 6 buys/30d), 92.6% analyst bullish (13SB/37B), stocktwits 89% bullish, alt-data score 6/10",
+          "rationale": "Best stack of smart-money signals with confirming relative strength on a red tape day."
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "Down only -2.14% in broader tech selloff; AI bond-supply story already priced in",
+          "smart_money_signals": "House buying by Rulli, 81.6% analyst bullish (15SB/25B), stocktwits 80% bullish, alt-data 4/10",
+          "rationale": "Smart-money support plus a modest pullback offers favorable +2/-1 bracket entry."
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "Gapping +3.82% intraday defying tech weakness despite bearish AI-disruption headline",
+          "smart_money_signals": "74% analyst bullish, stocktwits 100% bullish on 30 msgs, balanced insider activity",
+          "rationale": "Strong relative-strength move against the tape with bullish sentiment confirms buyer conviction."
+        }
+      ],
+      "market_take": "Risk-off tape as surging bond yields pressure mega-cap tech and chips; leadership rotating to defensives, energy, and payments.",
+      "skipped_movers": [
+        "INTC: -7.37% freefall, only 34.5% analyst bullish, catching a knife",
+        "AMD: -5.57% in chip rout despite insider cluster buy, downtrend too strong",
+        "CAT: -5.44% with no supporting catalyst",
+        "ADBE: heavy insider selling, negative alt-data score",
+        "META: -3.09%, heavy insider selling (26 sells), lawsuit overhang, stocktwits only 46%",
+        "NKE: heavy insider selling, 'Stage 4' technical breakdown warning",
+        "NVDA: -2.27% in tech selloff, no catalyst to fade the move",
+        "XOM: only 50% analyst bullish, extended move",
+        "AAPL: House net selling 4:1, heavy insider selling",
+        "V: House selling, weaker signal stack than MA"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "failed",
+        "symbol": "MA",
+        "error": "{\"base_price\":\"574.56\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Smart-money support plus a modest pullback offers favorable +2/-1 bracket entry.",
+        "symbol": "ORCL",
+        "qty": 468,
+        "entry_price_est": 143.47,
+        "stop_price": 142.04,
+        "take_price": 146.34,
+        "order_id": "dc16528e-7cc9-4a96-b12d-e45e21654f27"
+      },
+      {
+        "status": "failed",
+        "symbol": "CRM",
+        "error": "{\"base_price\":\"198.02\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-08-18",
+    "ts": "2026-08-18T17:14:52.972667Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
