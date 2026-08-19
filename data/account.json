@@ -1,19 +1,9 @@
 {
-  "ts": "2026-08-19T15:28:09.655220Z",
-  "equity": 92902.73,
+  "ts": "2026-08-19T15:36:28.967468Z",
+  "equity": 92807.56,
   "last_equity": 92865.05,
-  "cash": 62584.19,
-  "buying_power": 335228.67,
-  "all_time_return_pct": -7.0973,
-  "positions": [
-    {
-      "symbol": "GE",
-      "qty": 84,
-      "avg_entry_price": 364.67,
-      "current_price": 360.935,
-      "market_value": 30318.54,
-      "unrealized_pl": -313.74,
-      "unrealized_pl_pct": -1.024
-    }
-  ]
+  "cash": 92807.56,
+  "buying_power": 2477.76,
+  "all_time_return_pct": -7.1924,
+  "positions": []
 }

@@ -19973,5 +19973,108 @@
     "ts": "2026-08-19T15:03:33.317735Z",
     "status": "imports_ok",
     "note": "src.* all importable"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-19",
+    "ts": "2026-08-19T15:35:13.176482Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=32270935484"
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-08-19",
+    "ts": "2026-08-19T15:35:30.458436Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-19",
+    "ts": "2026-08-19T15:36:28.880731Z",
+    "equity_start": 92807.56,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "NFLX",
+          "confidence": "high",
+          "catalyst": "Up +2.94% on CNBC Final Trades recommendation with clean tape and no contradicting news",
+          "smart_money_signals": "Insider cluster buy (6 buyers, 16 buys/30d), WSB chatter 2.41x normal (rank #17), Stocktwits 100% bullish on 30 msgs, 76% analyst buy \u2014 alt-data score 8/10",
+          "rationale": "Best stack on the board: strong catalyst + full smart-money confluence with green tape."
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "Leading tape at +5.47% on heavy volume (7.8M) with no negative news \u2014 relative strength breakout",
+          "smart_money_signals": "Stocktwits 80% bullish (30 msgs), 74% analyst buy rating",
+          "rationale": "Strongest price momentum in the group with supportive sentiment and no disqualifiers."
+        },
+        {
+          "symbol": "HD",
+          "confidence": "medium",
+          "catalyst": "Post-earnings drift: Q2 beat, analysts raising price targets, gap continuation +2.10%",
+          "smart_money_signals": "Stocktwits 100% bullish on 30 msgs, 61% analyst buy",
+          "rationale": "Clean post-earnings positive drift with analyst PT hikes \u2014 textbook catalyst setup."
+        }
+      ],
+      "market_take": "Mixed tape with semis under pressure (AVGO/AMD/INTC red) but selective mega-cap strength in software, consumer, and media names.",
+      "skipped_movers": [
+        "AVGO: down 4.6% on Marvell/Google competitive news \u2014 signals contradicted by price",
+        "AMD: down 2.7%, tape rejecting bullish alt-data",
+        "GE: down 3.96% despite cluster buy \u2014 price contradicts signal",
+        "AAPL: House net selling 4:1 and insider selling",
+        "PLTR: heavy insider selling 8:1",
+        "TSLA: no alt-data edge, weak signal score",
+        "ADBE: heavy insider selling, weak analyst mix",
+        "GS: heavy insider selling, price red",
+        "CAT: no alt-data edge and price down 3.6%",
+        "NKE: heavy insider selling 10:0",
+        "DIS: House selling, no catalyst",
+        "INTC: weak alt-data, price red"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best stack on the board: strong catalyst + full smart-money confluence with green tape.",
+        "symbol": "NFLX",
+        "qty": 1521,
+        "entry_price_est": 80.515,
+        "stop_price": 79.71,
+        "take_price": 82.13,
+        "order_id": "71eab14a-4bcc-43fa-8676-10da260cd38c"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strongest price momentum in the group with supportive sentiment and no disqualifiers.",
+        "symbol": "CRM",
+        "qty": 594,
+        "entry_price_est": 205.89499999999998,
+        "stop_price": 203.84,
+        "take_price": 210.01,
+        "order_id": "446e3c12-3078-43ea-a3c2-4a44e2b4875c"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean post-earnings positive drift with analyst PT hikes \u2014 textbook catalyst setup.",
+        "symbol": "HD",
+        "qty": 359,
+        "entry_price_est": 340.35,
+        "stop_price": 336.95,
+        "take_price": 347.16,
+        "order_id": "a77fd2a3-aa4d-4516-ba7c-b255ca9439c2"
+      }
+    ]
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-08-19",
+    "ts": "2026-08-19T15:36:28.970494Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
