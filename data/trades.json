@@ -20083,5 +20083,12 @@
     "ts": "2026-08-19T16:01:31.043351Z",
     "status": "intraday_workflow_started",
     "note": "event=schedule run_id=32273508954"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-19",
+    "ts": "2026-08-19T16:44:11.897532Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=32277600206"
   }
 ]
