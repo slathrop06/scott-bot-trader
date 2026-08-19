@@ -19816,5 +19816,120 @@
     "ts": "2026-08-18T21:57:32.092853Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=32190383376"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-19",
+    "ts": "2026-08-19T13:49:33.721650Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=32260317789"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-19",
+    "ts": "2026-08-19T13:49:52.680894Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-19",
+    "ts": "2026-08-19T13:49:54.587442Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-19",
+    "ts": "2026-08-19T13:49:55.924510Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-19",
+    "ts": "2026-08-19T13:51:05.659693Z",
+    "equity_start": 92865.05,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMD",
+          "confidence": "high",
+          "catalyst": "Premarket bounce setup \u2014 stock down 2.3% into support with positive AI news flow (Nvidia China H200 approval lifts AI semi sentiment, AMD-specific technical coverage)",
+          "smart_money_signals": "Insider cluster buy (8 buyers/8 buys in 30d), WSB chatter 2.08x normal at rank #26, Stocktwits 95% bullish on 30 msgs, 82.8% analyst buy (16SB/32B)",
+          "rationale": "Best stacked setup in the list \u2014 insider cluster + social + analyst conviction all align, and the -2.3% dip offers a favorable entry for the +2%/-1% bracket."
+        },
+        {
+          "symbol": "NFLX",
+          "confidence": "medium",
+          "catalyst": "Positive premarket price action (+1.3%) with CNBC 'Final Trades' recommendation overnight",
+          "smart_money_signals": "Insider cluster buy (6 buyers, 16 buys in 30d), Stocktwits 100% bullish on 30 msgs, WSB rank #20 with 1.82x chatter, 75.9% analyst buy",
+          "rationale": "Gap-up continuation with insider cluster buying and unanimous social sentiment \u2014 clean momentum setup."
+        },
+        {
+          "symbol": "GE",
+          "confidence": "medium",
+          "catalyst": "Oversold dip (-2.5%) in an industrial leader with no negative news catalyst driving the move",
+          "smart_money_signals": "Insider cluster buy (3 buyers), Stocktwits 100% bullish on 30 msgs, 87.5% analyst buy (9SB/19B)",
+          "rationale": "Alt-data score 6/10 with cluster buy and perfect sentiment supports a mean-reversion bounce off the premarket weakness."
+        }
+      ],
+      "market_take": "Risk-off premarket tone with semis and financials weak, but AI infrastructure narrative intact \u2014 favor stacked smart-money dips over chasing green movers.",
+      "skipped_movers": [
+        "AVGO: down 4.8% despite modest signals \u2014 knife-catch risk on weak alt-data score",
+        "PLTR: heavy insider selling (8 sells) disqualifies despite green tape",
+        "ADBE: insider selling and weak analyst conviction (39%)",
+        "HD: Stocktwits 17% bullish and House selling contradicts the gap up",
+        "NKE: 10 insider sells in 30d, no offsetting catalyst",
+        "GS/JPM/MS: heavy insider selling across financials",
+        "INTC: weak analyst view (34.5%) and no cluster signal",
+        "CAT: no catalyst, only Stocktwits signal",
+        "DIS: FCC lawsuit is legal overhang, not a bull catalyst",
+        "CRM: only 2/10 signal score, no catalyst"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best stacked setup in the list \u2014 insider cluster + social + analyst conviction all align, and the -2.3% dip offers a favorable entry for the +2%/-1% bracket.",
+        "symbol": "AMD",
+        "qty": 65,
+        "entry_price_est": 467.62,
+        "stop_price": 462.94,
+        "take_price": 476.97,
+        "order_id": "5a197fac-d866-47c5-9953-751a2be652b1"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Gap-up continuation with insider cluster buying and unanimous social sentiment \u2014 clean momentum setup.",
+        "symbol": "NFLX",
+        "qty": 387,
+        "entry_price_est": 79.15,
+        "stop_price": 78.36,
+        "take_price": 80.73,
+        "order_id": "a1f1b4e6-962e-4a74-b199-d2696cea5428"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Alt-data score 6/10 with cluster buy and perfect sentiment supports a mean-reversion bounce off the premarket weakness.",
+        "symbol": "GE",
+        "qty": 84,
+        "entry_price_est": 363.49,
+        "stop_price": 359.86,
+        "take_price": 370.76,
+        "order_id": "38e161c9-b22a-4a02-96b1-7dbb19ef62ac"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-19",
+    "ts": "2026-08-19T13:51:05.821033Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
