@@ -1,28 +1,19 @@
 {
-  "ts": "2026-08-19T14:30:37.935056Z",
-  "equity": 92953.72,
+  "ts": "2026-08-19T15:28:09.655220Z",
+  "equity": 92902.73,
   "last_equity": 92865.05,
-  "cash": 31335.73,
-  "buying_power": 297873.29,
-  "all_time_return_pct": -7.0463,
+  "cash": 62584.19,
+  "buying_power": 335228.67,
+  "all_time_return_pct": -7.0973,
   "positions": [
     {
       "symbol": "GE",
       "qty": 84,
       "avg_entry_price": 364.67,
-      "current_price": 363.64,
-      "market_value": 30545.76,
-      "unrealized_pl": -86.52,
-      "unrealized_pl_pct": -0.282
-    },
-    {
-      "symbol": "NFLX",
-      "qty": 387,
-      "avg_entry_price": 79.16,
-      "current_price": 80.29,
-      "market_value": 31072.23,
-      "unrealized_pl": 437.31,
-      "unrealized_pl_pct": 1.427
+      "current_price": 360.935,
+      "market_value": 30318.54,
+      "unrealized_pl": -313.74,
+      "unrealized_pl_pct": -1.024
     }
   ]
 }
