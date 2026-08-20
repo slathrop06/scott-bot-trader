@@ -20420,5 +20420,26 @@
     "ts": "2026-08-20T13:52:48.121387Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-20",
+    "ts": "2026-08-20T14:42:56.169708Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=32381782059"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-20",
+    "ts": "2026-08-20T14:43:14.726904Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-20",
+    "ts": "2026-08-20T14:43:16.648163Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
   }
 ]
