@@ -1,37 +1,37 @@
 {
-  "ts": "2026-08-20T15:31:08.733476Z",
-  "equity": 92327.2,
+  "ts": "2026-08-20T15:38:27.126795Z",
+  "equity": 92208.3,
   "last_equity": 92753.93,
   "cash": 937.73,
-  "buying_power": 259641.42,
-  "all_time_return_pct": -7.6728,
+  "buying_power": 88356.85,
+  "all_time_return_pct": -7.7917,
   "positions": [
     {
       "symbol": "CVX",
       "qty": 147,
       "avg_entry_price": 207.6888,
-      "current_price": 207.98,
-      "market_value": 30573.06,
-      "unrealized_pl": 42.81,
-      "unrealized_pl_pct": 0.14
+      "current_price": 207.97,
+      "market_value": 30571.59,
+      "unrealized_pl": 41.34,
+      "unrealized_pl_pct": 0.135
     },
     {
       "symbol": "GE",
       "qty": 87,
       "avg_entry_price": 351.41,
-      "current_price": 349.555,
-      "market_value": 30411.28,
-      "unrealized_pl": -161.38,
-      "unrealized_pl_pct": -0.528
+      "current_price": 349.14,
+      "market_value": 30375.18,
+      "unrealized_pl": -197.49,
+      "unrealized_pl_pct": -0.646
     },
     {
       "symbol": "ORCL",
       "qty": 214,
       "avg_entry_price": 143.52,
-      "current_price": 142.08,
-      "market_value": 30405.12,
-      "unrealized_pl": -308.16,
-      "unrealized_pl_pct": -1.003
+      "current_price": 141.7,
+      "market_value": 30323.8,
+      "unrealized_pl": -389.48,
+      "unrealized_pl_pct": -1.268
     }
   ]
 }

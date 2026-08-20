@@ -20462,5 +20462,100 @@
     "ts": "2026-08-20T15:19:29.924300Z",
     "status": "imports_ok",
     "note": "src.* all importable"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-20",
+    "ts": "2026-08-20T15:37:18.516565Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=32387216057"
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-08-20",
+    "ts": "2026-08-20T15:37:39.483726Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-20",
+    "ts": "2026-08-20T15:38:27.098799Z",
+    "equity_start": 92249.7,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMD",
+          "confidence": "high",
+          "catalyst": "Modest -1.5% pullback to $462 support level with positive MACD momentum; not driven by negative news, just cooling tech sentiment \u2014 buyable dip setup",
+          "smart_money_signals": "Insider cluster buy (8 insiders bought in 30d), House buy by Richard W. Allen, Stocktwits 89% bullish on 30 msgs, 83% analyst buy \u2014 alt-data score 8/10",
+          "rationale": "Highest alt-data score in the universe with insider cluster + congressional buying + bullish retail sentiment on a shallow dip."
+        },
+        {
+          "symbol": "GOOGL",
+          "confidence": "medium",
+          "catalyst": "-1.7% dip on no company-specific negative news \u2014 general tech softness creating entry",
+          "smart_money_signals": "Insider cluster buy (8 insiders), House cluster buy (3 buys by Rulli, Taylor), 89% analyst buy \u2014 alt-data score 7/10; contrarian bearish Stocktwits (23%) actually supports mean-reversion long",
+          "rationale": "Rare stacked insider + congressional cluster buys on a mega-cap dip with 89% analyst conviction."
+        },
+        {
+          "symbol": "XOM",
+          "confidence": "medium",
+          "catalyst": "Only meaningful gainer on the tape (+2.19%) showing relative strength while broad market and tech sell off",
+          "smart_money_signals": "Stocktwits 100% bullish on 30 msgs, no insider/congressional selling flags",
+          "rationale": "Clean relative-strength breakout with no contradicting signals \u2014 momentum continuation play against a weak tape."
+        }
+      ],
+      "market_take": "Risk-off tape with tech and consumer names down 1.5-10%; energy showing relative strength as defensive rotation.",
+      "skipped_movers": [
+        "WMT: -9.87% earnings-driven gap down on soft Q3 guidance \u2014 falling knife",
+        "INTC: 34.5% analyst bullish is weak, price below key MAs",
+        "BA: no catalyst, insider selling",
+        "NKE: heavy insider selling (10 sells by 5 insiders), 39% analyst bullish",
+        "HD: no catalyst, House selling",
+        "AMZN: insider + House net selling",
+        "TSLA: Viking cut stake 78%, weak analyst conviction",
+        "COST: House selling, no catalyst",
+        "GS: 3 insider sells, weak 47% analyst bullish",
+        "MS: heavy insider selling"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Highest alt-data score in the universe with insider cluster + congressional buying + bullish retail sentiment on a shallow dip.",
+        "symbol": "AMD",
+        "qty": 185,
+        "entry_price_est": 462.03999999999996,
+        "stop_price": 457.42,
+        "take_price": 471.28,
+        "order_id": "83c5656a-0e0c-4ca2-9c13-b41272db6fac"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Rare stacked insider + congressional cluster buys on a mega-cap dip with 89% analyst conviction.",
+        "symbol": "GOOGL",
+        "qty": 252,
+        "entry_price_est": 339.03499999999997,
+        "stop_price": 335.64,
+        "take_price": 345.82,
+        "order_id": "c7be566b-2e36-47ae-b13c-29155c9da935"
+      },
+      {
+        "status": "failed",
+        "symbol": "XOM",
+        "error": "{\"base_price\":\"168.225\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-08-20",
+    "ts": "2026-08-20T15:38:27.213087Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
