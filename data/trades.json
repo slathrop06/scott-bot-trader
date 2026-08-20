@@ -20308,5 +20308,117 @@
     "ts": "2026-08-19T22:00:24.088742Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=32306713026"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-20",
+    "ts": "2026-08-20T13:51:31.657905Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=32376654662"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-20",
+    "ts": "2026-08-20T13:51:48.044870Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-20",
+    "ts": "2026-08-20T13:51:49.470640Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-20",
+    "ts": "2026-08-20T13:51:50.792333Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-20",
+    "ts": "2026-08-20T13:52:47.971809Z",
+    "equity_start": 92753.93,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "GE",
+          "confidence": "high",
+          "catalyst": "Modest pullback (-1.6%) into strong smart-money backdrop; no negative news",
+          "smart_money_signals": "Insider cluster buy (3 insiders, 4 buys in 30d), 87.5% analyst buy rating (9SB/19B), 88% Stocktwits bullish, ALT score 6/10",
+          "rationale": "Highest alt-data score of the day with rare insider cluster buy plus top-tier analyst conviction \u2014 buying the dip"
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "Minor -1% dip on no adverse news, holding up better than mega-cap peers",
+          "smart_money_signals": "House net buying (Rulli), 81.6% analyst buy (15SB/25B), 79% Stocktwits bullish, ALT score 4/10",
+          "rationale": "Clean stack of congressional buy + strong analyst conviction on a shallow pullback"
+        },
+        {
+          "symbol": "CVX",
+          "confidence": "medium",
+          "catalyst": "Relative strength \u2014 up +1% with market futures down, backed by oil/geopolitical (Iran) tailwind",
+          "smart_money_signals": "83.9% analyst buy (8SB/18B), 88% Stocktwits bullish, XOM also up 1.86% confirming sector",
+          "rationale": "Energy showing relative strength on Iran escalation headlines with strong analyst/sentiment stack"
+        }
+      ],
+      "market_take": "Broad tape weak with WMT guidance drag and geopolitical risk-off, but energy catches a bid and idiosyncratic smart-money names offer selective longs.",
+      "skipped_movers": [
+        "WMT: -9% on soft Q3 guidance, falling knife despite bullish sentiment \u2014 skip",
+        "TSLA: Viking Global slashed stake 78%, 38% Stocktwits bullish \u2014 skip",
+        "AMZN: heavy insider selling + House net selling \u2014 skip",
+        "NKE: 10 insider sells from 5 insiders, heavy cluster selling \u2014 skip",
+        "INTC: weak analyst rating (34.5% buy) and breaking key moving averages \u2014 skip",
+        "BA: heavy insider selling flag \u2014 skip",
+        "HD: House selling, no catalyst \u2014 skip"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Highest alt-data score of the day with rare insider cluster buy plus top-tier analyst conviction \u2014 buying the dip",
+        "symbol": "GE",
+        "qty": 87,
+        "entry_price_est": 351.15,
+        "stop_price": 347.64,
+        "take_price": 358.17,
+        "order_id": "bb2141fe-a191-4a02-888c-d24b92447785"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean stack of congressional buy + strong analyst conviction on a shallow pullback",
+        "symbol": "ORCL",
+        "qty": 214,
+        "entry_price_est": 142.575,
+        "stop_price": 141.15,
+        "take_price": 145.43,
+        "order_id": "e3f6ec8d-8ab1-49d3-a5fc-f077b9a978e8"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Energy showing relative strength on Iran escalation headlines with strong analyst/sentiment stack",
+        "symbol": "CVX",
+        "qty": 147,
+        "entry_price_est": 207.635,
+        "stop_price": 205.56,
+        "take_price": 211.79,
+        "order_id": "a8f5b783-9a7a-4e83-a223-fdf335e9a25b"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-20",
+    "ts": "2026-08-20T13:52:48.121387Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
