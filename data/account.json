@@ -1,37 +1,37 @@
 {
-  "ts": "2026-08-20T16:32:02.774473Z",
-  "equity": 92537.09,
+  "ts": "2026-08-20T17:17:33.242504Z",
+  "equity": 92459.94,
   "last_equity": 92753.93,
   "cash": -109569.17,
-  "buying_power": 127620.85,
-  "all_time_return_pct": -7.4629,
+  "buying_power": 85541.24,
+  "all_time_return_pct": -7.5401,
   "positions": [
     {
       "symbol": "AMD",
       "qty": 185,
       "avg_entry_price": 462.31,
-      "current_price": 463.01,
-      "market_value": 85656.85,
-      "unrealized_pl": 129.5,
-      "unrealized_pl_pct": 0.151
+      "current_price": 462.295,
+      "market_value": 85524.57,
+      "unrealized_pl": -2.77,
+      "unrealized_pl_pct": -0.003
     },
     {
       "symbol": "CVX",
       "qty": 147,
       "avg_entry_price": 207.6888,
-      "current_price": 207.67,
-      "market_value": 30527.49,
-      "unrealized_pl": -2.76,
-      "unrealized_pl_pct": -0.009
+      "current_price": 207.565,
+      "market_value": 30512.06,
+      "unrealized_pl": -18.19,
+      "unrealized_pl_pct": -0.06
     },
     {
       "symbol": "GOOGL",
       "qty": 252,
       "avg_entry_price": 339.0061,
-      "current_price": 340.96,
-      "market_value": 85921.92,
-      "unrealized_pl": 492.38,
-      "unrealized_pl_pct": 0.576
+      "current_price": 341.24,
+      "market_value": 85992.48,
+      "unrealized_pl": 562.94,
+      "unrealized_pl_pct": 0.659
     }
   ]
 }

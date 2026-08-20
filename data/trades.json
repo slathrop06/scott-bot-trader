@@ -20571,5 +20571,84 @@
     "ts": "2026-08-20T16:48:34.595198Z",
     "status": "intraday_workflow_started",
     "note": "event=schedule run_id=32394067433"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-20",
+    "ts": "2026-08-20T17:16:27.636099Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=32396684509"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-08-20",
+    "ts": "2026-08-20T17:16:45.797025Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-20",
+    "ts": "2026-08-20T17:17:33.198911Z",
+    "equity_start": 92467.55,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "GE",
+          "confidence": "medium",
+          "catalyst": "Modest -3% pullback in an uptrending industrial name with no negative news \u2014 buying the dip on strength",
+          "smart_money_signals": "Insider cluster buy: 4 buys by 3 insiders (cluster_buy=True); Stocktwits 89% bullish on 30 msgs; analysts 87.5% bullish (9SB/19B)",
+          "rationale": "Only name today stacking insider cluster buying + strong analyst conviction + bullish retail sentiment with no adverse catalyst."
+        },
+        {
+          "symbol": "XOM",
+          "confidence": "medium",
+          "catalyst": "Relative strength: +1.74% while broader tape sells off (WMT -9%, tech red), no negative news",
+          "smart_money_signals": "Stocktwits 100% bullish on 30 msgs; rising with rates/energy backdrop",
+          "rationale": "Only green mover on the board \u2014 pure relative strength setup with unanimous retail sentiment and no disqualifiers."
+        }
+      ],
+      "market_take": "Risk-off tape led by WMT consumer warning and rising long-end yields; defensives/energy catching the bid.",
+      "skipped_movers": [
+        "WMT: -9% guidance/consumer warning, catching-knife risk",
+        "BA: heavy insider selling, no catalyst",
+        "ORCL: stocktwits only 43% bullish, weak signal mix",
+        "HD: House selling, no catalyst, consumer-exposed on WMT read-through",
+        "TSLA: analyst conviction only 49%, weak signals",
+        "MS: 3 insider sells in 30d",
+        "AMZN: 2 insider sells + House net selling despite analyst love",
+        "COST: House selling + consumer read-through from WMT",
+        "INTC: analysts only 34.5% bullish, downtrend",
+        "NKE: 10 insider sells / 5 insiders \u2014 heavy cluster selling",
+        "GS: 3 insider sells",
+        "CAT: stocktwits 14% bullish (bearish)"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Only name today stacking insider cluster buying + strong analyst conviction + bullish retail sentiment with no adverse catalyst.",
+        "symbol": "GE",
+        "qty": 121,
+        "entry_price_est": 345.845,
+        "stop_price": 342.39,
+        "take_price": 352.76,
+        "order_id": "d2e68998-8f9c-43cd-b2ce-054bc600e40e"
+      },
+      {
+        "status": "failed",
+        "symbol": "XOM",
+        "error": "{\"base_price\":\"167.52\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-08-20",
+    "ts": "2026-08-20T17:17:33.246173Z",
+    "status": "ok",
+    "note": "2 orders submitted"
   }
 ]
