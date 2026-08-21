@@ -20934,5 +20934,107 @@
     "ts": "2026-08-21T15:18:16.776873Z",
     "status": "imports_ok",
     "note": "src.* all importable"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-21",
+    "ts": "2026-08-21T15:36:57.748318Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=32498550015"
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-08-21",
+    "ts": "2026-08-21T15:37:16.939594Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-21",
+    "ts": "2026-08-21T15:38:06.633940Z",
+    "equity_start": 92072.94,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "GOOGL",
+          "confidence": "high",
+          "catalyst": "Up +1.16% with broad tech strength; steady grind higher on no negative news",
+          "smart_money_signals": "Alt-data 9/10: insider cluster buy (8 buyers), House cluster buy (3 buys incl. Rulli & Taylor), 88.6% analyst buy, 77% stocktwits bullish",
+          "rationale": "Rare stacked smart-money signature (insider + congress cluster + analyst conviction) with confirming price action \u2014 best risk/reward on the board"
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "+3.76% breakout on strong volume (8.9M) with no adverse news",
+          "smart_money_signals": "Alt-data 4/10: House buy (Rulli), 91% stocktwits bullish on 30 msgs, 81.6% analyst buy",
+          "rationale": "Clean momentum move backed by congress buy, top-tier stocktwits sentiment, and analyst conviction \u2014 no contradicting signals"
+        },
+        {
+          "symbol": "V",
+          "confidence": "medium",
+          "catalyst": "Positive Benzinga piece on Visa strength, +1.36% grind higher",
+          "smart_money_signals": "92.2% analyst buy (highest on board), 85% stocktwits bullish, 1 insider buy",
+          "rationale": "Best-in-class analyst conviction with confirming sentiment and positive news flow provides a low-volatility setup for the 2%/1% bracket"
+        }
+      ],
+      "market_take": "Risk-on tone with tech and consumer leadership; smart-money signals are actionable in mega-cap names.",
+      "skipped_movers": [
+        "TSLA: China recall of ~3M vehicles is a fresh overhang despite gap up \u2014 skip",
+        "PLTR: heavy insider selling 8:1 \u2014 skip",
+        "SBUX: insider selling with weak analyst mix (47.8%) \u2014 skip",
+        "ADBE: negative alt-data, only 39% analyst buy \u2014 skip",
+        "MS: 3 insider sells, 0 buys \u2014 skip",
+        "NKE: 10 insider sells by 5 insiders, 39% analyst buy \u2014 skip",
+        "INTC: down on the day, weak sentiment \u2014 skip",
+        "WMT: down on lowered guidance and analyst cuts \u2014 skip",
+        "COST: House selling, no catalyst \u2014 skip",
+        "CRM: mixed insider activity, no catalyst \u2014 skip",
+        "SHOP: decent but weaker signals than picks \u2014 skip"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Rare stacked smart-money signature (insider + congress cluster + analyst conviction) with confirming price action \u2014 best risk/reward on the board",
+        "symbol": "GOOGL",
+        "qty": 317,
+        "entry_price_est": 344.78,
+        "stop_price": 341.33,
+        "take_price": 351.68,
+        "order_id": "b2cf4e4d-af80-47d2-b2c5-83a89db1b9a5"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean momentum move backed by congress buy, top-tier stocktwits sentiment, and analyst conviction \u2014 no contradicting signals",
+        "symbol": "ORCL",
+        "qty": 744,
+        "entry_price_est": 147.16500000000002,
+        "stop_price": 145.69,
+        "take_price": 150.11,
+        "order_id": "87549683-141c-481b-9cb8-78a77e09d3f3"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Best-in-class analyst conviction with confirming sentiment and positive news flow provides a low-volatility setup for the 2%/1% bracket",
+        "symbol": "V",
+        "qty": 295,
+        "entry_price_est": 371.365,
+        "stop_price": 367.65,
+        "take_price": 378.79,
+        "order_id": "f4a39e1e-1ae6-46a2-94a3-3f3643bf9e53"
+      }
+    ]
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-08-21",
+    "ts": "2026-08-21T15:38:06.740218Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
