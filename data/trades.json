@@ -20783,5 +20783,114 @@
     "ts": "2026-08-20T21:56:37.425372Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=32421895849"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-21",
+    "ts": "2026-08-21T13:50:26.924358Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=32488937577"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-21",
+    "ts": "2026-08-21T13:50:44.085777Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-21",
+    "ts": "2026-08-21T13:50:45.724483Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-21",
+    "ts": "2026-08-21T13:50:47.104983Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-21",
+    "ts": "2026-08-21T13:51:41.217309Z",
+    "equity_start": 92417.73,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AVGO",
+          "confidence": "high",
+          "catalyst": "Premarket +1.6% on $100B AI financing deal with Apollo/Blackstone to fund custom AI chips; also new Outperform initiation with $455 PT",
+          "smart_money_signals": "House cluster buy (2 buyers: Taylor, Allen), Stocktwits 92% bullish on 30 msgs, analyst 91% bullish (17SB/34B)",
+          "rationale": "Best stack today \u2014 concrete catalyst news + gap up + cluster buy + near-unanimous analyst/social bullishness"
+        },
+        {
+          "symbol": "AMD",
+          "confidence": "high",
+          "catalyst": "Premarket +1.19% with sector tailwind from AVGO AI news; no negative headlines",
+          "smart_money_signals": "Insider cluster buy (8 insiders buying), House buy by Allen, Stocktwits 88% bullish, 83% analyst buy (16SB/32B)",
+          "rationale": "Highest alt-data score (8/10) with insider cluster buy \u2014 rare smart-money conviction signal riding AI chip momentum"
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "Premarket gap up +3.48% on strong volume, biggest mover in the tape with no negative news",
+          "smart_money_signals": "House buy (Rulli), Stocktwits 83% bullish, 81.6% analyst bullish (15SB/25B)",
+          "rationale": "Strongest price action of the day with clean tape and supportive smart-money signals"
+        }
+      ],
+      "market_take": "Risk-on tone with AI/semis leading; bond-yield chatter is background noise not a headwind.",
+      "skipped_movers": [
+        "GS: heavy insider selling (3 sells), weak analyst sentiment 47%",
+        "MS: heavy insider selling (3 sells, 2 insiders) despite gap",
+        "CAT: Stocktwits only 11% bullish \u2014 bearish social contradicts gap",
+        "AAPL: down 1.6%, mixed House activity (4 sells vs 2 buys), insider selling",
+        "WMT: down on cut price targets post-earnings, insider + House selling",
+        "TSLA: China recall of ~5M vehicles \u2014 clear negative catalyst",
+        "META: heavy insider selling (21 sells, 5 insiders)",
+        "NKE: heavy insider selling (10 sells), weak analyst 39%",
+        "NFLX: price down 0.93%, no positive catalyst",
+        "JPM: heavy insider selling (3 sells)"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best stack today \u2014 concrete catalyst news + gap up + cluster buy + near-unanimous analyst/social bullishness",
+        "symbol": "AVGO",
+        "qty": 82,
+        "entry_price_est": 368.58000000000004,
+        "stop_price": 364.89,
+        "take_price": 375.95,
+        "order_id": "309653a5-955f-4c2a-8c37-81d7a8734fe1"
+      },
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Highest alt-data score (8/10) with insider cluster buy \u2014 rare smart-money conviction signal riding AI chip momentum",
+        "symbol": "AMD",
+        "qty": 64,
+        "entry_price_est": 471.25,
+        "stop_price": 466.54,
+        "take_price": 480.68,
+        "order_id": "a08ca30d-693a-4142-9f0e-43cca5c9644c"
+      },
+      {
+        "status": "failed",
+        "symbol": "ORCL",
+        "error": "{\"base_price\":\"146.65\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-21",
+    "ts": "2026-08-21T13:51:41.284779Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
