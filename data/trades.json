@@ -21092,5 +21092,104 @@
     "ts": "2026-08-21T17:50:58.414832Z",
     "status": "blocked",
     "note": "Buying power $0.00 below $5000 minimum \u2014 account is too deployed to take new trades."
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-21",
+    "ts": "2026-08-21T18:41:16.615499Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=32514604683"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-08-21",
+    "ts": "2026-08-21T18:41:36.761675Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-21",
+    "ts": "2026-08-21T18:42:29.742003Z",
+    "equity_start": 90523.74,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "GE",
+          "confidence": "high",
+          "catalyst": "Steady +1.39% move on Philly Fed factory optimism at 43-year highs (industrial tailwind), trading with strength and no negative news",
+          "smart_money_signals": "Insider cluster buy (3 distinct buyers, 4 buys in 30d), 87.5% analyst bullish (9SB/19B/3H), Stocktwits 86% bullish on 30 msgs",
+          "rationale": "Best smart-money stack on the board: rare insider cluster buy + near-highest analyst conviction + bullish social, with industrial macro tailwind confirming the tape"
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "+3.23% breakout on solid volume with no contradicting news",
+          "smart_money_signals": "House buy (Rulli), 81.6% analyst bullish (15SB/25B), Stocktwits 82% bullish \u2014 alt-data score 4/10",
+          "rationale": "Clean stack of analyst conviction + congressional buy + strong social with confirming price action and no red flags"
+        },
+        {
+          "symbol": "TSLA",
+          "confidence": "medium",
+          "catalyst": "+5.27% on heavy volume (43M shares) \u2014 strongest momentum mover today despite China recall headline being shrugged off",
+          "smart_money_signals": "WSB rank #9 at 2.36x normal chatter, Stocktwits 69% bullish \u2014 retail momentum stacking with price action",
+          "rationale": "Momentum + heavy volume + rising WSB rank suggests continuation; market is dismissing the recall news"
+        }
+      ],
+      "market_take": "Risk-on tone with industrials and mega-cap tech leading; bond yield stabilization supporting equities",
+      "skipped_movers": [
+        "PLTR: 8 insider sells, alt-score -1 \u2014 skip",
+        "GS: heavy insider selling + Stocktwits only 38% bullish \u2014 skip",
+        "MS: heavy insider selling, no catalyst \u2014 skip",
+        "SBUX: insider selling with no catalyst \u2014 skip",
+        "CAT: Stocktwits 12% bullish contradicts price action \u2014 skip",
+        "INTC: down on the day, analyst sentiment only 34.5% \u2014 skip",
+        "WMT: down on day after weak earnings + PT cuts \u2014 skip",
+        "COST: House selling, weak alt-score \u2014 skip"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best smart-money stack on the board: rare insider cluster buy + near-highest analyst conviction + bullish social, with industrial macro tailwind confirming the tape",
+        "symbol": "GE",
+        "qty": 60,
+        "entry_price_est": 350.385,
+        "stop_price": 346.88,
+        "take_price": 357.39,
+        "order_id": "5a43266d-e340-4831-94ae-4ace3028558e"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean stack of analyst conviction + congressional buy + strong social with confirming price action and no red flags",
+        "symbol": "ORCL",
+        "qty": 145,
+        "entry_price_est": 145.485,
+        "stop_price": 144.03,
+        "take_price": 148.39,
+        "order_id": "54a81587-1c28-46b5-8594-c6c08b3c04bc"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Momentum + heavy volume + rising WSB rank suggests continuation; market is dismissing the recall news",
+        "symbol": "TSLA",
+        "qty": 58,
+        "entry_price_est": 363.505,
+        "stop_price": 359.87,
+        "take_price": 370.78,
+        "order_id": "b1fefe13-47cb-4248-b738-8b11346942ad"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-08-21",
+    "ts": "2026-08-21T18:42:29.901018Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
