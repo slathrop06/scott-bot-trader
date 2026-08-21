@@ -1,19 +1,19 @@
 {
-  "ts": "2026-08-21T14:32:35.863486Z",
-  "equity": 92018.82,
+  "ts": "2026-08-21T15:30:19.498230Z",
+  "equity": 92036.86,
   "last_equity": 92417.73,
   "cash": 61820.27,
-  "buying_power": 331837.02,
-  "all_time_return_pct": -7.9812,
+  "buying_power": 331887.53,
+  "all_time_return_pct": -7.9631,
   "positions": [
     {
       "symbol": "AVGO",
       "qty": 82,
       "avg_entry_price": 369.05,
-      "current_price": 368.275,
-      "market_value": 30198.55,
-      "unrealized_pl": -63.55,
-      "unrealized_pl_pct": -0.21
+      "current_price": 368.495,
+      "market_value": 30216.59,
+      "unrealized_pl": -45.51,
+      "unrealized_pl_pct": -0.15
     }
   ]
 }
