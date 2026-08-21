@@ -21298,5 +21298,12 @@
     "ts": "2026-08-21T20:40:48.749025Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=32524777126"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-21",
+    "ts": "2026-08-21T21:00:22.879944Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=32526390498"
   }
 ]
