@@ -21535,5 +21535,86 @@
     "ts": "2026-08-24T16:17:51.439470Z",
     "status": "intraday_workflow_started",
     "note": "event=schedule run_id=32749996261"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-24",
+    "ts": "2026-08-24T17:00:21.432310Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=32754099717"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-08-24",
+    "ts": "2026-08-24T17:00:42.795585Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-24",
+    "ts": "2026-08-24T17:01:29.706609Z",
+    "equity_start": 90754.3,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "V",
+          "confidence": "medium",
+          "catalyst": "Relative strength: V up +2.51% while broad tape is red (INTC/NVDA/TSLA/ORCL all -2%+), breaking out on Trump blue-chip ETF rotation narrative",
+          "smart_money_signals": "Stocktwits 100% bullish on 30 msgs, analyst 92.2% bullish (12SB/35B), minor offsetting insider/House sells but overwhelmed by positive stack",
+          "rationale": "Only major mover green today with confirming sentiment and analyst conviction \u2014 cleanest setup on a risk-off tape"
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "low",
+          "catalyst": "Pullback -2.32% into supportive AI-power/AI-demand narrative (Cramer/Ives commentary); dip-buy on strong analyst base",
+          "smart_money_signals": "House net buy (Rulli), analyst 81.6% bullish (15SB/25B), Stocktwits 67% bullish",
+          "rationale": "Best smart-money-stacked name on the red side \u2014 congress buy + strong analyst conviction with no disqualifiers"
+        }
+      ],
+      "market_take": "Risk-off tape with AI/mega-cap complex selling ahead of NVDA earnings; rotation into blue-chip defensives like V.",
+      "skipped_movers": [
+        "NVDA: earnings Aug 26 \u2014 overnight gap risk disqualifier",
+        "INTC: analysts only 34.5% bullish, mixed insider \u2014 chatter alone insufficient",
+        "TSLA: analysts 49% bullish, no clear catalyst, Cybercab event is skepticism-driven",
+        "COST: House selling, no news catalyst",
+        "CAT: Stocktwits only 38% bullish",
+        "BA: heavy insider selling, no catalyst",
+        "GE: mixed insider (2 sells vs 1 buy), no catalyst",
+        "XOM: neutral signals across the board"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Only major mover green today with confirming sentiment and analyst conviction \u2014 cleanest setup on a risk-off tape",
+        "symbol": "V",
+        "qty": 45,
+        "entry_price_est": 381.27,
+        "stop_price": 377.46,
+        "take_price": 388.9,
+        "order_id": "b3476734-1661-4961-8860-1fa7fc5203da"
+      },
+      {
+        "status": "submitted",
+        "confidence": "low",
+        "rationale": "Best smart-money-stacked name on the red side \u2014 congress buy + strong analyst conviction with no disqualifiers",
+        "symbol": "ORCL",
+        "qty": 120,
+        "entry_price_est": 143.71,
+        "stop_price": 142.27,
+        "take_price": 146.58,
+        "order_id": "25137d63-05e3-4905-bd48-10a9adff58aa"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-08-24",
+    "ts": "2026-08-24T17:01:29.796044Z",
+    "status": "ok",
+    "note": "2 orders submitted"
   }
 ]
