@@ -1,19 +1,37 @@
 {
-  "ts": "2026-08-24T14:39:10.241077Z",
-  "equity": 90932.83,
+  "ts": "2026-08-24T15:36:36.176474Z",
+  "equity": 91141.19,
   "last_equity": 91091.54,
-  "cash": 61167.98,
-  "buying_power": 328013.5,
-  "all_time_return_pct": -9.0672,
+  "cash": 1117.78,
+  "buying_power": 256536.65,
+  "all_time_return_pct": -8.8588,
   "positions": [
     {
-      "symbol": "DIS",
-      "qty": 269,
-      "avg_entry_price": 111.24,
-      "current_price": 110.65,
-      "market_value": 29764.85,
-      "unrealized_pl": -158.71,
-      "unrealized_pl_pct": -0.53
+      "symbol": "AMD",
+      "qty": 66,
+      "avg_entry_price": 457.45,
+      "current_price": 459.88,
+      "market_value": 30352.08,
+      "unrealized_pl": 160.38,
+      "unrealized_pl_pct": 0.531
+    },
+    {
+      "symbol": "GOOGL",
+      "qty": 85,
+      "avg_entry_price": 350.0548,
+      "current_price": 350.945,
+      "market_value": 29830.33,
+      "unrealized_pl": 75.66,
+      "unrealized_pl_pct": 0.254
+    },
+    {
+      "symbol": "MA",
+      "qty": 50,
+      "avg_entry_price": 596.46,
+      "current_price": 596.82,
+      "market_value": 29841.0,
+      "unrealized_pl": 18.0,
+      "unrealized_pl_pct": 0.06
     }
   ]
 }
