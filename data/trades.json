@@ -21319,5 +21319,122 @@
     "ts": "2026-08-21T21:53:17.024862Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=32530552596"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-24",
+    "ts": "2026-08-24T14:50:51.356390Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=32741210377"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-24",
+    "ts": "2026-08-24T14:51:10.333912Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-24",
+    "ts": "2026-08-24T14:51:11.834106Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-24",
+    "ts": "2026-08-24T14:51:13.272046Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-24",
+    "ts": "2026-08-24T14:52:18.232711Z",
+    "equity_start": 90887.14,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "GOOGL",
+          "confidence": "high",
+          "catalyst": "Up +1.44% premarket with relative strength vs weak tape (INTC/NVDA/AVGO all red); AI narrative tailwind",
+          "smart_money_signals": "Insider cluster buy (8 buyers), House cluster buy (5 buys by 2 reps), WSB chatter 23x normal at rank #12, 89% analyst buy, 75% Stocktwits bullish \u2014 11/10 alt-data score",
+          "rationale": "Rare stacking of insider + congressional cluster buys plus retail momentum while showing green in a red market \u2014 cleanest setup on the board."
+        },
+        {
+          "symbol": "AMD",
+          "confidence": "medium",
+          "catalyst": "Oversold -3.2% pullback in liquid megacap ahead of NVDA earnings AI-sector catalyst",
+          "smart_money_signals": "Insider cluster buy (8 buyers), House net buying (Richard W. Allen), 100% Stocktwits bullish on 30 msgs, 83% analyst buy \u2014 8/10 alt-data score",
+          "rationale": "Strong smart-money stack on a dip; buying weakness in a name with insider + congressional + analyst conviction."
+        },
+        {
+          "symbol": "MA",
+          "confidence": "medium",
+          "catalyst": "Up +2.87% premarket bucking the tape, positive blue-chip financials narrative from Trump ETF report",
+          "smart_money_signals": "Insider cluster buy (4 buyers), 100% Stocktwits bullish, 93% analyst buy \u2014 6/10 alt-data score",
+          "rationale": "Green in a red market plus insider cluster buy and near-unanimous analyst conviction \u2014 clean momentum-with-smart-money combo."
+        }
+      ],
+      "market_take": "Risk-off tone in tech/semis ahead of NVDA earnings, but financials and select megacaps showing relative strength.",
+      "skipped_movers": [
+        "INTC: only 1 insider buy vs sell, weak analyst 34.5% bullish, price down hard \u2014 WSB/twits chatter alone not enough",
+        "NVDA: earnings this week \u2014 overnight gap risk disqualifier",
+        "ORCL: Stocktwits only 47% bullish, price down, mixed signals",
+        "DIS: House net selling, no news catalyst",
+        "V: House net selling despite green price",
+        "BA: heavy insider selling",
+        "PLTR: 8 insider sells, heavy insider selling disqualifier",
+        "TSLA: mixed sentiment, Cybercab skepticism, price down",
+        "CAT: Stocktwits 38% bullish, weak signals",
+        "COST: House net selling",
+        "AVGO: earnings in Sept, price breaking below MAs, mixed",
+        "JPM: heavy insider selling, Stocktwits 33% bullish"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Rare stacking of insider + congressional cluster buys plus retail momentum while showing green in a red market \u2014 cleanest setup on the board.",
+        "symbol": "GOOGL",
+        "qty": 85,
+        "entry_price_est": 350.265,
+        "stop_price": 346.76,
+        "take_price": 357.27,
+        "order_id": "ce344c36-9e60-470c-a21c-f0e0a9542128"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strong smart-money stack on a dip; buying weakness in a name with insider + congressional + analyst conviction.",
+        "symbol": "AMD",
+        "qty": 66,
+        "entry_price_est": 454.36,
+        "stop_price": 449.82,
+        "take_price": 463.45,
+        "order_id": "a2d11b21-1ac1-4484-9dfe-437c81fd7a42"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Green in a red market plus insider cluster buy and near-unanimous analyst conviction \u2014 clean momentum-with-smart-money combo.",
+        "symbol": "MA",
+        "qty": 50,
+        "entry_price_est": 596.5450000000001,
+        "stop_price": 590.58,
+        "take_price": 608.48,
+        "order_id": "453fb508-f490-40aa-86d4-52a5eb5925d9"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-24",
+    "ts": "2026-08-24T14:52:18.370651Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
