@@ -1,73 +1,9 @@
 {
-  "ts": "2026-08-24T18:51:55.880374Z",
-  "equity": 90671.37,
+  "ts": "2026-08-24T19:27:13.251868Z",
+  "equity": 90439.82,
   "last_equity": 91091.54,
-  "cash": -202230.23,
-  "buying_power": 11203.56,
-  "all_time_return_pct": -9.3286,
-  "positions": [
-    {
-      "symbol": "AMD",
-      "qty": 66,
-      "avg_entry_price": 457.45,
-      "current_price": 458.21,
-      "market_value": 30241.86,
-      "unrealized_pl": 50.16,
-      "unrealized_pl_pct": 0.166
-    },
-    {
-      "symbol": "AVGO",
-      "qty": 233,
-      "avg_entry_price": 362.0,
-      "current_price": 361.17,
-      "market_value": 84152.61,
-      "unrealized_pl": -193.39,
-      "unrealized_pl_pct": -0.229
-    },
-    {
-      "symbol": "DIS",
-      "qty": 769,
-      "avg_entry_price": 110.09,
-      "current_price": 110.12,
-      "market_value": 84682.28,
-      "unrealized_pl": 23.07,
-      "unrealized_pl_pct": 0.027
-    },
-    {
-      "symbol": "GOOGL",
-      "qty": 85,
-      "avg_entry_price": 350.0548,
-      "current_price": 348.17,
-      "market_value": 29594.45,
-      "unrealized_pl": -160.21,
-      "unrealized_pl_pct": -0.538
-    },
-    {
-      "symbol": "MA",
-      "qty": 50,
-      "avg_entry_price": 596.46,
-      "current_price": 597.23,
-      "market_value": 29861.5,
-      "unrealized_pl": 38.5,
-      "unrealized_pl_pct": 0.129
-    },
-    {
-      "symbol": "ORCL",
-      "qty": 120,
-      "avg_entry_price": 143.42,
-      "current_price": 143.555,
-      "market_value": 17226.6,
-      "unrealized_pl": 16.2,
-      "unrealized_pl_pct": 0.094
-    },
-    {
-      "symbol": "V",
-      "qty": 45,
-      "avg_entry_price": 380.72,
-      "current_price": 380.94,
-      "market_value": 17142.3,
-      "unrealized_pl": 9.9,
-      "unrealized_pl_pct": 0.058
-    }
-  ]
+  "cash": 90439.82,
+  "buying_power": 361759.28,
+  "all_time_return_pct": -9.5602,
+  "positions": []
 }
