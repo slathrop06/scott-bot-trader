@@ -21637,5 +21637,62 @@
     "ts": "2026-08-24T19:05:56.149893Z",
     "status": "intraday_workflow_started",
     "note": "event=schedule run_id=32766179219"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-24",
+    "ts": "2026-08-24T19:19:28.339626Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=32767481179"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-08-24",
+    "ts": "2026-08-24T19:19:50.360638Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-08-24",
+    "ts": "2026-08-24T19:19:50.726644Z",
+    "equity_end": 90486.75,
+    "daily_pnl_usd": -604.79,
+    "daily_pct": -0.6639,
+    "flatten": {
+      "closed": [
+        "AMD",
+        "AVGO",
+        "DIS",
+        "GOOGL",
+        "MA",
+        "ORCL",
+        "V"
+      ],
+      "raw_response_count": 7
+    }
+  },
+  {
+    "type": "trade",
+    "date": "2026-08-24",
+    "ts": "2026-08-24T19:19:50.803063Z",
+    "symbol": "DIS",
+    "qty": 269,
+    "entry_price": 111.24,
+    "entry_ts": "2026-08-24T14:01:16.879669Z",
+    "entry_order_id": "6e9008d8-0143-43f9-90b5-fd5c14974328",
+    "exit_price": 110.4801,
+    "exit_ts": "2026-08-24T14:40:51.260163Z",
+    "exit_order_id": "58bc39e0-6fbb-4d2c-be98-3238c4efebd5",
+    "exit_reason": "bracket",
+    "pnl_usd": -204.4,
+    "pnl_pct": -0.6831
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-08-24",
+    "ts": "2026-08-24T19:19:50.910341Z",
+    "status": "ok",
+    "note": "closed 7 positions, 1 round-trips"
   }
 ]
