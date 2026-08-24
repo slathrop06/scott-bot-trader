@@ -21436,5 +21436,97 @@
     "ts": "2026-08-24T14:52:18.370651Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-24",
+    "ts": "2026-08-24T15:42:34.617241Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=32746485181"
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-08-24",
+    "ts": "2026-08-24T15:42:55.995950Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-24",
+    "ts": "2026-08-24T15:44:00.554841Z",
+    "equity_start": 91244.02,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AVGO",
+          "confidence": "high",
+          "catalyst": "Pullback to support below key moving averages ahead of Sept earnings \u2014 buyable dip in a stock with overwhelming smart-money backing",
+          "smart_money_signals": "House CLUSTER BUY (2 reps: Taylor, Allen, 0 sells), WSB chatter 5.33x normal, Stocktwits 81% bullish, 91% analyst buy rating (17SB/34B)",
+          "rationale": "Rare stacking of congressional cluster buy + analyst conviction + social sentiment on a -2% dip gives asymmetric bounce setup"
+        },
+        {
+          "symbol": "V",
+          "confidence": "medium",
+          "catalyst": "Intraday relative strength (+2.69% on 2.6M vol) with no negative news \u2014 leading tape while market weak",
+          "smart_money_signals": "Stocktwits 100% bullish (30 msgs), 92% analyst buy (12SB/35B/0 sells) \u2014 strongest analyst conviction in the set",
+          "rationale": "Clean momentum + top-tier analyst backing; the 1 house sell is minor noise against dominant bullish setup"
+        },
+        {
+          "symbol": "DIS",
+          "confidence": "medium",
+          "catalyst": "Up +2.25% on 5.1M vol with no news \u2014 pure relative strength while broad tape red",
+          "smart_money_signals": "Stocktwits 100% bullish (30 msgs), 89% analyst buy (11SB/22B)",
+          "rationale": "Momentum breakout with strong sentiment backing and no contradicting signals"
+        }
+      ],
+      "market_take": "Risk-off tape with mega-cap tech red (NVDA/AVGO/ORCL down) but select non-tech names (V, DIS, COST) showing relative strength",
+      "skipped_movers": [
+        "INTC: analyst bullish only 34.5% and price fading despite WSB pump \u2014 contra signal",
+        "NVDA: down 2.4% despite positive news, tape rejecting catalyst",
+        "TSLA: analyst sentiment 49%, mixed signals, Cybercab skepticism",
+        "BA: insider selling, no catalyst",
+        "ORCL: Stocktwits only 53% bullish, price fading",
+        "GE/CAT/XOM: no catalyst, weak alt-data",
+        "COST: house selling despite up move"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Rare stacking of congressional cluster buy + analyst conviction + social sentiment on a -2% dip gives asymmetric bounce setup",
+        "symbol": "AVGO",
+        "qty": 233,
+        "entry_price_est": 362.5,
+        "stop_price": 358.88,
+        "take_price": 369.75,
+        "order_id": "60b98a48-eacb-4b63-a21c-10174296833f"
+      },
+      {
+        "status": "failed",
+        "symbol": "V",
+        "error": "{\"base_price\":\"381.115\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Momentum breakout with strong sentiment backing and no contradicting signals",
+        "symbol": "DIS",
+        "qty": 769,
+        "entry_price_est": 110.105,
+        "stop_price": 109.0,
+        "take_price": 112.31,
+        "order_id": "edc94cdd-2d1f-4111-952e-274a95438eb0"
+      }
+    ]
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-08-24",
+    "ts": "2026-08-24T15:44:00.720207Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
