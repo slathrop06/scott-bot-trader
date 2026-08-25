@@ -1,55 +1,64 @@
 {
-  "ts": "2026-08-25T17:07:23.990547Z",
-  "equity": 90293.03,
+  "ts": "2026-08-25T17:29:30.945602Z",
+  "equity": 89639.92,
   "last_equity": 90432.84,
-  "cash": -166768.56,
-  "buying_power": 237.16,
-  "all_time_return_pct": -9.707,
+  "cash": -124404.79,
+  "buying_power": 86155.55,
+  "all_time_return_pct": -10.3601,
   "positions": [
     {
       "symbol": "AMD",
       "qty": 62,
       "avg_entry_price": 473.3081,
-      "current_price": 476.4679,
-      "market_value": 29541.01,
-      "unrealized_pl": 195.91,
-      "unrealized_pl_pct": 0.668
+      "current_price": 476.46,
+      "market_value": 29540.52,
+      "unrealized_pl": 195.42,
+      "unrealized_pl_pct": 0.666
     },
     {
       "symbol": "CVX",
-      "qty": 32,
+      "qty": 98,
       "avg_entry_price": 201.37,
-      "current_price": 201.36,
-      "market_value": 6443.52,
-      "unrealized_pl": -0.32,
-      "unrealized_pl_pct": -0.005
+      "current_price": 200.865,
+      "market_value": 19684.77,
+      "unrealized_pl": -49.49,
+      "unrealized_pl_pct": -0.251
     },
     {
       "symbol": "GE",
       "qty": 276,
       "avg_entry_price": 346.2608,
-      "current_price": 347.235,
-      "market_value": 95836.86,
-      "unrealized_pl": 268.87,
-      "unrealized_pl_pct": 0.281
+      "current_price": 346.642,
+      "market_value": 95673.19,
+      "unrealized_pl": 105.2,
+      "unrealized_pl_pct": 0.11
     },
     {
       "symbol": "NFLX",
       "qty": 366,
       "avg_entry_price": 81.33,
-      "current_price": 82.07,
-      "market_value": 30037.62,
-      "unrealized_pl": 270.84,
-      "unrealized_pl_pct": 0.91
+      "current_price": 82.135,
+      "market_value": 30061.41,
+      "unrealized_pl": 294.63,
+      "unrealized_pl_pct": 0.99
     },
     {
-      "symbol": "ORCL",
-      "qty": 657,
-      "avg_entry_price": 145.78,
-      "current_price": 144.905,
-      "market_value": 95202.59,
-      "unrealized_pl": -574.88,
-      "unrealized_pl_pct": -0.6
+      "symbol": "SHOP",
+      "qty": 128,
+      "avg_entry_price": 154.04,
+      "current_price": 153.49,
+      "market_value": 19646.72,
+      "unrealized_pl": -70.4,
+      "unrealized_pl_pct": -0.357
+    },
+    {
+      "symbol": "TSLA",
+      "qty": 55,
+      "avg_entry_price": 353.7,
+      "current_price": 353.42,
+      "market_value": 19438.1,
+      "unrealized_pl": -15.4,
+      "unrealized_pl_pct": -0.079
     }
   ]
 }
