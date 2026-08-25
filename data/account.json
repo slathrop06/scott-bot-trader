@@ -1,46 +1,9 @@
 {
-  "ts": "2026-08-25T18:50:00.811991Z",
-  "equity": 89892.93,
+  "ts": "2026-08-25T19:29:28.637148Z",
+  "equity": 90399.33,
   "last_equity": 90432.84,
-  "cash": -85499.25,
-  "buying_power": 149101.1,
-  "all_time_return_pct": -10.1071,
-  "positions": [
-    {
-      "symbol": "AMD",
-      "qty": 62,
-      "avg_entry_price": 473.3081,
-      "current_price": 480.925,
-      "market_value": 29817.35,
-      "unrealized_pl": 472.25,
-      "unrealized_pl_pct": 1.609
-    },
-    {
-      "symbol": "CVX",
-      "qty": 98,
-      "avg_entry_price": 201.37,
-      "current_price": 200.465,
-      "market_value": 19645.57,
-      "unrealized_pl": -88.69,
-      "unrealized_pl_pct": -0.449
-    },
-    {
-      "symbol": "GE",
-      "qty": 276,
-      "avg_entry_price": 346.2608,
-      "current_price": 347.46,
-      "market_value": 95898.96,
-      "unrealized_pl": 330.97,
-      "unrealized_pl_pct": 0.346
-    },
-    {
-      "symbol": "NFLX",
-      "qty": 366,
-      "avg_entry_price": 81.33,
-      "current_price": 82.05,
-      "market_value": 30030.3,
-      "unrealized_pl": 263.52,
-      "unrealized_pl_pct": 0.885
-    }
-  ]
+  "cash": 90399.33,
+  "buying_power": 361597.32,
+  "all_time_return_pct": -9.6007,
+  "positions": []
 }
