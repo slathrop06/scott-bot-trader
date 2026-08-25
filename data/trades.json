@@ -21964,5 +21964,12 @@
     "ts": "2026-08-25T15:48:16.309488Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-25",
+    "ts": "2026-08-25T16:20:31.301097Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=32871363239"
   }
 ]
