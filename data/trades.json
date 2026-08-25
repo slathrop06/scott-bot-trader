@@ -22089,5 +22089,107 @@
     "ts": "2026-08-25T19:04:32.651002Z",
     "status": "intraday_workflow_started",
     "note": "event=schedule run_id=32887485192"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-25",
+    "ts": "2026-08-25T19:20:23.840246Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=32888994368"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-08-25",
+    "ts": "2026-08-25T19:20:42.499301Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-08-25",
+    "ts": "2026-08-25T19:20:43.223703Z",
+    "equity_end": 90413.45,
+    "daily_pnl_usd": -19.39,
+    "daily_pct": -0.0214,
+    "flatten": {
+      "closed": [
+        "AMD",
+        "CVX",
+        "GE",
+        "NFLX"
+      ],
+      "raw_response_count": 4
+    }
+  },
+  {
+    "type": "trade",
+    "date": "2026-08-25",
+    "ts": "2026-08-25T19:20:43.303619Z",
+    "symbol": "INTC",
+    "qty": 334,
+    "entry_price": 89.174,
+    "entry_ts": "2026-08-25T13:56:31.648797Z",
+    "entry_order_id": "a54b9cef-f110-48ee-9908-3a6d85e217dd",
+    "exit_price": 88.2751,
+    "exit_ts": "2026-08-25T14:23:57.905192Z",
+    "exit_order_id": "4ac29787-c654-4ce1-8ae2-f29dfa3ff056",
+    "exit_reason": "bracket",
+    "pnl_usd": -300.23,
+    "pnl_pct": -1.008
+  },
+  {
+    "type": "trade",
+    "date": "2026-08-25",
+    "ts": "2026-08-25T19:20:43.303619Z",
+    "symbol": "ORCL",
+    "qty": 657,
+    "entry_price": 145.78,
+    "entry_ts": "2026-08-25T15:48:16.615771Z",
+    "entry_order_id": "2eaf0aaa-cf8f-4a3c-ac80-14495dd37492",
+    "exit_price": 144.33,
+    "exit_ts": "2026-08-25T17:26:40.898052Z",
+    "exit_order_id": "c6f0dd1b-893f-423a-9bd4-33925f87807a",
+    "exit_reason": "bracket",
+    "pnl_usd": -952.65,
+    "pnl_pct": -0.9946
+  },
+  {
+    "type": "trade",
+    "date": "2026-08-25",
+    "ts": "2026-08-25T19:20:43.303619Z",
+    "symbol": "SHOP",
+    "qty": 128,
+    "entry_price": 154.04,
+    "entry_ts": "2026-08-25T17:07:24.176505Z",
+    "entry_order_id": "58afccbe-e9f7-4edc-9db7-2c1910053850",
+    "exit_price": 152.88,
+    "exit_ts": "2026-08-25T17:51:07.132941Z",
+    "exit_order_id": "55e73ea4-4287-46e2-b5df-789f17f00414",
+    "exit_reason": "bracket",
+    "pnl_usd": -148.48,
+    "pnl_pct": -0.7531
+  },
+  {
+    "type": "trade",
+    "date": "2026-08-25",
+    "ts": "2026-08-25T19:20:43.303619Z",
+    "symbol": "TSLA",
+    "qty": 55,
+    "entry_price": 353.7,
+    "entry_ts": "2026-08-25T17:07:26.190420Z",
+    "entry_order_id": "9f10296f-5d97-4a24-b47f-a63869b4b46d",
+    "exit_price": 351.58,
+    "exit_ts": "2026-08-25T18:25:58.208690Z",
+    "exit_order_id": "dc27a0ee-86ae-4965-8c14-6cd0db2c078e",
+    "exit_reason": "bracket",
+    "pnl_usd": -116.6,
+    "pnl_pct": -0.5994
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-08-25",
+    "ts": "2026-08-25T19:20:43.431467Z",
+    "status": "ok",
+    "note": "closed 4 positions, 4 round-trips"
   }
 ]
