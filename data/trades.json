@@ -21736,5 +21736,119 @@
     "ts": "2026-08-24T21:56:40.306891Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=32782149409"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-25",
+    "ts": "2026-08-25T13:55:01.654129Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=32856223338"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-25",
+    "ts": "2026-08-25T13:55:20.633110Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-25",
+    "ts": "2026-08-25T13:55:22.292932Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-25",
+    "ts": "2026-08-25T13:55:23.834169Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-25",
+    "ts": "2026-08-25T13:56:30.234870Z",
+    "equity_start": 90432.84,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMD",
+          "confidence": "high",
+          "catalyst": "Raymond James upgrade to Strong Buy citing 40% upside and Intel share gains by 2027; premarket gap +3.98% on high volume",
+          "smart_money_signals": "Insider cluster buy (8 buyers in 30d), House buy by Rep. Allen, Stocktwits 94% bullish on 30 msgs, 83% analyst buy rating",
+          "rationale": "Full stack: fresh analyst upgrade catalyst + insider cluster + congressional + retail sentiment all aligned with confirming price action"
+        },
+        {
+          "symbol": "INTC",
+          "confidence": "medium",
+          "catalyst": "Intel unveiled next-gen AI processors (Diamond Rapids, Crescent Island, Wildcat Lake) for data center; premarket +2.32% on heavy 15M volume",
+          "smart_money_signals": "Pelosi 2 buys in 21d (House cluster), WSB chatter 3.62x normal at rank #16, Stocktwits 67% bullish",
+          "rationale": "Product launch catalyst plus Pelosi buy signal is a classic setup with strong volume confirmation"
+        },
+        {
+          "symbol": "NFLX",
+          "confidence": "medium",
+          "catalyst": "Relative strength +1.71% with no negative news; clean tape",
+          "smart_money_signals": "Insider cluster buy (6 buyers in 30d), Stocktwits 100% bullish on 30 msgs, 76% analyst buy",
+          "rationale": "Pure smart-money setup \u2014 cluster buying plus unanimous retail sentiment with confirming price action"
+        }
+      ],
+      "market_take": "Risk-on tone with chip/AI names leading premarket bounce; energy and consumer names lagging",
+      "skipped_movers": [
+        "NKE: heavy insider selling (10 sells, 0 buys) with price down 3.5%",
+        "PLTR: heavy insider selling (8 sells vs 1 buy)",
+        "ADBE: red tape plus insider selling",
+        "SHOP: catalyst is generic ETF list, weak conviction",
+        "META: 21 insider sells offsets bullish sentiment",
+        "ORCL: no fresh catalyst, modest signal",
+        "CVX/XOM: energy weakness, no catalyst",
+        "SBUX: red tape, insider selling",
+        "GE: mild signal, no catalyst"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Full stack: fresh analyst upgrade catalyst + insider cluster + congressional + retail sentiment all aligned with confirming price action",
+        "symbol": "AMD",
+        "qty": 62,
+        "entry_price_est": 473.755,
+        "stop_price": 469.02,
+        "take_price": 483.23,
+        "order_id": "34366dee-a1c1-4039-90ae-aac5d6ca0341"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Product launch catalyst plus Pelosi buy signal is a classic setup with strong volume confirmation",
+        "symbol": "INTC",
+        "qty": 334,
+        "entry_price_est": 89.15,
+        "stop_price": 88.26,
+        "take_price": 90.93,
+        "order_id": "a54b9cef-f110-48ee-9908-3a6d85e217dd"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Pure smart-money setup \u2014 cluster buying plus unanimous retail sentiment with confirming price action",
+        "symbol": "NFLX",
+        "qty": 366,
+        "entry_price_est": 81.32,
+        "stop_price": 80.51,
+        "take_price": 82.95,
+        "order_id": "2c8f545c-0cb9-487e-a14c-3ea6f2f78c5d"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-25",
+    "ts": "2026-08-25T13:56:30.354589Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
