@@ -21971,5 +21971,102 @@
     "ts": "2026-08-25T16:20:31.301097Z",
     "status": "intraday_workflow_started",
     "note": "event=schedule run_id=32871363239"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-25",
+    "ts": "2026-08-25T17:06:01.995310Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=32875871170"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-08-25",
+    "ts": "2026-08-25T17:06:25.621042Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-25",
+    "ts": "2026-08-25T17:07:23.902184Z",
+    "equity_start": 90231.73,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "SHOP",
+          "confidence": "high",
+          "catalyst": "JPMorgan named SHOP as a top AI-fueled consumer tech pick; stock gapping +2.88% on strong volume with clean tape and no contradicting news",
+          "smart_money_signals": "Stocktwits 78% bullish on 30 msgs, analysts 79.2% bullish (11 SB / 31 B), no insider selling flagged",
+          "rationale": "Best setup on the board: analyst-driven catalyst + confirming price action + bullish sentiment with no red flags"
+        },
+        {
+          "symbol": "CVX",
+          "confidence": "medium",
+          "catalyst": "Modest pullback (-1.26%) in a name with strong analyst conviction offers a mean-reversion long entry",
+          "smart_money_signals": "83.9% analyst buy (8 SB / 18 B), stocktwits 76% bullish, insider activity balanced (11 buys / 11 sells) \u2014 not a red flag",
+          "rationale": "High analyst conviction (>70%) qualifies as smart-money signal B; single House sell is noise"
+        },
+        {
+          "symbol": "TSLA",
+          "confidence": "medium",
+          "catalyst": "Positive robotics coverage highlighting Tesla's manufacturing/data edge; stock up +1.27% on heavy volume",
+          "smart_money_signals": "WSB chatter 3.55x normal at rank #10 (39 mentions), stocktwits 64% bullish",
+          "rationale": "Retail momentum + favorable narrative catalyst with tight 1% stop manageable on liquid name"
+        }
+      ],
+      "market_take": "Mixed tape with selective tech/AI strength \u2014 SHOP leading, discretionary names (NKE, SBUX) weak on sector read-across",
+      "skipped_movers": [
+        "NKE: down -2.56% on sector contagion, 10 insider sells, price contradicts bullish sentiment",
+        "META: 21 insider sells (heavy 10:1 ratio) despite bullish analysts",
+        "WMT: negative price action + insider and House selling",
+        "ADBE: down on the day with insider selling and only 39% analyst bullish",
+        "GS: no catalyst, heavy insider selling from 1 insider",
+        "SBUX: negative alt-data score, no catalyst, price falling"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best setup on the board: analyst-driven catalyst + confirming price action + bullish sentiment with no red flags",
+        "symbol": "SHOP",
+        "qty": 128,
+        "entry_price_est": 154.475,
+        "stop_price": 152.93,
+        "take_price": 157.56,
+        "order_id": "58afccbe-e9f7-4edc-9db7-2c1910053850"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "High analyst conviction (>70%) qualifies as smart-money signal B; single House sell is noise",
+        "symbol": "CVX",
+        "qty": 98,
+        "entry_price_est": 201.475,
+        "stop_price": 199.46,
+        "take_price": 205.5,
+        "order_id": "10585c6c-5b82-488a-b672-6f5f1223b237"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Retail momentum + favorable narrative catalyst with tight 1% stop manageable on liquid name",
+        "symbol": "TSLA",
+        "qty": 55,
+        "entry_price_est": 355.17,
+        "stop_price": 351.62,
+        "take_price": 362.27,
+        "order_id": "9f10296f-5d97-4a24-b47f-a63869b4b46d"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-08-25",
+    "ts": "2026-08-25T17:07:23.993668Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]

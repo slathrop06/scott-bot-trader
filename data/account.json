@@ -1,46 +1,55 @@
 {
-  "ts": "2026-08-25T16:34:19.912740Z",
-  "equity": 90407.88,
+  "ts": "2026-08-25T17:07:23.990547Z",
+  "equity": 90293.03,
   "last_equity": 90432.84,
-  "cash": -160324.72,
-  "buying_power": 60752.4,
-  "all_time_return_pct": -9.5921,
+  "cash": -166768.56,
+  "buying_power": 237.16,
+  "all_time_return_pct": -9.707,
   "positions": [
     {
       "symbol": "AMD",
       "qty": 62,
       "avg_entry_price": 473.3081,
-      "current_price": 477.75,
-      "market_value": 29620.5,
-      "unrealized_pl": 275.4,
-      "unrealized_pl_pct": 0.938
+      "current_price": 476.4679,
+      "market_value": 29541.01,
+      "unrealized_pl": 195.91,
+      "unrealized_pl_pct": 0.668
+    },
+    {
+      "symbol": "CVX",
+      "qty": 32,
+      "avg_entry_price": 201.37,
+      "current_price": 201.36,
+      "market_value": 6443.52,
+      "unrealized_pl": -0.32,
+      "unrealized_pl_pct": -0.005
     },
     {
       "symbol": "GE",
       "qty": 276,
       "avg_entry_price": 346.2608,
-      "current_price": 346.7,
-      "market_value": 95689.2,
-      "unrealized_pl": 121.21,
-      "unrealized_pl_pct": 0.127
+      "current_price": 347.235,
+      "market_value": 95836.86,
+      "unrealized_pl": 268.87,
+      "unrealized_pl_pct": 0.281
     },
     {
       "symbol": "NFLX",
       "qty": 366,
       "avg_entry_price": 81.33,
-      "current_price": 82.1922,
-      "market_value": 30082.35,
-      "unrealized_pl": 315.57,
-      "unrealized_pl_pct": 1.06
+      "current_price": 82.07,
+      "market_value": 30037.62,
+      "unrealized_pl": 270.84,
+      "unrealized_pl_pct": 0.91
     },
     {
       "symbol": "ORCL",
       "qty": 657,
       "avg_entry_price": 145.78,
-      "current_price": 145.115,
-      "market_value": 95340.55,
-      "unrealized_pl": -436.9,
-      "unrealized_pl_pct": -0.456
+      "current_price": 144.905,
+      "market_value": 95202.59,
+      "unrealized_pl": -574.88,
+      "unrealized_pl_pct": -0.6
     }
   ]
 }
