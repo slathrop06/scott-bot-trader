@@ -21871,5 +21871,98 @@
     "ts": "2026-08-25T14:53:12.872345Z",
     "status": "imports_ok",
     "note": "src.* all importable"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-25",
+    "ts": "2026-08-25T15:47:06.364391Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=32867925146"
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-08-25",
+    "ts": "2026-08-25T15:47:26.726522Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-25",
+    "ts": "2026-08-25T15:48:16.271695Z",
+    "equity_start": 90472.02,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "SHOP",
+          "confidence": "medium",
+          "catalyst": "Up +2.64% intraday on JPMorgan AI-fueled consumer tech pick highlighting SHOP; strong relative strength with tape confirmation",
+          "smart_money_signals": "Stocktwits 75% bullish on 30 msgs; analyst rating 79.2% bullish (11 SB / 31 B / 10 H / 1 SS)",
+          "rationale": "Only clean gap-up with catalyst + analyst conviction + bullish social \u2014 cleanest long here."
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "Up +2.07% intraday showing relative strength with no contradicting news",
+          "smart_money_signals": "House buy by Michael Rulli in last 21d; 81.6% analyst bullish (15 SB / 25 B); Stocktwits 65% bullish",
+          "rationale": "Green tape + congressional buy + high analyst conviction stack cleanly with no insider selling."
+        },
+        {
+          "symbol": "GE",
+          "confidence": "low",
+          "catalyst": "Up +1.23% intraday relative strength, no negative news",
+          "smart_money_signals": "87.5% analyst bullish (9 SB / 19 B); Stocktwits 80% bullish on 30 msgs",
+          "rationale": "Third-best available: modest green move with strong analyst + social backing, minimal insider noise."
+        }
+      ],
+      "market_take": "Mixed tape with energy and staples weak on oil drop; select tech/consumer names showing relative strength.",
+      "skipped_movers": [
+        "NKE: -3% on Foot Locker/Dick's read-through, 10 insider sells, alt-score 0/10",
+        "SBUX: red tape + insider selling, no catalyst",
+        "XOM: oil tumble on Iran de-escalation, sector headwind",
+        "WMT: red + insider and congressional selling despite bullish sentiment",
+        "CVX: same oil headwind, congressional sell",
+        "ADBE: red tape + insider sell + weak analyst (39% bullish)",
+        "GS: heavy insider selling (3 sells by one insider), weak 47% analyst",
+        "MCD: red tape, congressional sell, no catalyst"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "failed",
+        "symbol": "SHOP",
+        "error": "{\"base_price\":\"153.57\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Green tape + congressional buy + high analyst conviction stack cleanly with no insider selling.",
+        "symbol": "ORCL",
+        "qty": 657,
+        "entry_price_est": 145.92000000000002,
+        "stop_price": 144.46,
+        "take_price": 148.84,
+        "order_id": "2eaf0aaa-cf8f-4a3c-ac80-14495dd37492"
+      },
+      {
+        "status": "submitted",
+        "confidence": "low",
+        "rationale": "Third-best available: modest green move with strong analyst + social backing, minimal insider noise.",
+        "symbol": "GE",
+        "qty": 276,
+        "entry_price_est": 346.26,
+        "stop_price": 342.8,
+        "take_price": 353.19,
+        "order_id": "8e146f63-be6d-441b-a2c3-043dd45f9a78"
+      }
+    ]
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-08-25",
+    "ts": "2026-08-25T15:48:16.309488Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
