@@ -22472,5 +22472,105 @@
     "ts": "2026-08-26T16:22:38.077484Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-26",
+    "ts": "2026-08-26T18:17:19.978242Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=32998860240"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-08-26",
+    "ts": "2026-08-26T18:17:40.939935Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-26",
+    "ts": "2026-08-26T18:18:46.021387Z",
+    "equity_start": 89381.39,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "ORCL",
+          "confidence": "high",
+          "catalyst": "Citigroup argues stock could more than double from current levels; ORCL up +1.95% intraday on the analyst-driven reset thesis with whale-alert flow confirming institutional buying",
+          "smart_money_signals": "Alt-score 4/10: House buy (Michael Rulli), Stocktwits 86% bullish on 30 msgs, 82% analyst buy (15SB/25B)",
+          "rationale": "Cleanest stack \u2014 bullish analyst catalyst + confirming intraday gap + smart money all aligned with no insider selling overhang"
+        },
+        {
+          "symbol": "AVGO",
+          "confidence": "medium",
+          "catalyst": "Price is slightly red (-1.17%) but setup is a buy-the-dip on AI infrastructure winner ahead of NVDA earnings tailwind",
+          "smart_money_signals": "Alt-score 6/10 (highest in slate): House cluster buy (2 reps: Taylor, Allen), top-10 WSB rank, 75% Stocktwits bullish, 91% analyst buy (17SB/34B)",
+          "rationale": "Strongest smart-money stack on the board \u2014 congressional cluster buy + analyst conviction >90% justifies entry despite modest red tape"
+        },
+        {
+          "symbol": "META",
+          "confidence": "medium",
+          "catalyst": "$17B state settlement removes major litigation overhang; stock gapping +1.80% on the news",
+          "smart_money_signals": "WSB rank #2 with 7.79x normal chatter (226 mentions), Stocktwits 93% bullish, 87% analyst buy (21SB/41B, zero sells)",
+          "rationale": "Specific catalyst clearing overhang plus explosive retail attention and near-unanimous analyst conviction; insider selling noted but outweighed by catalyst"
+        }
+      ],
+      "market_take": "Mixed tape with Fed/NVDA-earnings caution weighing on financials and megacaps, but idiosyncratic catalyst names (ORCL, META) are bid.",
+      "skipped_movers": [
+        "PLTR: heavy insider selling (24 sells, 4 insiders) \u2014 disqualifier",
+        "NKE: analyst downgrade catalyst is negative, price down 2%",
+        "GS: negative price action and insider selling, no bullish catalyst",
+        "TSLA: no catalyst, price down, alt-score 0",
+        "CAT: Stocktwits only 38% bullish, no catalyst",
+        "SBUX: no catalyst, insider sell",
+        "DIS: price down, House selling",
+        "MS: price down, insider selling",
+        "AAPL: House activity is net-selling (2 buy / 4 sell) despite cluster-buy tag"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Cleanest stack \u2014 bullish analyst catalyst + confirming intraday gap + smart money all aligned with no insider selling overhang",
+        "symbol": "ORCL",
+        "qty": 432,
+        "entry_price_est": 147.785,
+        "stop_price": 146.31,
+        "take_price": 150.74,
+        "order_id": "d358ac69-a6c4-4061-9822-5a642450d6d9"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strongest smart-money stack on the board \u2014 congressional cluster buy + analyst conviction >90% justifies entry despite modest red tape",
+        "symbol": "AVGO",
+        "qty": 179,
+        "entry_price_est": 355.41499999999996,
+        "stop_price": 351.86,
+        "take_price": 362.52,
+        "order_id": "20241bd8-4c87-4b02-8ea2-e3f47a49328a"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Specific catalyst clearing overhang plus explosive retail attention and near-unanimous analyst conviction; insider selling noted but outweighed by catalyst",
+        "symbol": "META",
+        "qty": 110,
+        "entry_price_est": 576.775,
+        "stop_price": 571.01,
+        "take_price": 588.31,
+        "order_id": "fc312119-2b06-48ee-998f-bcd8da53c12f"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-08-26",
+    "ts": "2026-08-26T18:18:46.155022Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
