@@ -22370,5 +22370,107 @@
     "ts": "2026-08-26T14:54:36.934249Z",
     "status": "imports_ok",
     "note": "src.* all importable"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-26",
+    "ts": "2026-08-26T16:21:04.681904Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=32987874985"
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-08-26",
+    "ts": "2026-08-26T16:21:29.124377Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-26",
+    "ts": "2026-08-26T16:22:37.780406Z",
+    "equity_start": 89698.87,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AVGO",
+          "confidence": "medium",
+          "catalyst": "Modest pullback (-1.89%) in a name with strong smart-money stack; no negative company-specific news, just pre-earnings jitters commentary",
+          "smart_money_signals": "House cluster buy (2 buys: Allen, Taylor), WSB rank #8 with 1.88x chatter, Stocktwits 79% bullish, 91.1% analyst buy \u2014 alt-data score 6/10",
+          "rationale": "Best smart-money stack on the board with a dip entry and no disqualifying insider selling"
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "Up +2.15% intraday on no news \u2014 relative strength move in a broadly weak tape",
+          "smart_money_signals": "House buy by Rulli, Stocktwits 83% bullish, 81.6% analyst buy \u2014 alt-data 4/10",
+          "rationale": "Clean relative-strength breakout with no contradicting signals and clean insider tape"
+        },
+        {
+          "symbol": "GOOGL",
+          "confidence": "low",
+          "catalyst": "Pullback (-1.50%) in a name with heavy congressional accumulation; Rulli sale already public/priced",
+          "smart_money_signals": "House cluster buy (5 buys by Taylor, Rulli), WSB 2.06x chatter rank #17, Stocktwits 80% bullish, 88.6% analyst buy \u2014 alt-data 5/10",
+          "rationale": "Strong congressional cluster and analyst conviction outweigh modest insider selling on a dip entry"
+        }
+      ],
+      "market_take": "Mixed tape with mega-cap tech bifurcating (META/ORCL/AAPL green, GOOGL/AVGO/TSLA red) \u2014 favor names with alt-data stacks over price momentum alone",
+      "skipped_movers": [
+        "NKE: analyst downgrade + 10 insider sells + gap down \u2014 clear skip",
+        "TSLA: 0/10 alt-data, down 1.93%, no catalyst",
+        "GS: heavy insider selling + negative AI headline",
+        "META: 21 insider sells despite WSB frenzy \u2014 insider signal dominates",
+        "PLTR: 24 insider sells overwhelms bullish chatter",
+        "MS: insider selling, no catalyst",
+        "CAT: Stocktwits only 38% bullish \u2014 sentiment disqualifier",
+        "DIS: House selling, no catalyst",
+        "CVX: mixed insider/House signals, geopolitical headline noise",
+        "AAPL: House cluster offset by 4 House sells + insider sell, weaker stack than AVGO/ORCL",
+        "SHOP: thin volume, no catalyst"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Best smart-money stack on the board with a dip entry and no disqualifying insider selling",
+        "symbol": "AVGO",
+        "qty": 300,
+        "entry_price_est": 354.175,
+        "stop_price": 350.63,
+        "take_price": 361.26,
+        "order_id": "20c5b195-37b4-4f51-b061-75e4a267eaf4"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean relative-strength breakout with no contradicting signals and clean insider tape",
+        "symbol": "ORCL",
+        "qty": 715,
+        "entry_price_est": 148.95499999999998,
+        "stop_price": 147.47,
+        "take_price": 151.93,
+        "order_id": "c8b478b9-94fe-4350-b96e-7cafe792f69e"
+      },
+      {
+        "status": "submitted",
+        "confidence": "low",
+        "rationale": "Strong congressional cluster and analyst conviction outweigh modest insider selling on a dip entry",
+        "symbol": "GOOGL",
+        "qty": 312,
+        "entry_price_est": 341.125,
+        "stop_price": 337.71,
+        "take_price": 347.95,
+        "order_id": "f2d93e4f-0b62-46d6-a9b9-31c6a16c7985"
+      }
+    ]
+  },
+  {
+    "type": "intraday_mid_attempt",
+    "date": "2026-08-26",
+    "ts": "2026-08-26T16:22:38.077484Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
