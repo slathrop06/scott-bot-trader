@@ -1,37 +1,55 @@
 {
-  "ts": "2026-08-26T18:18:46.151001Z",
-  "equity": 89429.21,
+  "ts": "2026-08-26T20:32:42.419065Z",
+  "equity": 90223.84,
   "last_equity": 90391.93,
-  "cash": -47081.38,
-  "buying_power": 3120.82,
-  "all_time_return_pct": -10.5708,
+  "cash": -237864.66,
+  "buying_power": 0.0,
+  "all_time_return_pct": -9.7762,
   "positions": [
+    {
+      "symbol": "AVGO",
+      "qty": 179,
+      "avg_entry_price": 353.9,
+      "current_price": 354.4,
+      "market_value": 63437.6,
+      "unrealized_pl": 89.5,
+      "unrealized_pl_pct": 0.141
+    },
     {
       "symbol": "GOOGL",
       "qty": 312,
       "avg_entry_price": 341.13,
-      "current_price": 341.5,
-      "market_value": 106548.0,
-      "unrealized_pl": 115.44,
-      "unrealized_pl_pct": 0.108
+      "current_price": 341.9,
+      "market_value": 106672.8,
+      "unrealized_pl": 240.24,
+      "unrealized_pl_pct": 0.226
+    },
+    {
+      "symbol": "META",
+      "qty": 110,
+      "avg_entry_price": 578.09,
+      "current_price": 575.16,
+      "market_value": 63267.6,
+      "unrealized_pl": -322.3,
+      "unrealized_pl_pct": -0.507
     },
     {
       "symbol": "NFLX",
       "qty": 366,
       "avg_entry_price": 81.4945,
-      "current_price": 81.865,
-      "market_value": 29962.59,
-      "unrealized_pl": 135.61,
-      "unrealized_pl_pct": 0.455
+      "current_price": 81.463,
+      "market_value": 29815.46,
+      "unrealized_pl": -11.52,
+      "unrealized_pl_pct": -0.039
     },
     {
       "symbol": "ORCL",
       "qty": 432,
       "avg_entry_price": 147.79,
-      "current_price": 147.76,
-      "market_value": 63832.32,
-      "unrealized_pl": -12.96,
-      "unrealized_pl_pct": -0.02
+      "current_price": 150.22,
+      "market_value": 64895.04,
+      "unrealized_pl": 1049.76,
+      "unrealized_pl_pct": 1.644
     }
   ]
 }
