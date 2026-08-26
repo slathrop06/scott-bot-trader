@@ -22233,5 +22233,121 @@
     "ts": "2026-08-25T21:55:37.002541Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=32903560183"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-26",
+    "ts": "2026-08-26T13:57:47.091436Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=32977343747"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-26",
+    "ts": "2026-08-26T13:58:04.413253Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-26",
+    "ts": "2026-08-26T13:58:06.051172Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-26",
+    "ts": "2026-08-26T13:58:07.592547Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-26",
+    "ts": "2026-08-26T13:58:57.042282Z",
+    "equity_start": 90391.93,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMD",
+          "confidence": "high",
+          "catalyst": "Premarket gap +2.09% on $489.65 despite Ark trimming \u2014 market absorbing supply, showing relative strength in AI chip complex",
+          "smart_money_signals": "10/10 alt score: insider cluster buy (8 buyers), House buy by Richard Allen, WSB 2.46x normal at rank #19, Stocktwits 89% bullish, 83% analyst buy (48 of 58)",
+          "rationale": "Full-stack signal alignment \u2014 insider cluster + congress + WSB surge + sentiment + gap up is the cleanest setup on the board"
+        },
+        {
+          "symbol": "NFLX",
+          "confidence": "medium",
+          "catalyst": "No hard catalyst but extreme social/insider signal alignment \u2014 insider cluster buy with 6 distinct buyers is rare",
+          "smart_money_signals": "8/10 alt score: insider cluster buy (6 buyers, 16 buys), WSB chatter 4.33x normal, Stocktwits 100% bullish on 30 msgs, 76% analyst buy",
+          "rationale": "Multi-signal smart money stack overrides mild -0.65% price weakness \u2014 buying dip with confirmed insider conviction"
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "Strongest premarket gap of the group at +3.36% on 4M volume with no negative news \u2014 clean momentum leader",
+          "smart_money_signals": "House buy by Michael Rulli, Stocktwits 79% bullish, 82% analyst buy (40 of 49)",
+          "rationale": "Biggest clean gap with sentiment and analyst support \u2014 momentum + no disqualifiers"
+        }
+      ],
+      "market_take": "Mixed tape with AI/chip names showing relative strength (AMD, ORCL, AVGO) while financials and mega-cap tech drift lower",
+      "skipped_movers": [
+        "MSFT: House sells match buys 4:3, insider selling",
+        "GOOGL: 5 insider sells offset congress buys, price down",
+        "AAPL: heavy insider sell + congress net sell 4:2",
+        "AVGO: price down -0.89% and earnings risk flagged in news",
+        "GS: heavy insider selling, price down, analyst only 47% bullish",
+        "NKE: heavy insider selling, price down, sentiment 28%",
+        "CAT: zero alt-data signal, sentiment 38%",
+        "TSLA: weak alt score, price down, mixed news",
+        "SHOP: price down with no catalyst",
+        "ADBE: insider selling, weak analyst 39%",
+        "MS: insider selling, price down"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Full-stack signal alignment \u2014 insider cluster + congress + WSB surge + sentiment + gap up is the cleanest setup on the board",
+        "symbol": "AMD",
+        "qty": 60,
+        "entry_price_est": 489.925,
+        "stop_price": 485.03,
+        "take_price": 499.72,
+        "order_id": "db3e4aa4-60d3-4a75-a2ce-31017b1c3aa7"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Multi-signal smart money stack overrides mild -0.65% price weakness \u2014 buying dip with confirmed insider conviction",
+        "symbol": "NFLX",
+        "qty": 366,
+        "entry_price_est": 81.435,
+        "stop_price": 80.62,
+        "take_price": 83.06,
+        "order_id": "b2f53a6f-9cee-44a8-9995-ef54992e60de"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Biggest clean gap with sentiment and analyst support \u2014 momentum + no disqualifiers",
+        "symbol": "ORCL",
+        "qty": 199,
+        "entry_price_est": 149.74,
+        "stop_price": 148.24,
+        "take_price": 152.73,
+        "order_id": "a3e94abe-658c-42dc-beac-602a1c036ca2"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-26",
+    "ts": "2026-08-26T13:58:57.079149Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
