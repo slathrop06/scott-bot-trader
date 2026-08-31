@@ -22899,5 +22899,120 @@
     "ts": "2026-08-29T01:56:26.297245Z",
     "status": "ok",
     "note": "closed 0 positions, 0 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-31",
+    "ts": "2026-08-31T19:28:30.005474Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=33430747148"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-31",
+    "ts": "2026-08-31T19:28:48.504942Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-08-31",
+    "ts": "2026-08-31T19:28:50.460288Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-31",
+    "ts": "2026-08-31T19:28:52.005308Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-08-31",
+    "ts": "2026-08-31T19:29:48.812866Z",
+    "equity_start": 91891.61,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMZN",
+          "confidence": "medium",
+          "catalyst": "AWS Saudi cloud region launch expanding Middle East AI footprint; FTC suit is known and priced in with -2.7% dip offering entry",
+          "smart_money_signals": "10/10 alt-score: insider cluster buy (6 buyers, 14 buys 30d), House buy (Kean), WSB 43x normal (rank #8), Stocktwits 89% bullish, 93.3% analyst buy",
+          "rationale": "Best stacked smart-money profile on the board \u2014 insider cluster + Congress + retail + analysts all aligned, with dip on stale FTC headline giving favorable entry"
+        },
+        {
+          "symbol": "TSLA",
+          "confidence": "medium",
+          "catalyst": "+5.36% premarket gap up with solar/AI power tailwind narrative; strong relative momentum vs broader tape",
+          "smart_money_signals": "WSB rank #2 with 28x normal chatter (140 mentions), Stocktwits 80% bullish",
+          "rationale": "Strong momentum catalyst with retail flow confirming \u2014 clean gap-up setup where +2% TP is achievable intraday"
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "Green tape (+1.2%) on a broadly down day = relative strength with no negative headlines",
+          "smart_money_signals": "Insider cluster buy (11 distinct buyers, 11 buys vs 4 sells 30d), 74% analyst buy",
+          "rationale": "Rare 11-insider cluster buy is a high-conviction smart-money signal and price is confirming with relative strength"
+        }
+      ],
+      "market_take": "Risk-off tape on US-Iran escalation and yields at 19-month highs \u2014 favor names with idiosyncratic smart-money support over beta plays",
+      "skipped_movers": [
+        "GOOGL: UK settlement + ChatGPT ad threat overhang despite insider cluster",
+        "AMZN alt: no \u2014 kept",
+        "WMT: heavy insider + Congress selling",
+        "AAPL: insider + House selling, CEO transition uncertainty",
+        "META: 14 insider sells, ChatGPT ad threat",
+        "NKE: JPM cut + 10 insider sells",
+        "SHOP: -3.9% gap down contradicts bullish setup",
+        "PLTR: 24 insider sells overwhelms other signals",
+        "XOM: oil spike is geopolitical and reversible",
+        "BA/SBUX/GE: weak/no catalyst with insider selling"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Best stacked smart-money profile on the board \u2014 insider cluster + Congress + retail + analysts all aligned, with dip on stale FTC headline giving favorable entry",
+        "symbol": "AMZN",
+        "qty": 117,
+        "entry_price_est": 258.98,
+        "stop_price": 256.39,
+        "take_price": 264.16,
+        "order_id": "240bc7c7-6ec8-46e2-91cf-71fe5c01c494"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strong momentum catalyst with retail flow confirming \u2014 clean gap-up setup where +2% TP is achievable intraday",
+        "symbol": "TSLA",
+        "qty": 82,
+        "entry_price_est": 366.7,
+        "stop_price": 363.03,
+        "take_price": 374.03,
+        "order_id": "ccec607e-31d2-460b-9569-22055c4455f1"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Rare 11-insider cluster buy is a high-conviction smart-money signal and price is confirming with relative strength",
+        "symbol": "CRM",
+        "qty": 116,
+        "entry_price_est": 260.98,
+        "stop_price": 258.37,
+        "take_price": 266.2,
+        "order_id": "23600638-44a6-477d-a5b7-da4056016f77"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-08-31",
+    "ts": "2026-08-31T19:29:48.849128Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
