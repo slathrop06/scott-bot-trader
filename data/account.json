@@ -1,46 +1,64 @@
 {
-  "ts": "2026-09-01T18:17:13.877320Z",
-  "equity": 90380.47,
+  "ts": "2026-09-01T20:02:06.601086Z",
+  "equity": 90830.0,
   "last_equity": 91898.43,
-  "cash": -71410.72,
+  "cash": -250603.08,
   "buying_power": 0.0,
-  "all_time_return_pct": -9.6195,
+  "all_time_return_pct": -9.17,
   "positions": [
+    {
+      "symbol": "AAPL",
+      "qty": 258,
+      "avg_entry_price": 324.7,
+      "current_price": 325.03,
+      "market_value": 83857.74,
+      "unrealized_pl": 85.14,
+      "unrealized_pl_pct": 0.102
+    },
     {
       "symbol": "AMD",
       "qty": 65,
       "avg_entry_price": 457.05,
-      "current_price": 454.71,
-      "market_value": 29556.15,
-      "unrealized_pl": -152.1,
-      "unrealized_pl_pct": -0.512
+      "current_price": 459.2,
+      "market_value": 29848.0,
+      "unrealized_pl": 139.75,
+      "unrealized_pl_pct": 0.47
     },
     {
       "symbol": "AMZN",
       "qty": 117,
       "avg_entry_price": 254.4,
-      "current_price": 255.0701,
-      "market_value": 29843.2,
-      "unrealized_pl": 78.4,
-      "unrealized_pl_pct": 0.263
+      "current_price": 254.82,
+      "market_value": 29813.94,
+      "unrealized_pl": 49.14,
+      "unrealized_pl_pct": 0.165
+    },
+    {
+      "symbol": "INTC",
+      "qty": 948,
+      "avg_entry_price": 88.37,
+      "current_price": 88.95,
+      "market_value": 84324.6,
+      "unrealized_pl": 549.84,
+      "unrealized_pl_pct": 0.656
     },
     {
       "symbol": "META",
-      "qty": 124,
+      "qty": 144,
       "avg_entry_price": 582.25,
-      "current_price": 582.0,
-      "market_value": 72168.0,
-      "unrealized_pl": -31.0,
-      "unrealized_pl_pct": -0.043
+      "current_price": 578.54,
+      "market_value": 83309.76,
+      "unrealized_pl": -534.24,
+      "unrealized_pl_pct": -0.637
     },
     {
       "symbol": "XOM",
       "qty": 184,
       "avg_entry_price": 163.86,
-      "current_price": 164.26,
-      "market_value": 30223.84,
-      "unrealized_pl": 73.6,
-      "unrealized_pl_pct": 0.244
+      "current_price": 164.56,
+      "market_value": 30279.04,
+      "unrealized_pl": 128.8,
+      "unrealized_pl_pct": 0.427
     }
   ]
 }
