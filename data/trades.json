@@ -23202,5 +23202,105 @@
     "ts": "2026-09-01T17:18:22.698223Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-01",
+    "ts": "2026-09-01T18:16:11.056178Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=33542626817"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-09-01",
+    "ts": "2026-09-01T18:16:30.715930Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-09-01",
+    "ts": "2026-09-01T18:17:13.842355Z",
+    "equity_start": 90374.59,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "META",
+          "confidence": "medium",
+          "catalyst": "Relative strength \u2014 up +1.8% on a broad tape sell-off where software/AI names are cracking; bucks the trend cleanly",
+          "smart_money_signals": "87.3% analyst bullish (21 SB / 41 B / 9 H, zero sells), WSB chatter 2.07x normal at rank #6 \u2014 insider selling exists but is offset by very strong analyst conviction and RS",
+          "rationale": "Only mover green while peers bleed, with elite analyst conviction \u2014 cleanest momentum setup on the board"
+        },
+        {
+          "symbol": "INTC",
+          "confidence": "medium",
+          "catalyst": "Holding $85 technical support after premarket dip; stock has stabilized intraday (only -1.5% vs peers -2-5%)",
+          "smart_money_signals": "Nancy Pelosi cluster buy (2 House buys, 0 sells in 21d), Stocktwits 88% bullish on 30 msgs \u2014 clear smart-money conviction",
+          "rationale": "Pelosi buy + 88% retail bullishness + relative outperformance on a red day is a defensible smart-money long"
+        },
+        {
+          "symbol": "AAPL",
+          "confidence": "low",
+          "catalyst": "Up +2.45% on heavy volume (33M) against a broad-market/AI-tape drawdown \u2014 clear relative strength",
+          "smart_money_signals": "WSB rank #5 at 2.44x normal chatter, 68.5% analyst bullish \u2014 offset by 1 House sell and light insider selling, and Stocktwits only 27% bullish",
+          "rationale": "Strongest price-action confirmation on the board; RS + volume outweighs mixed smart-money on a short intraday hold"
+        }
+      ],
+      "market_take": "Risk-off tape with yields spiking and software/AI cracking \u2014 hunt for relative-strength names bucking the sell-off.",
+      "skipped_movers": [
+        "ORCL: -5.7% breakdown on rate/debt concerns, catching falling knife",
+        "SHOP: -4.7% with no catalyst, weak alt-data",
+        "TSLA: analyst bullishness only 49%, in downtrend",
+        "PLTR: heavy insider selling (24 sells), Stocktwits 42% bullish",
+        "HD: heavy insider + congressional selling, negative housing narrative",
+        "GS: heavy insider selling, weak analyst mix",
+        "NKE: 10 insider sells, weak analyst conviction (39%)",
+        "ADBE: no catalyst, weak analyst mix despite bullish Stocktwits",
+        "CAT: no signals, no catalyst"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Only mover green while peers bleed, with elite analyst conviction \u2014 cleanest momentum setup on the board",
+        "symbol": "META",
+        "qty": 144,
+        "entry_price_est": 581.56,
+        "stop_price": 575.74,
+        "take_price": 593.19,
+        "order_id": "c1870aa4-a307-4cfe-ae7e-e7019f77be98"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Pelosi buy + 88% retail bullishness + relative outperformance on a red day is a defensible smart-money long",
+        "symbol": "INTC",
+        "qty": 948,
+        "entry_price_est": 88.36500000000001,
+        "stop_price": 87.48,
+        "take_price": 90.13,
+        "order_id": "7d8534dc-9811-4654-a7b0-9989f93f6a10"
+      },
+      {
+        "status": "submitted",
+        "confidence": "low",
+        "rationale": "Strongest price-action confirmation on the board; RS + volume outweighs mixed smart-money on a short intraday hold",
+        "symbol": "AAPL",
+        "qty": 258,
+        "entry_price_est": 324.695,
+        "stop_price": 321.45,
+        "take_price": 331.19,
+        "order_id": "ae75c6f6-e1a7-449a-978f-62d4ff48dc88"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-09-01",
+    "ts": "2026-09-01T18:17:13.882049Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]

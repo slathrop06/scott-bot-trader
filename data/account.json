@@ -1,9 +1,46 @@
 {
-  "ts": "2026-09-01T17:08:53.876942Z",
-  "equity": 90411.57,
+  "ts": "2026-09-01T18:17:13.877320Z",
+  "equity": 90380.47,
   "last_equity": 91898.43,
-  "cash": 90411.57,
-  "buying_power": 361646.28,
-  "all_time_return_pct": -9.5884,
-  "positions": []
+  "cash": -71410.72,
+  "buying_power": 0.0,
+  "all_time_return_pct": -9.6195,
+  "positions": [
+    {
+      "symbol": "AMD",
+      "qty": 65,
+      "avg_entry_price": 457.05,
+      "current_price": 454.71,
+      "market_value": 29556.15,
+      "unrealized_pl": -152.1,
+      "unrealized_pl_pct": -0.512
+    },
+    {
+      "symbol": "AMZN",
+      "qty": 117,
+      "avg_entry_price": 254.4,
+      "current_price": 255.0701,
+      "market_value": 29843.2,
+      "unrealized_pl": 78.4,
+      "unrealized_pl_pct": 0.263
+    },
+    {
+      "symbol": "META",
+      "qty": 124,
+      "avg_entry_price": 582.25,
+      "current_price": 582.0,
+      "market_value": 72168.0,
+      "unrealized_pl": -31.0,
+      "unrealized_pl_pct": -0.043
+    },
+    {
+      "symbol": "XOM",
+      "qty": 184,
+      "avg_entry_price": 163.86,
+      "current_price": 164.26,
+      "market_value": 30223.84,
+      "unrealized_pl": 73.6,
+      "unrealized_pl_pct": 0.244
+    }
+  ]
 }
