@@ -1,64 +1,64 @@
 {
-  "ts": "2026-09-01T20:02:06.601086Z",
-  "equity": 90830.0,
+  "ts": "2026-09-01T22:43:27.549711Z",
+  "equity": 90428.24,
   "last_equity": 91898.43,
   "cash": -250603.08,
   "buying_power": 0.0,
-  "all_time_return_pct": -9.17,
+  "all_time_return_pct": -9.5718,
   "positions": [
     {
       "symbol": "AAPL",
       "qty": 258,
       "avg_entry_price": 324.7,
-      "current_price": 325.03,
-      "market_value": 83857.74,
-      "unrealized_pl": 85.14,
-      "unrealized_pl_pct": 0.102
+      "current_price": 324.7124,
+      "market_value": 83775.8,
+      "unrealized_pl": 3.2,
+      "unrealized_pl_pct": 0.004
     },
     {
       "symbol": "AMD",
       "qty": 65,
       "avg_entry_price": 457.05,
-      "current_price": 459.2,
-      "market_value": 29848.0,
-      "unrealized_pl": 139.75,
-      "unrealized_pl_pct": 0.47
+      "current_price": 459.38,
+      "market_value": 29859.7,
+      "unrealized_pl": 151.45,
+      "unrealized_pl_pct": 0.51
     },
     {
       "symbol": "AMZN",
       "qty": 117,
       "avg_entry_price": 254.4,
-      "current_price": 254.82,
-      "market_value": 29813.94,
-      "unrealized_pl": 49.14,
-      "unrealized_pl_pct": 0.165
+      "current_price": 254.8005,
+      "market_value": 29811.66,
+      "unrealized_pl": 46.86,
+      "unrealized_pl_pct": 0.157
     },
     {
       "symbol": "INTC",
       "qty": 948,
       "avg_entry_price": 88.37,
-      "current_price": 88.95,
-      "market_value": 84324.6,
-      "unrealized_pl": 549.84,
-      "unrealized_pl_pct": 0.656
+      "current_price": 88.7541,
+      "market_value": 84138.89,
+      "unrealized_pl": 364.13,
+      "unrealized_pl_pct": 0.435
     },
     {
       "symbol": "META",
       "qty": 144,
       "avg_entry_price": 582.25,
-      "current_price": 578.54,
-      "market_value": 83309.76,
-      "unrealized_pl": -534.24,
-      "unrealized_pl_pct": -0.637
+      "current_price": 577.62,
+      "market_value": 83177.28,
+      "unrealized_pl": -666.72,
+      "unrealized_pl_pct": -0.795
     },
     {
       "symbol": "XOM",
       "qty": 184,
       "avg_entry_price": 163.86,
-      "current_price": 164.56,
-      "market_value": 30279.04,
-      "unrealized_pl": 128.8,
-      "unrealized_pl_pct": 0.427
+      "current_price": 164.5,
+      "market_value": 30268.0,
+      "unrealized_pl": 117.76,
+      "unrealized_pl_pct": 0.391
     }
   ]
 }
