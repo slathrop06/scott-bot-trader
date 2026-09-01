@@ -23087,5 +23087,120 @@
     "ts": "2026-08-31T23:03:15.390484Z",
     "status": "ok",
     "note": "closed 2 positions, 1 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-01",
+    "ts": "2026-09-01T17:17:02.620217Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=33536836283"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-01",
+    "ts": "2026-09-01T17:17:22.238941Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-01",
+    "ts": "2026-09-01T17:17:24.005674Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-09-01",
+    "ts": "2026-09-01T17:17:25.574546Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-09-01",
+    "ts": "2026-09-01T17:18:22.534685Z",
+    "equity_start": 90411.57,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMZN",
+          "confidence": "medium",
+          "catalyst": "Down -2.25% with broader software/AI weakness on rising yields \u2014 pullback in a leader offers a mean-reversion entry against overwhelmingly bullish alt-data",
+          "smart_money_signals": "Insider cluster buy (6 buyers, 14 buys in 30d), House buy (Thomas H. Kean), WSB chatter 5.18x normal at rank #8, Stocktwits 78% bullish, analyst 93.3% buy \u2014 perfect 10/10 alt-data score",
+          "rationale": "Highest conviction alt-data stack in the entire tape; buying the dip in a name with insider + congressional + analyst + retail alignment."
+        },
+        {
+          "symbol": "AMD",
+          "confidence": "medium",
+          "catalyst": "Down -2.75% on macro rate pressure, not company-specific \u2014 pullback in an AI leader",
+          "smart_money_signals": "Insider cluster buy (8 buyers), House buy (Richard W. Allen), Stocktwits 86% bullish, analyst 82.8% buy \u2014 8/10 alt-data score with no bearish signals",
+          "rationale": "Strong smart-money stack with insider cluster buying provides a floor; sold-off with the AI complex on yields, not fundamentals."
+        },
+        {
+          "symbol": "XOM",
+          "confidence": "medium",
+          "catalyst": "Gap up +1.64% on Brent crude topping $92 after Strait of Hormuz tanker attacks; Trump meeting with oil execs today",
+          "smart_money_signals": "Stocktwits 100% bullish (30 msgs), no insider/congressional selling \u2014 clean tape",
+          "rationale": "Only major relative-strength gapper with a concrete geopolitical catalyst and no contradicting alt-data on a red macro day."
+        }
+      ],
+      "market_take": "Risk-off tape as 10Y yields hit 19-month highs crush high-multiple software/AI; energy is the only green pocket.",
+      "skipped_movers": [
+        "ORCL: high-multiple software getting hit on yields despite good alt-data, no catalyst to reverse",
+        "TSLA: analyst sentiment only 49%, WSB chatter cooling",
+        "HD: heavy insider + congressional selling, bearish housing commentary",
+        "AAPL: only green mega-cap but insider + congressional net selling",
+        "NKE: heavy insider selling (10 sells, 5 insiders), weak analyst sentiment",
+        "PLTR: Cathie Wood dumping $26M, heavy insider selling (24 sells)",
+        "GS: heavy insider selling",
+        "META: 14 insider sells in 30d despite gap up",
+        "ADBE: weak analyst sentiment (39%), no catalyst",
+        "GE: no catalyst and price is red"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Highest conviction alt-data stack in the entire tape; buying the dip in a name with insider + congressional + analyst + retail alignment.",
+        "symbol": "AMZN",
+        "qty": 117,
+        "entry_price_est": 254.39,
+        "stop_price": 251.85,
+        "take_price": 259.48,
+        "order_id": "60bef7e8-6d88-40e4-86ca-ef925a3c03a6"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strong smart-money stack with insider cluster buying provides a floor; sold-off with the AI complex on yields, not fundamentals.",
+        "symbol": "AMD",
+        "qty": 65,
+        "entry_price_est": 455.45,
+        "stop_price": 450.9,
+        "take_price": 464.56,
+        "order_id": "54017bfb-f2fc-48ef-889d-e036597afd22"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Only major relative-strength gapper with a concrete geopolitical catalyst and no contradicting alt-data on a red macro day.",
+        "symbol": "XOM",
+        "qty": 184,
+        "entry_price_est": 161.84,
+        "stop_price": 160.22,
+        "take_price": 165.08,
+        "order_id": "db1b592f-246d-4819-9b9e-e29a799865f9"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-09-01",
+    "ts": "2026-09-01T17:18:22.698223Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
