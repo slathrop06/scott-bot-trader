@@ -1,28 +1,9 @@
 {
-  "ts": "2026-08-31T23:16:26.276566Z",
-  "equity": 91901.77,
-  "last_equity": 91891.61,
-  "cash": 31334.1,
-  "buying_power": 270836.25,
-  "all_time_return_pct": -8.0982,
-  "positions": [
-    {
-      "symbol": "AMZN",
-      "qty": 117,
-      "avg_entry_price": 258.9848,
-      "current_price": 260.3046,
-      "market_value": 30455.64,
-      "unrealized_pl": 154.42,
-      "unrealized_pl_pct": 0.51
-    },
-    {
-      "symbol": "TSLA",
-      "qty": 82,
-      "avg_entry_price": 366.5318,
-      "current_price": 367.2199,
-      "market_value": 30112.03,
-      "unrealized_pl": 56.42,
-      "unrealized_pl_pct": 0.188
-    }
-  ]
+  "ts": "2026-09-01T17:08:53.876942Z",
+  "equity": 90411.57,
+  "last_equity": 91898.43,
+  "cash": 90411.57,
+  "buying_power": 361646.28,
+  "all_time_return_pct": -9.5884,
+  "positions": []
 }
