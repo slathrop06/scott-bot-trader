@@ -23309,5 +23309,45 @@
     "ts": "2026-09-01T21:08:11.606264Z",
     "status": "intraday_workflow_started",
     "note": "event=schedule run_id=33559345387"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-01",
+    "ts": "2026-09-01T21:28:00.421539Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=33561200050"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-09-01",
+    "ts": "2026-09-01T21:28:19.647863Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-09-01",
+    "ts": "2026-09-01T21:28:20.056417Z",
+    "equity_end": 90601.98,
+    "daily_pnl_usd": -1296.45,
+    "daily_pct": -1.4107,
+    "flatten": {
+      "closed": [
+        "AAPL",
+        "AMD",
+        "AMZN",
+        "INTC",
+        "META",
+        "XOM"
+      ],
+      "raw_response_count": 6
+    }
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-09-01",
+    "ts": "2026-09-01T21:28:20.261268Z",
+    "status": "ok",
+    "note": "closed 6 positions, 0 round-trips"
   }
 ]
