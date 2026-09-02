@@ -23356,5 +23356,111 @@
     "ts": "2026-09-01T23:26:57.907272Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=33571058468"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-02",
+    "ts": "2026-09-02T17:05:57.688589Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=33658959716"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-02",
+    "ts": "2026-09-02T17:06:16.493795Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-02",
+    "ts": "2026-09-02T17:06:17.673582Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-09-02",
+    "ts": "2026-09-02T17:06:18.823680Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-09-02",
+    "ts": "2026-09-02T17:07:17.348642Z",
+    "equity_start": 92012.1,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "NFLX",
+          "confidence": "high",
+          "catalyst": "Gap up +2.08% on volume with no adverse news, riding relative strength",
+          "smart_money_signals": "Insider cluster buy (6 distinct buyers, 16 buys in 30d), stocktwits 79% bullish on 30 msgs, 74% analyst buy rating",
+          "rationale": "Insider cluster buy from 6 different insiders is the strongest smart-money signal on the board, paired with a clean gap up."
+        },
+        {
+          "symbol": "MA",
+          "confidence": "high",
+          "catalyst": "Gap up +1.23% with no negative news, clean tape",
+          "smart_money_signals": "Insider cluster buy (4 buyers), stocktwits 100% bullish, 90.7% analyst buy rating (13SB/36B)",
+          "rationale": "Rare stack of insider cluster + near-unanimous analyst conviction + bullish social \u2014 high-quality setup."
+        },
+        {
+          "symbol": "NVDA",
+          "confidence": "medium",
+          "catalyst": "Nearing $14B Hugging Face deal, +3.65% gap on huge 97M premarket volume",
+          "smart_money_signals": "WSB rank #2 with 2.69x chatter surge, 94.2% analyst buy (24SB/41B)",
+          "rationale": "Concrete M&A catalyst plus massive retail attention and analyst conviction \u2014 clearest news-driven momentum play."
+        }
+      ],
+      "market_take": "Risk-on tone with AI/mega-caps leading; PLTR profit-taking is the notable exception.",
+      "skipped_movers": [
+        "PLTR: -6.75% gap down with heavy insider selling (24 sells by 4 insiders) \u2014 skip",
+        "META: heavy insider selling (14 sells, 3 insiders) contradicts gap \u2014 skip",
+        "INTC: only 34.5% analyst buy, Pelosi buy alone insufficient vs weak fundamentals \u2014 skip",
+        "BA: heavy insider selling flagged despite bullish sentiment \u2014 skip",
+        "ADBE: negative Cramer/Google AI headline, price down, 39% analyst buy \u2014 skip",
+        "SBUX: insider selling and only 47.8% analyst buy \u2014 skip",
+        "COST: House selling and price down \u2014 skip"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Insider cluster buy from 6 different insiders is the strongest smart-money signal on the board, paired with a clean gap up.",
+        "symbol": "NFLX",
+        "qty": 369,
+        "entry_price_est": 82.22,
+        "stop_price": 81.4,
+        "take_price": 83.86,
+        "order_id": "af063197-5ba8-43da-88ea-1cb9f6eb984f"
+      },
+      {
+        "status": "failed",
+        "symbol": "MA",
+        "error": "{\"base_price\":\"588.355\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Concrete M&A catalyst plus massive retail attention and analyst conviction \u2014 clearest news-driven momentum play.",
+        "symbol": "NVDA",
+        "qty": 134,
+        "entry_price_est": 225.2,
+        "stop_price": 222.95,
+        "take_price": 229.7,
+        "order_id": "d74ff88a-6380-4f92-b577-89c70f130880"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-09-02",
+    "ts": "2026-09-02T17:07:17.469520Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
