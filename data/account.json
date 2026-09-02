@@ -1,64 +1,9 @@
 {
-  "ts": "2026-09-01T22:43:27.549711Z",
-  "equity": 90428.24,
-  "last_equity": 91898.43,
-  "cash": -250603.08,
-  "buying_power": 0.0,
-  "all_time_return_pct": -9.5718,
-  "positions": [
-    {
-      "symbol": "AAPL",
-      "qty": 258,
-      "avg_entry_price": 324.7,
-      "current_price": 324.7124,
-      "market_value": 83775.8,
-      "unrealized_pl": 3.2,
-      "unrealized_pl_pct": 0.004
-    },
-    {
-      "symbol": "AMD",
-      "qty": 65,
-      "avg_entry_price": 457.05,
-      "current_price": 459.38,
-      "market_value": 29859.7,
-      "unrealized_pl": 151.45,
-      "unrealized_pl_pct": 0.51
-    },
-    {
-      "symbol": "AMZN",
-      "qty": 117,
-      "avg_entry_price": 254.4,
-      "current_price": 254.8005,
-      "market_value": 29811.66,
-      "unrealized_pl": 46.86,
-      "unrealized_pl_pct": 0.157
-    },
-    {
-      "symbol": "INTC",
-      "qty": 948,
-      "avg_entry_price": 88.37,
-      "current_price": 88.7541,
-      "market_value": 84138.89,
-      "unrealized_pl": 364.13,
-      "unrealized_pl_pct": 0.435
-    },
-    {
-      "symbol": "META",
-      "qty": 144,
-      "avg_entry_price": 582.25,
-      "current_price": 577.62,
-      "market_value": 83177.28,
-      "unrealized_pl": -666.72,
-      "unrealized_pl_pct": -0.795
-    },
-    {
-      "symbol": "XOM",
-      "qty": 184,
-      "avg_entry_price": 163.86,
-      "current_price": 164.5,
-      "market_value": 30268.0,
-      "unrealized_pl": 117.76,
-      "unrealized_pl_pct": 0.391
-    }
-  ]
+  "ts": "2026-09-02T16:58:57.914267Z",
+  "equity": 92012.1,
+  "last_equity": 90910.0,
+  "cash": 92012.1,
+  "buying_power": 368048.4,
+  "all_time_return_pct": -7.9879,
+  "positions": []
 }
