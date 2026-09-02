@@ -1,9 +1,28 @@
 {
-  "ts": "2026-09-02T16:58:57.914267Z",
-  "equity": 92012.1,
+  "ts": "2026-09-02T18:30:26.376987Z",
+  "equity": 92051.73,
   "last_equity": 90910.0,
-  "cash": 92012.1,
-  "buying_power": 368048.4,
-  "all_time_return_pct": -7.9879,
-  "positions": []
+  "cash": 31500.3,
+  "buying_power": 99831.61,
+  "all_time_return_pct": -7.9483,
+  "positions": [
+    {
+      "symbol": "NFLX",
+      "qty": 369,
+      "avg_entry_price": 82.23,
+      "current_price": 82.425,
+      "market_value": 30414.83,
+      "unrealized_pl": 71.95,
+      "unrealized_pl_pct": 0.237
+    },
+    {
+      "symbol": "NVDA",
+      "qty": 134,
+      "avg_entry_price": 225.1413,
+      "current_price": 224.9,
+      "market_value": 30136.6,
+      "unrealized_pl": -32.33,
+      "unrealized_pl_pct": -0.107
+    }
+  ]
 }

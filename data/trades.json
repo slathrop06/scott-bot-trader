@@ -23462,5 +23462,100 @@
     "ts": "2026-09-02T17:07:17.469520Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-02",
+    "ts": "2026-09-02T18:29:09.380569Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=33667471950"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-09-02",
+    "ts": "2026-09-02T18:29:29.345609Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-09-02",
+    "ts": "2026-09-02T18:30:26.346575Z",
+    "equity_start": 92058.89,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "MA",
+          "confidence": "high",
+          "catalyst": "Steady uptrend +1.49% on the day with no negative news; broad-based buying in payments",
+          "smart_money_signals": "Insider cluster buy (4 buyers, 5 buys in 30d), 90.7% analyst buy (13SB/36B), stocktwits 100% bullish \u2014 alt-data score 6/10",
+          "rationale": "Cleanest alt-data setup on the board: rare 4-insider cluster buy + top-tier analyst conviction + positive price action, no contradicting news."
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "+3.45% intraday move on continued OpenAI $300B deal narrative; strong relative strength",
+          "smart_money_signals": "79.6% analyst buy (15SB/24B), stocktwits 69% bullish, no insider/congress selling flagged",
+          "rationale": "Best price catalyst on the board with clean alt-data and no disqualifiers \u2014 momentum continuation play."
+        },
+        {
+          "symbol": "META",
+          "confidence": "medium",
+          "catalyst": "+2.62% breakout with no negative news, riding AI sector strength (NVDA +4.7%)",
+          "smart_money_signals": "87.3% analyst buy (20SB/42B), top-10 WSB ticker (#10, 56 mentions), stocktwits 90% bullish",
+          "rationale": "Strong relative strength plus stacked social/analyst signals outweigh routine insider selling at these levels."
+        }
+      ],
+      "market_take": "Mixed tape \u2014 AI/mega-cap bid (NVDA, META, ORCL) offset by software weakness (PLTR, ADBE); lean into names with confirming alt-data.",
+      "skipped_movers": [
+        "PLTR: -6% breakdown with 24 insider sells \u2014 skip despite bullish retail",
+        "BA: only 1 insider sell but no catalyst and congress selling",
+        "TSLA: down day, no signals, analyst sentiment weak",
+        "MSFT: down 1% with insider + congress selling cluster",
+        "ADBE: negative Cramer/Google AI headline + weak analyst score",
+        "SBUX: weak analyst sentiment (47.8%) and insider selling",
+        "DIS: no news catalyst and congress net selling",
+        "IWM: broad ETF, no directional edge",
+        "V: minor congress selling, no catalyst \u2014 MA is the better payments pick",
+        "COST: down day with congress selling"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "failed",
+        "symbol": "MA",
+        "error": "{\"base_price\":\"589.78\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Best price catalyst on the board with clean alt-data and no disqualifiers \u2014 momentum continuation play.",
+        "symbol": "ORCL",
+        "qty": 674,
+        "entry_price_est": 144.64,
+        "stop_price": 143.19,
+        "take_price": 147.53,
+        "order_id": "1c975255-6c19-4e4e-b068-89c18b837bf4"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strong relative strength plus stacked social/analyst signals outweigh routine insider selling at these levels.",
+        "symbol": "META",
+        "qty": 164,
+        "entry_price_est": 592.77,
+        "stop_price": 586.84,
+        "take_price": 604.63,
+        "order_id": "8feb6a0c-1a2b-44ca-bd56-c0b6f5bb3248"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-09-02",
+    "ts": "2026-09-02T18:30:26.381268Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
