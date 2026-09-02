@@ -23564,5 +23564,43 @@
     "ts": "2026-09-02T21:13:28.461228Z",
     "status": "intraday_workflow_started",
     "note": "event=schedule run_id=33683909451"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-02",
+    "ts": "2026-09-02T21:22:53.543526Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=33684811673"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-09-02",
+    "ts": "2026-09-02T21:23:13.631889Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-09-02",
+    "ts": "2026-09-02T21:23:13.748608Z",
+    "equity_end": 92266.88,
+    "daily_pnl_usd": 1356.88,
+    "daily_pct": 1.4926,
+    "flatten": {
+      "closed": [
+        "META",
+        "NFLX",
+        "NVDA",
+        "ORCL"
+      ],
+      "raw_response_count": 4
+    }
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-09-02",
+    "ts": "2026-09-02T21:23:13.830183Z",
+    "status": "ok",
+    "note": "closed 4 positions, 0 round-trips"
   }
 ]
