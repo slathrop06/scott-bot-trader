@@ -23609,5 +23609,120 @@
     "ts": "2026-09-02T23:24:09.467910Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=33694907133"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-03",
+    "ts": "2026-09-03T17:00:02.910276Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=33781939241"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-03",
+    "ts": "2026-09-03T17:00:21.891417Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-03",
+    "ts": "2026-09-03T17:00:23.512665Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-09-03",
+    "ts": "2026-09-03T17:00:25.002138Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-09-03",
+    "ts": "2026-09-03T17:01:41.070935Z",
+    "equity_start": 97239.48,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "CRM",
+          "confidence": "high",
+          "catalyst": "Up +2.58% premarket riding AI cloud tailwind (Snowflake/Broadcom AI demand read-through), clean tape with no negative news",
+          "smart_money_signals": "Rare insider CLUSTER BUY: 11 buyers, 11 buys vs 4 sells in 30d \u2014 extremely bullish insider signal; 74.6% analyst bullish (14SB/30B)",
+          "rationale": "Insider cluster of 11 different buyers is the strongest smart-money signal on the board, paired with constructive AI-sector price action."
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "+5.50% gap up on CNBC Final Trades pick + AI cloud demand read-through from SNOW/AVGO earnings",
+          "smart_money_signals": "Stocktwits 94% bullish on 30 msgs, 79.6% analyst bullish (15SB/24B/9H), no insider selling flagged",
+          "rationale": "Clean gap up with strong sentiment stack and no red flags \u2014 best pure momentum + sentiment combo available."
+        },
+        {
+          "symbol": "AVGO",
+          "confidence": "medium",
+          "catalyst": "Down -2.12% on strong Q3 print (AI revenue +200%) \u2014 dip-buy setup on a beat-and-raise where the sell-off looks like supply-constraint overreaction",
+          "smart_money_signals": "WSB rank #1 with 5.25x normal chatter (693 mentions), Stocktwits 100% bullish, 91% analyst buy, House buy by Rep. Allen",
+          "rationale": "Overwhelming alt-data stack (top WSB, 100% ST, analyst + congressional buy) on a fundamentally strong report offers asymmetric bounce potential."
+        }
+      ],
+      "market_take": "Risk-on AI-led tape with mega-cap tech gapping up; sentiment broadly bullish but insider selling widespread \u2014 favor names with genuine smart-money accumulation.",
+      "skipped_movers": [
+        "PLTR: heavy insider selling (24 sells, 4 insiders) + Burry short thesis \u2014 skip despite gap",
+        "TSLA: only 49% analyst bullish, Cybercab event = binary headline risk today",
+        "WMT: DOJ probe headline is a negative catalyst offsetting sentiment",
+        "GS: heavy insider selling, weak analyst mix (46.9%)",
+        "META: 13 insider sells from 2 insiders, gap smaller than peers",
+        "MSFT: insider + House selling cluster despite good sentiment",
+        "MS: no real catalyst, weak analyst mix",
+        "JPM: insider selling, weak sentiment (50% ST)",
+        "AAPL: House cluster buy present but 2 sells offset, weaker gap",
+        "ADBE: House selling, weak analyst mix (39%)"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Insider cluster of 11 different buyers is the strongest smart-money signal on the board, paired with constructive AI-sector price action.",
+        "symbol": "CRM",
+        "qty": 120,
+        "entry_price_est": 265.62,
+        "stop_price": 262.96,
+        "take_price": 270.93,
+        "order_id": "9be4b3cf-c51c-4972-bf5b-61dce2e762f2"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean gap up with strong sentiment stack and no red flags \u2014 best pure momentum + sentiment combo available.",
+        "symbol": "ORCL",
+        "qty": 208,
+        "entry_price_est": 153.925,
+        "stop_price": 152.39,
+        "take_price": 157.0,
+        "order_id": "a5bf458b-77f6-451c-bb24-14fd07d54d02"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Overwhelming alt-data stack (top WSB, 100% ST, analyst + congressional buy) on a fundamentally strong report offers asymmetric bounce potential.",
+        "symbol": "AVGO",
+        "qty": 90,
+        "entry_price_est": 355.5,
+        "stop_price": 351.94,
+        "take_price": 362.61,
+        "order_id": "a5f8199c-71da-4645-824f-b4e93ec3dc63"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-09-03",
+    "ts": "2026-09-03T17:01:41.111092Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
