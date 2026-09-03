@@ -23831,5 +23831,60 @@
     "ts": "2026-09-03T21:14:39.250263Z",
     "status": "intraday_workflow_started",
     "note": "event=schedule run_id=33806860840"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-03",
+    "ts": "2026-09-03T21:26:49.086130Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=33807976155"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-09-03",
+    "ts": "2026-09-03T21:27:06.953750Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-09-03",
+    "ts": "2026-09-03T21:27:07.266983Z",
+    "equity_end": 95517.41,
+    "daily_pnl_usd": 3683.61,
+    "daily_pct": 4.0112,
+    "flatten": {
+      "closed": [
+        "AVGO",
+        "CRM",
+        "NVDA",
+        "ORCL",
+        "PLTR"
+      ],
+      "raw_response_count": 5
+    }
+  },
+  {
+    "type": "trade",
+    "date": "2026-09-03",
+    "ts": "2026-09-03T21:27:07.344356Z",
+    "symbol": "INTC",
+    "qty": 986,
+    "entry_price": 92.1508,
+    "entry_ts": "2026-09-03T18:26:28.386553Z",
+    "entry_order_id": "32904235-b572-4a74-bfe5-92b60a327c7e",
+    "exit_price": 91.1719,
+    "exit_ts": "2026-09-03T19:14:28.791985Z",
+    "exit_order_id": "b9ab58d2-8a27-4bf9-b0b0-edf69e642506",
+    "exit_reason": "bracket",
+    "pnl_usd": -965.25,
+    "pnl_pct": -1.0623
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-09-03",
+    "ts": "2026-09-03T21:27:07.451754Z",
+    "status": "ok",
+    "note": "closed 5 positions, 1 round-trips"
   }
 ]
