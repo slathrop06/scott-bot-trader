@@ -1,9 +1,37 @@
 {
-  "ts": "2026-09-03T16:56:02.044626Z",
-  "equity": 97239.48,
+  "ts": "2026-09-03T18:26:27.290845Z",
+  "equity": 97766.7,
   "last_equity": 91833.8,
-  "cash": 97239.48,
-  "buying_power": 388957.92,
-  "all_time_return_pct": -2.7605,
-  "positions": []
+  "cash": 1317.4,
+  "buying_power": 2311.6,
+  "all_time_return_pct": -2.2333,
+  "positions": [
+    {
+      "symbol": "AVGO",
+      "qty": 90,
+      "avg_entry_price": 356.68,
+      "current_price": 355.53,
+      "market_value": 31997.7,
+      "unrealized_pl": -103.5,
+      "unrealized_pl_pct": -0.322
+    },
+    {
+      "symbol": "CRM",
+      "qty": 120,
+      "avg_entry_price": 265.15,
+      "current_price": 266.87,
+      "market_value": 32024.4,
+      "unrealized_pl": 206.4,
+      "unrealized_pl_pct": 0.649
+    },
+    {
+      "symbol": "ORCL",
+      "qty": 208,
+      "avg_entry_price": 153.86,
+      "current_price": 155.9,
+      "market_value": 32427.2,
+      "unrealized_pl": 424.32,
+      "unrealized_pl_pct": 1.326
+    }
+  ]
 }

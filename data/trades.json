@@ -23724,5 +23724,105 @@
     "ts": "2026-09-03T17:01:41.111092Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-03",
+    "ts": "2026-09-03T18:25:09.052656Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=33790355378"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-09-03",
+    "ts": "2026-09-03T18:25:29.781424Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-09-03",
+    "ts": "2026-09-03T18:26:27.157633Z",
+    "equity_start": 97826.8,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "NVDA",
+          "confidence": "high",
+          "catalyst": "Confirmed $12.9B Hugging Face acquisition announcement with Huang framing it as a growth driver; broader AI tape strong (Broadcom guidance, Snowflake AI cloud demand) plus Fed dovish tailwind lifting +1.95% on heavy 95M volume",
+          "smart_money_signals": "94.2% analyst buy (24 SB / 41 B, near-unanimous), top-3 WSB ticker with 155 mentions, stocktwits 90% bullish, no insider or congressional selling flags",
+          "rationale": "Cleanest stack of catalyst + smart-money with no red flags \u2014 best risk/reward for a +2% target."
+        },
+        {
+          "symbol": "INTC",
+          "confidence": "medium",
+          "catalyst": "Steady +2.2% move on heavy 47M volume in a risk-on tape, no offsetting negative news",
+          "smart_money_signals": "House cluster: Nancy Pelosi with 2 buys in 21d (net buying, zero sells), stocktwits 100% bullish on 30 msgs",
+          "rationale": "Rare Pelosi buy signal plus unanimous retail bullishness with clean insider tape \u2014 smart-money-driven setup."
+        },
+        {
+          "symbol": "PLTR",
+          "confidence": "medium",
+          "catalyst": "PwC enterprise AI partnership expansion driving +7.6% surge on 27.9M volume \u2014 concrete new-deal catalyst",
+          "smart_money_signals": "71.8% analyst bullish, stocktwits 86% bullish, WSB rank #12 with 1.37x mentions; insider selling is a caution but offset by the specific partnership catalyst",
+          "rationale": "Strongest single-name catalyst of the day; momentum and social confirmation outweigh the ongoing insider distribution for a short-hold bracket."
+        }
+      ],
+      "market_take": "Risk-on tape on Waller's dovish rate-hold hint, with AI names leading and financials participating.",
+      "skipped_movers": [
+        "TSLA: Cybercab event today = binary headline risk into close, skip",
+        "MSFT: House cluster SELLING (Hern, McCormick, Taylor) + insider sells despite good news \u2014 disqualifier",
+        "META: 13 insider sells by 2 insiders, no fresh catalyst \u2014 skip",
+        "WMT: heavy insider + House selling despite retail bullishness \u2014 skip",
+        "GS: heavy insider selling, weak 46.9% analyst tape \u2014 skip",
+        "ADBE: House selling, weak 39.1% analyst tape, no news \u2014 skip",
+        "MS: no catalyst, thin signal",
+        "SHOP: Cathie Wood trimming 40K shares is a smart-money negative \u2014 skip",
+        "JPM: insider selling, mixed stocktwits at 50% \u2014 skip"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Cleanest stack of catalyst + smart-money with no red flags \u2014 best risk/reward for a +2% target.",
+        "symbol": "NVDA",
+        "qty": 395,
+        "entry_price_est": 229.76,
+        "stop_price": 227.46,
+        "take_price": 234.36,
+        "order_id": "98bfcb70-6b1a-4466-a198-da07c056bad1"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Rare Pelosi buy signal plus unanimous retail bullishness with clean insider tape \u2014 smart-money-driven setup.",
+        "symbol": "INTC",
+        "qty": 986,
+        "entry_price_est": 92.15,
+        "stop_price": 91.23,
+        "take_price": 93.99,
+        "order_id": "32904235-b572-4a74-bfe5-92b60a327c7e"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strongest single-name catalyst of the day; momentum and social confirmation outweigh the ongoing insider distribution for a short-hold bracket.",
+        "symbol": "PLTR",
+        "qty": 500,
+        "entry_price_est": 181.5,
+        "stop_price": 179.69,
+        "take_price": 185.13,
+        "order_id": "d7d4cfa1-cb4f-4bf1-9403-a4699b370f66"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-09-03",
+    "ts": "2026-09-03T18:26:27.295575Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
