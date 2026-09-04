@@ -23893,5 +23893,118 @@
     "ts": "2026-09-03T23:22:35.697432Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=33817319929"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-04",
+    "ts": "2026-09-04T16:48:53.296553Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=33897206992"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-04",
+    "ts": "2026-09-04T16:49:10.806731Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-04",
+    "ts": "2026-09-04T16:49:12.714942Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-09-04",
+    "ts": "2026-09-04T16:49:14.156371Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-09-04",
+    "ts": "2026-09-04T16:49:59.982393Z",
+    "equity_start": 96344.34,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMD",
+          "confidence": "high",
+          "catalyst": "Gap up +4.55% on TSM AI capacity news; relative strength with strong momentum",
+          "smart_money_signals": "Insider cluster buy (8 buyers), House buying (Rep. Allen), 83% analyst buy rating, 73% stocktwits bullish",
+          "rationale": "Best stack of catalyst + smart-money \u2014 gap up with insider cluster buy and top-tier analyst conviction."
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "Premarket +2.5% on 58-64% cloud growth guidance ahead of Sept 10 earnings; positive drift",
+          "smart_money_signals": "80% analyst buy, 80% stocktwits bullish, WSB mentions 1.45x normal",
+          "rationale": "Clean guidance-driven gap with strong analyst backing and no smart-money red flags."
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "Modest weakness sympathetic to ADBE, but stock holding up better than peer",
+          "smart_money_signals": "Insider cluster buy (11 buyers, 11:4 buy/sell ratio), 75% analyst buy",
+          "rationale": "Rare 11-insider cluster buy signals conviction at these levels \u2014 smart-money edge alone qualifies."
+        }
+      ],
+      "market_take": "Risk-off tape with mega-cap tech red (TSLA, ADBE, PLTR, NFLX down), but chips and Oracle bucking the trend on AI capex narrative.",
+      "skipped_movers": [
+        "TSLA: -6% on Cybercab disappointment, contradicts bullish sentiment \u2014 skip",
+        "ADBE: CEO transition uncertainty + House selling \u2014 skip",
+        "PLTR: heavy insider selling 24:3 (8:1 ratio) \u2014 disqualified",
+        "NFLX: heavy insider selling, weak stocktwits 50% \u2014 skip",
+        "MSFT: House cluster sell (3 sells), Nadella $44M sale, stocktwits 36% \u2014 skip",
+        "INTC: no news catalyst behind the gap, hard to trust +4.67% move",
+        "AAPL: mixed signals with insider selling and price down",
+        "GOOGL: down on day despite insider cluster buy, no fresh positive catalyst"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best stack of catalyst + smart-money \u2014 gap up with insider cluster buy and top-tier analyst conviction.",
+        "symbol": "AMD",
+        "qty": 66,
+        "entry_price_est": 476.41999999999996,
+        "stop_price": 471.66,
+        "take_price": 485.95,
+        "order_id": "c548fc43-92e9-496a-b0a1-b2aafc2c09f4"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean guidance-driven gap with strong analyst backing and no smart-money red flags.",
+        "symbol": "ORCL",
+        "qty": 202,
+        "entry_price_est": 156.63,
+        "stop_price": 155.06,
+        "take_price": 159.76,
+        "order_id": "7536cc5e-b2de-4604-b4f1-cdf26981a3c5"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Rare 11-insider cluster buy signals conviction at these levels \u2014 smart-money edge alone qualifies.",
+        "symbol": "CRM",
+        "qty": 122,
+        "entry_price_est": 260.05,
+        "stop_price": 257.45,
+        "take_price": 265.25,
+        "order_id": "fd9bb412-2e21-4756-a408-8b0ccdcd9673"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-09-04",
+    "ts": "2026-09-04T16:50:00.054769Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
