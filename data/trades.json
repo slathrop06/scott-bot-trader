@@ -24006,5 +24006,105 @@
     "ts": "2026-09-04T16:50:00.054769Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-04",
+    "ts": "2026-09-04T18:12:10.244973Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=33904605814"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-09-04",
+    "ts": "2026-09-04T18:12:39.955795Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-09-04",
+    "ts": "2026-09-04T18:13:24.116780Z",
+    "equity_start": 96101.11,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMD",
+          "confidence": "high",
+          "catalyst": "Up +3.78% on a red tape day showing strong relative strength with no negative news",
+          "smart_money_signals": "Insider cluster buy (8 buyers), House buy by Richard W. Allen, stocktwits 80% bullish (30 msgs), 83.1% analyst buy \u2014 alt-data score 8/10",
+          "rationale": "Best stacked setup on the board: relative strength + insider cluster + congressional + analyst + retail sentiment all align."
+        },
+        {
+          "symbol": "GOOGL",
+          "confidence": "medium",
+          "catalyst": "Modest pullback (-1.44%) offers entry on a name with strong smart-money backdrop",
+          "smart_money_signals": "Insider cluster buy (8 buyers), 90.0% analyst buy, stocktwits 69% bullish \u2014 alt-data score 5/10",
+          "rationale": "Insider cluster + top-tier analyst conviction give edge on a shallow dip."
+        },
+        {
+          "symbol": "CVX",
+          "confidence": "medium",
+          "catalyst": "Small pullback (-1.47%) in defensive energy name with supportive alt-data",
+          "smart_money_signals": "Net insider buying (3 buys/1 insider), stocktwits 80% bullish, 83.3% analyst buy",
+          "rationale": "Low-volatility defensive with buyer signals \u2014 clean bracket candidate on a broadly red tape."
+        }
+      ],
+      "market_take": "Broad risk-off on hot jobs print and rate-hike repricing; hunt for relative strength and smart-money-backed dips.",
+      "skipped_movers": [
+        "TSLA: -5.62% with Cybercab disappointment, no smart-money support",
+        "ADBE: CEO transition + house selling, -4.37% knife",
+        "PLTR: heavy insider selling (24 sells/4 insiders), -4.31%",
+        "NFLX: heavy insider selling and no catalyst",
+        "INTC: strong move but weak analyst conviction (34.5%)",
+        "MSFT: house cluster selling + Nadella $44M sale headline",
+        "AAPL: insider selling offsets house cluster buy, weak tape",
+        "CAT: extended +1.24% with only sentiment signal",
+        "WMT: insider + house selling despite bullish sentiment"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best stacked setup on the board: relative strength + insider cluster + congressional + analyst + retail sentiment all align.",
+        "symbol": "AMD",
+        "qty": 215,
+        "entry_price_est": 471.85,
+        "stop_price": 467.13,
+        "take_price": 481.29,
+        "order_id": "e82e75f7-e47f-498d-a417-c31f90389df0"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Insider cluster + top-tier analyst conviction give edge on a shallow dip.",
+        "symbol": "GOOGL",
+        "qty": 300,
+        "entry_price_est": 337.735,
+        "stop_price": 334.36,
+        "take_price": 344.49,
+        "order_id": "23337843-3ceb-464e-b686-0fcc1bc46831"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Low-volatility defensive with buyer signals \u2014 clean bracket candidate on a broadly red tape.",
+        "symbol": "CVX",
+        "qty": 487,
+        "entry_price_est": 208.585,
+        "stop_price": 206.5,
+        "take_price": 212.76,
+        "order_id": "6992f04b-cfcc-427c-9034-c24b3de4e7e8"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-09-04",
+    "ts": "2026-09-04T18:13:24.190156Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
