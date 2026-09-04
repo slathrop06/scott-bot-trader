@@ -24113,5 +24113,60 @@
     "ts": "2026-09-04T20:50:32.156698Z",
     "status": "intraday_workflow_started",
     "note": "event=schedule run_id=33918207197"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-04",
+    "ts": "2026-09-04T21:05:29.959615Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=33919436164"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-09-04",
+    "ts": "2026-09-04T21:05:50.093609Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-09-04",
+    "ts": "2026-09-04T21:05:50.810216Z",
+    "equity_end": 97283.8,
+    "daily_pnl_usd": 1651.55,
+    "daily_pct": 1.727,
+    "flatten": {
+      "closed": [
+        "AMD",
+        "CRM",
+        "CVX",
+        "GOOGL",
+        "ORCL"
+      ],
+      "raw_response_count": 5
+    }
+  },
+  {
+    "type": "trade",
+    "date": "2026-09-04",
+    "ts": "2026-09-04T21:05:50.921200Z",
+    "symbol": "AMD",
+    "qty": 66,
+    "entry_price": 476.3336,
+    "entry_ts": "2026-09-04T16:50:02.888178Z",
+    "entry_order_id": "c548fc43-92e9-496a-b0a1-b2aafc2c09f4",
+    "exit_price": 471.65,
+    "exit_ts": "2026-09-04T18:07:32.771385Z",
+    "exit_order_id": "14291c5f-028c-414f-aa88-95c4565b89c0",
+    "exit_reason": "bracket",
+    "pnl_usd": -309.12,
+    "pnl_pct": -0.9833
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-09-04",
+    "ts": "2026-09-04T21:05:51.095804Z",
+    "status": "ok",
+    "note": "closed 5 positions, 1 round-trips"
   }
 ]
