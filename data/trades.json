@@ -24231,5 +24231,44 @@
     "ts": "2026-09-07T19:03:15.873656Z",
     "status": "blocked",
     "note": "Market is closed."
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-07",
+    "ts": "2026-09-07T21:48:57.036615Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=34164472958"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-09-07",
+    "ts": "2026-09-07T21:49:18.409505Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-09-07",
+    "ts": "2026-09-07T21:49:18.912924Z",
+    "equity_end": 97311.5,
+    "daily_pnl_usd": 0.0,
+    "daily_pct": 0.0,
+    "flatten": {
+      "closed": [
+        "AMD",
+        "CRM",
+        "CVX",
+        "GOOGL",
+        "ORCL"
+      ],
+      "raw_response_count": 5
+    }
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-09-07",
+    "ts": "2026-09-07T21:49:19.177153Z",
+    "status": "ok",
+    "note": "closed 5 positions, 0 round-trips"
   }
 ]
