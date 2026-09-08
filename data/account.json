@@ -1,37 +1,28 @@
 {
-  "ts": "2026-09-08T18:25:29.836453Z",
-  "equity": 101089.19,
+  "ts": "2026-09-08T20:04:33.966193Z",
+  "equity": 100993.12,
   "last_equity": 97311.5,
-  "cash": 1357.71,
-  "buying_power": 97774.81,
-  "all_time_return_pct": 1.0892,
+  "cash": -26640.4,
+  "buying_power": 175548.26,
+  "all_time_return_pct": 0.9931,
   "positions": [
-    {
-      "symbol": "AMD",
-      "qty": 65,
-      "avg_entry_price": 510.85,
-      "current_price": 507.215,
-      "market_value": 32968.97,
-      "unrealized_pl": -236.28,
-      "unrealized_pl_pct": -0.712
-    },
     {
       "symbol": "AVGO",
       "qty": 91,
       "avg_entry_price": 367.01,
-      "current_price": 369.16,
-      "market_value": 33593.56,
-      "unrealized_pl": 195.65,
-      "unrealized_pl_pct": 0.586
+      "current_price": 368.72,
+      "market_value": 33553.52,
+      "unrealized_pl": 155.61,
+      "unrealized_pl_pct": 0.466
     },
     {
-      "symbol": "INTC",
-      "qty": 316,
-      "avg_entry_price": 105.75,
-      "current_price": 104.965,
-      "market_value": 33168.94,
-      "unrealized_pl": -248.06,
-      "unrealized_pl_pct": -0.742
+      "symbol": "TSLA",
+      "qty": 256,
+      "avg_entry_price": 366.15,
+      "current_price": 367.5,
+      "market_value": 94080.0,
+      "unrealized_pl": 345.6,
+      "unrealized_pl_pct": 0.369
     }
   ]
 }
