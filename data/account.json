@@ -1,28 +1,28 @@
 {
-  "ts": "2026-09-08T20:04:33.966193Z",
-  "equity": 100993.12,
+  "ts": "2026-09-08T22:53:11.555486Z",
+  "equity": 100690.45,
   "last_equity": 97311.5,
   "cash": -26640.4,
-  "buying_power": 175548.26,
-  "all_time_return_pct": 0.9931,
+  "buying_power": 174862.43,
+  "all_time_return_pct": 0.6904,
   "positions": [
     {
       "symbol": "AVGO",
       "qty": 91,
       "avg_entry_price": 367.01,
-      "current_price": 368.72,
-      "market_value": 33553.52,
-      "unrealized_pl": 155.61,
-      "unrealized_pl_pct": 0.466
+      "current_price": 367.6144,
+      "market_value": 33452.91,
+      "unrealized_pl": 55.0,
+      "unrealized_pl_pct": 0.165
     },
     {
       "symbol": "TSLA",
       "qty": 256,
       "avg_entry_price": 366.15,
-      "current_price": 367.5,
-      "market_value": 94080.0,
-      "unrealized_pl": 345.6,
-      "unrealized_pl_pct": 0.369
+      "current_price": 366.7107,
+      "market_value": 93877.94,
+      "unrealized_pl": 143.54,
+      "unrealized_pl_pct": 0.153
     }
   ]
 }
