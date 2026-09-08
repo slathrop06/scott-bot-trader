@@ -24389,5 +24389,99 @@
     "ts": "2026-09-08T17:13:46.189196Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-08",
+    "ts": "2026-09-08T18:24:20.304774Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=34262821250"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-09-08",
+    "ts": "2026-09-08T18:24:38.642200Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-09-08",
+    "ts": "2026-09-08T18:25:29.703797Z",
+    "equity_start": 101091.89,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "ORCL",
+          "confidence": "high",
+          "catalyst": "Up +1.69% on green day with OpenAI/AGI deal narrative ($300B backlog); relative strength vs weak tape",
+          "smart_money_signals": "WSB chatter 6.57x normal (rank #8, 46 mentions), Stocktwits 95% bullish on 30 msgs, 80% analyst buy (15SB/24B)",
+          "rationale": "Multi-factor stack \u2014 catalyst + momentum + heavy retail/analyst conviction on a down-tape day"
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "Oversold -4.58% into strong insider cluster buying \u2014 buy-the-dip setup with smart-money support",
+          "smart_money_signals": "Insider cluster buy (11 buyers vs 4 sellers, 30d), Stocktwits 83% bullish, 74.6% analyst buy (14SB/30B)",
+          "rationale": "Rare 11-insider cluster buy provides floor; mean-reversion bounce with alt-data tailwind"
+        },
+        {
+          "symbol": "TSLA",
+          "confidence": "medium",
+          "catalyst": "Up +3.77% on heavy volume (38M shares) with robotaxi/humanoid robot narrative \u2014 clear relative strength vs a red tape",
+          "smart_money_signals": "WSB chatter 2.93x normal (rank #11, 41 mentions)",
+          "rationale": "Strong intraday momentum with catalyst overrides weaker analyst mix; trend-following play"
+        }
+      ],
+      "market_take": "Risk-off tape on $98 Brent / rising yields \u2014 favor names showing relative strength or backed by smart-money accumulation.",
+      "skipped_movers": [
+        "SHOP: -7.46% growth-multiple rotation, catching falling knife",
+        "ADBE: House selling + weak analyst (39%), no catalyst",
+        "NFLX: regulatory overhang + insider selling",
+        "HD: heavy insider + congressional selling",
+        "PLTR: 18 insider sells (3:1+ ratio) disqualifier",
+        "SBUX: zero alt-data signal, no catalyst",
+        "XOM: oil narrative but stock down, mixed signals",
+        "MA: no catalyst, mid-tape weakness",
+        "CAT: thin volume, no catalyst beyond twits"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Multi-factor stack \u2014 catalyst + momentum + heavy retail/analyst conviction on a down-tape day",
+        "symbol": "ORCL",
+        "qty": 574,
+        "entry_price_est": 163.62,
+        "stop_price": 161.98,
+        "take_price": 166.89,
+        "order_id": "fba7d53c-8b60-420d-9c52-9733c5b460b2"
+      },
+      {
+        "status": "failed",
+        "symbol": "CRM",
+        "error": "{\"base_price\":\"247.27\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strong intraday momentum with catalyst overrides weaker analyst mix; trend-following play",
+        "symbol": "TSLA",
+        "qty": 256,
+        "entry_price_est": 366.12,
+        "stop_price": 362.46,
+        "take_price": 373.44,
+        "order_id": "1f98999d-20da-44d1-b753-2dc6bc39163a"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-09-08",
+    "ts": "2026-09-08T18:25:29.840296Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]

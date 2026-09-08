@@ -1,9 +1,37 @@
 {
-  "ts": "2026-09-08T17:03:59.573500Z",
-  "equity": 101377.87,
+  "ts": "2026-09-08T18:25:29.836453Z",
+  "equity": 101089.19,
   "last_equity": 97311.5,
-  "cash": 101377.87,
-  "buying_power": 405511.48,
-  "all_time_return_pct": 1.3779,
-  "positions": []
+  "cash": 1357.71,
+  "buying_power": 97774.81,
+  "all_time_return_pct": 1.0892,
+  "positions": [
+    {
+      "symbol": "AMD",
+      "qty": 65,
+      "avg_entry_price": 510.85,
+      "current_price": 507.215,
+      "market_value": 32968.97,
+      "unrealized_pl": -236.28,
+      "unrealized_pl_pct": -0.712
+    },
+    {
+      "symbol": "AVGO",
+      "qty": 91,
+      "avg_entry_price": 367.01,
+      "current_price": 369.16,
+      "market_value": 33593.56,
+      "unrealized_pl": 195.65,
+      "unrealized_pl_pct": 0.586
+    },
+    {
+      "symbol": "INTC",
+      "qty": 316,
+      "avg_entry_price": 105.75,
+      "current_price": 104.965,
+      "market_value": 33168.94,
+      "unrealized_pl": -248.06,
+      "unrealized_pl_pct": -0.742
+    }
+  ]
 }
