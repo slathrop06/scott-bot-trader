@@ -24277,5 +24277,117 @@
     "ts": "2026-09-07T23:47:39.524531Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=34171207034"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-08",
+    "ts": "2026-09-08T17:12:32.481696Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=34255683277"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-08",
+    "ts": "2026-09-08T17:12:52.315788Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-08",
+    "ts": "2026-09-08T17:12:54.472427Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-09-08",
+    "ts": "2026-09-08T17:12:56.030851Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-09-08",
+    "ts": "2026-09-08T17:13:45.995651Z",
+    "equity_start": 101377.87,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMD",
+          "confidence": "high",
+          "catalyst": "Chip sector strength with AMD gapping +7% premarket alongside broader semi rally (ARM, INTC)",
+          "smart_money_signals": "Perfect 10/10 alt-data: insider cluster buy (8 buyers), House cluster buy (Allen, Cisneros), WSB chatter 4.33x, 83% analyst bullish, 71% Stocktwits bullish",
+          "rationale": "Rare stack of insider + congressional cluster buying + analyst conviction + confirming price action makes this the highest-quality setup on the board"
+        },
+        {
+          "symbol": "AVGO",
+          "confidence": "medium",
+          "catalyst": "+2.7% gap on positive semi/AI infrastructure narrative and inclusion in top analyst picks list",
+          "smart_money_signals": "House cluster buy (3 buys, Allen & Taylor), 91% analyst bullish (17SB/35B), 100% Stocktwits bullish, WSB 2.14x normal",
+          "rationale": "Cluster congressional buying plus best-in-class analyst conviction with confirming upside gap in the strongest sector today"
+        },
+        {
+          "symbol": "INTC",
+          "confidence": "medium",
+          "catalyst": "Northland upgrade on Musk Terafab foundry scale thesis driving +10% gap on 91M premarket volume",
+          "smart_money_signals": "Pelosi 2x buys in last 21d, WSB rank #9 at 4.89x normal, Stocktwits 100% bullish (30 msgs)",
+          "rationale": "Specific analyst catalyst plus Pelosi buys and viral retail attention; momentum is real but stretched so sizing modestly"
+        }
+      ],
+      "market_take": "Risk-off tape overall but semis/AI leadership is decisively bid \u2014 best long setups cluster there",
+      "skipped_movers": [
+        "SHOP: -7% rotation out of growth, no positive catalyst",
+        "TSLA: weak alt-data (2/10), analyst mix only 49% bullish",
+        "CRM: down -4% contradicts insider cluster buy signal",
+        "ADBE: House selling + negative price action",
+        "NFLX: insider selling + price weakness",
+        "HD: heavy insider + congressional selling",
+        "XOM: geopolitical-driven weakness, no smart money bid"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Rare stack of insider + congressional cluster buying + analyst conviction + confirming price action makes this the highest-quality setup on the board",
+        "symbol": "AMD",
+        "qty": 65,
+        "entry_price_est": 510.77,
+        "stop_price": 505.66,
+        "take_price": 520.99,
+        "order_id": "6a9f2040-a8af-4a8f-aea1-4c11bcdfdb2f"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Cluster congressional buying plus best-in-class analyst conviction with confirming upside gap in the strongest sector today",
+        "symbol": "AVGO",
+        "qty": 91,
+        "entry_price_est": 366.745,
+        "stop_price": 363.08,
+        "take_price": 374.08,
+        "order_id": "c90624cc-e484-4d26-8b51-97e381b550ab"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Specific analyst catalyst plus Pelosi buys and viral retail attention; momentum is real but stretched so sizing modestly",
+        "symbol": "INTC",
+        "qty": 316,
+        "entry_price_est": 105.745,
+        "stop_price": 104.69,
+        "take_price": 107.86,
+        "order_id": "d06c9412-9eb4-4df6-b4e2-ed657a177d08"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-09-08",
+    "ts": "2026-09-08T17:13:46.189196Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
