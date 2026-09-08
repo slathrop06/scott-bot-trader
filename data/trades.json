@@ -24490,5 +24490,89 @@
     "ts": "2026-09-08T21:19:58.501093Z",
     "status": "intraday_workflow_started",
     "note": "event=schedule run_id=34279979473"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-08",
+    "ts": "2026-09-08T21:29:27.925801Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=34280876757"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-09-08",
+    "ts": "2026-09-08T21:29:47.169694Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-09-08",
+    "ts": "2026-09-08T21:29:47.459434Z",
+    "equity_end": 100707.7,
+    "daily_pnl_usd": 3396.2,
+    "daily_pct": 3.49,
+    "flatten": {
+      "closed": [
+        "AVGO",
+        "TSLA"
+      ],
+      "raw_response_count": 2
+    }
+  },
+  {
+    "type": "trade",
+    "date": "2026-09-08",
+    "ts": "2026-09-08T21:29:47.531220Z",
+    "symbol": "ORCL",
+    "qty": 574,
+    "entry_price": 162.31,
+    "entry_ts": "2026-09-08T18:25:32.365325Z",
+    "entry_order_id": "fba7d53c-8b60-420d-9c52-9733c5b460b2",
+    "exit_price": 161.9565,
+    "exit_ts": "2026-09-08T18:34:06.763089Z",
+    "exit_order_id": "191b335b-6110-4b1d-b5a7-bf0b4a1534e0",
+    "exit_reason": "bracket",
+    "pnl_usd": -202.92,
+    "pnl_pct": -0.2178
+  },
+  {
+    "type": "trade",
+    "date": "2026-09-08",
+    "ts": "2026-09-08T21:29:47.531220Z",
+    "symbol": "INTC",
+    "qty": 316,
+    "entry_price": 105.75,
+    "entry_ts": "2026-09-08T17:13:46.902826Z",
+    "entry_order_id": "d06c9412-9eb4-4df6-b4e2-ed657a177d08",
+    "exit_price": 104.6602,
+    "exit_ts": "2026-09-08T18:35:40.889851Z",
+    "exit_order_id": "a2596a7b-03a9-42ec-b4ee-e3251683329c",
+    "exit_reason": "bracket",
+    "pnl_usd": -344.39,
+    "pnl_pct": -1.0306
+  },
+  {
+    "type": "trade",
+    "date": "2026-09-08",
+    "ts": "2026-09-08T21:29:47.531220Z",
+    "symbol": "AMD",
+    "qty": 65,
+    "entry_price": 510.85,
+    "entry_ts": "2026-09-08T17:13:46.372062Z",
+    "entry_order_id": "6a9f2040-a8af-4a8f-aea1-4c11bcdfdb2f",
+    "exit_price": 505.64,
+    "exit_ts": "2026-09-08T18:53:01.604638Z",
+    "exit_order_id": "d25b07cf-1449-4752-95c8-0078787d1e44",
+    "exit_reason": "bracket",
+    "pnl_usd": -338.65,
+    "pnl_pct": -1.0199
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-09-08",
+    "ts": "2026-09-08T21:29:47.631995Z",
+    "status": "ok",
+    "note": "closed 2 positions, 3 round-trips"
   }
 ]
