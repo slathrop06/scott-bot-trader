@@ -24658,5 +24658,38 @@
     "ts": "2026-09-09T21:06:04.442980Z",
     "status": "blocked",
     "note": "Market is closed."
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-09",
+    "ts": "2026-09-09T21:17:59.367191Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=34406126452"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-09-09",
+    "ts": "2026-09-09T21:18:20.485220Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-09-09",
+    "ts": "2026-09-09T21:18:20.817610Z",
+    "equity_end": 101720.07,
+    "daily_pnl_usd": 583.99,
+    "daily_pct": 0.5774,
+    "flatten": {
+      "closed": [],
+      "note": "No open positions."
+    }
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-09-09",
+    "ts": "2026-09-09T21:18:21.071247Z",
+    "status": "ok",
+    "note": "closed 0 positions, 0 round-trips"
   }
 ]
