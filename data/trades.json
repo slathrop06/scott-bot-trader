@@ -24815,5 +24815,40 @@
     "ts": "2026-09-10T23:10:54.828419Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=34540963778"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-11",
+    "ts": "2026-09-11T16:59:09.062207Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=34625094382"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-11",
+    "ts": "2026-09-11T16:59:28.677417Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-11",
+    "ts": "2026-09-11T16:59:30.526697Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-09-11",
+    "ts": "2026-09-11T16:59:32.192356Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-09-11",
+    "ts": "2026-09-11T16:59:35.448098Z",
+    "status": "error",
+    "note": "APIError: {\"message\":\"Internal Server Error\"}\n"
   }
 ]
