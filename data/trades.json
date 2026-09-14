@@ -24932,5 +24932,114 @@
     "ts": "2026-09-11T23:23:06.847343Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=34657846863"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-14",
+    "ts": "2026-09-14T18:30:24.146608Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=34881197486"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-14",
+    "ts": "2026-09-14T18:30:37.325459Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-14",
+    "ts": "2026-09-14T18:30:38.246185Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-09-14",
+    "ts": "2026-09-14T18:30:39.115585Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-09-14",
+    "ts": "2026-09-14T18:31:37.452728Z",
+    "equity_start": 101717.34,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "CRM",
+          "confidence": "high",
+          "catalyst": "Gap up +4.66% on Benzinga piece highlighting Salesforce AI revenue up 240% and potential rerating narrative",
+          "smart_money_signals": "Insider cluster buy (11 insiders buying vs 4 selling), Stocktwits 80% bullish on 30 msgs, 74.6% analyst buy (14SB/30B)",
+          "rationale": "Rare combo of insider cluster buy + bullish AI catalyst + gap up in an otherwise red tape \u2014 best risk/reward setup"
+        },
+        {
+          "symbol": "NVDA",
+          "confidence": "medium",
+          "catalyst": "Oversold -2.82% on AI-safety noise BofA explicitly called 'noise in a secular bull market'; dip-buy setup with 94% analyst conviction",
+          "smart_money_signals": "House cluster buy (2 congresspeople: Cisneros + McGuire), WSB rank #5 with 3.47x chatter, Stocktwits 83% bullish, 94.2% analyst buy (24SB/41B)",
+          "rationale": "Cluster congressional buying plus highest analyst conviction on the board \u2014 clean bounce candidate on manufactured AI-fear dip"
+        },
+        {
+          "symbol": "META",
+          "confidence": "medium",
+          "catalyst": "Gap up +3.16% on Wedbush PT raise to $650 citing AI Muse progress and $5B subscription runway by 2027",
+          "smart_money_signals": "87.3% analyst buy (20SB/42B), Stocktwits 80% bullish, WSB rank #8 with 14x chatter surge",
+          "rationale": "Only mega-cap tech name gapping UP against a red tape with a fresh analyst upgrade \u2014 relative strength signal"
+        }
+      ],
+      "market_take": "Risk-off tape with AI-safety fears and 10Y yield near 5% hammering chips/banks \u2014 focus on names bucking the tape or with hard smart-money support",
+      "skipped_movers": [
+        "BAC: -5.67% with no news, only 33% bullish stocktwits \u2014 falling knife",
+        "AVGO: strong alt-data but tied to the AI-selloff epicenter, fighting the tape",
+        "INTC: -4.28% with weak 34.5% analyst conviction",
+        "ADBE: House selling + 39% analyst buy despite gap up",
+        "AMD: heavy insider selling (21 sells) \u2014 clear disqualifier",
+        "PLTR: heavy insider selling (16 sells) \u2014 clear disqualifier",
+        "ORCL: down on AI selloff, no long-side edge today",
+        "GS/CAT/MS: caught in macro selloff, minimal alt-data support",
+        "SHOP: thin catalyst, only 2/10 signal score",
+        "NFLX: gap up but news is generic whale-alert filler"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "failed",
+        "symbol": "CRM",
+        "error": "{\"base_price\":\"259\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Cluster congressional buying plus highest analyst conviction on the board \u2014 clean bounce candidate on manufactured AI-fear dip",
+        "symbol": "NVDA",
+        "qty": 158,
+        "entry_price_est": 212.10000000000002,
+        "stop_price": 209.98,
+        "take_price": 216.34,
+        "order_id": "628dcd48-fe2c-4060-8357-95da647c8322"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Only mega-cap tech name gapping UP against a red tape with a fresh analyst upgrade \u2014 relative strength signal",
+        "symbol": "META",
+        "qty": 50,
+        "entry_price_est": 668.1,
+        "stop_price": 661.42,
+        "take_price": 681.46,
+        "order_id": "ea075b81-f98d-45db-aa76-ceb6d392bf05"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-09-14",
+    "ts": "2026-09-14T18:31:37.600847Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
