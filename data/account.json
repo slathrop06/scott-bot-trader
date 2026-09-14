@@ -1,9 +1,28 @@
 {
-  "ts": "2026-09-14T18:20:27.832831Z",
-  "equity": 101717.34,
+  "ts": "2026-09-14T19:47:32.063921Z",
+  "equity": 101654.93,
   "last_equity": 101717.34,
-  "cash": 101717.34,
-  "buying_power": 406869.36,
-  "all_time_return_pct": 1.7173,
-  "positions": []
+  "cash": 34812.04,
+  "buying_power": 110904.38,
+  "all_time_return_pct": 1.6549,
+  "positions": [
+    {
+      "symbol": "META",
+      "qty": 50,
+      "avg_entry_price": 667.87,
+      "current_price": 666.685,
+      "market_value": 33334.25,
+      "unrealized_pl": -59.25,
+      "unrealized_pl_pct": -0.177
+    },
+    {
+      "symbol": "NVDA",
+      "qty": 158,
+      "avg_entry_price": 212.1,
+      "current_price": 212.08,
+      "market_value": 33508.64,
+      "unrealized_pl": -3.16,
+      "unrealized_pl_pct": -0.009
+    }
+  ]
 }

@@ -25041,5 +25041,101 @@
     "ts": "2026-09-14T18:31:37.600847Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-14",
+    "ts": "2026-09-14T19:46:09.038523Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=34888878121"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-09-14",
+    "ts": "2026-09-14T19:46:31.610468Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-09-14",
+    "ts": "2026-09-14T19:47:31.924803Z",
+    "equity_start": 101661.0,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "GOOGL",
+          "confidence": "high",
+          "catalyst": "Up +3.17% on a red tape day (relative strength) with whale activity flagged; holding gains into late session",
+          "smart_money_signals": "Insider cluster buy (6 buyers), 90% analyst buy (20SB/43B), WSB chatter 39x normal (rank #11), Stocktwits 92% bullish",
+          "rationale": "Best stacked setup: relative strength + insider cluster + top analyst conviction + massive social chatter all align."
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "Up +4.68% on AI revenue growth narrative (240% AI rev growth) bucking the tape",
+          "smart_money_signals": "Insider cluster buy (11 buyers vs 4 sells), 75% analyst buy, Stocktwits 77% bullish",
+          "rationale": "Rare 11-insider cluster buy paired with a green print on a red day \u2014 smart money is stepping in."
+        },
+        {
+          "symbol": "NFLX",
+          "confidence": "medium",
+          "catalyst": "Evercore ISI price target raise citing improving US/Japan subscriber trends, +3.98% on down tape",
+          "smart_money_signals": "WSB chatter 14x normal, Stocktwits 94% bullish, 74% analyst buy",
+          "rationale": "Clean analyst upgrade catalyst with relative strength and strong retail sentiment, no contradicting signals."
+        }
+      ],
+      "market_take": "Risk-off tape with 10Y touching 5% and AI capex fears hitting chips/industrials \u2014 rotation into software/comms names showing relative strength.",
+      "skipped_movers": [
+        "INTC: down 5.4% \u2014 no catalyst, only 34% analyst bullish",
+        "BAC: CEO warned on Q3 trading \u2014 negative catalyst",
+        "AVGO: down 4.7% in chip selloff despite good alt-data \u2014 price contradicts",
+        "ADBE: House net selling, no news catalyst, only 39% analyst buy",
+        "SHOP: no news catalyst, weak alt-data score 2/10",
+        "CAT: down 4.1% on macro fears \u2014 no bullish catalyst",
+        "PLTR: heavy insider selling 16 sells",
+        "GS: no catalyst, 47% analyst, down 4%",
+        "AMD: heavy insider selling 21 sells, down 3.8%",
+        "MS: down 3.4%, no catalyst",
+        "ORCL: down 2.9%, mixed signals"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best stacked setup: relative strength + insider cluster + top analyst conviction + massive social chatter all align.",
+        "symbol": "GOOGL",
+        "qty": 309,
+        "entry_price_est": 348.6,
+        "stop_price": 345.11,
+        "take_price": 355.57,
+        "order_id": "df93c437-b292-4e21-a385-f3402ca76ec1"
+      },
+      {
+        "status": "failed",
+        "symbol": "CRM",
+        "error": "{\"base_price\":\"258.76\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean analyst upgrade catalyst with relative strength and strong retail sentiment, no contradicting signals.",
+        "symbol": "NFLX",
+        "qty": 1340,
+        "entry_price_est": 80.38,
+        "stop_price": 79.58,
+        "take_price": 81.99,
+        "order_id": "ce85ec60-6e7f-421a-bdbe-9bd7906dac3a"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-09-14",
+    "ts": "2026-09-14T19:47:32.068652Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
