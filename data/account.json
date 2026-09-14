@@ -1,28 +1,46 @@
 {
-  "ts": "2026-09-14T19:47:32.063921Z",
-  "equity": 101654.93,
+  "ts": "2026-09-14T21:56:43.932637Z",
+  "equity": 100967.19,
   "last_equity": 101717.34,
-  "cash": 34812.04,
-  "buying_power": 110904.38,
-  "all_time_return_pct": 1.6549,
+  "cash": -180688.72,
+  "buying_power": 65881.67,
+  "all_time_return_pct": 0.9672,
   "positions": [
+    {
+      "symbol": "GOOGL",
+      "qty": 309,
+      "avg_entry_price": 348.84,
+      "current_price": 347.89,
+      "market_value": 107498.01,
+      "unrealized_pl": -293.55,
+      "unrealized_pl_pct": -0.272
+    },
     {
       "symbol": "META",
       "qty": 50,
       "avg_entry_price": 667.87,
-      "current_price": 666.685,
-      "market_value": 33334.25,
-      "unrealized_pl": -59.25,
-      "unrealized_pl_pct": -0.177
+      "current_price": 664.6,
+      "market_value": 33230.0,
+      "unrealized_pl": -163.5,
+      "unrealized_pl_pct": -0.49
+    },
+    {
+      "symbol": "NFLX",
+      "qty": 1340,
+      "avg_entry_price": 80.38,
+      "current_price": 80.12,
+      "market_value": 107360.8,
+      "unrealized_pl": -348.4,
+      "unrealized_pl_pct": -0.323
     },
     {
       "symbol": "NVDA",
       "qty": 158,
       "avg_entry_price": 212.1,
-      "current_price": 212.08,
-      "market_value": 33508.64,
-      "unrealized_pl": -3.16,
-      "unrealized_pl_pct": -0.009
+      "current_price": 212.45,
+      "market_value": 33567.1,
+      "unrealized_pl": 55.3,
+      "unrealized_pl_pct": 0.165
     }
   ]
 }
