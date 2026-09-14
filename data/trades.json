@@ -25137,5 +25137,43 @@
     "ts": "2026-09-14T19:47:32.068652Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-14",
+    "ts": "2026-09-14T22:09:03.777805Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=34902618423"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-09-14",
+    "ts": "2026-09-14T22:09:35.301267Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-09-14",
+    "ts": "2026-09-14T22:09:35.658833Z",
+    "equity_end": 100833.04,
+    "daily_pnl_usd": -884.3,
+    "daily_pct": -0.8694,
+    "flatten": {
+      "closed": [
+        "GOOGL",
+        "META",
+        "NFLX",
+        "NVDA"
+      ],
+      "raw_response_count": 4
+    }
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-09-14",
+    "ts": "2026-09-14T22:09:35.824248Z",
+    "status": "ok",
+    "note": "closed 4 positions, 0 round-trips"
   }
 ]
