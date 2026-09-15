@@ -25286,5 +25286,102 @@
     "ts": "2026-09-15T17:39:19.875745Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-15",
+    "ts": "2026-09-15T18:47:42.315114Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=35009668372"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-09-15",
+    "ts": "2026-09-15T18:48:07.545556Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-09-15",
+    "ts": "2026-09-15T18:49:01.757558Z",
+    "equity_start": 98185.85,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AVGO",
+          "confidence": "high",
+          "catalyst": "AI-chip tailwind (Nvidia/Broadcom AI trade in focus, Meta custom-silicon story) \u2014 pullback of -1.76% into strong multi-signal support",
+          "smart_money_signals": "House cluster-adjacent buys (2 buys by Taylor, 0 sells), WSB rank #6 with 39 mentions, Stocktwits 83% bullish, analyst 91% buy (17SB/35B)",
+          "rationale": "Best signal-stack on the board: catalyst + congressional buying + analyst conviction + social \u2014 buying the dip in an AI leader"
+        },
+        {
+          "symbol": "XOM",
+          "confidence": "medium",
+          "catalyst": "Only major up-mover today (+2.24%) on Gulf supply disruption sending Brent >$107 and diesel to record highs \u2014 clear relative strength vs weak tape",
+          "smart_money_signals": "Stocktwits 82% bullish on 30 msgs; no insider/congress selling",
+          "rationale": "Confirmed catalyst with price already gapping up on oil supply shock \u2014 momentum with a real macro driver"
+        },
+        {
+          "symbol": "GE",
+          "confidence": "medium",
+          "catalyst": "Oversold -3% pullback with no negative news \u2014 buying weakness in a name with elite consensus",
+          "smart_money_signals": "Stocktwits 92% bullish, analysts 87.5% buy (9SB/19B, only 1 sell)",
+          "rationale": "Strong smart-money stack with no disqualifier; mean-reversion bounce candidate on a down tape"
+        }
+      ],
+      "market_take": "Broad risk-off tape with financials, discretionary and streaming down 2-3%; energy is the lone leadership pocket on oil supply shock.",
+      "skipped_movers": [
+        "AMD: heavy insider selling (21 sells) and stocktwits 20% bullish \u2014 disqualified despite price bounce",
+        "NKE: 52-week low, House selling, analyst downgrades \u2014 falling knife",
+        "JPM: stocktwits 22% bearish \u2014 disqualified",
+        "DIS: House selling with no offsetting catalyst",
+        "GS/MS: financials broadly weak, no catalyst",
+        "NFLX/SBUX/SHOP/ORCL: down on no stock-specific news, weaker signal stacks than AVGO"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best signal-stack on the board: catalyst + congressional buying + analyst conviction + social \u2014 buying the dip in an AI leader",
+        "symbol": "AVGO",
+        "qty": 305,
+        "entry_price_est": 339.73,
+        "stop_price": 336.33,
+        "take_price": 346.52,
+        "order_id": "77de15af-d6d7-4039-9ddb-d3400dd5fda1"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Confirmed catalyst with price already gapping up on oil supply shock \u2014 momentum with a real macro driver",
+        "symbol": "XOM",
+        "qty": 612,
+        "entry_price_est": 169.44,
+        "stop_price": 167.75,
+        "take_price": 172.83,
+        "order_id": "da591990-8efe-40d1-bc8b-5a205ad32104"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strong smart-money stack with no disqualifier; mean-reversion bounce candidate on a down tape",
+        "symbol": "GE",
+        "qty": 337,
+        "entry_price_est": 308.09000000000003,
+        "stop_price": 305.01,
+        "take_price": 314.25,
+        "order_id": "cb8bb001-a2d8-4e44-a006-d7bdf0c3fdec"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-09-15",
+    "ts": "2026-09-15T18:49:01.855022Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
