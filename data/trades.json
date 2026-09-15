@@ -25175,5 +25175,116 @@
     "ts": "2026-09-14T22:09:35.824248Z",
     "status": "ok",
     "note": "closed 4 positions, 0 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-15",
+    "ts": "2026-09-15T17:38:07.424185Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=35002420083"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-15",
+    "ts": "2026-09-15T17:38:25.084608Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-15",
+    "ts": "2026-09-15T17:38:26.679514Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-09-15",
+    "ts": "2026-09-15T17:38:28.329752Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-09-15",
+    "ts": "2026-09-15T17:39:19.835727Z",
+    "equity_start": 98717.06,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMZN",
+          "confidence": "high",
+          "catalyst": "Down -1.94% premarket but with no stock-specific negative news \u2014 pullback on macro yields, offering entry on strongest alt-data name",
+          "smart_money_signals": "Insider cluster buy (6 distinct buyers, 14 buys/30d), 93.2% analyst bullish (20SB/49B), stocktwits 86% bullish, WSB rank #16 with 1.35x chatter",
+          "rationale": "Best alt-data stack in the list (6/10 signal score) buying a macro dip with cluster insider conviction."
+        },
+        {
+          "symbol": "CVX",
+          "confidence": "medium",
+          "catalyst": "Gapping +2.05% on Brent at $107 / Hormuz disruption tailwind for oil majors",
+          "smart_money_signals": "Stocktwits 93% bullish (30 msgs), 83.3% analyst buy (7SB/18B)",
+          "rationale": "Clean momentum + energy catalyst + strong sentiment stack; no contradicting signals."
+        },
+        {
+          "symbol": "PLTR",
+          "confidence": "medium",
+          "catalyst": "UBS tags Palantir 'Best AI Enabler'; Dan Ives names top-3 AI pick; up +1.61% premarket bucking chip weakness",
+          "smart_money_signals": "WSB chatter 3.0x normal (rank #7), stocktwits 90% bullish, House buy (Cisneros), 72% analyst buy \u2014 offset by insider selling (16 sells)",
+          "rationale": "Multiple bullish catalysts plus explosive retail momentum outweigh the routine insider selling."
+        }
+      ],
+      "market_take": "Risk-off tone with 10Y yields at 2007 highs; rotation into energy on Hormuz fears, chips split, mega-cap tech offering dip-buy setups.",
+      "skipped_movers": [
+        "AMD: heavy insider selling (21 sells vs 1 buy), stocktwits only 40% bullish \u2014 skip despite gap up",
+        "NKE: 52-week low, House selling, 39% analyst buy \u2014 falling knife",
+        "GS: -2.94% with 0/10 alt-data and negative macro warning \u2014 skip",
+        "XOM: gap up but Pioneer debt tender is neutral, only 46.7% analyst buy \u2014 CVX is cleaner energy play",
+        "AVGO: down -2.16% on AI safety fears, stocktwits only 46% \u2014 wait for reversal confirmation",
+        "NFLX: no catalyst, weak alt-data, macro pressure \u2014 skip"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best alt-data stack in the list (6/10 signal score) buying a macro dip with cluster insider conviction.",
+        "symbol": "AMZN",
+        "qty": 131,
+        "entry_price_est": 248.59,
+        "stop_price": 246.1,
+        "take_price": 253.56,
+        "order_id": "3af65e79-7ac7-41a5-af34-36a1819c0468"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean momentum + energy catalyst + strong sentiment stack; no contradicting signals.",
+        "symbol": "CVX",
+        "qty": 150,
+        "entry_price_est": 216.91500000000002,
+        "stop_price": 214.75,
+        "take_price": 221.25,
+        "order_id": "8bc71ffc-4852-4971-b6a6-4270050516f3"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Multiple bullish catalysts plus explosive retail momentum outweigh the routine insider selling.",
+        "symbol": "PLTR",
+        "qty": 186,
+        "entry_price_est": 174.98000000000002,
+        "stop_price": 173.23,
+        "take_price": 178.48,
+        "order_id": "f8b8ea5e-5d36-4157-8198-64cd73d6c8f1"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-09-15",
+    "ts": "2026-09-15T17:39:19.875745Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
