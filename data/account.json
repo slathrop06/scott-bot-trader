@@ -1,55 +1,55 @@
 {
-  "ts": "2026-09-15T20:23:53.043912Z",
-  "equity": 98004.62,
+  "ts": "2026-09-15T23:02:12.853290Z",
+  "equity": 97829.83,
   "last_equity": 101513.27,
   "cash": -278033.28,
   "buying_power": 0.0,
-  "all_time_return_pct": -1.9954,
+  "all_time_return_pct": -2.1702,
   "positions": [
     {
       "symbol": "AMZN",
       "qty": 131,
       "avg_entry_price": 248.71,
-      "current_price": 248.5498,
-      "market_value": 32560.02,
-      "unrealized_pl": -20.99,
-      "unrealized_pl_pct": -0.064
+      "current_price": 248.48,
+      "market_value": 32550.88,
+      "unrealized_pl": -30.13,
+      "unrealized_pl_pct": -0.092
     },
     {
       "symbol": "AVGO",
       "qty": 305,
       "avg_entry_price": 340.0077,
-      "current_price": 339.4,
-      "market_value": 103517.0,
-      "unrealized_pl": -185.34,
-      "unrealized_pl_pct": -0.179
+      "current_price": 339.4985,
+      "market_value": 103547.04,
+      "unrealized_pl": -155.3,
+      "unrealized_pl_pct": -0.15
     },
     {
       "symbol": "CVX",
       "qty": 150,
       "avg_entry_price": 216.88,
-      "current_price": 217.7,
-      "market_value": 32655.0,
-      "unrealized_pl": 123.0,
-      "unrealized_pl_pct": 0.378
+      "current_price": 217.77,
+      "market_value": 32665.5,
+      "unrealized_pl": 133.5,
+      "unrealized_pl_pct": 0.41
     },
     {
       "symbol": "GE",
       "qty": 337,
       "avg_entry_price": 308.1861,
-      "current_price": 307.68,
-      "market_value": 103688.16,
-      "unrealized_pl": -170.54,
-      "unrealized_pl_pct": -0.164
+      "current_price": 307.05,
+      "market_value": 103475.85,
+      "unrealized_pl": -382.85,
+      "unrealized_pl_pct": -0.369
     },
     {
       "symbol": "XOM",
       "qty": 612,
       "avg_entry_price": 169.25,
-      "current_price": 169.31,
-      "market_value": 103617.72,
-      "unrealized_pl": 36.72,
-      "unrealized_pl_pct": 0.035
+      "current_price": 169.32,
+      "market_value": 103623.84,
+      "unrealized_pl": 42.84,
+      "unrealized_pl_pct": 0.041
     }
   ]
 }
