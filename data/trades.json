@@ -25390,5 +25390,60 @@
     "ts": "2026-09-15T21:47:45.387018Z",
     "status": "intraday_workflow_started",
     "note": "event=schedule run_id=35027586300"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-15",
+    "ts": "2026-09-15T23:44:10.498111Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=35036977852"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-09-15",
+    "ts": "2026-09-15T23:44:27.986479Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-09-15",
+    "ts": "2026-09-15T23:44:28.080482Z",
+    "equity_end": 98014.22,
+    "daily_pnl_usd": -3499.05,
+    "daily_pct": -3.4469,
+    "flatten": {
+      "closed": [
+        "AMZN",
+        "AVGO",
+        "CVX",
+        "GE",
+        "XOM"
+      ],
+      "raw_response_count": 5
+    }
+  },
+  {
+    "type": "trade",
+    "date": "2026-09-15",
+    "ts": "2026-09-15T23:44:28.122899Z",
+    "symbol": "PLTR",
+    "qty": 186,
+    "entry_price": 175.85,
+    "entry_ts": "2026-09-15T17:39:21.836982Z",
+    "entry_order_id": "f8b8ea5e-5d36-4157-8198-64cd73d6c8f1",
+    "exit_price": 173.1872,
+    "exit_ts": "2026-09-15T18:07:02.929203Z",
+    "exit_order_id": "ef0b098c-2325-4fc1-ab5f-9bbbaccf12d1",
+    "exit_reason": "bracket",
+    "pnl_usd": -495.29,
+    "pnl_pct": -1.5143
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-09-15",
+    "ts": "2026-09-15T23:44:28.166298Z",
+    "status": "ok",
+    "note": "closed 5 positions, 1 round-trips"
   }
 ]
