@@ -25445,5 +25445,118 @@
     "ts": "2026-09-15T23:44:28.166298Z",
     "status": "ok",
     "note": "closed 5 positions, 1 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-16",
+    "ts": "2026-09-16T17:35:03.125110Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=35129080817"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-16",
+    "ts": "2026-09-16T17:35:17.689932Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-16",
+    "ts": "2026-09-16T17:35:19.061763Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-09-16",
+    "ts": "2026-09-16T17:35:20.224780Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-09-16",
+    "ts": "2026-09-16T17:36:06.975282Z",
+    "equity_start": 97157.54,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "NVDA",
+          "confidence": "high",
+          "catalyst": "Apple/Nvidia AI server entry report + broader AI infra optimism lifting price +1.4% premarket on heavy 45M volume",
+          "smart_money_signals": "House cluster buy (2 buys: McGuire, Cisneros), 94.2% analyst bullish (24SB/41B), stocktwits 100% bullish, top-6 WSB ticker",
+          "rationale": "Rare stack of House cluster buy + near-unanimous analyst conviction + positive catalyst \u2014 cleanest multi-signal setup on the board"
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "Live Nation Agentforce expansion news; slight red premarket offers better entry with -1% stop room",
+          "smart_money_signals": "Insider cluster buy (11 buyers vs 4 sellers over 30d), 74.6% analyst bullish, stocktwits 75% bullish",
+          "rationale": "11-insider cluster buy is the strongest smart-money signal in the set \u2014 insiders rarely buy in size without conviction"
+        },
+        {
+          "symbol": "INTC",
+          "confidence": "medium",
+          "catalyst": "SK Hynix Ohio memory JV report + AI infra sector rebound driving +4.5% gap on huge 66M volume",
+          "smart_money_signals": "WSB chatter 3.33x normal, rank #17, stocktwits 93% bullish on 30 msgs",
+          "rationale": "Strong specific catalyst with sector tailwind and confirming social momentum; gap-and-go setup"
+        }
+      ],
+      "market_take": "Risk-on tone with AI infra and chips leading; energy weak on Saudi pipeline restart",
+      "skipped_movers": [
+        "AMD: 21 insider sells overwhelms bullish tape \u2014 skip",
+        "TSLA: NHTSA Cybercab probe + stocktwits 27% bullish + House selling \u2014 skip",
+        "XOM/CVX: energy tape negative on crude -3.6%, fighting the trend",
+        "ADBE/DIS/META: House net selling with no offsetting catalyst",
+        "GE: no news catalyst, already up 3% with thin volume",
+        "ORCL: 'most crowded trade' warning + post-earnings pullback context",
+        "BAC: stocktwits only 44% bullish and price down",
+        "NFLX: price down with no catalyst"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Rare stack of House cluster buy + near-unanimous analyst conviction + positive catalyst \u2014 cleanest multi-signal setup on the board",
+        "symbol": "NVDA",
+        "qty": 148,
+        "entry_price_est": 215.435,
+        "stop_price": 213.28,
+        "take_price": 219.74,
+        "order_id": "c75a3c58-e860-4ae9-b182-772aed7d6c44"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "11-insider cluster buy is the strongest smart-money signal in the set \u2014 insiders rarely buy in size without conviction",
+        "symbol": "CRM",
+        "qty": 128,
+        "entry_price_est": 250.3,
+        "stop_price": 247.8,
+        "take_price": 255.31,
+        "order_id": "3c8cfce6-838f-468d-9194-3b36513ae744"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strong specific catalyst with sector tailwind and confirming social momentum; gap-and-go setup",
+        "symbol": "INTC",
+        "qty": 315,
+        "entry_price_est": 101.50999999999999,
+        "stop_price": 100.49,
+        "take_price": 103.54,
+        "order_id": "77735765-6325-4d08-a6c7-58a8245c7ceb"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-09-16",
+    "ts": "2026-09-16T17:36:07.010628Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
