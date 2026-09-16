@@ -1,55 +1,9 @@
 {
-  "ts": "2026-09-15T23:02:12.853290Z",
-  "equity": 97829.83,
-  "last_equity": 101513.27,
-  "cash": -278033.28,
-  "buying_power": 0.0,
-  "all_time_return_pct": -2.1702,
-  "positions": [
-    {
-      "symbol": "AMZN",
-      "qty": 131,
-      "avg_entry_price": 248.71,
-      "current_price": 248.48,
-      "market_value": 32550.88,
-      "unrealized_pl": -30.13,
-      "unrealized_pl_pct": -0.092
-    },
-    {
-      "symbol": "AVGO",
-      "qty": 305,
-      "avg_entry_price": 340.0077,
-      "current_price": 339.4985,
-      "market_value": 103547.04,
-      "unrealized_pl": -155.3,
-      "unrealized_pl_pct": -0.15
-    },
-    {
-      "symbol": "CVX",
-      "qty": 150,
-      "avg_entry_price": 216.88,
-      "current_price": 217.77,
-      "market_value": 32665.5,
-      "unrealized_pl": 133.5,
-      "unrealized_pl_pct": 0.41
-    },
-    {
-      "symbol": "GE",
-      "qty": 337,
-      "avg_entry_price": 308.1861,
-      "current_price": 307.05,
-      "market_value": 103475.85,
-      "unrealized_pl": -382.85,
-      "unrealized_pl_pct": -0.369
-    },
-    {
-      "symbol": "XOM",
-      "qty": 612,
-      "avg_entry_price": 169.25,
-      "current_price": 169.32,
-      "market_value": 103623.84,
-      "unrealized_pl": 42.84,
-      "unrealized_pl_pct": 0.041
-    }
-  ]
+  "ts": "2026-09-16T17:27:40.669106Z",
+  "equity": 97157.54,
+  "last_equity": 97752.28,
+  "cash": 97157.54,
+  "buying_power": 388630.16,
+  "all_time_return_pct": -2.8425,
+  "positions": []
 }
