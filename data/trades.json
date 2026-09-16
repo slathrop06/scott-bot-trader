@@ -25558,5 +25558,101 @@
     "ts": "2026-09-16T17:36:07.010628Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-16",
+    "ts": "2026-09-16T18:45:39.394044Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=35136391185"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-09-16",
+    "ts": "2026-09-16T18:45:58.188033Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-09-16",
+    "ts": "2026-09-16T18:46:45.307913Z",
+    "equity_start": 97669.66,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "ORCL",
+          "confidence": "high",
+          "catalyst": "Stabilizing bounce (+3.28%) after post-earnings pullback, leading tech tape on the day with strong volume",
+          "smart_money_signals": "Stocktwits 92% bullish on 30 msgs, analyst 79.6% bullish (15 Strong Buy / 24 Buy)",
+          "rationale": "Clean setup \u2014 momentum reversal off oversold post-earnings base with sentiment and analyst conviction stacked, no negative alt-data flags"
+        },
+        {
+          "symbol": "GE",
+          "confidence": "medium",
+          "catalyst": "Relative strength +2.56% on solid volume with no negative news, breaking higher",
+          "smart_money_signals": "Stocktwits 92% bullish (30 msgs), analysts 87.5% bullish (9SB/19B/3H/1S) \u2014 highest analyst conviction in the group",
+          "rationale": "Clean momentum breakout with top-tier analyst conviction and no contradicting alt-data"
+        },
+        {
+          "symbol": "BA",
+          "confidence": "medium",
+          "catalyst": "Record 103-jet Korean Air order announced overnight \u2014 concrete, material contract win; -2.54% dip offers better entry",
+          "smart_money_signals": "Stocktwits 100% bullish (30 msgs), analysts 86.5% bullish (14SB/18B); House selling is minor (1 rep)",
+          "rationale": "Buying the dip against a hard catalyst with overwhelming retail and analyst support"
+        }
+      ],
+      "market_take": "Dovish Fed tone lifting tech and industrials while energy/financials fade on rate expectations",
+      "skipped_movers": [
+        "AMD: 21 insider sells overwhelms bullish price action",
+        "META: stocktwits only 28% bullish contradicts price move",
+        "TSLA: 49% analyst, 31% stocktwits bullish, House selling",
+        "ADBE, DIS, BAC, XOM, CVX: negative price action or weak sentiment",
+        "PLTR: 16 insider sells is a red flag despite bullish sentiment"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Clean setup \u2014 momentum reversal off oversold post-earnings base with sentiment and analyst conviction stacked, no negative alt-data flags",
+        "symbol": "ORCL",
+        "qty": 627,
+        "entry_price_est": 144.565,
+        "stop_price": 143.12,
+        "take_price": 147.46,
+        "order_id": "a2b6d039-3a6b-44dd-8552-52eadc24e424"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean momentum breakout with top-tier analyst conviction and no contradicting alt-data",
+        "symbol": "GE",
+        "qty": 287,
+        "entry_price_est": 315.695,
+        "stop_price": 312.54,
+        "take_price": 322.01,
+        "order_id": "6e6ec7b0-b333-44dc-a65e-c594f7dcf6f4"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Buying the dip against a hard catalyst with overwhelming retail and analyst support",
+        "symbol": "BA",
+        "qty": 452,
+        "entry_price_est": 200.175,
+        "stop_price": 198.17,
+        "take_price": 204.18,
+        "order_id": "e0e2a66d-8617-4716-99df-cbed27ab0f36"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-09-16",
+    "ts": "2026-09-16T18:46:45.371654Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]

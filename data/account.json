@@ -1,9 +1,37 @@
 {
-  "ts": "2026-09-16T17:27:40.669106Z",
-  "equity": 97157.54,
+  "ts": "2026-09-16T18:46:45.366486Z",
+  "equity": 97628.35,
   "last_equity": 97752.28,
-  "cash": 97157.54,
-  "buying_power": 388630.16,
-  "all_time_return_pct": -2.8425,
-  "positions": []
+  "cash": 1087.11,
+  "buying_power": 1230.61,
+  "all_time_return_pct": -2.3716,
+  "positions": [
+    {
+      "symbol": "CRM",
+      "qty": 128,
+      "avg_entry_price": 251.6502,
+      "current_price": 253.26,
+      "market_value": 32417.28,
+      "unrealized_pl": 206.05,
+      "unrealized_pl_pct": 0.64
+    },
+    {
+      "symbol": "INTC",
+      "qty": 315,
+      "avg_entry_price": 101.51,
+      "current_price": 102.3074,
+      "market_value": 32226.83,
+      "unrealized_pl": 251.18,
+      "unrealized_pl_pct": 0.786
+    },
+    {
+      "symbol": "NVDA",
+      "qty": 148,
+      "avg_entry_price": 215.4294,
+      "current_price": 215.4943,
+      "market_value": 31893.16,
+      "unrealized_pl": 9.61,
+      "unrealized_pl_pct": 0.03
+    }
+  ]
 }
