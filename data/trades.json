@@ -25888,5 +25888,100 @@
     "ts": "2026-09-17T17:35:58.916526Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-17",
+    "ts": "2026-09-17T18:52:59.774153Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=35261508401"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-09-17",
+    "ts": "2026-09-17T18:53:20.228316Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-09-17",
+    "ts": "2026-09-17T18:54:05.307096Z",
+    "equity_start": 93867.41,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "NVDA",
+          "confidence": "high",
+          "catalyst": "Up +1.74% intraday with chipmakers leading rebound; IonQ/NVIDIA quantum collab news adding tailwind",
+          "smart_money_signals": "House cluster buy (2 buys - McGuire, Cisneros), Stocktwits 92% bullish on 30 msgs, 94.2% analyst buy rating (24SB/41B), WSB rank #6",
+          "rationale": "Cleanest stack of catalyst + smart money \u2014 cluster buy + near-unanimous analyst conviction + strong social sentiment with confirming price action."
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "Analysts remain bullish on raised FY27 outlook; Anthropic stake potentially worth tens of billions \u2014 dip is buyable",
+          "smart_money_signals": "Insider cluster buy (11 insiders bought in 30d), Stocktwits 82% bullish, 74.6% analyst buy",
+          "rationale": "Rare 11-insider cluster buy is a powerful smart-money signal against a modest pullback \u2014 asymmetric entry."
+        },
+        {
+          "symbol": "INTC",
+          "confidence": "medium",
+          "catalyst": "+7.56% breakout on heavy volume (108M) as chipmakers lead rebound",
+          "smart_money_signals": "Stocktwits 71% bullish on 30 msgs, WSB rank #12 with 1.74x chatter",
+          "rationale": "Strong relative strength and momentum breakout with confirming retail chatter \u2014 riding the chip rally."
+        }
+      ],
+      "market_take": "Risk-on rebound with chip leadership as yields ease and oil retreats.",
+      "skipped_movers": [
+        "AMD: heavy insider selling (21 sells) \u2014 disqualifier despite chip rally",
+        "TSLA: House selling + Goldman delivery cut + Stocktwits 45% bullish",
+        "BA: down on day with House selling \u2014 no catalyst",
+        "WMT: down on Amazon competitive threat + insider selling"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Cleanest stack of catalyst + smart money \u2014 cluster buy + near-unanimous analyst conviction + strong social sentiment with confirming price action.",
+        "symbol": "NVDA",
+        "qty": 453,
+        "entry_price_est": 219.41,
+        "stop_price": 217.22,
+        "take_price": 223.8,
+        "order_id": "a392193a-4af8-41ea-b98f-de7a57f8e94d"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Rare 11-insider cluster buy is a powerful smart-money signal against a modest pullback \u2014 asymmetric entry.",
+        "symbol": "CRM",
+        "qty": 409,
+        "entry_price_est": 242.985,
+        "stop_price": 240.56,
+        "take_price": 247.84,
+        "order_id": "e439821d-1d9a-4e3f-bad9-88a49058e8b0"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strong relative strength and momentum breakout with confirming retail chatter \u2014 riding the chip rally.",
+        "symbol": "INTC",
+        "qty": 901,
+        "entry_price_est": 110.41,
+        "stop_price": 109.31,
+        "take_price": 112.62,
+        "order_id": "5d328908-7d72-4761-b9b7-e910a710c988"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-09-17",
+    "ts": "2026-09-17T18:54:05.495721Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
