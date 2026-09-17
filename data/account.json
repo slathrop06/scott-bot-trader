@@ -1,19 +1,9 @@
 {
-  "ts": "2026-09-16T23:08:21.903379Z",
-  "equity": 94701.33,
-  "last_equity": 97752.28,
-  "cash": 62595.09,
-  "buying_power": 340277.83,
-  "all_time_return_pct": -5.2987,
-  "positions": [
-    {
-      "symbol": "CRM",
-      "qty": 128,
-      "avg_entry_price": 251.6502,
-      "current_price": 250.83,
-      "market_value": 32106.24,
-      "unrealized_pl": -104.99,
-      "unrealized_pl_pct": -0.326
-    }
-  ]
+  "ts": "2026-09-17T17:27:48.940408Z",
+  "equity": 93899.06,
+  "last_equity": 94664.21,
+  "cash": 93899.06,
+  "buying_power": 375596.24,
+  "all_time_return_pct": -6.1009,
+  "positions": []
 }
