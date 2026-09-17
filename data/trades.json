@@ -25983,5 +25983,59 @@
     "ts": "2026-09-17T18:54:05.495721Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-17",
+    "ts": "2026-09-17T21:48:56.313888Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=35278735050"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-09-17",
+    "ts": "2026-09-17T21:49:17.277238Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-09-17",
+    "ts": "2026-09-17T21:49:17.806494Z",
+    "equity_end": 92295.72,
+    "daily_pnl_usd": -2368.49,
+    "daily_pct": -2.502,
+    "flatten": {
+      "closed": [
+        "AMZN",
+        "AVGO",
+        "CRM",
+        "NVDA"
+      ],
+      "raw_response_count": 4
+    }
+  },
+  {
+    "type": "trade",
+    "date": "2026-09-17",
+    "ts": "2026-09-17T21:49:17.871116Z",
+    "symbol": "INTC",
+    "qty": 901,
+    "entry_price": 110.41,
+    "entry_ts": "2026-09-17T18:54:06.246847Z",
+    "entry_order_id": "5d328908-7d72-4761-b9b7-e910a710c988",
+    "exit_price": 109.2843,
+    "exit_ts": "2026-09-17T19:43:53.041427Z",
+    "exit_order_id": "8d78de44-f064-4725-84d1-2a5b79b31d91",
+    "exit_reason": "bracket",
+    "pnl_usd": -1014.24,
+    "pnl_pct": -1.0195
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-09-17",
+    "ts": "2026-09-17T21:49:17.960280Z",
+    "status": "ok",
+    "note": "closed 4 positions, 1 round-trips"
   }
 ]
