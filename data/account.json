@@ -1,37 +1,46 @@
 {
-  "ts": "2026-09-17T18:54:05.489552Z",
-  "equity": 93857.05,
+  "ts": "2026-09-17T20:30:05.701434Z",
+  "equity": 91859.13,
   "last_equity": 94664.21,
-  "cash": -395.4,
-  "buying_power": 0.0,
-  "all_time_return_pct": -6.1429,
+  "cash": -168259.07,
+  "buying_power": 55294.68,
+  "all_time_return_pct": -8.1409,
   "positions": [
     {
       "symbol": "AMZN",
       "qty": 123,
       "avg_entry_price": 251.27,
-      "current_price": 251.55,
-      "market_value": 30940.65,
-      "unrealized_pl": 34.44,
-      "unrealized_pl_pct": 0.111
+      "current_price": 250.93,
+      "market_value": 30864.39,
+      "unrealized_pl": -41.82,
+      "unrealized_pl_pct": -0.135
     },
     {
       "symbol": "AVGO",
       "qty": 88,
       "avg_entry_price": 348.82,
-      "current_price": 347.9682,
-      "market_value": 30621.2,
-      "unrealized_pl": -74.96,
-      "unrealized_pl_pct": -0.244
+      "current_price": 347.4759,
+      "market_value": 30577.88,
+      "unrealized_pl": -118.28,
+      "unrealized_pl_pct": -0.385
+    },
+    {
+      "symbol": "CRM",
+      "qty": 409,
+      "avg_entry_price": 244.87,
+      "current_price": 243.3,
+      "market_value": 99509.7,
+      "unrealized_pl": -642.13,
+      "unrealized_pl_pct": -0.641
     },
     {
       "symbol": "NVDA",
-      "qty": 149,
-      "avg_entry_price": 219.41,
-      "current_price": 219.4,
-      "market_value": 32690.6,
-      "unrealized_pl": -1.49,
-      "unrealized_pl_pct": -0.005
+      "qty": 453,
+      "avg_entry_price": 219.4033,
+      "current_price": 218.91,
+      "market_value": 99166.23,
+      "unrealized_pl": -223.46,
+      "unrealized_pl_pct": -0.225
     }
   ]
 }
