@@ -25783,5 +25783,110 @@
     "ts": "2026-09-16T23:52:32.232418Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=35164168247"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-17",
+    "ts": "2026-09-17T17:34:52.840557Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=35253597899"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-17",
+    "ts": "2026-09-17T17:35:10.071791Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-17",
+    "ts": "2026-09-17T17:35:11.594963Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-09-17",
+    "ts": "2026-09-17T17:35:13.147154Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-09-17",
+    "ts": "2026-09-17T17:35:58.877590Z",
+    "equity_start": 93899.06,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMZN",
+          "confidence": "high",
+          "catalyst": "Project Mercury 10x same-day delivery push vs Walmart + BofA $320 PT reiterated Buy; +1.38% premarket on solid volume",
+          "smart_money_signals": "Insider cluster buy (6 buyers, 14 buys), Stocktwits 100% bullish on 30 msgs, 93.2% analyst buy (20SB/49B)",
+          "rationale": "Rare stacking of insider cluster buy + unanimous social sentiment + top-tier analyst conviction with a concrete news catalyst."
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "Raised FY27 revenue outlook and Anthropic stake potentially worth tens of billions to fund buyback; -3% dip offers favorable entry with analysts staying bullish",
+          "smart_money_signals": "Insider cluster buy (11 buyers, 11 buys vs 4 sells), Stocktwits 80% bullish, 74.6% analyst buy",
+          "rationale": "11-insider cluster buy into a raised-guide dip is a textbook smart-money contrarian setup."
+        },
+        {
+          "symbol": "AVGO",
+          "confidence": "medium",
+          "catalyst": "AI chip tailwind (Meta custom silicon narrative benefits AVGO) with +1.85% premarket continuation",
+          "smart_money_signals": "House buying (2 buys by Taylor, 0 sells), Stocktwits 78% bullish, 91.2% analyst buy (17SB/35B, 0 sells)",
+          "rationale": "Clean signal stack \u2014 congress buying, no selling pressure, near-consensus analyst buy \u2014 riding AI chip momentum."
+        }
+      ],
+      "market_take": "Risk-on tape with chipmakers leading and yields cooling; favor stacked smart-money names over chase-y gappers like INTC.",
+      "skipped_movers": [
+        "INTC: +8% gap but weak alt-data (0/10, only 34% analyst buy) \u2014 chase risk",
+        "AMD: 21 insider sells overwhelms 1 buy despite strong analyst view",
+        "TSLA: House net selling, mediocre 49% analyst buy",
+        "BA: CEO tempered China order hopes, stock down, House selling",
+        "NFLX: down premarket, weak Stocktwits 44%",
+        "QQQ: Stocktwits 25% bullish is a warning flag"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Rare stacking of insider cluster buy + unanimous social sentiment + top-tier analyst conviction with a concrete news catalyst.",
+        "symbol": "AMZN",
+        "qty": 123,
+        "entry_price_est": 251.245,
+        "stop_price": 248.73,
+        "take_price": 256.27,
+        "order_id": "54bcdb59-cd15-4eeb-a362-f5ab0fbeec0f"
+      },
+      {
+        "status": "failed",
+        "symbol": "CRM",
+        "error": "{\"base_price\":\"243.365\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean signal stack \u2014 congress buying, no selling pressure, near-consensus analyst buy \u2014 riding AI chip momentum.",
+        "symbol": "AVGO",
+        "qty": 88,
+        "entry_price_est": 348.78,
+        "stop_price": 345.29,
+        "take_price": 355.76,
+        "order_id": "f4934a62-8802-4321-ae1d-044c336c31c1"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-09-17",
+    "ts": "2026-09-17T17:35:58.916526Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
