@@ -26236,5 +26236,12 @@
     "ts": "2026-09-18T18:12:25.257020Z",
     "status": "ok",
     "note": "2 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-18",
+    "ts": "2026-09-18T20:59:32.153887Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=35394397816"
   }
 ]
