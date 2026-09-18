@@ -26044,5 +26044,114 @@
     "ts": "2026-09-17T23:43:12.471423Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=35288073995"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-18",
+    "ts": "2026-09-18T17:02:07.854877Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=35371945719"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-18",
+    "ts": "2026-09-18T17:02:30.340324Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-18",
+    "ts": "2026-09-18T17:02:31.727854Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-09-18",
+    "ts": "2026-09-18T17:02:32.832766Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-09-18",
+    "ts": "2026-09-18T17:03:32.223960Z",
+    "equity_start": 92352.26,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AVGO",
+          "confidence": "high",
+          "catalyst": "Up +1.73% premarket while market slips; CEO Hock Tan reaffirmed durable AI demand and projected $230B AI chip revenue by FY28",
+          "smart_money_signals": "91.2% analyst buy (17SB/35B), House cluster buy (2 buys by David J. Taylor, 0 sells), Stocktwits 75% bullish",
+          "rationale": "Only major mover gapping UP on a red tape with a concrete bullish catalyst plus multi-signal smart-money confirmation \u2014 cleanest relative-strength setup."
+        },
+        {
+          "symbol": "GOOGL",
+          "confidence": "medium",
+          "catalyst": "Green premarket (+0.89%) with market down; benefits from AVGO's AI reaffirmation halo",
+          "smart_money_signals": "Insider cluster buy (6 buyers), 90% analyst buy (20SB/43B), Stocktwits 92% bullish, WSB chatter 2.05x normal (rank #11)",
+          "rationale": "Rare relative strength paired with insider cluster buying and top-tier sentiment across all alt-data channels."
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "BNP Paribas $265 PT reiterated citing Agentforce AI monetization and Q3 revenue reacceleration",
+          "smart_money_signals": "Insider cluster buy (11 insiders bought, 11:4 buy/sell ratio), Stocktwits 88% bullish, 74.6% analyst buy",
+          "rationale": "Heaviest insider cluster on the board plus fresh bullish analyst note \u2014 dip in a broader red tape is a buyable smart-money setup."
+        }
+      ],
+      "market_take": "Risk-off tape with yields back above 5% and AI-capex debt fears pressuring most megacaps \u2014 favor names showing relative strength or heavy insider conviction.",
+      "skipped_movers": [
+        "NFLX: Wells Fargo downgrade to Underweight with $57 PT \u2014 catalyst is bearish, skip despite House buy",
+        "ORCL: Named directly in AI $3.6T financing/leverage concern article \u2014 negative catalyst",
+        "INTC: Weak analyst support (34.5% buy), no clear catalyst beyond vague options chatter",
+        "DIS: House selling, Stocktwits only 43% bullish, no direct catalyst",
+        "META: Down premarket, House selling, no fresh catalyst",
+        "TSLA: House selling, negative Optimus vs Figure news, weak analyst support",
+        "HD: Heavy insider selling (2 sells, 0 buys) + House selling \u2014 clear disqualifier",
+        "NKE: House selling 2:0, weak analyst support (39%)",
+        "ADBE: House selling, weak analyst support (39%), no catalyst",
+        "SHOP/SBUX: No news, minimal alt-data signal"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Only major mover gapping UP on a red tape with a concrete bullish catalyst plus multi-signal smart-money confirmation \u2014 cleanest relative-strength setup.",
+        "symbol": "AVGO",
+        "qty": 86,
+        "entry_price_est": 353.45,
+        "stop_price": 349.92,
+        "take_price": 360.52,
+        "order_id": "e57d6dde-4820-41af-b9d6-e98c728e61a7"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Rare relative strength paired with insider cluster buying and top-tier sentiment across all alt-data channels.",
+        "symbol": "GOOGL",
+        "qty": 87,
+        "entry_price_est": 349.26,
+        "stop_price": 345.77,
+        "take_price": 356.25,
+        "order_id": "be27c6a8-3d41-4a50-afa0-24850c3ab802"
+      },
+      {
+        "status": "failed",
+        "symbol": "CRM",
+        "error": "{\"base_price\":\"239.14\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-09-18",
+    "ts": "2026-09-18T17:03:32.318896Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
