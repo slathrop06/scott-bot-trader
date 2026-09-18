@@ -26243,5 +26243,58 @@
     "ts": "2026-09-18T20:59:32.153887Z",
     "status": "intraday_workflow_started",
     "note": "event=schedule run_id=35394397816"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-18",
+    "ts": "2026-09-18T21:18:26.482829Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=35396072743"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-09-18",
+    "ts": "2026-09-18T21:18:46.939143Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-09-18",
+    "ts": "2026-09-18T21:18:47.030191Z",
+    "equity_end": 92759.3,
+    "daily_pnl_usd": 872.93,
+    "daily_pct": 0.95,
+    "flatten": {
+      "closed": [
+        "AMZN",
+        "AVGO",
+        "GOOGL"
+      ],
+      "raw_response_count": 3
+    }
+  },
+  {
+    "type": "trade",
+    "date": "2026-09-18",
+    "ts": "2026-09-18T21:18:47.073184Z",
+    "symbol": "CRM",
+    "qty": 408,
+    "entry_price": 238.22,
+    "entry_ts": "2026-09-18T18:12:27.174336Z",
+    "entry_order_id": "311317c4-90a7-41df-8d4f-a34bb8356f4a",
+    "exit_price": 237.09,
+    "exit_ts": "2026-09-18T19:18:33.860505Z",
+    "exit_order_id": "4e378bb7-5dc1-4b2e-ac4b-3bbb9d9a7e84",
+    "exit_reason": "bracket",
+    "pnl_usd": -461.04,
+    "pnl_pct": -0.4744
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-09-18",
+    "ts": "2026-09-18T21:18:47.118114Z",
+    "status": "ok",
+    "note": "closed 3 positions, 1 round-trips"
   }
 ]
