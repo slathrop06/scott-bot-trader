@@ -1,28 +1,37 @@
 {
-  "ts": "2026-09-18T18:12:25.252550Z",
-  "equity": 92413.67,
+  "ts": "2026-09-18T19:26:47.942139Z",
+  "equity": 92836.73,
   "last_equity": 91886.37,
-  "cash": 31499.57,
-  "buying_power": 101682.82,
-  "all_time_return_pct": -7.5863,
+  "cash": -66650.35,
+  "buying_power": 179962.42,
+  "all_time_return_pct": -7.1633,
   "positions": [
+    {
+      "symbol": "AMZN",
+      "qty": 386,
+      "avg_entry_price": 253.08,
+      "current_price": 254.7,
+      "market_value": 98314.2,
+      "unrealized_pl": 625.32,
+      "unrealized_pl_pct": 0.64
+    },
     {
       "symbol": "AVGO",
       "qty": 86,
       "avg_entry_price": 353.9,
-      "current_price": 353.91,
-      "market_value": 30436.26,
-      "unrealized_pl": 0.86,
-      "unrealized_pl_pct": 0.003
+      "current_price": 355.26,
+      "market_value": 30552.36,
+      "unrealized_pl": 116.96,
+      "unrealized_pl_pct": 0.384
     },
     {
       "symbol": "GOOGL",
       "qty": 87,
       "avg_entry_price": 349.624,
-      "current_price": 350.32,
-      "market_value": 30477.84,
-      "unrealized_pl": 60.55,
-      "unrealized_pl_pct": 0.199
+      "current_price": 351.96,
+      "market_value": 30620.52,
+      "unrealized_pl": 203.23,
+      "unrealized_pl_pct": 0.668
     }
   ]
 }
