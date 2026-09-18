@@ -26153,5 +26153,88 @@
     "ts": "2026-09-18T17:03:32.318896Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-18",
+    "ts": "2026-09-18T18:11:18.427712Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=35378691882"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-09-18",
+    "ts": "2026-09-18T18:11:37.514538Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-09-18",
+    "ts": "2026-09-18T18:12:25.221784Z",
+    "equity_start": 92397.99,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMZN",
+          "confidence": "high",
+          "catalyst": "Only major mover in the green (+1.13%) on a red tape \u2014 clear relative strength with no negative headlines",
+          "smart_money_signals": "Insider cluster buy (6 insiders, 14 buys in 30d), Stocktwits 91% bullish on 30 msgs, analyst 93.2% buy (20SB/49B/5H/0S)",
+          "rationale": "Relative strength + stacked smart-money signals make this the cleanest long available today"
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "Modest pullback (-2.13%) with no negative news \u2014 mean-reversion setup on strong fundamentals",
+          "smart_money_signals": "Insider cluster buy (11 buyers, 11 buys vs 4 sells in 30d), Stocktwits 86% bullish, 74.6% analyst buy",
+          "rationale": "Broad insider cluster buy is the strongest smart-money signal on the board and the dip offers a favorable entry"
+        }
+      ],
+      "market_take": "Risk-off tape with yields back above 5% and mega-caps mostly red \u2014 favor names with tangible smart-money support",
+      "skipped_movers": [
+        "NFLX: Wells Fargo downgrade to Underweight with $57 PT \u2014 catalyst is strongly negative, skip",
+        "ORCL: AI capex destruction narrative weighing, no positive catalyst",
+        "DIS: House selling + only 33% bullish Stocktwits",
+        "INTC: weak analyst mix (34.5% buy), no catalyst",
+        "NKE: House selling + 27% bullish Stocktwits",
+        "META: House selling and no bullish catalyst on a down day",
+        "TSLA: Optimus competitive threat headline, House selling",
+        "HD: heavy insider selling 2:0 \u2014 disqualifier",
+        "ADBE: House selling + weak analyst mix",
+        "SBUX/SHOP: thin signals, no catalyst"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Relative strength + stacked smart-money signals make this the cleanest long available today",
+        "symbol": "AMZN",
+        "qty": 386,
+        "entry_price_est": 253.06,
+        "stop_price": 250.53,
+        "take_price": 258.12,
+        "order_id": "1053cd2a-e7a9-4507-9b49-219ac00f0002"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Broad insider cluster buy is the strongest smart-money signal on the board and the dip offers a favorable entry",
+        "symbol": "CRM",
+        "qty": 408,
+        "entry_price_est": 239.53,
+        "stop_price": 237.13,
+        "take_price": 244.32,
+        "order_id": "311317c4-90a7-41df-8d4f-a34bb8356f4a"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-09-18",
+    "ts": "2026-09-18T18:12:25.257020Z",
+    "status": "ok",
+    "note": "2 orders submitted"
   }
 ]
