@@ -1,46 +1,9 @@
 {
-  "ts": "2026-09-17T23:01:47.555560Z",
-  "equity": 91855.27,
-  "last_equity": 94664.21,
-  "cash": -168259.07,
-  "buying_power": 55283.87,
-  "all_time_return_pct": -8.1447,
-  "positions": [
-    {
-      "symbol": "AMZN",
-      "qty": 123,
-      "avg_entry_price": 251.27,
-      "current_price": 250.55,
-      "market_value": 30817.65,
-      "unrealized_pl": -88.56,
-      "unrealized_pl_pct": -0.287
-    },
-    {
-      "symbol": "AVGO",
-      "qty": 88,
-      "avg_entry_price": 348.82,
-      "current_price": 348.15,
-      "market_value": 30637.2,
-      "unrealized_pl": -58.96,
-      "unrealized_pl_pct": -0.192
-    },
-    {
-      "symbol": "CRM",
-      "qty": 409,
-      "avg_entry_price": 244.87,
-      "current_price": 242.85,
-      "market_value": 99325.65,
-      "unrealized_pl": -826.18,
-      "unrealized_pl_pct": -0.825
-    },
-    {
-      "symbol": "NVDA",
-      "qty": 453,
-      "avg_entry_price": 219.4033,
-      "current_price": 219.28,
-      "market_value": 99333.84,
-      "unrealized_pl": -55.85,
-      "unrealized_pl_pct": -0.056
-    }
-  ]
+  "ts": "2026-09-18T16:56:09.463959Z",
+  "equity": 92352.26,
+  "last_equity": 91886.37,
+  "cash": 92352.26,
+  "buying_power": 369409.04,
+  "all_time_return_pct": -7.6477,
+  "positions": []
 }
