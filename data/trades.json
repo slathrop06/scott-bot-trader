@@ -26598,5 +26598,117 @@
     "ts": "2026-09-23T21:50:56.601222Z",
     "status": "ok",
     "note": "closed 0 positions, 0 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-24",
+    "ts": "2026-09-24T17:49:30.956325Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=36036966371"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-24",
+    "ts": "2026-09-24T17:49:59.705285Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-24",
+    "ts": "2026-09-24T17:50:02.872435Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-09-24",
+    "ts": "2026-09-24T17:50:04.578488Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-09-24",
+    "ts": "2026-09-24T17:50:54.459070Z",
+    "equity_start": 92943.17,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "META",
+          "confidence": "high",
+          "catalyst": "+4.9% premarket gap on Muse AI momentum and JPMorgan bullish note on Meta's AI TAM ('tens of trillions'); leveraged ETFs amplifying flow",
+          "smart_money_signals": "87.3% analyst bullish (20 Strong Buy / 42 Buy), top-2 WSB ticker with 189 mentions; stocktwits weak (24%) but overwhelmed by clear news catalyst and price action",
+          "rationale": "Concrete analyst-backed AI catalyst with strong gap up and heavy volume \u2014 best momentum setup on the board"
+        },
+        {
+          "symbol": "AVGO",
+          "confidence": "medium",
+          "catalyst": "Modest pullback (-1.5%) on China scrutiny headline offers entry into strong secular AI-chip name; TSMC price hike news is tailwind for pricing power",
+          "smart_money_signals": "House CLUSTER BUY (3 buys by Allen & Taylor in 21d), 91.2% analyst bullish (17SB/35B, zero sells), stocktwits 64% bullish",
+          "rationale": "Rare combo of congressional cluster buy + top-tier analyst conviction on a dip \u2014 smart money is accumulating"
+        },
+        {
+          "symbol": "MSFT",
+          "confidence": "medium",
+          "catalyst": "Minor -1% dip near $500 support after CNBC Final Trades pick; 'Agentic Age' Qualcomm/Snapdragon partnership positive",
+          "smart_money_signals": "House cluster buy (4 buys), 92.8% analyst bullish (23SB/41B/0S), stocktwits 93% bullish, alt-data score 5/10",
+          "rationale": "Highest stacked alt-data score with cluster congressional buying and near-unanimous analyst/retail sentiment on a shallow dip"
+        }
+      ],
+      "market_take": "Risk-on tone as Hormuz de-escalation lifts sentiment; mega-cap tech is bifurcated with META leading on AI narrative while chip/software names offer dip entries.",
+      "skipped_movers": [
+        "ORCL: -3.9% on Project Jupiter force majeure \u2014 negative catalyst overrides bullish sentiment",
+        "HD: heavy insider selling, no catalyst",
+        "AMD: 8 insider sells in 30d despite bounce \u2014 smart money exiting",
+        "WMT: insider selling + price down, no catalyst",
+        "ADBE: negative Citrini 'agentic cancellation' short thesis",
+        "INTC: weak analyst conviction (34.5%), thin catalyst",
+        "BA: gapping down despite good order news \u2014 price contradicts"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Concrete analyst-backed AI catalyst with strong gap up and heavy volume \u2014 best momentum setup on the board",
+        "symbol": "META",
+        "qty": 39,
+        "entry_price_est": 770.05,
+        "stop_price": 762.35,
+        "take_price": 785.45,
+        "order_id": "8cd78236-9e8a-41ba-a12e-809ba519c6e6"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Rare combo of congressional cluster buy + top-tier analyst conviction on a dip \u2014 smart money is accumulating",
+        "symbol": "AVGO",
+        "qty": 87,
+        "entry_price_est": 350.065,
+        "stop_price": 346.56,
+        "take_price": 357.07,
+        "order_id": "41f39233-9ecd-4f71-92da-e0f6816602c7"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Highest stacked alt-data score with cluster congressional buying and near-unanimous analyst/retail sentiment on a shallow dip",
+        "symbol": "MSFT",
+        "qty": 62,
+        "entry_price_est": 493.865,
+        "stop_price": 488.93,
+        "take_price": 503.74,
+        "order_id": "e1a66447-3e3e-4743-a166-1ae7a6611054"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-09-24",
+    "ts": "2026-09-24T17:50:54.638673Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
