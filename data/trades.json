@@ -26710,5 +26710,100 @@
     "ts": "2026-09-24T17:50:54.638673Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-24",
+    "ts": "2026-09-24T18:54:56.318869Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=36044466084"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-09-24",
+    "ts": "2026-09-24T18:55:15.618622Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-09-24",
+    "ts": "2026-09-24T18:55:56.337913Z",
+    "equity_start": 93353.53,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "INTC",
+          "confidence": "medium",
+          "catalyst": "Up +3.47% on high volume (92M shares) with TSMC foundry economics narrative \u2014 relative strength on a mixed tape",
+          "smart_money_signals": "Stocktwits 95% bullish on 30 msgs, WSB rank #27 with 1.25x mentions",
+          "rationale": "Strong price action with volume confirmation and unanimous retail bullishness \u2014 best momentum setup on the board"
+        },
+        {
+          "symbol": "PLTR",
+          "confidence": "medium",
+          "catalyst": "Green (+0.98%) on a down tape with 17M volume \u2014 relative strength with no negative news",
+          "smart_money_signals": "Stocktwits 100% bullish, House buy (Cisneros), 72% analyst buy, WSB rank #15",
+          "rationale": "Multi-signal smart-money stack (congress + retail + analysts) with confirming positive tape action"
+        },
+        {
+          "symbol": "SHOP",
+          "confidence": "medium",
+          "catalyst": "Up +2.21% with no news \u2014 clean relative strength on a mostly red day",
+          "smart_money_signals": "Stocktwits 83% bullish on 30 msgs, 77% analyst buy (11 SB / 32 B)",
+          "rationale": "Quiet leader with analyst conviction and positive tape \u2014 cleanest RS setup without headline risk"
+        }
+      ],
+      "market_take": "Mixed-to-weak tape with 8 of 11 sectors red; leaders showing genuine relative strength are the highest-quality setups.",
+      "skipped_movers": [
+        "ORCL: -3% on force majeure headline despite bullish alt-data \u2014 falling knife",
+        "AMD: heavy insider selling (8 sells), profit-taking narrative",
+        "WMT/GS/HD/BA/ADBE/MS/CAT: red on the day, no long catalyst",
+        "V: modest gain but weak retail sentiment (57%) and no catalyst"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strong price action with volume confirmation and unanimous retail bullishness \u2014 best momentum setup on the board",
+        "symbol": "INTC",
+        "qty": 687,
+        "entry_price_est": 126.41,
+        "stop_price": 125.15,
+        "take_price": 128.94,
+        "order_id": "3db0d195-cc2a-4a48-bfeb-648a0e052b5c"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Multi-signal smart-money stack (congress + retail + analysts) with confirming positive tape action",
+        "symbol": "PLTR",
+        "qty": 450,
+        "entry_price_est": 192.95,
+        "stop_price": 191.02,
+        "take_price": 196.81,
+        "order_id": "7b3b3ba0-d04b-4cab-839b-1166c273d730"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Quiet leader with analyst conviction and positive tape \u2014 cleanest RS setup without headline risk",
+        "symbol": "SHOP",
+        "qty": 601,
+        "entry_price_est": 144.505,
+        "stop_price": 143.06,
+        "take_price": 147.4,
+        "order_id": "543a9320-f47f-462e-89c2-5296e156b7d7"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-09-24",
+    "ts": "2026-09-24T18:55:56.395741Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
