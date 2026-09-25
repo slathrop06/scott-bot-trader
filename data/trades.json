@@ -26845,5 +26845,118 @@
     "ts": "2026-09-24T21:52:13.449271Z",
     "status": "ok",
     "note": "closed 6 positions, 0 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-25",
+    "ts": "2026-09-25T17:53:01.144818Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=36169893544"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-25",
+    "ts": "2026-09-25T17:53:14.900661Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-25",
+    "ts": "2026-09-25T17:53:15.912632Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-09-25",
+    "ts": "2026-09-25T17:53:16.893818Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-09-25",
+    "ts": "2026-09-25T17:54:01.193677Z",
+    "equity_start": 90983.21,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "MSFT",
+          "confidence": "high",
+          "catalyst": "Gapping +4.2% on Copilot AI makeover news with tech sector leadership and Nvidia GPU demand tailwind",
+          "smart_money_signals": "10/10 alt-score: insider cluster buy (10 buyers), House cluster buy (Cisneros + Gottheimer, 4 buys), WSB 2.45x normal at rank #7, 92.8% analyst bullish",
+          "rationale": "Rare stacking of catalyst + all four smart-money signals firing simultaneously \u2014 best setup on the board"
+        },
+        {
+          "symbol": "COST",
+          "confidence": "medium",
+          "catalyst": "Post-earnings drift +2.7% after Q4 beat ($6.75 EPS, $95.7B rev) with analysts retaining Outperform",
+          "smart_money_signals": "7/10 alt-score: insider cluster buy (7 buyers), WSB chatter 3.0x normal, Stocktwits 88% bullish on 30 msgs",
+          "rationale": "Earnings already reported (no overnight risk), positive drift confirmed by insider cluster and retail sentiment"
+        },
+        {
+          "symbol": "GE",
+          "confidence": "medium",
+          "catalyst": "Relative strength +2.1% while 9 of 11 sectors fell \u2014 cyclical leadership",
+          "smart_money_signals": "Stocktwits 93% bullish on 30 msgs, 87.5% analyst bullish (9 Strong Buy / 19 Buy)",
+          "rationale": "Clean up-move against a weak tape with strong analyst conviction and no negative alt-data flags"
+        }
+      ],
+      "market_take": "Mixed tape with 9 of 11 sectors down but mega-cap tech (MSFT) and select cyclicals leading \u2014 selective long setups available.",
+      "skipped_movers": [
+        "META: heavy insider selling (37 sells) and price gapping down -3.2%",
+        "TSLA: price down, mixed signals, no clean catalyst",
+        "INTC: down move, only 34.5% analyst bullish",
+        "CAT: heavy insider selling 15:1 ratio",
+        "AAPL: heavy insider + House selling, weak Stocktwits 56%",
+        "ADBE: Stocktwits only 30% bullish (below threshold), down day",
+        "BA: heavy insider selling flag despite bullish sentiment",
+        "SBUX: store closure news + insider selling"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Rare stacking of catalyst + all four smart-money signals firing simultaneously \u2014 best setup on the board",
+        "symbol": "MSFT",
+        "qty": 58,
+        "entry_price_est": 516.585,
+        "stop_price": 511.42,
+        "take_price": 526.92,
+        "order_id": "652694ef-5aac-4a4b-bc0d-3b9a5efe44f5"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Earnings already reported (no overnight risk), positive drift confirmed by insider cluster and retail sentiment",
+        "symbol": "COST",
+        "qty": 32,
+        "entry_price_est": 922.35,
+        "stop_price": 913.13,
+        "take_price": 940.8,
+        "order_id": "769d1f48-34bd-43ca-8f3b-c81cc446b7f9"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean up-move against a weak tape with strong analyst conviction and no negative alt-data flags",
+        "symbol": "GE",
+        "qty": 91,
+        "entry_price_est": 326.895,
+        "stop_price": 323.63,
+        "take_price": 333.43,
+        "order_id": "a40056ab-7b84-4cd4-97a0-7d38707a74ac"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-09-25",
+    "ts": "2026-09-25T17:54:01.344630Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
