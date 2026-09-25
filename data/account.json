@@ -1,64 +1,9 @@
 {
-  "ts": "2026-09-24T23:57:08.816390Z",
-  "equity": 93868.72,
-  "last_equity": 92943.17,
-  "cash": -258807.64,
-  "buying_power": 0.0,
-  "all_time_return_pct": -6.1313,
-  "positions": [
-    {
-      "symbol": "AVGO",
-      "qty": 87,
-      "avg_entry_price": 350.11,
-      "current_price": 350.231,
-      "market_value": 30470.1,
-      "unrealized_pl": 10.53,
-      "unrealized_pl_pct": 0.035
-    },
-    {
-      "symbol": "INTC",
-      "qty": 687,
-      "avg_entry_price": 126.42,
-      "current_price": 127.07,
-      "market_value": 87297.09,
-      "unrealized_pl": 446.55,
-      "unrealized_pl_pct": 0.514
-    },
-    {
-      "symbol": "META",
-      "qty": 39,
-      "avg_entry_price": 770.0,
-      "current_price": 775.84,
-      "market_value": 30257.76,
-      "unrealized_pl": 227.76,
-      "unrealized_pl_pct": 0.758
-    },
-    {
-      "symbol": "MSFT",
-      "qty": 62,
-      "avg_entry_price": 495.18,
-      "current_price": 495.9,
-      "market_value": 30745.8,
-      "unrealized_pl": 44.64,
-      "unrealized_pl_pct": 0.145
-    },
-    {
-      "symbol": "PLTR",
-      "qty": 450,
-      "avg_entry_price": 192.98,
-      "current_price": 191.7997,
-      "market_value": 86309.87,
-      "unrealized_pl": -531.13,
-      "unrealized_pl_pct": -0.612
-    },
-    {
-      "symbol": "SHOP",
-      "qty": 601,
-      "avg_entry_price": 144.54,
-      "current_price": 145.75,
-      "market_value": 87595.75,
-      "unrealized_pl": 727.21,
-      "unrealized_pl_pct": 0.837
-    }
-  ]
+  "ts": "2026-09-25T17:45:50.911713Z",
+  "equity": 90983.21,
+  "last_equity": 94294.94,
+  "cash": 90983.21,
+  "buying_power": 363932.84,
+  "all_time_return_pct": -9.0168,
+  "positions": []
 }
