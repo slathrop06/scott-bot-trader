@@ -1,9 +1,37 @@
 {
-  "ts": "2026-09-25T17:45:50.911713Z",
-  "equity": 90983.21,
+  "ts": "2026-09-25T19:11:53.416979Z",
+  "equity": 90748.66,
   "last_equity": 94294.94,
-  "cash": 90983.21,
-  "buying_power": 363932.84,
-  "all_time_return_pct": -9.0168,
-  "positions": []
+  "cash": 1751.92,
+  "buying_power": 2461.49,
+  "all_time_return_pct": -9.2513,
+  "positions": [
+    {
+      "symbol": "COST",
+      "qty": 32,
+      "avg_entry_price": 922.72,
+      "current_price": 920.04,
+      "market_value": 29441.28,
+      "unrealized_pl": -85.76,
+      "unrealized_pl_pct": -0.29
+    },
+    {
+      "symbol": "GE",
+      "qty": 91,
+      "avg_entry_price": 326.81,
+      "current_price": 325.535,
+      "market_value": 29623.69,
+      "unrealized_pl": -116.03,
+      "unrealized_pl_pct": -0.39
+    },
+    {
+      "symbol": "MSFT",
+      "qty": 58,
+      "avg_entry_price": 516.63,
+      "current_price": 516.065,
+      "market_value": 29931.77,
+      "unrealized_pl": -32.77,
+      "unrealized_pl_pct": -0.109
+    }
+  ]
 }

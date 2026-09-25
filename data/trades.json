@@ -26958,5 +26958,103 @@
     "ts": "2026-09-25T17:54:01.344630Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-25",
+    "ts": "2026-09-25T19:10:47.439431Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=36178068668"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-09-25",
+    "ts": "2026-09-25T19:11:08.584867Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-09-25",
+    "ts": "2026-09-25T19:11:53.244555Z",
+    "equity_start": 90765.83,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "Down -1.82% intraday offering entry near support, no negative news; setup is a mean-reversion into close on a broad down day.",
+          "smart_money_signals": "Insider cluster buy (5 distinct buyers, 8 buys in 30d), 83% stocktwits bullish on 30 msgs, 74.6% analyst buy (14SB/30B); alt-score 6/10 \u2014 best on the board.",
+          "rationale": "Cleanest stack of smart-money signals with insider cluster buy plus analyst conviction and positive retail sentiment on a pullback."
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "Pullback -1.32% into supportive AI/GPU demand narrative (Nvidia scarcity story supports Oracle Cloud infra thesis).",
+          "smart_money_signals": "Insider cluster buy (6 distinct buyers, 17 buys in 30d), 79.6% analyst buy (15SB/24B); alt-score 5/10.",
+          "rationale": "Insider cluster buying by 6 insiders with strong analyst conviction is the second-best smart-money stack available."
+        },
+        {
+          "symbol": "JPM",
+          "confidence": "low",
+          "catalyst": "Relative strength +0.99% on a day where 9 of 11 sectors are red \u2014 leadership signal into close.",
+          "smart_money_signals": "85% stocktwits bullish on 30 msgs, 60% analyst buy; some House selling (2) is a mild negative but offset by price leadership.",
+          "rationale": "Relative-strength up-day pick when broad tape is weak, backed by strong retail sentiment."
+        }
+      ],
+      "market_take": "Risk-off tape with 9 of 11 sectors red and yields near 19-year highs \u2014 favor names showing relative strength or insider conviction on pullbacks.",
+      "skipped_movers": [
+        "META: heavy insider selling (37 sells) \u2014 skip",
+        "TSLA: House selling and weak analyst conviction (49%) \u2014 skip",
+        "INTC: only 34.5% analyst buy despite retail hype \u2014 skip",
+        "CAT: 15 insider sells vs 1 buy despite up move \u2014 skip",
+        "ADBE: stocktwits only 30% bullish, mixed insider activity \u2014 skip",
+        "AAPL: heavy insider + congressional selling despite up move \u2014 skip",
+        "SHOP: no catalyst, down day, thin signal (1/10) \u2014 skip"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Cleanest stack of smart-money signals with insider cluster buy plus analyst conviction and positive retail sentiment on a pullback.",
+        "symbol": "CRM",
+        "qty": 361,
+        "entry_price_est": 234.1,
+        "stop_price": 231.76,
+        "take_price": 238.78,
+        "order_id": "7f6e7664-ad53-4754-b72c-70c19136e9d2"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Insider cluster buying by 6 insiders with strong analyst conviction is the second-best smart-money stack available.",
+        "symbol": "ORCL",
+        "qty": 614,
+        "entry_price_est": 137.72,
+        "stop_price": 136.34,
+        "take_price": 140.47,
+        "order_id": "d975bb6c-fdf5-4eb8-a1b0-589fc39f522c"
+      },
+      {
+        "status": "submitted",
+        "confidence": "low",
+        "rationale": "Relative-strength up-day pick when broad tape is weak, backed by strong retail sentiment.",
+        "symbol": "JPM",
+        "qty": 247,
+        "entry_price_est": 342.145,
+        "stop_price": 338.72,
+        "take_price": 348.99,
+        "order_id": "c04bb7fe-0f6e-4890-9e2a-05c0884b387f"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-09-25",
+    "ts": "2026-09-25T19:11:53.421786Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
