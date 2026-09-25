@@ -27056,5 +27056,45 @@
     "ts": "2026-09-25T19:11:53.421786Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-25",
+    "ts": "2026-09-25T21:52:51.045086Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=36193886893"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-09-25",
+    "ts": "2026-09-25T21:53:09.714829Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-09-25",
+    "ts": "2026-09-25T21:53:09.805258Z",
+    "equity_end": 90871.1,
+    "daily_pnl_usd": -3423.84,
+    "daily_pct": -3.631,
+    "flatten": {
+      "closed": [
+        "COST",
+        "CRM",
+        "GE",
+        "JPM",
+        "MSFT",
+        "ORCL"
+      ],
+      "raw_response_count": 6
+    }
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-09-25",
+    "ts": "2026-09-25T21:53:09.876087Z",
+    "status": "ok",
+    "note": "closed 6 positions, 0 round-trips"
   }
 ]
