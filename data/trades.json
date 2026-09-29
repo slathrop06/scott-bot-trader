@@ -27388,5 +27388,43 @@
     "ts": "2026-09-29T19:53:41.443209Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-29",
+    "ts": "2026-09-29T22:42:57.349327Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=36641173562"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-09-29",
+    "ts": "2026-09-29T22:43:19.652541Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-09-29",
+    "ts": "2026-09-29T22:43:20.298014Z",
+    "equity_end": 82560.1,
+    "daily_pnl_usd": 594.2,
+    "daily_pct": 0.7249,
+    "flatten": {
+      "closed": [
+        "CRM",
+        "NFLX",
+        "NKE",
+        "ORCL"
+      ],
+      "raw_response_count": 4
+    }
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-09-29",
+    "ts": "2026-09-29T22:43:20.559661Z",
+    "status": "ok",
+    "note": "closed 4 positions, 0 round-trips"
   }
 ]
