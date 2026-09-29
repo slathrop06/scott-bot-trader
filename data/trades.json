@@ -27185,5 +27185,115 @@
     "ts": "2026-09-28T23:35:10.591111Z",
     "status": "ok",
     "note": "closed 0 positions, 0 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-29",
+    "ts": "2026-09-29T18:33:55.808172Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=36612867960"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-29",
+    "ts": "2026-09-29T18:34:12.613178Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-29",
+    "ts": "2026-09-29T18:34:14.289627Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-09-29",
+    "ts": "2026-09-29T18:34:15.907565Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-09-29",
+    "ts": "2026-09-29T18:35:08.978466Z",
+    "equity_start": 81965.9,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "ORCL",
+          "confidence": "high",
+          "catalyst": "Gapping +4% premarket on chip/AI rally sympathy despite OpenAI GPT-6.1 delay headline \u2014 buyers absorbing bad news is bullish tape action",
+          "smart_money_signals": "Alt-score 8/10: insider cluster buy (6 buyers, 17 buys/30d), WSB 2.0x normal at rank #15, Stocktwits 86% bullish on 30 msgs, 79.6% analyst buy",
+          "rationale": "Rare stack of all four smart-money signals firing simultaneously with confirming +4% price action \u2014 best risk/reward on the board"
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "No fresh news but modest -1.2% dip offers entry against strong underlying signals \u2014 mean reversion setup",
+          "smart_money_signals": "Alt-score 6/10: insider cluster buy (5 buyers, 8 buys/30d), Stocktwits 100% bullish on 30 msgs, 74.6% analyst buy",
+          "rationale": "100% bullish Stocktwits with insider cluster buy is a rare combo; small dip is a buyable entry with tight -1% stop"
+        },
+        {
+          "symbol": "NFLX",
+          "confidence": "medium",
+          "catalyst": "Deutsche Bank bullish call citing underappreciated global production moat, stock already up 1.5% premarket",
+          "smart_money_signals": "Alt-score 6/10: net insider buying (4 buys vs 3 sells), House buying (Byron Donalds 2 buys), WSB 2.89x normal chatter, 74% analyst buy",
+          "rationale": "Fresh analyst upgrade with confirming price action plus congressional buying \u2014 clean catalyst + smart-money combo"
+        }
+      ],
+      "market_take": "Risk-off tape with yields at 2007 highs, but AI/chip complex holding up \u2014 favor names with idiosyncratic smart-money support over beta plays",
+      "skipped_movers": [
+        "SHOP: only 1/10 signal score, no catalyst",
+        "WMT: Mizuho PT cut + death cross + 9 insider sells \u2014 clear disqualifier",
+        "AAPL: -3/10 alt-score, heavy insider + congressional selling, restructure headline is negative",
+        "META: 37 insider sells despite good news, negative alt-score",
+        "NKE: Stocktwits only 25% bullish (bearish disqualifier) despite insider cluster buy",
+        "AVGO: 19 insider sells offsets analyst enthusiasm",
+        "PLTR: 8 insider sells + price down, contradicts WSB hype",
+        "TSLA: weak signals, negative price action, analysts only 49% bullish",
+        "BA: defense sector bear market + 737 MAX cert delay",
+        "CVX/XOM: energy sector under pressure despite oil prices",
+        "BAC: Stocktwits 33% bullish, weak signals"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "failed",
+        "symbol": "ORCL",
+        "error": "{\"base_price\":\"137.7653\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "100% bullish Stocktwits with insider cluster buy is a rare combo; small dip is a buyable entry with tight -1% stop",
+        "symbol": "CRM",
+        "qty": 119,
+        "entry_price_est": 225.525,
+        "stop_price": 223.27,
+        "take_price": 230.04,
+        "order_id": "e6943401-aad5-4e02-8a2d-dbf06e4c347f"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Fresh analyst upgrade with confirming price action plus congressional buying \u2014 clean catalyst + smart-money combo",
+        "symbol": "NFLX",
+        "qty": 384,
+        "entry_price_est": 70.265,
+        "stop_price": 69.56,
+        "take_price": 71.67,
+        "order_id": "212ee18f-6cde-41ab-8335-5a125acadfbd"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-09-29",
+    "ts": "2026-09-29T18:35:09.015193Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
