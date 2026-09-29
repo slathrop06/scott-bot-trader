@@ -1,9 +1,37 @@
 {
-  "ts": "2026-09-29T18:27:15.340872Z",
-  "equity": 81965.9,
+  "ts": "2026-09-29T19:53:41.437860Z",
+  "equity": 82090.08,
   "last_equity": 81965.9,
-  "cash": 81965.9,
-  "buying_power": 327863.6,
-  "all_time_return_pct": -18.0341,
-  "positions": []
+  "cash": 2541.52,
+  "buying_power": 84545.19,
+  "all_time_return_pct": -17.9099,
+  "positions": [
+    {
+      "symbol": "CRM",
+      "qty": 119,
+      "avg_entry_price": 224.84,
+      "current_price": 225.73,
+      "market_value": 26861.87,
+      "unrealized_pl": 105.91,
+      "unrealized_pl_pct": 0.396
+    },
+    {
+      "symbol": "NFLX",
+      "qty": 384,
+      "avg_entry_price": 70.27,
+      "current_price": 70.32,
+      "market_value": 27002.88,
+      "unrealized_pl": 19.2,
+      "unrealized_pl_pct": 0.071
+    },
+    {
+      "symbol": "ORCL",
+      "qty": 186,
+      "avg_entry_price": 138.09,
+      "current_price": 138.085,
+      "market_value": 25683.81,
+      "unrealized_pl": -0.93,
+      "unrealized_pl_pct": -0.004
+    }
+  ]
 }

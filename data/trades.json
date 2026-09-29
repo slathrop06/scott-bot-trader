@@ -27295,5 +27295,98 @@
     "ts": "2026-09-29T18:35:09.015193Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-29",
+    "ts": "2026-09-29T19:52:26.674767Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=36622292437"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-09-29",
+    "ts": "2026-09-29T19:52:48.785277Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-09-29",
+    "ts": "2026-09-29T19:53:41.306430Z",
+    "equity_start": 82095.27,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "ORCL",
+          "confidence": "high",
+          "catalyst": "Up +4.28% on chip/tech rally as yields spike; strong relative strength with 40M vol",
+          "smart_money_signals": "Insider cluster buy (6 buyers, 17 buys), Stocktwits 92% bullish on 30 msgs, 79.6% analyst buy, WSB rank #15 with 1.67x mentions",
+          "rationale": "Best stack of day \u2014 strong price action + cluster insider buy + high sentiment + analyst conviction all align"
+        },
+        {
+          "symbol": "NKE",
+          "confidence": "medium",
+          "catalyst": "Modest weakness (-1.34%) but 18-insider cluster buy is exceptionally rare signal",
+          "smart_money_signals": "Insider cluster buy with 18 unique buyers in 30d (18 buys vs 10 sells) \u2014 massive breadth",
+          "rationale": "18-insider breadth is a standout smart-money signal even without a catalyst; buying weakness with insider conviction"
+        },
+        {
+          "symbol": "SHOP",
+          "confidence": "medium",
+          "catalyst": "Up +2.65% with clean tape and no negative news",
+          "smart_money_signals": "Stocktwits 75% bullish on 30 msgs, 76.8% analyst buy (11SB/32B/12H)",
+          "rationale": "Clean uptrend with supportive sentiment and analyst conviction; no red flags in alt-data"
+        }
+      ],
+      "market_take": "Yields spiking to multi-year highs bifurcating market \u2014 tech/chips rally while energy and rate-sensitives lag",
+      "skipped_movers": [
+        "AAPL: heavy insider selling + House selling + negative price action",
+        "META: 37 insider sells despite bullish sentiment",
+        "WMT: Mizuho cut + death cross + 9 insider sells",
+        "AVGO: 19 insider sells offsets bullish sentiment",
+        "TSLA: down on day, weak analyst conviction 49%",
+        "BA: defense bear market headwind",
+        "XOM: energy sector weakness + House selling",
+        "HD: heavy insider AND House selling cluster"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best stack of day \u2014 strong price action + cluster insider buy + high sentiment + analyst conviction all align",
+        "symbol": "ORCL",
+        "qty": 630,
+        "entry_price_est": 138.07,
+        "stop_price": 136.69,
+        "take_price": 140.83,
+        "order_id": "1ab8c7d7-7227-4bb8-a432-85ea15282171"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "18-insider breadth is a standout smart-money signal even without a catalyst; buying weakness with insider conviction",
+        "symbol": "NKE",
+        "qty": 2426,
+        "entry_price_est": 35.875,
+        "stop_price": 35.52,
+        "take_price": 36.59,
+        "order_id": "a90b491e-fb93-4325-978f-cb1ad2e495e5"
+      },
+      {
+        "status": "failed",
+        "symbol": "SHOP",
+        "error": "{\"base_price\":\"147.875\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-09-29",
+    "ts": "2026-09-29T19:53:41.443209Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
