@@ -27537,5 +27537,96 @@
     "ts": "2026-09-30T18:23:12.141153Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-30",
+    "ts": "2026-09-30T19:53:45.018233Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=36768819328"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-09-30",
+    "ts": "2026-09-30T19:54:07.460639Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-09-30",
+    "ts": "2026-09-30T19:54:59.860562Z",
+    "equity_start": 80622.87,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "CRM",
+          "confidence": "high",
+          "catalyst": "Salesforce +1.73% on broad tech rebound following cooler PCE inflation data; positive price action confirms buying interest",
+          "smart_money_signals": "Insider cluster buy (5 insiders, 8 buys in 30d), Stocktwits 100% bullish on 29 msgs, 75% analyst buy rating \u2014 alt-score 6/10 (highest in list)",
+          "rationale": "Strongest stack today: cluster insider buying + unanimous social sentiment + analyst backing + positive price action into close"
+        },
+        {
+          "symbol": "ADBE",
+          "confidence": "medium",
+          "catalyst": "ADBE +2.95% on cooler PCE lifting tech; clear intraday leader with follow-through",
+          "smart_money_signals": "Insider cluster buy (3 buyers, 5 buys 30d), Stocktwits 82% bullish on 30 msgs, alt-score 5/10",
+          "rationale": "Second-best signal stack \u2014 cluster insider buying paired with a real catalyst and strong up-move"
+        },
+        {
+          "symbol": "INTC",
+          "confidence": "medium",
+          "catalyst": "INTC +3.01% on high volume (73M shares) with tech rally tailwind; strong bullish momentum highlighted in news",
+          "smart_money_signals": "WSB chatter 2.78x normal with 25 mentions, Stocktwits 100% bullish on 30 msgs",
+          "rationale": "Best pure momentum + retail sentiment play \u2014 biggest gainer with confirming social velocity"
+        }
+      ],
+      "market_take": "Cooler PCE lifting growth/tech while defensives and financials fade \u2014 go with the tech leaders showing insider or retail conviction.",
+      "skipped_movers": [
+        "BA: strong catalyst but price is DOWN 2.82% \u2014 action contradicts the F/A-XX contract win, avoid",
+        "WMT: heavy insider selling (9 sells, 7 insiders), price down, alt-score -1",
+        "META: 47 insider sells + House selling, price down 1.94%",
+        "MA/V: stablecoin news but both trading down, MA has insider selling",
+        "SBUX: heavy insider + congressional selling, price down",
+        "MS/GS/CAT/GE/AVGO: all down with no strong smart-money offset"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "failed",
+        "symbol": "CRM",
+        "error": "{\"base_price\":\"229.63\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Second-best signal stack \u2014 cluster insider buying paired with a real catalyst and strong up-move",
+        "symbol": "ADBE",
+        "qty": 400,
+        "entry_price_est": 239.935,
+        "stop_price": 237.54,
+        "take_price": 244.73,
+        "order_id": "244d04be-2fce-417f-b637-8506631c441a"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Best pure momentum + retail sentiment play \u2014 biggest gainer with confirming social velocity",
+        "symbol": "INTC",
+        "qty": 799,
+        "entry_price_est": 120.13,
+        "stop_price": 118.93,
+        "take_price": 122.53,
+        "order_id": "f2896673-e04e-4042-9434-0a673e498b7e"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-09-30",
+    "ts": "2026-09-30T19:55:00.038808Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
