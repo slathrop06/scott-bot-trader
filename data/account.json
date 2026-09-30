@@ -1,9 +1,28 @@
 {
-  "ts": "2026-09-30T19:55:00.032815Z",
-  "equity": 80545.86,
+  "ts": "2026-09-30T22:28:05.898026Z",
+  "equity": 80397.1,
   "last_equity": 81747.29,
-  "cash": 80545.86,
-  "buying_power": 130151.65,
-  "all_time_return_pct": -19.4541,
-  "positions": []
+  "cash": -111523.05,
+  "buying_power": 91284.22,
+  "all_time_return_pct": -19.6029,
+  "positions": [
+    {
+      "symbol": "ADBE",
+      "qty": 400,
+      "avg_entry_price": 240.0528,
+      "current_price": 240.4,
+      "market_value": 96160.0,
+      "unrealized_pl": 138.88,
+      "unrealized_pl_pct": 0.145
+    },
+    {
+      "symbol": "INTC",
+      "qty": 799,
+      "avg_entry_price": 120.21,
+      "current_price": 119.85,
+      "market_value": 95760.15,
+      "unrealized_pl": -287.64,
+      "unrealized_pl_pct": -0.299
+    }
+  ]
 }
