@@ -27426,5 +27426,116 @@
     "ts": "2026-09-29T22:43:20.559661Z",
     "status": "ok",
     "note": "closed 4 positions, 0 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-30",
+    "ts": "2026-09-30T18:21:33.889734Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=36757992216"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-30",
+    "ts": "2026-09-30T18:21:57.766893Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-09-30",
+    "ts": "2026-09-30T18:21:59.721736Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-09-30",
+    "ts": "2026-09-30T18:22:01.174487Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-09-30",
+    "ts": "2026-09-30T18:23:12.002457Z",
+    "equity_start": 81027.62,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "MSFT",
+          "confidence": "high",
+          "catalyst": "Piper Sandler raised price target (Overweight); stock gapping +1.72% on tech-led rally after cool PCE print",
+          "smart_money_signals": "Alt-data score 8/10: insider cluster buy (10 buyers, 14 buys 30d), House cluster buy (Gottheimer, Cisneros), 93% analyst buy (23SB/41B)",
+          "rationale": "Rare stack of insider + congressional cluster buys plus fresh analyst PT hike on a tech-tape green day is the cleanest setup on the board."
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "Salesforce +1.38% on broad tech rebound following cooler PCE inflation data",
+          "smart_money_signals": "Alt-data 6/10: insider cluster buy (5 buyers, 8 buys 30d), stocktwits 100% bullish on 30 msgs, 75% analyst buy",
+          "rationale": "Insider cluster buying plus unanimous retail sentiment and confirming price action offers a solid secondary long."
+        },
+        {
+          "symbol": "GOOGL",
+          "confidence": "medium",
+          "catalyst": "Gapping +2.21% on strong tech tape after PCE; AI-implementer narrative benefiting",
+          "smart_money_signals": "Insider cluster buy (13 buyers, 42 buys vs 2 sells 30d), 90% analyst buy (20SB/43B), stocktwits 83% bullish",
+          "rationale": "Massive insider buying imbalance (42:2) and top-tier analyst conviction outweigh minor House selling on a gap-up day."
+        }
+      ],
+      "market_take": "Risk-on tech rally on cooler PCE inflation with growth sectors leading; favor names with confirming smart-money.",
+      "skipped_movers": [
+        "META: heavy insider selling (47 sells) + stocktwits 25% bearish",
+        "AAPL: heavy insider + House selling despite gap up",
+        "WMT: 9 insider sells, gapping down",
+        "BA: gapping down despite F/A-XX win \u2014 price contradicts news",
+        "MS: heavy insider selling, no catalyst, gapping down",
+        "GS: gapping down, no catalyst",
+        "MA: gapping down on stablecoin news, insider selling",
+        "V: gapping down, no clear catalyst edge",
+        "INTC: weak alt-data score 1/10, extended run",
+        "GE: gapping down",
+        "XOM: House selling, thin catalyst",
+        "ADBE: mixed signals, only 39% analyst buy"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Rare stack of insider + congressional cluster buys plus fresh analyst PT hike on a tech-tape green day is the cleanest setup on the board.",
+        "symbol": "MSFT",
+        "qty": 51,
+        "entry_price_est": 517.805,
+        "stop_price": 512.63,
+        "take_price": 528.16,
+        "order_id": "d5e54c62-0d77-4674-ab99-4df53d81e786"
+      },
+      {
+        "status": "failed",
+        "symbol": "CRM",
+        "error": "{\"base_price\":\"229.09\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Massive insider buying imbalance (42:2) and top-tier analyst conviction outweigh minor House selling on a gap-up day.",
+        "symbol": "GOOGL",
+        "qty": 76,
+        "entry_price_est": 349.53499999999997,
+        "stop_price": 346.04,
+        "take_price": 356.53,
+        "order_id": "c17b1412-8666-4f44-a668-d2ff4f0c71f9"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-09-30",
+    "ts": "2026-09-30T18:23:12.141153Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
