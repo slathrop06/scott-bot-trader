@@ -27696,5 +27696,117 @@
     "ts": "2026-09-30T22:40:50.497771Z",
     "status": "ok",
     "note": "closed 2 positions, 2 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-01",
+    "ts": "2026-10-01T18:47:02.921597Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=36909392692"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-01",
+    "ts": "2026-10-01T18:47:20.301505Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-01",
+    "ts": "2026-10-01T18:47:21.967303Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-01",
+    "ts": "2026-10-01T18:47:23.336084Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-10-01",
+    "ts": "2026-10-01T18:48:33.419383Z",
+    "equity_start": 81276.54,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "Accenture Q4 earnings beat lifting software/IT services sector; CRM gapping up +2.83% premarket in sympathy",
+          "smart_money_signals": "Insider cluster buy (5 buyers, 8 buys/30d), Stocktwits 100% bullish on 29 msgs, 74.6% analyst buy rating",
+          "rationale": "Positive gap-up with sector tailwind AND insider cluster buy stacking \u2014 cleanest multi-signal setup on the board"
+        },
+        {
+          "symbol": "NFLX",
+          "confidence": "medium",
+          "catalyst": "WSB chatter 2.25x normal and whale alert flagged in communications sector despite modest dip",
+          "smart_money_signals": "House buying (Byron Donalds 2 buys), net insider buying (4 buys/3 sells), WSB 2.25x, Stocktwits 85% bullish, 74% analyst buy",
+          "rationale": "Strong smart-money stack (congress + insider + WSB + retail) qualifies independently of price action"
+        },
+        {
+          "symbol": "GOOGL",
+          "confidence": "medium",
+          "catalyst": "AI chip/hyperscaler spend narrative intact; -3% dip provides entry with +2% TP achievable on rebound",
+          "smart_money_signals": "Insider cluster buy with 13 unique buyers (48 buys/30d), WSB 3.56x normal at rank #5, Stocktwits 89% bullish, 90% analyst buy",
+          "rationale": "Highest alt-data score (7/10) with massive insider cluster buy \u2014 congress selling offset by overwhelming insider conviction"
+        }
+      ],
+      "market_take": "Risk-off tape with cyclicals leading and tech selling off; AI-narrative dip-buys and software sector rotation are the actionable setups",
+      "skipped_movers": [
+        "DIS: layoff news driving -3.3% dump, catalyst is negative",
+        "AAPL: heavy insider + congress selling, no positive catalyst",
+        "NVDA: 27 insider sells by 7 insiders overwhelms bullish narrative",
+        "AVGO: 19 insider sells, 3:1+ selling ratio",
+        "PLTR: heavy insider selling, 0/10 alt-data",
+        "BAC/CVX/GS/MS/CAT: no catalyst, weak alt-data",
+        "ADBE: analyst conviction only 39%, heavy insider sells outweigh cluster buy"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Positive gap-up with sector tailwind AND insider cluster buy stacking \u2014 cleanest multi-signal setup on the board",
+        "symbol": "CRM",
+        "qty": 113,
+        "entry_price_est": 236.76999999999998,
+        "stop_price": 234.4,
+        "take_price": 241.51,
+        "order_id": "afb4e231-eade-41e0-83ec-cc2d4fed2277"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strong smart-money stack (congress + insider + WSB + retail) qualifies independently of price action",
+        "symbol": "NFLX",
+        "qty": 392,
+        "entry_price_est": 68.35499999999999,
+        "stop_price": 67.67,
+        "take_price": 69.72,
+        "order_id": "a3d21e7f-527c-4a8f-99f6-8e63e9a385f5"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Highest alt-data score (7/10) with massive insider cluster buy \u2014 congress selling offset by overwhelming insider conviction",
+        "symbol": "GOOGL",
+        "qty": 79,
+        "entry_price_est": 338.315,
+        "stop_price": 334.93,
+        "take_price": 345.08,
+        "order_id": "bb25afd6-14e9-4975-bdab-5507d98938a9"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-01",
+    "ts": "2026-10-01T18:48:33.554194Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
