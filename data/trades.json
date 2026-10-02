@@ -27866,5 +27866,122 @@
     "ts": "2026-10-01T22:56:33.927075Z",
     "status": "ok",
     "note": "closed 3 positions, 0 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-02",
+    "ts": "2026-10-02T18:19:31.341961Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=37046644655"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-02",
+    "ts": "2026-10-02T18:19:49.343029Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-02",
+    "ts": "2026-10-02T18:19:51.190778Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-02",
+    "ts": "2026-10-02T18:19:52.950652Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-10-02",
+    "ts": "2026-10-02T18:20:39.519441Z",
+    "equity_start": 81520.26,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "ORCL",
+          "confidence": "high",
+          "catalyst": "Up +2.3% premarket in strong growth-sector tape, part of most-searched tickers list on Benzinga Pro",
+          "smart_money_signals": "Insider cluster buy (6 buyers, 17 buys vs 20 sells in 30d), 75% stocktwits bullish on 30 msgs, 80% analyst buy",
+          "rationale": "Clean stack of insider cluster + analyst conviction + positive momentum with no red flags"
+        },
+        {
+          "symbol": "NKE",
+          "confidence": "medium",
+          "catalyst": "Gap up +4.7% on heavy volume (107M), rebounding from 52-week low \u2014 potential capitulation reversal",
+          "smart_money_signals": "Insider cluster buy (10 insiders, 10 buys vs 3 sells), WSB #1 rank at 8.19x normal chatter, 82% stocktwits bullish",
+          "rationale": "Strongest alt-data stack of the day (score 7/10) with insider conviction after bad news already priced in"
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "Jim Cramer highlighted CRM leading Q3 enterprise software comeback despite -1.2% dip \u2014 buy-the-dip setup",
+          "smart_money_signals": "Insider cluster buy (5 buyers), 100% stocktwits bullish on 30 msgs, 75% analyst buy",
+          "rationale": "Rare combo of insider cluster + maximum social sentiment on a modest pullback offers favorable risk/reward"
+        }
+      ],
+      "market_take": "Weak jobs print lifting growth/tech to record highs \u2014 risk-on tape favors long setups.",
+      "skipped_movers": [
+        "TSLA: weak alt-data (1/10), no catalyst beyond market tape",
+        "AVGO: 19 insider sells, 3:1+ sell ratio disqualifies",
+        "AMD: 32 insider sells, heavy distribution",
+        "NVDA: 26 insider sells by 7 insiders despite buyback news",
+        "GOOGL: House congressional net selling (3 sells, 0 buys) offsets insider cluster",
+        "ADBE: price down and only 39% analyst buy despite insider cluster",
+        "NFLX: price down, mixed sentiment, earnings approaching",
+        "MA: insider sell + no catalyst",
+        "MS: insider selling, no clear catalyst",
+        "CAT: thin signal (1/10), no news",
+        "SHOP: no news catalyst, sentiment-only",
+        "DIS: weak signal, job cuts headline risk"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Clean stack of insider cluster + analyst conviction + positive momentum with no red flags",
+        "symbol": "ORCL",
+        "qty": 189,
+        "entry_price_est": 141.69,
+        "stop_price": 140.27,
+        "take_price": 144.52,
+        "order_id": "c18fc992-1bab-49d5-8214-73662a83163d"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strongest alt-data stack of the day (score 7/10) with insider conviction after bad news already priced in",
+        "symbol": "NKE",
+        "qty": 800,
+        "entry_price_est": 33.595,
+        "stop_price": 33.26,
+        "take_price": 34.27,
+        "order_id": "eb376fb9-5532-49be-9ce1-c72155f17f21"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Rare combo of insider cluster + maximum social sentiment on a modest pullback offers favorable risk/reward",
+        "symbol": "CRM",
+        "qty": 114,
+        "entry_price_est": 235.20499999999998,
+        "stop_price": 232.85,
+        "take_price": 239.91,
+        "order_id": "ae89c4e6-a9d5-43e2-8bd2-744005cada61"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-02",
+    "ts": "2026-10-02T18:20:39.613651Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
