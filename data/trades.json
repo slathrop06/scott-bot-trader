@@ -27983,5 +27983,99 @@
     "ts": "2026-10-02T18:20:39.613651Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-02",
+    "ts": "2026-10-02T19:49:16.998555Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=37056581787"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-10-02",
+    "ts": "2026-10-02T19:49:30.730208Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-10-02",
+    "ts": "2026-10-02T19:50:09.634328Z",
+    "equity_start": 81865.66,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AVGO",
+          "confidence": "high",
+          "catalyst": "$60B AI chip financing deal driving sector-wide chip rally; stock up +3% on strong volume",
+          "smart_money_signals": "91% analyst buy (17SB/35B/0S), stocktwits 79% bullish, WSB chatter 3.18x normal, House buy by Rep. Allen",
+          "rationale": "Specific concrete catalyst (big AI chip deal) stacking with multi-channel smart-money confirmation."
+        },
+        {
+          "symbol": "GOOGL",
+          "confidence": "medium",
+          "catalyst": "Google AI chips being tested in space via Planet Labs; steady +1.1% grind on broad tech strength",
+          "smart_money_signals": "Insider cluster buy (13 buyers, 48 buys in 30d), 90% analyst buy, stocktwits 100% bullish",
+          "rationale": "Rare 13-insider cluster buy is a strong smart-money signal independent of price action."
+        },
+        {
+          "symbol": "CAT",
+          "confidence": "medium",
+          "catalyst": "Industrial strength on dovish Fed repricing + AI infra spend tailwind; +2.6% on expanding volume",
+          "smart_money_signals": "Stocktwits 91% bullish on 29 msgs, 53% analyst buy",
+          "rationale": "Clean relative-strength breakout with concrete macro catalyst and no contradicting signals."
+        }
+      ],
+      "market_take": "Risk-on tape: weak jobs report fueling rate-cut hopes, tech/AI and industrials leading to record highs.",
+      "skipped_movers": [
+        "TSLA: no concrete bullish catalyst, mixed signals, only 49% analyst buy",
+        "AMD: heavy insider selling (32 sells, 2 insiders), no specific catalyst",
+        "NVDA: heavy insider selling (26 sells, 7 insiders) despite strong sentiment",
+        "ADBE: price down -1.75%, contradicts bullish alt-data",
+        "NFLX: price down, stocktwits only 53% bullish, Q3 earnings approaching",
+        "AAPL: House net selling + insider selling, weakest alt-data score",
+        "AMZN: stocktwits only 40% bullish, AI debt concerns in news",
+        "MA: heavy insider selling flagged, no catalyst",
+        "SHOP: no news catalyst, modest move"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Specific concrete catalyst (big AI chip deal) stacking with multi-channel smart-money confirmation.",
+        "symbol": "AVGO",
+        "qty": 214,
+        "entry_price_est": 354.675,
+        "stop_price": 351.13,
+        "take_price": 361.77,
+        "order_id": "d60df19f-ef26-424e-abdb-57496cf3cac7"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Rare 13-insider cluster buy is a strong smart-money signal independent of price action.",
+        "symbol": "GOOGL",
+        "qty": 221,
+        "entry_price_est": 342.83500000000004,
+        "stop_price": 339.41,
+        "take_price": 349.69,
+        "order_id": "fd1b0d53-32a6-4cf9-8cb0-d0560241a52a"
+      },
+      {
+        "status": "failed",
+        "symbol": "CAT",
+        "error": "{\"base_price\":\"847.14\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-10-02",
+    "ts": "2026-10-02T19:50:09.736283Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
