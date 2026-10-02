@@ -1,37 +1,55 @@
 {
-  "ts": "2026-10-02T19:50:09.733074Z",
-  "equity": 81873.48,
+  "ts": "2026-10-02T22:26:29.477774Z",
+  "equity": 81668.19,
   "last_equity": 81151.9,
-  "cash": 1165.86,
-  "buying_power": 78814.38,
-  "all_time_return_pct": -18.1265,
+  "cash": -150679.34,
+  "buying_power": 47855.72,
+  "all_time_return_pct": -18.3318,
   "positions": [
+    {
+      "symbol": "AVGO",
+      "qty": 214,
+      "avg_entry_price": 355.35,
+      "current_price": 354.55,
+      "market_value": 75873.7,
+      "unrealized_pl": -171.2,
+      "unrealized_pl_pct": -0.225
+    },
     {
       "symbol": "CRM",
       "qty": 114,
       "avg_entry_price": 234.15,
-      "current_price": 233.78,
-      "market_value": 26650.92,
-      "unrealized_pl": -42.18,
-      "unrealized_pl_pct": -0.158
+      "current_price": 234.12,
+      "market_value": 26689.68,
+      "unrealized_pl": -3.42,
+      "unrealized_pl_pct": -0.013
+    },
+    {
+      "symbol": "GOOGL",
+      "qty": 221,
+      "avg_entry_price": 342.9878,
+      "current_price": 343.1509,
+      "market_value": 75836.35,
+      "unrealized_pl": 36.05,
+      "unrealized_pl_pct": 0.048
     },
     {
       "symbol": "NKE",
       "qty": 800,
       "avg_entry_price": 33.6,
-      "current_price": 33.845,
-      "market_value": 27076.0,
-      "unrealized_pl": 196.0,
-      "unrealized_pl_pct": 0.729
+      "current_price": 33.84,
+      "market_value": 27072.0,
+      "unrealized_pl": 192.0,
+      "unrealized_pl_pct": 0.714
     },
     {
       "symbol": "ORCL",
       "qty": 189,
       "avg_entry_price": 141.7,
-      "current_price": 142.755,
-      "market_value": 26980.69,
-      "unrealized_pl": 199.4,
-      "unrealized_pl_pct": 0.745
+      "current_price": 142.2,
+      "market_value": 26875.8,
+      "unrealized_pl": 94.5,
+      "unrealized_pl_pct": 0.353
     }
   ]
 }
