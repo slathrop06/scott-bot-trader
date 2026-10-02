@@ -28077,5 +28077,44 @@
     "ts": "2026-10-02T19:50:09.736283Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-02",
+    "ts": "2026-10-02T22:37:48.685739Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=37073504808"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-10-02",
+    "ts": "2026-10-02T22:38:10.543438Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-10-02",
+    "ts": "2026-10-02T22:38:10.845592Z",
+    "equity_end": 81738.87,
+    "daily_pnl_usd": 586.97,
+    "daily_pct": 0.7233,
+    "flatten": {
+      "closed": [
+        "AVGO",
+        "CRM",
+        "GOOGL",
+        "NKE",
+        "ORCL"
+      ],
+      "raw_response_count": 5
+    }
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-10-02",
+    "ts": "2026-10-02T22:38:11.017084Z",
+    "status": "ok",
+    "note": "closed 5 positions, 0 round-trips"
   }
 ]
