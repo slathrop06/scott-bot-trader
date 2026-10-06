@@ -28321,5 +28321,26 @@
     "ts": "2026-10-06T18:53:09.790914Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-06",
+    "ts": "2026-10-06T20:05:25.730478Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=37523782766"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-10-06",
+    "ts": "2026-10-06T20:05:45.279541Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-10-06",
+    "ts": "2026-10-06T20:05:45.347264Z",
+    "status": "blocked",
+    "note": "Market is closed."
   }
 ]
