@@ -28205,5 +28205,121 @@
     "ts": "2026-10-06T00:25:00.930805Z",
     "status": "ok",
     "note": "closed 0 positions, 0 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-06",
+    "ts": "2026-10-06T18:51:57.442086Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=37514560645"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-06",
+    "ts": "2026-10-06T18:52:15.636522Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-06",
+    "ts": "2026-10-06T18:52:17.450334Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-06",
+    "ts": "2026-10-06T18:52:19.281896Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-10-06",
+    "ts": "2026-10-06T18:53:09.723303Z",
+    "equity_start": 82690.39,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AVGO",
+          "confidence": "high",
+          "catalyst": "Premarket +4.28% on Anthropic $60B TPU financing deal challenging NVIDIA; Cramer flags Marvell AI forecast as bullish signal for Broadcom custom silicon",
+          "smart_money_signals": "91% analyst buy (17SB/35B), stocktwits 79% bullish on 30 msgs, WSB chatter 2.14x normal (rank #16), House buy by Rep. Allen",
+          "rationale": "Strongest gap-up with concrete catalyst stacked on broad bullish alt-data \u2014 insider selling is routine 10b5-1 given stock near highs."
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "Up ~2% premarket on supportive Eisman commentary pushing back on AI capex depreciation fears; cloud/AI tailwind continues",
+          "smart_money_signals": "Insider cluster buy (7 buyers, 18 buys vs 20 sells), stocktwits 92% bullish, 80% analyst buy, WSB rank #45 at 1.8x chatter",
+          "rationale": "True insider cluster buy at these levels is rare and bullish; combined with modest gap and AI narrative support provides clean setup."
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "low",
+          "catalyst": "Modest pullback (-2.76%) into insider cluster buy support; whale activity flagged",
+          "smart_money_signals": "Insider cluster buy (5 buyers, 8 buys), stocktwits 100% bullish on 30 msgs, 75% analyst buy",
+          "rationale": "Price contradiction is a yellow flag, but insider cluster + unanimous retail sentiment offers mean-reversion edge; smallest size."
+        }
+      ],
+      "market_take": "Risk-on tone with AI/chip leadership extending and defensives also bid \u2014 concentration risk noted but momentum intact.",
+      "skipped_movers": [
+        "AMD: 32 insider sells and only 1 buy despite rally \u2014 distribution signal outweighs catalyst",
+        "PLTR: heavy insider selling (7:2), no fresh news catalyst",
+        "SBUX: negative alt-data score, insider+congress selling, 50% bullish sentiment",
+        "INTC: price down -1.47%, no company-specific catalyst, weak 34% analyst buy",
+        "BA: price down -1.33% despite contract win, debt refinancing overhang",
+        "COST: no catalyst, insider buys offset 1:1 by sells",
+        "HD: 7 insider sells vs 0 buys overwhelms House cluster buy",
+        "NKE: weak 39% analyst buy and no catalyst despite insider cluster",
+        "WMT: insider buys offset by sells (9:9), no catalyst",
+        "AMZN: good sentiment but no distinct alt-data edge vs AVGO/ORCL",
+        "CAT: thin alt-data signal, only 53% analyst buy"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Strongest gap-up with concrete catalyst stacked on broad bullish alt-data \u2014 insider selling is routine 10b5-1 given stock near highs.",
+        "symbol": "AVGO",
+        "qty": 72,
+        "entry_price_est": 378.43,
+        "stop_price": 374.65,
+        "take_price": 386.0,
+        "order_id": "28aaa4f4-4a27-4b25-a7bb-b5141853393f"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "True insider cluster buy at these levels is rare and bullish; combined with modest gap and AI narrative support provides clean setup.",
+        "symbol": "ORCL",
+        "qty": 187,
+        "entry_price_est": 145.425,
+        "stop_price": 143.97,
+        "take_price": 148.33,
+        "order_id": "63d2d75a-8580-4aaa-be20-cc9cf9682f67"
+      },
+      {
+        "status": "submitted",
+        "confidence": "low",
+        "rationale": "Price contradiction is a yellow flag, but insider cluster + unanimous retail sentiment offers mean-reversion edge; smallest size.",
+        "symbol": "CRM",
+        "qty": 124,
+        "entry_price_est": 220.005,
+        "stop_price": 217.8,
+        "take_price": 224.41,
+        "order_id": "5bce568e-6ad4-43ff-b071-b65958c88f16"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-06",
+    "ts": "2026-10-06T18:53:09.790914Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
