@@ -28485,5 +28485,44 @@
     "ts": "2026-10-07T20:30:32.486880Z",
     "status": "blocked",
     "note": "Market is closed."
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-07",
+    "ts": "2026-10-07T23:21:27.680366Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=37701794694"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-10-07",
+    "ts": "2026-10-07T23:21:45.902263Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-10-07",
+    "ts": "2026-10-07T23:21:46.156858Z",
+    "equity_end": 82131.69,
+    "daily_pnl_usd": -302.82,
+    "daily_pct": -0.3673,
+    "flatten": {
+      "closed": [
+        "AVGO",
+        "NKE",
+        "ORCL",
+        "SHOP",
+        "WMT"
+      ],
+      "raw_response_count": 5
+    }
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-10-07",
+    "ts": "2026-10-07T23:21:46.234178Z",
+    "status": "ok",
+    "note": "closed 5 positions, 0 round-trips"
   }
 ]
