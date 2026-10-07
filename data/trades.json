@@ -28349,5 +28349,120 @@
     "ts": "2026-10-06T22:49:04.260413Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=37542942300"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-07",
+    "ts": "2026-10-07T19:17:21.591294Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=37673331048"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-07",
+    "ts": "2026-10-07T19:17:35.861109Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-07",
+    "ts": "2026-10-07T19:17:37.216722Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-07",
+    "ts": "2026-10-07T19:17:38.747938Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-10-07",
+    "ts": "2026-10-07T19:18:32.910305Z",
+    "equity_start": 82078.92,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "WMT",
+          "confidence": "high",
+          "catalyst": "Relative strength: +1.07% while market broadly down and defensives leading; up on a risk-off tape",
+          "smart_money_signals": "Insider cluster buy (9 insiders bought in 30d, cluster_buy=True), 88% analyst buy rating (12SB/30B/6H/0S)",
+          "rationale": "Defensive leader with insider cluster buy showing green on a red tape \u2014 textbook relative strength setup."
+        },
+        {
+          "symbol": "NKE",
+          "confidence": "medium",
+          "catalyst": "Only mild -1% pullback with no negative news; insider conviction is the story",
+          "smart_money_signals": "Massive insider cluster buy \u2014 10 insiders bought vs 3 sellers in 30d (3:1 buy ratio), 78% stocktwits bullish",
+          "rationale": "Rare 10-insider cluster buy at $34 shows management conviction; low $34 price with -1% stop still ~$0.34 room is tradable."
+        },
+        {
+          "symbol": "SHOP",
+          "confidence": "medium",
+          "catalyst": "Up +1.15% premarket on a down tape \u2014 clean relative strength with no negative news",
+          "smart_money_signals": "77% analyst buy (11SB/32B/12H), 79% stocktwits bullish on 30 msgs",
+          "rationale": "Only meaningful green mover with no overhang; relative strength on a risk-off day is the cleanest momentum signal available."
+        }
+      ],
+      "market_take": "Risk-off tape with 30-yr yield at 24-yr high crushing growth; defensives and relative-strength names are the only playable longs.",
+      "skipped_movers": [
+        "CAT: -6% on FTC/USDA inquiry \u2014 falling knife with regulatory overhang",
+        "META: -2.3% with 46 insider sells in 30d and broad tech selloff",
+        "AMD: 32 insider sells, momentum breaking after +200% YTD run",
+        "NVDA: 14 insider sells by 6 insiders, tech weakness",
+        "SBUX: heavy insider selling + congressional sell, negative alt-score",
+        "GS: no clear catalyst, down with financials",
+        "AVGO: 19 insider sells overwhelm single congress buy",
+        "ADBE: only 39% analyst buy \u2014 weak conviction despite insider cluster",
+        "BAC/GE/MS: down with sector, no idiosyncratic bull catalyst",
+        "IWM: small caps getting crushed by yields"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Defensive leader with insider cluster buy showing green on a red tape \u2014 textbook relative strength setup.",
+        "symbol": "WMT",
+        "qty": 250,
+        "entry_price_est": 108.19999999999999,
+        "stop_price": 107.12,
+        "take_price": 110.36,
+        "order_id": "947213fb-cbf8-4503-9b5d-1988c7bf04d9"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Rare 10-insider cluster buy at $34 shows management conviction; low $34 price with -1% stop still ~$0.34 room is tradable.",
+        "symbol": "NKE",
+        "qty": 789,
+        "entry_price_est": 34.295,
+        "stop_price": 33.95,
+        "take_price": 34.98,
+        "order_id": "9dd0443e-5653-416d-942a-986e3dfc60dd"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Only meaningful green mover with no overhang; relative strength on a risk-off day is the cleanest momentum signal available.",
+        "symbol": "SHOP",
+        "qty": 161,
+        "entry_price_est": 167.31,
+        "stop_price": 165.64,
+        "take_price": 170.66,
+        "order_id": "6ac07fe5-0d91-42e7-9174-79754a62ecde"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-07",
+    "ts": "2026-10-07T19:18:33.020887Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
