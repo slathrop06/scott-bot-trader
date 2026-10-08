@@ -28524,5 +28524,121 @@
     "ts": "2026-10-07T23:21:46.234178Z",
     "status": "ok",
     "note": "closed 5 positions, 0 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-08",
+    "ts": "2026-10-08T19:13:30.813995Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=37830320405"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-08",
+    "ts": "2026-10-08T19:13:48.962253Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-08",
+    "ts": "2026-10-08T19:13:51.285173Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-08",
+    "ts": "2026-10-08T19:13:53.169082Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-10-08",
+    "ts": "2026-10-08T19:14:42.115496Z",
+    "equity_start": 81233.1,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "DIS",
+          "confidence": "high",
+          "catalyst": "Gapping +2.2% premarket while broad market sells off on Iran/AI fears \u2014 clear relative strength",
+          "smart_money_signals": "Insider cluster buy 11 buyers vs only 2 sellers (rare 5.5:1 ratio), 89.5% analyst bullish (11SB/23B/3H), stocktwits 92% bullish, alt-data score 6/10",
+          "rationale": "Best stacked setup \u2014 insider conviction + analyst conviction + bullish tape + relative strength on a red day."
+        },
+        {
+          "symbol": "WMT",
+          "confidence": "medium",
+          "catalyst": "Up +2.63% on defensive rotation as 8 of 11 sectors fall; retiree-economy tailwind narrative",
+          "smart_money_signals": "Insider cluster buy with 9 distinct buyers, 87.5% analyst bullish (12SB/30B), stocktwits 77% bullish, alt-data score 5/10",
+          "rationale": "Defensive name catching a bid in risk-off tape with a legitimate 9-insider cluster buy backing it."
+        },
+        {
+          "symbol": "CVX",
+          "confidence": "medium",
+          "catalyst": "Up +3.41% on Brent breakout above $105 after Gulf tanker attacks; UBS raised PT to $235",
+          "smart_money_signals": "Stocktwits 88% bullish on 30 msgs, 83.3% analyst bullish (7SB/18B)",
+          "rationale": "Strong catalyst (oil spike + analyst upgrade) in the only sector working today; clean tape with no insider/congress red flags."
+        }
+      ],
+      "market_take": "Risk-off tape \u2014 AI/semis dumping on OpenAI revenue miss while energy and defensives lead on Middle East supply shock.",
+      "skipped_movers": [
+        "INTC: -6.22% gap down, weak 34.5% analyst bullish, no smart-money support",
+        "ORCL: -6% on OpenAI revenue cut; catalyst clearly bearish despite cluster buy",
+        "AVGO: 19 insider sells, no insider buys, falling tape",
+        "AMD: 32 insider sells (heavy selling trigger), gapping down -4.9%",
+        "NVDA: 14 sells vs 1 buy, stocktwits only 42% bullish, gap down",
+        "XOM: House selling and only 46.7% analyst bullish despite oil catalyst \u2014 CVX is cleaner",
+        "HD: 7 insider sells vs 0 buys disqualifies despite congress cluster",
+        "ADBE: Only 39.1% analyst bullish and 17 insider sells outweigh 3-buyer cluster",
+        "SBUX: Gapping down on Chipotle M&A speculation (buyer, not seller), insider selling",
+        "NFLX: Analyst PT cut mentioned in news conflicts with bullish alt-data",
+        "MCD/CAT: Weaker smart-money stack than top picks"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best stacked setup \u2014 insider conviction + analyst conviction + bullish tape + relative strength on a red day.",
+        "symbol": "DIS",
+        "qty": 250,
+        "entry_price_est": 107.03999999999999,
+        "stop_price": 105.97,
+        "take_price": 109.18,
+        "order_id": "1169bccb-006b-44f3-ad55-0c9972429907"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Defensive name catching a bid in risk-off tape with a legitimate 9-insider cluster buy backing it.",
+        "symbol": "WMT",
+        "qty": 241,
+        "entry_price_est": 110.955,
+        "stop_price": 109.85,
+        "take_price": 113.17,
+        "order_id": "d26ffca9-7d4b-4b90-ad17-b367e25f50dd"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strong catalyst (oil spike + analyst upgrade) in the only sector working today; clean tape with no insider/congress red flags.",
+        "symbol": "CVX",
+        "qty": 126,
+        "entry_price_est": 212.29500000000002,
+        "stop_price": 210.17,
+        "take_price": 216.54,
+        "order_id": "58ce5532-5a1f-4818-af44-5975b80f5f9f"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-08",
+    "ts": "2026-10-08T19:14:42.161472Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
