@@ -28661,5 +28661,42 @@
     "ts": "2026-10-08T20:35:14.807228Z",
     "status": "blocked",
     "note": "Market is closed."
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-08",
+    "ts": "2026-10-08T23:35:27.877836Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=37860213260"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-10-08",
+    "ts": "2026-10-08T23:35:48.594975Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-10-08",
+    "ts": "2026-10-08T23:35:48.962914Z",
+    "equity_end": 81058.27,
+    "daily_pnl_usd": -1119.28,
+    "daily_pct": -1.362,
+    "flatten": {
+      "closed": [
+        "CVX",
+        "DIS",
+        "WMT"
+      ],
+      "raw_response_count": 3
+    }
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-10-08",
+    "ts": "2026-10-08T23:35:49.150953Z",
+    "status": "ok",
+    "note": "closed 3 positions, 0 round-trips"
   }
 ]
