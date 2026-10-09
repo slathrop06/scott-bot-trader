@@ -28698,5 +28698,118 @@
     "ts": "2026-10-08T23:35:49.150953Z",
     "status": "ok",
     "note": "closed 3 positions, 0 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-09",
+    "ts": "2026-10-09T18:44:05.672811Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=37975316721"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-09",
+    "ts": "2026-10-09T18:44:25.240904Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-09",
+    "ts": "2026-10-09T18:44:27.158520Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-09",
+    "ts": "2026-10-09T18:44:29.099723Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-10-09",
+    "ts": "2026-10-09T18:45:19.340909Z",
+    "equity_start": 80894.01,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "ORCL",
+          "confidence": "high",
+          "catalyst": "Reversal/bounce after Thursday's OpenAI-revenue selloff, gapping +4.4% premarket with heavy volume",
+          "smart_money_signals": "Insider cluster buy (7 insiders, 18 buys 30d), Stocktwits 85% bullish on 30 msgs, 79.6% analyst buy",
+          "rationale": "Stacked setup: strong catalyst (sharp reversal) + multiple smart-money confirmations is the best-aligned trade on the board"
+        },
+        {
+          "symbol": "NFLX",
+          "confidence": "medium",
+          "catalyst": "Pullback name with net insider buying and House buy \u2014 contrarian long into bullish alt-data",
+          "smart_money_signals": "Net insider buying, House buy by Cleo Fields (21d), Stocktwits 89% bullish, 74.1% analyst buy",
+          "rationale": "Smart-money-only setup with no negative news and clean analyst/insider/congress alignment"
+        },
+        {
+          "symbol": "MSFT",
+          "confidence": "medium",
+          "catalyst": "Nasdaq rebound from OpenAI scare, +2.6% premarket on heavy volume",
+          "smart_money_signals": "Insider cluster buy (5 insiders), 92.8% analyst buy, WSB mentions up 1.95x",
+          "rationale": "Mega-cap AI leader with insider cluster buy and strong analyst conviction riding the Nasdaq bounce"
+        }
+      ],
+      "market_take": "Risk-on rebound Friday as Nasdaq recovers from OpenAI revenue scare; mega-cap tech leading.",
+      "skipped_movers": [
+        "PLTR: heavy insider selling (8 sells, 2 insiders) despite price gap \u2014 skip",
+        "AMZN: heavy insider sell signal, no catalyst edge",
+        "AMD: heavy insider selling (32 sells) overrides bullish chatter",
+        "MA: heavy insider selling, no catalyst",
+        "SBUX: negative alt-data (-3), insider+House selling, risky Chipotle deal",
+        "INTC: price down, weak analyst conviction (34.5%)",
+        "TSLA: weak analyst base (49%) and no fresh positive catalyst",
+        "HD: price down + heavy insider selling outweighs House cluster buy"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Stacked setup: strong catalyst (sharp reversal) + multiple smart-money confirmations is the best-aligned trade on the board",
+        "symbol": "ORCL",
+        "qty": 189,
+        "entry_price_est": 141.07999999999998,
+        "stop_price": 139.67,
+        "take_price": 143.9,
+        "order_id": "aeebecdf-4793-422d-b658-fb5b25a190ce"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Smart-money-only setup with no negative news and clean analyst/insider/congress alignment",
+        "symbol": "NFLX",
+        "qty": 378,
+        "entry_price_est": 70.455,
+        "stop_price": 69.75,
+        "take_price": 71.86,
+        "order_id": "77f172d0-8e29-4e6c-ae51-440ea081ed56"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Mega-cap AI leader with insider cluster buy and strong analyst conviction riding the Nasdaq bounce",
+        "symbol": "MSFT",
+        "qty": 49,
+        "entry_price_est": 535.88,
+        "stop_price": 530.52,
+        "take_price": 546.6,
+        "order_id": "bcfc739b-52e6-4b34-9dd1-a2cdea3344a1"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-09",
+    "ts": "2026-10-09T18:45:19.500698Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
