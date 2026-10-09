@@ -1,9 +1,37 @@
 {
-  "ts": "2026-10-09T18:38:55.607581Z",
-  "equity": 80894.01,
+  "ts": "2026-10-09T23:01:18.106538Z",
+  "equity": 80658.97,
   "last_equity": 81030.67,
-  "cash": 80894.01,
-  "buying_power": 323576.04,
-  "all_time_return_pct": -19.106,
-  "positions": []
+  "cash": 1142.71,
+  "buying_power": 227216.36,
+  "all_time_return_pct": -19.341,
+  "positions": [
+    {
+      "symbol": "MSFT",
+      "qty": 49,
+      "avg_entry_price": 536.1218,
+      "current_price": 534.69,
+      "market_value": 26199.81,
+      "unrealized_pl": -70.16,
+      "unrealized_pl_pct": -0.267
+    },
+    {
+      "symbol": "NFLX",
+      "qty": 378,
+      "avg_entry_price": 70.46,
+      "current_price": 70.3488,
+      "market_value": 26591.85,
+      "unrealized_pl": -42.03,
+      "unrealized_pl_pct": -0.158
+    },
+    {
+      "symbol": "ORCL",
+      "qty": 189,
+      "avg_entry_price": 142.05,
+      "current_price": 141.4,
+      "market_value": 26724.6,
+      "unrealized_pl": -122.85,
+      "unrealized_pl_pct": -0.458
+    }
+  ]
 }
