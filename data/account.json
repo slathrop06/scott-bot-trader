@@ -1,37 +1,9 @@
 {
-  "ts": "2026-10-08T23:50:49.591759Z",
-  "equity": 81060.68,
-  "last_equity": 82177.55,
-  "cash": 978.18,
-  "buying_power": 228143.72,
-  "all_time_return_pct": -18.9393,
-  "positions": [
-    {
-      "symbol": "CVX",
-      "qty": 126,
-      "avg_entry_price": 212.31,
-      "current_price": 211.65,
-      "market_value": 26667.9,
-      "unrealized_pl": -83.16,
-      "unrealized_pl_pct": -0.311
-    },
-    {
-      "symbol": "DIS",
-      "qty": 250,
-      "avg_entry_price": 107.05,
-      "current_price": 107.04,
-      "market_value": 26760.0,
-      "unrealized_pl": -2.5,
-      "unrealized_pl_pct": -0.009
-    },
-    {
-      "symbol": "WMT",
-      "qty": 241,
-      "avg_entry_price": 110.96,
-      "current_price": 110.6,
-      "market_value": 26654.6,
-      "unrealized_pl": -86.76,
-      "unrealized_pl_pct": -0.324
-    }
-  ]
+  "ts": "2026-10-09T18:38:55.607581Z",
+  "equity": 80894.01,
+  "last_equity": 81030.67,
+  "cash": 80894.01,
+  "buying_power": 323576.04,
+  "all_time_return_pct": -19.106,
+  "positions": []
 }
