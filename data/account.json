@@ -1,9 +1,19 @@
 {
-  "ts": "2026-10-13T19:44:44.883557Z",
-  "equity": 80687.25,
+  "ts": "2026-10-13T23:35:44.459174Z",
+  "equity": 80675.05,
   "last_equity": 80687.25,
-  "cash": 80687.25,
-  "buying_power": 322749.0,
-  "all_time_return_pct": -19.3128,
-  "positions": []
+  "cash": 54173.8,
+  "buying_power": 290898.7,
+  "all_time_return_pct": -19.3249,
+  "positions": [
+    {
+      "symbol": "ORCL",
+      "qty": 185,
+      "avg_entry_price": 143.3159,
+      "current_price": 143.25,
+      "market_value": 26501.25,
+      "unrealized_pl": -12.2,
+      "unrealized_pl_pct": -0.046
+    }
+  ]
 }
