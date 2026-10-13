@@ -28958,5 +28958,106 @@
     "ts": "2026-10-13T01:00:44.706465Z",
     "status": "ok",
     "note": "closed 0 positions, 0 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-13",
+    "ts": "2026-10-13T19:49:06.553134Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=38457843885"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-13",
+    "ts": "2026-10-13T19:49:26.533155Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-13",
+    "ts": "2026-10-13T19:49:28.424864Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-13",
+    "ts": "2026-10-13T19:49:30.585872Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-10-13",
+    "ts": "2026-10-13T19:50:18.707241Z",
+    "equity_start": 80687.25,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "ORCL",
+          "confidence": "high",
+          "catalyst": "Gap up +4.66% on Project Jupiter data center power plan announcement and new server security standard partnership with Marvell/Microsoft",
+          "smart_money_signals": "Insider cluster buy (7 buyers, 18 buys vs 20 sells), Stocktwits 100% bullish on 30 msgs, 79.6% analyst bullish (15 SB)",
+          "rationale": "Best stack on the board \u2014 concrete catalyst, strong insider cluster buy, perfect sentiment, and leading price move all align"
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "BofA upgrade to Buy plus Loops AI acquisition announcement, gapping +2.24%",
+          "smart_money_signals": "Insider cluster buy (5 buyers), Stocktwits 87% bullish, 74.6% analyst bullish",
+          "rationale": "Analyst upgrade catalyst plus insider cluster buy with clean sentiment is a solid secondary long"
+        },
+        {
+          "symbol": "CVX",
+          "confidence": "medium",
+          "catalyst": "Cyclicals/energy sector leadership today, +1.60% with no negative news",
+          "smart_money_signals": "House buy by Salazar, Stocktwits 80% bullish, 83.3% analyst bullish (7 SB)",
+          "rationale": "Clean low-beta long riding sector rotation into cyclicals with no contradicting signals"
+        }
+      ],
+      "market_take": "Mixed tape with cyclicals/energy leading and chips under pressure on China/KOSPI weakness",
+      "skipped_movers": [
+        "META: 28 insider sells overwhelms bullish narrative",
+        "AMD: 9 insider sells plus chip sector selloff risk",
+        "AVGO: 19 insider sells and CEO's own 'casino' warning",
+        "MA: 5 insider sells, no buys",
+        "BA: negative price action, House selling",
+        "CAT: down 3.4%, contradicts any bullish signal",
+        "HD: 6 insider sellers, mixed Congress (3 buys/7 sells)",
+        "INTC: weak analyst base (34.5% bullish), chip sector headwind"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best stack on the board \u2014 concrete catalyst, strong insider cluster buy, perfect sentiment, and leading price move all align",
+        "symbol": "ORCL",
+        "qty": 185,
+        "entry_price_est": 143.19,
+        "stop_price": 141.76,
+        "take_price": 146.05,
+        "order_id": "11b70a94-03ec-4f03-9aaf-ef97abaaf61b"
+      },
+      {
+        "status": "failed",
+        "symbol": "CRM",
+        "error": "{\"base_price\":\"239.175\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      },
+      {
+        "status": "failed",
+        "symbol": "CVX",
+        "error": "{\"base_price\":\"218.36\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-13",
+    "ts": "2026-10-13T19:50:18.749833Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
