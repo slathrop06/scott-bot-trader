@@ -29087,5 +29087,122 @@
     "ts": "2026-10-13T23:08:18.903804Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=38482354876"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-14",
+    "ts": "2026-10-14T17:55:21.946575Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=38610746865"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-14",
+    "ts": "2026-10-14T17:55:42.868306Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-14",
+    "ts": "2026-10-14T17:55:44.894576Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-14",
+    "ts": "2026-10-14T17:55:46.900041Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-10-14",
+    "ts": "2026-10-14T17:56:43.525297Z",
+    "equity_start": 78314.44,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "WMT",
+          "confidence": "high",
+          "catalyst": "Relative strength: +2.77% while Nasdaq -1.5%, defensive rotation on hot CPI, consumer staples leadership",
+          "smart_money_signals": "Insider cluster buy (9 buyers), Stocktwits 100% bullish on 30 msgs, 87.5% analyst buy rating",
+          "rationale": "Textbook stack \u2014 gap up on defensive rotation PLUS 9-insider cluster buy PLUS unanimous bullish retail \u2014 best risk/reward in the tape."
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "Oversold -8.83% on Project Jupiter pipeline uncertainty, likely bounce candidate with strong underlying smart-money support",
+          "smart_money_signals": "Insider cluster buy (7 insiders, 18 buys), WSB chatter 3.43x normal rank #18, Stocktwits 75% bullish, 79.6% analyst buy",
+          "rationale": "Rare 4-signal alt-data stack (8/10 score) on a flush day \u2014 insiders buying into weakness is the strongest contrarian setup available."
+        },
+        {
+          "symbol": "COST",
+          "confidence": "medium",
+          "catalyst": "Relative strength +2.30% while market tanks, defensive rotation beneficiary on hot CPI print",
+          "smart_money_signals": "Stocktwits 100% bullish on 30 msgs, no insider/congressional selling pressure",
+          "rationale": "Clean gap up with defensive bid and unanimous retail sentiment \u2014 low-drama continuation setup."
+        }
+      ],
+      "market_take": "Risk-off tape on hot CPI with defensives leading \u2014 favor relative-strength names and oversold alt-data stacks over chasing beaten-down AI/semis.",
+      "skipped_movers": [
+        "AMD: heavy insider selling (9:1 ratio) with semi weakness \u2014 skip",
+        "META: 28 insider sells (28:1 ratio) \u2014 skip despite analyst love",
+        "NVDA: 15 insider sells by 7 insiders plus congressional selling \u2014 skip",
+        "AVGO: 19 insider sells (19:0) \u2014 skip",
+        "MS: earnings day, Stocktwits 25% bearish \u2014 skip",
+        "GS: earnings day, analyst target cuts \u2014 skip",
+        "BAC: Stocktwits 33% bearish post-earnings miss \u2014 skip",
+        "PLTR: 8 insider sells, Stocktwits 35% bearish \u2014 skip",
+        "TSLA: no catalyst, 49% analyst buy only \u2014 pass",
+        "INTC: zero alt-data signals, 34.5% analyst buy \u2014 pass",
+        "CAT: Stocktwits 38% bearish, analyst target cuts \u2014 skip",
+        "SHOP: thin signal, no catalyst beyond generic target raise \u2014 pass"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Textbook stack \u2014 gap up on defensive rotation PLUS 9-insider cluster buy PLUS unanimous bullish retail \u2014 best risk/reward in the tape.",
+        "symbol": "WMT",
+        "qty": 223,
+        "entry_price_est": 115.39500000000001,
+        "stop_price": 114.24,
+        "take_price": 117.7,
+        "order_id": "6ddd570e-7275-48c6-8289-1fc95282e427"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Rare 4-signal alt-data stack (8/10 score) on a flush day \u2014 insiders buying into weakness is the strongest contrarian setup available.",
+        "symbol": "ORCL",
+        "qty": 198,
+        "entry_price_est": 130.26,
+        "stop_price": 128.96,
+        "take_price": 132.87,
+        "order_id": "2161e8e3-98a9-4b54-83b8-82bfad7f8122"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean gap up with defensive bid and unanimous retail sentiment \u2014 low-drama continuation setup.",
+        "symbol": "COST",
+        "qty": 26,
+        "entry_price_est": 976.485,
+        "stop_price": 966.72,
+        "take_price": 996.01,
+        "order_id": "caf926b7-f019-4970-a694-324a5fbba905"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-14",
+    "ts": "2026-10-14T17:56:43.846417Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
