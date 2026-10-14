@@ -29204,5 +29204,99 @@
     "ts": "2026-10-14T17:56:43.846417Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-14",
+    "ts": "2026-10-14T19:14:04.592201Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=38621915755"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-10-14",
+    "ts": "2026-10-14T19:14:25.290375Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-10-14",
+    "ts": "2026-10-14T19:15:10.653929Z",
+    "equity_start": 78015.02,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "SHOP",
+          "confidence": "medium",
+          "catalyst": "Analyst target raise highlighted in Benzinga top forecasts list; down only 2.68% on broad tape weakness with no company-specific negative",
+          "smart_money_signals": "77% analyst buy (11SB/32B/12H), stocktwits 57% bullish, no insider selling flagged",
+          "rationale": "Cleanest setup \u2014 positive analyst catalyst with no smart-money red flags while peers get hit on CPI/AI financing fears"
+        },
+        {
+          "symbol": "BAC",
+          "confidence": "medium",
+          "catalyst": "Post-earnings washout (-2.82% on huge 90M volume) after Q3 miss; oversold bounce candidate with no further negative catalyst pending",
+          "smart_money_signals": "WSB chatter 3.8x normal, 79% analyst buy (6SB/17B), insider buy=sell neutral, stocktwits 50%",
+          "rationale": "High-volume capitulation on known-bad earnings + WSB surge + strong analyst conviction supports a mean-reversion long"
+        },
+        {
+          "symbol": "GS",
+          "confidence": "low",
+          "catalyst": "Beat Q3 earnings and declared $5 dividend; selling pressure from PT trims appears exhausted on broader macro drag",
+          "smart_money_signals": "Stocktwits 100% bullish on 30 msgs \u2014 extreme retail conviction post-print",
+          "rationale": "Earnings beat already out (no overnight risk) with unanimous stocktwits bullishness suggests dip-buy setup"
+        }
+      ],
+      "market_take": "Risk-off tape on hot CPI and AI financing jitters \u2014 hunt for oversold names with clean catalysts rather than chasing semis down.",
+      "skipped_movers": [
+        "AMD: heavy insider selling 9:1 + semi sector in freefall",
+        "NVDA: 15 insider sells across 7 insiders despite WSB surge",
+        "AVGO: 19 insider sells + House selling, worst alt-score",
+        "PLTR: 8 insider sells, no catalyst",
+        "MS: stocktwits 25% bearish + insider selling post-earnings",
+        "META: 28 insider sells across 3 insiders despite Guggenheim raise",
+        "CAT: stocktwits only 38% bullish + PT cuts",
+        "INTC: weak 34.5% analyst buy, no positive catalyst",
+        "TSLA: no catalyst, mixed signals"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "failed",
+        "symbol": "SHOP",
+        "error": "{\"base_price\":\"171.885\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "High-volume capitulation on known-bad earnings + WSB surge + strong analyst conviction supports a mean-reversion long",
+        "symbol": "BAC",
+        "qty": 1230,
+        "entry_price_est": 51.245000000000005,
+        "stop_price": 50.73,
+        "take_price": 52.27,
+        "order_id": "b77fd513-909a-418e-beb2-c4c18ffebb5b"
+      },
+      {
+        "status": "submitted",
+        "confidence": "low",
+        "rationale": "Earnings beat already out (no overnight risk) with unanimous stocktwits bullishness suggests dip-buy setup",
+        "symbol": "GS",
+        "qty": 72,
+        "entry_price_est": 869.105,
+        "stop_price": 860.41,
+        "take_price": 886.49,
+        "order_id": "e4325241-80df-4502-8253-89b141092dcf"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-10-14",
+    "ts": "2026-10-14T19:15:10.701692Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]

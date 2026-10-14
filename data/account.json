@@ -1,19 +1,37 @@
 {
-  "ts": "2026-10-14T17:46:41.409710Z",
-  "equity": 78471.69,
+  "ts": "2026-10-14T19:15:10.695899Z",
+  "equity": 78050.38,
   "last_equity": 80665.79,
-  "cash": 54173.79,
-  "buying_power": 284729.28,
-  "all_time_return_pct": -21.5283,
+  "cash": -22795.92,
+  "buying_power": 65325.55,
+  "all_time_return_pct": -21.9496,
   "positions": [
     {
+      "symbol": "COST",
+      "qty": 26,
+      "avg_entry_price": 976.71,
+      "current_price": 975.605,
+      "market_value": 25365.73,
+      "unrealized_pl": -28.73,
+      "unrealized_pl_pct": -0.113
+    },
+    {
       "symbol": "ORCL",
-      "qty": 185,
-      "avg_entry_price": 143.3159,
-      "current_price": 131.34,
-      "market_value": 24297.9,
-      "unrealized_pl": -2215.55,
-      "unrealized_pl_pct": -8.356
+      "qty": 383,
+      "avg_entry_price": 136.6958,
+      "current_price": 129.79,
+      "market_value": 49709.57,
+      "unrealized_pl": -2644.93,
+      "unrealized_pl_pct": -5.052
+    },
+    {
+      "symbol": "WMT",
+      "qty": 223,
+      "avg_entry_price": 115.4,
+      "current_price": 115.565,
+      "market_value": 25770.99,
+      "unrealized_pl": 36.8,
+      "unrealized_pl_pct": 0.143
     }
   ]
 }
