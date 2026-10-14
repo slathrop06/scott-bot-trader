@@ -29298,5 +29298,44 @@
     "ts": "2026-10-14T19:15:10.701692Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-14",
+    "ts": "2026-10-14T21:57:56.703854Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=38644222933"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-10-14",
+    "ts": "2026-10-14T21:58:23.362383Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-10-14",
+    "ts": "2026-10-14T21:58:23.464922Z",
+    "equity_end": 78981.43,
+    "daily_pnl_usd": -1684.36,
+    "daily_pct": -2.0881,
+    "flatten": {
+      "closed": [
+        "BAC",
+        "COST",
+        "GS",
+        "ORCL",
+        "WMT"
+      ],
+      "raw_response_count": 5
+    }
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-10-14",
+    "ts": "2026-10-14T21:58:23.538213Z",
+    "status": "ok",
+    "note": "closed 5 positions, 0 round-trips"
   }
 ]
