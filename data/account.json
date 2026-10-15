@@ -1,37 +1,46 @@
 {
-  "ts": "2026-10-15T18:58:58.422527Z",
-  "equity": 80422.24,
+  "ts": "2026-10-15T20:55:39.739453Z",
+  "equity": 78918.5,
   "last_equity": 79258.75,
-  "cash": 1487.5,
-  "buying_power": 3289.47,
-  "all_time_return_pct": -19.5778,
+  "cash": -74126.3,
+  "buying_power": 132020.23,
+  "all_time_return_pct": -21.0815,
   "positions": [
     {
       "symbol": "DIS",
       "qty": 237,
       "avg_entry_price": 111.11,
-      "current_price": 111.39,
-      "market_value": 26399.43,
-      "unrealized_pl": 66.36,
-      "unrealized_pl_pct": 0.252
+      "current_price": 110.9,
+      "market_value": 26283.3,
+      "unrealized_pl": -49.77,
+      "unrealized_pl_pct": -0.189
     },
     {
       "symbol": "MSFT",
       "qty": 48,
       "avg_entry_price": 539.58,
-      "current_price": 540.395,
-      "market_value": 25938.96,
-      "unrealized_pl": 39.12,
-      "unrealized_pl_pct": 0.151
+      "current_price": 538.052,
+      "market_value": 25826.5,
+      "unrealized_pl": -73.34,
+      "unrealized_pl_pct": -0.283
     },
     {
       "symbol": "ORCL",
       "qty": 198,
       "avg_entry_price": 133.23,
-      "current_price": 134.325,
-      "market_value": 26596.35,
-      "unrealized_pl": 216.81,
-      "unrealized_pl_pct": 0.822
+      "current_price": 134.25,
+      "market_value": 26581.5,
+      "unrealized_pl": 201.96,
+      "unrealized_pl_pct": 0.766
+    },
+    {
+      "symbol": "V",
+      "qty": 186,
+      "avg_entry_price": 402.23,
+      "current_price": 399.75,
+      "market_value": 74353.5,
+      "unrealized_pl": -461.28,
+      "unrealized_pl_pct": -0.617
     }
   ]
 }
