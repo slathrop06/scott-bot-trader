@@ -29551,5 +29551,75 @@
     "ts": "2026-10-15T18:58:58.425925Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-15",
+    "ts": "2026-10-15T21:51:10.888711Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=38812948993"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-10-15",
+    "ts": "2026-10-15T21:51:31.895393Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-10-15",
+    "ts": "2026-10-15T21:51:32.219125Z",
+    "equity_end": 78867.21,
+    "daily_pnl_usd": -391.54,
+    "daily_pct": -0.494,
+    "flatten": {
+      "closed": [
+        "DIS",
+        "MSFT",
+        "ORCL",
+        "V"
+      ],
+      "raw_response_count": 4
+    }
+  },
+  {
+    "type": "trade",
+    "date": "2026-10-15",
+    "ts": "2026-10-15T21:51:32.303266Z",
+    "symbol": "CRM",
+    "qty": 302,
+    "entry_price": 244.87,
+    "entry_ts": "2026-10-15T18:58:58.412687Z",
+    "entry_order_id": "53c23cde-3516-4dea-a356-2c143c0d8b8a",
+    "exit_price": 244.8,
+    "exit_ts": "2026-10-15T18:59:00.537757Z",
+    "exit_order_id": "1af8d431-e0d7-4064-a6f9-c678ed8da4ee",
+    "exit_reason": "bracket",
+    "pnl_usd": -21.14,
+    "pnl_pct": -0.0286
+  },
+  {
+    "type": "trade",
+    "date": "2026-10-15",
+    "ts": "2026-10-15T21:51:32.303266Z",
+    "symbol": "NKE",
+    "qty": 1995,
+    "entry_price": 37.55,
+    "entry_ts": "2026-10-15T18:58:59.825468Z",
+    "entry_order_id": "82acc848-8e43-433e-819b-768e46431e2a",
+    "exit_price": 37.1601,
+    "exit_ts": "2026-10-15T19:26:18.240525Z",
+    "exit_order_id": "10059480-0a70-4e3f-9a04-75d55cb39dc7",
+    "exit_reason": "bracket",
+    "pnl_usd": -777.88,
+    "pnl_pct": -1.0384
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-10-15",
+    "ts": "2026-10-15T21:51:32.420246Z",
+    "status": "ok",
+    "note": "closed 4 positions, 2 round-trips"
   }
 ]
