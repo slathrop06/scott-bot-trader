@@ -29452,5 +29452,104 @@
     "ts": "2026-10-15T17:44:02.921127Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-15",
+    "ts": "2026-10-15T18:57:53.992022Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=38789956225"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-10-15",
+    "ts": "2026-10-15T18:58:10.587601Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-10-15",
+    "ts": "2026-10-15T18:58:58.338556Z",
+    "equity_start": 80441.58,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "CRM",
+          "confidence": "high",
+          "catalyst": "Up 4.55% on enterprise software strength, bullish technical setup, and major UK deal; benefiting from AI rotation into enterprise software",
+          "smart_money_signals": "Insider cluster buy (5 buyers, 8 purchases), 74.6% analyst bullish (14SB/30B), stocktwits 100% bullish on 30 msgs",
+          "rationale": "Rare stack of catalyst + insider cluster buy + strong analyst conviction + unanimous retail sentiment"
+        },
+        {
+          "symbol": "V",
+          "confidence": "medium",
+          "catalyst": "Near 52-week high on stablecoin payments expansion (Visa Direct commercial launch); defensive leadership day favors payments",
+          "smart_money_signals": "88.2% analyst bullish (12SB/33B, zero sells), stocktwits 88% bullish, no insider selling pressure",
+          "rationale": "Clean catalyst with strongest analyst conviction in the list and no red flags"
+        },
+        {
+          "symbol": "NKE",
+          "confidence": "medium",
+          "catalyst": "+7.12% gap on rotation out of AI into value/consumer discretionary with whale activity flagged",
+          "smart_money_signals": "WSB chatter 15x normal (rank #43), stocktwits 90% bullish on 30 msgs, net insider buying",
+          "rationale": "Strongest relative-strength move of the day with social momentum confirming the rotation trade"
+        }
+      ],
+      "market_take": "Defensive and enterprise-software rotation out of AI/chips on hot inflation data \u2014 favor non-tech leaders with clean catalysts.",
+      "skipped_movers": [
+        "ADBE: 17 insider sells vs 5 buys overwhelms the cluster-buy signal",
+        "HD: 6 insider sells and no news catalyst despite House cluster buy",
+        "MA: 8 insider sells (6 insiders) directly contradicts the catalyst",
+        "SBUX: heavy insider + House selling, -2 signal score",
+        "SHOP: no catalyst, weak signal score of 1",
+        "NFLX: no news catalyst to justify the move",
+        "BA: House selling and no catalyst",
+        "XOM/CVX: down on the day, not long candidates"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Rare stack of catalyst + insider cluster buy + strong analyst conviction + unanimous retail sentiment",
+        "symbol": "CRM",
+        "qty": 302,
+        "entry_price_est": 247.29,
+        "stop_price": 244.82,
+        "take_price": 252.24,
+        "order_id": "53c23cde-3516-4dea-a356-2c143c0d8b8a"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean catalyst with strongest analyst conviction in the list and no red flags",
+        "symbol": "V",
+        "qty": 186,
+        "entry_price_est": 402.14,
+        "stop_price": 398.12,
+        "take_price": 410.18,
+        "order_id": "6ebb5234-762d-4633-b5a6-1c013c3e731d"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strongest relative-strength move of the day with social momentum confirming the rotation trade",
+        "symbol": "NKE",
+        "qty": 1995,
+        "entry_price_est": 37.545,
+        "stop_price": 37.17,
+        "take_price": 38.3,
+        "order_id": "82acc848-8e43-433e-819b-768e46431e2a"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-10-15",
+    "ts": "2026-10-15T18:58:58.425925Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
