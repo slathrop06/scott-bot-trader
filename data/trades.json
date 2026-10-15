@@ -29337,5 +29337,120 @@
     "ts": "2026-10-14T21:58:23.538213Z",
     "status": "ok",
     "note": "closed 5 positions, 0 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-15",
+    "ts": "2026-10-15T17:42:31.919134Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=38779557393"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-15",
+    "ts": "2026-10-15T17:42:54.308207Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-15",
+    "ts": "2026-10-15T17:42:56.895737Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-15",
+    "ts": "2026-10-15T17:42:58.952404Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-10-15",
+    "ts": "2026-10-15T17:44:02.805906Z",
+    "equity_start": 80099.95,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "MSFT",
+          "confidence": "high",
+          "catalyst": "Trading near $540 with Azure/Copilot momentum narrative heading into Q1 FY27 earnings; up 1.8% premarket on enterprise software rotation",
+          "smart_money_signals": "ALT score 8/10: insider cluster buy (5 buyers), House cluster buy (3 buys by McClain/Fields), 93% analyst buy (23SB/41B)",
+          "rationale": "Best stacked setup \u2014 insider + congressional + analyst conviction all align with price action and sector rotation into enterprise software"
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "+5.7% premarket gap on enterprise software rotation away from debt-heavy AI names, strong relative strength vs weak chip tape",
+          "smart_money_signals": "ALT 6/10: insider cluster buy (7 buyers), 92% stocktwits bullish on 30 msgs, 80% analyst buy",
+          "rationale": "Strong gap-up with multi-signal smart money confirmation; software benefiting from AI capex rotation"
+        },
+        {
+          "symbol": "DIS",
+          "confidence": "medium",
+          "catalyst": "+2.15% premarket with no negative news flow, consumer discretionary bid",
+          "smart_money_signals": "ALT 6/10: insider cluster buy (11 buyers vs 2 sellers), 91% stocktwits bullish, 90% analyst buy (11SB/23B)",
+          "rationale": "Exceptionally broad insider cluster (11 distinct buyers) stacked with top-tier analyst conviction and bullish retail sentiment"
+        }
+      ],
+      "market_take": "Rotation out of AI/chips into enterprise software and defensives on sticky CPI; Dow at 52K while SOXX bleeds",
+      "skipped_movers": [
+        "MA: 8 insider sells, overbought RSI warning",
+        "HD: 6 insider sells overwhelms House cluster buy",
+        "SBUX: heavy insider + congressional selling",
+        "V: overbought RSI called out by Benzinga",
+        "CVX/XOM: down on the day",
+        "NKE: whale-alert fluff, weak 39% analyst conviction",
+        "ADBE: insider sells 17 vs 5 buys net negative",
+        "NFLX: thin signals, no catalyst",
+        "GOOGL: 43 insider sells overwhelms 6 buys",
+        "CRM: House selling and no news catalyst"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Best stacked setup \u2014 insider + congressional + analyst conviction all align with price action and sector rotation into enterprise software",
+        "symbol": "MSFT",
+        "qty": 48,
+        "entry_price_est": 539.77,
+        "stop_price": 534.37,
+        "take_price": 550.57,
+        "order_id": "4a55092f-0c84-44ed-93e8-7a82faf85e4a"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strong gap-up with multi-signal smart money confirmation; software benefiting from AI capex rotation",
+        "symbol": "ORCL",
+        "qty": 198,
+        "entry_price_est": 133.215,
+        "stop_price": 131.88,
+        "take_price": 135.88,
+        "order_id": "65aef005-fa1c-4399-98c2-e5a612f5979c"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Exceptionally broad insider cluster (11 distinct buyers) stacked with top-tier analyst conviction and bullish retail sentiment",
+        "symbol": "DIS",
+        "qty": 237,
+        "entry_price_est": 111.095,
+        "stop_price": 109.98,
+        "take_price": 113.32,
+        "order_id": "671790e1-df33-4e65-8730-01c8e6ea0454"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-15",
+    "ts": "2026-10-15T17:44:02.921127Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
