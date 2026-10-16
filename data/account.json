@@ -1,37 +1,64 @@
 {
-  "ts": "2026-10-16T18:42:40.918886Z",
-  "equity": 79684.68,
+  "ts": "2026-10-16T20:00:56.176629Z",
+  "equity": 80271.12,
   "last_equity": 78968.74,
-  "cash": 1033.71,
-  "buying_power": 2525.52,
-  "all_time_return_pct": -20.3153,
+  "cash": -220798.28,
+  "buying_power": 0.0,
+  "all_time_return_pct": -19.7289,
   "positions": [
     {
       "symbol": "CRM",
       "qty": 109,
       "avg_entry_price": 238.87,
-      "current_price": 240.31,
-      "market_value": 26193.79,
-      "unrealized_pl": 156.96,
-      "unrealized_pl_pct": 0.603
+      "current_price": 240.7,
+      "market_value": 26236.3,
+      "unrealized_pl": 199.47,
+      "unrealized_pl_pct": 0.766
     },
     {
       "symbol": "CVX",
       "qty": 117,
       "avg_entry_price": 224.0,
-      "current_price": 224.475,
-      "market_value": 26263.58,
-      "unrealized_pl": 55.58,
-      "unrealized_pl_pct": 0.212
+      "current_price": 224.96,
+      "market_value": 26320.32,
+      "unrealized_pl": 112.32,
+      "unrealized_pl_pct": 0.429
+    },
+    {
+      "symbol": "GOOGL",
+      "qty": 217,
+      "avg_entry_price": 340.18,
+      "current_price": 340.65,
+      "market_value": 73921.05,
+      "unrealized_pl": 101.99,
+      "unrealized_pl_pct": 0.138
+    },
+    {
+      "symbol": "NFLX",
+      "qty": 1052,
+      "avg_entry_price": 70.34,
+      "current_price": 70.46,
+      "market_value": 74123.92,
+      "unrealized_pl": 126.24,
+      "unrealized_pl_pct": 0.171
     },
     {
       "symbol": "ORCL",
       "qty": 204,
       "avg_entry_price": 128.3799,
-      "current_price": 128.4,
-      "market_value": 26193.6,
-      "unrealized_pl": 4.1,
-      "unrealized_pl_pct": 0.016
+      "current_price": 128.3878,
+      "market_value": 26191.11,
+      "unrealized_pl": 1.61,
+      "unrealized_pl_pct": 0.006
+    },
+    {
+      "symbol": "XOM",
+      "qty": 415,
+      "avg_entry_price": 178.35,
+      "current_price": 178.98,
+      "market_value": 74276.7,
+      "unrealized_pl": 261.45,
+      "unrealized_pl_pct": 0.353
     }
   ]
 }
