@@ -1,55 +1,55 @@
 {
-  "ts": "2026-10-16T20:00:56.176629Z",
-  "equity": 80271.12,
+  "ts": "2026-10-16T22:57:03.806613Z",
+  "equity": 79540.95,
   "last_equity": 78968.74,
   "cash": -220798.28,
   "buying_power": 0.0,
-  "all_time_return_pct": -19.7289,
+  "all_time_return_pct": -20.4591,
   "positions": [
     {
       "symbol": "CRM",
       "qty": 109,
       "avg_entry_price": 238.87,
-      "current_price": 240.7,
-      "market_value": 26236.3,
-      "unrealized_pl": 199.47,
-      "unrealized_pl_pct": 0.766
+      "current_price": 239.3,
+      "market_value": 26083.7,
+      "unrealized_pl": 46.87,
+      "unrealized_pl_pct": 0.18
     },
     {
       "symbol": "CVX",
       "qty": 117,
       "avg_entry_price": 224.0,
-      "current_price": 224.96,
-      "market_value": 26320.32,
-      "unrealized_pl": 112.32,
-      "unrealized_pl_pct": 0.429
+      "current_price": 225.03,
+      "market_value": 26328.51,
+      "unrealized_pl": 120.51,
+      "unrealized_pl_pct": 0.46
     },
     {
       "symbol": "GOOGL",
       "qty": 217,
       "avg_entry_price": 340.18,
-      "current_price": 340.65,
-      "market_value": 73921.05,
-      "unrealized_pl": 101.99,
-      "unrealized_pl_pct": 0.138
+      "current_price": 339.04,
+      "market_value": 73571.68,
+      "unrealized_pl": -247.38,
+      "unrealized_pl_pct": -0.335
     },
     {
       "symbol": "NFLX",
       "qty": 1052,
       "avg_entry_price": 70.34,
-      "current_price": 70.46,
-      "market_value": 74123.92,
-      "unrealized_pl": 126.24,
-      "unrealized_pl_pct": 0.171
+      "current_price": 70.39,
+      "market_value": 74050.28,
+      "unrealized_pl": 52.6,
+      "unrealized_pl_pct": 0.071
     },
     {
       "symbol": "ORCL",
       "qty": 204,
       "avg_entry_price": 128.3799,
-      "current_price": 128.3878,
-      "market_value": 26191.11,
-      "unrealized_pl": 1.61,
-      "unrealized_pl_pct": 0.006
+      "current_price": 127.59,
+      "market_value": 26028.36,
+      "unrealized_pl": -161.14,
+      "unrealized_pl_pct": -0.615
     },
     {
       "symbol": "XOM",
