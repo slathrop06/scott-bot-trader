@@ -29734,5 +29734,105 @@
     "ts": "2026-10-16T17:19:15.001654Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-16",
+    "ts": "2026-10-16T18:41:21.818222Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=38949241383"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-10-16",
+    "ts": "2026-10-16T18:41:39.361151Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-10-16",
+    "ts": "2026-10-16T18:42:40.815866Z",
+    "equity_start": 79682.48,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "XOM",
+          "confidence": "high",
+          "catalyst": "ExxonMobil guided $4.5B boost to Q3 Energy Products earnings from higher refining margins; stock up +2.17% while broader market and tech sell off hard \u2014 clear relative strength on specific positive guidance.",
+          "smart_money_signals": "Only mild negative (1 House sell by Hern); analyst mix neutral at 46.7% but the catalyst is self-contained company guidance.",
+          "rationale": "Only green name on the board with a concrete fundamental catalyst \u2014 classic risk-off rotation into energy with company-specific tailwind."
+        },
+        {
+          "symbol": "GOOGL",
+          "confidence": "medium",
+          "catalyst": "Down only -2.26% in a brutal tech tape (QQQ -1.95%, peers down 3-6%), showing relative strength; no stock-specific negative news.",
+          "smart_money_signals": "Insider cluster buy (6 buyers, cluster_buy=True) in last 30d, Stocktwits 80% bullish on 30 msgs, analyst 90% bullish (20SB/43B/7H/0S). Alt-data score 6/10 \u2014 the strongest smart-money stack on the board.",
+          "rationale": "Best smart-money signal stack available with insider cluster + top-decile analyst conviction + bullish retail, holding up better than mega-cap peers."
+        },
+        {
+          "symbol": "NFLX",
+          "confidence": "medium",
+          "catalyst": "Holding better than tech peers (-2.05%) with proactive restructuring news (cuts 1,000 jobs, hires ex-Disney Peter Rice) framed as growth-focused reorg.",
+          "smart_money_signals": "House net buying (Cleo Fields), Stocktwits 83% bullish on 30 msgs, 74% analyst buy. Alt-data score 4/10.",
+          "rationale": "Clean smart-money stack with no insider selling red flags and defensive relative performance in a risk-off session."
+        }
+      ],
+      "market_take": "Risk-off tape with AI/semi names leading losses on bubble/debt fears \u2014 rotation into energy and relative-strength mega-caps is the only playable long bias.",
+      "skipped_movers": [
+        "PLTR: -6.7% dump, insider sell ratio 2:1, no catalyst \u2014 skip",
+        "INTC: -4.4% with 34.5% analyst bullish and zero alt signal \u2014 skip",
+        "SHOP: -4.3% despite bullish price-hike news, Stocktwits only 36% bullish \u2014 tape rejecting the catalyst",
+        "META: heavy insider selling (27 sells), Stocktwits 5% bullish \u2014 hard skip",
+        "AMD: -3.5% in semi selloff, no stock-specific catalyst",
+        "AVGO: heavy insider selling (17 sells) + House sell, in middle of AI-bubble narrative",
+        "TSLA: Roadster delivery delayed to 2028, odds crashed 33%\u219214% \u2014 negative catalyst",
+        "ADBE: 12 insider sells, 39% analyst bullish \u2014 skip",
+        "QQQ: broad market, Stocktwits 22% bullish bearish signal"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Only green name on the board with a concrete fundamental catalyst \u2014 classic risk-off rotation into energy with company-specific tailwind.",
+        "symbol": "XOM",
+        "qty": 415,
+        "entry_price_est": 178.245,
+        "stop_price": 176.46,
+        "take_price": 181.81,
+        "order_id": "7d8c45e1-a670-4975-a649-2e1cce06da53"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Best smart-money signal stack available with insider cluster + top-decile analyst conviction + bullish retail, holding up better than mega-cap peers.",
+        "symbol": "GOOGL",
+        "qty": 217,
+        "entry_price_est": 340.135,
+        "stop_price": 336.73,
+        "take_price": 346.94,
+        "order_id": "fdc4e4f1-1146-44c2-8cb9-ddd7bd14c5a2"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean smart-money stack with no insider selling red flags and defensive relative performance in a risk-off session.",
+        "symbol": "NFLX",
+        "qty": 1052,
+        "entry_price_est": 70.33500000000001,
+        "stop_price": 69.63,
+        "take_price": 71.74,
+        "order_id": "485863e4-575e-49e9-acc3-51e597a34e04"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-10-16",
+    "ts": "2026-10-16T18:42:40.922906Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]

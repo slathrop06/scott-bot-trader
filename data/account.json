@@ -1,9 +1,37 @@
 {
-  "ts": "2026-10-16T17:09:49.668875Z",
-  "equity": 79468.04,
+  "ts": "2026-10-16T18:42:40.918886Z",
+  "equity": 79684.68,
   "last_equity": 78968.74,
-  "cash": 79468.04,
-  "buying_power": 317872.16,
-  "all_time_return_pct": -20.532,
-  "positions": []
+  "cash": 1033.71,
+  "buying_power": 2525.52,
+  "all_time_return_pct": -20.3153,
+  "positions": [
+    {
+      "symbol": "CRM",
+      "qty": 109,
+      "avg_entry_price": 238.87,
+      "current_price": 240.31,
+      "market_value": 26193.79,
+      "unrealized_pl": 156.96,
+      "unrealized_pl_pct": 0.603
+    },
+    {
+      "symbol": "CVX",
+      "qty": 117,
+      "avg_entry_price": 224.0,
+      "current_price": 224.475,
+      "market_value": 26263.58,
+      "unrealized_pl": 55.58,
+      "unrealized_pl_pct": 0.212
+    },
+    {
+      "symbol": "ORCL",
+      "qty": 204,
+      "avg_entry_price": 128.3799,
+      "current_price": 128.4,
+      "market_value": 26193.6,
+      "unrealized_pl": 4.1,
+      "unrealized_pl_pct": 0.016
+    }
+  ]
 }
