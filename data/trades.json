@@ -29621,5 +29621,118 @@
     "ts": "2026-10-15T21:51:32.420246Z",
     "status": "ok",
     "note": "closed 4 positions, 2 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-16",
+    "ts": "2026-10-16T17:18:04.141902Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=38938610328"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-16",
+    "ts": "2026-10-16T17:18:24.814010Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-16",
+    "ts": "2026-10-16T17:18:27.270613Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-16",
+    "ts": "2026-10-16T17:18:29.411942Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-10-16",
+    "ts": "2026-10-16T17:19:14.949396Z",
+    "equity_start": 79468.04,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "CVX",
+          "confidence": "medium",
+          "catalyst": "Only green name on the board (+2.04%) \u2014 relative strength while market sells off; Cramer positive mention",
+          "smart_money_signals": "Stocktwits 100% bullish on 30 msgs, 83% analyst buy, House buying from Salazar",
+          "rationale": "Clear relative strength vs tape plus unanimous bullish sentiment makes this the cleanest long setup on a risk-off day."
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "Oversold -3.2% with no negative headlines \u2014 mean reversion candidate",
+          "smart_money_signals": "Insider cluster buy (5 buyers, 8 buys), Stocktwits 86% bullish on 30 msgs, 75% analyst buy",
+          "rationale": "Strong smart-money stack (insider cluster + top-tier sentiment) with no bad news justifies the dip buy."
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "low",
+          "catalyst": "Oversold -3.6% in AI-debt sector selloff but no company-specific negative news",
+          "smart_money_signals": "Insider cluster buy (7 buyers, 12 buys in 30d), 80% analyst buy, Stocktwits 71% bullish",
+          "rationale": "Insider cluster of 7 buyers is a rare high-conviction signal; sector-wide selloff creates entry."
+        }
+      ],
+      "market_take": "Risk-off tape \u2014 AI/semi debt fears driving broad tech selloff while cyclicals and energy hold up.",
+      "skipped_movers": [
+        "META: 27 insider sells + 14% stocktwits bullish \u2014 skip",
+        "AVGO: 17 insider sells, no buyers, bearish sentiment \u2014 skip",
+        "ADBE: 12 insider sells, zero buys \u2014 skip",
+        "TSLA: WSB mania but 49% analyst bullish and Gary Black warning \u2014 skip",
+        "AMD: Stocktwits 25% bearish despite WSB rank \u2014 skip",
+        "INTC: 34% analyst bullish, no catalyst \u2014 skip",
+        "PLTR: Ark trimming position is a negative tell \u2014 skip",
+        "QQQ: 20% stocktwits bullish, index in downtrend \u2014 skip"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clear relative strength vs tape plus unanimous bullish sentiment makes this the cleanest long setup on a risk-off day.",
+        "symbol": "CVX",
+        "qty": 117,
+        "entry_price_est": 223.95499999999998,
+        "stop_price": 221.72,
+        "take_price": 228.43,
+        "order_id": "d4538a47-711b-47ef-8229-a92bb7d17e2f"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strong smart-money stack (insider cluster + top-tier sentiment) with no bad news justifies the dip buy.",
+        "symbol": "CRM",
+        "qty": 109,
+        "entry_price_est": 239.295,
+        "stop_price": 236.9,
+        "take_price": 244.08,
+        "order_id": "17503713-4b19-4680-a796-4f5af495aafe"
+      },
+      {
+        "status": "submitted",
+        "confidence": "low",
+        "rationale": "Insider cluster of 7 buyers is a rare high-conviction signal; sector-wide selloff creates entry.",
+        "symbol": "ORCL",
+        "qty": 204,
+        "entry_price_est": 128.38,
+        "stop_price": 127.1,
+        "take_price": 130.95,
+        "order_id": "7b00657f-174a-4a4d-ad25-6388904082b7"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-16",
+    "ts": "2026-10-16T17:19:15.001654Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
