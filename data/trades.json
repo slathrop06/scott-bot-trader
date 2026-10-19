@@ -29888,5 +29888,121 @@
     "ts": "2026-10-16T23:55:15.943818Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=38983889198"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-19",
+    "ts": "2026-10-19T19:12:09.016268Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=39308956928"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-19",
+    "ts": "2026-10-19T19:12:28.284632Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-19",
+    "ts": "2026-10-19T19:12:30.122638Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-19",
+    "ts": "2026-10-19T19:12:32.030565Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-10-19",
+    "ts": "2026-10-19T19:13:20.101044Z",
+    "equity_start": 79162.04,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "ORCL",
+          "confidence": "high",
+          "catalyst": "Up +1.77% premarket with tech sector rebounding; whale alerts flagged in IT session",
+          "smart_money_signals": "Insider cluster buy (12 buys / 7 insiders), WSB chatter 4.25x normal, Stocktwits 82% bullish, 80% analyst buy \u2014 alt-data score 8/10 is best in the universe today",
+          "rationale": "Strongest alt-data stack available \u2014 insider cluster buy plus multi-signal confirmation with a modest, orderly premarket move leaves room for +2% target"
+        },
+        {
+          "symbol": "GOOGL",
+          "confidence": "high",
+          "catalyst": "Alphabet climbing on KeyBanc Overweight reiteration; tech/AI tape bid",
+          "smart_money_signals": "Insider cluster buy (10 buys / 7 insiders), Stocktwits 88% bullish, 90% analyst buy (20SB/43B), alt-data score 6/10",
+          "rationale": "Clean catalyst + insider cluster buy + top-tier analyst conviction with only a 1.79% premarket move preserves upside to the +2% TP"
+        },
+        {
+          "symbol": "JPM",
+          "confidence": "medium",
+          "catalyst": "JPM Coin expansion to Ethereum tokenization news; CNBC Final Trade mention",
+          "smart_money_signals": "Insider cluster buy (4 buys / 4 insiders, 4:1 vs sells), WSB chatter 6.0x normal, alt-data score 6/10",
+          "rationale": "Only non-tech name with cluster insider buying \u2014 diversifies away from AI/chip concentration risk while still having a fresh catalyst"
+        }
+      ],
+      "market_take": "Risk-on tech rebound as chip rout snaps; lean into names where insiders are buying alongside the bounce rather than chasing the hottest gappers.",
+      "skipped_movers": [
+        "TSLA: earnings Wednesday after close \u2014 overnight gap risk disqualifies",
+        "NVDA: heavy insider selling (4 sells, 0 buys) + House selling despite bullish tape",
+        "AMZN: 1 insider sell with 0 buys and already +5.4% premarket \u2014 chase risk",
+        "AVGO: 17 insider sells, Stocktwits only 35% bullish \u2014 alt-data net negative",
+        "PLTR: +5.77% premarket already past the +2% target zone from here, insider sells outpace buys",
+        "INTC: analyst conviction only 34.5% bullish, thin alt-data support",
+        "BAC: price down, House selling, no bullish catalyst",
+        "QQQ: Stocktwits only 30% bullish, ETF with no edge",
+        "MSFT: heavy insider selling offsets House cluster buy",
+        "ADBE: alt-data score 0, analyst conviction weak",
+        "AMD/SHOP: signals present but weaker than top 3 picks"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Strongest alt-data stack available \u2014 insider cluster buy plus multi-signal confirmation with a modest, orderly premarket move leaves room for +2% target",
+        "symbol": "ORCL",
+        "qty": 201,
+        "entry_price_est": 129.8,
+        "stop_price": 128.5,
+        "take_price": 132.4,
+        "order_id": "45d15765-ea3a-4ebe-aa63-91e6c260bf42"
+      },
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Clean catalyst + insider cluster buy + top-tier analyst conviction with only a 1.79% premarket move preserves upside to the +2% TP",
+        "symbol": "GOOGL",
+        "qty": 75,
+        "entry_price_est": 345.555,
+        "stop_price": 342.1,
+        "take_price": 352.47,
+        "order_id": "ca9e3606-dab6-43d8-b7ae-b959dbfdc39f"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Only non-tech name with cluster insider buying \u2014 diversifies away from AI/chip concentration risk while still having a fresh catalyst",
+        "symbol": "JPM",
+        "qty": 78,
+        "entry_price_est": 331.97,
+        "stop_price": 328.65,
+        "take_price": 338.61,
+        "order_id": "1653e01c-7134-443e-8885-3bd3a48801f0"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-19",
+    "ts": "2026-10-19T19:13:20.263044Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
