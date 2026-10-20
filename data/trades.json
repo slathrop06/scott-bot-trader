@@ -30062,5 +30062,119 @@
     "ts": "2026-10-19T22:40:04.720513Z",
     "status": "ok",
     "note": "closed 3 positions, 0 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-20",
+    "ts": "2026-10-20T17:52:56.332249Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=39469892413"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-20",
+    "ts": "2026-10-20T17:53:17.033366Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-20",
+    "ts": "2026-10-20T17:53:19.430163Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-20",
+    "ts": "2026-10-20T17:53:21.372653Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-10-20",
+    "ts": "2026-10-20T17:54:02.188154Z",
+    "equity_start": 78538.71,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "DIS",
+          "confidence": "high",
+          "catalyst": "Price gapping +1.9% premarket with strong continuation setup; Netflix earnings halo lifting streaming peers",
+          "smart_money_signals": "Insider cluster buy (11 buyers, 12 buys vs 3 sells = 4:1 ratio), Stocktwits 92% bullish on 30 msgs, 87% analyst buy rating",
+          "rationale": "Rare stack of insider cluster buy + top-tier sentiment + analyst conviction + positive price action \u2014 best signal density on the board"
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "AstraZeneca AI drug research partnership announcement, +2.3% premarket on heavy volume (13.6M)",
+          "smart_money_signals": "Insider cluster buy (6 unique buyers), 81% analyst buy rating",
+          "rationale": "Concrete partnership news + insider cluster buy + strongest volume confirmation among movers"
+        },
+        {
+          "symbol": "V",
+          "confidence": "medium",
+          "catalyst": "Steady +1% move with defensives leading tape, no negative headlines",
+          "smart_money_signals": "89.8% analyst buy (near-top conviction), Stocktwits 86% bullish, no heavy insider selling",
+          "rationale": "Clean low-beta setup with top analyst conviction fits the defensive-led tape described in news"
+        }
+      ],
+      "market_take": "Defensive-led risk-on tape with small caps and healthcare leading; constructive for selective longs",
+      "skipped_movers": [
+        "GE: gap DOWN -4.1% despite earnings beat \u2014 contradicts bullish signals",
+        "HD: 6 insider sells, zero buys \u2014 disqualifying",
+        "SBUX: insider + congress selling, no catalyst",
+        "NKE: insider selling + weak analyst base (33% buy)",
+        "MS/GS: bank sector in longest losing streak, fighting the tape",
+        "ADBE: weak 37.8% analyst buy, no company-specific catalyst",
+        "MCD: congress selling, no news catalyst",
+        "IWM: ETF, prefer single names",
+        "SHOP: no catalyst, thin signal stack"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Rare stack of insider cluster buy + top-tier sentiment + analyst conviction + positive price action \u2014 best signal density on the board",
+        "symbol": "DIS",
+        "qty": 231,
+        "entry_price_est": 111.72,
+        "stop_price": 110.6,
+        "take_price": 113.95,
+        "order_id": "b97cbc8e-a222-4b3a-8431-7ed858492f5d"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Concrete partnership news + insider cluster buy + strongest volume confirmation among movers",
+        "symbol": "ORCL",
+        "qty": 194,
+        "entry_price_est": 133.405,
+        "stop_price": 132.07,
+        "take_price": 136.07,
+        "order_id": "f6dbacd0-90cf-4319-bc4c-c62b6cfa4fde"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean low-beta setup with top analyst conviction fits the defensive-led tape described in news",
+        "symbol": "V",
+        "qty": 63,
+        "entry_price_est": 407.075,
+        "stop_price": 403.0,
+        "take_price": 415.22,
+        "order_id": "15e3ca28-c7f7-4718-92ff-0d49c7102e9b"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-20",
+    "ts": "2026-10-20T17:54:02.238562Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
