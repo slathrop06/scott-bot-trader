@@ -30176,5 +30176,103 @@
     "ts": "2026-10-20T17:54:02.238562Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-20",
+    "ts": "2026-10-20T19:04:08.315089Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=39480243206"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-10-20",
+    "ts": "2026-10-20T19:04:34.561981Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-10-20",
+    "ts": "2026-10-20T19:05:16.541258Z",
+    "equity_start": 78385.35,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "ORCL",
+          "confidence": "high",
+          "catalyst": "AstraZeneca AI partnership announced overnight, stock up 1.49% on heavy volume (15.8M shares)",
+          "smart_money_signals": "Insider cluster buy with 6 buyers in 30d, 81% analyst buy rating (15 Strong Buy / 24 Buy)",
+          "rationale": "Rare combo of fresh catalyst news + insider cluster buy + top-tier analyst conviction is the cleanest setup on the board."
+        },
+        {
+          "symbol": "HD",
+          "confidence": "medium",
+          "catalyst": "Up 1.86% on no news \u2014 relative strength in defensive sector leadership today",
+          "smart_money_signals": "House cluster buy (3 buys by Taylor and Doggett in 21d), 61% analyst bullish, 67% stocktwits bullish",
+          "rationale": "Congressional cluster buy plus defensive-sector tailwind outweighs the insider selling noise."
+        },
+        {
+          "symbol": "GOOGL",
+          "confidence": "medium",
+          "catalyst": "Alphabet earnings preview flags Cloud/Gemini upside; stock pulled back 1.45% offering better entry",
+          "smart_money_signals": "Insider cluster buy (7 buyers), 91% analyst buy, WSB rank #14 with 1.94x mention surge, 82% stocktwits bullish",
+          "rationale": "Strongest stacked alt-data profile on the list; the dip is a buyable setup ahead of the earnings catalyst narrative."
+        }
+      ],
+      "market_take": "Defensives and small caps leading a broad risk-on recovery; energy the lone laggard.",
+      "skipped_movers": [
+        "GE: down 3.91% despite earnings beat \u2014 price contradicts signals",
+        "ADBE: weak 37.8% analyst bullish and no clear catalyst for the pop",
+        "SBUX: insider + congressional selling with negative alt score",
+        "NKE: only 33% analyst bullish and insider selling",
+        "MCD: House selling and no catalyst",
+        "IWM: ETF, prefer single names with alt-data edge",
+        "SHOP: no catalyst, thin signal stack"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Rare combo of fresh catalyst news + insider cluster buy + top-tier analyst conviction is the cleanest setup on the board.",
+        "symbol": "ORCL",
+        "qty": 632,
+        "entry_price_est": 131.34,
+        "stop_price": 130.03,
+        "take_price": 133.97,
+        "order_id": "fab82a0c-4ee8-475e-b1bf-c54c8a80dc91"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Congressional cluster buy plus defensive-sector tailwind outweighs the insider selling noise.",
+        "symbol": "HD",
+        "qty": 263,
+        "entry_price_est": 315.755,
+        "stop_price": 312.6,
+        "take_price": 322.07,
+        "order_id": "eb53a548-acc0-4596-915e-de6799e83233"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strongest stacked alt-data profile on the list; the dip is a buyable setup ahead of the earnings catalyst narrative.",
+        "symbol": "GOOGL",
+        "qty": 244,
+        "entry_price_est": 339.33500000000004,
+        "stop_price": 335.94,
+        "take_price": 346.12,
+        "order_id": "438708bc-0937-46d1-aa30-4b194173347d"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-10-20",
+    "ts": "2026-10-20T19:05:16.584852Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
