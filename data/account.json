@@ -1,28 +1,55 @@
 {
-  "ts": "2026-10-20T19:05:16.579266Z",
-  "equity": 78356.79,
+  "ts": "2026-10-20T21:14:57.118735Z",
+  "equity": 79023.86,
   "last_equity": 78932.02,
-  "cash": 27008.74,
-  "buying_power": 2974.45,
-  "all_time_return_pct": -21.6432,
+  "cash": -221826.27,
+  "buying_power": 0.0,
+  "all_time_return_pct": -20.9761,
   "positions": [
     {
       "symbol": "DIS",
       "qty": 231,
       "avg_entry_price": 111.73,
-      "current_price": 111.23,
-      "market_value": 25694.13,
-      "unrealized_pl": -115.5,
-      "unrealized_pl_pct": -0.448
+      "current_price": 111.48,
+      "market_value": 25751.88,
+      "unrealized_pl": -57.75,
+      "unrealized_pl_pct": -0.224
+    },
+    {
+      "symbol": "GOOGL",
+      "qty": 244,
+      "avg_entry_price": 339.39,
+      "current_price": 340.28,
+      "market_value": 83028.32,
+      "unrealized_pl": 217.16,
+      "unrealized_pl_pct": 0.262
+    },
+    {
+      "symbol": "HD",
+      "qty": 263,
+      "avg_entry_price": 315.75,
+      "current_price": 314.5,
+      "market_value": 82713.5,
+      "unrealized_pl": -328.75,
+      "unrealized_pl_pct": -0.396
+    },
+    {
+      "symbol": "ORCL",
+      "qty": 632,
+      "avg_entry_price": 131.3,
+      "current_price": 132.5,
+      "market_value": 83740.0,
+      "unrealized_pl": 758.4,
+      "unrealized_pl_pct": 0.914
     },
     {
       "symbol": "V",
       "qty": 63,
       "avg_entry_price": 407.12,
-      "current_price": 407.205,
-      "market_value": 25653.92,
-      "unrealized_pl": 5.36,
-      "unrealized_pl_pct": 0.021
+      "current_price": 406.61,
+      "market_value": 25616.43,
+      "unrealized_pl": -32.13,
+      "unrealized_pl_pct": -0.125
     }
   ]
 }
