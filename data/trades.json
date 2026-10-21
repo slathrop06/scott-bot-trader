@@ -30329,5 +30329,116 @@
     "ts": "2026-10-20T21:57:56.175795Z",
     "status": "ok",
     "note": "closed 5 positions, 1 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-21",
+    "ts": "2026-10-21T17:57:40.708901Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=39648407458"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-21",
+    "ts": "2026-10-21T17:58:00.609274Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-21",
+    "ts": "2026-10-21T17:58:02.619978Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-21",
+    "ts": "2026-10-21T17:58:04.694121Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-10-21",
+    "ts": "2026-10-21T17:58:52.394610Z",
+    "equity_start": 77052.57,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "WMT",
+          "confidence": "high",
+          "catalyst": "Steady +0.76% premarket with no negative news; defensive bid as broader market mixed",
+          "smart_money_signals": "Insider cluster buy (9 buyers in 30d), 87.5% analyst bullish (12SB/30B), stocktwits 81% bullish",
+          "rationale": "Rare 9-insider cluster buy at a low-volatility blue chip \u2014 clean smart-money setup where the -1% stop is well inside normal noise."
+        },
+        {
+          "symbol": "GOOGL",
+          "confidence": "medium",
+          "catalyst": "AI trade rebound (SpaceX/SMCI lifting Nasdaq 100), though GOOGL itself gapping -1.87% on Pichai cloud-margin comments",
+          "smart_money_signals": "Insider cluster buy (7 buyers), WSB 2.39x normal (rank #12), stocktwits 90% bullish, 91% analyst buy (20SB/41B)",
+          "rationale": "Elite stacked smart-money signals (cluster buy + WSB surge + 91% analyst conviction) buying the dip on a transient margin headline."
+        },
+        {
+          "symbol": "PLTR",
+          "confidence": "medium",
+          "catalyst": "NVIDIA OpenShell partnership announcement with premarket gap +3.23% on 10.8M volume",
+          "smart_money_signals": "Stocktwits 100% bullish (30 msgs), 71.8% analyst bullish",
+          "rationale": "Concrete named partnership catalyst with strong gap and momentum; Cathie Wood selling is noise against the news-driven breakout."
+        }
+      ],
+      "market_take": "Risk-on AI rebound led by SpaceX/SMCI; rotation favors mega-cap tech and defensives with insider support.",
+      "skipped_movers": [
+        "ORCL: heavy insider selling 13:1 \u2014 skip",
+        "MS: price targets being cut on coverage names, mixed signal \u2014 skip",
+        "INTC: gap down -2% with only 36% analyst buy \u2014 skip",
+        "AAPL: stocktwits only 28% bullish and 19 insider sells vs 4 buys \u2014 skip",
+        "NFLX: 2-year lows post-earnings, analyst PT cuts \u2014 skip",
+        "GS: no real catalyst, mediocre 47% analyst buy \u2014 skip"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Rare 9-insider cluster buy at a low-volatility blue chip \u2014 clean smart-money setup where the -1% stop is well inside normal noise.",
+        "symbol": "WMT",
+        "qty": 215,
+        "entry_price_est": 117.815,
+        "stop_price": 116.64,
+        "take_price": 120.17,
+        "order_id": "4c0663e2-fe7b-4606-81e7-252ed61e6eb8"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Elite stacked smart-money signals (cluster buy + WSB surge + 91% analyst conviction) buying the dip on a transient margin headline.",
+        "symbol": "GOOGL",
+        "qty": 76,
+        "entry_price_est": 334.42,
+        "stop_price": 331.08,
+        "take_price": 341.11,
+        "order_id": "c7b9a700-c57a-4a49-b3aa-d8dc6fd565e2"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Concrete named partnership catalyst with strong gap and momentum; Cathie Wood selling is noise against the news-driven breakout.",
+        "symbol": "PLTR",
+        "qty": 127,
+        "entry_price_est": 199.87,
+        "stop_price": 197.87,
+        "take_price": 203.87,
+        "order_id": "6820045e-80cd-4e13-85c5-ea3d2f79b9f7"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-21",
+    "ts": "2026-10-21T17:58:52.449024Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
