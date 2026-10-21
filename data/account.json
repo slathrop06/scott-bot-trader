@@ -1,37 +1,64 @@
 {
-  "ts": "2026-10-21T19:11:12.025860Z",
-  "equity": 76894.43,
+  "ts": "2026-10-21T21:15:14.847541Z",
+  "equity": 77285.92,
   "last_equity": 78362.78,
-  "cash": 919.84,
-  "buying_power": 2522.82,
-  "all_time_return_pct": -23.1056,
+  "cash": -212967.17,
+  "buying_power": 0.0,
+  "all_time_return_pct": -22.7141,
   "positions": [
+    {
+      "symbol": "AAPL",
+      "qty": 207,
+      "avg_entry_price": 343.6589,
+      "current_price": 343.72,
+      "market_value": 71150.04,
+      "unrealized_pl": 12.65,
+      "unrealized_pl_pct": 0.018
+    },
+    {
+      "symbol": "CVX",
+      "qty": 313,
+      "avg_entry_price": 228.35,
+      "current_price": 226.78,
+      "market_value": 70982.14,
+      "unrealized_pl": -491.41,
+      "unrealized_pl_pct": -0.688
+    },
     {
       "symbol": "GOOGL",
       "qty": 76,
       "avg_entry_price": 334.48,
-      "current_price": 333.42,
-      "market_value": 25339.92,
-      "unrealized_pl": -80.56,
-      "unrealized_pl_pct": -0.317
+      "current_price": 334.76,
+      "market_value": 25441.76,
+      "unrealized_pl": 21.28,
+      "unrealized_pl_pct": 0.084
+    },
+    {
+      "symbol": "HD",
+      "qty": 229,
+      "avg_entry_price": 311.2492,
+      "current_price": 313.6155,
+      "market_value": 71817.95,
+      "unrealized_pl": 541.88,
+      "unrealized_pl_pct": 0.76
     },
     {
       "symbol": "PLTR",
       "qty": 127,
       "avg_entry_price": 199.85,
-      "current_price": 199.62,
-      "market_value": 25351.74,
-      "unrealized_pl": -29.21,
-      "unrealized_pl_pct": -0.115
+      "current_price": 201.7,
+      "market_value": 25615.9,
+      "unrealized_pl": 234.95,
+      "unrealized_pl_pct": 0.926
     },
     {
       "symbol": "WMT",
       "qty": 215,
       "avg_entry_price": 117.82,
-      "current_price": 117.595,
-      "market_value": 25282.92,
-      "unrealized_pl": -48.38,
-      "unrealized_pl_pct": -0.191
+      "current_price": 117.42,
+      "market_value": 25245.3,
+      "unrealized_pl": -86.0,
+      "unrealized_pl_pct": -0.34
     }
   ]
 }
