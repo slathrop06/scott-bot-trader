@@ -30579,5 +30579,120 @@
     "ts": "2026-10-21T22:01:32.329082Z",
     "status": "ok",
     "note": "closed 6 positions, 0 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-22",
+    "ts": "2026-10-22T17:54:51.555637Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=39826784730"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-22",
+    "ts": "2026-10-22T17:55:12.415445Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-22",
+    "ts": "2026-10-22T17:55:15.156337Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-22",
+    "ts": "2026-10-22T17:55:17.129613Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-10-22",
+    "ts": "2026-10-22T17:56:00.470435Z",
+    "equity_start": 78106.32,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "HD",
+          "confidence": "high",
+          "catalyst": "Gapping up +3.78% as defensive sectors lead the tape amid tech selloff; sector rotation into consumer staples/retail defensives",
+          "smart_money_signals": "House cluster buy (3 buys by Doggett & Taylor in 21d), Stocktwits 100% bullish on 30 msgs, 61% analyst buy",
+          "rationale": "Rare combo of green stock on a red tape + congressional cluster buy + unanimous retail sentiment \u2014 classic defensive rotation setup."
+        },
+        {
+          "symbol": "CRM",
+          "confidence": "medium",
+          "catalyst": "Up +2.89% on explicit sector rotation away from capex-heavy AI into software; upbeat analyst updates cited",
+          "smart_money_signals": "Insider cluster buy (4 buyers, 7 buys/30d), Stocktwits 73% bullish, 71% analyst buy",
+          "rationale": "Software rotation beneficiary with confirmed insider cluster buying \u2014 stock is leading while META/AMD/NVDA bleed."
+        },
+        {
+          "symbol": "NFLX",
+          "confidence": "medium",
+          "catalyst": "Up +3.14% recovering post-earnings, benefiting from rotation out of AI-capex names into content/media",
+          "smart_money_signals": "House buy (Cleo Fields), Stocktwits 79% bullish, 75% analyst buy",
+          "rationale": "Post-earnings drift higher with no capex overhang and supportive smart-money signals \u2014 fits defensive-growth rotation."
+        }
+      ],
+      "market_take": "Risk-off tape with AI-capex names dumping (META -9%, AMD -5%, NVDA -3%); money rotating into defensives and software.",
+      "skipped_movers": [
+        "META: -9% gap down on AI spend fears, 20 insider sells \u2014 skip",
+        "AMD: -5% chip selloff, no bullish catalyst",
+        "INTC: earnings imminent \u2014 overnight gap risk",
+        "AVGO: 17 insider sells + red tape",
+        "AMZN: red with insider selling",
+        "ADBE: up but Stocktwits only 33% bullish and analyst score weak",
+        "SBUX: insider + congressional selling despite gap up",
+        "NKE: insider selling, no news catalyst",
+        "ORCL: red on the day despite WSB chatter",
+        "CAT: red on the day"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Rare combo of green stock on a red tape + congressional cluster buy + unanimous retail sentiment \u2014 classic defensive rotation setup.",
+        "symbol": "HD",
+        "qty": 79,
+        "entry_price_est": 324.75,
+        "stop_price": 321.5,
+        "take_price": 331.25,
+        "order_id": "360ed47d-86e1-45bf-b147-94f0d798d4af"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Software rotation beneficiary with confirmed insider cluster buying \u2014 stock is leading while META/AMD/NVDA bleed.",
+        "symbol": "CRM",
+        "qty": 103,
+        "entry_price_est": 249.95499999999998,
+        "stop_price": 247.46,
+        "take_price": 254.95,
+        "order_id": "a3292e3d-c552-46b9-aabb-28e7dc2de3b1"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Post-earnings drift higher with no capex overhang and supportive smart-money signals \u2014 fits defensive-growth rotation.",
+        "symbol": "NFLX",
+        "qty": 384,
+        "entry_price_est": 67.055,
+        "stop_price": 66.38,
+        "take_price": 68.4,
+        "order_id": "62e6a3d3-6cc6-4fcc-b59c-f418299465bd"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-22",
+    "ts": "2026-10-22T17:56:00.545920Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
