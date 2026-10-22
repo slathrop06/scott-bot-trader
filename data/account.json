@@ -1,37 +1,55 @@
 {
-  "ts": "2026-10-22T19:06:29.323003Z",
-  "equity": 78430.53,
+  "ts": "2026-10-22T21:11:53.813543Z",
+  "equity": 77954.83,
   "last_equity": 77539.99,
-  "cash": 943.3,
-  "buying_power": 75632.9,
-  "all_time_return_pct": -21.5695,
+  "cash": -144161.21,
+  "buying_power": 45280.07,
+  "all_time_return_pct": -22.0452,
   "positions": [
+    {
+      "symbol": "ADBE",
+      "qty": 267,
+      "avg_entry_price": 271.28,
+      "current_price": 268.8882,
+      "market_value": 71793.15,
+      "unrealized_pl": -638.61,
+      "unrealized_pl_pct": -0.882
+    },
     {
       "symbol": "CRM",
       "qty": 103,
       "avg_entry_price": 249.26,
-      "current_price": 251.885,
-      "market_value": 25944.15,
-      "unrealized_pl": 270.38,
-      "unrealized_pl_pct": 1.053
+      "current_price": 249.42,
+      "market_value": 25690.26,
+      "unrealized_pl": 16.48,
+      "unrealized_pl_pct": 0.064
+    },
+    {
+      "symbol": "GOOGL",
+      "qty": 225,
+      "avg_entry_price": 322.99,
+      "current_price": 324.7169,
+      "market_value": 73061.3,
+      "unrealized_pl": 388.55,
+      "unrealized_pl_pct": 0.535
     },
     {
       "symbol": "HD",
       "qty": 79,
       "avg_entry_price": 325.8,
-      "current_price": 326.53,
-      "market_value": 25795.87,
-      "unrealized_pl": 57.67,
-      "unrealized_pl_pct": 0.224
+      "current_price": 327.0821,
+      "market_value": 25839.49,
+      "unrealized_pl": 101.29,
+      "unrealized_pl_pct": 0.394
     },
     {
       "symbol": "NFLX",
       "qty": 384,
       "avg_entry_price": 67.06,
-      "current_price": 67.05,
-      "market_value": 25747.2,
-      "unrealized_pl": -3.84,
-      "unrealized_pl_pct": -0.015
+      "current_price": 67.01,
+      "market_value": 25731.84,
+      "unrealized_pl": -19.2,
+      "unrealized_pl_pct": -0.075
     }
   ]
 }
