@@ -1,64 +1,9 @@
 {
-  "ts": "2026-10-22T00:05:51.373574Z",
-  "equity": 77267.63,
-  "last_equity": 78362.78,
-  "cash": -212967.17,
-  "buying_power": 0.0,
-  "all_time_return_pct": -22.7324,
-  "positions": [
-    {
-      "symbol": "AAPL",
-      "qty": 207,
-      "avg_entry_price": 343.6589,
-      "current_price": 343.51,
-      "market_value": 71106.57,
-      "unrealized_pl": -30.82,
-      "unrealized_pl_pct": -0.043
-    },
-    {
-      "symbol": "CVX",
-      "qty": 313,
-      "avg_entry_price": 228.35,
-      "current_price": 227.5,
-      "market_value": 71207.5,
-      "unrealized_pl": -266.05,
-      "unrealized_pl_pct": -0.372
-    },
-    {
-      "symbol": "GOOGL",
-      "qty": 76,
-      "avg_entry_price": 334.48,
-      "current_price": 333.4,
-      "market_value": 25338.4,
-      "unrealized_pl": -82.08,
-      "unrealized_pl_pct": -0.323
-    },
-    {
-      "symbol": "HD",
-      "qty": 229,
-      "avg_entry_price": 311.2492,
-      "current_price": 313.8,
-      "market_value": 71860.2,
-      "unrealized_pl": 584.13,
-      "unrealized_pl_pct": 0.82
-    },
-    {
-      "symbol": "PLTR",
-      "qty": 127,
-      "avg_entry_price": 199.85,
-      "current_price": 199.64,
-      "market_value": 25354.28,
-      "unrealized_pl": -26.67,
-      "unrealized_pl_pct": -0.105
-    },
-    {
-      "symbol": "WMT",
-      "qty": 215,
-      "avg_entry_price": 117.82,
-      "current_price": 117.99,
-      "market_value": 25367.85,
-      "unrealized_pl": 36.55,
-      "unrealized_pl_pct": 0.144
-    }
-  ]
+  "ts": "2026-10-22T17:50:49.923309Z",
+  "equity": 78106.32,
+  "last_equity": 77539.99,
+  "cash": 78106.32,
+  "buying_power": 312425.28,
+  "all_time_return_pct": -21.8937,
+  "positions": []
 }
