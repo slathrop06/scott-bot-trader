@@ -1,64 +1,64 @@
 {
-  "ts": "2026-10-21T21:15:14.847541Z",
-  "equity": 77285.92,
+  "ts": "2026-10-22T00:05:51.373574Z",
+  "equity": 77267.63,
   "last_equity": 78362.78,
   "cash": -212967.17,
   "buying_power": 0.0,
-  "all_time_return_pct": -22.7141,
+  "all_time_return_pct": -22.7324,
   "positions": [
     {
       "symbol": "AAPL",
       "qty": 207,
       "avg_entry_price": 343.6589,
-      "current_price": 343.72,
-      "market_value": 71150.04,
-      "unrealized_pl": 12.65,
-      "unrealized_pl_pct": 0.018
+      "current_price": 343.51,
+      "market_value": 71106.57,
+      "unrealized_pl": -30.82,
+      "unrealized_pl_pct": -0.043
     },
     {
       "symbol": "CVX",
       "qty": 313,
       "avg_entry_price": 228.35,
-      "current_price": 226.78,
-      "market_value": 70982.14,
-      "unrealized_pl": -491.41,
-      "unrealized_pl_pct": -0.688
+      "current_price": 227.5,
+      "market_value": 71207.5,
+      "unrealized_pl": -266.05,
+      "unrealized_pl_pct": -0.372
     },
     {
       "symbol": "GOOGL",
       "qty": 76,
       "avg_entry_price": 334.48,
-      "current_price": 334.76,
-      "market_value": 25441.76,
-      "unrealized_pl": 21.28,
-      "unrealized_pl_pct": 0.084
+      "current_price": 333.4,
+      "market_value": 25338.4,
+      "unrealized_pl": -82.08,
+      "unrealized_pl_pct": -0.323
     },
     {
       "symbol": "HD",
       "qty": 229,
       "avg_entry_price": 311.2492,
-      "current_price": 313.6155,
-      "market_value": 71817.95,
-      "unrealized_pl": 541.88,
-      "unrealized_pl_pct": 0.76
+      "current_price": 313.8,
+      "market_value": 71860.2,
+      "unrealized_pl": 584.13,
+      "unrealized_pl_pct": 0.82
     },
     {
       "symbol": "PLTR",
       "qty": 127,
       "avg_entry_price": 199.85,
-      "current_price": 201.7,
-      "market_value": 25615.9,
-      "unrealized_pl": 234.95,
-      "unrealized_pl_pct": 0.926
+      "current_price": 199.64,
+      "market_value": 25354.28,
+      "unrealized_pl": -26.67,
+      "unrealized_pl_pct": -0.105
     },
     {
       "symbol": "WMT",
       "qty": 215,
       "avg_entry_price": 117.82,
-      "current_price": 117.42,
-      "market_value": 25245.3,
-      "unrealized_pl": -86.0,
-      "unrealized_pl_pct": -0.34
+      "current_price": 117.99,
+      "market_value": 25367.85,
+      "unrealized_pl": 36.55,
+      "unrealized_pl_pct": 0.144
     }
   ]
 }
