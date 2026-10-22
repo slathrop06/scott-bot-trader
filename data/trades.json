@@ -30694,5 +30694,88 @@
     "ts": "2026-10-22T17:56:00.545920Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-22",
+    "ts": "2026-10-22T19:05:16.776307Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=39837005576"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-10-22",
+    "ts": "2026-10-22T19:05:36.227474Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-10-22",
+    "ts": "2026-10-22T19:06:29.230581Z",
+    "equity_start": 78408.79,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "ADBE",
+          "confidence": "medium",
+          "catalyst": "Up +6.7% on heavy volume as software rotation accelerates away from AI-capex names; BWT Alpine F1 AI partnership announced. Only green name in the mover list on a brutal tape \u2014 textbook relative strength.",
+          "smart_money_signals": "Stocktwits 30% bullish is a negative, but no insider/congressional selling flagged; analyst mix is lukewarm (37.8%) but not contradicting the move.",
+          "rationale": "Clearest intraday momentum play \u2014 massive gap up on a red tape with a concrete sector-rotation thesis."
+        },
+        {
+          "symbol": "GOOGL",
+          "confidence": "medium",
+          "catalyst": "Down -3% in tech-wide AI capex selloff, but Google is the one hyperscaler NOT taking balance-sheet heat (unlike META/ORCL/AMZN); Eric Schmidt publicly defending AI growth story.",
+          "smart_money_signals": "Insider cluster buy = TRUE with 7 distinct insider buyers in 30d (rare for mega-cap); 91% analyst bullish (20SB/41B); alt-data score 5/10, highest in the group.",
+          "rationale": "Only name with a true insider cluster buy \u2014 smart money is accumulating into weakness while peers get punished."
+        }
+      ],
+      "market_take": "Risk-off tech rout driven by Meta's AI capex guide; defensives bid and bonds rally \u2014 rotation trade is live.",
+      "skipped_movers": [
+        "META: -9.8% with heavy insider selling (20 sells) and bond-market stress \u2014 falling knife",
+        "AMD: -6.4% in chip selloff, no smart-money offset",
+        "INTC: -5.9% with weak 36% analyst rating despite stocktwits enthusiasm",
+        "AMZN: -4.8% caught in AI capex fear, insider selling",
+        "CAT: -4.8% on industrials weakness, only 1 House buy insufficient",
+        "SHOP: -4.2% no catalyst, weak signals",
+        "NVDA: -3.5% with insider+congress selling, negative alt-data score",
+        "AVGO: -3% with 17 insider sells",
+        "SBUX: +3% but heavy insider+congress selling; stocktwits 100% bullish is contrarian red flag",
+        "ORCL: -3% on $76B financing concern \u2014 fundamental overhang"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clearest intraday momentum play \u2014 massive gap up on a red tape with a concrete sector-rotation thesis.",
+        "symbol": "ADBE",
+        "qty": 267,
+        "entry_price_est": 272.095,
+        "stop_price": 269.37,
+        "take_price": 277.54,
+        "order_id": "107fed4f-29b4-4a19-a731-6801ab09dfb8"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Only name with a true insider cluster buy \u2014 smart money is accumulating into weakness while peers get punished.",
+        "symbol": "GOOGL",
+        "qty": 225,
+        "entry_price_est": 323.145,
+        "stop_price": 319.91,
+        "take_price": 329.61,
+        "order_id": "3744b9b0-d529-4b6e-903a-2cdf71ac153f"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-10-22",
+    "ts": "2026-10-22T19:06:29.327865Z",
+    "status": "ok",
+    "note": "2 orders submitted"
   }
 ]
