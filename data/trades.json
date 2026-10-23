@@ -30930,5 +30930,105 @@
     "ts": "2026-10-23T17:50:47.452961Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-23",
+    "ts": "2026-10-23T18:57:11.660185Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=40007496134"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-10-23",
+    "ts": "2026-10-23T18:57:39.475797Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-10-23",
+    "ts": "2026-10-23T18:58:27.894025Z",
+    "equity_start": 76822.17,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMD",
+          "confidence": "high",
+          "catalyst": "Up +2.4% on the day with analyst upgrades flagged in Benzinga coverage; relative strength vs broad market where 8 of 11 sectors are down",
+          "smart_money_signals": "83.3% analyst bullish (17 Strong Buy / 33 Buy out of 60), WSB rank #14 with 57 mentions (1.36x), Stocktwits 70% bullish on 30 msgs",
+          "rationale": "Only major mover going up with multi-signal confirmation and analyst conviction above 80%."
+        },
+        {
+          "symbol": "XOM",
+          "confidence": "medium",
+          "catalyst": "Up +2.3% as Energy leads the sectors higher on a broadly red tape \u2014 clear relative strength with no contradicting news",
+          "smart_money_signals": "Stocktwits 86% bullish on 30 msgs, no insider or congressional selling flags",
+          "rationale": "Sector leadership plus bullish retail chatter and clean alt-data make this a solid momentum continuation setup."
+        },
+        {
+          "symbol": "WMT",
+          "confidence": "medium",
+          "catalyst": "Down -2% with no stock-specific negative news \u2014 a dip buy supported by strongest smart-money stack in the list",
+          "smart_money_signals": "Insider cluster buy (9 insiders buying in 30d), 87.5% analyst bullish (12 SB / 30 B), Stocktwits 69% bullish",
+          "rationale": "Rare insider cluster buy combined with 87% analyst bullishness on a market-driven pullback \u2014 strong smart-money edge."
+        }
+      ],
+      "market_take": "Broad risk-off with 8 of 11 sectors red; Energy and select tech names bucking the trend.",
+      "skipped_movers": [
+        "HD: House net selling and -2.6% decline with no positive catalyst",
+        "MS: price target cuts and -2.2% decline",
+        "CAT: weak sentiment (59%) and no catalyst",
+        "GE: congressional selling and down with sector",
+        "MA: heavy insider selling (8 sells, 6 insiders) \u2014 disqualifier",
+        "MCD: congressional selling, no catalyst",
+        "ADBE: weak analyst sentiment (37.8%) and no signals",
+        "NKE: insider selling, weak analyst sentiment (33%)",
+        "NFLX: Stocktwits only 54% bullish, down with market, no smart-money edge"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Only major mover going up with multi-signal confirmation and analyst conviction above 80%.",
+        "symbol": "AMD",
+        "qty": 138,
+        "entry_price_est": 515.5,
+        "stop_price": 510.34,
+        "take_price": 525.81,
+        "order_id": "9b7fe4b4-6969-44cd-bc49-a9ac0c89e4b4"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Sector leadership plus bullish retail chatter and clean alt-data make this a solid momentum continuation setup.",
+        "symbol": "XOM",
+        "qty": 389,
+        "entry_price_est": 182.815,
+        "stop_price": 180.99,
+        "take_price": 186.47,
+        "order_id": "c9d27133-a0af-4aa6-9edc-94c0ff796859"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Rare insider cluster buy combined with 87% analyst bullishness on a market-driven pullback \u2014 strong smart-money edge.",
+        "symbol": "WMT",
+        "qty": 597,
+        "entry_price_est": 119.245,
+        "stop_price": 118.05,
+        "take_price": 121.63,
+        "order_id": "2b96ca30-ace9-4082-971a-62e20f802dbf"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-10-23",
+    "ts": "2026-10-23T18:58:28.031083Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
