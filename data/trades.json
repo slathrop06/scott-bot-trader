@@ -31030,5 +31030,45 @@
     "ts": "2026-10-23T18:58:28.031083Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-23",
+    "ts": "2026-10-23T21:44:07.549635Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=40028897284"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-10-23",
+    "ts": "2026-10-23T21:44:28.834599Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-10-23",
+    "ts": "2026-10-23T21:44:29.497226Z",
+    "equity_end": 77156.16,
+    "daily_pnl_usd": -1280.71,
+    "daily_pct": -1.6328,
+    "flatten": {
+      "closed": [
+        "AMD",
+        "CVX",
+        "INTC",
+        "ORCL",
+        "WMT",
+        "XOM"
+      ],
+      "raw_response_count": 6
+    }
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-10-23",
+    "ts": "2026-10-23T21:44:29.692676Z",
+    "status": "ok",
+    "note": "closed 6 positions, 0 round-trips"
   }
 ]
