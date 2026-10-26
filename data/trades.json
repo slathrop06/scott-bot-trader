@@ -31110,5 +31110,117 @@
     "ts": "2026-10-24T00:02:53.518239Z",
     "status": "ok",
     "note": "closed 6 positions, 0 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-26",
+    "ts": "2026-10-26T19:08:16.109972Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=40383999581"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-26",
+    "ts": "2026-10-26T19:08:30.412199Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-26",
+    "ts": "2026-10-26T19:08:31.751629Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-26",
+    "ts": "2026-10-26T19:08:33.092136Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-10-26",
+    "ts": "2026-10-26T19:09:26.458441Z",
+    "equity_start": 77428.46,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "INTC",
+          "confidence": "high",
+          "catalyst": "New Street Research upgrade to Buy with $125 PT ahead of Q3 earnings; +5.6% gap on heavy volume (73M) riding broad semi rebound",
+          "smart_money_signals": "Stocktwits 100% bullish on 30 msgs; WSB chatter 4.0x normal",
+          "rationale": "Clean analyst upgrade catalyst + strong gap + unanimous retail sentiment, with no insider/congressional selling flags"
+        },
+        {
+          "symbol": "DIS",
+          "confidence": "medium",
+          "catalyst": "Mild pullback (-2.1%) in growth-leading tape sets up mean-reversion entry",
+          "smart_money_signals": "Insider cluster buy with 11 distinct insider buyers (30d), Stocktwits 86% bullish, 87% analyst buy rating",
+          "rationale": "Rare 11-insider cluster buy is the strongest smart-money signal in today's slate \u2014 classic alt-data edge"
+        },
+        {
+          "symbol": "TSLA",
+          "confidence": "medium",
+          "catalyst": "Analyst upgrade driving +6% gap on 41M volume, leading Nasdaq 100 chip/growth rally",
+          "smart_money_signals": "WSB chatter 12x normal, rank #4 (top-5 attention surge)",
+          "rationale": "Strong price catalyst with gap continuation potential and dominant social momentum; stocktwits mixed but no disqualifying selling"
+        }
+      ],
+      "market_take": "Risk-on tape led by semis and growth; chip rebound and analyst upgrades driving leaders higher",
+      "skipped_movers": [
+        "NVDA: insider selling + already extended",
+        "MA: heavy insider selling (8 sells, 6 insiders)",
+        "SBUX: insider + congressional selling despite analyst note",
+        "AAPL: stocktwits 20% bearish and 19 insider sells overwhelm cluster buy",
+        "NFLX/ADBE/GOOGL: red premarket with no clear catalyst",
+        "AVGO/GS/CRM: weak alt-data, no standout catalyst",
+        "MS: no strong catalyst to justify entry over leaders"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Clean analyst upgrade catalyst + strong gap + unanimous retail sentiment, with no insider/congressional selling flags",
+        "symbol": "INTC",
+        "qty": 279,
+        "entry_price_est": 91.505,
+        "stop_price": 90.59,
+        "take_price": 93.34,
+        "order_id": "ceed8c2f-8670-4834-a69d-9b0d8207c530"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Rare 11-insider cluster buy is the strongest smart-money signal in today's slate \u2014 classic alt-data edge",
+        "symbol": "DIS",
+        "qty": 231,
+        "entry_price_est": 110.31,
+        "stop_price": 109.21,
+        "take_price": 112.52,
+        "order_id": "804a52af-3c14-442f-94d6-4b48cb261264"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strong price catalyst with gap continuation potential and dominant social momentum; stocktwits mixed but no disqualifying selling",
+        "symbol": "TSLA",
+        "qty": 65,
+        "entry_price_est": 388.5,
+        "stop_price": 384.62,
+        "take_price": 396.27,
+        "order_id": "77b18c38-3a8c-46a6-8b54-7451af6765e8"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-26",
+    "ts": "2026-10-26T19:09:26.697604Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
