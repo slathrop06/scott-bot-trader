@@ -1,28 +1,9 @@
 {
-  "ts": "2026-10-26T23:14:12.972069Z",
-  "equity": 77040.41,
-  "last_equity": 76940.86,
-  "cash": 26080.47,
-  "buying_power": 226643.69,
-  "all_time_return_pct": -22.9596,
-  "positions": [
-    {
-      "symbol": "DIS",
-      "qty": 231,
-      "avg_entry_price": 110.17,
-      "current_price": 110.4,
-      "market_value": 25502.4,
-      "unrealized_pl": 53.13,
-      "unrealized_pl_pct": 0.209
-    },
-    {
-      "symbol": "TSLA",
-      "qty": 65,
-      "avg_entry_price": 394.43,
-      "current_price": 391.6545,
-      "market_value": 25457.54,
-      "unrealized_pl": -180.41,
-      "unrealized_pl_pct": -0.704
-    }
-  ]
+  "ts": "2026-10-27T18:32:49.200627Z",
+  "equity": 77254.71,
+  "last_equity": 77031.65,
+  "cash": 77254.71,
+  "buying_power": 309018.84,
+  "all_time_return_pct": -22.7453,
+  "positions": []
 }
