@@ -31403,5 +31403,100 @@
     "ts": "2026-10-27T18:39:08.629322Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-27",
+    "ts": "2026-10-27T19:56:26.784771Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=40573566816"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-10-27",
+    "ts": "2026-10-27T19:56:45.204821Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-10-27",
+    "ts": "2026-10-27T19:57:34.475940Z",
+    "equity_start": 77079.21,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMD",
+          "confidence": "high",
+          "catalyst": "Chip rally on Anthropic IPO filing revealing $567B compute commitments; AMD up +4.52% intraday with Meta AI infrastructure partnership tailwind",
+          "smart_money_signals": "WSB chatter 2.18x normal (rank #19, 24 mentions), Stocktwits 100% bullish on 30 msgs, 83.3% analyst buy (17SB/33B)",
+          "rationale": "Clean stack of strong catalyst (AI demand news) + multiple smart-money signals with no disqualifiers"
+        },
+        {
+          "symbol": "AMZN",
+          "confidence": "medium",
+          "catalyst": "Positive AI product launch (Value Intelligence, Business Assistant) with +1.57% intraday move and participation in broader tech/AI rally",
+          "smart_money_signals": "Stocktwits 100% bullish on 30 msgs, 95.7% analyst buy (19SB/48B/3H \u2014 one of the strongest analyst books), WSB rank #28",
+          "rationale": "Highest analyst conviction in the universe plus unanimous retail sentiment and constructive price action"
+        },
+        {
+          "symbol": "GE",
+          "confidence": "medium",
+          "catalyst": "Relative strength +3.68% on industrials whale activity with no negative news",
+          "smart_money_signals": "Stocktwits 90% bullish on 30 msgs, 87.5% analyst buy (9SB/19B), whale alert flagged",
+          "rationale": "Strong price action with supportive sentiment and analyst conviction; lone congressional sell is a minor concern but not disqualifying"
+        }
+      ],
+      "market_take": "Risk-on tape led by chip/AI rally; Boeing is the lone major drag \u2014 favor AI-adjacent longs with sentiment confirmation.",
+      "skipped_movers": [
+        "BA: -11% on 737 production delay, clear downtrend \u2014 skip",
+        "TSLA: analyst book only 50% bullish and WSB chatter flat, momentum but weaker signal stack",
+        "ADBE: down -3.49%, zero alt-data signals, weak analyst book (37.8%)",
+        "INTC: weak analyst conviction (36.4%) despite price pop",
+        "CRM: down -2.26%, congressional selling, no catalyst",
+        "XOM: Venezuela exit is neutral/negative, price down -2.24%",
+        "META: heavy insider selling (15 sells), Stocktwits only 28% bullish \u2014 disqualified",
+        "NFLX: down -1.94%, no catalyst, neutral sentiment",
+        "GS: thin signal, mostly hold-rated analysts",
+        "CAT: decent but weaker stack than top 3 picks"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Clean stack of strong catalyst (AI demand news) + multiple smart-money signals with no disqualifiers",
+        "symbol": "AMD",
+        "qty": 145,
+        "entry_price_est": 559.815,
+        "stop_price": 554.22,
+        "take_price": 571.01,
+        "order_id": "7204591a-5651-457e-aefa-e026fbd00fd6"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Highest analyst conviction in the universe plus unanimous retail sentiment and constructive price action",
+        "symbol": "AMZN",
+        "qty": 322,
+        "entry_price_est": 253.345,
+        "stop_price": 250.81,
+        "take_price": 258.41,
+        "order_id": "542f8265-5dd6-4f73-a52f-d22eca23e0bd"
+      },
+      {
+        "status": "failed",
+        "symbol": "GE",
+        "error": "{\"base_price\":\"297.845\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-10-27",
+    "ts": "2026-10-27T19:57:34.590439Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]

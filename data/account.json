@@ -1,9 +1,28 @@
 {
-  "ts": "2026-10-27T18:32:49.200627Z",
-  "equity": 77254.71,
+  "ts": "2026-10-27T19:57:34.585291Z",
+  "equity": 77049.3,
   "last_equity": 77031.65,
-  "cash": 77254.71,
-  "buying_power": 309018.84,
-  "all_time_return_pct": -22.7453,
-  "positions": []
+  "cash": 26486.08,
+  "buying_power": 84744.37,
+  "all_time_return_pct": -22.9507,
+  "positions": [
+    {
+      "symbol": "AVGO",
+      "qty": 74,
+      "avg_entry_price": 342.34,
+      "current_price": 342.42,
+      "market_value": 25339.08,
+      "unrealized_pl": 5.92,
+      "unrealized_pl_pct": 0.023
+    },
+    {
+      "symbol": "ORCL",
+      "qty": 193,
+      "avg_entry_price": 131.79,
+      "current_price": 130.69,
+      "market_value": 25223.17,
+      "unrealized_pl": -212.3,
+      "unrealized_pl_pct": -0.835
+    }
+  ]
 }
