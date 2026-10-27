@@ -31295,5 +31295,113 @@
     "ts": "2026-10-26T22:55:04.816097Z",
     "status": "ok",
     "note": "closed 2 positions, 1 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-27",
+    "ts": "2026-10-27T18:37:57.685643Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=40561750429"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-27",
+    "ts": "2026-10-27T18:38:15.921589Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-27",
+    "ts": "2026-10-27T18:38:17.581177Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-27",
+    "ts": "2026-10-27T18:38:19.291912Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-10-27",
+    "ts": "2026-10-27T18:39:08.482882Z",
+    "equity_start": 77254.71,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AVGO",
+          "confidence": "high",
+          "catalyst": "Chip rally on Anthropic's $750B compute spend headline; AVGO gapping +2.65% premarket into AI infrastructure tailwind",
+          "smart_money_signals": "Stocktwits 100% bullish on 30 msgs, 93% analyst buy (17SB/35B), WSB chatter 14x normal",
+          "rationale": "Multi-signal stack: strong sector catalyst + unanimous retail sentiment + near-top analyst conviction with clean premarket gap"
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "Three concrete product announcements overnight (SambaNova AI chip partnership, Fusion Data Intelligence expansion, AI Security Mesh with OpenAI); +4.25% premarket",
+          "smart_money_signals": "Net insider buying (1 buy, 0 sells), Stocktwits 86% bullish, 81% analyst buy (15SB/24B)",
+          "rationale": "Concrete product-launch catalyst with gap up, backed by insider buy and strong sentiment \u2014 cleanest news setup today"
+        },
+        {
+          "symbol": "AMD",
+          "confidence": "medium",
+          "catalyst": "Chip rally fueled by Anthropic $750B compute spend; AMD +4.51% premarket as named beneficiary in Meta share-sale buying",
+          "smart_money_signals": "WSB chatter 2.56x normal with rank #20, 83% analyst buy (17SB/33B), Stocktwits 64% bullish",
+          "rationale": "Direct AI-infrastructure catalyst with strong premarket gap and solid analyst conviction"
+        }
+      ],
+      "market_take": "Risk-on tape led by chip/AI infrastructure rally; Boeing-driven industrial weakness isolated.",
+      "skipped_movers": [
+        "BA: -10% on 737 production delay, House selling \u2014 skip",
+        "META: 15 insider sells, Stocktwits only 28% bullish \u2014 skip",
+        "AMZN: insider selling, earnings loom \u2014 skip",
+        "ADBE: 0 alt-data score, 38% analyst buy, down premarket \u2014 skip",
+        "TSLA: no company-specific catalyst, mixed analyst view \u2014 skip",
+        "INTC: 36% analyst buy, weak conviction \u2014 skip",
+        "XOM: down premarket, earnings loom \u2014 skip",
+        "CRM: down premarket, no news \u2014 skip",
+        "NFLX: down premarket, no catalyst \u2014 skip"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Multi-signal stack: strong sector catalyst + unanimous retail sentiment + near-top analyst conviction with clean premarket gap",
+        "symbol": "AVGO",
+        "qty": 74,
+        "entry_price_est": 341.685,
+        "stop_price": 338.27,
+        "take_price": 348.52,
+        "order_id": "684d4cc3-730b-4a1a-8d68-65a3a65c6454"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Concrete product-launch catalyst with gap up, backed by insider buy and strong sentiment \u2014 cleanest news setup today",
+        "symbol": "ORCL",
+        "qty": 193,
+        "entry_price_est": 131.78,
+        "stop_price": 130.46,
+        "take_price": 134.42,
+        "order_id": "4c30d0f0-ab7f-4554-b1c1-8407ca0fc65c"
+      },
+      {
+        "status": "failed",
+        "symbol": "AMD",
+        "error": "{\"base_price\":\"559.7\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-27",
+    "ts": "2026-10-27T18:39:08.629322Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
