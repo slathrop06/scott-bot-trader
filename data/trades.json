@@ -31498,5 +31498,43 @@
     "ts": "2026-10-27T19:57:34.590439Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-27",
+    "ts": "2026-10-27T22:41:18.651396Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=40596691140"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-10-27",
+    "ts": "2026-10-27T22:41:39.914616Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-10-27",
+    "ts": "2026-10-27T22:41:40.397149Z",
+    "equity_end": 77568.47,
+    "daily_pnl_usd": 536.82,
+    "daily_pct": 0.6969,
+    "flatten": {
+      "closed": [
+        "AMD",
+        "AMZN",
+        "AVGO",
+        "ORCL"
+      ],
+      "raw_response_count": 4
+    }
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-10-27",
+    "ts": "2026-10-27T22:41:40.653016Z",
+    "status": "ok",
+    "note": "closed 4 positions, 0 round-trips"
   }
 ]
