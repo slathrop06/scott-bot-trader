@@ -31856,5 +31856,42 @@
     "ts": "2026-10-29T20:06:48.086053Z",
     "status": "blocked",
     "note": "Market is closed."
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-29",
+    "ts": "2026-10-29T23:01:21.199279Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=40970164834"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-10-29",
+    "ts": "2026-10-29T23:01:34.525618Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-10-29",
+    "ts": "2026-10-29T23:01:34.853532Z",
+    "equity_end": 78700.29,
+    "daily_pnl_usd": -302.12,
+    "daily_pct": -0.3824,
+    "flatten": {
+      "closed": [
+        "BA",
+        "MA",
+        "ORCL"
+      ],
+      "raw_response_count": 3
+    }
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-10-29",
+    "ts": "2026-10-29T23:01:35.027656Z",
+    "status": "ok",
+    "note": "closed 3 positions, 0 round-trips"
   }
 ]
