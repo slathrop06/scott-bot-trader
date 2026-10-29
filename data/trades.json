@@ -31720,5 +31720,120 @@
     "ts": "2026-10-28T22:54:12.774918Z",
     "status": "ok",
     "note": "closed 2 positions, 1 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-29",
+    "ts": "2026-10-29T18:54:25.200838Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=40935159961"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-29",
+    "ts": "2026-10-29T18:54:43.033496Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-29",
+    "ts": "2026-10-29T18:54:45.269086Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-29",
+    "ts": "2026-10-29T18:54:47.233749Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-10-29",
+    "ts": "2026-10-29T18:55:31.980254Z",
+    "equity_start": 79790.68,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "Post-selloff bounce setup after Investor Day; analysts (Guggenheim, BNP $248 PT) reiterating bullish calls on AI infrastructure growth",
+          "smart_money_signals": "Insider cluster buy (5 buyers, 5 buys vs 4 sells \u2014 net positive), WSB rank #14 at 7.0x normal chatter, 81% analyst buy rating",
+          "rationale": "Alt-data score 7/10 with genuine insider cluster buy is the strongest smart-money signal in the list and price is already stabilizing after the dip."
+        },
+        {
+          "symbol": "MA",
+          "confidence": "medium",
+          "catalyst": "Q3 earnings beat \u2014 net revenue +14% to $9.81B, stock hitting 52-week high on resilient consumer spending commentary",
+          "smart_money_signals": "100% bullish Stocktwits (30 msgs), 92.5% analyst buy rating",
+          "rationale": "Clean earnings-beat gap-up with confirmed fundamental catalyst and strong relative strength on a down-tape day; insider selling is a concern but earnings beat dominates near-term."
+        },
+        {
+          "symbol": "BA",
+          "confidence": "medium",
+          "catalyst": "Relative strength (+4%) on a down tape with no negative headlines; positive sentiment tailwind from viral 'Nvidia is Boeing' AI analogy",
+          "smart_money_signals": "88.6% analyst buy rating (13 Strong Buys), 83% bullish Stocktwits",
+          "rationale": "Strongest relative-strength move among large caps with clean tape and no contradicting signals \u2014 the +4% gap gives room to the +2% target."
+        }
+      ],
+      "market_take": "Risk-off in mega-cap AI (GOOGL/MSFT capex fears) rotating into industrials, financials and small caps \u2014 pick strength outside the AI capex complex.",
+      "skipped_movers": [
+        "CAT: -10% post-earnings gap down, catching knives",
+        "MSFT: down on capex concerns, heavy insider selling, no bounce catalyst",
+        "GOOGL: strong alt-data but -3% gap down with analyst profit-squeeze warnings \u2014 fighting the tape",
+        "META: 15 insider sells in 30d, down day sympathy risk",
+        "NKE: only 33% analyst buy, insider selling, no news catalyst",
+        "ADBE: only 37% analyst buy, no catalyst",
+        "HD: 3 congressional sells, no catalyst",
+        "MCD: congressional selling, 0/10 alt-data score",
+        "V: thin signal, congressional selling",
+        "GE: weak alt-data, no specific catalyst"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Alt-data score 7/10 with genuine insider cluster buy is the strongest smart-money signal in the list and price is already stabilizing after the dip.",
+        "symbol": "ORCL",
+        "qty": 190,
+        "entry_price_est": 138.325,
+        "stop_price": 136.94,
+        "take_price": 141.09,
+        "order_id": "bc020db4-42f0-4abc-89d5-3f99f6dcdb36"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean earnings-beat gap-up with confirmed fundamental catalyst and strong relative strength on a down-tape day; insider selling is a concern but earnings beat dominates near-term.",
+        "symbol": "MA",
+        "qty": 41,
+        "entry_price_est": 635.19,
+        "stop_price": 628.84,
+        "take_price": 647.89,
+        "order_id": "a0f2fefe-74aa-4d21-8504-d6350d64a3a5"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strongest relative-strength move among large caps with clean tape and no contradicting signals \u2014 the +4% gap gives room to the +2% target.",
+        "symbol": "BA",
+        "qty": 151,
+        "entry_price_est": 173.75,
+        "stop_price": 172.01,
+        "take_price": 177.22,
+        "order_id": "c6fbf70c-6e9c-4d9b-b4f3-7991aaf56ac6"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-29",
+    "ts": "2026-10-29T18:55:32.063580Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
