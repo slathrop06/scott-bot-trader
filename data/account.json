@@ -1,9 +1,37 @@
 {
-  "ts": "2026-10-30T18:24:53.185916Z",
-  "equity": 78605.83,
+  "ts": "2026-10-30T19:53:31.499497Z",
+  "equity": 79195.5,
   "last_equity": 79902.69,
-  "cash": 78605.83,
-  "buying_power": 314423.32,
-  "all_time_return_pct": -21.3942,
-  "positions": []
+  "cash": 1208.87,
+  "buying_power": 75921.25,
+  "all_time_return_pct": -20.8045,
+  "positions": [
+    {
+      "symbol": "GS",
+      "qty": 29,
+      "avg_entry_price": 881.27,
+      "current_price": 892.1,
+      "market_value": 25870.9,
+      "unrealized_pl": 314.07,
+      "unrealized_pl_pct": 1.229
+    },
+    {
+      "symbol": "JPM",
+      "qty": 77,
+      "avg_entry_price": 335.69,
+      "current_price": 337.425,
+      "market_value": 25981.72,
+      "unrealized_pl": 133.59,
+      "unrealized_pl_pct": 0.517
+    },
+    {
+      "symbol": "ORCL",
+      "qty": 200,
+      "avg_entry_price": 129.96,
+      "current_price": 130.67,
+      "market_value": 26134.0,
+      "unrealized_pl": 142.0,
+      "unrealized_pl_pct": 0.546
+    }
+  ]
 }

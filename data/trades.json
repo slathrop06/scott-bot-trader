@@ -32010,5 +32010,88 @@
     "ts": "2026-10-30T18:32:41.397955Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-30",
+    "ts": "2026-10-30T19:52:29.606303Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=41118770651"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-10-30",
+    "ts": "2026-10-30T19:52:51.471331Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-10-30",
+    "ts": "2026-10-30T19:53:31.437585Z",
+    "equity_start": 79180.38,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMZN",
+          "confidence": "medium",
+          "catalyst": "AMZN gapped UP +6% on strong AWS growth and $578B backlog despite broader tech selloff \u2014 true relative strength on a day when QQQ is -2.4% and chips are in a bloodbath",
+          "smart_money_signals": "95.7% analyst buy (19 Strong Buy / 48 Buy), stocktwits 100% bullish on 30 msgs, top-5 WSB ticker",
+          "rationale": "Only major name showing green on a brutal tape with earnings-driven momentum and overwhelming analyst conviction \u2014 best setup available."
+        },
+        {
+          "symbol": "BAC",
+          "confidence": "low",
+          "catalyst": "Modest -2.8% pullback in a defensive-led tape; banks holding up relatively well vs tech carnage",
+          "smart_money_signals": "Stocktwits 100% bullish (30 msgs), 82% analyst buy, 1 insider buy in 30d",
+          "rationale": "Defensive rotation beneficiary with clean sentiment stack and no earnings risk \u2014 reasonable mean-reversion setup."
+        }
+      ],
+      "market_take": "Risk-off tape with chip stocks shedding $1T on Intel's worst day since 1974; defensives and AMZN are the only pockets of strength.",
+      "skipped_movers": [
+        "INTC: -8% crash with shareholder litigation investigation \u2014 falling knife",
+        "AMD: chip sector bloodbath, no catalyst to fade",
+        "NVDA: insider selling + chip contagion",
+        "AVGO: House selling + chip sector weakness",
+        "PLTR: heavy insider selling (4 sells, 3 insiders)",
+        "SHOP: -5.9% with no news, weak sentiment (56%)",
+        "CAT: analyst PT cut by JPM $1100\u2192$1000",
+        "GE: defensive but no specific catalyst",
+        "MS: ex-dividend drop + bank sector concerns",
+        "QQQ: index down hard, no edge long"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Only major name showing green on a brutal tape with earnings-driven momentum and overwhelming analyst conviction \u2014 best setup available.",
+        "symbol": "AMZN",
+        "qty": 307,
+        "entry_price_est": 239.805,
+        "stop_price": 237.41,
+        "take_price": 244.6,
+        "order_id": "dda2090d-3064-4af8-aebe-ba25c1efe254"
+      },
+      {
+        "status": "submitted",
+        "confidence": "low",
+        "rationale": "Defensive rotation beneficiary with clean sentiment stack and no earnings risk \u2014 reasonable mean-reversion setup.",
+        "symbol": "BAC",
+        "qty": 1470,
+        "entry_price_est": 50.065,
+        "stop_price": 49.56,
+        "take_price": 51.07,
+        "order_id": "28a99d63-ace9-418a-94c1-54d37690245b"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-10-30",
+    "ts": "2026-10-30T19:53:31.507968Z",
+    "status": "ok",
+    "note": "2 orders submitted"
   }
 ]
