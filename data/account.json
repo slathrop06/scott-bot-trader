@@ -1,37 +1,9 @@
 {
-  "ts": "2026-10-29T23:05:26.991499Z",
-  "equity": 78825.67,
-  "last_equity": 79002.41,
-  "cash": 1253.53,
-  "buying_power": 222216.12,
-  "all_time_return_pct": -21.1743,
-  "positions": [
-    {
-      "symbol": "BA",
-      "qty": 151,
-      "avg_entry_price": 173.22,
-      "current_price": 170.7,
-      "market_value": 25775.7,
-      "unrealized_pl": -380.52,
-      "unrealized_pl_pct": -1.455
-    },
-    {
-      "symbol": "MA",
-      "qty": 41,
-      "avg_entry_price": 636.54,
-      "current_price": 641.0,
-      "market_value": 26281.0,
-      "unrealized_pl": 182.86,
-      "unrealized_pl_pct": 0.701
-    },
-    {
-      "symbol": "ORCL",
-      "qty": 190,
-      "avg_entry_price": 138.3305,
-      "current_price": 134.2918,
-      "market_value": 25515.44,
-      "unrealized_pl": -767.35,
-      "unrealized_pl_pct": -2.92
-    }
-  ]
+  "ts": "2026-10-30T18:24:53.185916Z",
+  "equity": 78605.83,
+  "last_equity": 79902.69,
+  "cash": 78605.83,
+  "buying_power": 314423.32,
+  "all_time_return_pct": -21.3942,
+  "positions": []
 }
