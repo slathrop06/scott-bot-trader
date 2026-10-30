@@ -1,37 +1,55 @@
 {
-  "ts": "2026-10-30T19:53:31.499497Z",
-  "equity": 79195.5,
+  "ts": "2026-10-30T22:33:28.648893Z",
+  "equity": 79246.93,
   "last_equity": 79902.69,
-  "cash": 1208.87,
-  "buying_power": 75921.25,
-  "all_time_return_pct": -20.8045,
+  "cash": -146061.2,
+  "buying_power": 46617.96,
+  "all_time_return_pct": -20.7531,
   "positions": [
+    {
+      "symbol": "AMZN",
+      "qty": 307,
+      "avg_entry_price": 239.9582,
+      "current_price": 240.2,
+      "market_value": 73741.4,
+      "unrealized_pl": 74.23,
+      "unrealized_pl_pct": 0.101
+    },
+    {
+      "symbol": "BAC",
+      "qty": 1470,
+      "avg_entry_price": 50.07,
+      "current_price": 50.01,
+      "market_value": 73514.7,
+      "unrealized_pl": -88.2,
+      "unrealized_pl_pct": -0.12
+    },
     {
       "symbol": "GS",
       "qty": 29,
       "avg_entry_price": 881.27,
-      "current_price": 892.1,
-      "market_value": 25870.9,
-      "unrealized_pl": 314.07,
-      "unrealized_pl_pct": 1.229
+      "current_price": 894.55,
+      "market_value": 25941.95,
+      "unrealized_pl": 385.12,
+      "unrealized_pl_pct": 1.507
     },
     {
       "symbol": "JPM",
       "qty": 77,
       "avg_entry_price": 335.69,
-      "current_price": 337.425,
-      "market_value": 25981.72,
-      "unrealized_pl": 133.59,
-      "unrealized_pl_pct": 0.517
+      "current_price": 337.04,
+      "market_value": 25952.08,
+      "unrealized_pl": 103.95,
+      "unrealized_pl_pct": 0.402
     },
     {
       "symbol": "ORCL",
       "qty": 200,
       "avg_entry_price": 129.96,
-      "current_price": 130.67,
-      "market_value": 26134.0,
-      "unrealized_pl": 142.0,
-      "unrealized_pl_pct": 0.546
+      "current_price": 130.79,
+      "market_value": 26158.0,
+      "unrealized_pl": 166.0,
+      "unrealized_pl_pct": 0.639
     }
   ]
 }
