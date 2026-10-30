@@ -31893,5 +31893,122 @@
     "ts": "2026-10-29T23:01:35.027656Z",
     "status": "ok",
     "note": "closed 3 positions, 0 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-30",
+    "ts": "2026-10-30T18:31:17.607431Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=41107621137"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-30",
+    "ts": "2026-10-30T18:31:39.427914Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-10-30",
+    "ts": "2026-10-30T18:31:41.912426Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-30",
+    "ts": "2026-10-30T18:31:44.316944Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-10-30",
+    "ts": "2026-10-30T18:32:41.216666Z",
+    "equity_start": 78605.83,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "JPM",
+          "confidence": "medium",
+          "catalyst": "Down -2.8% in sympathy with bank/AI selloff but no company-specific negative; defensive bounce candidate in a risk-off tape",
+          "smart_money_signals": "Insider cluster buy = 4 insiders buying vs only 1 selling in 30d (cluster_buy=True); 60% analyst buy",
+          "rationale": "Cleanest smart-money signal on the board \u2014 insider cluster buy with no contradicting news, pulled down by sector contagion rather than fundamentals."
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "Oversold -3.7% on broad AI/cloud spending concerns, no ORCL-specific bad news",
+          "smart_money_signals": "Insider cluster buy = 4 buyers (cluster_buy=True), 81% analyst buy rating",
+          "rationale": "Insider cluster buy + high analyst conviction gives a mean-reversion setup in a stock dragged by sector sentiment, not company fundamentals."
+        },
+        {
+          "symbol": "GS",
+          "confidence": "medium",
+          "catalyst": "Pulled -4.7% on bank AI-megadeal fears but no GS-specific negative news",
+          "smart_money_signals": "Insider cluster buy = 5 insiders buying (cluster_buy=True), Stocktwits 100% bullish on 30 msgs",
+          "rationale": "Strong insider cluster buy plus unanimous retail sentiment on an oversold financial creates asymmetric bounce setup."
+        }
+      ],
+      "market_take": "Risk-off tape with chip/AI bloodbath dragging indices; best setups are defensive mean-reversion names with insider cluster buying, not the chip wreckage.",
+      "skipped_movers": [
+        "INTC: -10% on weak guidance earnings print, falling knife \u2014 skip",
+        "AMD: direct chip sector contagion with no company catalyst to rebound on \u2014 skip",
+        "NVDA: heavy sector selloff with mixed insider/congress activity (net selling), Stocktwits only 42% bullish \u2014 skip",
+        "AMZN: just reported earnings with cash-flow concerns, insider + House selling \u2014 skip",
+        "PLTR: heavy insider selling (4 sells, 3 insiders) \u2014 disqualifier",
+        "AVGO: Stocktwits only 33% bullish + House selling in chip bloodbath \u2014 skip",
+        "QQQ: Stocktwits 23% bearish, momentum down \u2014 skip",
+        "SHOP: no catalyst, no smart-money edge, just sector drift \u2014 skip",
+        "CAT: analyst price target cut by JPM \u2014 fresh negative catalyst",
+        "BAC: analyst price target cut by JPM + House selling \u2014 skip",
+        "MS: ex-dividend price drop (mechanical), weak signal stack \u2014 skip",
+        "GE: defensive but no smart-money edge beyond sentiment \u2014 skip"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Cleanest smart-money signal on the board \u2014 insider cluster buy with no contradicting news, pulled down by sector contagion rather than fundamentals.",
+        "symbol": "JPM",
+        "qty": 77,
+        "entry_price_est": 335.625,
+        "stop_price": 332.27,
+        "take_price": 342.34,
+        "order_id": "b501f1b7-4ff0-44b9-a3cc-bd29dd6a08d6"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Insider cluster buy + high analyst conviction gives a mean-reversion setup in a stock dragged by sector sentiment, not company fundamentals.",
+        "symbol": "ORCL",
+        "qty": 200,
+        "entry_price_est": 129.69,
+        "stop_price": 128.39,
+        "take_price": 132.28,
+        "order_id": "2e737ad0-c317-4f2c-b92c-ac9cb0f1afab"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strong insider cluster buy plus unanimous retail sentiment on an oversold financial creates asymmetric bounce setup.",
+        "symbol": "GS",
+        "qty": 29,
+        "entry_price_est": 878.4300000000001,
+        "stop_price": 869.65,
+        "take_price": 896.0,
+        "order_id": "dda93d72-1664-42df-b66d-e03e5ae54a76"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-10-30",
+    "ts": "2026-10-30T18:32:41.397955Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
