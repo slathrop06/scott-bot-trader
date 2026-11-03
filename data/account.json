@@ -1,9 +1,28 @@
 {
-  "ts": "2026-11-03T19:57:14.009435Z",
-  "equity": 80610.81,
+  "ts": "2026-11-03T20:51:51.630543Z",
+  "equity": 80544.25,
   "last_equity": 80610.81,
-  "cash": 80610.81,
-  "buying_power": 322443.24,
-  "all_time_return_pct": -19.3892,
-  "positions": []
+  "cash": 27869.75,
+  "buying_power": 3376.64,
+  "all_time_return_pct": -19.4557,
+  "positions": [
+    {
+      "symbol": "AMZN",
+      "qty": 105,
+      "avg_entry_price": 251.62,
+      "current_price": 251.64,
+      "market_value": 26422.2,
+      "unrealized_pl": 2.1,
+      "unrealized_pl_pct": 0.008
+    },
+    {
+      "symbol": "GE",
+      "qty": 82,
+      "avg_entry_price": 320.9873,
+      "current_price": 320.15,
+      "market_value": 26252.3,
+      "unrealized_pl": -68.66,
+      "unrealized_pl_pct": -0.261
+    }
+  ]
 }

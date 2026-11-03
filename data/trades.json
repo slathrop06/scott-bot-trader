@@ -32331,5 +32331,106 @@
     "ts": "2026-11-03T20:02:47.826778Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-03",
+    "ts": "2026-11-03T20:50:41.211195Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=41716255083"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-11-03",
+    "ts": "2026-11-03T20:51:03.360712Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-11-03",
+    "ts": "2026-11-03T20:51:51.490305Z",
+    "equity_start": 80548.62,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "ORCL",
+          "confidence": "high",
+          "catalyst": "Up +5.37% on Deloitte-Oracle dedicated AI/cloud business group announcement; strong intraday breakout with heavy volume (62M)",
+          "smart_money_signals": "Insider cluster buy (4 buyers), Stocktwits 86% bullish on 30 msgs, 81% analyst buy rating",
+          "rationale": "Rare stack of fresh catalyst + insider cluster + bullish sentiment with price confirming."
+        },
+        {
+          "symbol": "AVGO",
+          "confidence": "medium",
+          "catalyst": "Up +2.57% showing relative strength in semis despite Marvell downgrade drag on sector",
+          "smart_money_signals": "Stocktwits 87% bullish on 30 msgs, 95% analyst buy (17SB/37B/3H)",
+          "rationale": "Strong momentum with best-in-class analyst conviction and bullish retail sentiment, only minor House selling."
+        },
+        {
+          "symbol": "COST",
+          "confidence": "low",
+          "catalyst": "Pullback -1.82% but insider cluster buy is unusual for a defensive name",
+          "smart_money_signals": "Insider cluster buy with 14 buyers (very rare), WSB chatter 6x normal, Stocktwits 71% bullish",
+          "rationale": "Smart-money edge on 14-insider cluster buy offsets the red tape; contrarian dip-buy."
+        }
+      ],
+      "market_take": "Mixed tape with growth/AI leading (ORCL, AVGO, MSFT, META green) while consumer/defensive lags.",
+      "skipped_movers": [
+        "SHOP: -9.42% with no news and 31% bullish Stocktwits \u2014 falling knife",
+        "MSFT: heavy insider selling (4 sells, 2 insiders) + House selling",
+        "WMT: heavy insider selling (9 sells, 6 insiders)",
+        "META: heavy insider selling (21 sells)",
+        "TSLA: WSB top-8 but 42% bullish Stocktwits and price down",
+        "HD: House net selling and price down with no bullish catalyst",
+        "ADBE: only 33% analyst buy, price down",
+        "NKE: 28.6% analyst buy, insider selling",
+        "MA: insider selling, price down",
+        "CRM: no catalyst, price down"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Rare stack of fresh catalyst + insider cluster + bullish sentiment with price confirming.",
+        "symbol": "ORCL",
+        "qty": 675,
+        "entry_price_est": 126.465,
+        "stop_price": 125.2,
+        "take_price": 128.99,
+        "order_id": "17372f3b-a536-44f7-b309-faab58b5be82"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strong momentum with best-in-class analyst conviction and bullish retail sentiment, only minor House selling.",
+        "symbol": "AVGO",
+        "qty": 258,
+        "entry_price_est": 330.975,
+        "stop_price": 327.67,
+        "take_price": 337.59,
+        "order_id": "989fba2d-5c89-439e-988a-52c7772d7b6c"
+      },
+      {
+        "status": "submitted",
+        "confidence": "low",
+        "rationale": "Smart-money edge on 14-insider cluster buy offsets the red tape; contrarian dip-buy.",
+        "symbol": "COST",
+        "qty": 83,
+        "entry_price_est": 1018.8399999999999,
+        "stop_price": 1008.65,
+        "take_price": 1039.22,
+        "order_id": "38261160-f775-4f4d-839e-60b6d4f5052e"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-11-03",
+    "ts": "2026-11-03T20:51:51.637017Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
