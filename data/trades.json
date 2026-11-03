@@ -32221,5 +32221,115 @@
     "ts": "2026-11-03T01:22:05.408055Z",
     "status": "ok",
     "note": "closed 0 positions, 0 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-03",
+    "ts": "2026-11-03T20:01:17.509706Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=41708623772"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-03",
+    "ts": "2026-11-03T20:01:34.596424Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-03",
+    "ts": "2026-11-03T20:01:36.233264Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-11-03",
+    "ts": "2026-11-03T20:01:37.925108Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-11-03",
+    "ts": "2026-11-03T20:02:47.680134Z",
+    "equity_start": 80610.81,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "ORCL",
+          "confidence": "high",
+          "catalyst": "Deloitte-Oracle dedicated AI/cloud business group announcement driving +3.86% premarket gap with heavy volume (57M)",
+          "smart_money_signals": "Insider cluster buy (4 insiders in 30d), 81% analyst bullish (15SB/23B), 60% stocktwits bullish",
+          "rationale": "Only name combining a fresh positive catalyst, gap-up price action, AND insider cluster buy \u2014 cleanest stack on the board"
+        },
+        {
+          "symbol": "AMZN",
+          "confidence": "medium",
+          "catalyst": "Gap up +1.94% on strong volume (23M) riding AI/cloud rebound tape alongside MSFT Azure strength",
+          "smart_money_signals": "94% stocktwits bullish on 30 msgs, 96% analyst buy (19SB/48B/3H/0S) \u2014 near-universal analyst conviction",
+          "rationale": "Clean relative strength with no contradicting insider selling and best-in-class analyst conviction"
+        },
+        {
+          "symbol": "GE",
+          "confidence": "medium",
+          "catalyst": "Steady +1.76% gap with no negative news; industrial strength holding into election-day crosscurrents",
+          "smart_money_signals": "100% stocktwits bullish on 30 msgs, 84% analyst buy, zero insider/congress selling flags",
+          "rationale": "Cleanest signal profile \u2014 no red flags anywhere, unanimous retail sentiment, and quiet accumulation"
+        }
+      ],
+      "market_take": "Mixed tape with AI/cloud names leading rebound while consumer and SHOP post-earnings get sold \u2014 stick to catalyst-backed strength",
+      "skipped_movers": [
+        "SHOP: -9% post-earnings gap down, revenue miss \u2014 avoid knife catch",
+        "MSFT: 4 insider sells + 39% stocktwits bullish contradicts the gap",
+        "WMT: 9 insider sells (6 insiders) + 40% stocktwits bullish on red tape",
+        "META: 21 insider sells in 30d despite bounce",
+        "TSLA: red premarket + House selling + only 53% bullish",
+        "HD: earnings Nov 17 approaching + House selling + red tape",
+        "COST: red -1.54% contradicts the insider cluster buy today",
+        "MA: red tape + 3 insider sells",
+        "ADBE: red -2.36% with only 33% analyst buy",
+        "NKE: red tape + 28% analyst buy (bearish consensus)",
+        "AVGO: positive but Marvell downgrade spillover risk in semis"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "failed",
+        "symbol": "ORCL",
+        "error": "{\"base_price\":\"124.57\",\"code\":42210000,\"message\":\"stop_loss.stop_price must be \\u003c= base_price - 0.01\"}"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean relative strength with no contradicting insider selling and best-in-class analyst conviction",
+        "symbol": "AMZN",
+        "qty": 105,
+        "entry_price_est": 251.61,
+        "stop_price": 249.09,
+        "take_price": 256.64,
+        "order_id": "59681a79-bb01-45b3-8193-b5bfdbfaf8d2"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Cleanest signal profile \u2014 no red flags anywhere, unanimous retail sentiment, and quiet accumulation",
+        "symbol": "GE",
+        "qty": 82,
+        "entry_price_est": 322.925,
+        "stop_price": 319.7,
+        "take_price": 329.38,
+        "order_id": "32923977-2bbd-4e90-9e87-865b29909862"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-11-03",
+    "ts": "2026-11-03T20:02:47.826778Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
