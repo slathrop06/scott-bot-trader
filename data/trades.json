@@ -32495,5 +32495,44 @@
     "ts": "2026-11-04T21:07:51.716569Z",
     "status": "blocked",
     "note": "Market is closed."
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-04",
+    "ts": "2026-11-04T23:59:00.057440Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=41937871223"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-11-04",
+    "ts": "2026-11-04T23:59:22.732464Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-11-04",
+    "ts": "2026-11-04T23:59:23.166663Z",
+    "equity_end": 83067.37,
+    "daily_pnl_usd": 2709.96,
+    "daily_pct": 3.3724,
+    "flatten": {
+      "closed": [
+        "AMZN",
+        "AVGO",
+        "COST",
+        "GE",
+        "ORCL"
+      ],
+      "raw_response_count": 5
+    }
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-11-04",
+    "ts": "2026-11-04T23:59:23.384878Z",
+    "status": "ok",
+    "note": "closed 5 positions, 0 round-trips"
   }
 ]
