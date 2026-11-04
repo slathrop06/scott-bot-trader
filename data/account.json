@@ -1,55 +1,55 @@
 {
-  "ts": "2026-11-04T00:27:29.195993Z",
-  "equity": 78157.65,
-  "last_equity": 80610.81,
-  "cash": -227726.34,
+  "ts": "2026-11-04T20:16:38.330133Z",
+  "equity": 82719.73,
+  "last_equity": 80357.41,
+  "cash": -227726.35,
   "buying_power": 0.0,
-  "all_time_return_pct": -21.8424,
+  "all_time_return_pct": -17.2803,
   "positions": [
     {
       "symbol": "AMZN",
       "qty": 105,
       "avg_entry_price": 251.62,
-      "current_price": 248.04,
-      "market_value": 26044.2,
-      "unrealized_pl": -375.9,
-      "unrealized_pl_pct": -1.423
+      "current_price": 267.88,
+      "market_value": 28127.4,
+      "unrealized_pl": 1707.3,
+      "unrealized_pl_pct": 6.462
     },
     {
       "symbol": "AVGO",
       "qty": 258,
       "avg_entry_price": 331.55,
-      "current_price": 329.81,
-      "market_value": 85090.98,
-      "unrealized_pl": -448.92,
-      "unrealized_pl_pct": -0.525
+      "current_price": 325.83,
+      "market_value": 84064.14,
+      "unrealized_pl": -1475.76,
+      "unrealized_pl_pct": -1.725
     },
     {
       "symbol": "COST",
       "qty": 83,
       "avg_entry_price": 1020.43,
-      "current_price": 1015.22,
-      "market_value": 84263.26,
-      "unrealized_pl": -432.43,
-      "unrealized_pl_pct": -0.511
+      "current_price": 1049.515,
+      "market_value": 87109.74,
+      "unrealized_pl": 2414.05,
+      "unrealized_pl_pct": 2.85
     },
     {
       "symbol": "GE",
       "qty": 82,
       "avg_entry_price": 320.9873,
-      "current_price": 320.15,
-      "market_value": 26252.3,
-      "unrealized_pl": -68.66,
-      "unrealized_pl_pct": -0.261
+      "current_price": 329.095,
+      "market_value": 26985.79,
+      "unrealized_pl": 664.83,
+      "unrealized_pl_pct": 2.526
     },
     {
       "symbol": "ORCL",
       "qty": 675,
       "avg_entry_price": 126.46,
-      "current_price": 124.79,
-      "market_value": 84233.25,
-      "unrealized_pl": -1127.25,
-      "unrealized_pl_pct": -1.321
+      "current_price": 124.68,
+      "market_value": 84159.0,
+      "unrealized_pl": -1201.5,
+      "unrealized_pl_pct": -1.408
     }
   ]
 }
