@@ -32668,5 +32668,57 @@
     "ts": "2026-11-05T21:23:51.177228Z",
     "status": "blocked",
     "note": "Market is closed."
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-05",
+    "ts": "2026-11-05T23:52:03.578072Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=42132615377"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-11-05",
+    "ts": "2026-11-05T23:52:22.057196Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-11-05",
+    "ts": "2026-11-05T23:52:22.604509Z",
+    "equity_end": 78441.33,
+    "daily_pnl_usd": -3128.97,
+    "daily_pct": -3.8359,
+    "flatten": {
+      "closed": [
+        "ORCL",
+        "PLTR"
+      ],
+      "raw_response_count": 2
+    }
+  },
+  {
+    "type": "trade",
+    "date": "2026-11-05",
+    "ts": "2026-11-05T23:52:22.697952Z",
+    "symbol": "INTC",
+    "qty": 487,
+    "entry_price": 53.8338,
+    "entry_ts": "2026-11-05T20:34:45.730549Z",
+    "entry_order_id": "3606b95e-f803-487e-98e8-d9bb9204d0ec",
+    "exit_price": 53.36,
+    "exit_ts": "2026-11-05T20:50:14.966129Z",
+    "exit_order_id": "27737489-aba7-4388-bec2-b5ed116f7ece",
+    "exit_reason": "bracket",
+    "pnl_usd": -230.74,
+    "pnl_pct": -0.8801
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-11-05",
+    "ts": "2026-11-05T23:52:22.842650Z",
+    "status": "ok",
+    "note": "closed 2 positions, 1 round-trips"
   }
 ]
