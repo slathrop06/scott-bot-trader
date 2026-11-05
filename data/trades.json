@@ -32534,5 +32534,118 @@
     "ts": "2026-11-04T23:59:23.384878Z",
     "status": "ok",
     "note": "closed 5 positions, 0 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-05",
+    "ts": "2026-11-05T20:33:39.171484Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=42104500660"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-05",
+    "ts": "2026-11-05T20:33:56.773006Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-05",
+    "ts": "2026-11-05T20:33:58.838640Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-11-05",
+    "ts": "2026-11-05T20:34:00.580250Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-11-05",
+    "ts": "2026-11-05T20:34:44.586931Z",
+    "equity_start": 79585.93,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "INTC",
+          "confidence": "medium",
+          "catalyst": "CEO Lip-Bu Tan just bought $9.7M of stock (150k shares); technical bounce signal already flashed at $52.55 with 6% intraday reaction noted",
+          "smart_money_signals": "CEO insider buy $9.7M (high conviction), WSB chatter 3.35x normal rank #16, stocktwits 64% bullish; less AI-exposed than peers so less vulnerable to the data-center narrative hit",
+          "rationale": "CEO cash buy at these levels is the strongest smart-money signal in the list, and INTC has the cleanest setup for a bounce since it's not the epicenter of the AI rout."
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "Oversold -7% into broad AI selloff on only a minor permit-delay story; 81% analyst buy rating provides floor",
+          "smart_money_signals": "Insider cluster buy with 4 distinct buyers in last 30d (cluster_buy=True), 80.9% analyst bullish (15 Strong Buy / 23 Buy), stocktwits 64% bullish",
+          "rationale": "Insider cluster of 4 buyers plus near-universal analyst support sets up a mean-reversion bounce after a sector-wide washout rather than name-specific damage."
+        },
+        {
+          "symbol": "PLTR",
+          "confidence": "low",
+          "catalyst": "Deep -9% flush on sector rotation with no company-specific negative catalyst beyond general AI/defense spending worries",
+          "smart_money_signals": "Insider cluster buy (3 buyers in 30d, cluster_buy=True), WSB chatter 6.4x normal, 75.6% analyst bullish (12SB/19B)",
+          "rationale": "Highest alt-data score (7/10) in the list with insider cluster buy supporting a bounce trade, though the news flow is the weakest of the three."
+        }
+      ],
+      "market_take": "Brutal post-midterm AI/chip rout with VIX +39% \u2014 taking contrarian bounce setups where insider buying signals conviction, not chasing momentum.",
+      "skipped_movers": [
+        "NVDA: heavy insider selling and epicenter of the rout \u2014 skip despite WSB chatter",
+        "AMD: no insider/congress support, pure sector carnage with -14.8% knife",
+        "TSLA: House selling + weak analyst mix (only 53.7% bullish) + Uber-adjacent weakness",
+        "AVGO: House selling and stocktwits only 40% bullish",
+        "JPM: heavy insider selling + stocktwits 25% bearish + Epstein probe headline risk",
+        "MS: heavy insider selling flag",
+        "GS: insider sells outnumber buys 14 to 5 \u2014 net selling despite cluster",
+        "QQQ/IWM/SHOP/CAT/GE: weak alt-data, no catalyst"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "CEO cash buy at these levels is the strongest smart-money signal in the list, and INTC has the cleanest setup for a bounce since it's not the epicenter of the AI rout.",
+        "symbol": "INTC",
+        "qty": 487,
+        "entry_price_est": 53.835,
+        "stop_price": 53.3,
+        "take_price": 54.91,
+        "order_id": "3606b95e-f803-487e-98e8-d9bb9204d0ec"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Insider cluster of 4 buyers plus near-universal analyst support sets up a mean-reversion bounce after a sector-wide washout rather than name-specific damage.",
+        "symbol": "ORCL",
+        "qty": 228,
+        "entry_price_est": 114.91999999999999,
+        "stop_price": 113.77,
+        "take_price": 117.22,
+        "order_id": "c1b4e844-654f-4a2d-936b-d8020ebf9765"
+      },
+      {
+        "status": "submitted",
+        "confidence": "low",
+        "rationale": "Highest alt-data score (7/10) in the list with insider cluster buy supporting a bounce trade, though the news flow is the weakest of the three.",
+        "symbol": "PLTR",
+        "qty": 169,
+        "entry_price_est": 155.20499999999998,
+        "stop_price": 153.65,
+        "take_price": 158.31,
+        "order_id": "4d69a626-0153-4d91-a7b5-580f87555221"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-11-05",
+    "ts": "2026-11-05T20:34:44.628937Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
