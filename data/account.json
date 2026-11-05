@@ -1,55 +1,9 @@
 {
-  "ts": "2026-11-05T00:58:53.599483Z",
-  "equity": 81666.86,
-  "last_equity": 80357.41,
-  "cash": -227726.35,
-  "buying_power": 0.0,
-  "all_time_return_pct": -18.3331,
-  "positions": [
-    {
-      "symbol": "AMZN",
-      "qty": 105,
-      "avg_entry_price": 251.62,
-      "current_price": 265.4597,
-      "market_value": 27873.27,
-      "unrealized_pl": 1453.17,
-      "unrealized_pl_pct": 5.5
-    },
-    {
-      "symbol": "AVGO",
-      "qty": 258,
-      "avg_entry_price": 331.55,
-      "current_price": 323.3,
-      "market_value": 83411.4,
-      "unrealized_pl": -2128.5,
-      "unrealized_pl_pct": -2.488
-    },
-    {
-      "symbol": "COST",
-      "qty": 83,
-      "avg_entry_price": 1020.43,
-      "current_price": 1054.9785,
-      "market_value": 87563.22,
-      "unrealized_pl": 2867.53,
-      "unrealized_pl_pct": 3.386
-    },
-    {
-      "symbol": "GE",
-      "qty": 82,
-      "avg_entry_price": 320.9873,
-      "current_price": 329.44,
-      "market_value": 27014.08,
-      "unrealized_pl": 693.12,
-      "unrealized_pl_pct": 2.633
-    },
-    {
-      "symbol": "ORCL",
-      "qty": 675,
-      "avg_entry_price": 126.46,
-      "current_price": 123.75,
-      "market_value": 83531.25,
-      "unrealized_pl": -1829.25,
-      "unrealized_pl_pct": -2.143
-    }
-  ]
+  "ts": "2026-11-05T20:28:05.636426Z",
+  "equity": 79585.93,
+  "last_equity": 81570.3,
+  "cash": 79585.93,
+  "buying_power": 318343.72,
+  "all_time_return_pct": -20.4141,
+  "positions": []
 }
