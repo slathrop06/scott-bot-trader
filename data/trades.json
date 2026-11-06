@@ -32720,5 +32720,118 @@
     "ts": "2026-11-05T23:52:22.842650Z",
     "status": "ok",
     "note": "closed 2 positions, 1 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-06",
+    "ts": "2026-11-06T19:54:51.472048Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=42283767585"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-06",
+    "ts": "2026-11-06T19:55:11.627410Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-06",
+    "ts": "2026-11-06T19:55:14.143705Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-11-06",
+    "ts": "2026-11-06T19:55:16.015931Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-11-06",
+    "ts": "2026-11-06T19:56:02.575015Z",
+    "equity_start": 80515.39,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "NVDA",
+          "confidence": "high",
+          "catalyst": "Chip sector rebound +3.8% premarket after worst Nasdaq day since 2020; BofA notes chips at 22% discount to S&P; payrolls beat lifting risk-on",
+          "smart_money_signals": "House cluster buy (5 buys by Salazar, Fields in 21d), 95.7% analyst bullish (25SB/41B), top-4 WSB with 233 mentions, stocktwits 83% bullish",
+          "rationale": "Stacked catalyst + smart money with House cluster buy and near-universal analyst conviction on a sector bounce day"
+        },
+        {
+          "symbol": "GOOGL",
+          "confidence": "medium",
+          "catalyst": "SpaceX stake now worth $69B (headline tailwind), participating in broad megacap bounce +2.1%",
+          "smart_money_signals": "Insider cluster buy (7 distinct buyers in 30d), 89.7% analyst bullish (20SB/41B)",
+          "rationale": "Rare insider cluster buy at 7 buyers plus strong analyst conviction provides smart-money edge independent of price action"
+        },
+        {
+          "symbol": "PLTR",
+          "confidence": "medium",
+          "catalyst": "Gap up +5.1% participating in risk-on rebound with no negative news",
+          "smart_money_signals": "Insider cluster buy (3 distinct buyers in 30d), 75.6% analyst bullish (12SB/19B)",
+          "rationale": "Clean insider cluster buy plus strong analyst backing on a bounce day with no disqualifiers"
+        }
+      ],
+      "market_take": "Risk-on rebound after payrolls beat; Nasdaq bouncing from worst day since 2020 with chips and megacaps leading",
+      "skipped_movers": [
+        "AMD: huge +10% gap already stretched, WSB mentions declining 0.63x despite rank",
+        "INTC: +10% gap stretched with only 29% analyst bullish \u2014 weak conviction",
+        "TSLA: House selling and only 57% stocktwits bullish",
+        "META: 29 insider sells in 30d is heavy distribution",
+        "AMZN: heavy insider + House selling",
+        "NFLX: gapping down, no catalyst",
+        "SHOP: stocktwits only 44% bullish",
+        "HD: gapping down with House selling"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Stacked catalyst + smart money with House cluster buy and near-universal analyst conviction on a sector bounce day",
+        "symbol": "NVDA",
+        "qty": 141,
+        "entry_price_est": 187.76,
+        "stop_price": 185.88,
+        "take_price": 191.52,
+        "order_id": "ad04e6fd-7ff7-4e45-87d1-6f518daa743d"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Rare insider cluster buy at 7 buyers plus strong analyst conviction provides smart-money edge independent of price action",
+        "symbol": "GOOGL",
+        "qty": 93,
+        "entry_price_est": 285.135,
+        "stop_price": 282.28,
+        "take_price": 290.84,
+        "order_id": "faa759bd-19bb-419d-875a-ef23b116b52f"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean insider cluster buy plus strong analyst backing on a bounce day with no disqualifiers",
+        "symbol": "PLTR",
+        "qty": 164,
+        "entry_price_est": 161.26,
+        "stop_price": 159.65,
+        "take_price": 164.49,
+        "order_id": "687af2e8-f6dd-408a-b1a4-a959e6b3903d"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-11-06",
+    "ts": "2026-11-06T19:56:02.751029Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
