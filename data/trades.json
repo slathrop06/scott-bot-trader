@@ -32833,5 +32833,103 @@
     "ts": "2026-11-06T19:56:02.751029Z",
     "status": "ok",
     "note": "3 orders submitted"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-06",
+    "ts": "2026-11-06T20:44:48.206653Z",
+    "status": "intraday_workflow_started",
+    "note": "event=schedule run_id=42290922935"
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-11-06",
+    "ts": "2026-11-06T20:45:15.590181Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-11-06",
+    "ts": "2026-11-06T20:46:03.443386Z",
+    "equity_start": 80497.25,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "BA",
+          "confidence": "medium",
+          "catalyst": "Steady +1.6% move with clean tape, no contradicting news, participating in broad risk-on rally",
+          "smart_money_signals": "Net insider buying (2 buys, 0 sells), 100% bullish stocktwits (30 msgs), 92% analyst buy (13SB/21B/3H/0S)",
+          "rationale": "Cleanest smart-money stack of the day \u2014 insider buys + perfect sentiment + strong analyst conviction with no red flags."
+        },
+        {
+          "symbol": "AMD",
+          "confidence": "medium",
+          "catalyst": "Chip rally +10.95% on payrolls beat; SOX at 22% discount to S&P per BofA note; strong momentum continuation setup",
+          "smart_money_signals": "Top-7 WSB (101 mentions), stocktwits 86% bullish on 30 msgs, 83% analyst buy (17SB/33B)",
+          "rationale": "Strongest catalyst + sentiment combo \u2014 chip bounce has legs with jobs tailwind and broad analyst support."
+        },
+        {
+          "symbol": "GE",
+          "confidence": "medium",
+          "catalyst": "Steady +3.75% advance participating in growth-sector leadership, no negative news",
+          "smart_money_signals": "Stocktwits 92% bullish (30 msgs), 84% analyst buy (9SB/18B/4H/1S)",
+          "rationale": "Low-drama industrial with strong sentiment alignment and clean chart \u2014 good diversifier away from chip concentration."
+        }
+      ],
+      "market_take": "Risk-on rebound after payrolls beat; chips and growth leading, defensives trailing \u2014 favorable tape for long setups.",
+      "skipped_movers": [
+        "META: 29 insider sells from 3 insiders is heavy distribution",
+        "AMZN: insider + House selling despite strong analyst book",
+        "TSLA: House selling + stocktwits only 36% bullish",
+        "NFLX: red on the day, not a momentum long",
+        "INTC: weak 29% analyst bullish, no news catalyst",
+        "QQQ: ETF, stocktwits only 40% bullish",
+        "SHOP: stocktwits 44% bullish contradicts price action"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Cleanest smart-money stack of the day \u2014 insider buys + perfect sentiment + strong analyst conviction with no red flags.",
+        "symbol": "BA",
+        "qty": 432,
+        "entry_price_est": 172.8,
+        "stop_price": 171.07,
+        "take_price": 176.26,
+        "order_id": "3e1e4573-c7c0-4d28-93a7-74f2d009916a"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Strongest catalyst + sentiment combo \u2014 chip bounce has legs with jobs tailwind and broad analyst support.",
+        "symbol": "AMD",
+        "qty": 167,
+        "entry_price_est": 447.265,
+        "stop_price": 442.79,
+        "take_price": 456.21,
+        "order_id": "41bf1466-4b14-4e90-9a36-1a1a4880551b"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Low-drama industrial with strong sentiment alignment and clean chart \u2014 good diversifier away from chip concentration.",
+        "symbol": "GE",
+        "qty": 230,
+        "entry_price_est": 324.2,
+        "stop_price": 320.96,
+        "take_price": 330.68,
+        "order_id": "29a97e4c-4438-4b40-8716-81b2ab02b970"
+      }
+    ]
+  },
+  {
+    "type": "intraday_late_attempt",
+    "date": "2026-11-06",
+    "ts": "2026-11-06T20:46:03.550576Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]

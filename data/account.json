@@ -1,9 +1,37 @@
 {
-  "ts": "2026-11-06T19:50:55.899224Z",
-  "equity": 80515.39,
+  "ts": "2026-11-06T20:46:03.543837Z",
+  "equity": 80466.89,
   "last_equity": 79294.82,
-  "cash": 80515.39,
-  "buying_power": 322061.56,
-  "all_time_return_pct": -19.4846,
-  "positions": []
+  "cash": 1083.94,
+  "buying_power": 2615.8,
+  "all_time_return_pct": -19.5331,
+  "positions": [
+    {
+      "symbol": "GOOGL",
+      "qty": 93,
+      "avg_entry_price": 285.1765,
+      "current_price": 285.85,
+      "market_value": 26584.05,
+      "unrealized_pl": 62.64,
+      "unrealized_pl_pct": 0.236
+    },
+    {
+      "symbol": "NVDA",
+      "qty": 141,
+      "avg_entry_price": 187.8,
+      "current_price": 187.32,
+      "market_value": 26412.12,
+      "unrealized_pl": -67.68,
+      "unrealized_pl_pct": -0.256
+    },
+    {
+      "symbol": "PLTR",
+      "qty": 164,
+      "avg_entry_price": 161.16,
+      "current_price": 160.895,
+      "market_value": 26386.78,
+      "unrealized_pl": -43.46,
+      "unrealized_pl_pct": -0.164
+    }
+  ]
 }
