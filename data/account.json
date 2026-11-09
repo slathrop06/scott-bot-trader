@@ -1,64 +1,9 @@
 {
-  "ts": "2026-11-06T23:57:03.663050Z",
-  "equity": 80284.42,
-  "last_equity": 79294.82,
-  "cash": -222964.84,
-  "buying_power": 0.0,
-  "all_time_return_pct": -19.7156,
-  "positions": [
-    {
-      "symbol": "AMD",
-      "qty": 167,
-      "avg_entry_price": 447.36,
-      "current_price": 446.72,
-      "market_value": 74602.24,
-      "unrealized_pl": -106.88,
-      "unrealized_pl_pct": -0.143
-    },
-    {
-      "symbol": "BA",
-      "qty": 432,
-      "avg_entry_price": 173.38,
-      "current_price": 173.2783,
-      "market_value": 74856.23,
-      "unrealized_pl": -43.93,
-      "unrealized_pl_pct": -0.059
-    },
-    {
-      "symbol": "GE",
-      "qty": 230,
-      "avg_entry_price": 323.65,
-      "current_price": 323.29,
-      "market_value": 74356.7,
-      "unrealized_pl": -82.8,
-      "unrealized_pl_pct": -0.111
-    },
-    {
-      "symbol": "GOOGL",
-      "qty": 93,
-      "avg_entry_price": 285.1765,
-      "current_price": 285.45,
-      "market_value": 26546.85,
-      "unrealized_pl": 25.44,
-      "unrealized_pl_pct": 0.096
-    },
-    {
-      "symbol": "NVDA",
-      "qty": 141,
-      "avg_entry_price": 187.8,
-      "current_price": 188.0693,
-      "market_value": 26517.77,
-      "unrealized_pl": 37.97,
-      "unrealized_pl_pct": 0.143
-    },
-    {
-      "symbol": "PLTR",
-      "qty": 164,
-      "avg_entry_price": 161.16,
-      "current_price": 160.7895,
-      "market_value": 26369.48,
-      "unrealized_pl": -60.76,
-      "unrealized_pl_pct": -0.23
-    }
-  ]
+  "ts": "2026-11-09T22:51:50.627199Z",
+  "equity": 86132.36,
+  "last_equity": 80380.82,
+  "cash": 86132.36,
+  "buying_power": 344529.44,
+  "all_time_return_pct": -13.8676,
+  "positions": []
 }
