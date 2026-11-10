@@ -33196,5 +33196,12 @@
     "ts": "2026-11-10T21:14:18.119379Z",
     "status": "blocked",
     "note": "Market is closed."
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T23:47:09.149443Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=42926168587"
   }
 ]
