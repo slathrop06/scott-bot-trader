@@ -33060,5 +33060,120 @@
     "ts": "2026-11-10T01:47:14.059947Z",
     "status": "ok",
     "note": "closed 0 positions, 0 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T20:24:03.882036Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=42894887463"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T20:24:27.486365Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T20:24:29.138683Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T20:24:31.040405Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T20:25:24.212738Z",
+    "equity_start": 86125.98,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AVGO",
+          "confidence": "high",
+          "catalyst": "Gap up +3% on JPMorgan note highlighting Broadcom as beneficiary of Google's new TPU doubling compute; VMware AI infra upgrade adds second tailwind on a day when all other mega-cap chips are red",
+          "smart_money_signals": "94% stocktwits bullish (30 msgs), 95% analyst buy (17SB/37B/3H/0S)",
+          "rationale": "Only AI-chip name showing green premarket with a concrete analyst-cited catalyst \u2014 textbook relative strength setup"
+        },
+        {
+          "symbol": "BA",
+          "confidence": "medium",
+          "catalyst": "Up +0.7% while all 11 sectors red yesterday; October delivery report of 49 jets confirms production ramp",
+          "smart_money_signals": "2 insider buys / 0 sells (30d), 92% analyst buy (13SB/21B/3H), 88% stocktwits bullish",
+          "rationale": "Clean relative strength on a tape-wide red day with supportive insider buying and no contradicting news"
+        },
+        {
+          "symbol": "GOOGL",
+          "confidence": "medium",
+          "catalyst": "Google unveiled new TPU chips for 2027 and expanded Gemini 4 Carbon access; pullback is shallow (-1.2%) vs broader tech selloff",
+          "smart_money_signals": "Insider cluster buy (7 buyers, 30d), 90% analyst buy, 78% stocktwits bullish",
+          "rationale": "Stacked smart-money (cluster insider buy + high analyst conviction) with concrete product catalyst and relative outperformance vs NVDA/MSFT"
+        }
+      ],
+      "market_take": "Risk-off tape on hot CPI and 5% 10Y yield; favor relative-strength names with firm-specific catalysts over dip-buying broken leaders",
+      "skipped_movers": [
+        "NVDA: -6.5% on CPI + AMD share-gain narrative, catches-a-knife risk despite House cluster buy",
+        "MSFT: 17% stocktwits bullish (bearish threshold) + heavy insider selling",
+        "AMZN: heavy insider + House selling despite gap up",
+        "INTC: analyst base only 29% bullish, no catalyst",
+        "ORCL: Eisman bearish headline offsets insider cluster buy",
+        "NFLX: insider sells (22) exceed buys (19), no catalyst",
+        "PLTR: down with tape, no fresh catalyst beyond small-broker initiation",
+        "CAT: -3% on AI capex concerns, sector-wide weakness",
+        "NKE: heavy insider selling + analysts only 29% bullish",
+        "SHOP: -4% with no news and weak signal score"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Only AI-chip name showing green premarket with a concrete analyst-cited catalyst \u2014 textbook relative strength setup",
+        "symbol": "AVGO",
+        "qty": 85,
+        "entry_price_est": 332.34000000000003,
+        "stop_price": 329.02,
+        "take_price": 338.99,
+        "order_id": "eb899de6-b619-4a90-ad88-9b98e705af98"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean relative strength on a tape-wide red day with supportive insider buying and no contradicting news",
+        "symbol": "BA",
+        "qty": 163,
+        "entry_price_est": 174.20499999999998,
+        "stop_price": 172.46,
+        "take_price": 177.69,
+        "order_id": "b5b27079-94c4-4323-b0ff-a8ac32be8fc3"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Stacked smart-money (cluster insider buy + high analyst conviction) with concrete product catalyst and relative outperformance vs NVDA/MSFT",
+        "symbol": "GOOGL",
+        "qty": 98,
+        "entry_price_est": 288.43,
+        "stop_price": 285.55,
+        "take_price": 294.2,
+        "order_id": "4e3ad024-1b57-45aa-97b3-36e99e816544"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-11-10",
+    "ts": "2026-11-10T20:25:24.379730Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
