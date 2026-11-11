@@ -33203,5 +33203,121 @@
     "ts": "2026-11-10T23:47:09.149443Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=42926168587"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-11",
+    "ts": "2026-11-11T20:06:20.768027Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=43093338535"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-11",
+    "ts": "2026-11-11T20:06:35.388038Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-11",
+    "ts": "2026-11-11T20:06:36.736909Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-11-11",
+    "ts": "2026-11-11T20:06:38.160049Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-11-11",
+    "ts": "2026-11-11T20:07:32.957080Z",
+    "equity_start": 88183.9,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "ORCL",
+          "confidence": "high",
+          "catalyst": "+7.6% premarket gap on tech-led software rebound, whale activity flagged",
+          "smart_money_signals": "Insider cluster buy (4 buyers), Stocktwits 100% bullish on 30 msgs, 81% analyst buy rating",
+          "rationale": "Stacked setup \u2014 strong gap catalyst plus cluster insider buying and unanimous bullish retail sentiment."
+        },
+        {
+          "symbol": "GOOGL",
+          "confidence": "high",
+          "catalyst": "+1.8% on AI rally + Waymo/Uber robotaxi narrative",
+          "smart_money_signals": "Insider cluster buy (7 buyers), Stocktwits 100% bullish, 90% analyst buy",
+          "rationale": "Rare 7-insider cluster buy with full analyst and retail support on constructive price action."
+        },
+        {
+          "symbol": "PLTR",
+          "confidence": "medium",
+          "catalyst": "+1.8% rebound with 'Public Health Data Solution of the Year' award offsetting prior contract warning",
+          "smart_money_signals": "Insider cluster buy (3 buyers), Stocktwits 100% bullish, 76% analyst buy",
+          "rationale": "Insider cluster buy and 100% bullish sentiment suggest smart money leaning into the dip-recovery."
+        }
+      ],
+      "market_take": "Risk-on AI/tech rebound led by CoreWeave; software and chips ripping while a few mega-caps lag.",
+      "skipped_movers": [
+        "INTC: weak analyst support (29% bullish) despite gap",
+        "AMD: no insider/congress signal, gap already extended",
+        "AVGO: House selling, thin alt-data",
+        "NVDA: insider selling and earnings 11/17 proximity risk",
+        "MSFT: down -2.8% with heavy insider selling",
+        "TSLA: no smart-money signal, House selling",
+        "AMZN: price down + insider/House selling",
+        "AAPL: -3 alt-score, 4 insider sells",
+        "CAT: weak alt-data, light volume",
+        "CRM: no strong signal",
+        "GS: heavy insider selling 14 vs 5 buys net negative"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Stacked setup \u2014 strong gap catalyst plus cluster insider buying and unanimous bullish retail sentiment.",
+        "symbol": "ORCL",
+        "qty": 229,
+        "entry_price_est": 126.97999999999999,
+        "stop_price": 125.71,
+        "take_price": 129.52,
+        "order_id": "ea029ecd-7e7e-433b-8429-14be8b8268d6"
+      },
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Rare 7-insider cluster buy with full analyst and retail support on constructive price action.",
+        "symbol": "GOOGL",
+        "qty": 98,
+        "entry_price_est": 294.095,
+        "stop_price": 291.15,
+        "take_price": 299.98,
+        "order_id": "5c5fb23c-8c29-4f70-9ed8-c9894f7b36ab"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Insider cluster buy and 100% bullish sentiment suggest smart money leaning into the dip-recovery.",
+        "symbol": "PLTR",
+        "qty": 168,
+        "entry_price_est": 172.95499999999998,
+        "stop_price": 171.23,
+        "take_price": 176.41,
+        "order_id": "753c6cf9-a3a2-4c24-ae1e-3f6a1be3b750"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-11-11",
+    "ts": "2026-11-11T20:07:33.052967Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
