@@ -33379,5 +33379,114 @@
     "ts": "2026-11-12T01:05:59.427827Z",
     "status": "ok",
     "note": "closed 5 positions, 0 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-12",
+    "ts": "2026-11-12T20:43:44.616902Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=43303157913"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-12",
+    "ts": "2026-11-12T20:43:59.029140Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-12",
+    "ts": "2026-11-12T20:44:00.392312Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-11-12",
+    "ts": "2026-11-12T20:44:02.050914Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-11-12",
+    "ts": "2026-11-12T20:44:55.721842Z",
+    "equity_start": 87741.22,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "GOOGL",
+          "confidence": "high",
+          "catalyst": "Gap up +1.96% on $4B Asian bond raise and AI smart glasses launch; Nasdaq showing resilience despite NVDA drag",
+          "smart_money_signals": "Insider cluster buy (7 buyers, 10 buys in 30d), 89.7% analyst buy (20SB/41B), stocktwits 82% bullish, WSB rank #12 at 1.65x normal",
+          "rationale": "Stacks catalyst + cluster insider buying + strong analyst conviction while capital rotates out of NVDA into other mega-cap AI names."
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "medium",
+          "catalyst": "Up +1.21% premarket with positive Oracle Health validation news; benefits from AI capital rotation theme",
+          "smart_money_signals": "Insider cluster buy (4 buyers), stocktwits 89% bullish on 30 msgs, 80.9% analyst buy (15SB/23B)",
+          "rationale": "Triple-confirm smart money (cluster insiders + sentiment + analyst) with a clean premarket gap up and no overhang."
+        },
+        {
+          "symbol": "PLTR",
+          "confidence": "medium",
+          "catalyst": "Gap up +1.36% with whale activity flagged; strong relative strength on an AI-mixed tape",
+          "smart_money_signals": "Insider cluster buy (3 buyers, 3:1 buy/sell ratio), 75.6% analyst buy, stocktwits 71% bullish",
+          "rationale": "Clean insider cluster buy with price confirmation and no negative news flow."
+        }
+      ],
+      "market_take": "Risk-on rotation out of NVDA (Huang exit) into other mega-cap AI/software names; small caps weak but large-cap tech firming.",
+      "skipped_movers": [
+        "TSLA: House selling, only 53% analyst buy, headline risk from lawsuit \u2014 skip",
+        "NVDA: 9 banks slashed targets, Huang scandal, heavy insider sell \u2014 skip despite House cluster",
+        "GE: gap DOWN -2.9%, price contradicts bullish signals \u2014 skip",
+        "SBUX: heavy insider selling + price down + weak analyst \u2014 skip",
+        "INTC: BofA target cut, only 29% analyst buy \u2014 skip",
+        "GS: gap down -1.45% contradicts cluster buy \u2014 skip",
+        "NFLX: gap down -1.9% contradicts insider buys \u2014 skip",
+        "BA: no catalyst and price down \u2014 skip",
+        "XOM: only 40% analyst buy and House selling \u2014 skip",
+        "AVGO: good signals but less stacked than GOOGL/ORCL \u2014 skip to limit to 3"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "high",
+        "rationale": "Stacks catalyst + cluster insider buying + strong analyst conviction while capital rotates out of NVDA into other mega-cap AI names.",
+        "symbol": "GOOGL",
+        "qty": 96,
+        "entry_price_est": 299.745,
+        "stop_price": 296.75,
+        "take_price": 305.74,
+        "order_id": "253d2da0-2342-4db1-a947-e6d046b52333"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Triple-confirm smart money (cluster insiders + sentiment + analyst) with a clean premarket gap up and no overhang.",
+        "symbol": "ORCL",
+        "qty": 229,
+        "entry_price_est": 126.24,
+        "stop_price": 124.98,
+        "take_price": 128.76,
+        "order_id": "556c12a4-a252-450e-981b-8fcb63ac0bf7"
+      },
+      {
+        "status": "failed",
+        "symbol": "PLTR",
+        "error": "{\"base_price\":\"171.44\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-11-12",
+    "ts": "2026-11-12T20:44:55.864534Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
