@@ -33650,5 +33650,58 @@
     "ts": "2026-11-13T21:18:06.129170Z",
     "status": "blocked",
     "note": "Market is closed."
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-13",
+    "ts": "2026-11-13T23:57:45.519512Z",
+    "status": "eod_workflow_started",
+    "note": "event=schedule run_id=43530875145"
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-11-13",
+    "ts": "2026-11-13T23:58:05.957165Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "eod",
+    "date": "2026-11-13",
+    "ts": "2026-11-13T23:58:06.277776Z",
+    "equity_end": 86279.35,
+    "daily_pnl_usd": -1540.5,
+    "daily_pct": -1.7542,
+    "flatten": {
+      "closed": [
+        "GOOGL",
+        "NFLX",
+        "ORCL"
+      ],
+      "raw_response_count": 3
+    }
+  },
+  {
+    "type": "trade",
+    "date": "2026-11-13",
+    "ts": "2026-11-13T23:58:06.335393Z",
+    "symbol": "PLTR",
+    "qty": 169,
+    "entry_price": 168.49,
+    "entry_ts": "2026-11-13T20:26:39.338908Z",
+    "entry_order_id": "e8373584-1d5b-4e33-ba5a-2815e446142a",
+    "exit_price": 168.28,
+    "exit_ts": "2026-11-13T20:29:11.048994Z",
+    "exit_order_id": "aed6df91-e61c-4537-b956-5d20a3c17d01",
+    "exit_reason": "bracket",
+    "pnl_usd": -35.49,
+    "pnl_pct": -0.1246
+  },
+  {
+    "type": "eod_attempt",
+    "date": "2026-11-13",
+    "ts": "2026-11-13T23:58:06.398405Z",
+    "status": "ok",
+    "note": "closed 3 positions, 1 round-trips"
   }
 ]
