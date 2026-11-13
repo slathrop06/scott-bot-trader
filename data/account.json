@@ -1,28 +1,28 @@
 {
-  "ts": "2026-11-13T01:39:56.069289Z",
-  "equity": 88423.03,
-  "last_equity": 87649.96,
-  "cash": 30040.05,
-  "buying_power": 283632.54,
-  "all_time_return_pct": -11.577,
+  "ts": "2026-11-13T20:19:02.221203Z",
+  "equity": 87066.03,
+  "last_equity": 87819.85,
+  "cash": 30036.46,
+  "buying_power": 279828.64,
+  "all_time_return_pct": -12.934,
   "positions": [
     {
       "symbol": "GOOGL",
       "qty": 96,
       "avg_entry_price": 299.3258,
-      "current_price": 301.63,
-      "market_value": 28956.48,
-      "unrealized_pl": 221.2,
-      "unrealized_pl_pct": 0.77
+      "current_price": 295.38,
+      "market_value": 28356.48,
+      "unrealized_pl": -378.8,
+      "unrealized_pl_pct": -1.318
     },
     {
       "symbol": "ORCL",
       "qty": 229,
       "avg_entry_price": 126.4886,
-      "current_price": 128.5,
-      "market_value": 29426.5,
-      "unrealized_pl": 460.61,
-      "unrealized_pl_pct": 1.59
+      "current_price": 125.21,
+      "market_value": 28673.09,
+      "unrealized_pl": -292.8,
+      "unrealized_pl_pct": -1.011
     }
   ]
 }
