@@ -33516,5 +33516,118 @@
     "ts": "2026-11-12T23:54:37.474963Z",
     "status": "eod_workflow_started",
     "note": "event=schedule run_id=43332744477"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-13",
+    "ts": "2026-11-13T20:25:30.908186Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=43501416473"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-13",
+    "ts": "2026-11-13T20:25:51.270935Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-13",
+    "ts": "2026-11-13T20:25:53.104443Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-11-13",
+    "ts": "2026-11-13T20:25:54.755703Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-11-13",
+    "ts": "2026-11-13T20:26:38.623688Z",
+    "equity_start": 87094.1,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "PLTR",
+          "confidence": "medium",
+          "catalyst": "Modest -1.9% pullback on broad tech selloff with no stock-specific negative news; South Korea NPS increased stake",
+          "smart_money_signals": "Insider cluster buy (3 buyers, 3:1 buy/sell), Stocktwits 100% bullish on 30 msgs, 76% analyst buy",
+          "rationale": "Clean smart-money stack with insider cluster + perfect retail sentiment on a shallow dip \u2014 best risk/reward of the group."
+        },
+        {
+          "symbol": "GOOGL",
+          "confidence": "medium",
+          "catalyst": "HSBC names GOOGL in 'buy the dip' AI list; -1.8% pullback is modest vs AMD/NVDA carnage",
+          "smart_money_signals": "Insider cluster buy (6 distinct buyers), 90% analyst buy, Stocktwits 78% bullish",
+          "rationale": "6-insider cluster buy is rare and strong, and GOOGL is less exposed to the Nvidia/Huang chip-rotation unwind."
+        },
+        {
+          "symbol": "NFLX",
+          "confidence": "medium",
+          "catalyst": "Content pipeline news (Planeswalker, Virgin River S9) with only -1% dip; defensive vs chip rout",
+          "smart_money_signals": "Insider cluster buy (6 buyers), WSB chatter 2.7x normal, Stocktwits 89% bullish",
+          "rationale": "Highest alt-data score (7/10) with cluster insider buying + surging WSB chatter on a benign pullback."
+        }
+      ],
+      "market_take": "Risk-off tape led by chip unwind post-Huang exit; rotation favors non-chip megacaps with insider conviction.",
+      "skipped_movers": [
+        "AMD: -8.9% knife-catch, chip rotation unwinding",
+        "NVDA: heavy insider + House selling, Huang exit overhang",
+        "TSLA: Stocktwits only 33% bullish, House selling, AG merger threat",
+        "SBUX: heavy insider selling, 50% ST sentiment",
+        "AVGO: House selling, already extended +35% vs NVDA",
+        "INTC: only 29% analyst buy, no catalyst",
+        "META: 24 insider sells, TikTok rival headline risk",
+        "CAT: securities investigation headline"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Clean smart-money stack with insider cluster + perfect retail sentiment on a shallow dip \u2014 best risk/reward of the group.",
+        "symbol": "PLTR",
+        "qty": 169,
+        "entry_price_est": 170.0,
+        "stop_price": 168.3,
+        "take_price": 173.4,
+        "order_id": "e8373584-1d5b-4e33-ba5a-2815e446142a"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "6-insider cluster buy is rare and strong, and GOOGL is less exposed to the Nvidia/Huang chip-rotation unwind.",
+        "symbol": "GOOGL",
+        "qty": 97,
+        "entry_price_est": 295.47,
+        "stop_price": 292.52,
+        "take_price": 301.38,
+        "order_id": "4e8bdda4-5722-42fc-aae8-1bfd7884fc8f"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Highest alt-data score (7/10) with cluster insider buying + surging WSB chatter on a benign pullback.",
+        "symbol": "NFLX",
+        "qty": 461,
+        "entry_price_est": 62.295,
+        "stop_price": 61.67,
+        "take_price": 63.54,
+        "order_id": "5353c94e-d507-4a18-94b8-d15a59be75d2"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-11-13",
+    "ts": "2026-11-13T20:26:38.807549Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
