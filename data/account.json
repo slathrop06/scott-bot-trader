@@ -1,28 +1,37 @@
 {
-  "ts": "2026-11-13T20:19:02.221203Z",
-  "equity": 87066.03,
+  "ts": "2026-11-14T00:57:33.608498Z",
+  "equity": 86222.0,
   "last_equity": 87819.85,
-  "cash": 30036.46,
-  "buying_power": 279828.64,
-  "all_time_return_pct": -12.934,
+  "cash": -27374.25,
+  "buying_power": 208572.5,
+  "all_time_return_pct": -13.778,
   "positions": [
     {
       "symbol": "GOOGL",
-      "qty": 96,
-      "avg_entry_price": 299.3258,
-      "current_price": 295.38,
-      "market_value": 28356.48,
-      "unrealized_pl": -378.8,
-      "unrealized_pl_pct": -1.318
+      "qty": 193,
+      "avg_entry_price": 297.3347,
+      "current_price": 294.0,
+      "market_value": 56742.0,
+      "unrealized_pl": -643.59,
+      "unrealized_pl_pct": -1.122
+    },
+    {
+      "symbol": "NFLX",
+      "qty": 461,
+      "avg_entry_price": 62.31,
+      "current_price": 61.97,
+      "market_value": 28568.17,
+      "unrealized_pl": -156.74,
+      "unrealized_pl_pct": -0.546
     },
     {
       "symbol": "ORCL",
       "qty": 229,
       "avg_entry_price": 126.4886,
-      "current_price": 125.21,
-      "market_value": 28673.09,
-      "unrealized_pl": -292.8,
-      "unrealized_pl_pct": -1.011
+      "current_price": 123.52,
+      "market_value": 28286.08,
+      "unrealized_pl": -679.81,
+      "unrealized_pl_pct": -2.347
     }
   ]
 }
