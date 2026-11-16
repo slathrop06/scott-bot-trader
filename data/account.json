@@ -1,37 +1,9 @@
 {
-  "ts": "2026-11-14T00:57:33.608498Z",
-  "equity": 86222.0,
-  "last_equity": 87819.85,
-  "cash": -27374.25,
-  "buying_power": 208572.5,
-  "all_time_return_pct": -13.778,
-  "positions": [
-    {
-      "symbol": "GOOGL",
-      "qty": 193,
-      "avg_entry_price": 297.3347,
-      "current_price": 294.0,
-      "market_value": 56742.0,
-      "unrealized_pl": -643.59,
-      "unrealized_pl_pct": -1.122
-    },
-    {
-      "symbol": "NFLX",
-      "qty": 461,
-      "avg_entry_price": 62.31,
-      "current_price": 61.97,
-      "market_value": 28568.17,
-      "unrealized_pl": -156.74,
-      "unrealized_pl_pct": -0.546
-    },
-    {
-      "symbol": "ORCL",
-      "qty": 229,
-      "avg_entry_price": 126.4886,
-      "current_price": 123.52,
-      "market_value": 28286.08,
-      "unrealized_pl": -679.81,
-      "unrealized_pl_pct": -2.347
-    }
-  ]
+  "ts": "2026-11-16T22:43:54.310326Z",
+  "equity": 85250.69,
+  "last_equity": 87065.06,
+  "cash": 85250.69,
+  "buying_power": 341002.76,
+  "all_time_return_pct": -14.7493,
+  "positions": []
 }
