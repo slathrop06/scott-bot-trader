@@ -34059,5 +34059,114 @@
     "ts": "2026-11-20T00:57:37.102012Z",
     "status": "ok",
     "note": "closed 0 positions, 0 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-20",
+    "ts": "2026-11-20T20:59:16.863896Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=44816232078"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-20",
+    "ts": "2026-11-20T20:59:34.607562Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-20",
+    "ts": "2026-11-20T20:59:36.230578Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-11-20",
+    "ts": "2026-11-20T20:59:37.906495Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning",
+    "date": "2026-11-20",
+    "ts": "2026-11-20T21:00:40.020269Z",
+    "equity_start": 85248.35,
+    "picks_response": {
+      "picks": [
+        {
+          "symbol": "AMD",
+          "confidence": "medium",
+          "catalyst": "Oversold -10.9% premarket on short-seller/China firmware allegations; bounce candidate with no earnings risk and multiple smart-money supports",
+          "smart_money_signals": "Insider cluster buy (8 buyers in 30d), 83.3% analyst bullish (17SB/33B), Stocktwits 70% bullish, top-4 WSB rank (264 mentions)",
+          "rationale": "Best risk/reward among the washout \u2014 insider cluster buying into the selloff plus strong analyst conviction suggests the firmware allegation is overblown and a mean-reversion bounce is likely."
+        },
+        {
+          "symbol": "AMZN",
+          "confidence": "medium",
+          "catalyst": "Modest -4% drawdown with positive AWS partnership news (ScaleCapacity multi-year deal, Disney R&D support) \u2014 best relative strength vs mega-cap peers",
+          "smart_money_signals": "Insider cluster buy (6 buyers, 6 buys vs 7 sells), 95.7% analyst bullish (19SB/48B/0S)",
+          "rationale": "Cleanest setup of the group: positive catalyst, best analyst conviction, insider cluster buying, and smaller drawdown gives tightest stop viability."
+        },
+        {
+          "symbol": "ORCL",
+          "confidence": "low",
+          "catalyst": "-8% premarket with no negative news; WSB chatter spiking 6.5x normal suggesting retail bid building",
+          "smart_money_signals": "Insider cluster buy (4 buyers, 4 buys vs 4 sells \u2014 neutral flow but cluster present), 80.9% analyst bullish, WSB chatter 6.5x",
+          "rationale": "No adverse news plus insider cluster + surging social chatter supports a bounce setup; weakest of the three but qualifies on smart-money alone."
+        }
+      ],
+      "market_take": "Broad risk-off washout (SPY -3.9%, QQQ -5.3%) led by semis on China/regulatory fears \u2014 look for oversold mega-caps with insider accumulation to bounce.",
+      "skipped_movers": [
+        "NVDA: Congressional + CA AG investigations, heavy House selling, Stocktwits 20% bullish \u2014 contradicting signals",
+        "TSLA: 0/10 alt-data, 53% analyst neutral, no edge",
+        "GS: analyst conviction weak (51.5%), heavy insider sell ratio 14:5 despite cluster",
+        "META: CFO insider sale overnight + Stocktwits 25% bearish contradicts cluster buy",
+        "MS: heavy insider selling 2:0",
+        "INTC: weak 29% analyst bullish",
+        "SHOP: Stocktwits 36% bearish, thin signal",
+        "PLTR: insider sells 15 vs 5 buys \u2014 3:1 adverse ratio",
+        "AVGO: no news catalyst, mixed House flow",
+        "CAT: anti-dumping headline is net neutral/positive but thin alt-data"
+      ],
+      "mode": "loose"
+    },
+    "orders": [
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Best risk/reward among the washout \u2014 insider cluster buying into the selloff plus strong analyst conviction suggests the firmware allegation is overblown and a mean-reversion bounce is likely.",
+        "symbol": "AMD",
+        "qty": 66,
+        "entry_price_est": 423.72,
+        "stop_price": 419.48,
+        "take_price": 432.19,
+        "order_id": "4bf2da7a-978a-4bcc-8d46-114f44749c6e"
+      },
+      {
+        "status": "submitted",
+        "confidence": "medium",
+        "rationale": "Cleanest setup of the group: positive catalyst, best analyst conviction, insider cluster buying, and smaller drawdown gives tightest stop viability.",
+        "symbol": "AMZN",
+        "qty": 113,
+        "entry_price_est": 248.75,
+        "stop_price": 246.26,
+        "take_price": 253.72,
+        "order_id": "990531c5-eccd-4ffa-ad30-5c565f91222f"
+      },
+      {
+        "status": "failed",
+        "symbol": "ORCL",
+        "error": "{\"base_price\":\"101.36\",\"code\":42210000,\"message\":\"take_profit.limit_price must be \\u003e= base_price + 0.01\"}"
+      }
+    ]
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-11-20",
+    "ts": "2026-11-20T21:00:40.060083Z",
+    "status": "ok",
+    "note": "3 orders submitted"
   }
 ]
