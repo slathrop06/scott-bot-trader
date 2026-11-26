@@ -34489,5 +34489,40 @@
     "ts": "2026-11-26T01:59:06.788235Z",
     "status": "ok",
     "note": "closed 0 positions, 0 round-trips"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-26",
+    "ts": "2026-11-26T22:13:11.927405Z",
+    "status": "workflow_started",
+    "note": "event=schedule run_id=45903340863"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-26",
+    "ts": "2026-11-26T22:13:25.442333Z",
+    "status": "deps_ready",
+    "note": "pip install completed"
+  },
+  {
+    "type": "infra_attempt",
+    "date": "2026-11-26",
+    "ts": "2026-11-26T22:13:26.696780Z",
+    "status": "imports_ok",
+    "note": "src.* all importable"
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-11-26",
+    "ts": "2026-11-26T22:13:28.148177Z",
+    "status": "started",
+    "note": ""
+  },
+  {
+    "type": "morning_attempt",
+    "date": "2026-11-26",
+    "ts": "2026-11-26T22:13:28.386434Z",
+    "status": "blocked",
+    "note": "Market is closed."
   }
 ]
